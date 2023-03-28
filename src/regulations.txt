@@ -11,6 +11,8 @@ F1 Lastik Sağlayıcısı/Sponsoru: Bridgestone
 F1 Yakıt Sağlayıcısı/Sponsoru: Shell
 3-stage FP
 1-stage Quali
+DRS: Pasif
+Motora Gömülü ERS: Pasif
 Puantaj: 25-18-15-12-10-8-6-4-2-1 / FL: 0 / POLE: 0
 
 2006
@@ -26,6 +28,8 @@ F1 Lastik Sağlayıcısı/Sponsoru: Bridgestone
 F1 Yakıt Sağlayıcısı/Sponsoru: Shell
 3-stage FP
 1-stage Quali
+DRS: Pasif
+Motora Gömülü ERS: Pasif
 Puantaj: 25-18-15-12-10-8-6-4-2-1 / FL: 0 / POLE: 0
 
 2007
@@ -41,6 +45,8 @@ F1 Lastik Sağlayıcısı/Sponsoru: Bridgestone
 F1 Yakıt Sağlayıcısı/Sponsoru: Shell
 3-stage FP
 1-stage Quali
+DRS: Pasif
+Motora Gömülü ERS: Pasif
 Puantaj: 25-18-15-12-10-8-6-4-2-1 / FL: 0 / POLE: 0
 
 2008
@@ -56,6 +62,8 @@ F1 Lastik Sağlayıcısı/Sponsoru: Bridgestone
 F1 Yakıt Sağlayıcısı/Sponsoru: Shell
 3-stage FP
 1-stage Quali
+DRS: Pasif
+Motora Gömülü ERS: Pasif
 Puantaj: 25-18-15-12-10-8-6-4-2-1 / FL: 0 / POLE: 0
 
 2009
@@ -71,6 +79,8 @@ F1 Lastik Sağlayıcısı/Sponsoru: Pirelli
 F1 Yakıt Sağlayıcısı/Sponsoru: Shell
 3-stage FP
 1-stage Quali
+DRS: Aktif
+Motora Gömülü ERS: Pasif
 Puantaj: 25-18-15-12-10-8-6-4-2-1 / FL: 0 / POLE: 0
 
 2014
@@ -86,6 +96,8 @@ F1 Lastik Sağlayıcısı/Sponsoru: Pirelli
 F1 Yakıt Sağlayıcısı/Sponsoru: Petronas
 3-stage FP
 1-stage Quali
+DRS: Aktif
+Motora Gömülü ERS: Aktif
 Puantaj: 25-18-15-12-10-8-6-4-2-1 / FL: 0 / POLE: 0
 
 2017
@@ -101,6 +113,8 @@ F1 Lastik Sağlayıcısı/Sponsoru: Pirelli
 F1 Yakıt Sağlayıcısı/Sponsoru: Petronas
 3-stage FP
 1-stage Quali
+DRS: Aktif
+Motora Gömülü ERS: Aktif
 Puantaj: 25-18-15-12-10-8-6-4-2-1 / FL: 0 / POLE: 0
 
 2018
@@ -116,6 +130,8 @@ F1 Lastik Sağlayıcısı/Sponsoru: Pirelli
 F1 Yakıt Sağlayıcısı/Sponsoru: Petronas
 3-stage FP
 1-stage Quali
+DRS: Aktif
+Motora Gömülü ERS: Aktif
 Puantaj: 25-18-15-12-10-8-6-4-2-1 / FL: 0 / POLE: 0
 
 2021
@@ -131,6 +147,8 @@ F1 Lastik Sağlayıcısı/Sponsoru: Pirelli
 F1 Yakıt Sağlayıcısı/Sponsoru: Petronas
 3-stage FP
 1-stage Quali
+DRS: Aktif
+Motora Gömülü ERS: Aktif
 Puantaj: 25-18-15-12-10-8-6-4-2-1 / FL: 0 / POLE: 0
 
 2022-2023-2024-2025
@@ -146,4 +164,6 @@ F1 Lastik Sağlayıcısı/Sponsoru: Pirelli
 F1 Yakıt Sağlayıcısı/Sponsoru: Aramco
 3-stage FP
 1-stage Quali
-Puantaj: 25-18-15-12-10-8-6-4-2-1 / FL: 1 / POLE: 1
+DRS: Aktif
+Motora Gömülü ERS: Aktif
+Puantaj: 25-18-15-12-10-8-6-4-2-1 / FL: 0 / POLE: 0
