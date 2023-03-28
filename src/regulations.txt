@@ -75,6 +75,23 @@ Motor Üretimi: Pasif/Üretilen motor aynı kalmak şartıyla bir sonraki yıla 
 Şasi Konsept Gelişimi: Aktif (yıldan yıla değiştirilir, monökok şasi sabit kalır.)
 Sürücü Maksimum Kontrat Süresi: 4 Yıl
 F1 Lojistik Sponsoru: DHL
+F1 Lastik Sağlayıcısı/Sponsoru: Bridgestone
+F1 Yakıt Sağlayıcısı/Sponsoru: Shell
+3-stage FP
+1-stage Quali
+DRS: Pasif
+Motora Gömülü ERS: Pasif
+Puantaj: 25-18-15-12-10-8-6-4-2-1 / FL: 0 / POLE: 0
+
+2012
+Motor Tipi: V8 2.4L
+Motor Peformans Gelişimi: Aktif (alınan her 60 takım puanında +1 güncelleme olanağı, maksiumum +10 basılabilir. sene sonu güncelleştirilmeler silinmez)
+Motor Dayanıklılık Gelişimi: Aktif (alınan her 60 takım puanında +1 güncelleme olanağı, maksiumum +10 basılabilir. sene sonu güncelleştirmeler silinmez)
+Motor Üretimi: Pasif/Üretilen motor aynı kalmak şartıyla bir sonraki yıla aktarılır.
+Şasi Gelişimi: Aktif (alınan her 10 takım puanında +1 güncelleme olanağı, her özelliğe maksiumum +10 basılabilir. sene sonu güncelleştirmeler sıfırlanır)
+Şasi Konsept Gelişimi: Aktif (yıldan yıla değiştirilir, monökok şasi sabit kalır.)
+Sürücü Maksimum Kontrat Süresi: 4 Yıl
+F1 Lojistik Sponsoru: DHL
 F1 Lastik Sağlayıcısı/Sponsoru: Pirelli
 F1 Yakıt Sağlayıcısı/Sponsoru: Shell
 3-stage FP
