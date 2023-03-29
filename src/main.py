@@ -101,7 +101,7 @@ class Tire():
     
         # # # Part 2: The Performance of the Car
         if mode[0] == 'saturday':
-            performance = ((driver.team.performance(circuit.circuit_type))*0.65) + (driver.team.rating()*0.35)
+            performance = ((driver.team.performance(circuit.circuit_type))*1.00)
             CL1 = ((((performance/100)**2)*6.0) - 4)*(-1.0)
         elif mode[0] == 'sunday':
             performance = ((driver.team.performance(circuit.circuit_type))*1.00)
@@ -208,36 +208,35 @@ class Circuit():
         self.drs_points = drs_points
         self.weather = weather
 
-monza = Circuit('Monza','Italy','T1',53,FIA(current)[0]+83.00,29,[[s,m],[s,h],[m,s]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet']) # S:21 | M:31 | H:41
-miami = Circuit('Miami','United States','T1',57,FIA(current)[0]+91.75,26,[[m,h],[s,h],[s,m]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:19 | M:28 | H:37
-jeddah = Circuit('Jeddah','Saudi Arabia','T1',50,FIA(current)[0]+91.50,16,[[m,s,h],[s,s,h],[s,m,h]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:13 | M:19 | H:24
+monza = Circuit('Monza','Italy','T1',53,FIA(current)[0]+83.00,29,[[s,h],[m,h],[s,m]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet']) # S:21 | M:31 | H:41
+mexico = Circuit('México City','México','T1',71,FIA(current)[0]+81.00,42,[[s,m],[m,s],[s,h]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:28 | M:43 | H:57
+miami = Circuit('Miami','United States','T1',57,FIA(current)[0]+91.75,26,[[s,h],[m,h],[s,m]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:19 | M:28 | H:37
+jeddah = Circuit('Jeddah','Saudi Arabia','T1',50,FIA(current)[0]+91.50,16,[[s,s,h],[s,m,m],[s,m,h]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:13 | M:19 | H:24
 sakhir = Circuit('Sakhir','Bahrain','T2',57,FIA(current)[0]+93.50,20,[[s,s,h],[s,m,m],[m,s,m]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:16 | M:23 | H:29
-austin = Circuit('Austin','United States','T3',56,FIA(current)[0]+97.50,26,[[s,s,s,s,s],[m,m,m,m,m],[h,h,h,h,h]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'])
-le = Circuit('Le Castellet','France','T2',53,FIA(current)[0]+94.50,16,[[s,s,s,s,s],[m,m,m,m,m],[h,h,h,h,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'])
-imola = Circuit('Imola','Italy','T3',63,FIA(current)[0]+79.00,26,[[s,s,s,s,s],[m,m,m,m,m],[h,h,h,h,h]],1,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'])
-melbourne = Circuit('Melbourne','Australia','T2',58,FIA(current)[0]+81.50,16,[[s,s,s,s,s],[m,m,m,m,m],[h,h,h,h,h]],4,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'])
-montreal = Circuit('Montréal','Canada','T2',70,FIA(current)[0]+75.00,16,[[s,s,s,s,s],[m,m,m,m,m],[h,h,h,h,h]],3,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'])
-silverstone = Circuit('Silverstone','Great Britain','T3',52,FIA(current)[0]+90.00,26,[[s,s,s,s,s],[m,m,m,m,m],[h,h,h,h,h]],2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet'])
-suzuka = Circuit('Suzuka','Japan','T3',53,FIA(current)[0]+92.50,16,[[s,s,s,s,s],[m,m,m,m,m],[h,h,h,h,h]],1,['Dry','Dry','Dry','Dump','Dump','Wet','Wet'])
-spielberg = Circuit('Spielberg','Austuria','T3',71,FIA(current)[0]+68.25,26,[[s,s,s,s,s],[m,m,m,m,m],[h,h,h,h,h]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'])
-budapest = Circuit('Budapest','Hungary','T4',70,FIA(current)[0]+80.50,30,[[s,s,s,s,s],[m,m,m,m,m],[h,h,h,h,h]],1,['Dry','Dry','Dry','Dump','Dump','Wet','Wet'])
-barcelona = Circuit('Barcelona','Spain','T4',66,FIA(current)[0]+81.75,26,[[s,s,s,s,s],[m,m,m,m,m],[h,h,h,h,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'])
-zandvoort = Circuit('Zandvoort','Netherlands','T4',72,FIA(current)[0]+73.25,26,[[s,s,s,s,s],[m,m,m,m,m],[h,h,h,h,h]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'])
-mexico = Circuit('México City','México','T4',71,FIA(current)[0]+81.00,39,[[s,s,s,s,s],[m,m,m,m,m],[h,h,h,h,h]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry'])
-sao = Circuit('São Paulo','Brazil','T4',71,FIA(current)[0]+74.00,26,[[s,s,s,s,s],[m,m,m,m,m],[h,h,h,h,h]],2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet'])
-yas = Circuit('Yas Island','Abu Dhabi','T5',58,FIA(current)[0]+86.50,22,[[s,s,s,s,s],[m,m,m,m,m],[h,h,h,h,h]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry'])
-singapore = Circuit('Singapore','Singapore','T5',61,FIA(current)[0]+101.50,26,[[s,s,s,s,s],[m,m,m,m,m],[h,h,h,h,h]],3,['Dry','Dry','Dry','Dump','Dump','Wet','Wet'])
-baku = Circuit('Baku','Azerbaijan','T5',51,FIA(current)[0]+104.50,12,[[s,s,s,s,s],[m,m,m,m,m],[h,h,h,h,h]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry'])
-monaco = Circuit('Monte-Carlo','Monaco','T6',78,FIA(current)[0]+74.50,16,[[s,s,s,s,s],[m,m,m,m,m],[h,h,h,h,h]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'])
-spa = Circuit('Spa-Francorchamps','Belguim','T7',44,FIA(current)[0]+107.00,24,[[s,m],[s,h],[m,h]],2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet']) # S:18 | M:26 | H:35
+austin = Circuit('Austin','United States','T2',56,FIA(current)[0]+97.50,26,[[s,h],[m,h],[s,s,m]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump']) # S:19 | M:28 | H:37
+le = Circuit('Le Castellet','France','T2',53,FIA(current)[0]+94.50,21,[[m,h],[s,s,m],[s,s,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet']) # S:16 | M:23 | H:31
+melbourne = Circuit('Melbourne','Australia','T2',58,FIA(current)[0]+81.50,28,[[s,h],[m,h],[s,s,m]],4,['Dry','Dry','Dry','Dry','Dry','Dump','Wet']) # S:20 | M:30 | H:40
+montreal = Circuit('Montréal','Canada','T2',70,FIA(current)[0]+75.00,16,[[m,h,h],[s,s,m,h],[s,s,h,h]],3,['Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:13 | M:19 | H:24
+silverstone = Circuit('Silverstone','Great Britain','T3',52,FIA(current)[0]+90.00,18,[[m,h],[s,s,m],[s,s,h]],2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:14 | M:21 | H:27
+spielberg = Circuit('Spielberg','Austuria','T3',71,FIA(current)[0]+68.25,18,[[s,h,h],[m,h,h],[m,m,h]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:14 | M:21 | H:27
+imola = Circuit('Imola','Italy','T3',63,FIA(current)[0]+79.00,36,[[s,h],[m,h],[s,m]],1,['Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:25 | M:37 | H:50
+suzuka = Circuit('Suzuka','Japan','T3',53,FIA(current)[0]+92.50,21,[[m,h],[s,s,m],[s,s,h]],1,['Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:16 | M:23 | H:31
+spa = Circuit('Spa-Francorchamps','Belguim','T4',44,FIA(current)[0]+107.00,24,[[s,h],[m,h],[s,m]],2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet']) # S:18 | M:26 | H:35
+budapest = Circuit('Budapest','Hungary','T4',70,FIA(current)[0]+80.50,28,[[m,h],[s,s,m],[s,s,h]],1,['Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:20 | M:30 | H:40
+barcelona = Circuit('Barcelona','Spain','T4',66,FIA(current)[0]+81.75,28,[[m,h],[s,s,m],[s,s,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet']) # S:20 | M:30 | H:40
+zandvoort = Circuit('Zandvoort','Netherlands','T4',72,FIA(current)[0]+73.25,16,[[m,h,h],[s,s,m,h],[s,s,h,h]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:13 | M:19 | H:24
+sao = Circuit('São Paulo','Brazil','T4',71,FIA(current)[0]+74.00,42,[[s,m],[m,s],[s,h]],2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:28 | M:43 | H:57
+yas = Circuit('Yas Island','Abu Dhabi','T5',58,FIA(current)[0]+86.50,20,[[s,s,h],[s,m,m],[m,s,m]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:16 | M:23 | H:29
+singapore = Circuit('Singapore','Singapore','T5',61,FIA(current)[0]+101.50,20,[[s,s,h],[s,m,m],[m,s,m]],3,['Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:16 | M:23 | H:29
+baku = Circuit('Baku','Azerbaijan','T5',51,FIA(current)[0]+104.50,21,[[m,h],[s,s,m],[s,s,h]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:16 | M:23 | H:31
+monaco = Circuit('Monte-Carlo','Monaco','T6',78,FIA(current)[0]+74.50,28,[[s,s,h],[s,m,m],[m,s,m]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:20 | M:30 | H:40
 
-circuits = [monza,miami,jeddah,
-            sakhir,austin,le,imola,melbourne,montreal,
-            silverstone,suzuka,spielberg,
-            budapest,barcelona,zandvoort,mexico,sao,
+circuits = [monza,mexico,miami,jeddah,
+            sakhir,austin,le,melbourne,montreal,
+            silverstone,spielberg,imola,suzuka,
+            spa,budapest,barcelona,zandvoort,sao,
             yas,singapore,baku,
-            monaco,
-            spa,]
+            monaco]
 
 # Engines
 class Engine():
@@ -253,8 +252,8 @@ class Engine():
         else:
             self.power = self.ice
 
-HONDA = Engine('Red Bull Powertrains Honda',FIA(current)[5],93,93,93,75)
-FERRARI = Engine('Ferrari',FIA(current)[5],90,90,90,70)
+HONDA = Engine('Red Bull Powertrains Honda',FIA(current)[5],94,94,94,75)
+FERRARI = Engine('Ferrari',FIA(current)[5],91,91,91,70)
 RENAULT = Engine('Renault',FIA(current)[5],84,84,84,70)
 MERCEDES = Engine('Mercedes',FIA(current)[5],86,86,86,90)
 
@@ -316,23 +315,22 @@ class Manufacturer():
         return ((self.power*15) + (self.FW*10) + (self.RW*10) + (self.brakes*5) + (self.chassis*10))/50
     def performance(self,circuit_type):
         if circuit_type == 'T1':
-            return ((self.power*5) + (self.RW*3) + (self.brakes*2))/10
+            return ((self.power*5) + (self.RW*3) + (self.chassis*2))/10
         elif circuit_type == 'T2':
-            return ((self.FW*5) + (self.brakes*3) + (self.power*2) + (self.RW*2))/12
+            return ((self.chassis*4) + (self.brakes*4) + (self.RW*2))/10
         elif circuit_type == 'T3':
-            return ((self.RW*5) + (self.brakes*3) + (self.power*2))/10
+            return ((self.RW*5) + (self.FW*3) + (self.power*2))/10
         elif circuit_type == 'T4':
-            return ((self.chassis*5) + (self.RW*3) + (self.brakes*2))/10
+            return ((self.chassis*5) + (self.brakes*3) + (self.RW*2))/10
         elif circuit_type == 'T5':
-            return ((self.brakes*5) + (self.RW*3) + (self.power*2))/10
+            return ((self.power*5) + (self.FW*3) + (self.brakes*2))/10
         elif circuit_type == 'T6':
-            return ((self.brakes*5) + (self.FW*3) + (self.RW*2))/10
-        elif circuit_type == 'T7':
-            return self.rating()
+            return ((self.FW*5) + (self.brakes*3) + (self.chassis*2))/10
 
-redbull = Manufacturer('Oracle Red Bull Racing',RB,HONDA,89,93,93,91,0.00,0.22)
-ferrari = Manufacturer('Scuderia Ferrari',SF,FERRARI,92,89,89,92,0.00,0.16)
-mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team',MER,MERCEDES,86,86,95,91,0.00,0.19)
+# 0.05 sec. improvement for 1 piece of upgrade (overall)
+redbull = Manufacturer('Oracle Red Bull Racing',RB,HONDA,86,94,94,91,0.00,0.20)
+ferrari = Manufacturer('Scuderia Ferrari',SF,FERRARI,91,94,91,94,0.00,0.16)
+mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team',MER,MERCEDES,86,86,94,91,0.00,0.18)
 mclaren = Manufacturer('McLaren F1 Team',MCL,MERCEDES,75,86,86,75,0.00,0.20)
 alpine = Manufacturer('BWT Alpine F1 Team',ALP,RENAULT,82,82,82,82,0.00,0.18)
 haas = Manufacturer('Haas F1 Team',HAAS,FERRARI,76,80,76,82,0.00,0.17)
@@ -713,13 +711,13 @@ def R(circuit,FP1,FP2,FP3):
                 tire_usage += 0
             else:
                 if mechanic_failure_odd == True:
-                    print(f'{lap}/{circuit.circuit_laps} | Disaster for {driver.team.title}! {driver.name} has forced to retire due to {choice(FAILURES)} issue.')
+                    print(f'DNF | Lap {lap} | {driver.name} has forced to retire due to {choice(FAILURES)} issue. Disaster for {driver.team.title}!')
                     lap_chart.append((circuit.laptime + 5)*2)
                     tire_chart.append(tire.title[0])
                     tire_usage += 0
                     DNF[driver.name].append(True)
                 elif driver_error_odd == True:
-                    print(f'{lap}/{circuit.circuit_laps} | Disaster for {driver.team.title}! {driver.name} {choice(ERRORS)}, he is OUT!')
+                    print(f'DNF | Lap {lap} | {driver.name} {choice(ERRORS)} and, he is OUT! Disaster for {driver.team.title}!')
                     lap_chart.append((circuit.laptime + 5)*2)
                     tire_chart.append(tire.title[0])
                     tire_usage += 0
@@ -740,14 +738,18 @@ def R(circuit,FP1,FP2,FP3):
                                 tlist.pop(0)
                                 tire = tlist[0]
                                 pit_stop = round(driver.team.crew.PIT(),3)
-                                if pit_stop >= 5.5:
-                                    print(f'{lap}/{circuit.circuit_laps} | Bad news for {driver.team.title}! {pit_stop} secs. pit-stop for {driver.name}')
+                                if 10 > pit_stop >= 5.5:
+                                    print(f'PIT | Lap {lap} | Bad news for {driver.team.title}! {pit_stop} secs. for {driver.name}')
+                                elif pit_stop >= 10:
+                                    print(f'PIT | Lap {lap} | Disaster for {driver.team.title}! {pit_stop} secs. for {driver.name}')
+                                else:
+                                    print(f'PIT | Lap {lap} | Pit-stop for {driver.team.title}. {pit_stop} secs. for {driver.name}')
                                 lap_chart.append(current_laptime + pit_stop + 20)
                                 tire_chart.append(tire.title[0])
                                 tire_usage += 1
                     else:
                         if driver_error_odd_2:
-                            print(f'{lap}/{circuit.circuit_laps} | Oh, no! {driver.name} has spun-round.')
+                            print(f'INC | Lap {lap} | Oh, no! {driver.name} has spun-round. He has lost couple seconds.')
                             lap_chart.append(current_laptime + 12.5)
                             tire_chart.append(tire.title[0])
                             tire_usage += 5
@@ -758,7 +760,7 @@ def R(circuit,FP1,FP2,FP3):
         c += 1
         data[driver.name], tirenamedata[driver.name] = lap_chart, tire_chart
     print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
-    ANALYZER(f'Race',W1,data,tirenamedata,'race-chart')
+    ANALYZER(f'Race',W3,data,tirenamedata,'race-chart')
 
 # # #
 
@@ -779,8 +781,6 @@ print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 # No changable weather conditions for each session.
 
 # to-do
-# Lastik Testlerini Bitir & GitHub'a Fırlat!
-# Yarış kısmında sürücü-tur değil tur-sürücü for döngüsü kullanılacak.
-# Yarış kısmında gerçek zamanlı trafik, kazalar, kapışma vs. eklenecek.
-# Safety car eklenecek.
-# Acil pit eklenecek.
+# real-time racing / invert for loop for racing function.
+# safety car.
+# emergency pit / safety car pit.
