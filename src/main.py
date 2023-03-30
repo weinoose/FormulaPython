@@ -317,11 +317,11 @@ class Manufacturer():
         if circuit_type == 'T1':
             return ((self.power*5) + (self.RW*3) + (self.chassis*2))/10
         elif circuit_type == 'T2':
-            return ((self.chassis*4) + (self.brakes*4) + (self.RW*2))/10
+            return ((self.chassis*4) + (self.brakes*4) + (self.RW*2) + (self.power))/11
         elif circuit_type == 'T3':
             return ((self.RW*5) + (self.FW*3) + (self.power*2))/10
         elif circuit_type == 'T4':
-            return ((self.chassis*5) + (self.brakes*3) + (self.RW*2))/10
+            return ((self.chassis*5) + (self.brakes*3) + (self.RW*2) + (self.power))/11
         elif circuit_type == 'T5':
             return ((self.power*5) + (self.FW*3) + (self.brakes*2))/10
         elif circuit_type == 'T6':
