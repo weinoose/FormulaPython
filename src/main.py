@@ -10,15 +10,15 @@ GP = 'Sakhir'
 current = '2022'
 def FIA(current): 
     if current == '2005':
-        return [-1.5,False,False,'DHL','Bridgestone','Shell']
+        return [-3.5,False,False,'DHL','Bridgestone','Shell']
     elif current == '2006':
-        return [+0.2,False,False,'DHL','Bridgestone','Shell']
+        return [-2.2,False,False,'DHL','Bridgestone','Shell']
     elif current == '2007':
-        return [+1.2,False,False,'DHL','Bridgestone','Shell']
+        return [-1.2,False,False,'DHL','Bridgestone','Shell']
     elif current == '2008':
-        return [+2.0,False,False,'DHL','Bridgestone','Shell']
+        return [-0.0,False,False,'DHL','Bridgestone','Shell']
     elif current == '2009':
-        return [+2.5,False,False,'DHL','Bridgestone','Shell']
+        return [+0.5,False,False,'DHL','Bridgestone','Shell']
     elif current == '2012':
         return [+2.0,True,False,'DHL','Pirelli','Shell']
     elif current == '2014':
@@ -63,10 +63,10 @@ class Tire():
         # # # Part 1: Fuel and Tire
         if self.supplier == 'Pirelli':
             tire_supplier_pace = -0.2
-            tire_supplier_durability = -2
+            tire_supplier_durability = -2.0
         elif self.supplier == 'Bridgestone':
-            tire_supplier_pace = 0.2
-            tire_supplier_durability = 2
+            tire_supplier_pace = 2.2
+            tire_supplier_durability = 4.2
 
         if driver.team.oil == 'Shell':
             fuel_supplier_pace = -0.2
@@ -738,12 +738,10 @@ def R(circuit,FP1,FP2,FP3):
                                 tlist.pop(0)
                                 tire = tlist[0]
                                 pit_stop = round(driver.team.crew.PIT(),3)
-                                if 10 > pit_stop >= 5.5:
+                                if 10 > pit_stop >= 5.0:
                                     print(f'PIT | Lap {lap} | Bad news for {driver.team.title}! {pit_stop} secs. for {driver.name}')
                                 elif pit_stop >= 10:
                                     print(f'PIT | Lap {lap} | Disaster for {driver.team.title}! {pit_stop} secs. for {driver.name}')
-                                else:
-                                    print(f'PIT | Lap {lap} | Pit-stop for {driver.team.title}. {pit_stop} secs. for {driver.name}')
                                 lap_chart.append(current_laptime + pit_stop + 20)
                                 tire_chart.append(tire.title[0])
                                 tire_usage += 1
