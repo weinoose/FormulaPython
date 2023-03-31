@@ -550,12 +550,15 @@ def ANALYZER(session,weather,data,tirenamedata,keyword):
     print(da)
 
     if keyword == 'race-chart':
-        topg = min(fls_)
-        integer0 = topg//60
-        decimal0 = str(topg-(integer0*60))[0:6]
-        actualtopg = str(int(integer0)) +':'+ decimal0
-        fldriver = list(da['DRIVERS'])[list(da['FL.']).index(actualtopg)]
-        print(f'\nFastest Lap | {fldriver} has recorded {actualtopg} on this track.')
+        try:
+            topg = min(fls_)
+            integer0 = topg//60
+            decimal0 = str(topg-(integer0*60))[0:6]
+            actualtopg = str(int(integer0)) +':'+ decimal0
+            fldriver = list(da['DRIVERS'])[list(da['FL.']).index(actualtopg)]
+            print(f'\nFastest Lap | {fldriver} has recorded {actualtopg} on this track.')
+        except:
+            print(f'\nFastest Lap | No fastest lap has recorded on this track.')
 
 # # #
 
