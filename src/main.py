@@ -6,35 +6,35 @@ import pandas as pd
 # GP Selection
 GP = 'Sakhir'
 
-# FIA: Chassis Design / DRS / ERS / Logistics Sponsor / Tire Supplier / Fuel Supplier
+# FIA: Chassis Design / DRS / ERS / Logistics Sponsor / Tire Supplier / Fuel Supplier / Min. Weight
 current = '2022'
 def FIA(current): 
     if current == '2005':
-        return [-3.5,False,False,'DHL','Bridgestone','Shell']
+        return [-3.5,False,False,'DHL','Bridgestone','Shell',585]
     elif current == '2006':
-        return [-2.2,False,False,'DHL','Bridgestone','Shell']
+        return [-2.2,False,False,'DHL','Bridgestone','Shell',585]
     elif current == '2007':
-        return [-1.2,False,False,'DHL','Bridgestone','Shell']
+        return [-1.2,False,False,'DHL','Bridgestone','Shell',585]
     elif current == '2008':
-        return [-0.0,False,False,'DHL','Bridgestone','Shell']
+        return [-0.0,False,False,'DHL','Bridgestone','Shell',585]
     elif current == '2009':
-        return [+0.5,False,False,'DHL','Bridgestone','Shell']
+        return [+0.5,False,False,'DHL','Bridgestone','Shell',605]
     elif current == '2012':
-        return [+2.0,True,False,'DHL','Pirelli','Shell']
+        return [+2.0,True,False,'DHL','Pirelli','Shell',640]
     elif current == '2014':
-        return [+3.0,True,True,'DHL','Pirelli','Petronas']
+        return [+3.0,True,True,'DHL','Pirelli','Petronas',691]
     elif current == '2016':
-        return [-1.0,True,True,'DHL','Pirelli','Petronas']
+        return [-1.0,True,True,'DHL','Pirelli','Petronas',702]
     elif current == '2017':
-        return [-2.0,True,True,'DHL','Pirelli','Petronas']
+        return [-2.0,True,True,'DHL','Pirelli','Petronas',728]
     elif current == '2018':
-        return [-2.5,True,True,'DHL','Pirelli','Petronas']
+        return [-2.5,True,True,'DHL','Pirelli','Petronas',734]
     elif current == '2021':
-        return [-1.5,True,True,'DHL','Pirelli','Petronas']
+        return [-1.5,True,True,'DHL','Pirelli','Petronas',752]
     elif current == '2022':
-        return [-0.0,True,True,'DHL','Pirelli','Aramco']
+        return [-0.0,True,True,'DHL','Pirelli','Aramco',798]
     elif current == '2026':
-        return [None,True,True,'DHL','Pirelli','Aramco']
+        return [None,True,True,'DHL','Pirelli','Aramco',None]
 
 # Failures
 FAILURES = ['Gearbox','Engine','Clutch','Driveshaft','Halfshaft','Throttle','Brakes','Handling','Wheel','Steering','Suspension','Puncture',
@@ -67,13 +67,13 @@ class Tire():
         elif self.supplier == 'Bridgestone':
             tire_supplier_pace = 2.2
             tire_supplier_durability = 4.2
-
-        if driver.team.oil == 'Shell':
-            fuel_supplier_pace = -0.2
-        elif driver.team.oil == 'Petronas':
-            fuel_supplier_pace = 0.0
-        elif driver.team.oil == 'Aramco':
-            fuel_supplier_pace = 0.2
+    
+        if driver.team.powertrain.fuel == 'Shell':
+            fuel_injection = -2.0
+        elif driver.team.powertrain.fuel == 'Petronas':
+            fuel_injection = +0.0
+        elif driver.team.powertrain.fuel == 'Aramco':
+            fuel_injection = +0.2
 
         fuel_left = self.fuel_left(circuit,lap)
         tire_left = self.tire_left(driver,circuit,tire_usage) + tire_supplier_durability
@@ -97,7 +97,7 @@ class Tire():
         else:
             tire_cold = 0.0
 
-        CL0 = (circuit.laptime * self.laptime_coefficient) + (special_function_for_tire) + (special_function_for_fuel) + (tire_heat + tire_cold) + (tire_supplier_pace) + (fuel_supplier_pace)
+        CL0 = (circuit.laptime * self.laptime_coefficient) + (special_function_for_tire) + (special_function_for_fuel) + (tire_heat + tire_cold) + (tire_supplier_pace) + (fuel_injection)
     
         # # # Part 2: The Performance of the Car
         if mode[0] == 'saturday':
@@ -146,7 +146,7 @@ class Tire():
                 drs = 0
             else:
                 drs = 0.305
-            engine_mode = (1.250 + ((driver.team.ice)/100))*(-1.0)
+            engine_mode = (1.250 + ((driver.team.powertrain.power)/100))*(-1.0)
             if self.title == 'Wet':
                 CL2 = ((((choice(WET)/100)**2)*2.5) + hotlap)*(-1.0) + (engine_mode + (0.305*circuit.drs_points))
             elif self.title == 'Intermediate':
@@ -157,7 +157,7 @@ class Tire():
             if tire_left < 40:
                 engine_mode = 0.0
             elif lap == circuit.circuit_laps:
-                engine_mode = (-1.0)*(0.750 + ((driver.team.ice)/200))
+                engine_mode = (-1.0)*(0.750 + ((driver.team.powertrain.power)/200))
             else:
                 engine_mode = 0.5
             if self.title == 'Wet':
@@ -170,7 +170,7 @@ class Tire():
         # # # 3.3: The Best Track
         if circuit.location in driver.favorite:
             if mode[0] == 'sunday':
-                BEST = uniform(0.075,0.275)
+                BEST = uniform(0.000,0.200)
             else:
                 BEST = 0
         else:
@@ -180,14 +180,15 @@ class Tire():
         REACTION = (uniform((((driver.start-15)**2))/10000,(((driver.start+5)**2))/10000) - 0.3)
         STARTING_GRID = ((mode[1]/2.5) - 0.40) - (REACTION*2)
         STARTING_MODE = ((circuit.laptime/25) + STARTING_GRID)
+        WEIGHT = ((driver.team.weight)*0.03)/1
 
         if mode[0] == 'sunday': 
             if lap == 1:
-                return (CL0+(CL1/3)+(CL2/3)) - (BEST) + (STARTING_MODE) - driver.team.concept + (ERROR)
+                return (CL0+(CL1/3)+(CL2/3)) - (BEST) + (STARTING_MODE) - driver.team.concept + (ERROR) + (WEIGHT)
             else:
-                return (CL0+CL1+CL2) - (BEST) - driver.team.concept + (ERROR)
+                return (CL0+CL1+CL2) - (BEST) - driver.team.concept + (ERROR) + (WEIGHT)
         else:
-            return (CL0+CL1+CL2) - (BEST) - driver.team.concept + (ERROR)
+            return (CL0+CL1+CL2) - (BEST) - driver.team.concept + (ERROR) + (WEIGHT)
 
 s = Tire('Soft',FIA(current)[4],1.0,1.00)
 m = Tire('Medium',FIA(current)[4],1.7,1.017)
@@ -240,22 +241,16 @@ circuits = [monza,mexico,miami,jeddah,
 
 # Engines
 class Engine():
-    def __init__(self,brand,fuel,ice,mgu_k,mgu_h,reliability):
+    def __init__(self,brand,fuel,power,reliability):
         self.brand = brand
         self.fuel = fuel
-        self.ice = ice
-        if FIA(current)[2] == True:
-            self.mgu_k = mgu_k
-            self.mgu_h = mgu_h
-            self.reliability = reliability
-            self.power = (self.ice + (self.mgu_k/2) + (self.mgu_h/2))/2
-        else:
-            self.power = self.ice
+        self.power = power
+        self.reliability = reliability
 
-HONDA = Engine('Red Bull Powertrains Honda',FIA(current)[5],94,94,94,75)
-FERRARI = Engine('Ferrari',FIA(current)[5],91,91,91,70)
-RENAULT = Engine('Renault',FIA(current)[5],84,84,84,70)
-MERCEDES = Engine('Mercedes',FIA(current)[5],86,86,86,90)
+HONDA = Engine('Red Bull Powertrains Honda',FIA(current)[5],94,75)
+FERRARI = Engine('Ferrari',FIA(current)[5],91,70)
+RENAULT = Engine('Renault',FIA(current)[5],84,70)
+MERCEDES = Engine('Mercedes',FIA(current)[5],86,90)
 
 # Teams
 class Crew():
@@ -295,49 +290,44 @@ WIL = Crew('Jost Capito','Good')
 
 # Manufacturers
 class Manufacturer():
-    def __init__(self,title,crew,powertrain,front_wing,rear_wing,chassis,brakes,concept,manufacturer_tyre_coeff):
+    def __init__(self,title,crew,powertrain,front_wing,rear_wing,chassis,brakes,weight,concept,manufacturer_tyre_coeff):
         self.title = title
         self.crew = crew
-        self.supplier = powertrain.brand
-        self.oil = powertrain.fuel
-        self.mgu_k = powertrain.mgu_k
-        self.mgu_h = powertrain.mgu_h
-        self.ice = powertrain.ice
-        self.power = powertrain.power
+        self.powertrain = powertrain
         self.FW = front_wing
         self.RW = rear_wing
         self.chassis = chassis
         self.brakes = brakes
-        self.reliability = powertrain.reliability
+        self.weight = weight
         self.concept = concept
         self.manufacturer_tyre_coeff = manufacturer_tyre_coeff
     def rating(self):
-        return ((self.power*15) + (self.FW*10) + (self.RW*10) + (self.brakes*5) + (self.chassis*10))/50
+        return ((self.powertrain.power*15) + (self.FW*10) + (self.RW*10) + (self.brakes*5) + (self.chassis*10))/50
     def performance(self,circuit_type):
         if circuit_type == 'T1':
-            return ((self.power*5) + (self.RW*3) + (self.chassis*2))/10
+            return ((self.powertrain.power*5) + (self.RW*3) + (self.chassis*2))/10
         elif circuit_type == 'T2':
-            return ((self.chassis*4) + (self.brakes*4) + (self.RW*2) + (self.power))/11
+            return ((self.chassis*4) + (self.brakes*4) + (self.RW*2) + (self.powertrain.power))/11
         elif circuit_type == 'T3':
-            return ((self.RW*5) + (self.FW*3) + (self.power*2))/10
+            return ((self.RW*5) + (self.FW*3) + (self.powertrain.power*2))/10
         elif circuit_type == 'T4':
-            return ((self.chassis*5) + (self.brakes*3) + (self.RW*2) + (self.power))/11
+            return ((self.chassis*5) + (self.brakes*3) + (self.RW*2) + (self.powertrain.power))/11
         elif circuit_type == 'T5':
-            return ((self.power*5) + (self.FW*3) + (self.brakes*2))/10
+            return ((self.powertrain.power*5) + (self.FW*3) + (self.brakes*2))/10
         elif circuit_type == 'T6':
             return ((self.FW*5) + (self.brakes*3) + (self.chassis*2))/10
 
 # 0.05 sec. improvement for 1 piece of upgrade (overall)
-redbull = Manufacturer('Oracle Red Bull Racing',RB,HONDA,86,94,94,91,0.00,0.20)
-ferrari = Manufacturer('Scuderia Ferrari',SF,FERRARI,91,94,91,94,0.00,0.16)
-mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team',MER,MERCEDES,86,86,94,91,0.00,0.18)
-mclaren = Manufacturer('McLaren F1 Team',MCL,MERCEDES,75,86,86,75,0.00,0.20)
-alpine = Manufacturer('BWT Alpine F1 Team',ALP,RENAULT,82,82,82,82,0.00,0.18)
-haas = Manufacturer('Haas F1 Team',HAAS,FERRARI,76,80,76,82,0.00,0.17)
-astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team',AMR,MERCEDES,76,72,89,72,0.00,0.16)
-alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen',ALFA,FERRARI,78,78,72,74,0.00,0.16)
-alphatauri = Manufacturer('Scuderia AlphaTauri',AT,HONDA,74,74,74,76,0.00,0.16)
-williams = Manufacturer('Williams Racing',WIL,MERCEDES,76,76,76,76,0.00,0.21)
+redbull = Manufacturer('Oracle Red Bull Racing',RB,HONDA,86,94,96,91,+10,0.00,0.20)
+ferrari = Manufacturer('Scuderia Ferrari',SF,FERRARI,91,94,91,94,0,0.00,0.16)
+mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team',MER,MERCEDES,86,86,94,91,0,0.00,0.18)
+mclaren = Manufacturer('McLaren F1 Team',MCL,MERCEDES,75,86,86,75,0,0.00,0.20)
+alpine = Manufacturer('BWT Alpine F1 Team',ALP,RENAULT,82,82,82,82,0,0.00,0.18)
+haas = Manufacturer('Haas F1 Team',HAAS,FERRARI,76,80,76,82,0,0.00,0.17)
+astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team',AMR,MERCEDES,76,72,89,72,0,0.00,0.16)
+alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen',ALFA,FERRARI,78,78,72,74,-10,0.00,0.16)
+alphatauri = Manufacturer('Scuderia AlphaTauri',AT,HONDA,74,74,74,76,0,0.00,0.16)
+williams = Manufacturer('Williams Racing',WIL,MERCEDES,76,76,76,76,0,0.00,0.21)
 manufacturers = [redbull,ferrari,mercedes,mclaren,alpine,haas,astonmartin,alfaromeo,alphatauri,williams]
 
 # Drivers
@@ -700,7 +690,15 @@ def R(circuit,FP1,FP2,FP3):
         for lap in range(1,circuit.circuit_laps+1):
             tire_left = tire.tire_left(driver,circuit,tire_usage)
             current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['sunday',GRID[driver.name]]),3)
-            mechanic_failure_odd = (((((((driver.team.reliability*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
+
+            if driver.team.powertrain.fuel == 'Shell':
+                reliability_defict = -2.5
+            elif driver.team.powertrain.fuel == 'Petronas':
+                reliability_defict = +0.0
+            elif driver.team.powertrain.fuel == 'Aramco':
+                reliability_defict = +2.5
+
+            mechanic_failure_odd = ((((((((driver.team.powertrain.reliability+reliability_defict)*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
             
             if W3 == 'Dump':
                 driver_error_odd = (((((((driver.fitness*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,67500)
@@ -789,3 +787,4 @@ print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 # real-time racing / invert for loop for racing function.
 # safety car.
 # emergency pit / safety car pit.
+# q and fp errors/dnf's
