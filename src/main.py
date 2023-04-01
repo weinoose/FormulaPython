@@ -37,11 +37,12 @@ def FIA(current):
         return [None,True,True,'DHL','Pirelli','Aramco',None]
 
 # Failures
-FAILURES = ['Gearbox','Engine','Clutch','Driveshaft','Halfshaft','Throttle','Brakes','Handling','Wheel','Steering','Suspension','Puncture',
+FAILURES = ['Engine','Gearbox','Clutch','Driveshaft','Halfshaft','Throttle','Brakes','Handling','Wheel','Steering','Suspension','Puncture',
             'Electronics','Hydraulics','Water Leak','Fuel Pressure','Oil Pressure','Exhaust','Differential','Vibration',
-            'Transmission','Alternator','Turbocharger','Cooling']
+            'Transmission','Alternator','Turbocharger','Cooling','Engine','Engine','Engine','Engine','Engine','Engine',
+            'Engine','Engine','Engine','Engine','Engine']
 
-ERRORS = ['Spun-off','Went through Barriers','Damaged his Suspension','Stuck in Gravel']
+ERRORS = ['Spun-off','Went through Barriers','Damaged his Suspension']
 
 # Tires
 class Tire():
@@ -102,10 +103,10 @@ class Tire():
         # # # Part 2: The Performance of the Car
         if mode[0] == 'saturday':
             performance = ((driver.team.performance(circuit.circuit_type))*1.00)
-            CL1 = ((((performance/100)**2)*6.0) - 4)*(-1.0)
+            CL1 = ((((performance/100)**2)*6.25) - 4)*(-1.0)
         elif mode[0] == 'sunday':
             performance = ((driver.team.performance(circuit.circuit_type))*1.00)
-            CL1 = ((((performance/100)**2)*8.0) - 4)*(-1.0)
+            CL1 = ((((performance/100)**2)*8.25) - 4)*(-1.0)
         
         # # # Part 3: The Performance of the Driver
         # # # 3.1: Purple Lap
@@ -118,7 +119,7 @@ class Tire():
             if uniform(0,100) < 30:
                 hotlap = (-1.0)*(((driver.fitness/100)**2)/2)    
 
-        # # # 3.2: Driver Minor Error Thru' Lap
+        # # # 3.2: Driver Error During the Lap
         incident = uniform(0.01,100.01)
         ERROR = 0
         if self.title == 'Intermediate':
@@ -131,7 +132,16 @@ class Tire():
             if hotlap == 0:
                 ERROR = choice([(incident - error_rate)/10,(incident - error_rate)/25,(incident - error_rate)/50,(incident - error_rate)/75,(incident - error_rate)/100])
 
-        # # # 3.3: Normal Lap
+        # # # 3.3: Best Track, Best Lap
+        if circuit.location in driver.favorite:
+            if mode[0] == 'sunday':
+                BEST = uniform(0.000,0.200)
+            else:
+                BEST = 0
+        else:
+            BEST = 0
+
+        # # # 3.4: Normal Lap
         CRU, CRD = ((driver.consistency-40)/7.5), ((100-driver.consistency)/5)
         SATURDAY, SUNDAY, WET = [], [], []
         for i in np.arange(driver.qualifying_pace()-CRU,driver.qualifying_pace()+CRD,0.01):
@@ -148,11 +158,11 @@ class Tire():
                 drs = 0.305
             engine_mode = (1.250 + ((driver.team.powertrain.power)/100))*(-1.0)
             if self.title == 'Wet':
-                CL2 = ((((choice(WET)/100)**2)*2.5) + hotlap)*(-1.0) + (engine_mode + (0.305*circuit.drs_points))
+                CL2 = ((((choice(WET)/100)**2)*2.25) + hotlap)*(-1.0) + (engine_mode + (0.305*circuit.drs_points)) + (ERROR) - (BEST)
             elif self.title == 'Intermediate':
-                CL2 = ((((choice(WET)/100)**2)*2.5) + hotlap)*(-1.0) + (engine_mode + (0.305*circuit.drs_points))
+                CL2 = ((((choice(WET)/100)**2)*2.25) + hotlap)*(-1.0) + (engine_mode + (0.305*circuit.drs_points)) + (ERROR) - (BEST)
             else:
-                CL2 = ((((choice(SATURDAY)/100)**2)*1.0) + hotlap)*(-1.0) + (engine_mode + (drs*circuit.drs_points))
+                CL2 = ((((choice(SATURDAY)/100)**2)*0.75) + hotlap)*(-1.0) + (engine_mode + (drs*circuit.drs_points)) + (ERROR) - (BEST)
         elif mode[0] == 'sunday':
             if tire_left < 40:
                 engine_mode = 0.0
@@ -161,34 +171,42 @@ class Tire():
             else:
                 engine_mode = 0.5
             if self.title == 'Wet':
-                CL2 = ((((choice(WET)/100)**2)*2.5) + hotlap)*(-1.0) + (engine_mode + (0.305*circuit.drs_points))
+                CL2 = ((((choice(WET)/100)**2)*2.25) + hotlap)*(-1.0) + (engine_mode + (0.305*circuit.drs_points)) + (ERROR) - (BEST)
             elif self.title == 'Intermediate':
-                CL2 = ((((choice(WET)/100)**2)*2.5) + hotlap)*(-1.0) + (engine_mode + (0.305*circuit.drs_points))
+                CL2 = ((((choice(WET)/100)**2)*2.25) + hotlap)*(-1.0) + (engine_mode + (0.305*circuit.drs_points)) + (ERROR) - (BEST)
             else:
-                CL2 = ((((choice(SUNDAY)/100)**2)*2.5) + hotlap)*(-1.0) + (engine_mode + (0.305*circuit.drs_points))
+                CL2 = ((((choice(SUNDAY)/100)**2)*2.25) + hotlap)*(-1.0) + (engine_mode + (0.305*circuit.drs_points)) + (ERROR) - (BEST)
 
-        # # # 3.3: The Best Track
-        if circuit.location in driver.favorite:
-            if mode[0] == 'sunday':
-                BEST = uniform(0.000,0.200)
+        # # # Part 4: The Performance of the Car Design
+        if driver.style == 'Stiff Front':
+            DRIVING_STYLE = (driver.team.FW - driver.team.RW)/60
+        elif driver.style == 'Stiff Rear':
+            DRIVING_STYLE = (driver.team.RW - driver.team.RW)/60
+        elif driver.style == 'Balanced':
+            if (abs(driver.team.FW - driver.team.RW)) > 7:
+                DRIVING_STYLE = (((abs(driver.team.FW - driver.team.RW)))/60)*(-1.0)
             else:
-                BEST = 0
-        else:
-            BEST = 0
+                DRIVING_STYLE = ((abs(driver.team.FW - driver.team.RW)))/60
+        elif driver.style == 'Unbalanced':
+            if (abs(driver.team.FW - driver.team.RW)) > 7:
+                DRIVING_STYLE = ((abs(driver.team.FW - driver.team.RW)))/60
+            else:
+                DRIVING_STYLE = (((abs(driver.team.FW - driver.team.RW)))/60)*(-1.0)
+        
+        CAR_DESIGN = (((driver.team.weight)*0.03)/1) - (driver.team.concept) - (DRIVING_STYLE)
 
-        # # # 3.4: Final Resume
+        # # # Part 5: 5 Lights Reaction
         REACTION = (uniform((((driver.start-15)**2))/10000,(((driver.start+5)**2))/10000) - 0.3)
         STARTING_GRID = ((mode[1]/2.5) - 0.40) - (REACTION*2)
         STARTING_MODE = ((circuit.laptime/25) + STARTING_GRID)
-        WEIGHT = ((driver.team.weight)*0.03)/1
 
         if mode[0] == 'sunday': 
             if lap == 1:
-                return (CL0+(CL1/3)+(CL2/3)) - (BEST) + (STARTING_MODE) - driver.team.concept + (ERROR) + (WEIGHT)
+                return (CL0+(CL1/3)+(CL2/3)) - (BEST) + (STARTING_MODE) + (CAR_DESIGN)
             else:
-                return (CL0+CL1+CL2) - (BEST) - driver.team.concept + (ERROR) + (WEIGHT)
+                return (CL0) + (CL1) + (CL2) - (BEST) + (CAR_DESIGN)
         else:
-            return (CL0+CL1+CL2) - (BEST) - driver.team.concept + (ERROR) + (WEIGHT)
+            return (CL0) + (CL1) + (CL2) - (BEST) + (CAR_DESIGN)
 
 s = Tire('Soft',FIA(current)[4],1.0,1.00)
 m = Tire('Medium',FIA(current)[4],1.7,1.017)
@@ -332,7 +350,7 @@ manufacturers = [redbull,ferrari,mercedes,mclaren,alpine,haas,astonmartin,alfaro
 
 # Drivers
 class Driver():
-    def __init__(self,team,name,nationality,number,wet,pace,apex,smoothness,adaptability,consistency,fitness,attack,defence,start,favorite):
+    def __init__(self,team,name,nationality,number,wet,pace,apex,smoothness,adaptability,consistency,fitness,attack,defence,start,favorite,style):
         self.team = team
         self.name = name
         self.nationality = nationality
@@ -348,6 +366,7 @@ class Driver():
         self.defence = defence
         self.start = start
         self.favorite= favorite
+        self.style = style
     def qualifying_pace(self):
         return round(((self.pace*5) + (self.apex*2))/7,1)
     def race_pace(self):
@@ -361,26 +380,26 @@ class Driver():
         else:
             return 0
 
-mv1 = Driver(redbull,'Max Verstappen','NED',1,96,94,88,92,98,98,98,96,92,84,['México City','Zandvoort','Spielberg','Imola','Spa-Francorchamps'])
-cl16 = Driver(ferrari,'Charles Leclerc','MNK',16,84,92,94,86,84,94,94,86,82,90,['Monte-Carlo','Spa-Francorchamps','Spielberg','Melbourne','Sakhir'])
-gr63 = Driver(mercedes,'George Russell','GBR',63,84,92,94,84,84,90,96,86,86,86,[])
-ln4 = Driver(mclaren,'Lando Norris','GBR',4,92,92,92,88,88,90,90,81,81,84,['Spielberg','Sakhir'])
-lh44 = Driver(mercedes,'Lewis Hamilton','GBR',44,94,90,88,94,94,94,88,92,88,94,['Silverstone','Budapest','São Paulo','Montréal','Yas Island'])
-sv5 = Driver(astonmartin,'Sebastian Vettel','GER',5,92,90,90,90,86,90,94,91,93,92,['Singapore','India','Suzuka','Sepang','Valencia'])
-fa14 = Driver(alpine,'Fernando Alonso','ESP',14,90,88,88,86,94,96,96,88,96,96,['Budapest','Silverstone','Monza','Barcelona','Valencia'])
-vb77 = Driver(alfaromeo,'Valtteri Bottas','FIN',75,88,88,90,84,88,92,92,82,91,81,['Sochi'])
-sp11 = Driver(redbull,'Sergio Pérez','MEX',11,86,90,86,96,94,86,84,90,96,81,['Baku','Jeddah','Monte-Carlo','Sakhir','Singapore'])
-eo31 = Driver(alpine,'Esteban Ocon','FRA',31,88,88,88,84,82,88,88,88,92,86,[])
-cs55 = Driver(ferrari,'Carlos Sainz Jr.','ESP',55,84,88,88,80,86,84,90,85,83,79,['Monte-Carlo'])
-ls18 = Driver(astonmartin,'Lance Stroll','CAN',18,91,84,86,80,86,86,86,86,86,86,[])
-pg10 = Driver(alphatauri,'Pierre Gasly','FRA',10,88,84,84,82,88,80,86,79,77,70,[])
-aa23 = Driver(williams,'Alex Albon','THI',23,86,86,81,89,81,81,86,86,75,70,[])
-km20 = Driver(haas,'Kevin Magnussen','DEN',20,84,84,84,80,86,84,82,84,80,80,[])
-dr3 = Driver(mclaren,'Daniel Ricciardo','AUS',3,86,90,80,76,82,76,68,90,80,82,['Monte-Carlo','Baku','Marina Bay','Shanghai','Budapest'])
-yt22 = Driver(alphatauri,'Yuki Tsunoda','JPN',22,76,82,82,80,80,80,76,76,76,70,[])
-ms47 = Driver(haas,'Mick Schumacher','GER',47,76,82,82,76,82,76,80,76,70,70,[])
-gz24 = Driver(alfaromeo,'Zhou Guanyu','CHN',24,72,80,80,80,76,80,80,76,70,70,[])
-nl6 = Driver(williams,'Nicholas Latifi','CAN',6,72,72,72,72,80,72,72,72,72,72,[])
+mv1 = Driver(redbull,'Max Verstappen','NED',1,96,94,88,92,98,98,98,96,92,84,['México City','Zandvoort','Spielberg','Imola','Spa-Francorchamps'],'Unbalanced')
+cl16 = Driver(ferrari,'Charles Leclerc','MNK',16,84,92,94,86,84,94,94,86,82,90,['Monte-Carlo','Spa-Francorchamps','Spielberg','Melbourne','Sakhir'],'Stiff Front')
+gr63 = Driver(mercedes,'George Russell','GBR',63,84,92,94,84,84,90,96,86,86,86,[],'Balanced')
+ln4 = Driver(mclaren,'Lando Norris','GBR',4,92,92,92,88,88,90,90,81,81,84,['Spielberg','Sakhir'],'Balanced')
+lh44 = Driver(mercedes,'Lewis Hamilton','GBR',44,94,90,88,94,94,94,88,92,88,94,['Silverstone','Budapest','São Paulo','Montréal','Yas Island'],'Balanced')
+sv5 = Driver(astonmartin,'Sebastian Vettel','GER',5,92,90,90,90,86,90,94,91,93,92,['Singapore','India','Suzuka','Sepang','Valencia'],'Stiff Rear')
+fa14 = Driver(alpine,'Fernando Alonso','ESP',14,90,88,88,86,94,96,96,88,96,96,['Budapest','Silverstone','Monza','Barcelona','Valencia'],'Stiff Front')
+vb77 = Driver(alfaromeo,'Valtteri Bottas','FIN',75,88,88,90,84,88,92,92,82,91,81,['Sochi'],'Stiff Rear')
+sp11 = Driver(redbull,'Sergio Pérez','MEX',11,86,90,86,96,94,86,84,90,96,81,['Baku','Jeddah','Monte-Carlo','Sakhir','Singapore'],'Balanced')
+eo31 = Driver(alpine,'Esteban Ocon','FRA',31,88,88,88,84,82,88,88,88,92,86,[],'Balanced')
+cs55 = Driver(ferrari,'Carlos Sainz Jr.','ESP',55,84,88,88,80,86,84,90,85,83,79,['Monte-Carlo'],'Balanced')
+ls18 = Driver(astonmartin,'Lance Stroll','CAN',18,91,84,86,80,86,86,86,86,86,86,[],'Balanced')
+pg10 = Driver(alphatauri,'Pierre Gasly','FRA',10,88,84,84,82,88,80,86,79,77,70,[],'Balanced')
+aa23 = Driver(williams,'Alex Albon','THI',23,86,86,81,89,81,81,86,86,75,70,[],'Balanced')
+km20 = Driver(haas,'Kevin Magnussen','DEN',20,84,84,84,80,86,84,82,84,80,80,[],'Balanced')
+dr3 = Driver(mclaren,'Daniel Ricciardo','AUS',3,86,90,80,76,82,76,68,90,80,82,['Monte-Carlo','Baku','Marina Bay','Shanghai','Budapest'],'Stiff Rear')
+yt22 = Driver(alphatauri,'Yuki Tsunoda','JPN',22,76,82,82,80,80,80,76,76,76,70,[],'Balanced')
+ms47 = Driver(haas,'Mick Schumacher','GER',47,76,82,82,76,82,76,80,76,70,70,[],'Balanced')
+gz24 = Driver(alfaromeo,'Zhou Guanyu','CHN',24,72,80,80,80,76,80,80,76,70,70,[],'Balanced')
+nl6 = Driver(williams,'Nicholas Latifi','CAN',6,72,72,72,72,80,72,72,72,72,72,[],'Balanced')
 
 drivers = [mv1,cl16,gr63,ln4,lh44,sv5,fa14,vb77,sp11,eo31,cs55,ls18,pg10,aa23,km20,dr3,yt22,ms47,gz24,nl6]
 # # # END OF THE LINE!
