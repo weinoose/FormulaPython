@@ -194,11 +194,11 @@ class Tire():
                     engine_mode = 0.0
             
             if self.title == 'Wet':
-                CL2 = ((((choice(WET)/100)**2)*2.25) + hotlap)*(-1.0) + (engine_mode + (0.305*circuit.drs_points)) + (ERROR) - (BEST)
+                CL2 = ((((choice(WET)/100)**1.50)*2.25) + hotlap)*(-1.0) + (engine_mode + (0.305*circuit.drs_points)) + (ERROR) - (BEST)
             elif self.title == 'Intermediate':
-                CL2 = ((((choice(WET)/100)**2)*2.25) + hotlap)*(-1.0) + (engine_mode + (0.305*circuit.drs_points)) + (ERROR) - (BEST)
+                CL2 = ((((choice(WET)/100)**1.50)*2.25) + hotlap)*(-1.0) + (engine_mode + (0.305*circuit.drs_points)) + (ERROR) - (BEST)
             else:
-                CL2 = ((((choice(SUNDAY)/100)**2)*2.25) + hotlap)*(-1.0) + (engine_mode + (0.305*circuit.drs_points)) + (ERROR) - (BEST)
+                CL2 = ((((choice(SUNDAY)/100)**1.75)*2.25) + hotlap)*(-1.0) + (engine_mode + (0.305*circuit.drs_points)) + (ERROR) - (BEST)
 
         # # # Part 4: The Performance of the Car Design
         if driver.style == 'Stiff Front':
@@ -360,7 +360,7 @@ class Manufacturer():
 
 # 0.05 sec. improvement for 1 piece of upgrade (overall)
 redbull = Manufacturer('Oracle Red Bull Racing',RB,HONDA,86,94,96,91,+10,0.00,0.20)
-ferrari = Manufacturer('Scuderia Ferrari',SF,FERRARI,94,91,92,94,0,0.00,0.16)
+ferrari = Manufacturer('Scuderia Ferrari',SF,FERRARI,91,94,92,92,0,0.00,0.16)
 mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team',MER,MERCEDES,86,86,92,91,0,0.00,0.18)
 alpine = Manufacturer('BWT Alpine F1 Team',ALP,RENAULT,82,82,82,82,0,0.00,0.18)
 mclaren = Manufacturer('McLaren F1 Team',MCL,MERCEDES,75,86,80,75,0,0.00,0.20)
@@ -404,16 +404,16 @@ class Driver():
             return 0
 
 mv1 = Driver(redbull,'Max Verstappen','NED',1,96,94,88,92,98,98,98,96,92,84,['México City','Zandvoort','Spielberg','Imola','Spa-Francorchamps'],'Unbalanced')
-cl16 = Driver(ferrari,'Charles Leclerc','MNK',16,84,92,94,86,84,94,94,86,82,90,['Monte-Carlo','Spa-Francorchamps','Spielberg','Melbourne','Sakhir'],'Stiff Front')
-gr63 = Driver(mercedes,'George Russell','GBR',63,84,92,94,84,84,90,96,86,86,86,[],'Balanced')
+cl16 = Driver(ferrari,'Charles Leclerc','MNK',16,80,92,94,86,84,94,94,86,82,90,['Monte-Carlo','Spa-Francorchamps','Spielberg','Melbourne','Sakhir'],'Stiff Front')
+gr63 = Driver(mercedes,'George Russell','GBR',63,80,92,94,84,84,90,96,86,86,86,[],'Balanced')
 ln4 = Driver(mclaren,'Lando Norris','GBR',4,92,92,92,88,88,90,90,81,81,84,['Spielberg','Sakhir'],'Balanced')
 lh44 = Driver(mercedes,'Lewis Hamilton','GBR',44,94,90,88,94,94,94,88,92,88,94,['Silverstone','Budapest','São Paulo','Montréal','Yas Island'],'Balanced')
 sv5 = Driver(astonmartin,'Sebastian Vettel','GER',5,92,90,90,90,86,90,94,91,93,92,['Singapore','India','Suzuka','Sepang','Valencia'],'Stiff Rear')
 fa14 = Driver(alpine,'Fernando Alonso','ESP',14,90,88,88,86,94,96,96,88,96,96,['Budapest','Silverstone','Monza','Barcelona','Valencia'],'Stiff Front')
-vb77 = Driver(alfaromeo,'Valtteri Bottas','FIN',75,88,88,90,84,88,92,92,82,91,81,['Sochi'],'Stiff Rear')
-sp11 = Driver(redbull,'Sergio Pérez','MEX',11,86,90,86,96,94,86,84,90,96,81,['Baku','Jeddah','Monte-Carlo','Sakhir','Singapore'],'Balanced')
-eo31 = Driver(alpine,'Esteban Ocon','FRA',31,88,88,88,84,82,88,88,88,92,86,[],'Balanced')
-cs55 = Driver(ferrari,'Carlos Sainz Jr.','ESP',55,84,88,88,80,86,84,90,85,83,79,['Monte-Carlo'],'Balanced')
+vb77 = Driver(alfaromeo,'Valtteri Bottas','FIN',75,80,88,90,84,88,92,92,82,91,81,['Sochi'],'Stiff Rear')
+sp11 = Driver(redbull,'Sergio Pérez','MEX',11,91,90,86,96,94,86,84,90,96,81,['Baku','Jeddah','Monte-Carlo','Sakhir','Singapore'],'Balanced')
+eo31 = Driver(alpine,'Esteban Ocon','FRA',31,86,88,88,84,82,88,88,88,92,86,[],'Balanced')
+cs55 = Driver(ferrari,'Carlos Sainz Jr.','ESP',55,88,88,88,80,86,84,90,85,83,79,['Monte-Carlo'],'Balanced')
 ls18 = Driver(astonmartin,'Lance Stroll','CAN',18,91,84,86,80,86,86,86,86,86,86,[],'Balanced')
 pg10 = Driver(alphatauri,'Pierre Gasly','FRA',10,88,84,84,82,88,80,86,79,77,70,[],'Balanced')
 aa23 = Driver(williams,'Alex Albon','THI',23,86,86,81,89,81,81,86,86,75,70,[],'Balanced')
@@ -425,7 +425,8 @@ gz24 = Driver(alfaromeo,'Zhou Guanyu','CHN',24,72,80,80,80,76,80,80,76,70,70,[],
 nl6 = Driver(williams,'Nicholas Latifi','CAN',6,72,72,72,72,80,72,72,72,72,72,[],'Balanced')
 
 drivers = [mv1,cl16,gr63,ln4,lh44,sv5,fa14,vb77,sp11,eo31,cs55,ls18,pg10,aa23,km20,dr3,yt22,ms47,gz24,nl6]
-# # # END OF THE LINE!
+
+# # # END OF THE LINE
 # # # START
 
 for i in circuits:
