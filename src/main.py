@@ -5,6 +5,7 @@ import pandas as pd
 
 # GP Selection
 GP = 'Sakhir'
+current = '2022'
 
 # Tire Supplier
 class Tyre():
@@ -28,32 +29,31 @@ petronas = Fuel('Petronas',-0.0,-0.0)
 aramco = Fuel('Aramco',+0.3,+3.5)
 
 # FIA: Chassis Design / DRS / ERS / Logistics Sponsor / Tire Supplier / Fuel Supplier / Min. Weight
-current = '2022'
 def FIA(current): 
     if current == '2005':
-        return [-3.5,False,False,'DHL',bridgestone,shell,585]
+        return [0.96600,False,False,'DHL',bridgestone,shell,585]
     elif current == '2006':
-        return [-2.2,False,False,'DHL',bridgestone,shell,585]
+        return [0.98250,False,False,'DHL',bridgestone,shell,585]
     elif current == '2007':
-        return [-1.2,False,False,'DHL',bridgestone,shell,585]
+        return [0.99400,False,False,'DHL',bridgestone,shell,585]
     elif current == '2008':
-        return [-0.0,False,False,'DHL',bridgestone,shell,585]
+        return [1.00025,False,False,'DHL',bridgestone,shell,585]
     elif current == '2009':
-        return [+0.5,False,False,'DHL',bridgestone,shell,605]
+        return [1.00400,False,False,'DHL',bridgestone,shell,605]
     elif current == '2012':
-        return [+2.0,True,False,'DHL',pirelli,shell,640]
+        return [1.02800,True,False,'DHL',pirelli,shell,640]
     elif current == '2014':
-        return [+3.0,True,True,'DHL',pirelli,petronas,691]
+        return [1.03250,True,True,'DHL',pirelli,petronas,691]
     elif current == '2016':
-        return [-1.0,True,True,'DHL',pirelli,petronas,702]
+        return [0.99250,True,True,'DHL',pirelli,petronas,702]
     elif current == '2017':
-        return [-2.0,True,True,'DHL',pirelli,petronas,728]
+        return [0.98250,True,True,'DHL',pirelli,petronas,728]
     elif current == '2018':
-        return [-2.5,True,True,'DHL',pirelli,petronas,734]
+        return [0.97700,True,True,'DHL',pirelli,petronas,734]
     elif current == '2021':
-        return [-1.5,True,True,'DHL',pirelli,aramco,752]
+        return [0.98250,True,True,'DHL',pirelli,aramco,752]
     elif current == '2022':
-        return [-0.0,True,True,'DHL',pirelli,aramco,798]
+        return [1.00000,True,True,'DHL',pirelli,aramco,798]
     elif current == '2026':
         return [None,True,True,'DHL',pirelli,aramco,None]
 
@@ -250,28 +250,28 @@ class Circuit():
         self.drs_points = drs_points
         self.weather = weather
 
-monza = Circuit('Monza','Italy','T1',53,FIA(current)[0]+83.00,29,[[s,h],[m,h],[s,m]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet']) # S:21 | M:31 | H:41
-mexico = Circuit('México City','México','T1',71,FIA(current)[0]+81.00,42,[[s,m],[m,s],[s,h]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:28 | M:43 | H:57
-miami = Circuit('Miami','United States','T1',57,FIA(current)[0]+91.75,26,[[s,h],[m,h],[s,m]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:19 | M:28 | H:37
-jeddah = Circuit('Jeddah','Saudi Arabia','T1',50,FIA(current)[0]+91.50,16,[[s,s,h],[s,m,m],[s,m,h]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:13 | M:19 | H:24
-sakhir = Circuit('Sakhir','Bahrain','T2',57,FIA(current)[0]+93.50,20,[[s,s,h],[s,m,m],[m,s,m]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:16 | M:23 | H:29
-austin = Circuit('Austin','United States','T2',56,FIA(current)[0]+97.50,26,[[s,h],[m,h],[s,s,m]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump']) # S:19 | M:28 | H:37
-le = Circuit('Le Castellet','France','T2',53,FIA(current)[0]+94.50,21,[[m,h],[s,s,m],[s,s,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet']) # S:16 | M:23 | H:31
-melbourne = Circuit('Melbourne','Australia','T2',58,FIA(current)[0]+81.50,28,[[s,h],[m,h],[s,s,m]],4,['Dry','Dry','Dry','Dry','Dry','Dump','Wet']) # S:20 | M:30 | H:40
-montreal = Circuit('Montréal','Canada','T2',70,FIA(current)[0]+75.00,16,[[m,h,h],[s,s,m,h],[s,s,h,h]],3,['Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:13 | M:19 | H:24
-silverstone = Circuit('Silverstone','Great Britain','T3',52,FIA(current)[0]+90.00,18,[[m,h],[s,s,m],[s,s,h]],2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:14 | M:21 | H:27
-spielberg = Circuit('Spielberg','Austuria','T3',71,FIA(current)[0]+68.25,18,[[s,h,h],[m,h,h],[m,m,h]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:14 | M:21 | H:27
-imola = Circuit('Imola','Italy','T3',63,FIA(current)[0]+79.00,36,[[s,h],[m,h],[s,m]],1,['Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:25 | M:37 | H:50
-suzuka = Circuit('Suzuka','Japan','T3',53,FIA(current)[0]+92.50,21,[[m,h],[s,s,m],[s,s,h]],1,['Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:16 | M:23 | H:31
-spa = Circuit('Spa-Francorchamps','Belguim','T4',44,FIA(current)[0]+107.00,24,[[s,h],[m,h],[s,m]],2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet']) # S:18 | M:26 | H:35
-budapest = Circuit('Budapest','Hungary','T4',70,FIA(current)[0]+80.50,28,[[m,h],[s,s,m],[s,s,h]],1,['Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:20 | M:30 | H:40
-barcelona = Circuit('Barcelona','Spain','T4',66,FIA(current)[0]+81.75,28,[[m,h],[s,s,m],[s,s,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet']) # S:20 | M:30 | H:40
-zandvoort = Circuit('Zandvoort','Netherlands','T4',72,FIA(current)[0]+73.25,16,[[m,h,h],[s,s,m,h],[s,s,h,h]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:13 | M:19 | H:24
-sao = Circuit('São Paulo','Brazil','T4',71,FIA(current)[0]+74.00,42,[[s,m],[m,s],[s,h]],2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:28 | M:43 | H:57
-yas = Circuit('Yas Island','Abu Dhabi','T5',58,FIA(current)[0]+86.50,20,[[s,s,h],[s,m,m],[m,s,m]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:16 | M:23 | H:29
-singapore = Circuit('Singapore','Singapore','T5',61,FIA(current)[0]+101.50,20,[[s,s,h],[s,m,m],[m,s,m]],3,['Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:16 | M:23 | H:29
-baku = Circuit('Baku','Azerbaijan','T5',51,FIA(current)[0]+104.50,21,[[m,h],[s,s,m],[s,s,h]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:16 | M:23 | H:31
-monaco = Circuit('Monte-Carlo','Monaco','T6',78,FIA(current)[0]+74.50,28,[[s,s,h],[s,m,m],[m,s,m]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:20 | M:30 | H:40
+monza = Circuit('Monza','Italy','T1',53,FIA(current)[0]*83.00,29,[[s,h],[m,h],[s,m]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet']) # S:21 | M:31 | H:41
+mexico = Circuit('México City','México','T1',71,FIA(current)[0]*81.00,42,[[s,m],[m,s],[s,h]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:28 | M:43 | H:57
+miami = Circuit('Miami','United States','T1',57,FIA(current)[0]*91.75,26,[[s,h],[m,h],[s,m]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:19 | M:28 | H:37
+jeddah = Circuit('Jeddah','Saudi Arabia','T1',50,FIA(current)[0]*91.50,16,[[s,s,h],[s,m,m],[s,m,h]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:13 | M:19 | H:24
+sakhir = Circuit('Sakhir','Bahrain','T2',57,FIA(current)[0]*93.50,20,[[s,s,h],[s,m,m],[m,s,m]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:16 | M:23 | H:29
+austin = Circuit('Austin','United States','T2',56,FIA(current)[0]*97.50,26,[[s,h],[m,h],[s,s,m]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump']) # S:19 | M:28 | H:37
+le = Circuit('Le Castellet','France','T2',53,FIA(current)[0]*94.50,21,[[m,h],[s,s,m],[s,s,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet']) # S:16 | M:23 | H:31
+melbourne = Circuit('Melbourne','Australia','T2',58,FIA(current)[0]*81.50,28,[[s,h],[m,h],[s,s,m]],4,['Dry','Dry','Dry','Dry','Dry','Dump','Wet']) # S:20 | M:30 | H:40
+montreal = Circuit('Montréal','Canada','T2',70,FIA(current)[0]*75.00,16,[[m,h,h],[s,s,m,h],[s,s,h,h]],3,['Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:13 | M:19 | H:24
+silverstone = Circuit('Silverstone','Great Britain','T3',52,FIA(current)[0]*90.00,18,[[m,h],[s,s,m],[s,s,h]],2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:14 | M:21 | H:27
+spielberg = Circuit('Spielberg','Austuria','T3',71,FIA(current)[0]*68.25,18,[[s,h,h],[m,h,h],[m,m,h]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:14 | M:21 | H:27
+imola = Circuit('Imola','Italy','T3',63,FIA(current)[0]*79.00,36,[[s,h],[m,h],[s,m]],1,['Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:25 | M:37 | H:50
+suzuka = Circuit('Suzuka','Japan','T3',53,FIA(current)[0]*92.50,21,[[m,h],[s,s,m],[s,s,h]],1,['Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:16 | M:23 | H:31
+spa = Circuit('Spa-Francorchamps','Belguim','T4',44,FIA(current)[0]*107.00,24,[[s,h],[m,h],[s,m]],2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet']) # S:18 | M:26 | H:35
+budapest = Circuit('Budapest','Hungary','T4',70,FIA(current)[0]*80.50,28,[[m,h],[s,s,m],[s,s,h]],1,['Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:20 | M:30 | H:40
+barcelona = Circuit('Barcelona','Spain','T4',66,FIA(current)[0]*81.75,28,[[m,h],[s,s,m],[s,s,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet']) # S:20 | M:30 | H:40
+zandvoort = Circuit('Zandvoort','Netherlands','T4',72,FIA(current)[0]*73.25,16,[[m,h,h],[s,s,m,h],[s,s,h,h]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:13 | M:19 | H:24
+sao = Circuit('São Paulo','Brazil','T4',71,FIA(current)[0]*74.00,42,[[s,m],[m,s],[s,h]],2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:28 | M:43 | H:57
+yas = Circuit('Yas Island','Abu Dhabi','T5',58,FIA(current)[0]*86.50,20,[[s,s,h],[s,m,m],[m,s,m]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:16 | M:23 | H:29
+singapore = Circuit('Singapore','Singapore','T5',61,FIA(current)[0]*101.50,20,[[s,s,h],[s,m,m],[m,s,m]],3,['Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:16 | M:23 | H:29
+baku = Circuit('Baku','Azerbaijan','T5',51,FIA(current)[0]*104.50,21,[[m,h],[s,s,m],[s,s,h]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:16 | M:23 | H:31
+monaco = Circuit('Monte-Carlo','Monaco','T6',78,FIA(current)[0]*74.50,28,[[s,s,h],[s,m,m],[m,s,m]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:20 | M:30 | H:40
 
 circuits = [monza,mexico,miami,jeddah,
             sakhir,austin,le,melbourne,montreal,
