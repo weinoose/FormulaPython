@@ -8,7 +8,7 @@ Engine: V8 2.4L
 Engine Continiuty: One-year usage.
 In-Year Engine Development: Active
 Chassis: One-year usage.
-Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will will be carried over to the next year to construct the new car.
+Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will be carried over to the next year to construct the new car.
 In-Year Chassis Development: Active
 Chassis Concept Development: Passive
 Max. Driver Contract Lenght: 4 years.
@@ -20,46 +20,12 @@ Free-Practice and Quali: 3 and 1-staged.
 DRS: None
 ERS: None
 
-2006
+2006-2007-2008
 Engine: V8 2.4L
 Engine Continiuty: One-year usage.
 In-Year Engine Development: Active
 Chassis: One-year usage.
-Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will will be carried over to the next year to construct the new car.
-In-Year Chassis Development: Active
-Chassis Concept Development: Passive
-Max. Driver Contract Lenght: 4 years.
-F1 Logistics Supplier: DHL
-FIA Tire Supplier: Bridgestone
-FIA Fuel Supplier: Shell
-Puoints System: 25-18-15-12-10-8-6-4-2-1
-Free-Practice and Quali: 3 and 1-staged.
-DRS: None
-ERS: None
-
-2007
-Engine: V8 2.4L
-Engine Continiuty: One-year usage.
-In-Year Engine Development: Active
-Chassis: One-year usage.
-Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will will be carried over to the next year to construct the new car.
-In-Year Chassis Development: Active
-Chassis Concept Development: Passive
-Max. Driver Contract Lenght: 4 years.
-F1 Logistics Supplier: DHL
-FIA Tire Supplier: Bridgestone
-FIA Fuel Supplier: Shell
-Puoints System: 25-18-15-12-10-8-6-4-2-1
-Free-Practice and Quali: 3 and 1-staged.
-DRS: None
-ERS: None
-
-2008
-Engine: V8 2.4L
-Engine Continiuty: One-year usage.
-In-Year Engine Development: Active
-Chassis: One-year usage.
-Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will will be carried over to the next year to construct the new car.
+Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will be carried over to the next year to construct the new car.
 In-Year Chassis Development: Active
 Chassis Concept Development: Passive
 Max. Driver Contract Lenght: 4 years.
@@ -76,7 +42,7 @@ Engine: V8 2.4L
 Engine Continiuty: Full term usage.
 In-Year Engine Development: Passive
 Chassis: Full term usage.
-Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will will be carried over to the next year to construct the new car.
+Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will be carried over to the next year to construct the new car.
 In-Year Chassis Development: Active
 Chassis Concept Development: Active and only available start of the season.
 Max. Driver Contract Lenght: 4 years.
@@ -93,7 +59,7 @@ Engine: V8 2.4L
 Engine Continiuty: Full term usage.
 In-Year Engine Development: Passive
 Chassis: Full term usage.
-Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will will be carried over to the next year to construct the new car.
+Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will be carried over to the next year to construct the new car.
 In-Year Chassis Development: Active
 Chassis Concept Development: Active and only available start of the season.
 Max. Driver Contract Lenght: 5 years.
@@ -110,7 +76,7 @@ Engine: V10 3.0L
 Engine Continiuty: One-year usage.
 In-Year Engine Development: Active
 Chassis: Full term usage.
-Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will will be carried over to the next year to construct the new car.
+Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will be carried over to the next year to construct the new car.
 In-Year Chassis Development: Active
 Chassis Concept Development: Active and only available start of the season.
 Max. Driver Contract Lenght: 5 years.
@@ -127,7 +93,7 @@ Engine: V10 3.0L
 Engine Continiuty: One-year usage.
 In-Year Engine Development: Active
 Chassis: One-year usage.
-Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will will be carried over to the next year to construct the new car.
+Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will be carried over to the next year to construct the new car.
 In-Year Chassis Development: Active
 Chassis Concept Development: Passive
 Max. Driver Contract Lenght: 6 years.
@@ -144,7 +110,7 @@ Engine: V10 3.0L
 Engine Continiuty: One-year usage.
 In-Year Engine Development: Active
 Chassis: One-year usage.
-Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will will be carried over to the next year to construct the new car.
+Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will be carried over to the next year to construct the new car.
 In-Year Chassis Development: Active
 Chassis Concept Development: Passive
 Max. Driver Contract Lenght: 6 years.
@@ -161,7 +127,7 @@ Engine: V10 3.0L
 Engine Continiuty: One-year usage.
 In-Year Engine Development: Active
 Chassis: Full term usage.
-Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will will be carried over to the next year to construct the new car.
+Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will be carried over to the next year to construct the new car.
 In-Year Chassis Development: Active
 Chassis Concept Development: Active and only available start of the season.
 Max. Driver Contract Lenght: 6 years.
@@ -178,7 +144,7 @@ Engine: V10 3.0L
 Engine Continiuty: One-year usage.
 In-Year Engine Development: Active
 Chassis: One-year usage.
-Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will will be carried over to the next year to construct the new car.
+Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will be carried over to the next year to construct the new car.
 In-Year Chassis Development: Active
 Chassis Concept Development: Passive
 Max. Driver Contract Lenght: 6 years.
@@ -195,7 +161,7 @@ Engine: V10 3.0L
 Engine Continiuty: Full term usage.
 In-Year Engine Development: Passive
 Chassis: Full term usage.
-Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will will be carried over to the next year to construct the new car.
+Chassis Continiuty: Upgrades from the car will be deleted at the end of the year. Leftover upgrade points will be carried over to the next year to construct the new car.
 In-Year Chassis Development: Active
 Chassis Concept Development: Active and only available start of the season.
 Max. Driver Contract Lenght: 6 years.
