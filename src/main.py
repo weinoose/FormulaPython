@@ -113,11 +113,11 @@ class Tire():
         elif mode[0] == 'sunday' or 'friday':
             performance = ((driver.team.performance(circuit.circuit_type))*1.00)
             if self.title == 'Wet':
-                CL1 = ((((performance/100)**2)*7.50) - 4)*(-1.0)
+                CL1 = ((((performance/100)**2)*8.50) - 4)*(-1.0)
             elif self.title == 'Dump':
-                CL1 = ((((performance/100)**2)*8.00) - 4)*(-1.0)
+                CL1 = ((((performance/100)**2)*9.00) - 4)*(-1.0)
             else:
-                CL1 = ((((performance/100)**2)*8.25) - 4)*(-1.0)
+                CL1 = ((((performance/100)**2)*9.25) - 4)*(-1.0)
         
         # # # Part 3: The Performance of the Driver
         # # # 3.1: Purple Lap
@@ -164,7 +164,7 @@ class Tire():
 
         if FIA(current)[1] == True:
             # Closed, Open
-            drs = [0,(-1.0)*(driver.team.RW/150)]
+            drs = [0,(-1.0)*((0.250) + driver.team.RW/200)]
         else:
             drs = [0,0]
         
@@ -180,16 +180,16 @@ class Tire():
         
         elif mode[0] == 'sunday' or 'friday':            
             if mode[0] == 'friday':
-                engine_mode = 0.0
+                engine_mode = 1.5
             elif mode[0] == 'sunday':
-                engine_mode = (-1.0)*((driver.team.powertrain.power)/100)
+                engine_mode = 0.0
             
             if self.title == 'Wet':
-                CL2 = ((((choice(WET)/100)**1.50)*3.00) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST)
+                CL2 = ((((choice(WET)/100)**1.50)*4.00) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST)
             elif self.title == 'Intermediate':
-                CL2 = ((((choice(WET)/100)**1.50)*2.50) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST)
+                CL2 = ((((choice(WET)/100)**1.50)*3.50) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST)
             else:
-                CL2 = ((((choice(SUNDAY)/100)**1.75)*2.25) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST)
+                CL2 = ((((choice(SUNDAY)/100)**1.75)*3.25) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST)
 
         # # # Part 4: The Performance of the Car Design/Weight/Concept Upgrade
         if driver.style != driver.team.style:
@@ -358,9 +358,9 @@ class Manufacturer():
             return ((self.powertrain.power*5) + (self.RW*3) + (self.chassis*2))/10
 
 # 0.05 sec. improvement for 1 piece of upgrade (overall)
-redbull = Manufacturer('Oracle Red Bull Racing',RB,HONDA,91,94,94,89,+5,0.00,'Unbalanced',0.20)
-ferrari = Manufacturer('Scuderia Ferrari',SF,FERRARI,91,92,92,92,0,0.00,'Stiff Front',0.15)
-mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team',MER,MERCEDES,86,89,94,86,0,0.00,'Balanced',0.18)
+redbull = Manufacturer('Oracle Red Bull Racing',RB,HONDA,92,94,94,89,+5,0.00,'Unbalanced',0.20)
+ferrari = Manufacturer('Scuderia Ferrari',SF,FERRARI,90,92,94,92,0,0.00,'Stiff Front',0.15)
+mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team',MER,MERCEDES,88,88,94,88,0,0.00,'Balanced',0.18)
 alpine = Manufacturer('BWT Alpine F1 Team',ALP,RENAULT,82,82,82,82,0,0.00,'Stiff Front',0.18)
 mclaren = Manufacturer('McLaren F1 Team',MCL,MERCEDES,76,84,80,76,0,0.00,'Unbalanced',0.19)
 haas = Manufacturer('Haas F1 Team',HAAS,FERRARI,76,76,76,82,0,0.00,'Balanced',0.17)
@@ -425,8 +425,8 @@ nl6 = Driver(williams,'Nicholas Latifi','CAN',6,72,72,72,72,80,72,72,72,72,72,[]
 
 drivers = [mv1,cl16,gr63,lh44,ln4,sv5,fa14,vb77,sp11,eo31,cs55,ls18,pg10,aa23,km20,dr3,yt22,ms47,gz24,nl6]
 
-# # # END OF THE LINE
-# # # START
+# # # End of the Class Deifinition
+# # # Algorithm Build-up
 
 for i in circuits:
     try:
@@ -461,7 +461,9 @@ elif W1 == 'Dry':
 print(f'{CRC.location} GP — {CRC.country} | FP forecast: {W1} | Qualifying forecast: {W2} | Race forecast: {W3}\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
 
 # # #
+
 GRID, DNF = {}, {}
+
 def ANALYZER(session,weather,data,tirenamedata,keyword):
     teams_, names_, intervals_, fls_, laps_, tires_ = [], [], [], [], [], []
 
@@ -882,7 +884,7 @@ def R(circuit,FP1,FP2,FP3):
     print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
     ANALYZER(f'Race',W3,data,tirenamedata,'race-chart')
 
-# # # Action
+# # # Control Room
 
 FP1STRATEGY, FP2STRATEGY, FP3STRATEGY = {}, {}, {}
 FP1RESULT, FP2RESULT, FP3RESULT = {}, {}, {}
