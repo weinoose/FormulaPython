@@ -164,12 +164,12 @@ class Tire():
 
         if FIA(current)[1] == True:
             # Closed, Open
-            drs = [0,(-1.0)*(driver.team.RW/300)]
+            drs = [0,(-1.0)*(driver.team.RW/150)]
         else:
             drs = [0,0]
         
         if mode[0] == 'saturday':                
-            engine_mode = (1.250 + ((driver.team.powertrain.power)/100))*(-1.0)
+            engine_mode = (0.500 + ((driver.team.powertrain.power)/100))*(-1.0)
             
             if self.title == 'Wet':
                 CL2 = ((((choice(WET)/100)**2)*2.50) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST)
@@ -180,12 +180,9 @@ class Tire():
         
         elif mode[0] == 'sunday' or 'friday':            
             if mode[0] == 'friday':
-                engine_mode = 1.5
+                engine_mode = 0.0
             elif mode[0] == 'sunday':
-                if (lap == circuit.circuit_laps) and tire_left >= 60.000:
-                    engine_mode = (-1.0)*(0.750)
-                else:
-                    engine_mode = (-1.0)*(0.250)
+                engine_mode = (-1.0)*((driver.team.powertrain.power)/100)
             
             if self.title == 'Wet':
                 CL2 = ((((choice(WET)/100)**1.50)*3.00) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST)
@@ -211,9 +208,9 @@ class Tire():
 
         if mode[0] == 'sunday': 
             if lap == 1:
-                return (CL0) + (CL1/3) + (CL2/3) + (CAR_DESIGN) + (GRID_EFFECT) - 2
+                return (CL0) + (CL1/3) + (CL2/3) + (CAR_DESIGN) + (GRID_EFFECT)
             else:
-                return (CL0) + (CL1) + (CL2) + (CAR_DESIGN) - 2
+                return (CL0) + (CL1) + (CL2) + (CAR_DESIGN)
         else:
             return (CL0) + (CL1) + (CL2) + (CAR_DESIGN)
 
@@ -831,7 +828,22 @@ def R(circuit,FP1,FP2,FP3):
                             print(f'INC | Lap {lap} | Oh, no! {driver.name} has lost control and crushed into his front-wing. He is willing to box!')
                             BOX[driver.name].append(True)
                 else:
-                    if tire_left < 25:
+                    if len(BOX[driver.name]) > 1:
+                        if len(tlist) == 1:
+                            lap_chart.append(current_laptime)
+                            tire_chart.append(tire.title[0])
+                            tire_usage += 1
+                        else:
+                            tire_usage = 0
+                            tlist.pop(0)
+                            tire = tlist[0]
+                            pit_stop = round(driver.team.crew.PIT(),3) + 6.5
+                            print(f'PIT | Lap {lap} | Pit-stop for {driver.team.title}! {pit_stop} secs. for {driver.name}')
+                            lap_chart.append(current_laptime + pit_stop + 20)
+                            tire_chart.append(tire.title[0])
+                            tire_usage += 1
+                            BOX[driver.name].clear()
+                    elif tire_left < 25:
                         if len(tlist) == 1:
                             lap_chart.append(current_laptime)
                             tire_chart.append(tire.title[0])
@@ -850,42 +862,21 @@ def R(circuit,FP1,FP2,FP3):
                                     print(f'PIT | Lap {lap} | Bad news for {driver.team.title}! {pit_stop} secs. for {driver.name}')
                                 elif pit_stop >= 10:
                                     print(f'PIT | Lap {lap} | Disaster for {driver.team.title}! {pit_stop} secs. for {driver.name}')
+                                else:
+                                    print(f'PIT | Lap {lap} | Pit-stop for {driver.team.title}! {pit_stop} secs. for {driver.name}')
                                 lap_chart.append(current_laptime + pit_stop + 20)
                                 tire_chart.append(tire.title[0])
                                 tire_usage += 1
                     else:
-                        if len(BOX[driver.name]) > 1:
-                            if len(tlist) == 1:
-                                lap_chart.append(current_laptime)
-                                tire_chart.append(tire.title[0])
-                                tire_usage += 1
-                            else:
-                                if lap + 10 > circuit.circuit_laps+1:
-                                    lap_chart.append(current_laptime)
-                                    tire_chart.append(tire.title[0])
-                                    tire_usage += 1
-                                else:
-                                    tire_usage = 0
-                                    tlist.pop(0)
-                                    tire = tlist[0]
-                                    pit_stop = round(driver.team.crew.PIT(),3)
-                                    if 10 > pit_stop >= 5.0:
-                                        print(f'PIT | Lap {lap} | Bad news for {driver.team.title}! {pit_stop} secs. for {driver.name}')
-                                    elif pit_stop >= 10:
-                                        print(f'PIT | Lap {lap} | Disaster for {driver.team.title}! {pit_stop} secs. for {driver.name}')
-                                    lap_chart.append(current_laptime + pit_stop + 20)
-                                    tire_chart.append(tire.title[0])
-                                    tire_usage += 1
+                        if driver_error_odd_2:
+                            print(f'INC | Lap {lap} | Oh, no! {driver.name} has spun-round. He has lost couple seconds.')
+                            lap_chart.append(current_laptime + (circuit.laptime/2))
+                            tire_chart.append(tire.title[0])
+                            tire_usage += 5
                         else:
-                            if driver_error_odd_2:
-                                print(f'INC | Lap {lap} | Oh, no! {driver.name} has spun-round. He has lost couple seconds.')
-                                lap_chart.append(current_laptime + 12.5)
-                                tire_chart.append(tire.title[0])
-                                tire_usage += 5
-                            else:
-                                lap_chart.append(current_laptime)
-                                tire_chart.append(tire.title[0])
-                                tire_usage += 1
+                            lap_chart.append(current_laptime)
+                            tire_chart.append(tire.title[0])
+                            tire_usage += 1
         c += 1
         data[driver.name], tirenamedata[driver.name] = lap_chart, tire_chart
     print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
