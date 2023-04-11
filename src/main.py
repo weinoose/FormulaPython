@@ -2,9 +2,13 @@ from math import pow
 from random import uniform, choice
 import numpy as np
 import pandas as pd
+from colorama import Fore, Style
 
 # Season (Current) and GP Selection
-GP = 'Sakhir'
+# Please only insert valid 'GP' names, otherwise algorithm will respond with a silly error message and I haven't handle it yet :)
+# It is not actually a problem but like I said, it is not looking good to the eye.
+# You can find valid GP names at row 228th, at circuit class where the attribute is in 'location' variable in __init__(): function.
+GP = 'Sakhir' 
 current = '2022'
 
 # Tire Supplier
@@ -424,16 +428,13 @@ gz24 = Driver(alfaromeo,'Zhou Guanyu','CHN',24,72,80,80,80,76,80,80,76,70,70,[],
 nl6 = Driver(williams,'Nicholas Latifi','CAN',6,72,72,72,72,80,72,72,72,72,72,[],'Balanced')
 
 drivers = [mv1,cl16,gr63,lh44,ln4,sv5,fa14,vb77,sp11,eo31,cs55,ls18,pg10,aa23,km20,dr3,yt22,ms47,gz24,nl6]
-
 # # # End of the Class Deifinition
-# # # Algorithm Build-up
 
+# # # Algorithm Build-up
+errorq = 0
 for i in circuits:
-    try:
-        if i.location == GP:
-            CRC = i
-    except:
-        pass
+    if i.location == GP:
+        CRC = i
 
 # Weather Selection
 W1 = choice(CRC.weather)
@@ -667,6 +668,7 @@ def FP(circuit,tireset,stage):
             elif stage == 3:
                 FP3RESULT[driver.name] = uniform(9,18)           
 
+    # End of the Free Practice Session
     ANALYZER(f'Free Practice {stage}',W1,data,tirenamedata,'quali-chart')
 
 # # #
@@ -748,40 +750,20 @@ def Q(circuit):
         data = pd.concat([data, tempdata],ignore_index=True)
         tirenamedata = pd.concat([tirenamedata, temptirenamedata],ignore_index=True)
         c += 1
-    # Analyzing
+    
+    # End of the Qualifying
     ANALYZER('Qualifying',W2,data,tirenamedata,'quali-chart')
 
 # # #
 
-def R(circuit,FP1,FP2,FP3):
-    # Stage 1: Strategy Definition
-    chart = {}
-    for i in drivers:
-        chart[i.name] = [FP1[i.name],FP2[i.name],FP3[i.name]]
-        tireset = (chart[i.name].index(min(chart[i.name]))) + 1
-        if tireset == 1:
-            STRATEGIES[i.name] = circuit.strategy[0]
-        elif tireset == 2:
-            STRATEGIES[i.name] = circuit.strategy[1]
-        elif tireset == 3:
-            STRATEGIES[i.name] = circuit.strategy[2]
-    # Stage 2: Racing Alogirthm
-    data,tirenamedata,c = pd.DataFrame(),pd.DataFrame(),1
-    for driver in drivers:
-        if W3 == 'Dry':
-            tlist = []
-            for i in STRATEGIES[driver.name]:
-                tlist.append(i)
-        elif W3 == 'Dump':
-            tlist = [inter,inter,inter,inter,inter]
-        elif W3 == 'Wet':
-            tlist = [w,w,w,w,w]
-        tire = tlist[0]
-        tire_usage = 0
-        lap_chart, tire_chart = [], []
-        for lap in range(1,circuit.circuit_laps+1):
-            tire_left = tire.tire_left(driver,circuit,tire_usage)
-            current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['sunday',GRID[driver.name]]),3)
+def R(circuit):
+    temp,data,temptirenamedata,tirenamedata = pd.DataFrame(), pd.DataFrame(),pd.DataFrame(),pd.DataFrame()
+    for lap in range(1,circuit.circuit_laps+1):
+        for driver in drivers:
+            tire = TIRE_SETS[driver.name][0]
+            tire_left = tire.tire_left(driver,circuit,TIRE_USAGE[driver.name])
+            
+            current_laptime = round(tire.laptime(driver,circuit,lap,TIRE_USAGE[driver.name],['sunday',GRID[driver.name]]),3)
 
             reliability_defict = driver.team.powertrain.fuel.vulnerability
             mechanic_failure_odd = ((((((((driver.team.powertrain.reliability+reliability_defict)*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
@@ -797,68 +779,72 @@ def R(circuit,FP1,FP2,FP3):
                 driver_error_odd_2 = (((((((driver.consistency*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,57500)
             
             if len(DNF[driver.name]) > 1:
-                lap_chart.append((circuit.laptime + 5)*2)
-                tire_chart.append(tire.title[0])
-                tire_usage += 0
+                LAP_CHART[driver.name].append((circuit.laptime + 5)*2)
+                TIRE_CHART[driver.name].append(tire.title[0])
+                TIRE_USAGE[driver.name] += 0
             else:
                 if mechanic_failure_odd == True:
-                    print(f'DNF | Lap {lap} | {driver.name} has forced to retire due to {choice(FAILURES)} issue. Disaster for {driver.team.title}!')
-                    lap_chart.append((circuit.laptime + 5)*2)
-                    tire_chart.append(tire.title[0])
-                    tire_usage += 0
+                    print(f'{Fore.RED}DNF | Lap {lap} | {driver.name} has forced to retire due to {choice(FAILURES)} issue. Disaster for {driver.team.title}!{Style.RESET_ALL}')
+                    LAP_CHART[driver.name].append((circuit.laptime + 5)*2)
+                    TIRE_CHART[driver.name].append(tire.title[0])
+                    TIRE_USAGE[driver.name] += 0
                     DNF[driver.name].append(True)
                 elif driver_error_odd == True:
                     kachow = uniform(0.1,100.1)
                     if kachow > 35.5:
-                        print(f'DNF | Lap {lap} | {driver.name} {choice(ERRORS)} and, he is OUT! Disaster for {driver.team.title}!')
-                        lap_chart.append((circuit.laptime + 5)*2)
-                        tire_chart.append(tire.title[0])
-                        tire_usage += 0
+                        print(f'{Fore.RED}DNF | Lap {lap} | {driver.name} {choice(ERRORS)} and, he is OUT! Disaster for {driver.team.title}!{Style.RESET_ALL}')
+                        LAP_CHART[driver.name].append((circuit.laptime + 5)*2)
+                        TIRE_CHART[driver.name].append(tire.title[0])
+                        TIRE_USAGE[driver.name] += 0
                         DNF[driver.name].append(True)
                     else:
                         if W3 != 'Dry':
-                            tire_usage += 5
-                            lap_chart.append(current_laptime + uniform(19.01,59.99))
-                            tire_chart.append(tire.title[0])
-                            print(f'INC | Lap {lap} | Oh, no! {driver.name} has lost control and crushed into his front-wing. He is willing to box!')
+                            TIRE_USAGE[driver.name] += 5
+                            LAP_CHART[driver.name].append(current_laptime + uniform(19.01,59.99))
+                            TIRE_CHART[driver.name].append(tire.title[0])
+                            if W3 == 'Dump':
+                                TIRE_SETS[driver.name].append(inter)
+                            elif W3 == 'Wet':
+                                TIRE_SETS[driver.name].append(w)
+                            print(f'{Fore.YELLOW}INC | Lap {lap} | Oh, no! {driver.name} has lost control and crushed into his front-wing. He is willing to box!{Style.RESET_ALL}')
                             BOX[driver.name].append(True)
                         else:
-                            tire_usage += 5
-                            lap_chart.append(current_laptime + uniform(10.01,49.99))
-                            tire_chart.append(tire.title[0])
-                            tlist.append(s)
-                            print(f'INC | Lap {lap} | Oh, no! {driver.name} has lost control and crushed into his front-wing. He is willing to box!')
+                            TIRE_USAGE[driver.name] += 5
+                            LAP_CHART[driver.name].append(current_laptime + uniform(10.01,49.99))
+                            TIRE_CHART[driver.name].append(tire.title[0])
+                            TIRE_SETS[driver.name].append(s)
+                            print(f'{Fore.YELLOW}INC | Lap {lap} | Oh, no! {driver.name} has lost control and crushed into his front-wing. He is willing to box!{Style.RESET_ALL}')
                             BOX[driver.name].append(True)
                 else:
                     if len(BOX[driver.name]) > 1:
-                        if len(tlist) == 1:
-                            lap_chart.append(current_laptime)
-                            tire_chart.append(tire.title[0])
-                            tire_usage += 1
+                        if len(TIRE_SETS[driver.name]) == 1:
+                            LAP_CHART[driver.name].append(current_laptime)
+                            TIRE_CHART[driver.name].append(tire.title[0])
+                            TIRE_USAGE[driver.name] += 1
                         else:
-                            tire_usage = 0
-                            tlist.pop(0)
-                            tire = tlist[0]
-                            pit_stop = round(driver.team.crew.PIT(),3) + 6.5
+                            TIRE_USAGE[driver.name] = 0
+                            TIRE_SETS[driver.name].pop(0)
+                            tire = TIRE_SETS[driver.name][0]
+                            pit_stop = round(driver.team.crew.PIT() + 6.5,3)
                             print(f'PIT | Lap {lap} | Pit-stop for {driver.team.title}! {pit_stop} secs. for {driver.name}')
-                            lap_chart.append(current_laptime + pit_stop + 20)
-                            tire_chart.append(tire.title[0])
-                            tire_usage += 1
+                            LAP_CHART[driver.name].append(current_laptime + pit_stop + 20)
+                            TIRE_CHART[driver.name].append(tire.title[0])
+                            TIRE_USAGE[driver.name] += 1
                             BOX[driver.name].clear()
                     elif tire_left < 25:
-                        if len(tlist) == 1:
-                            lap_chart.append(current_laptime)
-                            tire_chart.append(tire.title[0])
-                            tire_usage += 1
+                        if len(TIRE_SETS[driver.name]) == 1:
+                            LAP_CHART[driver.name].append(current_laptime)
+                            TIRE_CHART[driver.name].append(tire.title[0])
+                            TIRE_USAGE[driver.name] += 1
                         else:
                             if lap + 10 > circuit.circuit_laps+1:
-                                lap_chart.append(current_laptime)
-                                tire_chart.append(tire.title[0])
-                                tire_usage += 1
+                                LAP_CHART[driver.name].append(current_laptime)
+                                TIRE_CHART[driver.name].append(tire.title[0])
+                                TIRE_USAGE[driver.name] += 1
                             else:
-                                tire_usage = 0
-                                tlist.pop(0)
-                                tire = tlist[0]
+                                TIRE_USAGE[driver.name] = 0
+                                TIRE_SETS[driver.name].pop(0)
+                                tire = TIRE_SETS[driver.name][0]
                                 pit_stop = round(driver.team.crew.PIT(),3)
                                 if 10 > pit_stop >= 5.0:
                                     print(f'PIT | Lap {lap} | Bad news for {driver.team.title}! {pit_stop} secs. for {driver.name}')
@@ -866,26 +852,41 @@ def R(circuit,FP1,FP2,FP3):
                                     print(f'PIT | Lap {lap} | Disaster for {driver.team.title}! {pit_stop} secs. for {driver.name}')
                                 else:
                                     print(f'PIT | Lap {lap} | Pit-stop for {driver.team.title}! {pit_stop} secs. for {driver.name}')
-                                lap_chart.append(current_laptime + pit_stop + 20)
-                                tire_chart.append(tire.title[0])
-                                tire_usage += 1
+                                LAP_CHART[driver.name].append(current_laptime + pit_stop + 20)
+                                TIRE_CHART[driver.name].append(tire.title[0])
+                                TIRE_USAGE[driver.name] += 1
                     else:
                         if driver_error_odd_2:
-                            print(f'INC | Lap {lap} | Oh, no! {driver.name} has spun-round. He has lost couple seconds.')
-                            lap_chart.append(current_laptime + (circuit.laptime/2))
-                            tire_chart.append(tire.title[0])
-                            tire_usage += 5
+                            print(f'{Fore.YELLOW}INC | Lap {lap} | Oh, no! {driver.name} has spun-round. He has lost couple seconds.{Style.RESET_ALL}')
+                            LAP_CHART[driver.name].append(current_laptime + 15.0)
+                            TIRE_CHART[driver.name].append(tire.title[0])
+                            if W3 != 'Dry':
+                                TIRE_USAGE[driver.name] += 0
+                            else:
+                                TIRE_USAGE[driver.name] += 5
                         else:
-                            lap_chart.append(current_laptime)
-                            tire_chart.append(tire.title[0])
-                            tire_usage += 1
-        c += 1
-        data[driver.name], tirenamedata[driver.name] = lap_chart, tire_chart
+                            LAP_CHART[driver.name].append(current_laptime)
+                            TIRE_CHART[driver.name].append(tire.title[0])
+                            TIRE_USAGE[driver.name] += 1
+
+        """
+        # Lap by Lap Results
+        for driver in drivers:
+            temp[driver.name], temptirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]
+        print(temp)
+        print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
+        # ANALYZER(f'Race',W3,temp,tirenamedata,'race-chart')
+        """
+    
+    # End of the GP | The Last Saving
+    for driver in drivers:
+        data[driver.name], tirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]
     print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
     ANALYZER(f'Race',W3,data,tirenamedata,'race-chart')
 
 # # # Control Room
 
+# Strategy Preperations
 FP1STRATEGY, FP2STRATEGY, FP3STRATEGY = {}, {}, {}
 FP1RESULT, FP2RESULT, FP3RESULT = {}, {}, {}
 
@@ -894,6 +895,7 @@ for i in drivers:
     FP2STRATEGY[i.name] = CRC.strategy[1]
     FP3STRATEGY[i.name] = CRC.strategy[2]
 
+# Free Practice Sessions
 FP(CRC,FP1STRATEGY,1)
 print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
 FP(CRC,FP2STRATEGY,2)
@@ -901,21 +903,59 @@ print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 FP(CRC,FP3STRATEGY,3)
 print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
 
+# Dictionary Definitions
 DNF = {}
+
 for i in drivers:
     DNF[i.name] = [None]
 
+# Qualifying Session
 Q(CRC)
 print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
 
+# Dictionary Definitions
 STRATEGIES = {}
+LAP_CHART = {}
+TIRE_CHART = {}
+TIRE_USAGE = {}
+TIRE_SETS = {}
 BOX = {}
 DNF = {}
+
 for i in drivers:
     DNF[i.name] = [None]
     BOX[i.name] = [None]
+    TIRE_USAGE[i.name] = 0
+    LAP_CHART[i.name] = []
+    TIRE_CHART[i.name] = []
+    TIRE_SETS[i.name] = []
 
-R(CRC,FP1RESULT,FP2RESULT,FP3RESULT)
+# Strategy Plannings
+if W3 == 'Dry':
+    chart = {}
+    for i in drivers:
+        chart[i.name] = [FP1RESULT[i.name],FP2RESULT[i.name],FP3RESULT[i.name]]
+        tireset = (chart[i.name].index(min(chart[i.name]))) + 1
+        if tireset == 1:
+            for q in CRC.strategy[0]:
+                TIRE_SETS[i.name].append(q)
+        elif tireset == 2:
+            for q in CRC.strategy[1]:
+                TIRE_SETS[i.name].append(q)
+        elif tireset == 3:
+            for q in CRC.strategy[2]:
+                TIRE_SETS[i.name].append(q)
+elif W3 == 'Dump':
+    for i in drivers:
+        for q in [inter,inter,inter,inter,inter]:
+            TIRE_SETS[i.name].append(q)
+elif W3 == 'Wet':
+    for i in drivers:
+        for q in [w,w,w,w,w]:
+            TIRE_SETS[i.name].append(q)
+
+# Race Session
+R(CRC)
 print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
 
 # # #
@@ -924,7 +964,7 @@ print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 # No changable weather conditions for each session.
 
 # to-do
-# real-time racing like overtakes and defendings.
-# lap-by-lap racing, not driver-by-driver.
+# lap-by-lap report.
+# real-time racing.
 # safety car.
 # safety car pit.
