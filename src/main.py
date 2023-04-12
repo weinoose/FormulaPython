@@ -1,9 +1,10 @@
-from math import pow
+# Libraries
 from random import uniform, choice
 import numpy as np
 import pandas as pd
 from colorama import Fore, Style
 
+borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'
 # Season (Current) and GP Selection
 # Please only insert valid 'GP' names, otherwise algorithm will respond with a silly error message and I haven't handle it yet :)
 # It is not actually a problem but like I said, it is not looking good to the eye.
@@ -290,7 +291,7 @@ class Engine():
 
 HONDA = Engine('Red Bull Powertrains Honda',FIA(current)[5],94,75)
 FERRARI = Engine('Ferrari',FIA(current)[5],91,70)
-RENAULT = Engine('Renault',FIA(current)[5],84,70)
+RENAULT = Engine('Renault',FIA(current)[5],89,70)
 MERCEDES = Engine('Mercedes',FIA(current)[5],86,90)
 
 # Crews
@@ -459,16 +460,17 @@ elif W1 == 'Dry':
     elif W2 == 'Wet':
         W3 = choice(CRC.weather)
 
-print(f'{CRC.location} GP — {CRC.country} | FP forecast: {W1} | Qualifying forecast: {W2} | Race forecast: {W3}\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
+print(f'{CRC.location} GP — {CRC.country} | FP forecast: {W1} | Qualifying forecast: {W2} | Race forecast: {W3}\n{borderline}')
 
 # # #
 
 GRID, DNF = {}, {}
 
 def ANALYZER(session,weather,data,tirenamedata,keyword):
-    teams_, names_, intervals_, fls_, laps_, tires_ = [], [], [], [], [], []
+    teams_, names_, intervals_, gaps_, fls_, laps_, tires_ = [], [], [], [], [], [], []
 
     for i in list(data.columns):
+        
         # Stage 1
         chart = list(data[i])
         tchart = list(tirenamedata[i])
@@ -507,9 +509,19 @@ def ANALYZER(session,weather,data,tirenamedata,keyword):
         else:
             newintervals_.append(round(i - min(intervals_),3))
     df['INTERVAL'] = newintervals_
-    # Stage 5
+    
+    # Stage 5: Differences Between Race/Quali Charts
     if keyword == 'race-chart':
         df = df.sort_values('INTERVAL',ascending=True)
+        
+        for w in list(df['INTERVAL']):
+            the_index = list(df['INTERVAL']).index(w)
+            if the_index == 0:
+                gaps_.append(0)
+            else:
+                gaps_.append(list(df['INTERVAL'])[the_index] - list(df['INTERVAL'])[the_index-1])
+        df['GAP'] = gaps_ 
+
         for i in list(df['INTERVAL']):
             if i == list(df['INTERVAL'])[0]:
                 lastintervals_.append('INTERVAL')
@@ -531,6 +543,9 @@ def ANALYZER(session,weather,data,tirenamedata,keyword):
         df['INTERVAL'] = dnfcorrectedintervals_
         df = df.reset_index()
         df = df.drop(axis=1, columns=['index', 'FL. TEMP'])
+
+        df = df[['MANUFACTURERS', 'DRIVERS', 'INTERVAL', 'GAP', 'FL.', 'FL. LAP', 'FL. TIRE']]
+
     elif keyword == 'quali-chart':
         gap = []
         df = df.sort_values('FL. TEMP',ascending=True)
@@ -555,9 +570,9 @@ def ANALYZER(session,weather,data,tirenamedata,keyword):
         df = df.drop(axis=1, columns=['FL. LAP','FL. TIRE'])
     for i in list(df.columns):
         da[i] = list(df[i])
-    print(f'{session} Session | {weather} Conditions | {CRC.location} Grand Prix — {CRC.country}')
+    print(f'{session} Session | {weather} Conditions | {CRC.location} Grand Prix — {CRC.country} | {CRC.circuit_laps} Laps')
 
-    # Saving Grid Positions
+    # Saving Grid Positions into to the Chart
     if session == 'Qualifying':
         for i,k in zip(list(da['DRIVERS']),list(range(1,len(list(da.index))+1))):
             GRID[i] = k
@@ -567,7 +582,7 @@ def ANALYZER(session,weather,data,tirenamedata,keyword):
             gridlist.append(GRID[i])
         da['GRID'] = gridlist
 
-    # DNF FL. Optimizing for Race-Chart
+    # DNF/FL. Optimizing for Race Session
     if keyword == 'race-chart':
         dnffloptimizer0, dnffloptimizer1 = [], []
         
@@ -582,7 +597,7 @@ def ANALYZER(session,weather,data,tirenamedata,keyword):
         da['FL.'] = dnffloptimizer1
         da['FL. LAP'] = dnffloptimizer0
 
-    # DNF Optimizing for Quali
+    # DNF Optimizing for Free Practice/Qualifying Session
     optimizing, optimizing0 = [], []
     if keyword == 'quali-chart':
         for i,j in zip(list(da['FL.']),list(da['GAP'])):
@@ -595,9 +610,21 @@ def ANALYZER(session,weather,data,tirenamedata,keyword):
         da['FL.'] = optimizing
         da['GAP'] = optimizing0
 
+    # Gap Correction
+    newgap = []
+    if keyword == 'race-chart':
+        for f,p in zip(list(df['INTERVAL']),list(df['GAP'])):
+            if f == 'DNF':
+                newgap.append('DNF')
+            elif (list(df['GAP']).index(p)) == 0:
+                newgap.append('GAP')
+            else:
+                newgap.append(f'+{round(p,3)}')
+        da['GAP'] = newgap
+
     print(da)
 
-    # FL Alignment
+    # After GP FL Message Correction
     if keyword == 'race-chart':
         try:
             topg = min(fls_)
@@ -869,19 +896,17 @@ def R(circuit):
                             TIRE_CHART[driver.name].append(tire.title[0])
                             TIRE_USAGE[driver.name] += 1
 
-        """
-        # Lap by Lap Results
-        for driver in drivers:
-            temp[driver.name], temptirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]
-        print(temp)
-        print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
-        # ANALYZER(f'Race',W3,temp,tirenamedata,'race-chart')
-        """
-    
+        # Lap by Lap Results (+ gap column needed!)
+        # for q in drivers:
+            # temp[q.name] = LAP_CHART[q.name]
+        # print(temp)
+        # print(borderline)
+        # ANALYZER(f'Race',W3,temp,tirenamedata,'race-chart')    
+
     # End of the GP | The Last Saving
     for driver in drivers:
         data[driver.name], tirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]
-    print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
+    print(borderline)
     ANALYZER(f'Race',W3,data,tirenamedata,'race-chart')
 
 # # # Control Room
@@ -897,11 +922,11 @@ for i in drivers:
 
 # Free Practice Sessions
 FP(CRC,FP1STRATEGY,1)
-print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
+print(borderline)
 FP(CRC,FP2STRATEGY,2)
-print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
+print(borderline)
 FP(CRC,FP3STRATEGY,3)
-print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
+print(borderline)
 
 # Dictionary Definitions
 DNF = {}
@@ -911,7 +936,7 @@ for i in drivers:
 
 # Qualifying Session
 Q(CRC)
-print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
+print(borderline)
 
 # Dictionary Definitions
 STRATEGIES = {}
@@ -956,7 +981,7 @@ elif W3 == 'Wet':
 
 # Race Session
 R(CRC)
-print('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
+print(borderline)
 
 # # #
 # Missing Attribitues for v1.0
