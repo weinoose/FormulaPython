@@ -366,13 +366,13 @@ class Manufacturer():
 redbull = Manufacturer('Oracle Red Bull Racing',RB,HONDA,92,94,94,89,+5,0.00,'Unbalanced',0.20)
 ferrari = Manufacturer('Scuderia Ferrari',SF,FERRARI,90,92,94,92,0,0.00,'Stiff Front',0.15)
 mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team',MER,MERCEDES,88,88,94,88,0,0.00,'Balanced',0.18)
-alpine = Manufacturer('BWT Alpine F1 Team',ALP,RENAULT,82,82,82,82,0,0.00,'Stiff Front',0.18)
-mclaren = Manufacturer('McLaren F1 Team',MCL,MERCEDES,76,84,80,76,0,0.00,'Unbalanced',0.19)
-haas = Manufacturer('Haas F1 Team',HAAS,FERRARI,76,76,76,82,0,0.00,'Balanced',0.17)
-astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team',AMR,MERCEDES,76,72,89,72,0,0.00,'Unbalanced',0.16)
-alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen',ALFA,FERRARI,78,78,72,74,-10,0.00,'Unbalanced',0.17)
-alphatauri = Manufacturer('Scuderia AlphaTauri',AT,HONDA,74,74,74,76,0,0.00,'Balanced',0.16)
-williams = Manufacturer('Williams Racing',WIL,MERCEDES,76,76,76,76,0,0.00,'Stiff Rear',0.19)
+alpine = Manufacturer('BWT Alpine F1 Team',ALP,RENAULT,88,88,86,86,0,0.00,'Stiff Front',0.18)
+mclaren = Manufacturer('McLaren F1 Team',MCL,MERCEDES,82,90,87,82,0,0.00,'Unbalanced',0.19)
+haas = Manufacturer('Haas F1 Team',HAAS,FERRARI,82,82,82,89,0,0.00,'Balanced',0.17)
+astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team',AMR,MERCEDES,82,82,92,82,0,0.00,'Unbalanced',0.16)
+alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen',ALFA,FERRARI,82,82,80,82,-10,0.00,'Unbalanced',0.17)
+alphatauri = Manufacturer('Scuderia AlphaTauri',AT,HONDA,80,80,80,80,0,0.00,'Balanced',0.16)
+williams = Manufacturer('Williams Racing',WIL,MERCEDES,82,82,82,82,0,0.00,'Stiff Rear',0.19)
 manufacturers = [redbull,ferrari,mercedes,alpine,mclaren,haas,astonmartin,alfaromeo,alphatauri,williams]
 
 # Drivers
