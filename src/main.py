@@ -10,7 +10,7 @@ borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 # Please only insert valid 'GP' names, otherwise algorithm will respond with a silly error message and I haven't handle it yet :)
 # It is not actually a problem but like I said, it is not looking good to the eye.
 # You can find valid GP names at row 228th, at circuit class where the attribute is in 'location' variable in __init__(): function.
-GP = 'Sakhir' 
+GP = 'Sakhir'
 current = '2022'
 
 # Tire Supplier
@@ -795,7 +795,8 @@ def Q(circuit):
 # # #
 
 def R(circuit):
-    temp,data,temptirenamedata,tirenamedata = pd.DataFrame(), pd.DataFrame(),pd.DataFrame(),pd.DataFrame()
+    racereportfile = open(f'race-report-{circuit.location}', 'a', encoding='UTF-8')
+    data,tirenamedata = pd.DataFrame(), pd.DataFrame()
     for lap in range(1,circuit.circuit_laps+1):
         for driver in drivers:
             tire = TIRE_SETS[driver.name][0]
@@ -907,12 +908,12 @@ def R(circuit):
                             TIRE_CHART[driver.name].append(tire.title[0])
                             TIRE_USAGE[driver.name] += 1
 
-        # Lap by Lap Results (+ gap column needed!)
-        # for q in drivers:
-            # temp[q.name] = LAP_CHART[q.name]
-        # print(temp)
-        # print(borderline)
-        # ANALYZER(f'Race',W3,temp,tirenamedata,'race-chart')    
+        # Lap by Lap Report (problem: limited output!)
+        temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
+        for driver in drivers:
+            temp[driver.name], temptirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]
+        print(borderline)
+        ANALYZER(f'LAP {lap} | Race',W3,temp,temptirenamedata,'race-chart')
 
     # End of the GP | The Last Saving
     for driver in drivers:
@@ -1000,7 +1001,6 @@ print(borderline)
 # No changable weather conditions for each session.
 
 # to-do
-# lap-by-lap report.
 # real-time racing.
 # safety car.
 # safety car pit.
