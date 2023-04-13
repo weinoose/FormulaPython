@@ -3,6 +3,7 @@ from random import uniform, choice
 import numpy as np
 import pandas as pd
 from colorama import Fore, Style
+import datetime
 
 borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'
 # Season (Current) and GP Selection
@@ -251,7 +252,7 @@ le = Circuit('Le Castellet','France','T2',53,FIA(current)[0]*75.00,21,[[m,h],[s,
 hockenheim = Circuit('Hockenheim','Germany','T2',67,FIA(current)[0]*58.00,24,[[s,s,m],[s,s,h],[s,m,m]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:18 | M:26 | H:35
 imola = Circuit('Imola','Italy','T2',63,FIA(current)[0]*62.25,36,[[s,h],[s,m],[m,s]],1,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:25 | M:37 | H:50
 oyama = Circuit('Oyama','Japan','T3',67,FIA(current)[0]*61.25,24,[[s,s,m],[s,s,h],[s,m,m]],1,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:18 | M:26 | H:35
-suzuka = Circuit('Suzuka','Japan','T3',53,FIA(current)[0]*71.75,21,[[m,h],[s,s,h],[s,s,m]],1,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:16 | M:23 | H:31
+suzuka = Circuit('Suzuka','Japan','T3',53,FIA(current)[0]*71.75,21,[[m,h],[s,s,h],[s,s,m]],1,['Dry','Dry','Dry','Dump','Dump','Dump','Wet','Wet']) # S:16 | M:23 | H:31
 shanghai = Circuit('Shanghai','China','T3',56,FIA(current)[0]*76.25,24,[[m,h],[s,s,m],[s,m,s]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:18 | M:26 | H:35
 sepang = Circuit('Sepang','Malaysia','T3',56,FIA(current)[0]*75.00,24,[[m,h],[s,s,m],[s,m,s]],2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet','Wet']) # S:18 | M:26 | H:35
 austin = Circuit('Austin','United States','T3',56,FIA(current)[0]*76.75,26,[[m,h],[s,s,m],[s,m,s]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dump']) # S:19 | M:28 | H:37
@@ -365,14 +366,14 @@ class Manufacturer():
 # 0.05 sec. improvement for 1 piece of upgrade (overall)
 redbull = Manufacturer('Oracle Red Bull Racing',RB,HONDA,92,94,94,89,+5,0.00,'Unbalanced',0.20)
 ferrari = Manufacturer('Scuderia Ferrari',SF,FERRARI,90,92,94,92,0,0.00,'Stiff Front',0.15)
-mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team',MER,MERCEDES,88,88,94,88,0,0.00,'Balanced',0.18)
-alpine = Manufacturer('BWT Alpine F1 Team',ALP,RENAULT,88,88,86,86,0,0.00,'Stiff Front',0.18)
-mclaren = Manufacturer('McLaren F1 Team',MCL,MERCEDES,82,90,87,82,0,0.00,'Unbalanced',0.19)
-haas = Manufacturer('Haas F1 Team',HAAS,FERRARI,82,82,82,89,0,0.00,'Balanced',0.17)
-astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team',AMR,MERCEDES,82,82,92,82,0,0.00,'Unbalanced',0.16)
-alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen',ALFA,FERRARI,82,82,80,82,-10,0.00,'Unbalanced',0.17)
-alphatauri = Manufacturer('Scuderia AlphaTauri',AT,HONDA,80,80,80,80,0,0.00,'Balanced',0.16)
-williams = Manufacturer('Williams Racing',WIL,MERCEDES,82,82,82,82,0,0.00,'Stiff Rear',0.19)
+mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team',MER,MERCEDES,88,88,94,88,0,0.00,'Balanced',0.17)
+alpine = Manufacturer('BWT Alpine F1 Team',ALP,RENAULT,86,86,84,84,0,0.00,'Stiff Front',0.16)
+mclaren = Manufacturer('McLaren F1 Team',MCL,MERCEDES,80,88,84,80,0,0.00,'Unbalanced',0.18)
+haas = Manufacturer('Haas F1 Team',HAAS,FERRARI,80,80,80,86,0,0.00,'Balanced',0.14)
+astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team',AMR,MERCEDES,80,80,90,80,0,0.00,'Unbalanced',0.12)
+alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen',ALFA,FERRARI,80,80,77,80,-10,0.00,'Unbalanced',0.11)
+alphatauri = Manufacturer('Scuderia AlphaTauri',AT,HONDA,77,77,77,77,0,0.00,'Balanced',0.13)
+williams = Manufacturer('Williams Racing',WIL,MERCEDES,79,79,79,79,0,0.00,'Stiff Rear',0.19)
 manufacturers = [redbull,ferrari,mercedes,alpine,mclaren,haas,astonmartin,alfaromeo,alphatauri,williams]
 
 # Drivers
@@ -468,6 +469,7 @@ GRID, DNF = {}, {}
 
 def ANALYZER(session,weather,data,tirenamedata,keyword):
     teams_, names_, intervals_, gaps_, fls_, laps_, tires_ = [], [], [], [], [], [], []
+    osimhen = 0 # total time spent for the race.
 
     for i in list(data.columns):
         
@@ -506,6 +508,7 @@ def ANALYZER(session,weather,data,tirenamedata,keyword):
     for i in intervals_:
         if i == min(intervals_):
             newintervals_.append(0)
+            osimhen = i
         else:
             newintervals_.append(round(i - min(intervals_),3))
     df['INTERVAL'] = newintervals_
@@ -517,7 +520,7 @@ def ANALYZER(session,weather,data,tirenamedata,keyword):
         for w in list(df['INTERVAL']):
             the_index = list(df['INTERVAL']).index(w)
             if the_index == 0:
-                gaps_.append(0)
+                gaps_.append(osimhen)
             else:
                 gaps_.append(list(df['INTERVAL'])[the_index] - list(df['INTERVAL'])[the_index-1])
         df['GAP'] = gaps_ 
@@ -617,7 +620,15 @@ def ANALYZER(session,weather,data,tirenamedata,keyword):
             if f == 'DNF':
                 newgap.append('DNF')
             elif (list(df['GAP']).index(p)) == 0:
-                newgap.append('GAP')
+                seconds = p
+                delta = datetime.timedelta(seconds=seconds)
+                
+                hours, remainder = divmod(delta.seconds, 3600)
+                minutes, seconds = divmod(remainder, 60)
+                milliseconds = delta.microseconds // 1000
+                
+                totaltimehavespent = '{:02d}:{:02d}:{:02d}.{:03d}'.format(hours, minutes, seconds, milliseconds)
+                newgap.append(totaltimehavespent)
             else:
                 newgap.append(f'+{round(p,3)}')
         da['GAP'] = newgap
