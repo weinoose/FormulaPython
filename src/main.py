@@ -13,8 +13,6 @@ borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 GP = 'Sakhir'
 current = '2022'
 # # #
-# Lap-by-Lap Race Report: 1 is open, 0 is closed. When it's 1,the program outputs detailed race report lap-by-lap
-LBLRR = 0
 
 # Tire Supplier
 class Tyre():
@@ -791,13 +789,19 @@ def Q(circuit,session,weather):
     fls_, dls_ = list(QUALI_CLASSIFICATION['FL.']), []
     for i in fls_:
         i = i.split(':')
-        damn = float(i[0])*60 + float(i[1])
+        try:
+            damn = float(i[0])*60 + float(i[1])
+        except:
+            damn = 10000.00000
         dls_.append(damn)
     print(f'\nPole Position | {list(QUALI_CLASSIFICATION["DRIVERS"])[dls_.index(min(dls_))]} has clinched the pole position with {fls_[dls_.index(min(dls_))]} in {W2.lower()} conditions.')
 
 # # #
 racereportfile = open(f'{GP} GP Lap-by-Lap Race Report.txt','a',encoding='UTF-8')
 def R(circuit,session,weather):
+    BONUS = {}
+    for i in drivers:
+        BONUS[i.name] = []
     data,tirenamedata = pd.DataFrame(), pd.DataFrame()
     for lap in range(1,circuit.circuit_laps+1):
         for driver in drivers:
@@ -911,26 +915,39 @@ def R(circuit,session,weather):
                             TIRE_USAGE[driver.name] += 1
         
         # Lap by Lap Report with FL Correction
-        if LBLRR == 1:
-            temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
-            for driver in drivers:
-                temp[driver.name], temptirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]
-            
-            TEMP_INFO = f'{session} Session | {weather} Conditions | {CRC.location} Grand Prix — {CRC.country} | Lap {lap}/{CRC.circuit_laps}'
-            TEMP_CLASSIFICATION = ANALYZER(f'LAP {lap} | Race',temp,temptirenamedata,'race-chart')
-            
-            fls_, dls_ = list(TEMP_CLASSIFICATION['FL.']), []
-            try:
-                for i in fls_:
-                    i = i.split(':')
-                    damn = float(i[0])*60 + float(i[1])
-                    dls_.append(damn)
-                TEMP_FL_INFO = f'\nFastest Lap | {list(TEMP_CLASSIFICATION["DRIVERS"])[dls_.index(min(dls_))]} has recorded {fls_[dls_.index(min(dls_))]} on this track.'
-            except:
-                TEMP_FL_INFO = f'\nFastest Lap | No fastest lap has recorded on this track.'
-            
-            racereportfile.write(f'{TEMP_INFO}\n{TEMP_CLASSIFICATION}\n{TEMP_FL_INFO}\n{borderline}\n')
+        temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
+        for driver in drivers:
+            temp[driver.name], temptirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]
         
+        TEMP_INFO = f'{session} Session | {weather} Conditions | {CRC.location} Grand Prix — {CRC.country} | Lap {lap}/{CRC.circuit_laps}'
+        TEMP_CLASSIFICATION = ANALYZER(f'LAP {lap} | Race',temp,temptirenamedata,'race-chart')
+        
+        fls_, dls_ = list(TEMP_CLASSIFICATION['FL.']), []
+        pilots = list(TEMP_CLASSIFICATION['DRIVERS'])
+        deltas = list(TEMP_CLASSIFICATION['GAP'])
+        try:
+            for i in fls_:
+                i = i.split(':')
+                damn = float(i[0])*60 + float(i[1])
+                dls_.append(damn)
+            TEMP_FL_INFO = f'\nFastest Lap | {list(TEMP_CLASSIFICATION["DRIVERS"])[dls_.index(min(dls_))]} has recorded {fls_[dls_.index(min(dls_))]} on this track.'
+        except:
+            TEMP_FL_INFO = f'\nFastest Lap | No fastest lap has recorded on this track.'
+        
+        racereportfile.write(f'{TEMP_INFO}\n{TEMP_CLASSIFICATION}\n{TEMP_FL_INFO}\n{borderline}\n')
+
+        # Real-time racing issue.
+        """
+        for f,j in zip(pilots,deltas):
+            print(f,j[1:])
+        """
+
+        # Overtake/defence trade-off clarification.
+        BONUS = {}
+        for i in drivers:
+            BONUS[i.name] = []
+
+
     # End of the GP | The Last Saving
     for driver in drivers:
         data[driver.name], tirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]
