@@ -231,7 +231,7 @@ w = Tire('Wet',FIA(current)[4],3.6,1.260)
 
 # Circuits
 class Circuit():
-    def __init__(self,location,country,circuit_type,circuit_laps,laptime,tire_life,strategy,drs_points,weather):
+    def __init__(self,location,country,circuit_type,circuit_laps,laptime,tire_life,strategy,drs_points,weather,overtake_difficulty):
         self.location = location
         self.country = country
         self.circuit_type = circuit_type
@@ -241,46 +241,48 @@ class Circuit():
         self.strategy = strategy
         self.drs_points = drs_points
         self.weather = weather
+        self.overtake_difficulty = overtake_difficulty
 
-monza = Circuit('Monza','Italy','T1',53,FIA(current)[0]*62.50,29,[[s,h],[s,m],[m,s]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump','Wet']) # S:21 | M:31 | H:41
-jeddah = Circuit('Jeddah','Saudi Arabia','T1',50,FIA(current)[0]*70.75,16,[[s,s,m],[s,s,h],[s,m,h]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:13 | M:19 | H:24
-mexico = Circuit('México City','México','T1',71,FIA(current)[0]*60.00,42,[[s,h],[s,m],[m,s]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:28 | M:43 | H:57
-miami = Circuit('Miami','United States','T1',57,FIA(current)[0]*71.00,26,[[m,h],[s,s,m],[s,m,s]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:19 | M:28 | H:37
-melbourne = Circuit('Melbourne','Australia','T2',58,FIA(current)[0]*62.00,28,[[s,h],[s,m],[s,m,s]],4,['Dry','Dry','Dry','Dry','Dry','Dry','Dump','Wet']) # S:20 | M:30 | H:40
-montreal = Circuit('Montréal','Canada','T2',70,FIA(current)[0]*56.50,16,[[s,m,m,s],[s,m,h,s],[m,h,h]],3,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:13 | M:19 | H:24
-lusail = Circuit('Lusail','Qatar','T2',57,FIA(current)[0]*66.50,36,[[s,h],[s,m],[m,s]],1,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:25 | M:37 | H:50
-sakhir = Circuit('Sakhir','Bahrain','T2',57,FIA(current)[0]*74.50,20,[[s,s,m],[s,s,h],[s,m,h]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:16 | M:23 | H:29
-spielberg = Circuit('Spielberg','Austuria','T2',71,FIA(current)[0]*49.00,18,[[s,h,h],[m,h,h],[m,m,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:14 | M:21 | H:27
-le = Circuit('Le Castellet','France','T2',53,FIA(current)[0]*75.00,21,[[m,h],[s,s,h],[s,s,m]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump','Wet']) # S:16 | M:23 | H:31
-hockenheim = Circuit('Hockenheim','Germany','T2',67,FIA(current)[0]*58.00,24,[[s,s,m],[s,s,h],[s,m,m]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:18 | M:26 | H:35
-imola = Circuit('Imola','Italy','T2',63,FIA(current)[0]*62.25,36,[[s,h],[s,m],[m,s]],1,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:25 | M:37 | H:50
-oyama = Circuit('Oyama','Japan','T3',67,FIA(current)[0]*61.25,24,[[s,s,m],[s,s,h],[s,m,m]],1,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:18 | M:26 | H:35
-suzuka = Circuit('Suzuka','Japan','T3',53,FIA(current)[0]*71.75,21,[[m,h],[s,s,h],[s,s,m]],1,['Dry','Dry','Dry','Dump','Dump','Dump','Wet','Wet']) # S:16 | M:23 | H:31
-shanghai = Circuit('Shanghai','China','T3',56,FIA(current)[0]*76.25,24,[[m,h],[s,s,m],[s,m,s]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:18 | M:26 | H:35
-sepang = Circuit('Sepang','Malaysia','T3',56,FIA(current)[0]*75.00,24,[[m,h],[s,s,m],[s,m,s]],2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet','Wet']) # S:18 | M:26 | H:35
-austin = Circuit('Austin','United States','T3',56,FIA(current)[0]*76.75,26,[[m,h],[s,s,m],[s,m,s]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dump']) # S:19 | M:28 | H:37
-silverstone = Circuit('Silverstone','Great Britain','T3',52,FIA(current)[0]*72.00,18,[[m,h],[s,s,m],[s,m,s]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:14 | M:21 | H:27
-portimao = Circuit('Portimão','Portugal','T3',66,FIA(current)[0]*62.50,42,[[s,h],[s,m],[m,s]],1,['Dry','Dry','Dry','Dry','Dry','Dry','Dump','Wet']) # S:28 | M:43 | H:57
-nurburg = Circuit('Nurburg','Germany','T3',60,FIA(current)[0]*73.50,28,[[s,h],[s,m],[s,m,s]],1,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:20 | M:30 | H:40
-budapest = Circuit('Budapest','Hungary','T4',70,FIA(current)[0]*60.00,28,[[m,h],[s,s,m],[s,m,s]],1,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:20 | M:30 | H:40
-barcelona = Circuit('Barcelona','Spain','T4',66,FIA(current)[0]*61.25,28,[[m,h],[s,s,m],[s,m,s]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump','Wet']) # S:20 | M:30 | H:40
-zandvoort = Circuit('Zandvoort','Netherlands','T4',72,FIA(current)[0]*52.75,16,[[s,m,m,s],[s,m,h,s],[m,h,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:13 | M:19 | H:24
-istanbul = Circuit('Istanbul','Turkey','T4',58,FIA(current)[0]*67.00,20,[[s,s,m],[s,s,h],[s,m,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:16 | M:23 | H:29
-sao = Circuit('São Paulo','Brazil','T4',71,FIA(current)[0]*52.75,42,[[s,h],[s,m],[m,s]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:28 | M:43 | H:57
-yas = Circuit('Yas Island','Abu Dhabi','T5',58,FIA(current)[0]*66.25,20,[[s,s,m],[s,s,h],[s,m,h]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:16 | M:23 | H:29
-singapore = Circuit('Singapore','Singapore','T5',61,FIA(current)[0]*81.25,20,[[s,s,m],[s,s,h],[s,m,h]],3,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:16 | M:23 | H:29
-baku = Circuit('Baku','Azerbaijan','T5',51,FIA(current)[0]*84.00,21,[[m,h],[s,s,h],[s,m,m]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry']) # S:16 | M:23 | H:31
-sochi = Circuit('Sochi','Russia','T5',53,FIA(current)[0]*76.50,28,[[s,h],[s,m],[m,s]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:20 | M:30 | H:40
-valencia = Circuit('Valencia','Spain','T5',57,FIA(current)[0]*78.00,20,[[s,s,m],[s,s,h],[s,m,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet'])  # S:16 | M:23 | H:29
-monaco = Circuit('Monte-Carlo','Monaco','T6',78,FIA(current)[0]*53.75,28,[[s,s,m],[s,s,h],[s,m,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet']) # S:20 | M:30 | H:40
-india = Circuit('India','India','T7',60,FIA(current)[0]*66.50,20,[[s,s,m],[s,s,h],[s,m,h]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dump','Wet']) # S:16 | M:23 | H:29
-yeongam = Circuit('Yeongam','South Korea','T7',55,FIA(current)[0]*77.50,28,[[s,h],[s,m],[m,s]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:20 | M:30 | H:40
-spa = Circuit('Spa-Francorchamps','Belguim','T7',44,FIA(current)[0]*86.50,24,[[s,h],[s,m],[m,s]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet']) # S:18 | M:26 | H:35
+monza = Circuit('Monza','Italy','T1',53,FIA(current)[0]*62.50,29,[[s,h],[s,m],[m,s]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy') # S:21 | M:31 | H:41
+jeddah = Circuit('Jeddah','Saudi Arabia','T1',50,FIA(current)[0]*70.75,16,[[s,s,m],[s,s,h],[s,m,h]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Average') # S:13 | M:19 | H:24
+mexico = Circuit('México City','México','T1',71,FIA(current)[0]*60.00,42,[[s,h],[s,m],[m,s]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Easy') # S:28 | M:43 | H:57
+miami = Circuit('Miami','United States','T1',57,FIA(current)[0]*71.00,26,[[m,h],[s,s,m],[s,m,s]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Easy') # S:19 | M:28 | H:37
+melbourne = Circuit('Melbourne','Australia','T2',58,FIA(current)[0]*62.00,28,[[s,h],[s,m],[s,m,s]],4,['Dry','Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Hard') # S:20 | M:30 | H:40
+montreal = Circuit('Montréal','Canada','T2',70,FIA(current)[0]*56.50,16,[[s,m,m,s],[s,m,h,s],[m,h,h]],3,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Hard') # S:13 | M:19 | H:24
+lusail = Circuit('Lusail','Qatar','T2',57,FIA(current)[0]*66.50,36,[[s,h],[s,m],[m,s]],1,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Easy') # S:25 | M:37 | H:50
+sakhir = Circuit('Sakhir','Bahrain','T2',57,FIA(current)[0]*74.50,20,[[s,s,m],[s,s,h],[s,m,h]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Easy') # S:16 | M:23 | H:29
+spielberg = Circuit('Spielberg','Austuria','T2',71,FIA(current)[0]*49.00,18,[[s,h,h],[m,h,h],[m,m,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Easy') # S:14 | M:21 | H:27
+le = Circuit('Le Castellet','France','T2',53,FIA(current)[0]*75.00,21,[[m,h],[s,s,h],[s,s,m]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Easy') # S:16 | M:23 | H:31
+hockenheim = Circuit('Hockenheim','Germany','T2',67,FIA(current)[0]*58.00,24,[[s,s,m],[s,s,h],[s,m,m]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Average') # S:18 | M:26 | H:35
+imola = Circuit('Imola','Italy','T2',63,FIA(current)[0]*62.25,36,[[s,h],[s,m],[m,s]],1,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Hard') # S:25 | M:37 | H:50
+oyama = Circuit('Oyama','Japan','T3',67,FIA(current)[0]*61.25,24,[[s,s,m],[s,s,h],[s,m,m]],1,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Average') # S:18 | M:26 | H:35
+suzuka = Circuit('Suzuka','Japan','T3',53,FIA(current)[0]*71.75,21,[[m,h],[s,s,h],[s,s,m]],1,['Dry','Dry','Dry','Dump','Dump','Dump','Wet','Wet'],'Hard') # S:16 | M:23 | H:31
+shanghai = Circuit('Shanghai','China','T3',56,FIA(current)[0]*76.25,24,[[m,h],[s,s,m],[s,m,s]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Very Easy') # S:18 | M:26 | H:35
+sepang = Circuit('Sepang','Malaysia','T3',56,FIA(current)[0]*75.00,24,[[m,h],[s,s,m],[s,m,s]],2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet','Wet'],'Very Easy') # S:18 | M:26 | H:35
+austin = Circuit('Austin','United States','T3',56,FIA(current)[0]*76.75,26,[[m,h],[s,s,m],[s,m,s]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Very Easy') # S:19 | M:28 | H:37
+silverstone = Circuit('Silverstone','Great Britain','T3',52,FIA(current)[0]*72.00,18,[[m,h],[s,s,m],[s,m,s]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Very Easy') # S:14 | M:21 | H:27
+portimao = Circuit('Portimão','Portugal','T3',66,FIA(current)[0]*62.50,42,[[s,h],[s,m],[m,s]],1,['Dry','Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Average') # S:28 | M:43 | H:57
+nurburg = Circuit('Nurburg','Germany','T3',60,FIA(current)[0]*73.50,28,[[s,h],[s,m],[s,m,s]],1,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Average') # S:20 | M:30 | H:40
+budapest = Circuit('Budapest','Hungary','T4',70,FIA(current)[0]*60.00,28,[[m,h],[s,s,m],[s,m,s]],1,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Very Hard') # S:20 | M:30 | H:40
+barcelona = Circuit('Barcelona','Spain','T4',66,FIA(current)[0]*61.25,28,[[m,h],[s,s,m],[s,m,s]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Hard') # S:20 | M:30 | H:40
+zandvoort = Circuit('Zandvoort','Netherlands','T4',72,FIA(current)[0]*52.75,16,[[s,m,m,s],[s,m,h,s],[m,h,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Average') # S:13 | M:19 | H:24
+istanbul = Circuit('Istanbul','Turkey','T4',58,FIA(current)[0]*67.00,20,[[s,s,m],[s,s,h],[s,m,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Easy') # S:16 | M:23 | H:29
+sao = Circuit('São Paulo','Brazil','T4',71,FIA(current)[0]*52.75,42,[[s,h],[s,m],[m,s]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Average') # S:28 | M:43 | H:57
+midrand = Circuit('Midrand','South Africa','T4',71,FIA(current)[0]*58.50,28,[[m,h],[s,s,m],[s,m,s]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Average') # S:20 | M:30 | H:40
+yas = Circuit('Yas Island','Abu Dhabi','T5',58,FIA(current)[0]*66.25,20,[[s,s,m],[s,s,h],[s,m,h]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Average') # S:16 | M:23 | H:29
+singapore = Circuit('Singapore','Singapore','T5',61,FIA(current)[0]*81.25,20,[[s,s,m],[s,s,h],[s,m,h]],3,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Very Hard') # S:16 | M:23 | H:29
+baku = Circuit('Baku','Azerbaijan','T5',51,FIA(current)[0]*84.00,21,[[m,h],[s,s,h],[s,m,m]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Very Hard') # S:16 | M:23 | H:31
+sochi = Circuit('Sochi','Russia','T5',53,FIA(current)[0]*76.50,28,[[s,h],[s,m],[m,s]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Hard') # S:20 | M:30 | H:40
+valencia = Circuit('Valencia','Spain','T5',57,FIA(current)[0]*78.00,20,[[s,s,m],[s,s,h],[s,m,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Hard')  # S:16 | M:23 | H:29
+monaco = Circuit('Monte-Carlo','Monaco','T6',78,FIA(current)[0]*53.75,28,[[s,s,m],[s,s,h],[s,m,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Hard') # S:20 | M:30 | H:40
+india = Circuit('India','India','T7',60,FIA(current)[0]*66.50,20,[[s,s,m],[s,s,h],[s,m,h]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Easy') # S:16 | M:23 | H:29
+yeongam = Circuit('Yeongam','South Korea','T7',55,FIA(current)[0]*77.50,28,[[s,h],[s,m],[m,s]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Easy') # S:20 | M:30 | H:40
+spa = Circuit('Spa-Francorchamps','Belguim','T7',44,FIA(current)[0]*86.50,24,[[s,h],[s,m],[m,s]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Easy') # S:18 | M:26 | H:35
 
 circuits = [monza,jeddah,mexico,miami,
             melbourne,montreal,lusail,sakhir,spielberg,le,hockenheim,imola,
             oyama,suzuka,shanghai,sepang,austin,silverstone,portimao,nurburg,
-            budapest,barcelona,zandvoort,istanbul,sao,
+            budapest,barcelona,zandvoort,istanbul,sao,midrand,
             yas,singapore,baku,sochi,valencia,
             monaco,
             yeongam,india,spa]
