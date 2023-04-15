@@ -5,13 +5,16 @@ import pandas as pd
 from colorama import Fore, Style
 import datetime
 
-borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'
+borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'
 # Season (Current) and GP Selection
 # Please only insert valid 'GP' names, otherwise algorithm will respond with a silly error message and I haven't handle it yet :)
 # It is not actually a problem but like I said, it is not looking good to the eye.
 # You can find valid GP names at row 228th, at circuit class where the attribute is in 'location' variable in __init__(): function.
 GP = 'Sakhir'
 current = '2022'
+# # #
+# Lap-by-Lap Race Report: 1 is open, 0 is closed. When it's 1,the program outputs detailed race report lap-by-lap
+LBLRR = 0
 
 # Tire Supplier
 class Tyre():
@@ -467,7 +470,7 @@ print(f'{CRC.location} GP — {CRC.country} | FP forecast: {W1} | Qualifying for
 
 GRID, DNF = {}, {}
 
-def ANALYZER(session,weather,data,tirenamedata,keyword):
+def ANALYZER(session,data,tirenamedata,keyword):
     teams_, names_, intervals_, gaps_, fls_, laps_, tires_ = [], [], [], [], [], [], []
     osimhen = 0 # total time spent for the race.
 
@@ -573,7 +576,6 @@ def ANALYZER(session,weather,data,tirenamedata,keyword):
         df = df.drop(axis=1, columns=['FL. LAP','FL. TIRE'])
     for i in list(df.columns):
         da[i] = list(df[i])
-    print(f'{session} Session | {weather} Conditions | {CRC.location} Grand Prix — {CRC.country} | {CRC.circuit_laps} Laps')
 
     # Saving Grid Positions into to the Chart
     if session == 'Qualifying':
@@ -633,23 +635,11 @@ def ANALYZER(session,weather,data,tirenamedata,keyword):
                 newgap.append(f'+{round(p,3)}')
         da['GAP'] = newgap
 
-    print(da)
-
-    # After GP FL Message Correction
-    if keyword == 'race-chart':
-        try:
-            topg = min(fls_)
-            integer0 = topg//60
-            decimal0 = str(topg-(integer0*60))[0:6]
-            actualtopg = str(int(integer0)) +':'+ decimal0
-            fldriver = list(da['DRIVERS'])[list(da['FL.']).index(actualtopg)]
-            print(f'\nFastest Lap | {fldriver} has recorded {actualtopg} on this track.')
-        except:
-            print(f'\nFastest Lap | No fastest lap has recorded on this track.')
+    return da
 
 # # #
 
-def FP(circuit,tireset,stage):
+def FP(circuit,tireset,stage,session,weather):
     data,tirenamedata,c = pd.DataFrame(),pd.DataFrame(),1
     for driver in drivers:
         if W1 == 'Dry':
@@ -707,11 +697,12 @@ def FP(circuit,tireset,stage):
                 FP3RESULT[driver.name] = uniform(9,18)           
 
     # End of the Free Practice Session
-    ANALYZER(f'Free Practice {stage}',W1,data,tirenamedata,'quali-chart')
+    print(f'{session} Session | {weather} Conditions | {CRC.location} Grand Prix — {CRC.country}')
+    print(ANALYZER(None,data,tirenamedata,'quali-chart'))
 
 # # #
 
-def Q(circuit):
+def Q(circuit,session,weather):
     data,tirenamedata = pd.DataFrame(),pd.DataFrame()
     c = 0
     while c < 3:
@@ -790,12 +781,21 @@ def Q(circuit):
         c += 1
     
     # End of the Qualifying
-    ANALYZER('Qualifying',W2,data,tirenamedata,'quali-chart')
+    print(f'{session} Session | {weather} Conditions | {CRC.location} Grand Prix — {CRC.country}')
+    QUALI_CLASSIFICATION = ANALYZER('Qualifying',data,tirenamedata,'quali-chart')
+    print(QUALI_CLASSIFICATION)
+
+    # FL Correction
+    fls_, dls_ = list(QUALI_CLASSIFICATION['FL.']), []
+    for i in fls_:
+        i = i.split(':')
+        damn = float(i[0])*60 + float(i[1])
+        dls_.append(damn)
+    print(f'\nPole Position | {list(QUALI_CLASSIFICATION["DRIVERS"])[dls_.index(min(dls_))]} has clinched the pole position with {fls_[dls_.index(min(dls_))]} in {W2.lower()} conditions.')
 
 # # #
-
-def R(circuit):
-    racereportfile = open(f'race-report-{circuit.location}', 'a', encoding='UTF-8')
+racereportfile = open(f'{GP} GP Lap-by-Lap Race Report.txt','a',encoding='UTF-8')
+def R(circuit,session,weather):
     data,tirenamedata = pd.DataFrame(), pd.DataFrame()
     for lap in range(1,circuit.circuit_laps+1):
         for driver in drivers:
@@ -907,19 +907,47 @@ def R(circuit):
                             LAP_CHART[driver.name].append(current_laptime)
                             TIRE_CHART[driver.name].append(tire.title[0])
                             TIRE_USAGE[driver.name] += 1
-
-        # Lap by Lap Report (problem: limited output!)
-        temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
-        for driver in drivers:
-            temp[driver.name], temptirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]
-        print(borderline)
-        ANALYZER(f'LAP {lap} | Race',W3,temp,temptirenamedata,'race-chart')
-
+        
+        # Lap by Lap Report with FL Correction
+        if LBLRR == 1:
+            temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
+            for driver in drivers:
+                temp[driver.name], temptirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]
+            
+            TEMP_INFO = f'{session} Session | {weather} Conditions | {CRC.location} Grand Prix — {CRC.country} | Lap {lap}/{CRC.circuit_laps}'
+            TEMP_CLASSIFICATION = ANALYZER(f'LAP {lap} | Race',temp,temptirenamedata,'race-chart')
+            
+            fls_, dls_ = list(TEMP_CLASSIFICATION['FL.']), []
+            try:
+                for i in fls_:
+                    i = i.split(':')
+                    damn = float(i[0])*60 + float(i[1])
+                    dls_.append(damn)
+                TEMP_FL_INFO = f'\nFastest Lap | {list(TEMP_CLASSIFICATION["DRIVERS"])[dls_.index(min(dls_))]} has recorded {fls_[dls_.index(min(dls_))]} on this track.'
+            except:
+                TEMP_FL_INFO = f'\nFastest Lap | No fastest lap has recorded on this track.'
+            
+            racereportfile.write(f'{TEMP_INFO}\n{TEMP_CLASSIFICATION}\n{TEMP_FL_INFO}\n{borderline}\n')
+        
     # End of the GP | The Last Saving
     for driver in drivers:
         data[driver.name], tirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]
     print(borderline)
-    ANALYZER(f'Race',W3,data,tirenamedata,'race-chart')
+    print(f'{session} Session | {weather} Conditions | {CRC.location} Grand Prix — {CRC.country} | {CRC.circuit_laps} Laps')
+    
+    RACE_CLASSIFICATION = ANALYZER(f'Race',data,tirenamedata,'race-chart')
+    print(RACE_CLASSIFICATION)
+    
+    # FL Correction
+    fls_, dls_ = list(RACE_CLASSIFICATION['FL.']), []
+    try:
+        for i in fls_:
+            i = i.split(':')
+            damn = float(i[0])*60 + float(i[1])
+            dls_.append(damn)
+        print(f'\nFastest Lap | {list(RACE_CLASSIFICATION["DRIVERS"])[dls_.index(min(dls_))]} has recorded {fls_[dls_.index(min(dls_))]} on this track.')
+    except:
+        print(f'\nFastest Lap | No fastest lap has recorded on this track.')
 
 # # # Control Room
 
@@ -933,11 +961,11 @@ for i in drivers:
     FP3STRATEGY[i.name] = CRC.strategy[2]
 
 # Free Practice Sessions
-FP(CRC,FP1STRATEGY,1)
+FP(CRC,FP1STRATEGY,1,'Free Practice 1',W1)
 print(borderline)
-FP(CRC,FP2STRATEGY,2)
+FP(CRC,FP2STRATEGY,2,'Free Practice 2',W1)
 print(borderline)
-FP(CRC,FP3STRATEGY,3)
+FP(CRC,FP3STRATEGY,3,'Free Practice 3',W1)
 print(borderline)
 
 # Dictionary Definitions
@@ -947,7 +975,7 @@ for i in drivers:
     DNF[i.name] = [None]
 
 # Qualifying Session
-Q(CRC)
+Q(CRC,'Qualifying',W2)
 print(borderline)
 
 # Dictionary Definitions
@@ -992,7 +1020,7 @@ elif W3 == 'Wet':
             TIRE_SETS[i.name].append(q)
 
 # Race Session
-R(CRC)
+R(CRC,'Race',W3)
 print(borderline)
 
 # # #
@@ -1002,5 +1030,4 @@ print(borderline)
 
 # to-do
 # real-time racing.
-# safety car.
-# safety car pit.
+# safety car & safety car pit.
