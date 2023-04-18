@@ -373,9 +373,9 @@ mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team',MER,MERCEDES,88,88,94,88
 alpine = Manufacturer('BWT Alpine F1 Team',ALP,RENAULT,86,86,84,84,0,0.00,'Stiff Front',0.16)
 mclaren = Manufacturer('McLaren F1 Team',MCL,MERCEDES,80,88,84,80,0,0.00,'Unbalanced',0.18)
 haas = Manufacturer('Haas F1 Team',HAAS,FERRARI,80,80,80,86,0,0.00,'Balanced',0.14)
-astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team',AMR,MERCEDES,80,80,90,80,0,0.00,'Unbalanced',0.12)
-alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen',ALFA,FERRARI,80,80,77,80,-10,0.00,'Unbalanced',0.11)
-alphatauri = Manufacturer('Scuderia AlphaTauri',AT,HONDA,77,77,77,77,0,0.00,'Balanced',0.13)
+astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team',AMR,MERCEDES,82,82,80,80,0,0.00,'Unbalanced',0.11)
+alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen',ALFA,FERRARI,80,80,75,80,-10,0.00,'Unbalanced',0.13)
+alphatauri = Manufacturer('Scuderia AlphaTauri',AT,HONDA,77,77,77,77,0,0.00,'Balanced',0.12)
 williams = Manufacturer('Williams Racing',WIL,MERCEDES,79,79,79,79,0,0.00,'Stiff Rear',0.19)
 manufacturers = [redbull,ferrari,mercedes,alpine,mclaren,haas,astonmartin,alfaromeo,alphatauri,williams]
 
@@ -914,6 +914,9 @@ def R(circuit,session,weather):
                             TIRE_CHART[driver.name].append(tire.title[0])
                             TIRE_USAGE[driver.name] += 1
         
+        # Real-time Racing Time Assign
+        pass
+
         # Lap by Lap Report with FL Correction
         temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
         for driver in drivers:
@@ -936,11 +939,40 @@ def R(circuit,session,weather):
         
         racereportfile.write(f'{TEMP_INFO}\n{TEMP_CLASSIFICATION}\n{TEMP_FL_INFO}\n{borderline}\n')
 
-        # Real-time racing issue.
-        """
+        # Real-time Racing Again
+        pass
+
+        driver_names = []
+        attack_gap = []
         for f,j in zip(pilots,deltas):
-            print(f,j[1:])
-        """
+            try:
+                dolores = float(j[1:]) + 1 - 1
+            except:
+                dolores = 10000.00000
+            
+            driver_names.append(f)
+            attack_gap.append(dolores)
+
+        for j,i in zip(driver_names,attack_gap):
+            attacker = j
+            defender = driver_names[driver_names.index(j)-1]
+            gap_in_front = i
+            if lap > 2:
+                if gap_in_front < 1.0:
+                    for L in drivers:
+                        if L.name == attacker:
+                            drs_advantage = ((-1.0)*((0.250) + L.team.RW/200))/1.5
+                    BONUS[attacker].append(drs_advantage)
+                    new_gap = gap_in_front + drs_advantage
+                    if new_gap < 0: # DRS Pass
+                        BONUS[defender].append(0.250)
+                    else: # Normal Overtake
+                        pass
+            else:
+                if gap_in_front < 0.4: # Normal Overtake
+                    pass
+        
+        # print(BONUS)
 
         # Overtake/defence trade-off clarification.
         BONUS = {}
@@ -959,14 +991,14 @@ def R(circuit,session,weather):
     
     # FL Correction
     fls_, dls_ = list(RACE_CLASSIFICATION['FL.']), []
-    try:
-        for i in fls_:
+    for i in fls_:
+        try:
             i = i.split(':')
-            damn = float(i[0])*60 + float(i[1])
-            dls_.append(damn)
-        print(f'\nFastest Lap | {list(RACE_CLASSIFICATION["DRIVERS"])[dls_.index(min(dls_))]} has recorded {fls_[dls_.index(min(dls_))]} on this track.')
-    except:
-        print(f'\nFastest Lap | No fastest lap has recorded on this track.')
+        except:
+            i = 10000.00000
+        damn = float(i[0])*60 + float(i[1])
+        dls_.append(damn)
+    print(f'\nFastest Lap | {list(RACE_CLASSIFICATION["DRIVERS"])[dls_.index(min(dls_))]} has recorded {fls_[dls_.index(min(dls_))]} on this track.')
 
 # # # Control Room
 
