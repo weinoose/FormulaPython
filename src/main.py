@@ -957,6 +957,18 @@ def R(circuit,session,weather):
             attacker = j
             defender = driver_names[driver_names.index(j)-1]
             gap_in_front = i
+
+            if circuit.overtake_difficulty == 'Very Hard':
+                offset = 5
+            elif circuit.overtake_difficulty == 'Hard':
+                offset = 7.5
+            elif circuit.overtake_difficulty == 'Average':
+                offset = 12.5
+            elif circuit.overtake_difficulty == 'Easy':
+                offset = 17.5
+            elif circuit.overtake_difficulty == 'Very Easy':
+                offset = 25
+
             if lap > 2:
                 if gap_in_front < 1.0:
                     for L in drivers:
@@ -969,7 +981,7 @@ def R(circuit,session,weather):
                     else: # Normal Overtake
                         pass
             else:
-                if gap_in_front < 0.4: # Normal Overtake
+                if gap_in_front < 1.0: # Normal Overtake
                     pass
         
         # print(BONUS)
