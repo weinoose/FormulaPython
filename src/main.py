@@ -21,7 +21,8 @@ class Tyre():
         self.pace = pace
         self.durability = durability
 
-bridgestone = Tyre('Bridgestone',1.3,5.3)
+bridgestone = Tyre('Bridgestone',1.3,3.3)
+michelin = Tyre('Bridgestone',1.6,3.6)
 pirelli = Tyre('Pirelli',-0.3,-1.3)
 
 # Fuel
@@ -36,8 +37,10 @@ petronas = Fuel('Petronas',-0.0,-0.0)
 aramco = Fuel('Aramco',+0.3,+3.3)
 
 # FIA: Chassis Design / DRS / ERS / Logistics Sponsor / Tire Supplier / Fuel Supplier / Min. Weight
-def FIA(C): 
-    if C == '2005':
+def FIA(C):
+    if C == '2000':
+        return [1.06500,False,False,'DHL',michelin,shell,585]
+    elif C == '2005':
         return [1.06500,False,False,'DHL',bridgestone,shell,585]
     elif C == '2006':
         return [1.08000,False,False,'DHL',bridgestone,shell,585]
@@ -66,7 +69,12 @@ FAILURES = ['Engine','Gearbox','Clutch','Driveshaft','Halfshaft','Throttle','Bra
             'Transmission','Alternator','Turbocharger','Cooling','Engine','Engine','Engine','Engine','Engine','Engine',
             'Engine','Engine','Engine','Engine','Engine']
 
+MECHANICALS = ['6th to 8th Gears','7th and 8th Gears','8th Gear','Transmission',
+               'MGU-K','MGU-H','ERS Storing System','ERS Deploy System',
+               'Engine Cooling','Brake Cooling']
+
 ERRORS = ['Spun-off','Went through Barriers','Damaged his Suspension']
+
 
 # Tires
 class Tire():
@@ -829,11 +837,19 @@ def R(circuit,session,weather):
                 TIRE_USAGE[driver.name] += 0
             else:
                 if mechanic_failure_odd == True:
-                    print(f'{Fore.RED}DNF | Lap {lap} | {driver.name} has forced to retire due to {choice(FAILURES)} issue. Disaster for {driver.team.title}!{Style.RESET_ALL}')
-                    LAP_CHART[driver.name].append((circuit.laptime + 5)*2)
-                    TIRE_CHART[driver.name].append(tire.title[0])
-                    TIRE_USAGE[driver.name] += 0
-                    DNF[driver.name].append(True)
+                    the_odd = uniform(0.1,100.1)
+                    if the_odd < 25.1:
+                        print(f'{Fore.YELLOW}INC | Lap {lap} | {driver.name} has an issue. He has lost the {choice(MECHANICALS)}! Disaster for {driver.team.title}!{Style.RESET_ALL}')
+                        LAP_CHART[driver.name].append(current_laptime + uniform(1.750,5.750))
+                        TIRE_CHART[driver.name].append(tire.title[0])
+                        TIRE_USAGE[driver.name] += 1
+                        MECHANICAL[driver.name].append(True)
+                    else:
+                        print(f'{Fore.RED}DNF | Lap {lap} | {driver.name} has forced to retire due to {choice(FAILURES)} issue. Disaster for {driver.team.title}!{Style.RESET_ALL}')
+                        LAP_CHART[driver.name].append((circuit.laptime + 5)*2)
+                        TIRE_CHART[driver.name].append(tire.title[0])
+                        TIRE_USAGE[driver.name] += 0
+                        DNF[driver.name].append(True)
                 elif driver_error_odd == True:
                     kachow = uniform(0.1,100.1)
                     if kachow > 35.5:
@@ -910,7 +926,10 @@ def R(circuit,session,weather):
                             else:
                                 TIRE_USAGE[driver.name] += 5
                         else:
-                            LAP_CHART[driver.name].append(current_laptime)
+                            if len(MECHANICAL[driver.name]) > 1:
+                                LAP_CHART[driver.name].append(current_laptime + uniform(1.750,5.750))
+                            else:
+                                LAP_CHART[driver.name].append(current_laptime)
                             TIRE_CHART[driver.name].append(tire.title[0])
                             TIRE_USAGE[driver.name] += 1
         
@@ -1049,6 +1068,7 @@ TIRE_USAGE = {}
 TIRE_SETS = {}
 BOX = {}
 DNF = {}
+MECHANICAL = {}
 
 for i in drivers:
     DNF[i.name] = [None]
@@ -1057,6 +1077,7 @@ for i in drivers:
     LAP_CHART[i.name] = []
     TIRE_CHART[i.name] = []
     TIRE_SETS[i.name] = []
+    MECHANICAL[i.name] = []
 
 # Strategy Plannings
 if W3 == 'Dry':
@@ -1090,7 +1111,9 @@ print(borderline)
 # Missing Attribitues for v1.0
 # No tire set limitation for each weekend.
 # No changable weather conditions for each session.
+# No car sequencing behind safety car, only the delta limitation.
 
 # to-do
-# real-time racing.
 # safety car & safety car pit.
+# real-time racing.
+# time correction for all-years / all-circuits.
