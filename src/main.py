@@ -69,7 +69,7 @@ FAILURES = ['Engine','Gearbox','Clutch','Driveshaft','Halfshaft','Throttle','Bra
             'Transmission','Alternator','Turbocharger','Cooling','Engine','Engine','Engine','Engine','Engine','Engine',
             'Engine','Engine','Engine','Engine','Engine']
 
-MECHANICALS = ['6th to 8th Gears','7th and 8th Gears','8th Gear','Transmission',
+MECHANICALS = ['6th to 8th Gears','7th and 8th Gears','8th Gear','Gearing',
                'MGU-K','MGU-H','ERS Storing System','ERS Deploy System',
                'Engine Cooling','Brake Cooling']
 
@@ -210,7 +210,10 @@ class Tire():
         if driver.style != driver.team.style:
             CAR_DRIVER_CHEMISTRY = 0
         else:
-            CAR_DRIVER_CHEMISTRY = uniform(0.0501,0.1001)*(-1.0)*2.175
+            if mode[0] == 'saturday':
+                CAR_DRIVER_CHEMISTRY = uniform(0.025,0.125)*(-1.0)
+            else:
+                CAR_DRIVER_CHEMISTRY = uniform(0.075,0.250)*(-1.0)
 
         CAR_WEIGHT = (((FIA(current)[6] + driver.team.weight)*0.03)/1)
         CAR_UPGRADE = driver.team.concept
@@ -927,11 +930,11 @@ def R(circuit,session,weather):
                                 TIRE_USAGE[driver.name] += 5
                         else:
                             if len(MECHANICAL[driver.name]) > 1:
-                                LAP_CHART[driver.name].append(current_laptime + uniform(1.750,5.750))
+                                LAP_CHART[driver.name].append(current_laptime + uniform(2.500,7.500))
                             else:
                                 LAP_CHART[driver.name].append(current_laptime)
-                            TIRE_CHART[driver.name].append(tire.title[0])
-                            TIRE_USAGE[driver.name] += 1
+                                TIRE_CHART[driver.name].append(tire.title[0])
+                                TIRE_USAGE[driver.name] += 1
         
         # Real-time Racing Time Assign
         pass
@@ -977,33 +980,99 @@ def R(circuit,session,weather):
             defender = driver_names[driver_names.index(j)-1]
             gap_in_front = i
 
-            if circuit.overtake_difficulty == 'Very Hard':
-                offset = 5
-            elif circuit.overtake_difficulty == 'Hard':
-                offset = 7.5
-            elif circuit.overtake_difficulty == 'Average':
-                offset = 12.5
-            elif circuit.overtake_difficulty == 'Easy':
-                offset = 17.5
-            elif circuit.overtake_difficulty == 'Very Easy':
-                offset = 25
+            for L in drivers:
+                if L.name == attacker:
+                    attacker_obj = L
 
-            if lap > 2:
-                if gap_in_front < 1.0:
-                    for L in drivers:
-                        if L.name == attacker:
-                            drs_advantage = ((-1.0)*((0.250) + L.team.RW/200))/1.5
-                    BONUS[attacker].append(drs_advantage)
-                    new_gap = gap_in_front + drs_advantage
-                    if new_gap < 0: # DRS Pass
-                        BONUS[defender].append(0.250)
-                    else: # Normal Overtake
-                        pass
-            else:
-                if gap_in_front < 1.0: # Normal Overtake
+            for K in drivers:
+                if K.name == defender:
+                    defender_obj = K
+
+            drs_advantage = (((-1.0)*((0.250) + attacker_obj.team.RW/200))/1.5)
+
+            if circuit.overtake_difficulty == 'Very Hard':
+                offset = 7.5
+            elif circuit.overtake_difficulty == 'Hard':
+                offset = 12.5
+            elif circuit.overtake_difficulty == 'Average':
+                offset = 22.5
+            elif circuit.overtake_difficulty == 'Easy':
+                offset = 37.5
+            elif circuit.overtake_difficulty == 'Very Easy':
+                offset = 50
+            
+            ACCIDENT = abs((uniform(0,50) + attacker_obj.attack) - (uniform(0,50) + defender_obj.defence))
+            
+            if (ACCIDENT <= 0.25) and (uniform(0,100) <= 25.5):
+                INCIDENT = choice(['DOUBLE DNF','DEFENDER DNF & ATTACKER DAMAGED','ATTACKER DNF & ATTACKER DAMAGED'
+                                   'DOUBLE DAMAGED','DEFENDER CLEAR & ATTACKER DAMAGED','ATTACKER CLEAR & ATTACKER DAMAGED',
+                                   'DEFENDER DNF & ATTACKER CLEAR','ATTACKER DNF & DEFENDER CLEAR'])
+                
+                PENALTY = choice(['ATTACKER ONLY','DEFENDER ONLY',None])
+                
+                if INCIDENT == 'DOUBLE DNF':
+                    print(f'{Fore.ORANGE}DNF | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! THEY ARE BOTH OUT!.{Style.RESET_ALL}')
+                elif INCIDENT == 'DEFENDER DNF & ATTACKER DAMAGED':
                     pass
-        
-        # print(BONUS)
+                elif INCIDENT == 'ATTACKER DNF & ATTACKER DAMAGED':
+                    pass
+                elif INCIDENT == 'DOUBLE DAMAGED':
+                    pass
+                elif INCIDENT == 'DEFENDER CLEAR & ATTACKER DAMAGED':
+                    pass
+                elif INCIDENT == 'ATTACKER CLEAR & ATTACKER DAMAGED':
+                    pass
+                elif INCIDENT == 'DEFENDER DNF & ATTACKER CLEAR':
+                    pass
+                elif INCIDENT == 'ATTACKER DNF & DEFENDER CLEAR':
+                    pass
+
+                if PENALTY == 'ATTACKER ONLY':
+                    pass
+                elif PENALTY == 'DEFENDER ONLY':
+                    pass
+                else:
+                    pass
+
+            else:
+                if FIA(current)[1] == True:
+                    if lap > 2:
+                        if gap_in_front < 1.0:
+                            BONUS[attacker].append(drs_advantage)
+                            new_gap = gap_in_front + drs_advantage
+                            if circuit.drs_points >= uniform(0,5):
+                                if new_gap < 0: # DRS Pass
+                                    BONUS[defender].append(0.250)
+                                else: # Normal Overtake
+                                    if uniform(0,50) + attacker_obj.attack >= uniform(0,50) + defender_obj.defence:
+                                        if uniform(0,100) < offset:
+                                            BONUS[attacker].append(0.450)
+                                            BONUS[defender].append(1.250)
+                                        else:
+                                            BONUS[attacker].append(0.5 + drs_advantage*(-1.0))
+                                            BONUS[defender].append(0.750)
+                                    else:
+                                        BONUS[attacker].append(0.5 + drs_advantage*(-1.0))
+                                        BONUS[defender].append(0.750)
+                            else:
+                                BONUS[attacker].append(0.5 + drs_advantage*(-1.0))
+                                BONUS[defender].append(0.750)
+                else:
+                    if gap_in_front < 1.0: # Normal Overtake
+                        if (uniform(0,100) < offset) and (((attacker_obj.attack/100)) > gap_in_front):
+                            if uniform(0,50) + attacker_obj.attack >= uniform(0,50) + defender_obj.defence:
+                                BONUS[attacker].append(0.450)
+                                BONUS[defender].append(1.250)
+                            else:
+                                BONUS[attacker].append(0.5 + drs_advantage*(-1.0))
+                                BONUS[defender].append(0.750)            
+                        else:
+                            BONUS[attacker].append(0.5 + drs_advantage*(-1.0))
+                            BONUS[defender].append(0.750)
+
+        # trade-off happening.
+        for i in BONUS:
+            LAP_CHART[i][-1] = sum(BONUS[i])+LAP_CHART[i][-1]
 
         # Overtake/defence trade-off clarification.
         BONUS = {}
@@ -1114,6 +1183,6 @@ print(borderline)
 # No car sequencing behind safety car, only the delta limitation.
 
 # to-do
+# 1005. line: penalty logic, first lap incident odds are the highest and do the rest of it...
 # safety car & safety car pit.
-# real-time racing.
 # time correction for all-years / all-circuits.
