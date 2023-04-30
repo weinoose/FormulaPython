@@ -859,40 +859,30 @@ def R(circuit,session,weather):
                         TIRE_USAGE[driver.name] += 0
                         DNF[driver.name].append(True)
                     else:
-                        if W3 != 'Dry':
-                            TIRE_USAGE[driver.name] += 5
-                            LAP_CHART[driver.name].append(current_laptime + uniform(19.01,59.99))
-                            TIRE_CHART[driver.name].append(tire.title[0])
-                            if W3 == 'Dump':
-                                TIRE_SETS[driver.name].append(inter)
-                            elif W3 == 'Wet':
-                                TIRE_SETS[driver.name].append(w)
-                            print(f'{Fore.YELLOW}INC | Lap {lap} | Oh, no! {driver.name} has lost control and crushed into his front-wing. He is willing to box!{Style.RESET_ALL}')
-                            BOX[driver.name].append(True)
-                        else:
-                            TIRE_USAGE[driver.name] += 5
-                            LAP_CHART[driver.name].append(current_laptime + uniform(19.01,39.99))
-                            TIRE_CHART[driver.name].append(tire.title[0])
-                            TIRE_SETS[driver.name].append(s)
-                            print(f'{Fore.YELLOW}INC | Lap {lap} | Oh, no! {driver.name} has lost control and crushed into his front-wing. He is willing to box!{Style.RESET_ALL}')
-                            BOX[driver.name].append(True)
+                        TIRE_USAGE[driver.name] += 5
+                        LAP_CHART[driver.name].append(current_laptime + uniform(19.01,39.99))
+                        TIRE_CHART[driver.name].append(tire.title[0])
+                        TIRE_SETS[driver.name].append(s)
+                        print(f'{Fore.YELLOW}INC | Lap {lap} | Oh, no! {driver.name} has lost control and crushed into his front-wing. He is willing to box!{Style.RESET_ALL}')
+                        BOX[driver.name].append(True)
                 else:
                     if len(BOX[driver.name]) > 1:
-                        if len(TIRE_SETS[driver.name]) == 1:
-                            LAP_CHART[driver.name].append(current_laptime)
-                            TIRE_CHART[driver.name].append(tire.title[0])
-                            TIRE_USAGE[driver.name] += 1
+                        if W3 == 'Dump':
+                            TIRE_SETS[driver.name].append(inter)
+                        elif W3 == 'Wet':
+                            TIRE_SETS[driver.name].append(w)
                         else:
-                            TIRE_USAGE[driver.name] = 0
-                            TIRE_SETS[driver.name].pop(0)
-                            tire = TIRE_SETS[driver.name][0]
-                            pit_stop = round(driver.team.crew.PIT() + 6.5,3)
-                            print(f'PIT | Lap {lap} | Pit-stop for {driver.team.title}! {pit_stop} secs. for {driver.name}')
-                            LAP_CHART[driver.name].append(current_laptime + pit_stop + 20)
-                            TIRE_CHART[driver.name].append(tire.title[0])
-                            TIRE_USAGE[driver.name] += 1
-                            BOX[driver.name].clear()
-                            BOX[driver.name].append(None)
+                            TIRE_SETS[driver.name].append(s)
+                        TIRE_USAGE[driver.name] = 0
+                        TIRE_SETS[driver.name].pop(0)
+                        tire = TIRE_SETS[driver.name][0]
+                        pit_stop = round(driver.team.crew.PIT() + 6.5,3)
+                        print(f'PIT | Lap {lap} | Pit-stop for {driver.team.title}! {pit_stop} secs. for {driver.name}')
+                        LAP_CHART[driver.name].append(current_laptime + pit_stop + 20)
+                        TIRE_CHART[driver.name].append(tire.title[0])
+                        TIRE_USAGE[driver.name] += 1
+                        BOX[driver.name].clear()
+                        BOX[driver.name].append(None)
                     elif tire_left < 25:
                         if len(TIRE_SETS[driver.name]) == 1:
                             LAP_CHART[driver.name].append(current_laptime)
@@ -1132,11 +1122,13 @@ def R(circuit,session,weather):
             else:
                 dls_.append(float(i.split(':')[0])*60 + float(i.split(':')[1]))
         TEMP_FL_INFO = f'\nFastest Lap | {list(TEMP_CLASSIFICATION["DRIVERS"])[dls_.index(min(dls_))]} has recorded {fls_[dls_.index(min(dls_))]} on this track.'
-
         racereportfile.write(f'{TEMP_INFO}\n{TEMP_CLASSIFICATION}\n{TEMP_FL_INFO}\n{borderline}\n')
 
-    # # # END OF THE GP
+        # # # END OF THE LAP
+        # Safety Car Update
+        SAFETY_CAR.append(0)
 
+    # # # END OF THE GP
     # Adding Penalties
     for i in drivers:
         LAP_CHART[i.name][-1] += sum(PENALTY[i.name])
