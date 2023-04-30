@@ -38,9 +38,7 @@ aramco = Fuel('Aramco',+0.3,+3.3)
 
 # FIA: Chassis Design / DRS / ERS / Logistics Sponsor / Tire Supplier / Fuel Supplier / Min. Weight
 def FIA(C):
-    if C == '2000':
-        return [1.06500,False,False,'DHL',michelin,shell,585]
-    elif C == '2005':
+    if C == '2005':
         return [1.06500,False,False,'DHL',bridgestone,shell,585]
     elif C == '2006':
         return [1.08000,False,False,'DHL',bridgestone,shell,585]
@@ -384,14 +382,13 @@ alpine = Manufacturer('BWT Alpine F1 Team',ALP,RENAULT,86,86,84,84,0,0.00,'Stiff
 mclaren = Manufacturer('McLaren F1 Team',MCL,MERCEDES,80,88,84,80,0,0.00,'Unbalanced',0.18)
 alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen',ALFA,FERRARI,77,77,82,82,-10,0.00,'Unbalanced',0.13)
 haas = Manufacturer('Haas F1 Team',HAAS,FERRARI,77,77,77,82,0,0.00,'Balanced',0.14)
-astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team',AMR,MERCEDES,77,80,82,77,0,0.00,'Unbalanced',0.11)
+astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team',AMR,MERCEDES,82,82,77,75,0,0.00,'Unbalanced',0.11)
 alphatauri = Manufacturer('Scuderia AlphaTauri',AT,HONDA,75,75,77,75,0,0.00,'Balanced',0.12)
 williams = Manufacturer('Williams Racing',WIL,MERCEDES,77,77,77,77,0,0.00,'Stiff Rear',0.19)
 manufacturers = [redbull,ferrari,mercedes,alpine,mclaren,alfaromeo,haas,astonmartin,alphatauri,williams]
-
 # Drivers
 class Driver():
-    def __init__(self,team,name,nationality,number,wet,pace,apex,smoothness,adaptability,consistency,fitness,attack,defence,start,favorite,style):
+    def __init__(self,team,name,nationality,number,wet,pace,apex,smoothness,adaptability,consistency,fitness,aggression,attack,defence,start,favorite,style):
         self.team = team
         self.name = name
         self.nationality = nationality
@@ -403,6 +400,7 @@ class Driver():
         self.adaptability = adaptability
         self.consistency = consistency
         self.fitness = fitness
+        self.aggression = aggression
         self.attack = attack
         self.defence = defence
         self.start = start
@@ -421,26 +419,26 @@ class Driver():
         else:
             return 0
 
-mv1 = Driver(redbull,'Max Verstappen','NED',1,96,94,94,92,98,98,98,96,92,84,['México City','Zandvoort','Spielberg','Imola','Spa-Francorchamps'],'Unbalanced')
-cl16 = Driver(ferrari,'Charles Leclerc','MNK',16,80,96,94,86,84,94,94,86,82,90,['Monte-Carlo','Spa-Francorchamps','Spielberg','Melbourne','Sakhir'],'Stiff Front')
-gr63 = Driver(mercedes,'George Russell','GBR',63,80,94,94,88,88,90,96,86,86,86,[],'Balanced')
-lh44 = Driver(mercedes,'Lewis Hamilton','GBR',44,94,94,92,94,94,92,88,92,88,94,['Silverstone','Budapest','São Paulo','Montréal','Yas Island'],'Balanced')
-ln4 = Driver(mclaren,'Lando Norris','GBR',4,92,92,92,92,88,90,90,81,81,84,['Spielberg','Sakhir'],'Balanced')
-sv5 = Driver(astonmartin,'Sebastian Vettel','GER',5,94,92,90,90,86,90,94,91,92,92,['Singapore','India','Suzuka','Sepang','Valencia'],'Stiff Rear')
-fa14 = Driver(alpine,'Fernando Alonso','ESP',14,90,92,86,86,94,96,96,88,96,96,['Budapest','Silverstone','Monza','Barcelona','Valencia'],'Stiff Front')
-vb77 = Driver(alfaromeo,'Valtteri Bottas','FIN',75,80,88,90,84,88,92,92,82,91,81,['Sochi'],'Stiff Rear')
-sp11 = Driver(redbull,'Sergio Pérez','MEX',11,89,89,86,96,94,86,86,90,96,81,['Baku','Jeddah','Monte-Carlo','Sakhir','Singapore'],'Balanced')
-eo31 = Driver(alpine,'Esteban Ocon','FRA',31,86,88,88,88,88,88,88,88,92,86,[],'Balanced')
-cs55 = Driver(ferrari,'Carlos Sainz Jr.','ESP',55,88,88,88,84,88,88,90,86,84,80,['Monte-Carlo'],'Balanced')
-ls18 = Driver(astonmartin,'Lance Stroll','CAN',18,91,84,86,80,86,86,86,86,86,86,[],'Balanced')
-pg10 = Driver(alphatauri,'Pierre Gasly','FRA',10,88,84,84,82,88,80,86,79,77,70,[],'Balanced')
-aa23 = Driver(williams,'Alex Albon','THI',23,86,86,81,89,81,81,86,86,75,70,[],'Balanced')
-km20 = Driver(haas,'Kevin Magnussen','DEN',20,84,84,84,80,86,84,82,84,80,80,[],'Balanced')
-dr3 = Driver(mclaren,'Daniel Ricciardo','AUS',3,86,90,80,76,82,76,68,90,80,82,['Monte-Carlo','Baku','Marina Bay','Shanghai','Budapest'],'Stiff Rear')
-yt22 = Driver(alphatauri,'Yuki Tsunoda','JPN',22,76,82,82,80,80,80,76,76,76,70,[],'Balanced')
-ms47 = Driver(haas,'Mick Schumacher','GER',47,76,82,82,76,82,76,80,76,70,70,[],'Balanced')
-gz24 = Driver(alfaromeo,'Zhou Guanyu','CHN',24,72,80,80,80,76,80,80,76,70,70,[],'Balanced')
-nl6 = Driver(williams,'Nicholas Latifi','CAN',6,72,72,72,72,80,72,72,72,72,72,[],'Balanced')
+mv1 = Driver(redbull,'Max Verstappen','NED',1,96,94,94,92,98,98,98,96,96,92,84,['México City','Zandvoort','Spielberg','Imola','Spa-Francorchamps'],'Unbalanced')
+cl16 = Driver(ferrari,'Charles Leclerc','MNK',16,80,96,94,86,84,94,94,82,86,82,90,['Monte-Carlo','Spa-Francorchamps','Spielberg','Melbourne','Sakhir'],'Stiff Front')
+gr63 = Driver(mercedes,'George Russell','GBR',63,80,94,94,88,88,90,96,96,86,86,86,[],'Balanced')
+lh44 = Driver(mercedes,'Lewis Hamilton','GBR',44,94,94,92,94,94,92,88,81,92,88,94,['Silverstone','Budapest','São Paulo','Montréal','Yas Island'],'Balanced')
+ln4 = Driver(mclaren,'Lando Norris','GBR',4,92,92,92,92,88,90,90,81,81,81,84,['Spielberg','Sakhir'],'Balanced')
+sv5 = Driver(astonmartin,'Sebastian Vettel','GER',5,94,92,90,90,86,90,94,91,91,92,92,['Singapore','India','Suzuka','Sepang','Valencia'],'Stiff Rear')
+fa14 = Driver(alpine,'Fernando Alonso','ESP',14,90,92,86,86,94,96,96,82,88,96,96,['Budapest','Silverstone','Monza','Barcelona','Valencia'],'Stiff Front')
+vb77 = Driver(alfaromeo,'Valtteri Bottas','FIN',75,80,88,90,84,88,92,92,75,82,91,81,['Sochi'],'Stiff Rear')
+sp11 = Driver(redbull,'Sergio Pérez','MEX',11,89,89,86,96,94,86,86,90,90,96,81,['Baku','Jeddah','Monte-Carlo','Sakhir','Singapore'],'Balanced')
+eo31 = Driver(alpine,'Esteban Ocon','FRA',31,86,88,88,88,88,88,88,94,88,92,86,[],'Balanced')
+cs55 = Driver(ferrari,'Carlos Sainz Jr.','ESP',55,88,88,88,84,88,88,90,80,86,84,80,['Monte-Carlo'],'Balanced')
+ls18 = Driver(astonmartin,'Lance Stroll','CAN',18,91,84,86,80,86,86,86,88,86,86,86,[],'Balanced')
+pg10 = Driver(alphatauri,'Pierre Gasly','FRA',10,88,84,84,82,88,80,86,88,79,77,70,[],'Balanced')
+aa23 = Driver(williams,'Alex Albon','THI',23,86,86,81,89,81,81,86,80,86,75,70,[],'Balanced')
+km20 = Driver(haas,'Kevin Magnussen','DEN',20,84,84,84,80,86,84,82,84,84,80,80,[],'Balanced')
+dr3 = Driver(mclaren,'Daniel Ricciardo','AUS',3,86,90,80,76,82,76,68,86,90,80,82,['Monte-Carlo','Baku','Marina Bay','Shanghai','Budapest'],'Stiff Rear')
+yt22 = Driver(alphatauri,'Yuki Tsunoda','JPN',22,76,82,82,80,80,80,76,84,76,76,70,[],'Balanced')
+ms47 = Driver(haas,'Mick Schumacher','GER',47,76,82,82,76,82,76,80,81,76,70,70,[],'Balanced')
+gz24 = Driver(alfaromeo,'Zhou Guanyu','CHN',24,72,80,80,80,76,80,80,72,76,70,70,[],'Balanced')
+nl6 = Driver(williams,'Nicholas Latifi','CAN',6,72,72,72,72,80,72,72,92,72,72,72,[],'Balanced')
 
 drivers = [mv1,cl16,gr63,lh44,ln4,sv5,fa14,vb77,sp11,eo31,cs55,ls18,pg10,aa23,km20,dr3,yt22,ms47,gz24,nl6]
 # # # End of the Class Deifinition
@@ -715,7 +713,7 @@ def FP(circuit,tireset,stage,session,weather):
 def Q(circuit,session,weather):
     data,tirenamedata = pd.DataFrame(),pd.DataFrame()
     c = 0
-    while c < 3:
+    while c < 2:
         tempdata, temptirenamedata = pd.DataFrame(), pd.DataFrame()
         for driver in drivers:
             if W2 == 'Dry':
@@ -930,7 +928,7 @@ def R(circuit,session,weather):
                                 TIRE_USAGE[driver.name] += 5
                         else:
                             # If Corner-cut?
-                            if uniform(0.01,100.01) <= 0.29:
+                            if uniform(0.01,100.01) <= ((100-driver.fitness)/125):
                                 LAP_CHART[driver.name].append(current_laptime - 0.325)
                                 TIRE_CHART[driver.name].append(tire.title[0])
                                 TIRE_USAGE[driver.name] += 1
@@ -947,33 +945,16 @@ def R(circuit,session,weather):
             else:
                 pass
 
-        # Real-time Racing Time Assign
-        pass
-
-        # Lap by Lap Report with FL Correction
+        # Lap by Lap Report with FL Correction | for Overtake Analysis
         temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
         for driver in drivers:
             temp[driver.name], temptirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]
-        
-        TEMP_INFO = f'{session} Session | {weather} Conditions | {CRC.location} Grand Prix — {CRC.country} | Lap {lap}/{CRC.circuit_laps}'
         TEMP_CLASSIFICATION = ANALYZER(f'LAP {lap} | Race',temp,temptirenamedata,'race-chart')
-        
+
+        # Real-time Racing | Overtakes and Defence Positions
         fls_, dls_ = list(TEMP_CLASSIFICATION['FL.']), []
         pilots = list(TEMP_CLASSIFICATION['DRIVERS'])
         deltas = list(TEMP_CLASSIFICATION['GAP'])
-        try:
-            for i in fls_:
-                i = i.split(':')
-                damn = float(i[0])*60 + float(i[1])
-                dls_.append(damn)
-            TEMP_FL_INFO = f'\nFastest Lap | {list(TEMP_CLASSIFICATION["DRIVERS"])[dls_.index(min(dls_))]} has recorded {fls_[dls_.index(min(dls_))]} on this track.'
-        except:
-            TEMP_FL_INFO = f'\nFastest Lap | No fastest lap has recorded on this track.'
-        
-        racereportfile.write(f'{TEMP_INFO}\n{TEMP_CLASSIFICATION}\n{TEMP_FL_INFO}\n{borderline}\n')
-
-        # Real-time Racing Again
-        pass
 
         driver_names = []
         attack_gap = []
@@ -1019,7 +1000,7 @@ def R(circuit,session,weather):
             else:
                 BANGER = (uniform(0,100) <= 25.0)
 
-            if (ACCIDENT <= 0.750) and (BANGER) and (gap_in_front < 1.0):
+            if (ACCIDENT <= (attacker_obj.aggression/200) + (defender_obj.aggression/200)) and (BANGER) and (gap_in_front < 1.0):
                 INCIDENT = choice(['DOUBLE DNF','DEFENDER DNF & ATTACKER DAMAGED','ATTACKER DNF & DEFENDER DAMAGED'
                                    'DOUBLE DAMAGED','DEFENDER CLEAR & ATTACKER DAMAGED','ATTACKER CLEAR & DEFENDER DAMAGED',
                                    'DEFENDER DNF & ATTACKER CLEAR','ATTACKER DNF & DEFENDER CLEAR'])
@@ -1128,20 +1109,39 @@ def R(circuit,session,weather):
                 else:
                     pass
 
-        # trade-off happening.
+        # Laptime Trade-Off.
         for i in BONUS:
             LAP_CHART[i][-1] = sum(BONUS[i])+LAP_CHART[i][-1]
 
-        # Overtake/defence trade-off clarification.
         BONUS = {}
         for i in drivers:
             BONUS[i.name] = []
+
+        # Lap by Lap Report | Final Shape
+        temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
+        for driver in drivers:
+            temp[driver.name], temptirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]
+        
+        TEMP_INFO = f'{session} Session | {weather} Conditions | {CRC.location} Grand Prix — {CRC.country} | Lap {lap}/{CRC.circuit_laps}'
+        TEMP_CLASSIFICATION = ANALYZER(f'LAP {lap} | Race',temp,temptirenamedata,'race-chart')
+
+        fls_, dls_ = list(TEMP_CLASSIFICATION['FL.']), []
+        for i in fls_:
+            if len(i.split(':')) == 1:
+                dls_.append(3600)
+            else:
+                dls_.append(float(i.split(':')[0])*60 + float(i.split(':')[1]))
+        TEMP_FL_INFO = f'\nFastest Lap | {list(TEMP_CLASSIFICATION["DRIVERS"])[dls_.index(min(dls_))]} has recorded {fls_[dls_.index(min(dls_))]} on this track.'
+
+        racereportfile.write(f'{TEMP_INFO}\n{TEMP_CLASSIFICATION}\n{TEMP_FL_INFO}\n{borderline}\n')
+
+    # # # END OF THE GP
 
     # Adding Penalties
     for i in drivers:
         LAP_CHART[i.name][-1] += sum(PENALTY[i.name])
 
-    # End of the GP | The Last Saving
+    # Shaping the Results
     for driver in drivers:
         data[driver.name], tirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]    
     print(borderline)
@@ -1201,24 +1201,30 @@ print(borderline)
 
 # Dictionary Definitions
 STRATEGIES = {}
+
 LAP_CHART = {}
 TIRE_CHART = {}
+
 TIRE_USAGE = {}
 TIRE_SETS = {}
-BOX = {}
-PENALTY = {}
+
 DNF = {}
 MECHANICAL = {}
+BOX = {}
+
+PENALTY = {}
+
+SAFETY_CAR = ['Formation Lap']
 
 for i in drivers:
+    LAP_CHART[i.name] = []
+    TIRE_CHART[i.name] = []
     DNF[i.name] = [None]
+    MECHANICAL[i.name] = []
     BOX[i.name] = [None]
     PENALTY[i.name] = [0]
     TIRE_USAGE[i.name] = 0
-    LAP_CHART[i.name] = []
-    TIRE_CHART[i.name] = []
     TIRE_SETS[i.name] = []
-    MECHANICAL[i.name] = []
 
 # Strategy Plannings
 if W3 == 'Dry':
