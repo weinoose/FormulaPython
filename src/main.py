@@ -436,13 +436,13 @@ class Driver():
         self.style = style
     def qualifying_pace(self):
         vlahovic = (((self.pace*4) + (self.braking*4) + (self.consistency*3))/11)
-        return round((vlahovic+100)/2,3)
+        return round((vlahovic+75)/1.75,3)
     def race_pace(self):
         mbappe = (((self.pace*5) + (self.braking*5)  + (self.smoothness*4) + (self.adaptability*8) + (self.consistency*12) + (self.fitness*6))/40)
-        return round((mbappe+100)/2,3)
+        return round((mbappe+75)/1.75,3)
     def rating(self):
         haaland = (((self.qualifying_pace()*5) + (self.race_pace()*7) + (self.start) + (self.aggression) + (self.wet*3) + (self.attack) + (self.defence))/19)
-        return round((haaland+100)/2,3)
+        return round((haaland+75)/1.75,3)
     def tire_harm_by_driver(self,tire_usage):
         variable = ((tire_usage) - (pow(10,-3)*pow(self.smoothness,2))) - 2
         if variable >= 0:
