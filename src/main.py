@@ -74,6 +74,11 @@ MECHANICALS = ['6th to 8th Gears','7th and 8th Gears','8th Gear','Gearing Alingm
 
 ERRORS = ['Spun-off','Went through Barriers','Damaged his Suspension']
 
+if FIA(current)[2] == True:
+    FAILURES.extend(['MGU-K','MGU-H','ERS','Control Electronics','Energy Store'])
+    MECHANICALS.extend(['MGU-K','MGU-H','ERS','Control Electronics','Energy Store'])
+else:
+    pass
 
 # Tires
 class Tire():
@@ -117,23 +122,29 @@ class Tire():
         # # # Part 2: The Performance of the Car
         TOTAL_WEIGHT = (((FIA(current)[6] + driver.team.weight)*0.03)/1)
 
+        # ERS
+        if FIA(current)[2] == True:
+            ERS = (driver.team.powertrain.power/165)*(-1.0)
+        else:
+            ERS = 0
+
         if mode[0] == 'saturday':
             performance = driver.team.performance(circuit.circuit_type)
             perform = driver.team.rating()
             if self.title == 'Wet':
-                CL1 = ((((((performance/100)**2)*9.50) - 4)*(-1.0) + ((((perform/100)**2)*8.00) - 4)*(-1.0))/2) - driver.team.development + TOTAL_WEIGHT
+                CL1 = ((((((performance/100)**2)*9.50) - 4)*(-1.0) + ((((perform/100)**2)*8.00) - 4)*(-1.0))/2) - driver.team.development + TOTAL_WEIGHT + ERS
             elif self.title == 'Dump':
-                CL1 = ((((((performance/100)**2)*10.00) - 4)*(-1.0) + ((((perform/100)**2)*8.00) - 4)*(-1.0))/2) - driver.team.development + TOTAL_WEIGHT
+                CL1 = ((((((performance/100)**2)*10.00) - 4)*(-1.0) + ((((perform/100)**2)*8.00) - 4)*(-1.0))/2) - driver.team.development + TOTAL_WEIGHT + ERS
             else:
-                CL1 = ((((((performance/100)**2)*10.25) - 4)*(-1.0) + ((((perform/100)**2)*8.75) - 4)*(-1.0))/2) - driver.team.development + TOTAL_WEIGHT
+                CL1 = ((((((performance/100)**2)*10.25) - 4)*(-1.0) + ((((perform/100)**2)*8.75) - 4)*(-1.0))/2) - driver.team.development + TOTAL_WEIGHT + ERS
         elif mode[0] == 'sunday' or 'friday':
             performance = ((driver.team.performance(circuit.circuit_type))*1.00)
             if self.title == 'Wet':
-                CL1 = (((((performance/100)**2)*9.50) - 4)*(-1.0)) - driver.team.development + TOTAL_WEIGHT
+                CL1 = (((((performance/100)**2)*9.50) - 4)*(-1.0)) - driver.team.development + TOTAL_WEIGHT + ERS
             elif self.title == 'Dump':
-                CL1 = (((((performance/100)**2)*10.00) - 4)*(-1.0)) - driver.team.development + TOTAL_WEIGHT
+                CL1 = (((((performance/100)**2)*10.00) - 4)*(-1.0)) - driver.team.development + TOTAL_WEIGHT + ERS
             else:
-                CL1 = (((((performance/100)**2)*10.25) - 4)*(-1.0)) - driver.team.development + TOTAL_WEIGHT
+                CL1 = (((((performance/100)**2)*10.25) - 4)*(-1.0)) - driver.team.development + TOTAL_WEIGHT + ERS
         
         # # # Part 3: The Performance of the Driver
         # # # 3.0: Car and Driver Chemistry
@@ -259,7 +270,7 @@ sochi = Circuit('Sochi','Russia','Agility Circuit',53,FIA(current)[0]*76.50,28,[
 baku = Circuit('Baku','Azerbaijan','Agility Circuit',51,FIA(current)[0]*84.00,21,[[m,h],[s,s,h],[s,m,m]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Very Hard') # S:16 | M:23 | H:31
 # Power Circuits
 spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*86.50,24,[[s,h],[s,m],[m,s]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Easy') # S:18 | M:26 | H:35
-sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*74.50,20,[[s,s,m],[s,s,h],[s,m,h]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Easy') # S:16 | M:23 | H:29
+sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*75.00,20,[[s,s,m],[s,s,h],[s,m,h]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Easy') # S:16 | M:23 | H:29
 # Quickness Circuits
 silverstone = Circuit('Silverstone','Great Britain','Quickness Circuit',52,FIA(current)[0]*72.00,18,[[m,h],[s,s,m],[s,m,s]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Easy') # S:14 | M:21 | H:27
 sepang = Circuit('Sepang','Malaysia','Quickness Circuit',56,FIA(current)[0]*75.00,24,[[m,h],[s,s,m],[s,m,s]],2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet','Wet'],'Very Easy') # S:18 | M:26 | H:35
@@ -313,7 +324,7 @@ class Engine():
         self.power = power
         self.reliability = reliability
 
-HONDA = Engine('Red Bull Powertrains Honda',FIA(current)[5],93,75)
+HONDA = Engine('Red Bull Powertrains Honda',FIA(current)[5],92,75)
 FERRARI = Engine('Ferrari',FIA(current)[5],91,70)
 RENAULT = Engine('Renault',FIA(current)[5],87,70)
 MERCEDES = Engine('Mercedes',FIA(current)[5],87,90)
