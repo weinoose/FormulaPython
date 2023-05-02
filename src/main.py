@@ -38,7 +38,9 @@ aramco = Fuel('Aramco',+0.3,+3.3)
 
 # FIA: Chassis Design / DRS / ERS / Logistics Sponsor / Tire Supplier / Fuel Supplier / Min. Weight
 def FIA(C):
-    if C == '2005':
+    if C == '1998':
+        return [1.06500,False,False,'DHL',michelin,shell,585]
+    elif C == '2005':
         return [1.06500,False,False,'DHL',bridgestone,shell,585]
     elif C == '2006':
         return [1.08000,False,False,'DHL',bridgestone,shell,585]
@@ -119,19 +121,19 @@ class Tire():
             performance = driver.team.performance(circuit.circuit_type)
             perform = driver.team.rating()
             if self.title == 'Wet':
-                CL1 = ((((((performance/100)**2)*8.00) - 4)*(-1.0) + ((((perform/100)**2)*8.00) - 4)*(-1.0))/2) - driver.team.development + TOTAL_WEIGHT
+                CL1 = ((((((performance/100)**2)*9.50) - 4)*(-1.0) + ((((perform/100)**2)*8.00) - 4)*(-1.0))/2) - driver.team.development + TOTAL_WEIGHT
             elif self.title == 'Dump':
-                CL1 = ((((((performance/100)**2)*8.00) - 4)*(-1.0) + ((((perform/100)**2)*8.00) - 4)*(-1.0))/2) - driver.team.development + TOTAL_WEIGHT
+                CL1 = ((((((performance/100)**2)*10.00) - 4)*(-1.0) + ((((perform/100)**2)*8.00) - 4)*(-1.0))/2) - driver.team.development + TOTAL_WEIGHT
             else:
-                CL1 = ((((((performance/100)**2)*8.75) - 4)*(-1.0) + ((((perform/100)**2)*8.75) - 4)*(-1.0))/2) - driver.team.development + TOTAL_WEIGHT
+                CL1 = ((((((performance/100)**2)*10.25) - 4)*(-1.0) + ((((perform/100)**2)*8.75) - 4)*(-1.0))/2) - driver.team.development + TOTAL_WEIGHT
         elif mode[0] == 'sunday' or 'friday':
             performance = ((driver.team.performance(circuit.circuit_type))*1.00)
             if self.title == 'Wet':
-                CL1 = (((((performance/100)**2)*8.50) - 4)*(-1.0)) - driver.team.development + TOTAL_WEIGHT + (lap/45)
+                CL1 = (((((performance/100)**2)*9.50) - 4)*(-1.0)) - driver.team.development + TOTAL_WEIGHT
             elif self.title == 'Dump':
-                CL1 = (((((performance/100)**2)*9.00) - 4)*(-1.0)) - driver.team.development + TOTAL_WEIGHT + (lap/45)
+                CL1 = (((((performance/100)**2)*10.00) - 4)*(-1.0)) - driver.team.development + TOTAL_WEIGHT
             else:
-                CL1 = (((((performance/100)**2)*9.25) - 4)*(-1.0)) - driver.team.development + TOTAL_WEIGHT + (lap/45)
+                CL1 = (((((performance/100)**2)*10.25) - 4)*(-1.0)) - driver.team.development + TOTAL_WEIGHT
         
         # # # Part 3: The Performance of the Driver
         # # # 3.0: Car and Driver Chemistry
@@ -175,40 +177,7 @@ class Tire():
             if hotlap == 0:
                 ERROR = choice([(incident - error_rate)/10,(incident - error_rate)/25,(incident - error_rate)/50,(incident - error_rate)/75,(incident - error_rate)/100])
 
-        # # # 3.4: Driver's Season/Car Mentality
-        if driver.mentality == 'Champion':
-            if manufacturers.index(driver.team) == (0 or 1):
-                MENTALITY = (0.100)*(-1.0)
-            elif manufacturers.index(driver.team) == (2):
-                MENTALITY = (0.150)*(-1.0)
-            elif manufacturers.index(driver.team) == (3 or 4 or 5 or 6):
-                MENTALITY = (0.150)*(-1.0)
-            else:
-                MENTALITY = (0.050)*(-1.0)
-        elif driver.mentality == 'Winner':
-            if manufacturers.index(driver.team) == (0 or 1):
-                MENTALITY = (0.150)*(-1.0)
-            elif manufacturers.index(driver.team) == (2):
-                MENTALITY = (0.050)*(-1.0)
-            elif manufacturers.index(driver.team) == (3 or 4 or 5 or 6):
-                MENTALITY = (0.050)*(+1.0)
-            else:
-                MENTALITY = (0.150)*(+1.0)
-        elif driver.mentality == 'Racer':
-            MENTALITY = (0.050)*(-1.0)
-        elif driver.mentality == 'Challanger':
-            if manufacturers.index(driver.team) == (0 or 1):
-                MENTALITY = (0.100)*(+1.0)
-            elif manufacturers.index(driver.team) == (2):
-                MENTALITY = (0.050)*(-1.0)
-            elif manufacturers.index(driver.team) == (3 or 4 or 5 or 6):
-                MENTALITY = (0.150)*(-1.0)
-            else:
-                MENTALITY = (0.100)*(-1.0)
-        else:
-            MENTALITY = (0.000)*(-1.0)
-
-        # # # 3.5: Normal Lap
+        # # # 3.4: Normal Lap
         CRU, CRD = ((driver.consistency-40)/7.5), ((100-driver.consistency)/5)
         SATURDAY, SUNDAY, WET = [], [], []
         for i in np.arange(driver.qualifying_pace()-CRU,driver.qualifying_pace()+CRD,0.01):
@@ -225,32 +194,35 @@ class Tire():
             drs = [0,0]
         
         if mode[0] == 'saturday':                
-            engine_mode = (0.500 + ((driver.team.powertrain.power)/100))*(-1.0)
+            engine_mode = (0.500 + ((driver.team.powertrain.power)/100))*(-1.0) # Max. Power
             
             if self.title == 'Wet':
-                CL2 = ((((choice(WET)/100)**2)*2.50) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) + (MENTALITY)
+                CL2 = ((((choice(WET)/100)**2)*4.00) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY)
             elif self.title == 'Intermediate':
-                CL2 = ((((choice(WET)/100)**2)*2.50) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) + (MENTALITY)
+                CL2 = ((((choice(WET)/100)**2)*3.50) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY)
             else:
-                CL2 = ((((choice(SATURDAY)/100)**2)*1.75) + hotlap)*(-1.0) + (engine_mode + drs[1]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) + (MENTALITY)
+                CL2 = ((((choice(SATURDAY)/100)**2)*3.25) + hotlap)*(-1.0) + (engine_mode + drs[1]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY)
         
-        elif mode[0] == 'sunday' or 'friday':            
+        elif mode[0] == 'sunday' or 'friday':         
+            
             if mode[0] == 'friday':
                 engine_mode = 1.5
+
             elif mode[0] == 'sunday':
                 engine_mode = 0.0
             
             if self.title == 'Wet':
-                CL2 = ((((choice(WET)/100)**1.50)*4.00) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) + (MENTALITY)
+                CL2 = ((((choice(WET)/100)**1.50)*4.00) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) -1.0
             elif self.title == 'Intermediate':
-                CL2 = ((((choice(WET)/100)**1.50)*3.50) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) + (MENTALITY)
+                CL2 = ((((choice(WET)/100)**1.50)*3.50) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) -1.0
             else:
-                CL2 = ((((choice(SUNDAY)/100)**1.75)*3.25) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) + (MENTALITY)
+                CL2 = ((((choice(SUNDAY)/100)**1.75)*3.25) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) -1.0
 
         # # # Part 4: Five Lights Reaction
         REACTION = (uniform((((driver.start-15)**2))/10000,(((driver.start+5)**2))/10000) - 0.3)
         STARTING_GRID = ((mode[1]/2.5) - 0.40) - (REACTION*2)
-        GRID_EFFECT = ((circuit.laptime/25) + STARTING_GRID)
+        GRID_EFFECT = ((circuit.laptime/7.5) + STARTING_GRID)
+        
 
         if mode[0] == 'sunday': 
             if lap == 1:
@@ -431,22 +403,20 @@ class Manufacturer():
         elif circuit_type == 'Street Circuit':
             return ((self.braking*5) + (self.downforce*3) + (self.vortex*2) + (self.drag*1))/11
 
-# 0.05 sec. improvement for 1 piece of upgrade (overall)
 redbull = Manufacturer('Oracle Red Bull Racing',RB,HONDA,88,86,94,98,96,82,+5.00,'Unbalanced',0.00,0.20)
-ferrari = Manufacturer('Scuderia Ferrari',SF,FERRARI,94,91,88,88,94,86,+0.00,'Stiff Front',0.00,0.15)
+ferrari = Manufacturer('Scuderia Ferrari',SF,FERRARI,94,91,88,88,94,86,+0.00,'Balanced',0.00,0.15)
 mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team',MER,MERCEDES,91,88,82,88,77,91,+0.00,'Balanced',0.00,0.17)
-alpine = Manufacturer('BWT Alpine F1 Team',ALP,RENAULT,88,84,84,86,86,86,+0.00,'Stiff Front',0.00,0.16)
-mclaren = Manufacturer('McLaren F1 Team',MCL,MERCEDES,80,91,77,84,86,86,+0.00,'Unbalanced',0.00,0.18)
-alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen',ALFA,FERRARI,84,82,80,82,80,82,-10.00,'Unbalanced',0.00,0.13)
-haas = Manufacturer('Haas F1 Team',HAAS,FERRARI,82,82,82,80,80,80,+0.00,'Balanced',0.00,0.14)
-astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team',AMR,MERCEDES,79,84,79,79,86,86,+0.00,'Unbalanced',0.00,0.11)
-alphatauri = Manufacturer('Scuderia AlphaTauri',AT,HONDA,77,79,84,84,77,77,+0.00,'Balanced',0.00,0.12)
-williams = Manufacturer('Williams Racing',WIL,MERCEDES,80,79,79,79,86,86,+0.00,'Stiff Rear',0.00,0.19)
+alpine = Manufacturer('BWT Alpine F1 Team',ALP,RENAULT,86,82,82,84,84,84,+0.00,'Stiff Front',0.00,0.16)
+mclaren = Manufacturer('McLaren F1 Team',MCL,MERCEDES,79,88,75,82,84,84,+0.00,'Unbalanced',0.00,0.18)
+alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen',ALFA,FERRARI,82,80,77,80,77,80,-10.00,'Unbalanced',0.00,0.13)
+haas = Manufacturer('Haas F1 Team',HAAS,FERRARI,80,80,80,77,77,77,+0.00,'Balanced',0.00,0.14)
+astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team',AMR,MERCEDES,77,82,77,77,84,84,+0.00,'Unbalanced',0.00,0.11)
+alphatauri = Manufacturer('Scuderia AlphaTauri',AT,HONDA,75,77,82,82,75,75,+0.00,'Balanced',0.00,0.12)
+williams = Manufacturer('Williams Racing',WIL,MERCEDES,77,77,77,77,84,84,+0.00,'Stiff Rear',0.00,0.19)
 manufacturers = [redbull,ferrari,mercedes,alpine,mclaren,alfaromeo,haas,astonmartin,alphatauri,williams]
-
 # Drivers
 class Driver():
-    def __init__(self,team,name,nationality,number,pace,braking,smoothness,adaptability,consistency,fitness,aggression,attack,defence,start,wet,favorite,style,mentality):
+    def __init__(self,team,name,nationality,number,pace,braking,smoothness,adaptability,consistency,fitness,aggression,attack,defence,start,wet,favorite,style):
         self.team = team
         self.name = name
         self.nationality = nationality
@@ -464,13 +434,15 @@ class Driver():
         self.wet = wet
         self.favorite= favorite
         self.style = style
-        self.mentality = mentality
     def qualifying_pace(self):
-        return round(((self.pace*4) + (self.braking*4) + (self.apex*3))/11,3)
+        vlahovic = (((self.pace*4) + (self.braking*4) + (self.consistency*3))/11)
+        return round((vlahovic+100)/2,3)
     def race_pace(self):
-        return round(((self.pace*5) + (self.braking*5)  + (self.smoothness*4) + (self.adaptability*8) + (self.consistency*12) + (self.fitness*6))/40,3)
+        mbappe = (((self.pace*5) + (self.braking*5)  + (self.smoothness*4) + (self.adaptability*8) + (self.consistency*12) + (self.fitness*6))/40)
+        return round((mbappe+100)/2,3)
     def rating(self):
-        return round(((self.qualifying_pace()*5) + (self.race_pace()*7) + (self.start) + (self.aggression) + (self.wet*3) + (self.attack) + (self.defence))/19,3)
+        haaland = (((self.qualifying_pace()*5) + (self.race_pace()*7) + (self.start) + (self.aggression) + (self.wet*3) + (self.attack) + (self.defence))/19)
+        return round((haaland+100)/2,3)
     def tire_harm_by_driver(self,tire_usage):
         variable = ((tire_usage) - (pow(10,-3)*pow(self.smoothness,2))) - 2
         if variable >= 0:
@@ -478,28 +450,29 @@ class Driver():
         else:
             return 0
 
-mv1 = Driver(redbull,'Max Verstappen','NED',1,90,94,91,94,92,95,95,95,87,86,94,['México City','Zandvoort','Spielberg','Imola','Spa-Francorchamps'],'Unbalanced','Champion')
-cl16 = Driver(ferrari,'Charles Leclerc','MNK',16,93,94,89,95,93,95,88,86,86,90,86,['Monte-Carlo','Spa-Francorchamps','Spielberg','Melbourne','Sakhir'],'Stiff Front','Champion')
-lh44 = Driver(mercedes,'Lewis Hamilton','GBR',44,89,89,93,93,91,91,91,92,91,93,92,['Silverstone','Budapest','São Paulo','Montréal','Yas Island'],'Balanced','Winner')
-sv5 = Driver(astonmartin,'Sebastian Vettel','GER',5,89,89,90,91,89,93,92,94,93,91,93,['Singapore','India','Suzuka','Sepang','Valencia'],'Stiff Rear','Winner')
-fa14 = Driver(alpine,'Fernando Alonso','ESP',14,87,90,92,91,90,92,86,93,94,94,91,['Budapest','Silverstone','Monza','Barcelona','Valencia'],'Stiff Front','Champion')
-sp11 = Driver(redbull,'Sergio Pérez','MEX',11,87,88,94,90,87,90,85,91,95,92,90,['Baku','Jeddah','Monte-Carlo','Sakhir','Singapore'],'Balanced','Racer')
-ln4 = Driver(mclaren,'Lando Norris','GBR',4,91,91,87,92,86,94,82,86,87,86,87,['Spielberg','Sakhir'],'Balanced','Champion')
-gr63 = Driver(mercedes,'George Russell','GBR',63,92,92,87,92,85,94,82,87,86,87,86,[],'Balanced','Champion')
-eo31 = Driver(alpine,'Esteban Ocon','FRA',31,89,87,86,89,86,91,94,90,92,89,89,[None],'Balanced','Champion')
-cs55 = Driver(ferrari,'Carlos Sainz Jr.','ESP',55,86,90,85,89,90,89,84,89,88,85,88,['Monte-Carlo'],'Balanced','Challanger')
-vb77 = Driver(alfaromeo,'Valtteri Bottas','FIN',77,88,88,87,88,88,84,80,85,90,88,85,['Sochi'],'Stiff Rear','Racer')
-ls18 = Driver(astonmartin,'Lance Stroll','CAN',18,84,86,80,86,86,86,88,86,86,86,91,[None],'Balanced','Racer')
-pg10 = Driver(alphatauri,'Pierre Gasly','FRA',10,84,84,82,88,80,86,88,79,77,70,88,[None],'Balanced','Challanger')
-km20 = Driver(haas,'Kevin Magnussen','DEN',20,84,84,80,86,84,82,84,84,80,80,84,[None],'Balanced','Racer')
-aa23 = Driver(williams,'Alex Albon','THI',23,86,81,89,81,81,86,80,86,75,70,86,[None],'Balanced','Challanger')
-dr3 = Driver(mclaren,'Daniel Ricciardo','AUS',3,90,80,76,82,76,68,86,90,80,82,86,['Monte-Carlo','Baku','Marina Bay','Shanghai','Budapest'],'Stiff Rear','Winner')
-yt22 = Driver(alphatauri,'Yuki Tsunoda','JPN',22,82,82,80,80,80,76,84,76,76,70,76,[None],'Balanced','Champion')
-ms47 = Driver(haas,'Mick Schumacher','GER',47,82,82,76,82,76,80,81,76,70,70,76,[None],'Balanced',None)
-gz24 = Driver(alfaromeo,'Zhou Guanyu','CHN',24,80,80,80,76,80,80,72,76,70,70,72,[None],'Balanced',None)
-nl6 = Driver(williams,'Nicholas Latifi','CAN',6,72,72,72,80,72,72,92,72,72,72,72,[None],'Balanced',None)
+mv1 = Driver(redbull,'Max Verstappen','NED',1,90,94,91,94,92,95,95,95,87,86,94,['México City','Zandvoort','Spielberg','Imola','Spa-Francorchamps'],'Unbalanced')
+cl16 = Driver(ferrari,'Charles Leclerc','MNK',16,93,94,89,95,93,95,88,86,86,90,86,['Monte-Carlo','Spa-Francorchamps','Spielberg','Melbourne','Sakhir'],'Balanced')
+lh44 = Driver(mercedes,'Lewis Hamilton','GBR',44,89,89,93,93,91,91,91,92,91,93,92,['Silverstone','Budapest','São Paulo','Montréal','Yas Island'],'Balanced')
+sv5 = Driver(astonmartin,'Sebastian Vettel','GER',5,89,89,90,91,89,93,92,94,93,91,93,['Singapore','India','Suzuka','Sepang','Valencia'],'Stiff Rear')
+fa14 = Driver(alpine,'Fernando Alonso','ESP',14,87,90,92,91,90,92,86,93,94,94,91,['Budapest','Silverstone','Monza','Barcelona','Valencia'],'Stiff Front')
+sp11 = Driver(redbull,'Sergio Pérez','MEX',11,87,88,94,90,87,90,85,91,95,92,90,['Baku','Jeddah','Monte-Carlo','Sakhir','Singapore'],'Balanced')
+ln4 = Driver(mclaren,'Lando Norris','GBR',4,91,91,87,92,86,94,82,86,87,86,87,['Spielberg','Sakhir'],'Balanced')
+gr63 = Driver(mercedes,'George Russell','GBR',63,92,92,87,92,85,94,82,87,86,87,86,[],'Balanced')
+eo31 = Driver(alpine,'Esteban Ocon','FRA',31,89,87,86,89,86,91,94,90,92,89,89,[None],'Balanced')
+cs55 = Driver(ferrari,'Carlos Sainz Jr.','ESP',55,86,90,85,89,90,89,84,89,88,85,88,['Monte-Carlo'],'Balanced')
+vb77 = Driver(alfaromeo,'Valtteri Bottas','FIN',77,88,88,87,88,88,84,80,85,90,88,85,['Sochi'],'Stiff Rear')
+ls18 = Driver(astonmartin,'Lance Stroll','CAN',18,85,85,85,89,86,88,93,88,89,85,87,[None],'Balanced')
+pg10 = Driver(alphatauri,'Pierre Gasly','FRA',10,83,86,85,86,85,85,81,84,81,87,84,[None],'Balanced')
+km20 = Driver(haas,'Kevin Magnussen','DEN',20,81,83,83,87,83,86,90,86,85,84,84,[None],'Balanced')
+aa23 = Driver(williams,'Alex Albon','THI',23,82,82,89,85,84,87,81,82,80,84,81,[None],'Balanced')
+dr3 = Driver(mclaren,'Daniel Ricciardo','AUS',3,79,84,84,84,80,80,89,91,85,87,84,['Monte-Carlo','Baku','Marina Bay','Shanghai','Budapest'],'Stiff Rear')
+yt22 = Driver(alphatauri,'Yuki Tsunoda','JPN',22,84,81,81,85,80,84,87,84,83,87,80,[None],'Balanced')
+ms47 = Driver(haas,'Mick Schumacher','GER',47,80,80,82,82,79,82,85,88,84,83,83,['Spielberg'],'Balanced')
+gz24 = Driver(alfaromeo,'Zhou Guanyu','CHN',24,77,77,79,79,79,79,83,77,77,79,79,[None],'Balanced')
+nl6 = Driver(williams,'Nicholas Latifi','CAN',6,75,75,75,75,75,75,88,75,75,75,75,[None],'Balanced')
 
 drivers = [mv1,cl16,lh44,sv5,fa14,sp11,ln4,gr63,eo31,cs55,vb77,ls18,pg10,km20,aa23,dr3,yt22,ms47,gz24,nl6]
+
 # # # End of the Class Deifinition
 # # # Algorithm Build-up
 errorq = 0
@@ -960,7 +933,7 @@ def R(circuit,session,weather):
                         TIRE_CHART[driver.name].append(tire.title[0])
                         TIRE_USAGE[driver.name] += 0
 
-                        if uniform(0.01,100.01) < 33.39:
+                        if uniform(0.01,100.01) < 20.01:
                             SAFETY_CAR[lap+1].append(1)
                             SAFETY_CAR[lap+2].append(1)
                             SAFETY_CAR[lap+3].append(1)
@@ -977,20 +950,7 @@ def R(circuit,session,weather):
                         TIRE_CHART[driver.name].append(tire.title[0])
                         TIRE_USAGE[driver.name] += 0
 
-                        SAFETY_CAR[lap+1].append(1)
-                        SAFETY_CAR[lap+2].append(1)
-                        SAFETY_CAR[lap+3].append(1)
-                        SAFETY_CAR[lap+4].append(1)
-                        
-                        DNF[driver.name].append(True)
-                    else:
-                        TIRE_USAGE[driver.name] += 5
-                        LAP_CHART[driver.name].append(current_laptime + uniform(19.01,39.99))
-                        TIRE_CHART[driver.name].append(tire.title[0])
-                        TIRE_SETS[driver.name].append(s)
-                        print(f'{Fore.LIGHTRED_EX}INC | Lap {lap} | Oh, no! {driver.name} has lost control and crushed into his front-wing. He is willing to box!{Style.RESET_ALL}')
-                        
-                        if uniform(0.01,100.01) < 10.01:
+                        if uniform(0.01,100.01) < 20.01:
                             SAFETY_CAR[lap+1].append(1)
                             SAFETY_CAR[lap+2].append(1)
                             SAFETY_CAR[lap+3].append(1)
@@ -998,6 +958,13 @@ def R(circuit,session,weather):
                         else:
                             pass
                         
+                        DNF[driver.name].append(True)
+                    else:
+                        TIRE_USAGE[driver.name] += 5
+                        LAP_CHART[driver.name].append(current_laptime + uniform(19.01,39.99))
+                        TIRE_CHART[driver.name].append(tire.title[0])
+                        TIRE_SETS[driver.name].append(s)
+                        print(f'{Fore.LIGHTRED_EX}INC | Lap {lap} | Oh, no! {driver.name} has lost control and crushed into his front-wing. He is willing to box!{Style.RESET_ALL}')                        
                         BOX[driver.name].append(True)
                 else:
                     if len(BOX[driver.name]) > 1:
@@ -1126,9 +1093,9 @@ def R(circuit,session,weather):
                 ACCIDENT = abs((uniform(0,25) + attacker_obj.attack) - (uniform(0,25) + defender_obj.defence))
                 
                 if lap == 1:
-                    BANGER = (uniform(0,100) <= 75.0)
+                    BANGER = (uniform(0,100) <= 32.5)
                 else:
-                    BANGER = (uniform(0,100) <= 25.0)
+                    BANGER = (uniform(0,100) <= 7.5)
 
                 if (ACCIDENT <= (attacker_obj.aggression/200) + (defender_obj.aggression/200)) and (BANGER) and (gap_in_front < 1.0):
                     INCIDENT = choice(['DOUBLE DNF','DEFENDER DNF & ATTACKER DAMAGED','ATTACKER DNF & DEFENDER DAMAGED'
@@ -1309,7 +1276,7 @@ def R(circuit,session,weather):
 
     # Shaping the Results
     for driver in drivers:
-        data[driver.name], tirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]    
+        data[driver.name], tirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]  
     print(borderline)
     print(f'{session} Session | {weather} Conditions | {CRC.location} Grand Prix — {CRC.country} | {CRC.circuit_laps} Laps')
     
@@ -1432,4 +1399,6 @@ print(borderline)
 # We assume that each team find the best strategy and car setup for the feature race.
 
 # to-do
+# time correction for all-years / all-circuits.
 # artificial safety car to safety car.
+# regulations.txt
