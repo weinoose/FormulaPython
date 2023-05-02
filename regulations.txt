@@ -1,0 +1,183 @@
+In-Year Car/Engine Upgrade Rules
+CAR: Max. +5 for Each Spec. / If Restricted, +2 for Each Spec.
+CAR DEVELOPMENT: Max. -1 secs. upgrade for total following years.
+ENGINE: Max. +5 for Each Spec. / If Restricted, +2 for Each Spec.
+
+In-Year Upgrade Schedule
+(not specified yet.)
+
+1998-1999-2000-2001-2002-2003-2004
+Engine: V10 3.0L
+Engine: One-year usage
+In-Year Engine Development: Active
+Chassis: One-year usage.
+In-Year Car Development: Active (Restricted.)
+Car Development Continiuty: Active
+Max. Driver Contract Lenght: 4 years.
+F1 Logistics Supplier: DHL
+FIA Tire Supplier: Michelin
+FIA Fuel Supplier: Shell
+Puoints System: 25-18-15-12-10-8-6-4-2-1
+Free-Practice and Quali: 3 and 1-staged.
+DRS: None
+ERS: None
+
+2005
+Engine: V8 2.4L
+Engine Continiuty: One-year usage.
+In-Year Engine Development: Active
+Chassis: One-year usage.
+In-Year Car Development: Active
+Car Development Continiuty: Passive
+Max. Driver Contract Lenght: 4 years.
+F1 Logistics Supplier: DHL
+FIA Tire Supplier: Bridgestone
+FIA Fuel Supplier: Shell
+Puoints System: 25-18-15-12-10-8-6-4-2-1
+Free-Practice and Quali: 3 and 1-staged.
+DRS: None
+ERS: None
+
+2006-2007-2008
+Engine: V8 2.4L
+Engine: One-year usage
+In-Year Engine Development: Active
+Chassis: One-year usage.
+In-Year Car Development: Active (Restricted.)
+Car Development Continiuty: Active
+Max. Driver Contract Lenght: 4 years.
+F1 Logistics Supplier: DHL
+FIA Tire Supplier: Bridgestone
+FIA Fuel Supplier: Shell
+Puoints System: 25-18-15-12-10-8-6-4-2-1
+Free-Practice and Quali: 3 and 1-staged.
+DRS: None
+ERS: None
+
+2009-2010-2011
+Engine: V8 2.4L
+Engine Continiuty: Full term usage.
+In-Year Engine Development: Passive
+Chassis: Full term usage.
+In-Year Car Development: Active (Restricted.)
+Car Development Continiuty: Active
+Max. Driver Contract Lenght: 4 years.
+F1 Logistics Supplier: DHL
+FIA Tire Supplier: Bridgestone
+FIA Fuel Supplier: Shell
+Puoints System: 25-18-15-12-10-8-6-4-2-1
+Free-Practice and Quali: 3 and 1-staged.
+DRS: None
+ERS: None
+
+2012-2013
+Engine: V8 2.4L
+Engine Continiuty: Full term usage.
+In-Year Engine Development: Passive
+Chassis: Full term usage.
+In-Year Car Development: Active
+Car Development Continiuty: Active
+Max. Driver Contract Lenght: 4 years.
+F1 Logistics Supplier: DHL
+FIA Tire Supplier: Pirelli
+FIA Fuel Supplier: Shell
+Puoints System: 25-18-15-12-10-8-6-4-2-1
+Free-Practice and Quali: 3 and 1-staged.
+DRS: Active
+ERS: None
+
+2014-2015
+Engine: V6 1.6L
+Engine Continiuty: One-year usage.
+In-Year Engine Development: Active
+Chassis: Full term usage.
+In-Year Car Development: Active
+Car Development Continiuty: Active
+Max. Driver Contract Lenght: 5 years.
+F1 Logistics Supplier: DHL
+FIA Tire Supplier: Pirelli
+FIA Fuel Supplier: Petronas
+Puoints System: 25-18-15-12-10-8-6-4-2-1
+Free-Practice and Quali: 3 and 1-staged.
+DRS: Active
+ERS: Active
+
+2016
+Engine: V6 1.6L
+Engine Continiuty: One-year usage.
+In-Year Engine Development: Active
+Chassis: One-year usage.
+In-Year Car Development: Active
+Car Development Continiuty: Passive
+Max. Driver Contract Lenght: 5 years.
+F1 Logistics Supplier: DHL
+FIA Tire Supplier: Pirelli
+FIA Fuel Supplier: Petronas
+Puoints System: 25-18-15-12-10-8-6-4-2-1
+Free-Practice and Quali: 3 and 1-staged.
+DRS: Active
+ERS: Active
+
+2017
+Engine: V6 1.6L
+Engine Continiuty: One-year usage.
+In-Year Engine Development: Active
+Chassis: One-year usage.
+In-Year Car Development: Active
+Car Development Continiuty: Passive
+Max. Driver Contract Lenght: 5 years.
+F1 Logistics Supplier: DHL
+FIA Tire Supplier: Pirelli
+FIA Fuel Supplier: Petronas
+Puoints System: 25-18-15-12-10-8-6-4-2-1
+Free-Practice and Quali: 3 and 1-staged.
+DRS: Active
+ERS: Active
+
+2018-2019-2020
+Engine: V6 1.6L
+Engine Continiuty: One-year usage.
+In-Year Engine Development: Active
+Chassis: Full term usage.
+In-Year Car Development: Active (Restricted.)
+Car Development Continiuty: Active
+Max. Driver Contract Lenght: 5 years.
+F1 Logistics Supplier: DHL
+FIA Tire Supplier: Pirelli
+FIA Fuel Supplier: Petronas
+Puoints System: 25-18-15-12-10-8-6-4-2-1
+Free-Practice and Quali: 3 and 1-staged.
+DRS: Active
+ERS: Active
+
+2021
+Engine: V6 1.6L
+Engine Continiuty: One-year usage.
+In-Year Engine Development: Active
+Chassis: One-year usage.
+In-Year Car Development: Active
+Car Development Continiuty: Passive
+Max. Driver Contract Lenght: 6 years.
+F1 Logistics Supplier: DHL
+FIA Tire Supplier: Pirelli
+FIA Fuel Supplier: Aramco
+Puoints System: 25-18-15-12-10-8-6-4-2-1
+Free-Practice and Quali: 3 and 1-staged.
+DRS: Active
+ERS: Active
+
+2022-2023-2024-2025
+Engine: V6 1.6L
+Engine Continiuty: Full term usage.
+In-Year Engine Development: Passive
+Chassis: Full term usage.
+In-Year Car Development: Active (Restricted.)
+Car Development Continiuty: Active
+Max. Driver Contract Lenght: 6 years.
+F1 Logistics Supplier: DHL
+FIA Tire Supplier: Pirelli
+FIA Fuel Supplier: Aramco
+Puoints System: 25-18-15-12-10-8-6-4-2-1
+Free-Practice and Quali: 3 and 1-staged.
+DRS: Active
+ERS: Active
