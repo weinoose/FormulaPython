@@ -13,6 +13,9 @@ Prices for upgrades or researches shown below:
 
 Base Limit: 90M$ + plus sponsorships to max. it 140M$
 Budget Limit: 140M$ for upgrades, engine, car production, drivers and staff.
+* Araştırma sonuçları, bekledikleri her yıl boyunca 2 katı değerlenir.
+Ör: 2021 yılı için güncelleme yapmayan ve sonuçta her bir parça için +3 araştırma puanı kazanan X takımı >>>
+<<< 2022 yılında bu puanları +6 şeklinde araç üretimi esnasında hanesine yazar.
 
 1998-1999-2000-2001-2002-2003-2004
 Engine: V10 3.0L
