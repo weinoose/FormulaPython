@@ -856,7 +856,7 @@ def Q(circuit,session,weather):
     print(f'\nPole Position | {list(QUALI_CLASSIFICATION["DRIVERS"])[dls_.index(min(dls_))]} has clinched the pole position with {fls_[dls_.index(min(dls_))]} in {W2.lower()} conditions.')
 
 # # #
-racereportfile = open(f'{GP} GP Lap-by-Lap Race Report.txt','a',encoding='UTF-8')
+racereportfile = open(f'{GP} GP - Race Report.txt','a',encoding='UTF-8')
 def R(circuit,session,weather):
     BONUS = {}
     for i in drivers:
@@ -1297,6 +1297,7 @@ def R(circuit,session,weather):
     # Shaping the Results
     for driver in drivers:
         data[driver.name], tirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]  
+    data.to_excel(f'{circuit.location} GP - Lap Charts.xlsx')
     print(borderline)
     print(f'{session} Session | {weather} Conditions | {CRC.location} Grand Prix — {CRC.country} | {CRC.circuit_laps} Laps')
     
