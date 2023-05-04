@@ -89,6 +89,23 @@ def design(designer_name,designer,cto,aerodynamicst,focus,FW_R,RW_R,chassis_R,ba
         FW += uniform(3.011,7.01)
         SIDEPOD += uniform(3.011,7.01)
 
+    from random import choice
+    if focus == 'Top Speed':
+        dlist = ['Front Stiff','Front Stiff','Front Stiff','Rear Stiff','Balanced','Unbalanced','Unbalanced','Unbalanced']
+        CHAR = choice(dlist)
+    elif focus == 'Downforce':
+        dlist = ['Rear Stiff','Rear Stifff','Rear Stiff','Front Stiff','Unbalanced','Balanced','Balanced','Balanced']
+        CHAR = choice(dlist)
+    elif focus == 'Balanced':
+        dlist = ['Rear Stiff','Front Stifff','Unbalanced','Balanced','Balanced']
+        CHAR = choice(dlist)
+    elif focus == 'Quali Performance':
+        dlist = ['Rear Stiff','Front Stifff','Unbalanced','Balanced','Balanced']
+        CHAR = choice(dlist)
+    elif focus == 'Race Performance':
+        dlist = ['Rear Stiff','Front Stifff','Unbalanced','Balanced','Balanced']
+        CHAR = choice(dlist)
+
     print(f'Front Wing: {round(FW,3)}')
     print(f'Rear Wing: {round(RW,3)}')
     print(f'Chassis: {round(CHASSIS,3)}')
@@ -96,3 +113,4 @@ def design(designer_name,designer,cto,aerodynamicst,focus,FW_R,RW_R,chassis_R,ba
     print(f'Sidepod: {round(SIDEPOD,3)}')
     print(f'Suspension: {round(SUSPENSION,3)}')
     print(f'Tire Degredation: {round(TIRE_DEG,3)}')
+    print(f'Car Charasteric: {CHAR}')
