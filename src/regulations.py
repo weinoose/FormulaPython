@@ -23,7 +23,7 @@ def upgrade(designer,cto,aerodynamicst,min_budget,max_budget,spent_budget,engine
 
     return (round(((phase_1) + (phase_2) + (phase_3)),3))
 
-def design(designer,cto,aerodynamicst,focus,FW_R,RW_R,chassis_R,base_R,sidepod_R,suspension_R,min_budget,max_budget,spent_budget,engineer_crew): 
+def design(designer_name,designer,cto,aerodynamicst,focus,FW_R,RW_R,chassis_R,base_R,sidepod_R,suspension_R,min_budget,max_budget,spent_budget,engineer_crew): 
     # budgest unit is million.
     
     from random import uniform
@@ -71,6 +71,23 @@ def design(designer,cto,aerodynamicst,focus,FW_R,RW_R,chassis_R,base_R,sidepod_R
             TIRE_DEG = 0.05 + (phase_1/250) + uniform(0.015, 0.041)
         elif focus == 'Race Performance':
             TIRE_DEG = 0.05 + (phase_1/250) + uniform(0.065, 0.095)
+
+    if designer_name == 'Adrian Newey':
+        BASE += uniform(4.011,8.01)
+    elif designer_name == 'Dan Fallows':
+        BASE += uniform(2.011,6.01)
+    elif designer_name == 'Aldo Costa':
+        FW += 3
+        RW += 3
+        CHASSIS += 1.250
+        BASE += 1.250
+        SIDEPOD += 1.250
+        SUSPENSION += 1.250
+    elif designer_name == 'John Barnard':
+        CHASSIS += uniform(3.011,7.01)
+    elif designer_name == 'James Allison':
+        FW += uniform(3.011,7.01)
+        SIDEPOD += uniform(3.011,7.01)
 
     print(f'Front Wing: {round(FW,3)}')
     print(f'Rear Wing: {round(RW,3)}')

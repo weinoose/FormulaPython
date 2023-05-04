@@ -5,11 +5,11 @@ Upgrades applies on based this parts; Chassis, Front Wing, Rear Wing, Base, Side
 * Each team can maintain maxiumum 3 projects per one time. (max. 2 project for either development or research.)
 Prices for upgrades or researches shown below:
 * Chassis ( 1.000.000 - 2.000.000 )
-* Front Wing ( 2.000.000 - 3.500.000 )
-* Rear Wing ( 3.500.000 - 6.000.000 )
-* Base ( 10.000.000 - 15.000.000 )
-* Sidepod ( 500.000 - 1.250.000 )
-* Suspension ( 250.000 - 750.000 ) (her özelliğe +5 ver ve bi bak bakalım kaç saniye hızlanıyor! yaklaşık 0.7 saniye)
+* Front Wing ( 2.000.000 - 4.000.000 )
+* Rear Wing ( 3.000.000 - 6.000.000 )
+* Base ( 7.000.000 - 14.000.000 )
+* Sidepod ( 500.000 - 1.000.000 )
+* Suspension ( 500.000 - 1.000.000 )
 
 Base Limit: 90M$ + plus sponsorships to max. it 140M$
 Budget Limit: 140M$ for upgrades, engine, car production, drivers and staff.

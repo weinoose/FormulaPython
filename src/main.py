@@ -121,7 +121,12 @@ class Tire():
         CL0 = (circuit.laptime * self.laptime_coefficient) + (special_function_for_tire) + (special_function_for_fuel) + (((tire_heat/2.5) + tire_cold)*2.175) + (tire_supplier_pace) + (fuel_injection)
 
         # # # Part 2: The Performance of the Car
-        TOTAL_WEIGHT = (((FIA(current)[6] + driver.team.weight)*0.03)/1)
+        if self.title == 'Wet':
+            TOTAL_WEIGHT = (((FIA(current)[6] + driver.team.weight)*0.03)/1) + ((100-(driver.team.chassis))/2)
+        elif self.title == 'Dump':
+            TOTAL_WEIGHT = (((FIA(current)[6] + driver.team.weight)*0.03)/1) + ((100-(driver.team.chassis))/3)
+        else:
+            TOTAL_WEIGHT = (((FIA(current)[6] + driver.team.weight)*0.03)/1) + 0
 
         # ERS
         if FIA(current)[2] == True:
@@ -268,7 +273,7 @@ class Circuit():
 monza = Circuit('Monza','Italy','Agility Circuit',53,FIA(current)[0]*64.50,29,[[s,h],[s,m],[m,s]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy') # S:21 | M:31 | H:41
 hockenheim = Circuit('Hockenheim','Germany','Agility Circuit',67,FIA(current)[0]*58.00,24,[[s,s,m],[s,s,h],[s,m,m]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Average') # S:18 | M:26 | H:35
 sochi = Circuit('Sochi','Russia','Agility Circuit',53,FIA(current)[0]*78.00,28,[[s,h],[s,m],[m,s]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Hard') # S:20 | M:30 | H:40
-baku = Circuit('Baku','Azerbaijan','Agility Circuit',51,FIA(current)[0]*85.50,21,[[m,h],[s,s,h],[s,m,m]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Very Hard') # S:16 | M:23 | H:31
+baku = Circuit('Baku','Azerbaijan','Agility Circuit',51,FIA(current)[0]*85.50,21,[[m,h],[s,s,h],[s,m,m]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Very Hard') # S:16 | M:23 | H:31
 # Power Circuits
 spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*88.00,24,[[s,h],[s,m],[m,s]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Easy') # S:18 | M:26 | H:35
 sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*74.75,20,[[s,s,m],[s,s,h],[s,m,h]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Easy') # S:16 | M:23 | H:29
@@ -299,7 +304,7 @@ montreal = Circuit('Montréal','Canada','Downforce Circuit',70,FIA(current)[0]*5
 imola = Circuit('Imola','Italy','Downforce Circuit',63,FIA(current)[0]*60.50,36,[[s,h],[s,m],[m,s]],1,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Hard') # S:25 | M:37 | H:50
 suzuka = Circuit('Suzuka','Japan','Downforce Circuit',53,FIA(current)[0]*73.00,21,[[m,h],[s,s,h],[s,s,m]],1,['Dry','Dry','Dry','Dump','Dump','Dump','Wet','Wet'],'Hard') # S:16 | M:23 | H:31
 istanbul = Circuit('Istanbul','Turkey','Downforce Circuit',58,FIA(current)[0]*69.00,20,[[s,s,m],[s,s,h],[s,m,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Easy') # S:16 | M:23 | H:29
-miami = Circuit('Miami','United States','Downforce Circuit',57,FIA(current)[0]*73.00,26,[[m,h],[s,s,m],[s,m,s]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Easy') # S:19 | M:28 | H:37
+miami = Circuit('Miami','United States','Downforce Circuit',57,FIA(current)[0]*73.00,26,[[m,h],[s,s,m],[s,m,s]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Easy') # S:19 | M:28 | H:37
 # Engineering Circuits
 zandvoort = Circuit('Zandvoort','Netherlands','Engineering Circuit',72,FIA(current)[0]*55.00,16,[[s,m,m,s],[s,m,h,s],[m,h,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Average') # S:13 | M:19 | H:24
 budapest = Circuit('Budapest','Hungary','Engineering Circuit',70,FIA(current)[0]*61.50,28,[[m,h],[s,s,m],[s,m,s]],1,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Very Hard') # S:20 | M:30 | H:40
@@ -325,7 +330,7 @@ class Engine():
         self.power = power
         self.reliability = reliability
 
-HONDA = Engine('Red Bull Powertrains Honda',FIA(current)[5],92,75)
+HONDA = Engine('Red Bull Powertrains Honda',FIA(current)[5],93,75)
 FERRARI = Engine('Ferrari',FIA(current)[5],91,70)
 RENAULT = Engine('Renault',FIA(current)[5],87,70)
 MERCEDES = Engine('Mercedes',FIA(current)[5],87,90)
@@ -364,7 +369,7 @@ class Crew():
 
 RB = Crew('Christian Horner','Good','Perfect','Adrian Newey',94,'Pierre Waché',86,'Enrico Balbo',89)
 SF = Crew('Mattia Binotto','Average','Average','David Sanchez',84,'Enrico Cardile',84,'Diego Tondi',88)
-MER = Crew('Toto Wolff','Perfect','Good','James Allisson',94,'Mike Elliot',81,'Jarrod Murphy',84)
+MER = Crew('Toto Wolff','Perfect','Good','James Allison',94,'Mike Elliot',81,'Jarrod Murphy',84)
 MCL = Crew('Andreas Seidl','Perfect','Perfect','James Key',84,'Ben Watkins',79,'Peter Prodromou',77)
 ALP = Crew('Otmar Szafnauer','Average','Average','Pat Fry',77,'Matt Harman',77,'Dirk de Beer',81)
 AMR = Crew('Mike Krack','Good','Average','Akio Haga',70,'Andrew Green',70,'Ian Greig',70)
@@ -393,7 +398,7 @@ class Manufacturer():
         # Extra Calculated Attribute 1
         self.drag = ((self.chassis*5) + (self.base*3) + (self.RW*2))/10
         # Advanced Calculated Attributes
-        self.max_speed = self.powertrain.power
+        self.max_speed = ((self.powertrain.power*7.5) + (self.RW*2.5))/10
         self.acceleration = ((self.powertrain.power*6.5) + (self.drag*3.5))/10
         # Extra Calculated Attribute 2
         self.drs_delta = ((self.powertrain.power*2.5) + (self.RW*7.5))/10
@@ -401,7 +406,10 @@ class Manufacturer():
         self.weight = weight
         self.style = style
         self.degredation_ = degredation_
-        self.manufacturer_tyre_coeff = self.degredation_ + ((self.FW - self.RW)/100)
+        if self.FW > self.RW:
+            self.manufacturer_tyre_coeff = self.degredation_ + ((self.FW - self.RW)/200)
+        else:
+            self.manufacturer_tyre_coeff = self.degredation_
     def rating(self):
         return ((self.powertrain.power*20) + (self.downforce*25) + (self.drag*20) + (self.vortex*20) + (self.braking*15))/100
     def performance(self,circuit_type):
@@ -420,18 +428,18 @@ class Manufacturer():
         elif circuit_type == 'Engineering Circuit':
             return ((self.downforce*5) + (self.vortex*3) + (self.acceleration*2) + (self.braking*1))/11
         elif circuit_type == 'Street Circuit':
-            return ((self.braking*5) + (self.downforce*3) + (self.vortex*2) + (self.drag*1))/11
+            return ((self.braking*5) + (self.downforce*2) + (self.vortex*1) + (self.drag*3))/11
 
 # 0.02 sec for +1 partial update!
-redbull = Manufacturer('Oracle Red Bull Racing',RB,HONDA,88,86,94,98,96,82,+5.00,'Unbalanced',0.18)
-ferrari = Manufacturer('Scuderia Ferrari',SF,FERRARI,94,91,88,88,94,86,+0.00,'Stiff Front',0.12)
-mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team',MER,MERCEDES,91,88,82,88,77,91,+0.00,'Balanced',0.14)
-alpine = Manufacturer('BWT Alpine F1 Team',ALP,RENAULT,86,82,82,84,84,84,+0.00,'Stiff Front',0.12)
-mclaren = Manufacturer('McLaren F1 Team',MCL,MERCEDES,79,88,75,82,84,84,+0.00,'Unbalanced',0.27)
-alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen',ALFA,FERRARI,82,80,77,80,77,80,-10.00,'Unbalanced',0.11)
-haas = Manufacturer('Haas F1 Team',HAAS,FERRARI,80,80,80,77,77,77,+0.00,'Balanced',0.14)
-astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team',AMR,MERCEDES,77,82,77,77,84,84,+0.00,'Unbalanced',0.16)
-alphatauri = Manufacturer('Scuderia AlphaTauri',AT,HONDA,75,77,82,82,75,75,+0.00,'Balanced',0.14)
+redbull = Manufacturer('Oracle Red Bull Racing',RB,HONDA,88,88,91,98,96,82,+5.00,'Unbalanced',0.20)
+ferrari = Manufacturer('Scuderia Ferrari',SF,FERRARI,94,91,88,88,94,86,+0.00,'Stiff Front',0.14)
+mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team',MER,MERCEDES,91,88,82,88,77,91,+0.00,'Balanced',0.17)
+alpine = Manufacturer('BWT Alpine F1 Team',ALP,RENAULT,86,82,82,84,84,84,+0.00,'Stiff Front',0.16)
+mclaren = Manufacturer('McLaren F1 Team',MCL,MERCEDES,79,88,75,82,84,84,+0.00,'Unbalanced',0.18)
+alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen',ALFA,FERRARI,82,80,77,80,77,80,-10.00,'Unbalanced',0.13)
+haas = Manufacturer('Haas F1 Team',HAAS,FERRARI,80,80,80,77,77,77,+0.00,'Balanced',0.15)
+astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team',AMR,MERCEDES,77,82,77,77,84,84,+0.00,'Unbalanced',0.11)
+alphatauri = Manufacturer('Scuderia AlphaTauri',AT,HONDA,75,77,82,82,75,75,+0.00,'Balanced',0.12)
 williams = Manufacturer('Williams Racing',WIL,MERCEDES,77,77,77,77,84,84,+0.00,'Stiff Rear',0.19)
 manufacturers = [redbull,ferrari,mercedes,alpine,mclaren,alfaromeo,haas,astonmartin,alphatauri,williams]
 # Drivers
@@ -1234,7 +1242,7 @@ def R(circuit,session,weather):
                             BONUS[attacker].append(drs_advantage)
                             new_gap = gap_in_front + drs_advantage
                             if new_gap < 0:
-                                BONUS[defender].append(0.001)
+                                BONUS[defender].append(0.125)
                             else:
                                 if (uniform(0,100) < offset):
                                     if uniform(0,25) + attacker_obj.attack >= uniform(0,25) + defender_obj.defence:
@@ -1244,8 +1252,7 @@ def R(circuit,session,weather):
                                         BONUS[attacker].append(1.400 - gap_in_front)
                                         BONUS[defender].append(1.150 - gap_in_front)
                                 else:
-                                    BONUS[attacker].append(0.251)
-                                    BONUS[defender].append(0.001)
+                                    BONUS[attacker].append(0.250 + ((100-attacker_obj.team.vortex)/50))
                         else:
                             pass
                     elif gap_in_front < 1.0:
@@ -1257,10 +1264,9 @@ def R(circuit,session,weather):
                                 BONUS[attacker].append(1.400 - gap_in_front)
                                 BONUS[defender].append(1.150 - gap_in_front)     
                         else:
-                            BONUS[attacker].append(0.251)
-                            BONUS[defender].append(0.001)
+                            BONUS[attacker].append(0.250 + ((100-attacker_obj.team.vortex)/50))
                     else:
-                        pass
+                        BONUS[attacker].append(1.000 + ((100-attacker_obj.team.vortex)/50))
 
             # Laptime Trade-Off.
             for i in BONUS:
