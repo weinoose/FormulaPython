@@ -31,7 +31,7 @@ Max. Driver Contract Lenght: 4 years.
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Michelin
 FIA Fuel Supplier: Shell
-Puoints System: 25-18-15-12-10-8-6-4-2-1
+Points System: 25-18-15-12-10-8-6-4-2-1
 Free-Practice and Quali: 3 and 1-staged.
 DRS: None
 ERS: None
@@ -46,7 +46,7 @@ Max. Driver Contract Lenght: 4 years.
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Bridgestone
 FIA Fuel Supplier: Shell
-Puoints System: 25-18-15-12-10-8-6-4-2-1
+Points System: 25-18-15-12-10-8-6-4-2-1
 Free-Practice and Quali: 3 and 1-staged.
 DRS: None
 ERS: None
@@ -61,7 +61,7 @@ Max. Driver Contract Lenght: 4 years.
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Bridgestone
 FIA Fuel Supplier: Shell
-Puoints System: 25-18-15-12-10-8-6-4-2-1
+Points System: 25-18-15-12-10-8-6-4-2-1
 Free-Practice and Quali: 3 and 1-staged.
 DRS: None
 ERS: None
@@ -76,7 +76,7 @@ Max. Driver Contract Lenght: 4 years.
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Bridgestone
 FIA Fuel Supplier: Shell
-Puoints System: 25-18-15-12-10-8-6-4-2-1
+Points System: 25-18-15-12-10-8-6-4-2-1
 Free-Practice and Quali: 3 and 1-staged.
 DRS: None
 ERS: None
@@ -91,7 +91,7 @@ Max. Driver Contract Lenght: 4 years.
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Shell
-Puoints System: 25-18-15-12-10-8-6-4-2-1
+Points System: 25-18-15-12-10-8-6-4-2-1
 Free-Practice and Quali: 3 and 1-staged.
 DRS: Active
 ERS: None
@@ -106,7 +106,7 @@ Max. Driver Contract Lenght: 5 years.
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Petronas
-Puoints System: 25-18-15-12-10-8-6-4-2-1
+Points System: 25-18-15-12-10-8-6-4-2-1
 Free-Practice and Quali: 3 and 1-staged.
 DRS: Active
 ERS: Active
@@ -121,7 +121,7 @@ Max. Driver Contract Lenght: 5 years.
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Petronas
-Puoints System: 25-18-15-12-10-8-6-4-2-1
+Points System: 25-18-15-12-10-8-6-4-2-1
 Free-Practice and Quali: 3 and 1-staged.
 DRS: Active
 ERS: Active
@@ -136,7 +136,7 @@ Max. Driver Contract Lenght: 5 years.
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Petronas
-Puoints System: 25-18-15-12-10-8-6-4-2-1
+Points System: 25-18-15-12-10-8-6-4-2-1
 Free-Practice and Quali: 3 and 1-staged.
 DRS: Active
 ERS: Active
@@ -151,7 +151,7 @@ Max. Driver Contract Lenght: 5 years.
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Petronas
-Puoints System: 25-18-15-12-10-8-6-4-2-1
+Points System: 25-18-15-12-10-8-6-4-2-1
 Free-Practice and Quali: 3 and 1-staged.
 DRS: Active
 ERS: Active
@@ -166,7 +166,7 @@ Max. Driver Contract Lenght: 6 years.
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Aramco
-Puoints System: 25-18-15-12-10-8-6-4-2-1
+Points System: 25-18-15-12-10-8-6-4-2-1
 Free-Practice and Quali: 3 and 1-staged.
 DRS: Active
 ERS: Active
@@ -181,7 +181,7 @@ Max. Driver Contract Lenght: 6 years.
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Aramco
-Puoints System: 25-18-15-12-10-8-6-4-2-1
+Points System: 25-18-15-12-10-8-6-4-2-1
 Free-Practice and Quali: 3 and 1-staged.
 DRS: Active
 ERS: Active
