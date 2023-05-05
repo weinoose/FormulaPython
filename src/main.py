@@ -919,6 +919,11 @@ def R(circuit,session,weather):
                 driver_error_odd = (((((((driver.fitness*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
                 driver_error_odd_2 = (((((((driver.consistency*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,57500)
 
+            if lap != 1:
+                pass # SC lookout for the gaps!
+            else:
+                pass
+
             if len(DNF[driver.name]) > 1:
                 LAP_CHART[driver.name].append((circuit.laptime + 5)*2)
                 TIRE_CHART[driver.name].append(tire.title[0])
@@ -1447,6 +1452,3 @@ print(borderline)
 # No changable weather conditions for each session.
 # No penalty paying during pit-stops. It has to add after the race.
 # We assume that each team find the best strategy and car setup for the feature race.
-
-# to-do
-# artificial safety car to safety car.
