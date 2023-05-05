@@ -179,7 +179,7 @@ class Tire():
         else:
             hotlap = 0
             if uniform(0,100) < 30:
-                hotlap = (-1.0)*(((driver.fitness/100)**2)/2)    
+                hotlap = (-1.0)*(((driver.fitness/100)**2)/2)  
 
         # # # 3.3: Driver Error During the Lap
         incident = uniform(0.01,100.01)
@@ -481,20 +481,20 @@ class Driver():
             return (variable/2)
         else:
             return 0
-
+# kvy to 78 vandoorne gorsjean interval
 VER = Driver(redbull,'Max Verstappen','NED',1,90,93,91,94,92,95,95,95,87,86,94,['México City','Zandvoort','Spielberg','Imola','Spa-Francorchamps'],'Unbalanced') # 92.187 > 92
 LEC = Driver(ferrari,'Charles Leclerc','MNK',16,93,94,89,95,93,95,88,86,86,90,86,['Monte-Carlo','Spa-Francorchamps','Spielberg','Melbourne','Sakhir'],'Balanced') # 90.989 > 91
 HAM = Driver(mercedes,'Lewis Hamilton','GBR',44,89,89,93,93,91,91,91,92,91,93,92,['Silverstone','Budapest','São Paulo','Montréal','Yas Island'],'Balanced') # 90.97 > 91
-VET = Driver(astonmartin,'Sebastian Vettel','GER',5,89,89,90,91,89,93,92,94,93,91,93,['Singapore','India','Suzuka','Sepang','Valencia'],'Stiff Rear') # 90.774 > 91
-ALO = Driver(alpine,'Fernando Alonso','ESP',14,87,90,92,91,90,92,86,93,94,94,91,['Budapest','Silverstone','Monza','Barcelona','Valencia'],'Stiff Front') # 90.359 > 90
-PER = Driver(redbull,'Sergio Pérez','MEX',11,87,88,94,90,87,90,85,91,95,92,90,['Baku','Jeddah','Monte-Carlo','Sakhir','Singapore'],'Balanced') # 89.05 > 89
+VET = Driver(astonmartin,'Sebastian Vettel','GER',5,89,90,90,91,88,88,92,94,93,91,93,['Singapore','India','Suzuka','Sepang','Valencia'],'Stiff Rear') # 90.457 > 90
+ALO = Driver(alpine,'Fernando Alonso','ESP',14,87,89,92,91,90,93,86,93,94,94,91,['Budapest','Silverstone','Monza','Barcelona','Valencia'],'Stiff Front') # 90.272 > 90
+PER = Driver(redbull,'Sergio Pérez','MEX',11,87,88,94,90,87,92,85,91,95,92,90,['Baku','Jeddah','Monte-Carlo','Singapore','Sakhir'],'Balanced') # 89.16 > 89
 NOR = Driver(mclaren,'Lando Norris','GBR',4,92,91,87,92,86,94,83,87,87,86,87,[None],None) # 88.586 > 89
 RUS = Driver(mercedes,'George Russell','GBR',63,91,92,87,92,85,94,90,86,86,87,86,[None],None) # 88.561 > 89
-OCO = Driver(alpine,'Esteban Ocon','FRA',31,89,87,86,88,86,91,94,90,92,89,87,[None],None) # 88.254 > 88
-SAI = Driver(ferrari,'Carlos Sainz Jr.','ESP',55,86,90,85,89,90,89,84,89,88,85,88,['Monte-Carlo'],'Balanced') # 88.067 > 88
-BOT = Driver(alfaromeo,'Valtteri Bottas','FIN',77,88,88,87,89,88,84,80,85,90,88,84,['Sochi'],'Stiff Rear') # 86.711 > 87
-STR = Driver(astonmartin,'Lance Stroll','CAN',18,83,83,85,88,86,88,93,88,89,85,89,[None],None) # 86.423 > 86
-GAS = Driver(alphatauri,'Pierre Gasly','FRA',10,85,86,85,86,85,85,81,84,81,87,85,[None],None) # 84.847 > 85
+SAI = Driver(ferrari,'Carlos Sainz Jr.','ESP',55,86,90,85,89,90,90,84,89,88,85,88,['Monte-Carlo','Spielberg','Silverstone'],'Balanced') # 88.122 > 88
+BOT = Driver(alfaromeo,'Valtteri Bottas','FIN',77,89,88,87,89,89,84,80,85,92,89,84,['Sochi','Spielberg','Silverstone','Monza','Montréal'],'Stiff Rear') # 87.192 > 87
+OCO = Driver(alpine,'Esteban Ocon','FRA',31,85,86,86,88,86,91,94,90,90,88,87,[None],None) # 87.387 > 87
+STR = Driver(astonmartin,'Lance Stroll','CAN',18,83,83,85,88,86,89,93,88,89,85,89,[None],None) # 86.478 > 86
+GAS = Driver(alphatauri,'Pierre Gasly','FRA',10,88,87,85,86,85,85,81,84,81,87,85,[None],None) # 85.414 > 85
 MAG = Driver(haas,'Kevin Magnussen','DEN',20,81,85,85,87,83,86,90,86,85,84,84,[None],None) # 84.376 > 84
 RIC = Driver(mclaren,'Daniel Ricciardo','AUS',3,79,84,84,84,80,80,89,91,85,87,84,['Monte-Carlo','Baku','Marina Bay','Shanghai','Budapest'],'Stiff Rear') # 83.183 > 83
 ALB = Driver(williams,'Alex Albon','THI',23,82,82,88,85,84,87,81,82,80,84,81,[None],None) # 82.872 > 83
@@ -503,14 +503,14 @@ TSU = Driver(alphatauri,'Yuki Tsunoda','JPN',22,87,81,81,85,80,84,87,84,83,87,80
 MSC = Driver(haas,'Mick Schumacher','GER',47,80,80,82,82,79,81,85,88,84,83,83,[None],'Balanced') # 81.676 > 82
 # DEV = Driver(None,'Nyck de Vries','NET',None,81,81,83,85,79,82,82,82,82,83,83,[None],None) # 81.638 > 82
 # RAI = Driver(None,'Kimi Raikkonen','FIN',None,76,91,81,96,71,71,81,89,81,81,81,['Spa-Francorchamps','Melbourne','Suzuka','São Paulo','Budapest'],'Stiff Front') # 80.859 > # 81
-# KVY = Driver(None,'Daniil Kvyat','RUS',None,88,76,79,79,79,79,94,79,79,79,79,[None],None) # 80.640 > # 81
-# HUL = Driver(None,'Nico Hulkenberg','GER',None,84,84,80,83,77,83,79,79,79,82,77,[None],None) # 80.448 > # 80
-# GIO = Driver(None,'Antonio Giovinazzi','ITA',None,81,78,77,80,81,81,77,83,77,80,77,[None],None) # 79.354 > # 79
+# HUL = Driver(None,'Nico Hulkenberg','GER',None,84,84,80,80,77,81,79,79,79,82,77,[None],None) # 80.116 > # 80
+# GIO = Driver(None,'Antonio Giovinazzi','ITA',None,81,78,77,83,81,83,77,83,77,80,77,[None],None) # 79.685 > # 80
 # DRU = Driver(None,'Felipe Drugovich','BRA',None,78,79,78,78,78,78,78,78,78,78,78,[None],None) # 78.142 > # 78
 ZHO = Driver(alfaromeo,'Zhou Guanyu','CHN',24,77,77,79,79,79,79,74,77,77,79,79,[None],None) # 77.959 > # 78
 # POU = Driver(None,'Théo Pourchaire','FRA',None,82,74,80,80,80,80,80,80,80,80,70,[None],None) # 77.854 > # 78
 # SAR = Driver(None,'Logan Sargeant','USA',None,79,74,80,80,80,80,80,81,80,80,70,[None],None) # 77.481 > # 77
 # GRO = Driver(None,'Romain Grosjean','FRA',None,84,71,76,76,76,76,94,76,76,76,76,[None],None) # 77.373 > # 77
+# KVY = Driver(None,'Daniil Kvyat','RUS',None,72,76,79,79,79,79,94,79,79,79,72,[None],None) # 77.267 > # 77
 # VAN = Driver(None,'Stoffel Vandoorne','BEL',None,77,77,77,77,77,77,76,77,77,77,78,[None],None) # 77.105 > # 77
 # MAZ = Driver(None,'Nikita Mazepin','RUS',None,76,76,72,76,76,76,95,76,76,76,76,[None],None) # 76.853 > 77
 LAT = Driver(williams,'Nicholas Latifi','CAN',6,74,74,74,74,74,74,88,74,74,74,74,[None],None) # 75.684 > 76
@@ -523,7 +523,7 @@ LAT = Driver(williams,'Nicholas Latifi','CAN',6,74,74,74,74,74,74,88,74,74,74,74
 # PAL = Driver(None,'Jolyon Palmer','FRA',None,68,68,68,68,68,68,68,68,68,68,68,[None],None) # 68.00 > 68
 # SIR = Driver(None,'Sergey Sirotkin','RUS',None,67,67,67,67,67,67,67,67,67,67,67,[None],None) # 67.00 > 67
 
-drivers = [VER,LEC,HAM,VET,ALO,PER,NOR,RUS,OCO,SAI,BOT,STR,GAS,MAG,RIC,ALB,TSU,MSC,ZHO,LAT]
+drivers = [VER,LEC,HAM,VET,ALO,PER,NOR,RUS,SAI,BOT,OCO,STR,GAS,MAG,RIC,ALB,TSU,MSC,ZHO,LAT]
 # # # End of the Class Deifinition
 # # # Algorithm Build-up
 errorq = 0
