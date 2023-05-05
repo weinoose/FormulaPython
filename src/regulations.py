@@ -58,19 +58,38 @@ def design(designer_name,designer,cto,aerodynamicst,focus,FW_R,RW_R,chassis_R,ba
         SIDEPOD = 47 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*2) + (aerodynamicst*1))/50))-5.5,((((designer*4) + (cto*2) + (aerodynamicst*1))/50))+5.5) + sidepod_R
         SUSPENSION = 47 + phase_1 + phase_3 +  uniform(((((designer*2) + (cto*4) + (aerodynamicst*1))/50))-5.5,((((designer*2) + (cto*4) + (aerodynamicst*1))/50))+5.5) + suspension_R
         TIRE_DEG = 0.05 + (phase_1/250) + uniform(0.042, 0.064)
-    else:
+    elif focus == 'Balanced':
         FW = 47 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*2) + (aerodynamicst*4))/50))-5.5,((((designer*4) + (cto*2) + (aerodynamicst*4))/50))+5.5) + FW_R
         RW = 47 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*2) + (aerodynamicst*4))/50))-5.5,((((designer*4) + (cto*2) + (aerodynamicst*4))/50))+5.5) + RW_R
         CHASSIS = 47 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*4) + (aerodynamicst*2))/50))-5.5,((((designer*4) + (cto*4) + (aerodynamicst*2))/50))+5.5) + chassis_R
         BASE = 47 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*3) + (aerodynamicst*3))/50))-5.5,((((designer*4) + (cto*3) + (aerodynamicst*3))/50))+5.5) + base_R
         SIDEPOD = 47 + phase_1 + phase_3 +  uniform(((((designer*5) + (cto*3) + (aerodynamicst*2))/50))-5.5,((((designer*5) + (cto*3) + (aerodynamicst*2))/50))+5.5) + sidepod_R
         SUSPENSION = 47 + phase_1 + phase_3 +  uniform(((((designer*3) + (cto*5) + (aerodynamicst*2))/50))-5.5,((((designer*3) + (cto*5) + (aerodynamicst*2))/50))+5.5) + suspension_R
-        if focus == 'Balanced':
-            TIRE_DEG = 0.05 + (phase_1/250) + uniform(0.042, 0.095)
-        elif focus == 'Quali Performance':
-            TIRE_DEG = 0.05 + (phase_1/250) + uniform(0.015, 0.041)
-        elif focus == 'Race Performance':
-            TIRE_DEG = 0.05 + (phase_1/250) + uniform(0.065, 0.095)
+        TIRE_DEG = 0.05 + (phase_1/250) + uniform(0.042, 0.095)
+    elif focus == 'Unbalanced':
+        FW = 47 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*2) + (aerodynamicst*4))/50))-5.5,((((designer*4) + (cto*2) + (aerodynamicst*4))/50))+5.5) + FW_R
+        RW = 47 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*2) + (aerodynamicst*4))/50))-5.5,((((designer*4) + (cto*2) + (aerodynamicst*4))/50))+5.5) + RW_R
+        CHASSIS = 47 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*4) + (aerodynamicst*2))/50))-5.5,((((designer*4) + (cto*4) + (aerodynamicst*2))/50))+5.5) + chassis_R
+        BASE = 47 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*3) + (aerodynamicst*3))/50))-5.5,((((designer*4) + (cto*3) + (aerodynamicst*3))/50))+5.5) + base_R
+        SIDEPOD = 47 + phase_1 + phase_3 +  uniform(((((designer*5) + (cto*3) + (aerodynamicst*2))/50))-5.5,((((designer*5) + (cto*3) + (aerodynamicst*2))/50))+5.5) + sidepod_R
+        SUSPENSION = 47 + phase_1 + phase_3 +  uniform(((((designer*3) + (cto*5) + (aerodynamicst*2))/50))-5.5,((((designer*3) + (cto*5) + (aerodynamicst*2))/50))+5.5) + suspension_R
+        TIRE_DEG = 0.05 + (phase_1/250) + uniform(0.042, 0.095)
+    elif focus == 'Quali Performance':
+        FW = 47 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*2) + (aerodynamicst*4))/50))-5.5,((((designer*4) + (cto*2) + (aerodynamicst*4))/50))+5.5) + FW_R + 1
+        RW = 47 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*2) + (aerodynamicst*4))/50))-5.5,((((designer*4) + (cto*2) + (aerodynamicst*4))/50))+5.5) + RW_R + 1
+        CHASSIS = 47 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*4) + (aerodynamicst*2))/50))-5.5,((((designer*4) + (cto*4) + (aerodynamicst*2))/50))+5.5) + chassis_R + 1
+        BASE = 47 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*3) + (aerodynamicst*3))/50))-5.5,((((designer*4) + (cto*3) + (aerodynamicst*3))/50))+5.5) + base_R + 1
+        SIDEPOD = 47 + phase_1 + phase_3 +  uniform(((((designer*5) + (cto*3) + (aerodynamicst*2))/50))-5.5,((((designer*5) + (cto*3) + (aerodynamicst*2))/50))+5.5) + sidepod_R + 1
+        SUSPENSION = 47 + phase_1 + phase_3 +  uniform(((((designer*3) + (cto*5) + (aerodynamicst*2))/50))-5.5,((((designer*3) + (cto*5) + (aerodynamicst*2))/50))+5.5) + suspension_R + 1
+        TIRE_DEG = 0.05 + (phase_1/250) + uniform(0.015, 0.041)
+    elif focus == 'Race Performance':
+        FW = 47 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*2) + (aerodynamicst*4))/50))-5.5,((((designer*4) + (cto*2) + (aerodynamicst*4))/50))+5.5) + FW_R
+        RW = 47 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*2) + (aerodynamicst*4))/50))-5.5,((((designer*4) + (cto*2) + (aerodynamicst*4))/50))+5.5) + RW_R
+        CHASSIS = 47 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*4) + (aerodynamicst*2))/50))-5.5,((((designer*4) + (cto*4) + (aerodynamicst*2))/50))+5.5) + chassis_R
+        BASE = 47 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*3) + (aerodynamicst*3))/50))-5.5,((((designer*4) + (cto*3) + (aerodynamicst*3))/50))+5.5) + base_R
+        SIDEPOD = 47 + phase_1 + phase_3 +  uniform(((((designer*5) + (cto*3) + (aerodynamicst*2))/50))-5.5,((((designer*5) + (cto*3) + (aerodynamicst*2))/50))+5.5) + sidepod_R
+        SUSPENSION = 47 + phase_1 + phase_3 +  uniform(((((designer*3) + (cto*5) + (aerodynamicst*2))/50))-5.5,((((designer*3) + (cto*5) + (aerodynamicst*2))/50))+5.5) + suspension_R
+        TIRE_DEG = 0.05 + (phase_1/250) + uniform(0.065, 0.095)
 
     if designer_name == 'Adrian Newey':
         BASE += uniform(4.011,8.01)
@@ -91,20 +110,23 @@ def design(designer_name,designer,cto,aerodynamicst,focus,FW_R,RW_R,chassis_R,ba
 
     from random import choice
     if focus == 'Top Speed':
-        dlist = ['Front Stiff','Front Stiff','Front Stiff','Rear Stiff','Balanced','Unbalanced','Unbalanced','Unbalanced']
+        dlist = ['Front Stiff','Front Stiff','Rear Stiff','Rear Stiff','Balanced','Unbalanced','Unbalanced','Unbalanced']
         CHAR = choice(dlist)
     elif focus == 'Downforce':
-        dlist = ['Rear Stiff','Rear Stifff','Rear Stiff','Front Stiff','Unbalanced','Balanced','Balanced','Balanced']
+        dlist = ['Rear Stiff','Rear Stiff','Rear Stiff','Front Stiff','Unbalanced','Balanced','Balanced','Balanced']
         CHAR = choice(dlist)
     elif focus == 'Balanced':
-        dlist = ['Rear Stiff','Front Stifff','Unbalanced','Balanced','Balanced']
+        dlist = ['Rear Stiff','Front Stiff','Unbalanced','Balanced','Balanced']
         CHAR = choice(dlist)
     elif focus == 'Quali Performance':
-        dlist = ['Rear Stiff','Front Stifff','Unbalanced','Balanced','Balanced']
+        dlist = ['Rear Stiff','Front Stiff','Unbalanced','Balanced','Balanced']
         CHAR = choice(dlist)
     elif focus == 'Race Performance':
-        dlist = ['Rear Stiff','Front Stifff','Unbalanced','Balanced','Balanced']
+        dlist = ['Rear Stiff','Front Stiff','Unbalanced','Balanced','Balanced']
         CHAR = choice(dlist)
+    elif focus == 'Unbalanced':
+        dlist = ['Rear Stiff','Rear Stiff','Front Stiff','Front Stiff','Unbalanced','Unbalanced','Unbalanced','Unbalanced','Unbalanced']
+        CHAR = choice(dlist)      
 
     print(f'Front Wing: {round(FW,3)}')
     print(f'Rear Wing: {round(RW,3)}')

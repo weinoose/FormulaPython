@@ -368,12 +368,12 @@ class Crew():
         return choice(pitt)
 
 RB = Crew('Christian Horner','Good','Perfect','Adrian Newey',94,'Pierre Waché',86,'Enrico Balbo',89)
-SF = Crew('Mattia Binotto','Average','Average','David Sanchez',84,'Enrico Cardile',84,'Diego Tondi',88)
+SF = Crew('Mattia Binotto','Average','Average','David Sanchez',84,'Enrico Cardile',84,'Diego Tondi',89)
 MER = Crew('Toto Wolff','Perfect','Good','James Allison',94,'Mike Elliot',81,'Jarrod Murphy',84)
-MCL = Crew('Andreas Seidl','Perfect','Perfect','James Key',84,'Ben Watkins',79,'Peter Prodromou',77)
+MCL = Crew('Andreas Seidl','Perfect','Perfect','James Key',84,'Ben Watkins',77,'Peter Prodromou',79)
 ALP = Crew('Otmar Szafnauer','Average','Average','Pat Fry',77,'Matt Harman',77,'Dirk de Beer',81)
-AMR = Crew('Mike Krack','Good','Average','Akio Haga',70,'Andrew Green',70,'Ian Greig',70)
-HAAS = Crew('Guenther Steiner','Bad','Good','Andrea De Zordo',72,'Simone Resta',81,'Arron Melvin',77)
+AMR = Crew('Mike Krack','Average','Average','Akio Haga',70,'Andrew Green',70,'Ian Greig',70)
+HAAS = Crew('Guenther Steiner','Bad','Average','Andrea De Zordo',72,'Simone Resta',81,'Arron Melvin',77)
 ALFA = Crew('Frédéric Vasseur','Bad','Good',None,None,'Jan Monchaux',70,'Alessandro Cinelli',77)
 AT = Crew('Franz Tost','Average','Good','Paolo Marabini',66,'Jody Egginton',72,'Dickon Balmforth',79)
 WIL = Crew('Jost Capito','Average','Good','Jonathan Carter',72,'François-Xavier Demaison',72,'Dave Wheater',72)
@@ -481,60 +481,49 @@ class Driver():
             return (variable/2)
         else:
             return 0
-        
-# pace,braking,smoothness,adaptability,consistency,fitness,aggression,attack,defence,start,wet,favorite,style... and so on!
+
 VER = Driver(redbull,'Max Verstappen','NED',1,90,93,91,94,92,95,95,95,87,86,94,['México City','Zandvoort','Spielberg','Imola','Spa-Francorchamps'],'Unbalanced') # 92.187 > 92
 LEC = Driver(ferrari,'Charles Leclerc','MNK',16,93,94,89,95,93,95,88,86,86,90,86,['Monte-Carlo','Spa-Francorchamps','Spielberg','Melbourne','Sakhir'],'Balanced') # 90.989 > 91
 HAM = Driver(mercedes,'Lewis Hamilton','GBR',44,89,89,93,93,91,91,91,92,91,93,92,['Silverstone','Budapest','São Paulo','Montréal','Yas Island'],'Balanced') # 90.97 > 91
 VET = Driver(astonmartin,'Sebastian Vettel','GER',5,89,89,90,91,89,93,92,94,93,91,93,['Singapore','India','Suzuka','Sepang','Valencia'],'Stiff Rear') # 90.774 > 91
 ALO = Driver(alpine,'Fernando Alonso','ESP',14,87,90,92,91,90,92,86,93,94,94,91,['Budapest','Silverstone','Monza','Barcelona','Valencia'],'Stiff Front') # 90.359 > 90
 PER = Driver(redbull,'Sergio Pérez','MEX',11,87,88,94,90,87,90,85,91,95,92,90,['Baku','Jeddah','Monte-Carlo','Sakhir','Singapore'],'Balanced') # 89.05 > 89
-NOR = Driver(mclaren,'Lando Norris','GBR',4,91,91,87,92,86,94,82,86,87,86,87,['Spielberg','Sakhir'],None) # 88.339 > 88
-RUS = Driver(mercedes,'George Russell','GBR',63,92,92,87,92,85,94,82,87,86,87,86,[],None) # 88.334 > 88
+NOR = Driver(mclaren,'Lando Norris','GBR',4,92,91,87,92,86,94,83,87,87,86,87,[None],None) # 88.586 > 89
+RUS = Driver(mercedes,'George Russell','GBR',63,91,92,87,92,85,94,90,86,86,87,86,[None],None) # 88.561 > 89
 OCO = Driver(alpine,'Esteban Ocon','FRA',31,89,87,86,88,86,91,94,90,92,89,87,[None],None) # 88.254 > 88
 SAI = Driver(ferrari,'Carlos Sainz Jr.','ESP',55,86,90,85,89,90,89,84,89,88,85,88,['Monte-Carlo'],'Balanced') # 88.067 > 88
 BOT = Driver(alfaromeo,'Valtteri Bottas','FIN',77,88,88,87,89,88,84,80,85,90,88,84,['Sochi'],'Stiff Rear') # 86.711 > 87
 STR = Driver(astonmartin,'Lance Stroll','CAN',18,83,83,85,88,86,88,93,88,89,85,89,[None],None) # 86.423 > 86
 GAS = Driver(alphatauri,'Pierre Gasly','FRA',10,85,86,85,86,85,85,81,84,81,87,85,[None],None) # 84.847 > 85
-MAG = Driver(haas,'Kevin Magnussen','DEN',20,81,83,85,87,83,86,90,86,85,84,84,[None],None) # 84.093 > 84
+MAG = Driver(haas,'Kevin Magnussen','DEN',20,81,85,85,87,83,86,90,86,85,84,84,[None],None) # 84.376 > 84
 RIC = Driver(mclaren,'Daniel Ricciardo','AUS',3,79,84,84,84,80,80,89,91,85,87,84,['Monte-Carlo','Baku','Marina Bay','Shanghai','Budapest'],'Stiff Rear') # 83.183 > 83
-ALB = Driver(williams,'Alex Albon','THI',23,82,82,89,85,84,87,81,82,80,84,81,[None],None) # 82.909 > 83
+ALB = Driver(williams,'Alex Albon','THI',23,82,82,88,85,84,87,81,82,80,84,81,[None],None) # 82.872 > 83
+TSU = Driver(alphatauri,'Yuki Tsunoda','JPN',22,87,81,81,85,80,84,87,84,83,87,80,['Sakhir'],'Balanced') # 82.866 > 83
 # PIA = Driver(None,'Oscar Piastri','AUS',None,87,82,82,81,82,86,80,80,80,81,82,[None],None) # 82.488 > 83
-TSU = Driver(alphatauri,'Yuki Tsunoda','JPN',22,84,81,81,85,80,84,87,84,83,87,80,['Sakhir'],'Balanced') # 82.44 > 82
-# DVR = Driver(None,'Nyck de Vries','NET',None,81,81,85,85,79,82,82,82,82,83,83,[None],None) # 81.712 > 82
-MSC = Driver(haas,'Mick Schumacher','GER',47,80,80,82,82,79,81,85,88,84,83,83,['Spielberg'],'Balanced') # 81.676 > 82
-# HUL = Driver(None,'Nico Hulkenberg','GER',None,84,84,80,83,77,83,79,79,79,82,77,[None],None) # 80.448 > 80
-# RAI = Driver(None,'Kimi Raikkonen','FIN',None,00,00,00,00,00,00,00,00,00,00,00,[None],None)
-# GIO = Driver(None,'Antonio Giovinazzi','ITA',None,00,00,00,00,00,00,00,00,00,00,00,[None],None)
-# POU = Driver(None,'Théo Pourchaire','FRA',None,00,00,00,00,00,00,00,00,00,00,00,[None],None)
-# SAR = Driver(None,'Logan Sargeant','USA',None,00,00,00,00,00,00,00,00,00,00,00,[None],None)
-# DRU = Driver(None,'Felipe Drugovich','BRA',None,78,79,78,78,78,78,78,78,78,78,78,[None],None) # 78.142 > 78
-# GRO = Driver(None,'Romain Grosjean','FRA',None,00,00,00,00,00,00,00,00,00,00,00,[None],None)
-# KVY = Driver(None,'Daniil Kvyat','RUS',None,00,00,00,00,00,00,00,00,00,00,00,[None],None)
-# ERI = Driver(None,'Marcus Ericsson','SWE',None,00,00,00,00,00,00,00,00,00,00,00,[None],None)
-# VAN = Driver(None,'Stoffel Vandoorne','BEL',None,00,00,00,00,00,00,00,00,00,00,00,[None],None)
-ZHO = Driver(alfaromeo,'Zhou Guanyu','CHN',24,77,77,79,79,79,79,83,77,77,79,79,[None],None) # 78.433 > 79
-# MAZ = Driver(None,'Nikita Mazepin','RUS',None,76,76,76,76,76,76,95,76,76,76,76,[None],None) # 77.00 > 77
-LAT = Driver(williams,'Nicholas Latifi','CAN',6,75,75,75,75,75,75,88,75,75,75,75,[None],'Balanced') # 75.684 > 76
-# KUB = Driver(None,'Robert Kubica','POL',None,74,74,74,74,74,74,74,74,74,74,74,[None],None) # 74.00 > 74
-# HAR = Driver(None,'Brendon Hartley','AUS',None,73,73,95,73,73,73,73,73,73,73,73,[None],None) # 73.811 > 74
+MSC = Driver(haas,'Mick Schumacher','GER',47,80,80,82,82,79,81,85,88,84,83,83,[None],'Balanced') # 81.676 > 82
+# DEV = Driver(None,'Nyck de Vries','NET',None,81,81,83,85,79,82,82,82,82,83,83,[None],None) # 81.638 > 82
+# RAI = Driver(None,'Kimi Raikkonen','FIN',None,76,91,81,96,71,71,81,89,81,81,81,['Spa-Francorchamps','Melbourne','Suzuka','São Paulo','Budapest'],'Stiff Front') # 80.859 > # 81
+# KVY = Driver(None,'Daniil Kvyat','RUS',None,88,76,79,79,79,79,94,79,79,79,79,[None],None) # 80.640 > # 81
+# HUL = Driver(None,'Nico Hulkenberg','GER',None,84,84,80,83,77,83,79,79,79,82,77,[None],None) # 80.448 > # 80
+# GIO = Driver(None,'Antonio Giovinazzi','ITA',None,81,78,77,80,81,81,77,83,77,80,77,[None],None) # 79.354 > # 79
+# DRU = Driver(None,'Felipe Drugovich','BRA',None,78,79,78,78,78,78,78,78,78,78,78,[None],None) # 78.142 > # 78
+ZHO = Driver(alfaromeo,'Zhou Guanyu','CHN',24,77,77,79,79,79,79,74,77,77,79,79,[None],None) # 77.959 > # 78
+# POU = Driver(None,'Théo Pourchaire','FRA',None,82,74,80,80,80,80,80,80,80,80,70,[None],None) # 77.854 > # 78
+# SAR = Driver(None,'Logan Sargeant','USA',None,79,74,80,80,80,80,80,81,80,80,70,[None],None) # 77.481 > # 77
+# GRO = Driver(None,'Romain Grosjean','FRA',None,84,71,76,76,76,76,94,76,76,76,76,[None],None) # 77.373 > # 77
+# VAN = Driver(None,'Stoffel Vandoorne','BEL',None,77,77,77,77,77,77,76,77,77,77,78,[None],None) # 77.105 > # 77
+# MAZ = Driver(None,'Nikita Mazepin','RUS',None,76,76,72,76,76,76,95,76,76,76,76,[None],None) # 76.853 > 77
+LAT = Driver(williams,'Nicholas Latifi','CAN',6,74,74,74,74,74,74,88,74,74,74,74,[None],None) # 75.684 > 76
+# ERI = Driver(None,'Marcus Ericsson','SWE',None,75,75,75,75,75,75,75,75,75,75,75,[None],None) # 75.00 > 75
+# KUB = Driver(None,'Robert Kubica','POL',None,73,73,73,73,73,73,73,73,73,73,73,[None],None) # 74.00 > 74
+# HAR = Driver(None,'Brendon Hartley','AUS',None,72,72,95,72,72,72,72,72,72,72,72,[None],None) # 73.811 > 74
 # WEH = Driver(None,'Pascal Wehrlein','GER',None,71,71,71,71,71,71,71,71,71,71,71,[None],None) # 71.00 > 71
 # AIT = Driver(None,'Jack Aitken','GBR',None,70,70,70,70,70,70,70,70,70,70,70,[None],None) # 70.00 > 70
 # FIT = Driver(None,'Pietro Fittipaldi','BRA',None,69,69,69,69,69,69,69,69,69,69,69,[None],None) # 69.00 > 69
 # PAL = Driver(None,'Jolyon Palmer','FRA',None,68,68,68,68,68,68,68,68,68,68,68,[None],None) # 68.00 > 68
 # SIR = Driver(None,'Sergey Sirotkin','RUS',None,67,67,67,67,67,67,67,67,67,67,67,[None],None) # 67.00 > 67
-drivers = [VER,LEC,HAM,VET,ALO,PER,NOR,RUS,OCO,SAI,BOT,STR,GAS,MAG,ALB,RIC,TSU,MSC,ZHO,LAT]
-# print(HAR.real_rating())
 
-# braking >>> 78, 72
-# smoothness >>> 77, 72
-# adaptability >>> 80, 77, 72
-# consistency >>> 81, 72
-# fitness >>> 81, 77, 72
-# aggression >>> 77, 76, 75, 72
-# attack >>> 83, 81, 72
-# start >>> 80, 77, 72
-
+drivers = [VER,LEC,HAM,VET,ALO,PER,NOR,RUS,OCO,SAI,BOT,STR,GAS,MAG,RIC,ALB,TSU,MSC,ZHO,LAT]
 # # # End of the Class Deifinition
 # # # Algorithm Build-up
 errorq = 0
@@ -1337,7 +1326,6 @@ def R(circuit,session,weather):
     # Shaping the Results
     for driver in drivers:
         data[driver.name], tirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]  
-    data.to_excel(f'{circuit.location} GP - Lap Charts.xlsx')
     print(borderline)
     print(f'{session} Session | {weather} Conditions | {CRC.location} Grand Prix — {CRC.country} | {CRC.circuit_laps} Laps')
     

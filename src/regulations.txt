@@ -1,6 +1,6 @@
 In-Year Upgrade Schedule
 Upgrades applies on based this parts; Chassis, Front Wing, Rear Wing, Base, Sidepod and Suspension.
-* Each part and research design takes 3, production 1; total 4 calendar weeks.
+* Each part and research design takes 3, production 2; total 5 calendar weeks.
 * Each team has to leave a budget for in-season upgrades or next-season regulation researches.
 * Each team can maintain maxiumum 3 projects per one time. (max. 2 project for either development or research.)
 Prices for upgrades or researches shown below:
