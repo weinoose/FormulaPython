@@ -483,7 +483,7 @@ class Driver():
             return 0
 
 VER = Driver(redbull,'Max Verstappen','NED',1,90,93,91,94,92,95,95,95,87,86,94,['México City','Zandvoort','Spielberg','Imola','Spa-Francorchamps'],'Unbalanced') # 92.187 > 92
-LEC = Driver(ferrari,'Charles Leclerc','MNK',16,93,94,89,95,93,95,88,86,86,90,86,['Monte-Carlo','Spa-Francorchamps','Spielberg','Melbourne','Sakhir'],'Balanced') # 90.989 > 91
+LEC = Driver(ferrari,'Charles Leclerc','MNK',16,93,94,89,95,93,95,88,86,86,90,86,['Monte-Carlo','Spa-Francorchamps','Monza','Sakhir','Spielberg'],'Balanced') # 90.989 > 91
 HAM = Driver(mercedes,'Lewis Hamilton','GBR',44,89,89,93,93,91,91,91,92,91,93,92,['Silverstone','Budapest','São Paulo','Montréal','Yas Island'],'Balanced') # 90.97 > 91
 VET = Driver(astonmartin,'Sebastian Vettel','GER',5,89,90,90,91,88,88,92,94,93,91,93,['Singapore','India','Suzuka','Sepang','Valencia'],'Stiff Rear') # 90.457 > 90
 ALO = Driver(alpine,'Fernando Alonso','ESP',14,87,89,92,91,90,93,86,93,94,94,91,['Budapest','Silverstone','Monza','Barcelona','Valencia'],'Stiff Front') # 90.272 > 90
@@ -492,15 +492,15 @@ NOR = Driver(mclaren,'Lando Norris','GBR',4,92,91,87,92,86,94,83,87,87,86,87,['S
 RUS = Driver(mercedes,'George Russell','GBR',63,91,92,87,92,85,94,90,86,86,87,86,['São Paulo','Budapest','Spa-Francorchamps','Baku'],None) # 88.561 > 89
 SAI = Driver(ferrari,'Carlos Sainz Jr.','ESP',55,86,90,85,89,90,90,84,89,88,85,88,['Monte-Carlo','Spielberg','Silverstone'],'Balanced') # 88.122 > 88
 BOT = Driver(alfaromeo,'Valtteri Bottas','FIN',77,89,88,87,89,89,84,80,85,92,89,84,['Sochi','Spielberg','Silverstone','Monza','Montréal'],'Stiff Rear') # 87.192 > 87
-OCO = Driver(alpine,'Esteban Ocon','FRA',31,85,86,86,88,86,91,94,90,90,88,87,[None],None) # 87.387 > 87
-STR = Driver(astonmartin,'Lance Stroll','CAN',18,83,83,85,88,86,89,93,88,89,85,89,[None],None) # 86.478 > 86
-GAS = Driver(alphatauri,'Pierre Gasly','FRA',10,88,87,85,86,85,85,81,84,81,87,85,[None],None) # 85.414 > 85
-MAG = Driver(haas,'Kevin Magnussen','DEN',20,81,85,85,87,83,86,90,86,85,84,84,[None],None) # 84.376 > 84
+OCO = Driver(alpine,'Esteban Ocon','FRA',31,85,86,86,88,86,91,94,90,90,88,87,['Budapest'],None) # 87.387 > 87
+STR = Driver(astonmartin,'Lance Stroll','CAN',18,83,83,85,88,86,89,93,88,89,85,89,['Baku'],None) # 86.478 > 86
+GAS = Driver(alphatauri,'Pierre Gasly','FRA',10,88,87,85,86,85,85,81,84,81,87,85,['Monza'],None) # 85.414 > 85
+MAG = Driver(haas,'Kevin Magnussen','DEN',20,81,85,85,87,83,86,90,86,85,84,84,['São Paulo'],None) # 84.376 > 84
 RIC = Driver(mclaren,'Daniel Ricciardo','AUS',3,79,84,84,84,80,80,89,91,85,87,84,['Monte-Carlo','Baku','Marina Bay','Shanghai','Budapest'],'Stiff Rear') # 83.183 > 83
-ALB = Driver(williams,'Alex Albon','THI',23,82,82,88,85,84,87,81,82,80,84,81,[None],'Stiff Front') # 82.872 > 83
+ALB = Driver(williams,'Alex Albon','THI',23,82,82,88,85,84,87,81,82,80,84,81,['Sakhir'],'Stiff Front') # 82.872 > 83
 TSU = Driver(alphatauri,'Yuki Tsunoda','JPN',22,87,81,81,85,80,84,87,84,83,87,80,['Sakhir'],'Balanced') # 82.866 > 83
 # PIA = Driver(None,'Oscar Piastri','AUS',None,87,82,82,81,82,86,80,80,80,81,82,[None],None) # 82.488 > 83
-MSC = Driver(haas,'Mick Schumacher','GER',47,80,80,82,82,79,81,85,88,84,83,83,[None],'Balanced') # 81.676 > 82
+MSC = Driver(haas,'Mick Schumacher','GER',47,80,80,82,82,79,81,85,88,84,83,83,['Spielberg'],'Balanced') # 81.676 > 82
 # DEV = Driver(None,'Nyck de Vries','NET',None,81,81,83,85,79,82,82,82,82,83,83,[None],None) # 81.638 > 82
 # RAI = Driver(None,'Kimi Raikkonen','FIN',None,76,91,81,96,71,71,81,89,81,81,81,['Spa-Francorchamps','Melbourne','Suzuka','São Paulo','Budapest'],'Stiff Front') # 80.859 > # 81
 # HUL = Driver(None,'Nico Hulkenberg','GER',None,84,84,80,80,77,81,79,79,79,82,77,[None],None) # 80.116 > # 80
@@ -937,19 +937,19 @@ def R(circuit,session,weather):
                     tire = TIRE_SETS[driver.name][0]
                     pit_stop = round(driver.team.crew.PIT() + 6.5,3)
                     print(f'PIT | Lap {lap} | Pit-stop for {driver.team.title}! {pit_stop} secs. for {driver.name}')
-                    LAP_CHART[driver.name].append((round(circuit.laptime*2.17,3)) + pit_stop + 20)
+                    LAP_CHART[driver.name].append((round(circuit.laptime*4.17,3)) + pit_stop + 20)
                     TIRE_CHART[driver.name].append(tire.title[0])
                     TIRE_USAGE[driver.name] += 0.339
                     BOX[driver.name].clear()
                     BOX[driver.name].append(None)
                 elif tire_left < 59.95:
                     if len(TIRE_SETS[driver.name]) == 1:
-                        LAP_CHART[driver.name].append((round(circuit.laptime*2.17,3)))
+                        LAP_CHART[driver.name].append((round(circuit.laptime*4.17,3)))
                         TIRE_CHART[driver.name].append(tire.title[0])
                         TIRE_USAGE[driver.name] += 0.339
                     else:
                         if lap + 10 > circuit.circuit_laps+1:
-                            LAP_CHART[driver.name].append((round(circuit.laptime*2.17,3)))
+                            LAP_CHART[driver.name].append((round(circuit.laptime*4.17,3)))
                             TIRE_CHART[driver.name].append(tire.title[0])
                             TIRE_USAGE[driver.name] += 0.339
                         else:
@@ -963,11 +963,11 @@ def R(circuit,session,weather):
                                 print(f'PIT | Lap {lap} | Disaster for {driver.team.title}! {pit_stop} secs. for {driver.name}')
                             else:
                                 print(f'PIT | Lap {lap} | Pit-stop for {driver.team.title}! {pit_stop} secs. for {driver.name}')
-                            LAP_CHART[driver.name].append((round(circuit.laptime*2.17,3)) + pit_stop + 20) # Pitted Lap
+                            LAP_CHART[driver.name].append((round(circuit.laptime*4.17,3)) + pit_stop + 20) # Pitted Lap
                             TIRE_CHART[driver.name].append(tire.title[0])
                             TIRE_USAGE[driver.name] += 0.339
                 else:
-                    LAP_CHART[driver.name].append((round(circuit.laptime*2.17,3)))
+                    LAP_CHART[driver.name].append((round(circuit.laptime*4.17,3)))
                     TIRE_CHART[driver.name].append(tire.title[0])
                     TIRE_USAGE[driver.name] += 0.339
             else:
@@ -1087,7 +1087,7 @@ def R(circuit,session,weather):
                 pass
             else:
                 if len(MECHANICAL[driver.name]) > 0:
-                    LAP_CHART[driver.name][-1] +=  + uniform(1.999,4.999)
+                    LAP_CHART[driver.name][-1] +=  + uniform(1.499,3.499)
                 else:
                     pass
         
@@ -1098,43 +1098,44 @@ def R(circuit,session,weather):
                 temp[driver.name], temptirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]
             TEMP_CLASSIFICATION = ANALYZER(f'LAP {lap} | Race',temp,temptirenamedata,'race-chart')
 
-            # Stage 1
-            pilots = list(TEMP_CLASSIFICATION['DRIVERS'])
-            deltas = list(TEMP_CLASSIFICATION['GAP'])
-
             driver_names = []
-            attack_gap = []
-            for f,j in zip(pilots,deltas):
+            interval_values = []
+            for f,j in zip(list(TEMP_CLASSIFICATION['DRIVERS']),list(TEMP_CLASSIFICATION['INTERVAL'])):
                 try:
                     dolores = float(j[1:]) + 1 - 1
                 except:
                     dolores = 10000.00000
                 driver_names.append(f)
-                attack_gap.append(dolores)
+                interval_values.append(dolores)
 
-            for j,i in zip(driver_names,attack_gap):
+            for j,i in zip(driver_names,interval_values):
                 attacker = j
-                defender = driver_names[driver_names.index(j)-1]
-                gap_in_front = i
-
+                interval = i
+                position = (driver_names.index(attacker)) + 1
+                
                 for L in drivers:
                     if L.name == attacker:
                         attacker_obj = L
-
                 for K in drivers:
                     if K.name == defender:
                         defender_obj = K
+                
+                following_distance = (0.350)*(position-1)
 
-                following_distance = (0.350 - (attacker_obj.aggression/1000))
-
-                if gap_in_front == 1000.0:
-                    pass # no touch
-                else:
-                    if gap_in_front > following_distance:
-                        LAP_CHART[attacker_obj.name][-1] += 0 # run faster, catch the que.
-                        
+                if position == 1:
+                    if len(DNF[attacker]) > 1:
+                        LAP_CHART[attacker_obj.name][-1] += 10000.00000
                     else:
-                        LAP_CHART[attacker_obj.name][-1] -= 0 # slow, slow, slow
+                        pass
+                elif interval == 10000.00000:
+                    pass # whatever
+                else:
+                    if interval > following_distance:
+                        # run faster, catch the que.
+                        LAP_CHART[attacker_obj.name][-1] -= (interval - following_distance)
+                    else:
+                        # slow, slow, slow
+                        LAP_CHART[attacker_obj.name][-1] += (following_distance - interval)
         
         else: # If there is safety car, there will be no pass.
             # Lap by Lap Report for Overtake Analysis
