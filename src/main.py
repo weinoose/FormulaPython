@@ -66,7 +66,7 @@ def FIA(C):
 # Failures
 FAILURES = ['Gearbox','Clutch','Driveshaft','Halfshaft','Throttle','Brakes','Handling','Wheel','Steering','Suspension','Puncture',
             'Electronics','Hydraulics','Water Leak','Fuel Pressure','Oil Pressure','Exhaust','Differential','Vibration',
-            'Transmission','Alternator','Turbocharger','Cooling','Gearbox Driveline','Engine'
+            'Transmission','Alternator','Turbocharger','Cooling','Gearbox Driveline','Engine',
 
             'Engine','Engine','Engine','Engine','Engine','Engine','Engine','Engine','Engine','Engine']
 
@@ -919,15 +919,11 @@ def R(circuit,session,weather):
                 driver_error_odd = (((((((driver.fitness*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
                 driver_error_odd_2 = (((((((driver.consistency*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,57500)
 
-            if lap != 1:
-                pass # SC lookout for the gaps!
-            else:
-                pass
-
             if len(DNF[driver.name]) > 1:
                 LAP_CHART[driver.name].append((circuit.laptime + 5)*2)
                 TIRE_CHART[driver.name].append(tire.title[0])
                 TIRE_USAGE[driver.name] += 0
+
             elif SAFETY_CAR[lap][-1] == 1:
                 if len(BOX[driver.name]) > 1:
                     if W3 == 'Dump':
@@ -941,21 +937,21 @@ def R(circuit,session,weather):
                     tire = TIRE_SETS[driver.name][0]
                     pit_stop = round(driver.team.crew.PIT() + 6.5,3)
                     print(f'PIT | Lap {lap} | Pit-stop for {driver.team.title}! {pit_stop} secs. for {driver.name}')
-                    LAP_CHART[driver.name].append(150.000 + pit_stop + 20)
+                    LAP_CHART[driver.name].append((round(circuit.laptime*2.17,3)) + pit_stop + 20)
                     TIRE_CHART[driver.name].append(tire.title[0])
-                    TIRE_USAGE[driver.name] += 1
+                    TIRE_USAGE[driver.name] += 0.339
                     BOX[driver.name].clear()
                     BOX[driver.name].append(None)
                 elif tire_left < 59.95:
                     if len(TIRE_SETS[driver.name]) == 1:
-                        LAP_CHART[driver.name].append(150.000)
+                        LAP_CHART[driver.name].append((round(circuit.laptime*2.17,3)))
                         TIRE_CHART[driver.name].append(tire.title[0])
-                        TIRE_USAGE[driver.name] += 1
+                        TIRE_USAGE[driver.name] += 0.339
                     else:
                         if lap + 10 > circuit.circuit_laps+1:
-                            LAP_CHART[driver.name].append(150.000)
+                            LAP_CHART[driver.name].append((round(circuit.laptime*2.17,3)))
                             TIRE_CHART[driver.name].append(tire.title[0])
-                            TIRE_USAGE[driver.name] += 1
+                            TIRE_USAGE[driver.name] += 0.339
                         else:
                             TIRE_USAGE[driver.name] = 0
                             TIRE_SETS[driver.name].pop(0)
@@ -967,11 +963,11 @@ def R(circuit,session,weather):
                                 print(f'PIT | Lap {lap} | Disaster for {driver.team.title}! {pit_stop} secs. for {driver.name}')
                             else:
                                 print(f'PIT | Lap {lap} | Pit-stop for {driver.team.title}! {pit_stop} secs. for {driver.name}')
-                            LAP_CHART[driver.name].append(150.000 + pit_stop + 20)
+                            LAP_CHART[driver.name].append((round(circuit.laptime*2.17,3)) + pit_stop + 20) # Pitted Lap
                             TIRE_CHART[driver.name].append(tire.title[0])
-                            TIRE_USAGE[driver.name] += 1
+                            TIRE_USAGE[driver.name] += 0.339
                 else:
-                    LAP_CHART[driver.name].append(150.000)
+                    LAP_CHART[driver.name].append((round(circuit.laptime*2.17,3)))
                     TIRE_CHART[driver.name].append(tire.title[0])
                     TIRE_USAGE[driver.name] += 0.339
             else:
@@ -1095,10 +1091,53 @@ def R(circuit,session,weather):
                 else:
                     pass
         
-        if SAFETY_CAR[lap][-1] == 1:
-            pass
+        if SAFETY_CAR[lap][-1] == 1: # If there is a safety car scenario, cars has to be lining behind the safety car.
+            # Lap by Lap Report for Safety Car
+            temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
+            for driver in drivers:
+                temp[driver.name], temptirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]
+            TEMP_CLASSIFICATION = ANALYZER(f'LAP {lap} | Race',temp,temptirenamedata,'race-chart')
+
+            # Stage 1
+            pilots = list(TEMP_CLASSIFICATION['DRIVERS'])
+            deltas = list(TEMP_CLASSIFICATION['GAP'])
+
+            driver_names = []
+            attack_gap = []
+            for f,j in zip(pilots,deltas):
+                try:
+                    dolores = float(j[1:]) + 1 - 1
+                except:
+                    dolores = 10000.00000
+                driver_names.append(f)
+                attack_gap.append(dolores)
+
+            for j,i in zip(driver_names,attack_gap):
+                attacker = j
+                defender = driver_names[driver_names.index(j)-1]
+                gap_in_front = i
+
+                for L in drivers:
+                    if L.name == attacker:
+                        attacker_obj = L
+
+                for K in drivers:
+                    if K.name == defender:
+                        defender_obj = K
+
+                following_distance = (0.350 - (attacker_obj.aggression/1000))
+
+                if gap_in_front == 1000.0:
+                    pass # no touch
+                else:
+                    if gap_in_front > following_distance:
+                        LAP_CHART[attacker_obj.name][-1] += 0 # run faster, catch the que.
+                        
+                    else:
+                        LAP_CHART[attacker_obj.name][-1] -= 0 # slow, slow, slow
+        
         else: # If there is safety car, there will be no pass.
-            # Lap by Lap Report with FL Correction | for Overtake Analysis
+            # Lap by Lap Report for Overtake Analysis
             temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
             for driver in drivers:
                 temp[driver.name], temptirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]
@@ -1115,8 +1154,7 @@ def R(circuit,session,weather):
                 try:
                     dolores = float(j[1:]) + 1 - 1
                 except:
-                    dolores = 10000.00000
-                
+                    dolores = 10000.00000       
                 driver_names.append(f)
                 attack_gap.append(dolores)
 
