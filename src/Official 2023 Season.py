@@ -250,8 +250,8 @@ class Tire():
             return (CL0) + (CL1) + (CL2) - (circuit.laptime/85)
 
 s = Tire('Soft',FIA(current)[4],1.0,1.00)
-m = Tire('Medium',FIA(current)[4],1.7,1.017)
-h = Tire('Hard',FIA(current)[4],2.4,1.027)
+m = Tire('Medium',FIA(current)[4],1.7,1.012)
+h = Tire('Hard',FIA(current)[4],2.4,1.022)
 inter = Tire('Intermediate',FIA(current)[4],2.6,1.157)
 w = Tire('Wet',FIA(current)[4],3.6,1.257)
 
@@ -756,11 +756,11 @@ def FP(circuit,tireset,stage,session,weather):
                         tire_usage += 1
                     else:
                         tire_usage = 0
+                        tire_chart.append(tire.title[0])
                         tlist.pop(0)
                         tire = tlist[0]
                         pit_stop = 2.0
                         lap_chart.append(current_laptime + pit_stop + 20)
-                        tire_chart.append(tire.title[0])
                         tire_usage += 1
             else:
                 lap_chart.append(current_laptime)

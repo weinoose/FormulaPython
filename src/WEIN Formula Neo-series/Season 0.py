@@ -9,37 +9,34 @@ import datetime
 """
 Dry Conditions | Sakhir Pre-Season Testing — Bahrain
                              MANUFACTURERS             DRIVERS       FL.      GAP  FL. LAP FL. TIRE
-1                Scuderia Ferrari Vodafone        Lando Norris  1:34.297  FASTEST      342        S      342 Total Laps
-2                  Benetton Sauber-Ferrari     Valtteri Bottas  1:34.450   +0.153      342        S      342 Total Laps
-3                     BWT Team Lotus-Honda      Max Verstappen  1:34.528   +0.231      171        S      171 Total Laps
-4                     BWT Team Lotus-Honda        Lance Stroll  1:34.629   +0.332      171        S      171 Total Laps
-5            Gulf Oil Red Bull Racing Ford     Charles Leclerc  1:34.786   +0.489      171        S      171 Total Laps
-6                   Marlboro McLaren-Honda      George Russell  1:34.938   +0.641      171        S      171 Total Laps
-7               Canon Mercedes-AMG F1 Team        Esteban Ocon  1:34.959   +0.662      171        S      342 Total Laps
-9                   Marlboro McLaren-Honda    Daniel Ricciardo  1:35.629   +1.332      170        S      171 Total Laps
-10                       Sofina Haas-Honda    Sebastian Vettel  1:35.657   +1.360      170        S      171 Total Laps
-11           Gulf Oil Red Bull Racing Ford  Antonio Giovinazzi  1:35.941   +1.644      169        S      171 Total Laps
-12  Rich Energy Aston Martin F1 Team Honda        Yuki Tsunoda  1:36.620   +2.323      162        S      171 Total Laps
-13  Rich Energy Aston Martin F1 Team Honda    Carlos Sainz Jr.  1:36.623   +2.326      157        S      171 Total Laps
-14                       Sofina Haas-Honda     Nicholas Latifi  1:36.956   +2.659      165        S      171 Total Laps
-15                Uralkali Williams Racing      Nikita Mazepin  1:37.149   +2.852      164        S      171 Total Laps
-18                Uralkali Williams Racing        Sergio Pérez  1:38.894   +4.597      159        M      171 Total Laps
-
-Aşağıdaki pilotlar gece seansında piste çıkmamışlardır:
-NA               Scuderia Ferrari Vodafone     Fernando Alonso   No Time      DNS      No Time    S        0 Total Laps
-NA              Canon Mercedes-AMG F1 Team        Pierre Gasly   No Time      DNS      No Time    S        0 Total Laps
-NA                 Benetton Sauber-Ferrari      Lewis Hamilton   No Time      DNS      No Time    S        0 Total Laps
+1                Scuderia Ferrari Vodafone     Fernando Alonso  1:35.053  FASTEST      171        M
+2                 Uralkali Williams Racing        Sergio Pérez  1:35.403   +0.350      171        M
+3                  Benetton Sauber-Ferrari      Lewis Hamilton  1:35.641   +0.588      171        M
+4                     BWT Team Lotus-Honda      Max Verstappen  1:36.394   +1.341      169        M
+5                  Benetton Sauber-Ferrari     Valtteri Bottas  1:36.688   +1.635      171        M
+6                Scuderia Ferrari Vodafone        Lando Norris  1:36.691   +1.638      170        M
+7               Canon Mercedes-AMG F1 Team        Esteban Ocon  1:36.759   +1.706      171        M
+8                   Marlboro McLaren-Honda      George Russell  1:36.801   +1.748      171        M
+9                     BWT Team Lotus-Honda        Lance Stroll  1:36.825   +1.772      170        M
+10           Gulf Oil Red Bull Racing Ford     Charles Leclerc  1:36.884   +1.831      168        M
+11              Canon Mercedes-AMG F1 Team        Pierre Gasly  1:37.101   +2.048      171        M
+12                       Sofina Haas-Honda    Sebastian Vettel  1:37.620   +2.567      171        M  
+13                  Marlboro McLaren-Honda    Daniel Ricciardo  1:37.653   +2.600      170        M
+14           Gulf Oil Red Bull Racing Ford  Antonio Giovinazzi  1:37.907   +2.854      171        M
+15  Rich Energy Aston Martin F1 Team Honda    Carlos Sainz Jr.  1:38.449   +3.396      160        M
+16  Rich Energy Aston Martin F1 Team Honda        Yuki Tsunoda  1:38.647   +3.594      151        M
+17                Uralkali Williams Racing      Nikita Mazepin  1:38.857   +3.804      158        M
+18                       Sofina Haas-Honda     Nicholas Latifi  1:38.899   +3.846      171        M
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 """
 
-
-borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'
 # Season (Current) and GP Selection
 # Please only insert valid 'GP' names, otherwise algorithm will respond with a silly error message and I haven't handle it yet :)
 # It is not actually a problem but like I said, it is not looking good to the eye.
 # You can find valid GP names at row 228th, at circuit class where the attribute is in 'location' variable in __init__(): function.
-GP = 'Sakhir Pre-Season Testing'
+GP = 'Sakhir'
 current = '2022'
+borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'
 # # #
 
 # Tire Supplier
@@ -278,8 +275,8 @@ class Tire():
             return (CL0) + (CL1) + (CL2)
 
 s = Tire('Soft',FIA(current)[4],1.0,1.00)
-m = Tire('Medium',FIA(current)[4],1.7,1.017)
-h = Tire('Hard',FIA(current)[4],2.4,1.027)
+m = Tire('Medium',FIA(current)[4],1.7,1.012)
+h = Tire('Hard',FIA(current)[4],2.4,1.022)
 inter = Tire('Intermediate',FIA(current)[4],2.6,1.157)
 w = Tire('Wet',FIA(current)[4],3.6,1.257)
 
@@ -298,7 +295,7 @@ class Circuit():
         self.overtake_difficulty = overtake_difficulty
 
 # Bahrain Testing
-testing = Circuit('Sakhir Pre-Season Testing','Bahrain','Power Circuit',171,FIA(current)[0]*74.75,20,[[m,m,h,s,h,m,m,s],[m,m,h,s,h,m,m,s],[m,m,h,s,h,m,m,s]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Easy') # S:16 | M:23 | H:29
+testing = Circuit('Sakhir Pre-Season Testing','Bahrain','Power Circuit',171,FIA(current)[0]*74.75,20,[[m,m,h,s,h,m,s,m],[m,m,h,s,h,m,s,m],[m,m,h,s,h,m,s,m]],3,['Dry','Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Easy') # S:16 | M:23 | H:29
 # Agility Circuits
 monza = Circuit('Monza','Italy','Agility Circuit',53,FIA(current)[0]*64.50,29,[[s,h],[s,m],[m,s]],2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy') # S:21 | M:31 | H:41
 hockenheim = Circuit('Hockenheim','Germany','Agility Circuit',67,FIA(current)[0]*58.00,24,[[s,s,m],[s,s,h],[s,m,m]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Average') # S:18 | M:26 | H:35
@@ -793,13 +790,13 @@ def FP(circuit,tireset,stage,session,weather):
                         tire_left_chart.append(f'{tire.title[0]} %{tire_left}')
                     else:
                         tire_usage = 0
+                        tire_left_chart.append(f'{tire.title[0]} %{tire_left}')
                         tlist.pop(0)
                         tire = tlist[0]
                         pit_stop = 2.0
                         lap_chart.append(current_laptime + pit_stop + 20)
                         tire_chart.append(tire.title[0])
                         tire_usage += 1
-                        tire_left_chart.append(f'{tire.title[0]} %{tire_left}')
             else:
                 lap_chart.append(current_laptime)
                 tire_chart.append(tire.title[0])
@@ -1484,8 +1481,8 @@ for i in drivers:
     DNF[i.name] = [None]
 
 # Qualifying Session
-# Q(CRC,'Qualifying',W2)
-# print(borderline)
+Q(CRC,'Qualifying',W2)
+print(borderline)
 
 # Dictionary Definitions
 STRATEGIES = {}
@@ -1544,8 +1541,8 @@ elif W3 == 'Wet':
             TIRE_SETS[i.name].append(q)
 
 # Race Session
-# R(CRC,'Race',W3)
-# print(borderline)
+R(CRC,'Race',W3)
+print(borderline)
 
 # # #
 # Missing Attribitues for v1.0
