@@ -418,10 +418,12 @@ class Manufacturer():
         self.weight = weight
         self.style = style
         self.degredation_ = degredation_
-        if self.FW > self.RW:
-            self.manufacturer_tyre_coeff = self.degredation_ + ((self.FW - self.RW)/500)
+        
+        if (self.FW >= 80) and (self.suspension > 80):
+            self.manufacturer_tyre_coeff = self.degredation_ + ((self.FW - 80)/500) + ((self.suspension - 80)/500)
         else:
             self.manufacturer_tyre_coeff = self.degredation_
+
     def rating(self):
         return ((self.powertrain.power*20) + (self.downforce*25) + (self.drag*20) + (self.vortex*20) + (self.braking*15))/100
     def performance(self,circuit_type):
@@ -455,17 +457,26 @@ HAAS = Crew('Frank Williams','Perfect','Good')
 
 # 0.02 sec for +1 partial update!
 mclaren = Manufacturer('Marlboro McLaren-Honda',MCL,HONDA,84,80,86,86,78,83,+3.36,'Balanced',0.133)
-ferrari = Manufacturer('Scuderia Ferrari Vodafone',SF,FERRARI,88,90,82,80,87,83,-2.55,'Stiff Front',0.150)
-mercedes = Manufacturer('Canon Mercedes-AMG F1 Team',MER,MERCEDES,77,83,86,90,85,84,+0.00,'Balanced',0.139)
-williams = Manufacturer('Uralkali Williams Racing',WIL,MERCEDES,79,83,85,80,84,85,+0.00,'Balanced',0.166)
-lotus = Manufacturer('BWT Team Lotus-Honda',LOTUS,HONDA,86,80,82,95,87,85,+7.02,'Unbalanced',0.142)
-redbull = Manufacturer('Gulf Oil Red Bull Racing Ford',RB,FORD,91,85,90,91,86,85,+0.00,'Balanced',0.154)
+ferrari = Manufacturer('Scuderia Ferrari Vodafone',SF,FERRARI,88,90,85,83,87,83,-2.55,'Stiff Front',0.150)
+mercedes = Manufacturer('Canon Mercedes-AMG F1 Team',MER,MERCEDES,81,87,86,90,85,84,+0.00,'Balanced',0.139)
+williams = Manufacturer('Uralkali Williams Racing',WIL,MERCEDES,83,83,85,83,84,85,+0.00,'Balanced',0.166)
+lotus = Manufacturer('BWT Team Lotus-Honda',LOTUS,HONDA,90,84,82,95,87,85,+7.02,'Unbalanced',0.142)
+redbull = Manufacturer('Gulf Oil Red Bull Racing Ford',RB,FORD,91,88,90,91,86,85,+0.00,'Balanced',0.154)
 # renault = Manufacturer('Renault F1 Team',RENAULT,RENAULT,00,00,00,00,00,00,+0.00,'Balanced',0.00)
-sauber = Manufacturer('Benetton Sauber-Ferrari',SAUBER,FERRARI,89,81,86,87,89,82,+0.00,'Balanced',0.162)
-astonmartin = Manufacturer('Rich Energy Aston Martin F1 Team Honda',AMR,HONDA,80,80,81,88,85,80,+0.00,'Unbalanced',0.11)
-haas = Manufacturer('Sofina Haas-Honda',HAAS,HONDA,76,78,70,75,73,77,+4.44,'Stiff Rear',0.146)
-
+sauber = Manufacturer('Benetton Sauber-Ferrari',SAUBER,FERRARI,89,84,86,87,89,86,+0.00,'Balanced',0.162)
+astonmartin = Manufacturer('Rich Energy Aston Martin F1 Team Honda',AMR,HONDA,80,84,81,88,85,84,+0.00,'Unbalanced',0.11)
+haas = Manufacturer('Sofina Haas-Honda',HAAS,HONDA,76,78,70,78,73,81,+4.44,'Stiff Rear',0.146)
 manufacturers = [mclaren,ferrari,mercedes,williams,lotus,redbull,sauber,astonmartin,haas]
+
+""" 0.139
+> 0.110 - Çok Kötü
+0.111 - 0.130 - Kötü
+0.131 - 0.150 - Vasat
+0.151 - 0.159 - Ortalama
+0.160 - 0.179 - İyi
+0.180 < - Çok İyi
+"""
+
 # Drivers
 class Driver():
     def __init__(self,team,name,nationality,number,pace,braking,smoothness,adaptability,consistency,fitness,aggression,attack,defence,start,wet,favorite,style):
