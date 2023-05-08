@@ -53,7 +53,7 @@ DNF | Lap 55 | Carlos Sainz Jr. has forced to retire due to ERS System issue. Di
 # Please only insert valid 'GP' names, otherwise algorithm will respond with a silly error message and I haven't handle it yet :)
 # It is not actually a problem but like I said, it is not looking good to the eye.
 # You can find valid GP names at row 228th, at circuit class where the attribute is in 'location' variable in __init__(): function.
-GP = 'Sakhir'
+GP = 'Jeddah'
 current = '2022'
 borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'
 # # #
