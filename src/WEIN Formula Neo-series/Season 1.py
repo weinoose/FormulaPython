@@ -7,46 +7,64 @@ import datetime
 
 # OUTPUT SPACE:
 """
-Race Session | Dry Conditions | Sakhir Grand Prix — Bahrain | 57 Laps
-PIT | Lap 15 | Pit-stop for Rich Energy Aston Martin F1 Team Honda! 2.45 secs. for Yuki Tsunoda
-PIT | Lap 15 | Pit-stop for Sofina Haas-Honda! 2.4 secs. for Nicholas Latifi
-PIT | Lap 16 | Pit-stop for BWT Team Lotus-Honda! 2.08 secs. for Max Verstappen
-PIT | Lap 16 | Pit-stop for Sofina Haas-Honda! 2.07 secs. for Sebastian Vettel
-PIT | Lap 16 | Pit-stop for Scuderia Ferrari Vodafone! 2.08 secs. for Lando Norris
-PIT | Lap 16 | Pit-stop for Marlboro McLaren-Honda! 4.0 secs. for George Russell
-PIT | Lap 16 | Pit-stop for Rich Energy Aston Martin F1 Team Honda! 2.46 secs. for Carlos Sainz Jr.
-PIT | Lap 16 | Pit-stop for Canon Mercedes-AMG F1 Team! 2.88 secs. for Esteban Ocon
-PIT | Lap 16 | Pit-stop for BWT Team Lotus-Honda! 2.14 secs. for Lance Stroll
-PIT | Lap 16 | Pit-stop for Canon Mercedes-AMG F1 Team! 2.99 secs. for Pierre Gasly
-PIT | Lap 16 | Pit-stop for Marlboro McLaren-Honda! 2.01 secs. for Daniel Ricciardo
-PIT | Lap 16 | Pit-stop for Gulf Oil Red Bull Racing Ford! 2.05 secs. for Antonio Giovinazzi
-PIT | Lap 16 | Pit-stop for Uralkali Williams Racing! 2.22 secs. for Nikita Mazepin
-PIT | Lap 17 | Pit-stop for Gulf Oil Red Bull Racing Ford! 2.38 secs. for Charles Leclerc
-PIT | Lap 17 | Pit-stop for Benetton Sauber-Ferrari! 2.05 secs. for Lewis Hamilton
-PIT | Lap 17 | Pit-stop for Scuderia Ferrari Vodafone! 2.36 secs. for Fernando Alonso
-PIT | Lap 17 | Pit-stop for Uralkali Williams Racing! 2.48 secs. for Sergio Pérez
-PIT | Lap 17 | Pit-stop for Benetton Sauber-Ferrari! 2.66 secs. for Valtteri Bottas
-INC | Lap 29 | Oh, no! Nikita Mazepin has spun-round. He has lost couple seconds.
-PIT | Lap 29 | Pit-stop for Sofina Haas-Honda! 2.84 secs. for Nicholas Latifi
-PIT | Lap 30 | Pit-stop for Uralkali Williams Racing! 2.0 secs. for Nikita Mazepin
-PIT | Lap 31 | Pit-stop for BWT Team Lotus-Honda! 2.17 secs. for Max Verstappen
-PIT | Lap 31 | Pit-stop for Sofina Haas-Honda! 2.46 secs. for Sebastian Vettel
-PIT | Lap 31 | Pit-stop for Scuderia Ferrari Vodafone! 2.03 secs. for Lando Norris
-PIT | Lap 31 | Pit-stop for Marlboro McLaren-Honda! 2.14 secs. for George Russell
-PIT | Lap 31 | Pit-stop for Canon Mercedes-AMG F1 Team! 2.0 secs. for Esteban Ocon
-PIT | Lap 31 | Pit-stop for BWT Team Lotus-Honda! 2.13 secs. for Lance Stroll
-PIT | Lap 31 | Pit-stop for Canon Mercedes-AMG F1 Team! 2.99 secs. for Pierre Gasly
-PIT | Lap 31 | Pit-stop for Gulf Oil Red Bull Racing Ford! 2.34 secs. for Antonio Giovinazzi
-PIT | Lap 33 | Pit-stop for Gulf Oil Red Bull Racing Ford! 2.3 secs. for Charles Leclerc
-PIT | Lap 33 | Pit-stop for Benetton Sauber-Ferrari! 2.29 secs. for Lewis Hamilton
-PIT | Lap 33 | Pit-stop for Scuderia Ferrari Vodafone! 2.36 secs. for Fernando Alonso
-PIT | Lap 33 | Pit-stop for Uralkali Williams Racing! 2.26 secs. for Sergio Pérez
-PIT | Lap 33 | Pit-stop for Benetton Sauber-Ferrari! 2.14 secs. for Valtteri Bottas
-PIT | Lap 36 | Pit-stop for Rich Energy Aston Martin F1 Team Honda! 2.01 secs. for Yuki Tsunoda
-PIT | Lap 37 | Pit-stop for Rich Energy Aston Martin F1 Team Honda! 2.76 secs. for Carlos Sainz Jr.
-PIT | Lap 38 | Pit-stop for Marlboro McLaren-Honda! 4.0 secs. for Daniel Ricciardo
-INC | Lap 50 | Oh, no! Yuki Tsunoda has spun-round. He has lost couple seconds.
-DNF | Lap 55 | Carlos Sainz Jr. has forced to retire due to ERS System issue. Disaster for Rich Energy AMR F1 Team Honda!
+Race Session | Dry Conditions | Jeddah Grand Prix — Saudi Arabia | 50 Laps
+INC | Lap 1 | OOOHHH! Carlos Sainz Jr. and Charles Leclerc GOT COLLIDED!
+INC | Lap 1 | Charles Leclerc HAS DAMAGE BUT Carlos Sainz Jr. HAS NO! Charles Leclerc IS BOXING!.
+PEN | Lap 1 | 15 secs. penalty to Charles Leclerc for the last incident.
+INC | Lap 1 | OOOHHH! Pierre Gasly and Daniel Ricciardo GOT COLLIDED!
+INC | Lap 1 | Daniel Ricciardo HAS DAMAGE BUT Pierre Gasly HAS NO! Daniel Ricciardo IS BOXING!.
+PEN | Lap 1 | 10 secs. penalty to Pierre Gasly for the last incident.
+SFC | Lap 2 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+PIT | Lap 2 | Pit-stop for Gulf Oil Red Bull Racing Ford! 8.54 secs. for Charles Leclerc
+PIT | Lap 2 | Pit-stop for Marlboro McLaren-Honda! 8.99 secs. for Daniel Ricciardo
+SFC | Lap 3 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+SFC | Lap 4 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+SFC | Lap 5 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+PIT | Lap 16 | Pit-stop for Marlboro McLaren-Honda! 2.27 secs. for George Russell
+PIT | Lap 16 | Pit-stop for Rich Energy Aston Martin F1 Team Honda! 2.19 secs. for Carlos Sainz Jr.
+PIT | Lap 16 | Pit-stop for BWT Team Lotus-Honda! 2.15 secs. for Lance Stroll
+PIT | Lap 16 | Pit-stop for Canon Mercedes-AMG F1 Team! 2.0 secs. for Pierre Gasly
+PIT | Lap 16 | Pit-stop for Rich Energy Aston Martin F1 Team Honda! 2.54 secs. for Yuki Tsunoda
+PIT | Lap 16 | Pit-stop for Gulf Oil Red Bull Racing Ford! 2.09 secs. for Antonio Giovinazzi
+PIT | Lap 16 | Pit-stop for Uralkali Williams Racing! 2.23 secs. for Nikita Mazepin
+PIT | Lap 16 | Pit-stop for Sofina Haas-Honda! 2.97 secs. for Nicholas Latifi
+PIT | Lap 17 | Pit-stop for BWT Team Lotus-Honda! 2.16 secs. for Max Verstappen
+PIT | Lap 17 | Pit-stop for Benetton Sauber-Ferrari! 2.0 secs. for Lewis Hamilton
+PIT | Lap 17 | Pit-stop for Sofina Haas-Honda! 2.01 secs. for Sebastian Vettel
+PIT | Lap 17 | Pit-stop for Scuderia Ferrari Vodafone! 2.35 secs. for Fernando Alonso
+PIT | Lap 17 | Pit-stop for Uralkali Williams Racing! 2.07 secs. for Sergio Pérez
+PIT | Lap 17 | Pit-stop for Scuderia Ferrari Vodafone! 2.19 secs. for Lando Norris
+PIT | Lap 17 | Pit-stop for Benetton Sauber-Ferrari! 4.0 secs. for Valtteri Bottas
+PIT | Lap 17 | Pit-stop for Canon Mercedes-AMG F1 Team! 2.28 secs. for Esteban Ocon
+DNF | Lap 18 | Valtteri Bottas has forced to retire due to ERS System issue. Disaster for Benetton Sauber-Ferrari!
+DNF | Lap 23 | Lando Norris has forced to retire due to Engine issue. Disaster for Scuderia Ferrari Vodafone!
+PIT | Lap 23 | Pit-stop for Marlboro McLaren-Honda! 2.51 secs. for Daniel Ricciardo
+SFC | Lap 24 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+PIT | Lap 24 | Pit-stop for Gulf Oil Red Bull Racing Ford! 2.15 secs. for Charles Leclerc
+PIT | Lap 24 | Pit-stop for Rich Energy Aston Martin F1 Team Honda! 2.54 secs. for Yuki Tsunoda
+SFC | Lap 25 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+SFC | Lap 26 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+PIT | Lap 26 | Pit-stop for Benetton Sauber-Ferrari! 2.36 secs. for Lewis Hamilton
+PIT | Lap 26 | Pit-stop for Uralkali Williams Racing! 2.3 secs. for Sergio Pérez
+SFC | Lap 27 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+PIT | Lap 36 | Pit-stop for Sofina Haas-Honda! 2.81 secs. for Nicholas Latifi
+PIT | Lap 37 | Pit-stop for Marlboro McLaren-Honda! 2.47 secs. for George Russell
+PIT | Lap 37 | Pit-stop for Rich Energy Aston Martin F1 Team Honda! 2.97 secs. for Carlos Sainz Jr.
+PIT | Lap 37 | Pit-stop for BWT Team Lotus-Honda! 2.16 secs. for Lance Stroll
+PIT | Lap 37 | Pit-stop for Canon Mercedes-AMG F1 Team! 2.34 secs. for Pierre Gasly
+PIT | Lap 37 | Pit-stop for Gulf Oil Red Bull Racing Ford! 2.24 secs. for Antonio Giovinazzi
+PIT | Lap 37 | Pit-stop for Uralkali Williams Racing! 2.07 secs. for Nikita Mazepin
+PIT | Lap 38 | Pit-stop for BWT Team Lotus-Honda! 2.34 secs. for Max Verstappen
+PIT | Lap 38 | Pit-stop for Sofina Haas-Honda! 2.57 secs. for Sebastian Vettel
+PIT | Lap 38 | Pit-stop for Canon Mercedes-AMG F1 Team! 2.93 secs. for Esteban Ocon
+PIT | Lap 39 | Pit-stop for Scuderia Ferrari Vodafone! 2.22 secs. for Fernando Alonso
+INC | Lap 46 | OOOHHH! Antonio Giovinazzi and Carlos Sainz Jr. GOT COLLIDED!
+INC | Lap 46 | Antonio Giovinazzi IS OUT! Carlos Sainz Jr. HAS NO DAMAGE!.
+PEN | Lap 46 | 5 secs. penalty to Carlos Sainz Jr. for the last incident.
+SFC | Lap 47 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+SFC | Lap 48 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+SFC | Lap 49 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+SFC | Lap 50 | Safety Car Is Out! Yellow Flags Waving Around the Track.
 """
 
 # Season (Current) and GP Selection
