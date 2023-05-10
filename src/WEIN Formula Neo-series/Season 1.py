@@ -7,71 +7,14 @@ import datetime
 
 # OUTPUT SPACE:
 """
-Race Session | Dry Conditions | Jeddah Grand Prix — Saudi Arabia | 50 Laps
-INC | Lap 1 | OOOHHH! Carlos Sainz Jr. and Charles Leclerc GOT COLLIDED!
-INC | Lap 1 | Charles Leclerc HAS DAMAGE BUT Carlos Sainz Jr. HAS NO! Charles Leclerc IS BOXING!.
-PEN | Lap 1 | 15 secs. penalty to Charles Leclerc for the last incident.
-INC | Lap 1 | OOOHHH! Pierre Gasly and Daniel Ricciardo GOT COLLIDED!
-INC | Lap 1 | Daniel Ricciardo HAS DAMAGE BUT Pierre Gasly HAS NO! Daniel Ricciardo IS BOXING!.
-PEN | Lap 1 | 10 secs. penalty to Pierre Gasly for the last incident.
-SFC | Lap 2 | Safety Car Is Out! Yellow Flags Waving Around the Track.
-PIT | Lap 2 | Pit-stop for Gulf Oil Red Bull Racing Ford! 8.54 secs. for Charles Leclerc
-PIT | Lap 2 | Pit-stop for Marlboro McLaren-Honda! 8.99 secs. for Daniel Ricciardo
-SFC | Lap 3 | Safety Car Is Out! Yellow Flags Waving Around the Track.
-SFC | Lap 4 | Safety Car Is Out! Yellow Flags Waving Around the Track.
-SFC | Lap 5 | Safety Car Is Out! Yellow Flags Waving Around the Track.
-PIT | Lap 16 | Pit-stop for Marlboro McLaren-Honda! 2.27 secs. for George Russell
-PIT | Lap 16 | Pit-stop for Rich Energy Aston Martin F1 Team Honda! 2.19 secs. for Carlos Sainz Jr.
-PIT | Lap 16 | Pit-stop for BWT Team Lotus-Honda! 2.15 secs. for Lance Stroll
-PIT | Lap 16 | Pit-stop for Canon Mercedes-AMG F1 Team! 2.0 secs. for Pierre Gasly
-PIT | Lap 16 | Pit-stop for Rich Energy Aston Martin F1 Team Honda! 2.54 secs. for Yuki Tsunoda
-PIT | Lap 16 | Pit-stop for Gulf Oil Red Bull Racing Ford! 2.09 secs. for Antonio Giovinazzi
-PIT | Lap 16 | Pit-stop for Uralkali Williams Racing! 2.23 secs. for Nikita Mazepin
-PIT | Lap 16 | Pit-stop for Sofina Haas-Honda! 2.97 secs. for Nicholas Latifi
-PIT | Lap 17 | Pit-stop for BWT Team Lotus-Honda! 2.16 secs. for Max Verstappen
-PIT | Lap 17 | Pit-stop for Benetton Sauber-Ferrari! 2.0 secs. for Lewis Hamilton
-PIT | Lap 17 | Pit-stop for Sofina Haas-Honda! 2.01 secs. for Sebastian Vettel
-PIT | Lap 17 | Pit-stop for Scuderia Ferrari Vodafone! 2.35 secs. for Fernando Alonso
-PIT | Lap 17 | Pit-stop for Uralkali Williams Racing! 2.07 secs. for Sergio Pérez
-PIT | Lap 17 | Pit-stop for Scuderia Ferrari Vodafone! 2.19 secs. for Lando Norris
-PIT | Lap 17 | Pit-stop for Benetton Sauber-Ferrari! 4.0 secs. for Valtteri Bottas
-PIT | Lap 17 | Pit-stop for Canon Mercedes-AMG F1 Team! 2.28 secs. for Esteban Ocon
-DNF | Lap 18 | Valtteri Bottas has forced to retire due to ERS System issue. Disaster for Benetton Sauber-Ferrari!
-DNF | Lap 23 | Lando Norris has forced to retire due to Engine issue. Disaster for Scuderia Ferrari Vodafone!
-PIT | Lap 23 | Pit-stop for Marlboro McLaren-Honda! 2.51 secs. for Daniel Ricciardo
-SFC | Lap 24 | Safety Car Is Out! Yellow Flags Waving Around the Track.
-PIT | Lap 24 | Pit-stop for Gulf Oil Red Bull Racing Ford! 2.15 secs. for Charles Leclerc
-PIT | Lap 24 | Pit-stop for Rich Energy Aston Martin F1 Team Honda! 2.54 secs. for Yuki Tsunoda
-SFC | Lap 25 | Safety Car Is Out! Yellow Flags Waving Around the Track.
-SFC | Lap 26 | Safety Car Is Out! Yellow Flags Waving Around the Track.
-PIT | Lap 26 | Pit-stop for Benetton Sauber-Ferrari! 2.36 secs. for Lewis Hamilton
-PIT | Lap 26 | Pit-stop for Uralkali Williams Racing! 2.3 secs. for Sergio Pérez
-SFC | Lap 27 | Safety Car Is Out! Yellow Flags Waving Around the Track.
-PIT | Lap 36 | Pit-stop for Sofina Haas-Honda! 2.81 secs. for Nicholas Latifi
-PIT | Lap 37 | Pit-stop for Marlboro McLaren-Honda! 2.47 secs. for George Russell
-PIT | Lap 37 | Pit-stop for Rich Energy Aston Martin F1 Team Honda! 2.97 secs. for Carlos Sainz Jr.
-PIT | Lap 37 | Pit-stop for BWT Team Lotus-Honda! 2.16 secs. for Lance Stroll
-PIT | Lap 37 | Pit-stop for Canon Mercedes-AMG F1 Team! 2.34 secs. for Pierre Gasly
-PIT | Lap 37 | Pit-stop for Gulf Oil Red Bull Racing Ford! 2.24 secs. for Antonio Giovinazzi
-PIT | Lap 37 | Pit-stop for Uralkali Williams Racing! 2.07 secs. for Nikita Mazepin
-PIT | Lap 38 | Pit-stop for BWT Team Lotus-Honda! 2.34 secs. for Max Verstappen
-PIT | Lap 38 | Pit-stop for Sofina Haas-Honda! 2.57 secs. for Sebastian Vettel
-PIT | Lap 38 | Pit-stop for Canon Mercedes-AMG F1 Team! 2.93 secs. for Esteban Ocon
-PIT | Lap 39 | Pit-stop for Scuderia Ferrari Vodafone! 2.22 secs. for Fernando Alonso
-INC | Lap 46 | OOOHHH! Antonio Giovinazzi and Carlos Sainz Jr. GOT COLLIDED!
-INC | Lap 46 | Antonio Giovinazzi IS OUT! Carlos Sainz Jr. HAS NO DAMAGE!.
-PEN | Lap 46 | 5 secs. penalty to Carlos Sainz Jr. for the last incident.
-SFC | Lap 47 | Safety Car Is Out! Yellow Flags Waving Around the Track.
-SFC | Lap 48 | Safety Car Is Out! Yellow Flags Waving Around the Track.
-SFC | Lap 49 | Safety Car Is Out! Yellow Flags Waving Around the Track.
-SFC | Lap 50 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+blank.
 """
 
 # Season (Current) and GP Selection
 # Please only insert valid 'GP' names, otherwise algorithm will respond with a silly error message and I haven't handle it yet :)
 # It is not actually a problem but like I said, it is not looking good to the eye.
 # You can find valid GP names at row 228th, at circuit class where the attribute is in 'location' variable in __init__(): function.
-GP = 'Jeddah'
+GP = 'Imola'
 current = '2022'
 borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'
 # # #
@@ -169,7 +112,7 @@ class Tire():
         tire_heat = ((((10*driver.team.manufacturer_tyre_coeff)**2)-3))/9.0
         tire_left = self.tire_left(driver,circuit,tire_usage) + tire_supplier_durability
         
-        special_function_for_tire = ((pow(1.022,(100-tire_left)))-1)
+        special_function_for_tire = ((pow(1.018717,(100-tire_left)))-1)
         special_function_for_fuel = (fuel_left**(fuel_left/(fuel_left*1.9)))
 
         if mode[0] != 'saturday':
@@ -184,9 +127,9 @@ class Tire():
 
         # # # Part 2: The Performance of the Car
         if self.title == 'Wet':
-            TOTAL_WEIGHT = (((FIA(current)[6] + driver.team.weight)*0.03)/1) + ((100-(driver.team.chassis))/2)
+            TOTAL_WEIGHT = (((FIA(current)[6] + (driver.team.weight+9))*0.03)/1) + ((100-(driver.team.chassis))/5)
         elif self.title == 'Dump':
-            TOTAL_WEIGHT = (((FIA(current)[6] + driver.team.weight)*0.03)/1) + ((100-(driver.team.chassis))/3)
+            TOTAL_WEIGHT = (((FIA(current)[6] + (driver.team.weight+4))*0.03)/1) + ((100-(driver.team.chassis))/7)
         else:
             TOTAL_WEIGHT = (((FIA(current)[6] + driver.team.weight)*0.03)/1) + 0
 
@@ -831,7 +774,7 @@ def FP(circuit,tireset,stage,session,weather):
                     tire_usage += 1
                     tire_left_chart.append(f'{tire.title[0]} %{tire_left}')
                 else:
-                    if lap + 10 > circuit.circuit_laps+1:
+                    if lap + 6 > circuit.circuit_laps+1:
                         lap_chart.append(current_laptime)
                         tire_chart.append(tire.title[0])
                         tire_usage += 1
@@ -1025,7 +968,7 @@ def R(circuit,session,weather):
                     print(f'PIT | Lap {lap} | Pit-stop for {driver.team.title}! {pit_stop} secs. for {driver.name}')
                     LAP_CHART[driver.name].append((round(circuit.laptime*4.17,3)) + pit_stop + 20)
                     TIRE_CHART[driver.name].append(tire.title[0])
-                    TIRE_USAGE[driver.name] += 0.339
+                    TIRE_USAGE[driver.name] += 0.175
                     TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                     BOX[driver.name].clear()
                     BOX[driver.name].append(None)
@@ -1033,13 +976,13 @@ def R(circuit,session,weather):
                     if len(TIRE_SETS[driver.name]) == 1:
                         LAP_CHART[driver.name].append((round(circuit.laptime*4.17,3)))
                         TIRE_CHART[driver.name].append(tire.title[0])
-                        TIRE_USAGE[driver.name] += 0.339
+                        TIRE_USAGE[driver.name] += 0.175
                         TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                     else:
-                        if lap + 10 > circuit.circuit_laps+1:
+                        if lap + 6 > circuit.circuit_laps+1:
                             LAP_CHART[driver.name].append((round(circuit.laptime*4.17,3)))
                             TIRE_CHART[driver.name].append(tire.title[0])
-                            TIRE_USAGE[driver.name] += 0.339
+                            TIRE_USAGE[driver.name] += 0.175
                             TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                         else:
                             TIRE_USAGE[driver.name] = 0
@@ -1054,12 +997,12 @@ def R(circuit,session,weather):
                                 print(f'PIT | Lap {lap} | Pit-stop for {driver.team.title}! {pit_stop} secs. for {driver.name}')
                             LAP_CHART[driver.name].append((round(circuit.laptime*4.17,3)) + pit_stop + 20) # Pitted Lap
                             TIRE_CHART[driver.name].append(tire.title[0])
-                            TIRE_USAGE[driver.name] += 0.339
+                            TIRE_USAGE[driver.name] += 0.175
                             TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                 else:
                     LAP_CHART[driver.name].append((round(circuit.laptime*4.17,3)))
                     TIRE_CHART[driver.name].append(tire.title[0])
-                    TIRE_USAGE[driver.name] += 0.339
+                    TIRE_USAGE[driver.name] += 0.175
                     TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
             else:
                 if mechanic_failure_odd == True:
@@ -1139,7 +1082,7 @@ def R(circuit,session,weather):
                             TIRE_USAGE[driver.name] += 1
                             TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                         else:
-                            if lap + 10 > circuit.circuit_laps+1:
+                            if lap + 6 > circuit.circuit_laps+1:
                                 LAP_CHART[driver.name].append(current_laptime)
                                 TIRE_CHART[driver.name].append(tire.title[0])
                                 TIRE_USAGE[driver.name] += 1
