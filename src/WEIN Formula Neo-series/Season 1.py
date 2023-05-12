@@ -14,9 +14,9 @@ None
 # Please only insert valid 'GP' names, otherwise algorithm will respond with a silly error message and I haven't handle it yet :)
 # It is not actually a problem but like I said, it is not looking good to the eye.
 # You can find valid GP names at row 228th, at circuit class where the attribute is in 'location' variable in __init__(): function.
-GP = 'Sakhir'
+GP = 'Miami'
 current = '2022'
-verbosity = False
+verbosity = True
 borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'
 # # #
 
@@ -255,11 +255,11 @@ class Tire():
         else:
             return (CL0) + (CL1) + (CL2)
 
-s = Tire('Soft',FIA(current)[4],1.0,1.00)
-m = Tire('Medium',FIA(current)[4],1.7,1.0105)
-h = Tire('Hard',FIA(current)[4],2.4,1.0205)
-inter = Tire('Intermediate',FIA(current)[4],2.6,1.157)
-w = Tire('Wet',FIA(current)[4],3.6,1.257)
+s = Tire('Soft',FIA(current)[4],1.0,1.0000)
+m = Tire('Medium',FIA(current)[4],1.7,1.0117)
+h = Tire('Hard',FIA(current)[4],2.4,1.0217)
+inter = Tire('Intermediate',FIA(current)[4],2.3,1.1570)
+w = Tire('Wet',FIA(current)[4],2.9,1.2270)
 
 # Circuits
 class Circuit():

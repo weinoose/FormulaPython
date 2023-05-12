@@ -255,11 +255,11 @@ class Tire():
         else:
             return (CL0) + (CL1) + (CL2)
 
-s = Tire('Soft',FIA(current)[4],1.0,1.00)
-m = Tire('Medium',FIA(current)[4],1.7,1.0105)
-h = Tire('Hard',FIA(current)[4],2.4,1.0205)
-inter = Tire('Intermediate',FIA(current)[4],2.6,1.157)
-w = Tire('Wet',FIA(current)[4],3.6,1.257)
+s = Tire('Soft',FIA(current)[4],1.0,1.0000)
+m = Tire('Medium',FIA(current)[4],1.7,1.0117)
+h = Tire('Hard',FIA(current)[4],2.4,1.0217)
+inter = Tire('Intermediate',FIA(current)[4],2.3,1.1570)
+w = Tire('Wet',FIA(current)[4],2.9,1.2270)
 
 # Circuits
 class Circuit():
