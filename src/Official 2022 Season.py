@@ -128,9 +128,9 @@ class Tire():
 
         # # # Part 2: The Performance of the Car
         if self.title == 'Wet':
-            TOTAL_WEIGHT = (((FIA(current)[6] + (driver.team.weight+9))*0.03)/1)
+            TOTAL_WEIGHT = ((((FIA(current)[6]*((1.0217*circuit.laptime/85.00))) + driver.team.weight)*0.03)/1)
         elif self.title == 'Dump':
-            TOTAL_WEIGHT = (((FIA(current)[6] + (driver.team.weight+4))*0.03)/1)
+            TOTAL_WEIGHT = ((((FIA(current)[6]*((1.0170*circuit.laptime/85.00))) + driver.team.weight)*0.03)/1)
         else:
             TOTAL_WEIGHT = (((FIA(current)[6] + driver.team.weight)*0.03)/1)
 
@@ -258,8 +258,8 @@ class Tire():
 s = Tire('Soft',FIA(current)[4],1.0,1.0000)
 m = Tire('Medium',FIA(current)[4],1.7,1.0117)
 h = Tire('Hard',FIA(current)[4],2.4,1.0217)
-inter = Tire('Intermediate',FIA(current)[4],2.3,1.1570)
-w = Tire('Wet',FIA(current)[4],2.9,1.2270)
+inter = Tire('Intermediate',FIA(current)[4],2.3,1.1717)
+w = Tire('Wet',FIA(current)[4],2.9,1.2217)
 
 # Circuits
 class Circuit():
