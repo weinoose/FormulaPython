@@ -54,7 +54,7 @@ ERS: None
 Engine: V8 2.4L
 Engine: One-year usage
 Chassis: One concept, multi-year usage.
-In-Year Car Development: Active (Max. 3 upgrade allowed for each spec.)
+In-Year Car Development: Active (Max. 1 upgrade allowed for each spec.)
 First Available Research Date: Start of the 2006 Season for 2009 Regulations
 Max. Driver Contract Lenght: 4 years.
 F1 Logistics Supplier: DHL
@@ -65,11 +65,11 @@ Free-Practice and Quali: 3 and 1-staged.
 DRS: None
 ERS: None
 
-2009-2010-2011
+2009-2010
 Engine: V8 2.4L
 Engine Continiuty: One concept, multi-year usage. (Engines are frozen.)
 Chassis: One concept, multi-year usage.
-In-Year Car Development: Active (Max. 3 upgrade allowed for each spec.)
+In-Year Car Development: Active (Max. 1 upgrade allowed for each spec.)
 First Available Research Date: Start of the 2009 Season for 2012 Regulations
 Max. Driver Contract Lenght: 4 years.
 F1 Logistics Supplier: DHL
@@ -80,11 +80,11 @@ Free-Practice and Quali: 3 and 1-staged.
 DRS: None
 ERS: None
 
-2012-2013
+2011-2012-2013
 Engine: V8 2.4L
 Engine Continiuty: One concept, multi-year usage. (Engines are frozen.)
 Chassis: One concept, multi-year usage.
-In-Year Car Development: Active (Max. 3 upgrade allowed for each spec.)
+In-Year Car Development: Active (Max. 1 upgrade allowed for each spec.)
 First Available Research Date: Start of the 2011 Season for 2014 Regulations
 Max. Driver Contract Lenght: 4 years.
 F1 Logistics Supplier: DHL
@@ -99,7 +99,7 @@ ERS: None
 Engine: V6 1.6L
 Engine Continiuty: One-year usage.
 Chassis: One concept, multi-year usage.
-In-Year Car Development: Active (Max. 3 upgrade allowed for each spec.)
+In-Year Car Development: Active (Max. 1 upgrade allowed for each spec.)
 First Available Research Date: Start of the 2013 Season for 2016 Regulations
 Max. Driver Contract Lenght: 5 years.
 F1 Logistics Supplier: DHL
@@ -144,7 +144,7 @@ ERS: Active
 Engine: V6 1.6L
 Engine Continiuty: One-year usage.
 Chassis: One concept, multi-year usage.
-In-Year Car Development: Active (Max. 3 upgrade allowed for each spec.)
+In-Year Car Development: Active (Max. 1 upgrade allowed for each spec.)
 First Available Research Date: Start of the 2018 Season for 2021 Regulations
 Max. Driver Contract Lenght: 5 years.
 F1 Logistics Supplier: DHL
@@ -174,7 +174,7 @@ ERS: Active
 Engine: V6 1.6L
 Engine Continiuty: One concept, multi-year usage. (Engines are frozen.)
 Chassis: One concept, multi-year usage.
-In-Year Car Development: Active (Max. 3 upgrade allowed for each spec.)
+In-Year Car Development: Active (Max. 1 upgrade allowed for each spec.)
 First Available Research Date: Start of the 2022 Season for 2025 Regulations
 Max. Driver Contract Lenght: 6 years.
 F1 Logistics Supplier: DHL
