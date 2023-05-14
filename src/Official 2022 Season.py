@@ -27,8 +27,8 @@ class Tyre():
         self.pace = pace
         self.durability = durability
 
-bridgestone = Tyre('Bridgestone',2.6,3.6)
-michelin = Tyre('Michelin',2.3,2.3)
+bridgestone = Tyre('Bridgestone',1.6,3.6)
+michelin = Tyre('Michelin',1.3,2.6)
 pirelli = Tyre('Pirelli',+0.0,+0.0)
 
 # Fuel
@@ -43,8 +43,10 @@ petronas = Fuel('Petronas',-0.0,-0.0)
 aramco = Fuel('Aramco',+0.3,+3.3)
 
 # FIA: Chassis Design / DRS / ERS / Logistics Sponsor / Tire Supplier / Fuel Supplier / Min. Weight
-def FIA(C): 
-    if C == '2000':
+def FIA(C):
+    if C == '1998':
+        return [1.21250,False,False,'DHL',bridgestone,shell,585]
+    elif C == '2000':
         return [1.15750,False,False,'DHL',bridgestone,shell,585]
     elif C == '2005':
         return [1.04500,False,False,'DHL',bridgestone,shell,585]
@@ -141,14 +143,13 @@ class Tire():
             ERS = 0
 
         if mode[0] == 'saturday':
-            performance = driver.team.performance(circuit.circuit_type)
-            perform = driver.team.rating()
+            performance = ((driver.team.performance(circuit.circuit_type))*1.00)
             if self.title == 'Wet':
-                CL1 = ((((((performance/100)**2)*9.50) - 4)*(-1.0) + ((((perform/100)**2)*8.00) - 4)*(-1.0))/2) + TOTAL_WEIGHT + ERS
+                CL1 = (((((performance/100)**2)*9.50) - 4)*(-1.0)) + TOTAL_WEIGHT + ERS
             elif self.title == 'Dump':
-                CL1 = ((((((performance/100)**2)*10.00) - 4)*(-1.0) + ((((perform/100)**2)*8.00) - 4)*(-1.0))/2) + TOTAL_WEIGHT + ERS
+                CL1 = (((((performance/100)**2)*10.00) - 4)*(-1.0)) + TOTAL_WEIGHT + ERS
             else:
-                CL1 = ((((((performance/100)**2)*10.25) - 4)*(-1.0) + ((((perform/100)**2)*8.75) - 4)*(-1.0))/2) + TOTAL_WEIGHT + ERS
+                CL1 = (((((performance/100)**2)*10.25) - 4)*(-1.0)) + TOTAL_WEIGHT + ERS
         elif mode[0] == 'sunday' or 'friday':
             performance = ((driver.team.performance(circuit.circuit_type))*1.00)
             if self.title == 'Wet':
@@ -441,7 +442,6 @@ class Manufacturer():
         elif circuit_type == 'Street Circuit':
             return ((self.braking*5) + (self.downforce*2) + (self.vortex*1) + (self.drag*3))/11
 
-# 0.02 sec for +1 partial update!
 redbull = Manufacturer('Oracle Red Bull Racing',RB,HONDA,88,88,91,94,94,82,+5.00,'Unbalanced',0.20)
 ferrari = Manufacturer('Scuderia Ferrari',SF,FERRARI,94,91,88,88,94,86,+0.00,'Stiff Front',0.14)
 mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team',MER,MERCEDES,91,88,82,88,77,91,+0.00,'Balanced',0.17)
@@ -1148,7 +1148,7 @@ def R(circuit,session,weather):
                 pass
             else:
                 if len(MECHANICAL[driver.name]) > 0:
-                    LAP_CHART[driver.name][-1] +=  + uniform(1.499,3.499)
+                    LAP_CHART[driver.name][-1] +=  + uniform(1.099,2.099)
                 else:
                     pass
         
