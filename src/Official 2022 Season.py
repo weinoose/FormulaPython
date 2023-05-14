@@ -241,96 +241,18 @@ class Tire():
             else:
                 CL2 = ((((choice(SUNDAY)/100)**1.75)*3.25) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) -1.0
 
-        # # # Part 4: Realistic Grip Scenario
-        if W1 == 'Dump':
-            if W2 == 'Dump':
-                GRIP_EFFECT_Q = 0
-                if W3 == 'Dump':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Wet':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Dry':
-                    GRIP_EFFECT = 1.225
-            elif W2 == 'Wet':
-                GRIP_EFFECT_Q = 0
-                if W3 == 'Dump':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Wet':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Dry':
-                    GRIP_EFFECT = 1.525
-            elif W2 == 'Dry':
-                GRIP_EFFECT_Q = 1.025
-                if W3 == 'Dump':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Wet':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Dry':
-                    GRIP_EFFECT = 0
-        elif W1 == 'Wet':
-            if W2 == 'Dump':
-                GRIP_EFFECT_Q = 0
-                if W3 == 'Dump':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Wet':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Dry':
-                    GRIP_EFFECT = 1.525
-            elif W2 == 'Wet':
-                GRIP_EFFECT_Q = 0
-                if W3 == 'Dump':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Wet':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Dry':
-                    GRIP_EFFECT = 2.025
-            elif W2 == 'Dry':
-                GRIP_EFFECT_Q = 1.725
-                if W3 == 'Dump':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Wet':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Dry':
-                    GRIP_EFFECT = 0
-        elif W1 == 'Dry':
-            if W2 == 'Dump':
-                GRIP_EFFECT_Q = 0
-                if W3 == 'Dump':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Wet':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Dry':
-                    GRIP_EFFECT = 1.025
-            elif W2 == 'Wet':
-                GRIP_EFFECT_Q = 0
-                if W3 == 'Dump':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Wet':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Dry':
-                    GRIP_EFFECT = 1.725
-            elif W2 == 'Dry':
-                GRIP_EFFECT_Q = 0
-                if W3 == 'Dump':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Wet':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Dry':
-                    GRIP_EFFECT = 0
-
-        # # # Part 5: Five Lights Reaction
+        # # # Part 4: Five Lights Reaction
         REACTION = (uniform((((driver.start-15)**2))/10000,(((driver.start+5)**2))/10000) - 0.3)
         STARTING_GRID = ((mode[1]/2.5) - 0.40) - (REACTION*2)
-        GRID_EFFECT = ((circuit.laptime/7.5) + STARTING_GRID)
-        
+        GRID_EFFECT = ((circuit.laptime/7.5) + STARTING_GRID)  
 
         if mode[0] == 'sunday': 
             if lap == 1:
-                return (CL0) + (CL1/3) + (CL2/3) + (GRID_EFFECT) + (GRIP_EFFECT)
+                return (CL0) + (CL1/3) + (CL2/3) + (GRID_EFFECT)
             else:
-                return (CL0) + (CL1) + (CL2) + (GRIP_EFFECT)
+                return (CL0) + (CL1) + (CL2)
         else:
-            return (CL0) + (CL1) + (CL2) + (GRIP_EFFECT_Q)
+            return (CL0) + (CL1) + (CL2)
 
 s = Tire('Soft',FIA(current)[4],1.0,1.0000)
 m = Tire('Medium',FIA(current)[4],1.7,1.0117)

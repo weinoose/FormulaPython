@@ -14,7 +14,7 @@ None
 # Please only insert valid 'GP' names, otherwise algorithm will respond with a silly error message and I haven't handle it yet :)
 # It is not actually a problem but like I said, it is not looking good to the eye.
 # You can find valid GP names at row 228th, at circuit class where the attribute is in 'location' variable in __init__(): function.
-GP = 'Monte-Carlo'
+GP = 'Silverstone'
 current = '2022'
 verbosity = True
 borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'
@@ -241,96 +241,18 @@ class Tire():
             else:
                 CL2 = ((((choice(SUNDAY)/100)**1.75)*3.25) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) -1.0
 
-        # # # Part 4: Realistic Grip Scenario
-        if W1 == 'Dump':
-            if W2 == 'Dump':
-                GRIP_EFFECT_Q = 0
-                if W3 == 'Dump':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Wet':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Dry':
-                    GRIP_EFFECT = 1.225
-            elif W2 == 'Wet':
-                GRIP_EFFECT_Q = 0
-                if W3 == 'Dump':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Wet':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Dry':
-                    GRIP_EFFECT = 1.525
-            elif W2 == 'Dry':
-                GRIP_EFFECT_Q = 1.025
-                if W3 == 'Dump':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Wet':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Dry':
-                    GRIP_EFFECT = 0
-        elif W1 == 'Wet':
-            if W2 == 'Dump':
-                GRIP_EFFECT_Q = 0
-                if W3 == 'Dump':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Wet':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Dry':
-                    GRIP_EFFECT = 1.525
-            elif W2 == 'Wet':
-                GRIP_EFFECT_Q = 0
-                if W3 == 'Dump':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Wet':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Dry':
-                    GRIP_EFFECT = 2.025
-            elif W2 == 'Dry':
-                GRIP_EFFECT_Q = 1.725
-                if W3 == 'Dump':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Wet':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Dry':
-                    GRIP_EFFECT = 0
-        elif W1 == 'Dry':
-            if W2 == 'Dump':
-                GRIP_EFFECT_Q = 0
-                if W3 == 'Dump':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Wet':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Dry':
-                    GRIP_EFFECT = 1.025
-            elif W2 == 'Wet':
-                GRIP_EFFECT_Q = 0
-                if W3 == 'Dump':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Wet':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Dry':
-                    GRIP_EFFECT = 1.725
-            elif W2 == 'Dry':
-                GRIP_EFFECT_Q = 0
-                if W3 == 'Dump':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Wet':
-                    GRIP_EFFECT = 0
-                elif W3 == 'Dry':
-                    GRIP_EFFECT = 0
-
-        # # # Part 5: Five Lights Reaction
+        # # # Part 4: Five Lights Reaction
         REACTION = (uniform((((driver.start-15)**2))/10000,(((driver.start+5)**2))/10000) - 0.3)
         STARTING_GRID = ((mode[1]/2.5) - 0.40) - (REACTION*2)
         GRID_EFFECT = ((circuit.laptime/7.5) + STARTING_GRID)
-        
 
         if mode[0] == 'sunday': 
             if lap == 1:
-                return (CL0) + (CL1/3) + (CL2/3) + (GRID_EFFECT) + (GRIP_EFFECT)
+                return (CL0) + (CL1/3) + (CL2/3) + (GRID_EFFECT)
             else:
-                return (CL0) + (CL1) + (CL2) + (GRIP_EFFECT)
+                return (CL0) + (CL1) + (CL2)
         else:
-            return (CL0) + (CL1) + (CL2) + (GRIP_EFFECT_Q)
+            return (CL0) + (CL1) + (CL2)
 
 s = Tire('Soft',FIA(current)[4],1.0,1.0000)
 m = Tire('Medium',FIA(current)[4],1.7,1.0117)
@@ -520,16 +442,16 @@ AMR = Crew('Stefano Domenicali','Good','Good')
 HAAS = Crew('Frank Williams','Perfect','Good')
 
 # 0.02 sec for +1 partial update!
-mclaren = Manufacturer('Marlboro McLaren-Honda',MCL,HONDA,84,80,86,86,78,83,+3.36,'Balanced',0.133)
-ferrari = Manufacturer('Scuderia Ferrari Vodafone',SF,FERRARI,88,90,85,83,87,83,-2.55,'Stiff Front',0.150)
-mercedes = Manufacturer('Canon Mercedes-AMG F1 Team',MER,MERCEDES,81,87,86,90,85,84,+0.00,'Balanced',0.139)
-williams = Manufacturer('Uralkali Williams Racing',WIL,MERCEDES,83,83,85,83,84,85,+0.00,'Balanced',0.166)
-lotus = Manufacturer('BWT Team Lotus-Honda',LOTUS,HONDA,90,84,82,95,87,85,+7.02,'Unbalanced',0.142)
-redbull = Manufacturer('Gulf Oil Red Bull Racing Ford',RB,FORD,91,88,90,91,86,85,+0.00,'Balanced',0.154)
+mclaren = Manufacturer('Marlboro McLaren-Honda',MCL,HONDA,84,88,86,90,83,83,+3.36,'Balanced',0.133)
+ferrari = Manufacturer('Scuderia Ferrari Vodafone',SF,FERRARI,88,90,85,91,87,87,-2.55,'Stiff Front',0.150)
+mercedes = Manufacturer('Canon Mercedes-AMG F1 Team',MER,MERCEDES,81,91,90,90,85,84,+0.00,'Balanced',0.139)
+williams = Manufacturer('Uralkali Williams Racing',WIL,MERCEDES,83,87,85,83,84,89,+0.00,'Balanced',0.166)
+lotus = Manufacturer('BWT Team Lotus-Honda',LOTUS,HONDA,90,84,82,95,87,89,+3.00,'Unbalanced',0.142)
+redbull = Manufacturer('Gulf Oil Red Bull Racing Ford',RB,FORD,91,90,90,91,86,89,+0.00,'Balanced',0.154)
 # renault = Manufacturer('Renault F1 Team',RENAULT,RENAULT,00,00,00,00,00,00,+0.00,'Balanced',0.00)
-sauber = Manufacturer('Benetton Sauber-Ferrari',SAUBER,FERRARI,89,84,86,87,89,86,+0.00,'Balanced',0.162)
+sauber = Manufacturer('Benetton Sauber-Ferrari',SAUBER,FERRARI,89,84,86,90,89,90,-4.16,'Balanced',0.162)
 astonmartin = Manufacturer('Rich Energy Aston Martin F1 Team Honda',AMR,HONDA,80,84,81,88,85,84,+0.00,'Unbalanced',0.11)
-haas = Manufacturer('Sofina Haas-Honda',HAAS,HONDA,76,78,70,78,73,81,+4.44,'Stiff Rear',0.146)
+haas = Manufacturer('Sofina Haas-Honda',HAAS,HONDA,76,81,73,78,73,81,+4.44,'Stiff Rear',0.146)
 manufacturers = [mclaren,ferrari,mercedes,williams,lotus,redbull,sauber,astonmartin,haas]
 
 # Drivers
