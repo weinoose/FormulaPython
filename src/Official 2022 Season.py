@@ -29,7 +29,7 @@ class Tyre():
 
 bridgestone = Tyre('Bridgestone',1.6,3.6)
 michelin = Tyre('Michelin',1.3,2.6)
-pirelli = Tyre('Pirelli',+0.0,+0.0)
+pirelli = Tyre('Pirelli',0.0,0.0)
 
 # Fuel
 class Fuel():
@@ -38,12 +38,12 @@ class Fuel():
         self.injection = injection
         self.vulnerability = vulnerability
 
-shell = Fuel('Shell',-0.3,-3.3)
+shell = Fuel('Shell',-0.1,-3.1)
 petronas = Fuel('Petronas',-0.0,-0.0)
-aramco = Fuel('Aramco',+0.3,+3.3)
+aramco = Fuel('Aramco',0.1,3.1)
 
 # FIA: Chassis Design / DRS / ERS / Logistics Sponsor / Tire Supplier / Fuel Supplier / Min. Weight
-def FIA(C):
+def FIA(C): 
     if C == '1998':
         return [1.21250,False,False,'DHL',bridgestone,shell,585]
     elif C == '2000':
@@ -81,7 +81,9 @@ FAILURES = ['Gearbox','Clutch','Driveshaft','Halfshaft','Throttle','Brakes','Han
 MECHANICALS = ['6th to 8th Gears','7th and 8th Gears','8th Gear','Gearing Alingment',
                'Engine Modes','Engine Braking','Engine Cooling','Brake Cooling','Exhaust System','Gearbox Driveline']
 
-ERRORS = ['Spun-off','Went through Barriers','Damaged his Suspension']
+ERRORS = ['spun-off','went through barriers','damaged his suspension','crashed into the walls']
+
+MISTAKES = ['locked his brakes','overflowed off the track','missed the braking point','oversteer at the exit of the corner','understeer at the entry of the corner']
 
 if FIA(current)[2] == True:
     FAILURES.extend(['MGU-K','MGU-H','ERS System','Control Electronics','Energy Store'])
@@ -126,13 +128,13 @@ class Tire():
         else:
             tire_cold = 0.0
 
-        CL0 = (circuit.laptime * self.laptime_coefficient) + (special_function_for_tire) + (special_function_for_fuel) + (((tire_heat/2.5) + tire_cold)*2.175) + (tire_supplier_pace) + (fuel_injection)
+        CL0 = (circuit.laptime * self.laptime_coefficient) + (special_function_for_tire) + (special_function_for_fuel) + (((tire_heat/2.5) + tire_cold)*2.175) + (tire_supplier_pace) + (fuel_injection) - ((circuit.laptime*1.0)/90.0)
 
         # # # Part 2: The Performance of the Car
         if self.title == 'Wet':
-            TOTAL_WEIGHT = ((((FIA(current)[6]*((1.0217*circuit.laptime/85.00))) + driver.team.weight)*0.03)/1)
+            TOTAL_WEIGHT = (((FIA(current)[6] + driver.team.weight)*0.03)/1) + (((1.0217*circuit.laptime/85.00))*3)
         elif self.title == 'Dump':
-            TOTAL_WEIGHT = ((((FIA(current)[6]*((1.0170*circuit.laptime/85.00))) + driver.team.weight)*0.03)/1)
+            TOTAL_WEIGHT = (((FIA(current)[6] + driver.team.weight)*0.03)/1) + (((1.0170*circuit.laptime/85.00))*3)
         else:
             TOTAL_WEIGHT = (((FIA(current)[6] + driver.team.weight)*0.03)/1)
 
@@ -192,14 +194,16 @@ class Tire():
         incident = uniform(0.01,100.01)
         ERROR = 0
         if self.title == 'Intermediate':
-            error_rate = ((driver.consistency * driver.fitness) - 1000)/104.5
+            error_rate = ((driver.consistency * driver.fitness) - 1000)/91.5
         elif self.title == 'Wet':
-            error_rate = ((driver.consistency * driver.fitness) - 1000)/97.5
+            error_rate = ((driver.consistency * driver.fitness) - 1000)/84.5
         else:
-            error_rate = ((driver.consistency * driver.fitness) - 1000)/90.5
+            error_rate = ((driver.consistency * driver.fitness) - 1000)/77.5
         if incident > error_rate:
             if hotlap == 0:
                 ERROR = choice([(incident - error_rate)/10,(incident - error_rate)/25,(incident - error_rate)/50,(incident - error_rate)/75,(incident - error_rate)/100])
+                if (ERROR >= 1.332) and (mode[0] == 'sunday'):
+                    print(f'{Fore.LIGHTYELLOW_EX}ERR | Lap {lap} | {driver.name} made mistake and {choice(MISTAKES)}. He has lost {round(ERROR,3)} seconds!{Style.RESET_ALL}')
 
         # # # 3.4: Normal Lap
         CRU, CRD = ((driver.consistency-40)/7.5), ((100-driver.consistency)/5)
@@ -221,11 +225,11 @@ class Tire():
             engine_mode = (0.500 + ((driver.team.powertrain.power)/100))*(-1.0) # Max. Power
             
             if self.title == 'Wet':
-                CL2 = ((((choice(WET)/100)**2)*4.00) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY)
+                CL2 = ((((choice(WET)/100)**2)*4.00) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
             elif self.title == 'Intermediate':
-                CL2 = ((((choice(WET)/100)**2)*3.50) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY)
+                CL2 = ((((choice(WET)/100)**2)*3.50) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
             else:
-                CL2 = ((((choice(SATURDAY)/100)**2)*3.25) + hotlap)*(-1.0) + (engine_mode + drs[1]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY)
+                CL2 = ((((choice(SATURDAY)/100)**2)*3.25) + hotlap)*(-1.0) + (engine_mode + drs[1]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
         
         elif mode[0] == 'sunday' or 'friday':         
             
@@ -236,30 +240,45 @@ class Tire():
                 engine_mode = 0.0
             
             if self.title == 'Wet':
-                CL2 = ((((choice(WET)/100)**1.50)*4.00) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) -1.0
+                CL2 = ((((choice(WET)/100)**1.50)*4.00) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
             elif self.title == 'Intermediate':
-                CL2 = ((((choice(WET)/100)**1.50)*3.50) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) -1.0
+                CL2 = ((((choice(WET)/100)**1.50)*3.50) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
             else:
-                CL2 = ((((choice(SUNDAY)/100)**1.75)*3.25) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) -1.0
+                CL2 = ((((choice(SUNDAY)/100)**1.75)*3.25) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
 
-        # # # Part 4: Five Lights Reaction
+        # # # Part 4: Traction Calculation
+        TRACTION_EFFECT_R,TRACTION_EFFECT_Q = 0,0
+
+        if (W1 and W2 != 'Dry') and (W3 == 'Dry'):
+            TRACTION_EFFECT_R = 1.750
+        elif (W2 != 'Dry') and (W3 == 'Dry'):
+            TRACTION_EFFECT_R = 1.425
+        
+        if (W1 != 'Dry') and (W2 == 'Dry'):
+            TRACTION_EFFECT_Q = 1.025
+        else:
+            TRACTION_EFFECT_Q = 0        
+        
+        TRACTION_EFFECT = TRACTION_EFFECT_Q + TRACTION_EFFECT_R
+        
+        # # # Part 5: Five Lights Reaction
         REACTION = (uniform((((driver.start-15)**2))/10000,(((driver.start+5)**2))/10000) - 0.3)
         STARTING_GRID = ((mode[1]/2.5) - 0.40) - (REACTION*2)
-        GRID_EFFECT = ((circuit.laptime/7.5) + STARTING_GRID)  
+        GRID_EFFECT = ((circuit.laptime/7.5) + STARTING_GRID)
 
         if mode[0] == 'sunday': 
             if lap == 1:
-                return (CL0) + (CL1/3) + (CL2/3) + (GRID_EFFECT)
+                return (CL0) + (CL1/3) + (CL2/3) + (GRID_EFFECT) + (TRACTION_EFFECT)
             else:
-                return (CL0) + (CL1) + (CL2)
+                return (CL0) + (CL1) + (CL2) + (TRACTION_EFFECT)
         else:
-            return (CL0) + (CL1) + (CL2)
+            return (CL0) + (CL1) + (CL2) + (TRACTION_EFFECT)
 
 s = Tire('Soft',FIA(current)[4],1.0,1.0000)
 m = Tire('Medium',FIA(current)[4],1.7,1.0117)
 h = Tire('Hard',FIA(current)[4],2.4,1.0217)
-inter = Tire('Intermediate',FIA(current)[4],2.3,1.1717)
-w = Tire('Wet',FIA(current)[4],2.9,1.2217)
+inter = Tire('Intermediate',FIA(current)[4],2.4,1.1717)
+w = Tire('Wet',FIA(current)[4],2.8,1.2117)
 
 # Circuits
 class Circuit():
@@ -340,7 +359,7 @@ HONDA = Engine('Red Bull Powertrains Honda',FIA(current)[5],93,77)
 FERRARI = Engine('Ferrari',FIA(current)[5],91,72)
 RENAULT = Engine('Renault',FIA(current)[5],87,72)
 MERCEDES = Engine('Mercedes',FIA(current)[5],87,92)
-# FORD = Engine('Ford',FIA(current)[5],79,89)
+# place holder for nothing.
 
 # Crews
 class Crew():
@@ -472,6 +491,7 @@ class Driver():
         self.defence = defence
         self.start = start
         self.wet = wet
+        self.form = uniform(0.000, ((((fitness*3.5) + (consistency*1.5))/5000)))
         self.favorite= favorite
         self.style = style
     def qualifying_pace(self):
@@ -823,8 +843,9 @@ def FP(circuit,tireset,stage,session,weather):
     print(ANALYZER(None,data,tirenamedata,'quali-chart'))
     
     if verbosity == True:
-        data.to_excel(f'FP {session} Lap Chart.xlsx')
-        tireleftdata.to_excel(f'FP {session} Tire Duration Data.xlsx')
+        KW = session.lower().split(' ')
+        data.to_excel(f'report-{circuit.location.lower()}-gp-{KW[0][0]}{KW[1][0]}{KW[2][0]}-chart.xlsx')
+        tireleftdata.to_excel(f'report-{circuit.location.lower()}-gp-{KW[0][0]}{KW[1][0]}{KW[2][0]}-tire.xlsx')
 
 # # #
 
@@ -925,7 +946,8 @@ def Q(circuit,session,weather):
 # # #
 def R(circuit,session,weather):
     
-    racereportfile = open(f'{GP} GP Race Report.txt','a',encoding='UTF-8')
+    if verbosity == True:
+        racereportfile = open(f'report-{GP.lower()}-gp.txt','a',encoding='UTF-8')
     
     BONUS = {}
     for i in drivers:
@@ -1119,14 +1141,15 @@ def R(circuit,session,weather):
                                 TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                     else:
                         if driver_error_odd_2:
-                            print(f'{Fore.LIGHTRED_EX}INC | Lap {lap} | Oh, no! {driver.name} has spun-round. He has lost couple seconds.{Style.RESET_ALL}')
-                            LAP_CHART[driver.name].append(current_laptime + 15.0)
+                            ickx = uniform(6.501,16.501)
+                            print(f'{Fore.LIGHTRED_EX}INC | Lap {lap} | Oh, no! {driver.name} has spun-round. He {ickx} couple seconds.{Style.RESET_ALL}')
+                            LAP_CHART[driver.name].append(current_laptime + ickx)
                             TIRE_CHART[driver.name].append(tire.title[0])
                             if W3 != 'Dry':
-                                TIRE_USAGE[driver.name] += 0
+                                TIRE_USAGE[driver.name] += 0.332
                                 TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                             else:
-                                TIRE_USAGE[driver.name] += 5
+                                TIRE_USAGE[driver.name] += 3.332
                                 TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                         else:
                             # If Corner-cut?
@@ -1153,50 +1176,53 @@ def R(circuit,session,weather):
                     pass
         
         if SAFETY_CAR[lap][-1] == 1: # If there is a safety car scenario, cars has to be lining behind the safety car.
-            # Lap by Lap Report for Safety Car
-            temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
-            for driver in drivers:
-                temp[driver.name], temptirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]
-            TEMP_CLASSIFICATION = ANALYZER(f'LAP {lap} | Race',temp,temptirenamedata,'race-chart')
+            if SAFETY_CAR[lap+3][-1] != 1:
+                # Lap by Lap Report for Safety Car
+                temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
+                for driver in drivers:
+                    temp[driver.name], temptirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]
+                TEMP_CLASSIFICATION = ANALYZER(f'LAP {lap} | Race',temp,temptirenamedata,'race-chart')
 
-            driver_names = []
-            interval_values = []
-            for f,j in zip(list(TEMP_CLASSIFICATION['DRIVERS']),list(TEMP_CLASSIFICATION['INTERVAL'])):
-                try:
-                    dolores = float(j[1:]) + 1 - 1
-                except:
-                    dolores = 199.00000
-                driver_names.append(f)
-                interval_values.append(dolores)
+                driver_names = []
+                interval_values = []
+                for f,j in zip(list(TEMP_CLASSIFICATION['DRIVERS']),list(TEMP_CLASSIFICATION['INTERVAL'])):
+                    try:
+                        dolores = float(j[1:]) + 1 - 1
+                    except:
+                        dolores = 199.00000
+                    driver_names.append(f)
+                    interval_values.append(dolores)
 
-            for j,i in zip(driver_names,interval_values):
-                attacker = j
-                interval = i
-                position = (driver_names.index(attacker)) + 1
-                
-                for L in drivers:
-                    if L.name == attacker:
-                        attacker_obj = L
-                for K in drivers:
-                    if K.name == defender:
-                        defender_obj = K
-                
-                following_distance = (0.350)*(position-1)
+                for j,i in zip(driver_names,interval_values):
+                    attacker = j
+                    interval = i
+                    position = (driver_names.index(attacker)) + 1
+                    
+                    for L in drivers:
+                        if L.name == attacker:
+                            attacker_obj = L
+                    for K in drivers:
+                        if K.name == defender:
+                            defender_obj = K
+                    
+                    following_distance = (0.350)*(position-1)
 
-                if position == 1:
-                    if len(DNF[attacker]) > 1:
-                        LAP_CHART[attacker_obj.name][-1] += 199.00000
+                    if position == 1:
+                        if len(DNF[attacker]) > 1:
+                            LAP_CHART[attacker_obj.name][-1] += 199.00000
+                        else:
+                            pass
+                    elif interval == 199.00000:
+                        pass # whatever
                     else:
-                        pass
-                elif interval == 199.00000:
-                    pass # whatever
-                else:
-                    if interval > following_distance:
-                        # run faster, catch the que.
-                        LAP_CHART[attacker_obj.name][-1] = LAP_CHART[attacker_obj.name][-1] - (interval - following_distance)
-                    else:
-                        # slow, slow, slow
-                        LAP_CHART[attacker_obj.name][-1] = LAP_CHART[attacker_obj.name][-1] + (following_distance - interval)
+                        if interval > following_distance:
+                            # run faster, catch the que.
+                            LAP_CHART[attacker_obj.name][-1] = LAP_CHART[attacker_obj.name][-1] - (interval - following_distance)
+                        else:
+                            # slow, slow, slow
+                            LAP_CHART[attacker_obj.name][-1] = LAP_CHART[attacker_obj.name][-1] + (following_distance - interval)
+            else:
+                pass
         
         else: # If there is safety car, there will be no pass.
             # Lap by Lap Report for Overtake Analysis
@@ -1471,7 +1497,8 @@ def R(circuit,session,weather):
             else:
                 dls_.append(float(i.split(':')[0])*60 + float(i.split(':')[1]))
         TEMP_FL_INFO = f'\nFastest Lap | {list(TEMP_CLASSIFICATION["DRIVERS"])[dls_.index(min(dls_))]} has recorded {fls_[dls_.index(min(dls_))]} on this track.'
-        racereportfile.write(f'{TEMP_INFO}\n{TEMP_CLASSIFICATION}\n{TEMP_FL_INFO}\n{borderline}\n')
+        if verbosity == True:
+            racereportfile.write(f'{TEMP_INFO}\n{TEMP_CLASSIFICATION}\n{TEMP_FL_INFO}\n{borderline}\n')
 
         # # # END OF THE LAP
 
@@ -1485,8 +1512,9 @@ def R(circuit,session,weather):
         data[driver.name], tirenamedata[driver.name], tireperformancedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name], TIRE_LEFT[driver.name]
     
     if verbosity == True:
-        data.to_excel('Lap Chart.xlsx')
-        tireperformancedata.to_excel('Tire Duration Data.xlsx')
+        KW = session.lower()
+        data.to_excel(f'report-{circuit.location.lower()}-gp-{KW}-chart.xlsx')
+        tireperformancedata.to_excel(f'report-{circuit.location.lower()}-gp-{KW}-tire.xlsx')
     
     print(borderline)
     print(f'{session} Session | {weather} Conditions | {CRC.location} Grand Prix — {CRC.country} | {CRC.circuit_laps} Laps')
