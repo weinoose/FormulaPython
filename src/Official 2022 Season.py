@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 from colorama import Fore, Style
 import datetime
+import sys
 
 # OUTPUT SPACE:
 """
@@ -11,14 +12,10 @@ None
 """
 
 # Season (Current) and GP Selection
-# Please only insert valid 'GP' names, otherwise algorithm will respond with a silly error message and I haven't handle it yet :)
-# It is not actually a problem but like I said, it is not looking good to the eye.
-# You can find valid GP names at row 284th, at circuit class where the attribute is in 'location' variable in __init__(): function.
 GP = 'Sakhir'
 current = '2022'
 verbosity = False
 borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'
-# # #
 
 # Tire Supplier
 class Tyre():
@@ -345,6 +342,18 @@ circuits = [monza,sochi,baku,
             nurburg,kyalami,sao,montreal,imola,suzuka,istanbul,miami,
             zandvoort,budapest,barcelona,
             monaco,singapore]
+
+# # #
+
+if GP in circuits:
+    pass
+else:
+    print(f'There is no circuit named {GP}. Try one of these:')
+    for i in circuits:
+        print(i.location)
+    sys.exit(0)
+
+# # #
 
 # Engines
 class Engine():
