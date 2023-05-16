@@ -23,7 +23,7 @@ def upgrade(designer,cto,aerodynamicst,min_budget,max_budget,spent_budget,engine
 
     return ((((round(((phase_1) + (phase_2) + (phase_3)),3))*1.417)**1.3)/1.3)
 
-def design(designer_name,designer,cto,aerodynamicst,focus,focus_r,FW_R,RW_R,chassis_R,base_R,sidepod_R,suspension_R,min_budget,max_budget,spent_budget,engineer_crew): 
+def design(designer_name,designer,cto,aerodynamicst,focus,focus_r,min_budget,max_budget,spent_budget,engineer_crew,pit_package,FW_R,RW_R,chassis_R,base_R,sidepod_R,suspension_R): 
     # budgest unit is million.
     
     from random import uniform, choice
@@ -124,6 +124,15 @@ def design(designer_name,designer,cto,aerodynamicst,focus,focus_r,FW_R,RW_R,chas
         SUSPENSION -= uniform(1.5,4.5)
         RELIABILITY = uniform(84,94)
 
+    if pit_package == 1.0:
+        CREW = choice(['Good','Average','Average','Average','Average','Bad','Bad','Bad','Bad'])
+    elif pit_package == 3.0:
+        CREW = choice(['Perfect','Good','Good','Good','Average','Average','Average','Bad','Bad'])
+    elif pit_package == 5.0:
+        CREW = choice(['Perfect','Perfect','Perfect','Good','Good','Good','Average','Average','Bad'])
+    elif pit_package == 7.0:
+        CREW = choice(['Perfect','Perfect','Perfect','Perfect','Perfect','Good','Good','Good','Average'])
+
     print(f'Front Wing: {round(FW,3)}')
     print(f'Rear Wing: {round(RW,3)}')
     print(f'Chassis: {round(CHASSIS,3)}')
@@ -133,3 +142,4 @@ def design(designer_name,designer,cto,aerodynamicst,focus,focus_r,FW_R,RW_R,chas
     print(f'Tire Degredation: {round(TIRE_DEG,3)}')
     print(f'Reliability: {round(RELIABILITY,3)}')
     print(f'Weight: {WEIGHT}')
+    print(f'Pit Crew: {CREW}')

@@ -507,7 +507,7 @@ class Driver():
         self.defence = defence
         self.start = start
         self.wet = wet
-        self.form = uniform(0.000, ((((fitness*3.5) + (consistency*1.5))/5000)))
+        self.form = uniform(((((fitness*3.5) + (consistency*1.5))/5000)) - 0.025, ((((fitness*3.5) + (consistency*1.5))/5000)) + 0.025)
         self.favorite= favorite
         self.style = style
     def qualifying_pace(self):
@@ -885,7 +885,7 @@ def Q(circuit,session,weather):
                 current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0]),3)
                 
                 reliability_defict = driver.team.powertrain.fuel.vulnerability
-                mechanic_failure_odd = ((((((((driver.team.powertrain.reliability+reliability_defict)*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
+                mechanic_failure_odd = ((((((((driver.team.reliability+reliability_defict)*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
                 
                 if W3 == 'Dump':
                     driver_error_odd = (((((((driver.fitness*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,67500)
@@ -903,13 +903,13 @@ def Q(circuit,session,weather):
                     tire_usage += 0
                 else:
                     if mechanic_failure_odd == True:
-                        print(f'DNF | {driver.name} has forced to retire due to {choice(FAILURES)} issue. Disaster for {driver.team.title}!')
+                        print(f'DNF | Fast Lap {c+1} | {driver.name} has forced to retire due to {choice(FAILURES)} issue. Disaster for {driver.team.title}!')
                         lap_chart.append(180.0)
                         tire_chart.append(tire.title[0])
                         tire_usage += 0
                         DNF[driver.name].append(True)
                     elif driver_error_odd == True:
-                        print(f'DNF | {driver.name} {choice(ERRORS)} and, he is OUT! Disaster for {driver.team.title}!')
+                        print(f'DNF | Fast Lap {c+1} | {driver.name} {choice(ERRORS)} and, he is OUT! Disaster for {driver.team.title}!')
                         lap_chart.append(180.0)
                         tire_chart.append(tire.title[0])
                         tire_usage += 0
@@ -930,7 +930,7 @@ def Q(circuit,session,weather):
                                 tire_usage += 1
                         else:
                             if driver_error_odd_2:
-                                print(f'INC | Oh, no! {driver.name} has spun-round. He has lost couple seconds.')
+                                print(f'INC | Fast Lap {c+1} | Oh, no! {driver.name} has spun-round. He has lost couple seconds.')
                                 lap_chart.append(current_laptime + 12.5)
                                 tire_chart.append(tire.title[0])
                                 tire_usage += 5
@@ -983,7 +983,7 @@ def R(circuit,session,weather):
             current_laptime = round(tire.laptime(driver,circuit,lap,TIRE_USAGE[driver.name],['sunday',GRID[driver.name]]),3)
 
             reliability_defict = driver.team.powertrain.fuel.vulnerability
-            mechanic_failure_odd = ((((((((driver.team.powertrain.reliability+reliability_defict)*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
+            mechanic_failure_odd = ((((((((driver.team.reliability+reliability_defict)*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
             
             if W3 == 'Dump':
                 driver_error_odd = (((((((driver.fitness*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,67500)
@@ -1158,7 +1158,7 @@ def R(circuit,session,weather):
                     else:
                         if driver_error_odd_2:
                             ickx = uniform(6.501,16.501)
-                            print(f'{Fore.LIGHTRED_EX}INC | Lap {lap} | Oh, no! {driver.name} has spun-round. He {ickx} couple seconds.{Style.RESET_ALL}')
+                            print(f'{Fore.LIGHTRED_EX}INC | Lap {lap} | Oh, no! {driver.name} has spun-round. He has lost {round(ickx,3)} seconds.{Style.RESET_ALL}')
                             LAP_CHART[driver.name].append(current_laptime + ickx)
                             TIRE_CHART[driver.name].append(tire.title[0])
                             if W3 != 'Dry':
@@ -1192,7 +1192,7 @@ def R(circuit,session,weather):
                     pass
         
         if SAFETY_CAR[lap][-1] == 1: # If there is a safety car scenario, cars has to be lining behind the safety car.
-            if SAFETY_CAR[lap+3][-1] != 1:
+            if SAFETY_CAR[lap+2][-1] != 1:
                 # Lap by Lap Report for Safety Car
                 temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
                 for driver in drivers:

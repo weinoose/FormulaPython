@@ -1192,7 +1192,7 @@ def R(circuit,session,weather):
                     pass
         
         if SAFETY_CAR[lap][-1] == 1: # If there is a safety car scenario, cars has to be lining behind the safety car.
-            if SAFETY_CAR[lap+3][-1] != 1:
+            if SAFETY_CAR[lap+2][-1] != 1:
                 # Lap by Lap Report for Safety Car
                 temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
                 for driver in drivers:
