@@ -345,7 +345,14 @@ circuits = [monza,sochi,baku,
 
 # # #
 
-if GP in circuits:
+vtt = 0
+for i in circuits:
+    if i.location == GP:
+        vtt += 1
+    else:
+        vtt += 0
+
+if vtt != 0:
     pass
 else:
     print(f'There is no circuit named {GP}. Try one of these:')
@@ -878,7 +885,7 @@ def Q(circuit,session,weather):
                 current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0]),3)
                 
                 reliability_defict = driver.team.powertrain.fuel.vulnerability
-                mechanic_failure_odd = ((((((((driver.team.powertrain.reliability+reliability_defict)*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
+                mechanic_failure_odd = ((((((((driver.team.reliability+reliability_defict)*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
                 
                 if W3 == 'Dump':
                     driver_error_odd = (((((((driver.fitness*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,67500)
@@ -976,7 +983,7 @@ def R(circuit,session,weather):
             current_laptime = round(tire.laptime(driver,circuit,lap,TIRE_USAGE[driver.name],['sunday',GRID[driver.name]]),3)
 
             reliability_defict = driver.team.powertrain.fuel.vulnerability
-            mechanic_failure_odd = ((((((((driver.team.powertrain.reliability+reliability_defict)*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
+            mechanic_failure_odd = ((((((((driver.team.reliability+reliability_defict)*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
             
             if W3 == 'Dump':
                 driver_error_odd = (((((((driver.fitness*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,67500)
