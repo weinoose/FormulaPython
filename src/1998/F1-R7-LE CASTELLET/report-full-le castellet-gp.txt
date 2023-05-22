@@ -1,0 +1,1431 @@
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 1/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP  FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:01:53.430  NaN     NaN        S    0     2
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +0.215        +0.215  NaN     NaN        S    0     4
+3         West McLaren-Mercedes       Devon Raleigh    +0.942        +0.727  NaN     NaN        S    0     1
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.387        +0.445  NaN     NaN        S    0     3
+5                 Honda F1 Team       David Redolfe    +1.827         +0.44  NaN     NaN        S    0     6
+6     Rothmans Williams-Renault      Ken Fassbender    +2.113        +0.286  NaN     NaN        S    0     5
+7     Rothmans Williams-Renault       Antonio Iocco    +2.598        +0.485  NaN     NaN        S    0     7
+8   Marlboro Team Lotus-Renault         Sander Metz    +3.138         +0.54  NaN     NaN        S    0     8
+9               Renault F1 Team     Marcus Svansson    +3.408         +0.27  NaN     NaN        S    0     9
+10    Winfield Benetton-Renault      Daniil Kovalev    +3.972        +0.564  NaN     NaN        S    0    10
+11     Mild Seven Toyota Racing    Guillermo Acosta    +4.271        +0.299  NaN     NaN        S    0    11
+12                Honda F1 Team     Katsuno Yoshiro    +4.491         +0.22  NaN     NaN        S    0    14
+13              Renault F1 Team       Tony Calandre    +4.943        +0.452  NaN     NaN        S    0    12
+14  Marlboro Team Lotus-Renault   Charlie Southgate    +5.678        +0.735  NaN     NaN        S    0    13
+15     Mild Seven Toyota Racing       Quentin Iazzo    +5.906        +0.228  NaN     NaN        S    0    15
+16    Winfield Benetton-Renault     Kumar Karihayan    +6.494        +0.588  NaN     NaN        S    0    16
+17      Minardi-Ferrari F1 Team        Raul Sanchez    +7.416        +0.922  NaN     NaN        S    0    17
+18     Red Bull Sauber-Mercedes       Ernie Cédryck    +8.223        +0.807  NaN     NaN        S    0    18
+19      Minardi-Ferrari F1 Team  Antonio Bacarrello    +8.671        +0.448  NaN     NaN        S    0    20
+20     Red Bull Sauber-Mercedes      Jamie Lorianne    +9.761         +1.09  NaN     NaN        S    0    19
+21   ING Jaguar Racing Mercedes        James Eadorn    +9.783        +0.022  NaN     NaN        S    0    21
+22   ING Jaguar Racing Mercedes      George Aldeill   +10.092        +0.309  NaN     NaN        S    0    22
+
+Fastest Lap | Nill Rosberg has recorded NaN on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 2/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP  FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:03:41.542  NaN     NaN        S    0     4
+2         West McLaren-Mercedes        Nill Rosberg    +0.116        +0.116  NaN     NaN        S    0     2
+3         West McLaren-Mercedes       Devon Raleigh    +0.608        +0.492  NaN     NaN        S    0     1
+4     Scuderia Ferrari Vodafone   Charles Hérnandez     +0.92        +0.312  NaN     NaN        S    0     3
+5                 Honda F1 Team       David Redolfe    +3.369        +2.449  NaN     NaN        S    0     6
+6     Rothmans Williams-Renault       Antonio Iocco    +3.452        +0.083  NaN     NaN        S    0     7
+7     Rothmans Williams-Renault      Ken Fassbender    +5.158        +1.706  NaN     NaN        S    0     5
+8               Renault F1 Team     Marcus Svansson    +5.323        +0.165  NaN     NaN        S    0     9
+9   Marlboro Team Lotus-Renault         Sander Metz    +5.886        +0.563  NaN     NaN        S    0     8
+10     Mild Seven Toyota Racing    Guillermo Acosta    +6.462        +0.576  NaN     NaN        S    0    11
+11              Renault F1 Team       Tony Calandre    +7.187        +0.725  NaN     NaN        S    0    12
+12  Marlboro Team Lotus-Renault   Charlie Southgate    +7.257         +0.07  NaN     NaN        S    0    13
+13    Winfield Benetton-Renault      Daniil Kovalev    +7.446        +0.189  NaN     NaN        S    0    10
+14                Honda F1 Team     Katsuno Yoshiro     +7.57        +0.124  NaN     NaN        S    0    14
+15     Mild Seven Toyota Racing       Quentin Iazzo    +7.748        +0.178  NaN     NaN        S    0    15
+16    Winfield Benetton-Renault     Kumar Karihayan   +10.285        +2.537  NaN     NaN        S    0    16
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +11.935         +1.65  NaN     NaN        S    0    17
+18     Red Bull Sauber-Mercedes       Ernie Cédryck   +13.079        +1.144  NaN     NaN        S    0    18
+19   ING Jaguar Racing Mercedes        James Eadorn   +13.838        +0.759  NaN     NaN        S    0    21
+20     Red Bull Sauber-Mercedes      Jamie Lorianne   +13.969        +0.131  NaN     NaN        S    0    19
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +14.516        +0.547  NaN     NaN        S    0    20
+22   ING Jaguar Racing Mercedes      George Aldeill   +15.914        +1.398  NaN     NaN        S    0    22
+
+Fastest Lap | Abel Wolfe has recorded NaN on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 3/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:05:28.692  1:47.034       3        S    0     2
+2         West McLaren-Mercedes       Devon Raleigh    +0.319        +0.319  1:46.861       3        S    0     1
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +0.638        +0.319  1:47.788       3        S    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.966        +0.328  1:47.196       3        S    0     3
+5                 Honda F1 Team       David Redolfe    +6.104        +5.138       NaN     NaN        S    0     6
+6     Rothmans Williams-Renault       Antonio Iocco    +6.472        +0.368       NaN     NaN        S    0     7
+7     Rothmans Williams-Renault      Ken Fassbender     +6.95        +0.478  1:48.941       3        S    0     5
+8   Marlboro Team Lotus-Renault         Sander Metz     +8.17         +1.22  1:49.434       3        S    0     8
+9               Renault F1 Team     Marcus Svansson    +8.483        +0.313       NaN     NaN        S    0     9
+10  Marlboro Team Lotus-Renault   Charlie Southgate    +8.722        +0.239  1:48.615       3        S    0    13
+11              Renault F1 Team       Tony Calandre    +8.781        +0.059  1:48.744       3        S    0    12
+12     Mild Seven Toyota Racing    Guillermo Acosta    +8.852        +0.071  1:49.540       3        S    0    11
+13    Winfield Benetton-Renault      Daniil Kovalev    +9.505        +0.653  1:49.208       3        S    0    10
+14     Mild Seven Toyota Racing       Quentin Iazzo     +9.54        +0.035  1:48.942       3        S    0    15
+15                Honda F1 Team     Katsuno Yoshiro    +9.543        +0.003  1:49.122       3        S    0    14
+16    Winfield Benetton-Renault     Kumar Karihayan   +12.387        +2.844  1:49.252       3        S    0    16
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +16.558        +4.171  1:51.772       3        S    0    17
+18   ING Jaguar Racing Mercedes        James Eadorn   +18.286        +1.728  1:51.598       3        S    0    21
+19      Minardi-Ferrari F1 Team  Antonio Bacarrello   +19.215        +0.929  1:51.848       3        S    0    20
+20     Red Bull Sauber-Mercedes       Ernie Cédryck   +19.732        +0.517       NaN     NaN        S    0    18
+21   ING Jaguar Racing Mercedes      George Aldeill   +21.557        +1.825  1:52.793       3        S    0    22
+22     Red Bull Sauber-Mercedes      Jamie Lorianne   +21.687         +0.13       NaN     NaN        S    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:46.861 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 4/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:07:14.294  1:44.964        4        S    0     4
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.391        +0.391  1:45.027        4        S    0     3
+3         West McLaren-Mercedes       Devon Raleigh    +0.437        +0.046   1:45.72        4        S    0     1
+4         West McLaren-Mercedes        Nill Rosberg    +1.052        +0.615  1:46.653        4        S    0     2
+5     Rothmans Williams-Renault       Antonio Iocco    +8.432         +7.38  1:47.562        4        S    0     7
+6                 Honda F1 Team       David Redolfe    +9.182         +0.75  1:48.679        4        S    0     6
+7     Rothmans Williams-Renault      Ken Fassbender    +9.561        +0.379  1:48.213        4        S    0     5
+8               Renault F1 Team     Marcus Svansson    +9.881         +0.32    1:47.0        4        S    0     9
+9   Marlboro Team Lotus-Renault         Sander Metz   +10.023        +0.142  1:47.455        4        S    0     8
+10     Mild Seven Toyota Racing    Guillermo Acosta   +10.652        +0.629  1:47.402        4        S    0    11
+11              Renault F1 Team       Tony Calandre   +10.963        +0.311  1:47.783        4        S    0    12
+12  Marlboro Team Lotus-Renault   Charlie Southgate   +11.366        +0.403  1:48.246        4        S    0    13
+13    Winfield Benetton-Renault      Daniil Kovalev   +11.461        +0.095  1:47.557        4        S    0    10
+14     Mild Seven Toyota Racing       Quentin Iazzo   +11.511         +0.05  1:47.573        4        S    0    15
+15                Honda F1 Team     Katsuno Yoshiro   +12.094        +0.583  1:48.152        4        S    0    14
+16    Winfield Benetton-Renault     Kumar Karihayan   +14.524         +2.43  1:47.739        4        S    0    16
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +20.895        +6.371  1:49.938        4        S    0    17
+18   ING Jaguar Racing Mercedes        James Eadorn   +23.044        +2.149   1:50.36        4        S    0    21
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +23.995        +0.951  1:49.865        4        S    0    18
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello    +24.23        +0.235  1:50.616        4        S    0    20
+21     Red Bull Sauber-Mercedes      Jamie Lorianne   +25.276        +1.046  1:49.191        4        S    0    19
+22   ING Jaguar Racing Mercedes      George Aldeill   +27.463        +2.187  1:51.507        4        S    0    22
+
+Fastest Lap | Abel Wolfe has recorded 1:44.964 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 5/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  00:09:00.185  1:45.027        4        S    0     3
+2         West McLaren-Mercedes       Devon Raleigh    +0.095        +0.095  1:45.548        5        S    0     1
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +0.553        +0.458  1:44.964        4        S    0     4
+4         West McLaren-Mercedes        Nill Rosberg    +0.621        +0.068  1:45.460        5        S    0     2
+5     Rothmans Williams-Renault      Ken Fassbender   +11.215       +10.594  1:47.544        5        S    0     5
+6     Rothmans Williams-Renault       Antonio Iocco   +11.357        +0.142  1:47.562        4        S    0     7
+7               Renault F1 Team       Tony Calandre   +11.706        +0.349  1:46.634        5        S    0    12
+8                 Honda F1 Team       David Redolfe   +11.716         +0.01  1:48.425        5        S    0     6
+9      Mild Seven Toyota Racing       Quentin Iazzo   +12.333        +0.617  1:46.713        5        S    0    15
+10              Renault F1 Team     Marcus Svansson   +12.475        +0.142    1:47.0        4        S    0     9
+11    Winfield Benetton-Renault      Daniil Kovalev   +12.927        +0.452  1:47.357        5        S    0    10
+12     Mild Seven Toyota Racing    Guillermo Acosta   +12.989        +0.062  1:47.402        4        S    0    11
+13  Marlboro Team Lotus-Renault         Sander Metz   +13.021        +0.032  1:47.455        4        S    0     8
+14                Honda F1 Team     Katsuno Yoshiro   +13.313        +0.292   1:47.11        5        S    0    14
+15  Marlboro Team Lotus-Renault   Charlie Southgate   +13.502        +0.189  1:48.027        5        S    0    13
+16    Winfield Benetton-Renault     Kumar Karihayan   +16.953        +3.451  1:47.739        4        S    0    16
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +25.221        +8.268  1:49.938        4        S    0    17
+18     Red Bull Sauber-Mercedes       Ernie Cédryck   +27.412        +2.191  1:49.308        5        S    0    18
+19   ING Jaguar Racing Mercedes        James Eadorn   +28.427        +1.015   1:50.36        4        S    0    21
+20     Red Bull Sauber-Mercedes      Jamie Lorianne   +30.419        +1.992  1:49.191        4        S    0    19
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +31.123        +0.704  1:50.616        4        S    0    20
+22   ING Jaguar Racing Mercedes      George Aldeill   +33.225        +2.102  1:51.507        4        S    0    22
+
+Fastest Lap | Abel Wolfe has recorded 1:44.964 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 6/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  00:10:45.093  1:44.813        6        S    0     1
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.681        +0.681  1:45.027        4        S    0     3
+3         West McLaren-Mercedes        Nill Rosberg    +1.701         +1.02  1:45.460        5        S    0     2
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +1.704        +0.003  1:44.964        4        S    0     4
+5     Rothmans Williams-Renault       Antonio Iocco   +12.911       +11.207  1:46.461        6        S    0     7
+6     Rothmans Williams-Renault      Ken Fassbender    +13.15        +0.239  1:46.843        6        S    0     5
+7               Renault F1 Team       Tony Calandre   +15.119        +1.969  1:46.634        5        S    0    12
+8      Mild Seven Toyota Racing       Quentin Iazzo   +15.251        +0.132  1:46.713        5        S    0    15
+9   Marlboro Team Lotus-Renault         Sander Metz   +15.289        +0.038  1:47.176        6        S    0     8
+10     Mild Seven Toyota Racing    Guillermo Acosta   +15.777        +0.488  1:47.402        4        S    0    11
+11  Marlboro Team Lotus-Renault   Charlie Southgate   +15.909        +0.132  1:47.315        6        S    0    13
+12                Honda F1 Team       David Redolfe   +16.104        +0.195  1:48.425        5        S    0     6
+13    Winfield Benetton-Renault      Daniil Kovalev   +16.211        +0.107  1:47.357        5        S    0    10
+14              Renault F1 Team     Marcus Svansson   +16.475        +0.264    1:47.0        4        S    0     9
+15                Honda F1 Team     Katsuno Yoshiro   +16.986        +0.511   1:47.11        5        S    0    14
+16    Winfield Benetton-Renault     Kumar Karihayan   +20.043        +3.057  1:47.739        4        S    0    16
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +30.357       +10.314  1:49.938        4        S    0    17
+18   ING Jaguar Racing Mercedes        James Eadorn   +32.606        +2.249  1:49.086        6        S    0    21
+19     Red Bull Sauber-Mercedes       Ernie Cédryck    +34.56        +1.954  1:49.308        5        S    0    18
+20     Red Bull Sauber-Mercedes      Jamie Lorianne   +35.584        +1.024  1:49.191        4        S    0    19
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +37.004         +1.42  1:50.616        4        S    0    20
+22   ING Jaguar Racing Mercedes      George Aldeill   +38.933        +1.929  1:50.616        6        S    0    22
+
+Fastest Lap | Devon Raleigh has recorded 1:44.813 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 7/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  00:12:30.646  1:44.872        7        S    0     3
+2         West McLaren-Mercedes       Devon Raleigh     +0.19         +0.19  1:44.813        6        S    0     1
+3         West McLaren-Mercedes        Nill Rosberg     +2.26         +2.07  1:45.460        5        S    0     2
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +3.072        +0.812  1:44.964        4        S    0     4
+5     Rothmans Williams-Renault       Antonio Iocco   +13.733       +10.661  1:46.375        7        S    0     7
+6     Rothmans Williams-Renault      Ken Fassbender   +15.469        +1.736  1:46.843        6        S    0     5
+7      Mild Seven Toyota Racing       Quentin Iazzo   +16.981        +1.512  1:46.713        5        S    0    15
+8   Marlboro Team Lotus-Renault   Charlie Southgate   +17.184        +0.203  1:46.828        7        S    0    13
+9   Marlboro Team Lotus-Renault         Sander Metz   +17.627        +0.443  1:47.176        6        S    0     8
+10              Renault F1 Team     Marcus Svansson    +17.91        +0.283  1:46.988        7        S    0     9
+11                Honda F1 Team       David Redolfe   +18.037        +0.127  1:47.486        7        S    0     6
+12     Mild Seven Toyota Racing    Guillermo Acosta   +18.115        +0.078  1:47.402        4        S    0    11
+13                Honda F1 Team     Katsuno Yoshiro   +18.192        +0.077  1:46.759        7        S    0    14
+14              Renault F1 Team       Tony Calandre   +18.323        +0.131  1:46.634        5        S    0    12
+15    Winfield Benetton-Renault      Daniil Kovalev   +20.049        +1.726  1:47.357        5        S    0    10
+16    Winfield Benetton-Renault     Kumar Karihayan   +22.374        +2.325  1:47.739        4        S    0    16
+17   ING Jaguar Racing Mercedes        James Eadorn    +36.68       +14.306  1:49.086        6        S    0    21
+18      Minardi-Ferrari F1 Team        Raul Sanchez   +37.701        +1.021  1:49.938        4        S    0    17
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +39.507        +1.806  1:49.308        5        S    0    18
+20     Red Bull Sauber-Mercedes      Jamie Lorianne   +39.728        +0.221  1:49.191        4        S    0    19
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +41.806        +2.078  1:50.354        7        S    0    20
+22   ING Jaguar Racing Mercedes      George Aldeill   +44.237        +2.431  1:50.616        6        S    0    22
+
+Fastest Lap | Devon Raleigh has recorded 1:44.813 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 8/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  00:14:16.260  1:44.872        7        S    0     3
+2         West McLaren-Mercedes       Devon Raleigh    +1.192        +1.192  1:44.813        6        S    0     1
+3         West McLaren-Mercedes        Nill Rosberg    +2.363        +1.171  1:45.460        5        S    0     2
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +3.378        +1.015  1:44.964        4        S    0     4
+5     Rothmans Williams-Renault       Antonio Iocco   +15.657       +12.279  1:46.375        7        S    0     7
+6     Rothmans Williams-Renault      Ken Fassbender   +15.788        +0.131  1:45.933        8        S    0     5
+7               Renault F1 Team       Tony Calandre   +19.574        +3.786  1:46.634        5        S    0    12
+8   Marlboro Team Lotus-Renault         Sander Metz   +19.947        +0.373  1:47.176        6        S    0     8
+9               Renault F1 Team     Marcus Svansson   +19.986        +0.039  1:46.988        7        S    0     9
+10     Mild Seven Toyota Racing       Quentin Iazzo   +20.048        +0.062  1:46.713        5        S    0    15
+11                Honda F1 Team     Katsuno Yoshiro   +20.765        +0.717  1:46.759        7        S    0    14
+12     Mild Seven Toyota Racing    Guillermo Acosta    +20.92        +0.155  1:47.402        4        S    0    11
+13                Honda F1 Team       David Redolfe   +21.441        +0.521  1:47.486        7        S    0     6
+14  Marlboro Team Lotus-Renault   Charlie Southgate   +21.722        +0.281  1:46.828        7        S    0    13
+15    Winfield Benetton-Renault      Daniil Kovalev   +21.897        +0.175  1:47.357        5        S    0    10
+16    Winfield Benetton-Renault     Kumar Karihayan   +24.653        +2.756  1:47.739        4        S    0    16
+17   ING Jaguar Racing Mercedes        James Eadorn   +41.621       +16.968  1:49.086        6        S    0    21
+18      Minardi-Ferrari F1 Team        Raul Sanchez   +42.665        +1.044  1:49.938        4        S    0    17
+19     Red Bull Sauber-Mercedes      Jamie Lorianne   +43.949        +1.284  1:49.191        4        S    0    19
+20     Red Bull Sauber-Mercedes       Ernie Cédryck   +45.104        +1.155  1:49.308        5        S    0    18
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +47.467        +2.363  1:50.354        7        S    0    20
+22   ING Jaguar Racing Mercedes      George Aldeill   +51.444        +3.977  1:50.616        6        S    0    22
+
+Fastest Lap | Devon Raleigh has recorded 1:44.813 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 9/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  00:16:03.027  1:44.813        6        S    0     1
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.908        +0.908  1:44.872        7        S    0     3
+3         West McLaren-Mercedes        Nill Rosberg    +1.443        +0.535  1:45.460        5        S    0     2
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +1.665        +0.222  1:44.964        4        S    0     4
+5     Rothmans Williams-Renault       Antonio Iocco   +15.758       +14.093  1:46.375        7        S    0     7
+6     Rothmans Williams-Renault      Ken Fassbender   +16.672        +0.914  1:45.933        8        S    0     5
+7               Renault F1 Team     Marcus Svansson   +20.393        +3.721  1:46.988        7        S    0     9
+8               Renault F1 Team       Tony Calandre   +20.873         +0.48  1:46.634        5        S    0    12
+9   Marlboro Team Lotus-Renault         Sander Metz   +21.129        +0.256  1:47.176        6        S    0     8
+10     Mild Seven Toyota Racing    Guillermo Acosta   +21.758        +0.629  1:47.402        4        S    0    11
+11     Mild Seven Toyota Racing       Quentin Iazzo   +22.431        +0.673  1:46.713        5        S    0    15
+12                Honda F1 Team       David Redolfe   +22.558        +0.127  1:47.486        7        S    0     6
+13  Marlboro Team Lotus-Renault   Charlie Southgate   +22.653        +0.095  1:46.828        7        S    0    13
+14                Honda F1 Team     Katsuno Yoshiro   +23.195        +0.542  1:46.759        7        S    0    14
+15    Winfield Benetton-Renault      Daniil Kovalev   +23.359        +0.164  1:47.357        5        S    0    10
+16    Winfield Benetton-Renault     Kumar Karihayan    +25.47        +2.111  1:47.584        9        S    0    16
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +47.213       +21.743  1:49.938        4        S    0    17
+18     Red Bull Sauber-Mercedes      Jamie Lorianne   +49.349        +2.136  1:49.191        4        S    0    19
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +50.231        +0.882  1:49.308        5        S    0    18
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello   +52.462        +2.231  1:50.354        7        S    0    20
+21   ING Jaguar Racing Mercedes        James Eadorn   +55.389        +2.927  1:49.086        6        S    0    21
+22   ING Jaguar Racing Mercedes      George Aldeill   +56.467        +1.078  1:50.616        6        S    0    22
+
+Fastest Lap | Devon Raleigh has recorded 1:44.813 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 10/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  00:17:48.997  1:44.872        7        S    0     3
+2         West McLaren-Mercedes       Devon Raleigh    +0.165        +0.165  1:44.813        6        S    0     1
+3         West McLaren-Mercedes        Nill Rosberg     +0.45        +0.285  1:44.977       10        S    0     2
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +0.828        +0.378  1:44.964        4        S    0     4
+5     Rothmans Williams-Renault      Ken Fassbender   +18.557       +17.729  1:45.933        8        S    0     5
+6     Rothmans Williams-Renault       Antonio Iocco   +18.684        +0.127  1:46.375        7        S    0     7
+7               Renault F1 Team     Marcus Svansson   +22.269        +3.585  1:46.988        7        S    0     9
+8   Marlboro Team Lotus-Renault         Sander Metz   +22.743        +0.474  1:47.176        6        S    0     8
+9               Renault F1 Team       Tony Calandre   +23.229        +0.486  1:46.634        5        S    0    12
+10     Mild Seven Toyota Racing    Guillermo Acosta   +23.695        +0.466  1:47.402        4        S    0    11
+11  Marlboro Team Lotus-Renault   Charlie Southgate   +23.898        +0.203  1:46.828        7        S    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo   +24.144        +0.246  1:46.713        5        S    0    15
+13                Honda F1 Team     Katsuno Yoshiro   +24.311        +0.167  1:46.759        7        S    0    14
+14                Honda F1 Team       David Redolfe   +25.251         +0.94  1:47.486        7        S    0     6
+15    Winfield Benetton-Renault      Daniil Kovalev   +26.795        +1.544  1:47.357        5        S    0    10
+16    Winfield Benetton-Renault     Kumar Karihayan   +27.313        +0.518  1:47.584        9        S    0    16
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +51.809       +24.496  1:49.938        4        S    0    17
+18     Red Bull Sauber-Mercedes      Jamie Lorianne    +53.68        +1.871  1:49.191        4        S    0    19
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +54.849        +1.169  1:49.308        5        S    0    18
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello   +57.645        +2.796  1:50.354        7        S    0    20
+21   ING Jaguar Racing Mercedes      George Aldeill   +60.363        +2.718  1:49.866       10        S    0    22
+22   ING Jaguar Racing Mercedes        James Eadorn    +62.52        +2.157  1:49.086        6        S    0    21
+
+Fastest Lap | Devon Raleigh has recorded 1:44.813 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 11/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  00:19:34.613  1:44.813        6        S    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +0.524        +0.524  1:44.977       10        S    0     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez     +0.53        +0.006  1:44.872        7        S    0     3
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +0.973        +0.443  1:44.964        4        S    0     4
+5     Rothmans Williams-Renault       Antonio Iocco   +19.733        +18.76  1:46.375        7        S    0     7
+6     Rothmans Williams-Renault      Ken Fassbender   +20.013         +0.28  1:45.933        8        S    0     5
+7               Renault F1 Team     Marcus Svansson   +24.699        +4.686  1:46.988        7        S    0     9
+8      Mild Seven Toyota Racing    Guillermo Acosta   +25.936        +1.237  1:47.402        4        S    0    11
+9               Renault F1 Team       Tony Calandre   +25.958        +0.022  1:46.634        5        S    0    12
+10  Marlboro Team Lotus-Renault         Sander Metz   +26.464        +0.506  1:47.176        6        S    0     8
+11     Mild Seven Toyota Racing       Quentin Iazzo   +26.873        +0.409  1:46.713        5        S    0    15
+12                Honda F1 Team     Katsuno Yoshiro   +27.459        +0.586  1:46.759        7        S    0    14
+13                Honda F1 Team       David Redolfe   +27.657        +0.198  1:47.486        7        S    0     6
+14    Winfield Benetton-Renault      Daniil Kovalev   +27.797         +0.14  1:46.618       11        S    0    10
+15  Marlboro Team Lotus-Renault   Charlie Southgate   +27.856        +0.059  1:46.828        7        S    0    13
+16    Winfield Benetton-Renault     Kumar Karihayan    +29.92        +2.064  1:47.584        9        S    0    16
+17     Red Bull Sauber-Mercedes      Jamie Lorianne    +58.26        +28.34  1:49.191        4        S    0    19
+18      Minardi-Ferrari F1 Team        Raul Sanchez   +58.872        +0.612  1:49.938        4        S    0    17
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +60.436        +1.564  1:49.308        5        S    0    18
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello    +63.48        +3.044  1:50.354        7        S    0    20
+21   ING Jaguar Racing Mercedes      George Aldeill   +65.782        +2.302  1:49.866       10        S    0    22
+22   ING Jaguar Racing Mercedes        James Eadorn   +70.795        +5.013  1:49.086        6        S    0    21
+
+Fastest Lap | Devon Raleigh has recorded 1:44.813 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 12/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:21:20.536  1:44.977       10        S    0     2
+2         West McLaren-Mercedes       Devon Raleigh    +0.113        +0.113  1:44.813        6        S    0     1
+3     Scuderia Ferrari Vodafone          Abel Wolfe     +0.47        +0.357  1:44.964        4        S    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.948        +0.478  1:44.872        7        S    0     3
+5     Rothmans Williams-Renault       Antonio Iocco   +21.015       +20.067  1:46.375        7        S    0     7
+6     Rothmans Williams-Renault      Ken Fassbender   +22.446        +1.431  1:45.933        8        S    0     5
+7               Renault F1 Team     Marcus Svansson    +26.86        +4.414  1:46.988        7        S    0     9
+8      Mild Seven Toyota Racing    Guillermo Acosta   +28.133        +1.273  1:47.402        4        S    0    11
+9   Marlboro Team Lotus-Renault         Sander Metz    +28.27        +0.137  1:47.176        6        S    0     8
+10              Renault F1 Team       Tony Calandre   +28.952        +0.682  1:46.634        5        S    0    12
+11                Honda F1 Team       David Redolfe   +29.155        +0.203  1:47.420       12        S    0     6
+12                Honda F1 Team     Katsuno Yoshiro   +29.981        +0.826  1:46.759        7        S    0    14
+13  Marlboro Team Lotus-Renault   Charlie Southgate   +30.412        +0.431  1:46.828        7        S    0    13
+14    Winfield Benetton-Renault      Daniil Kovalev   +31.073        +0.661  1:46.618       11        S    0    10
+15     Mild Seven Toyota Racing       Quentin Iazzo   +32.594        +1.521  1:46.713        5        S    0    15
+16    Winfield Benetton-Renault     Kumar Karihayan   +33.287        +0.693  1:47.584        9        S    0    16
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +63.386       +30.099  1:49.191        4        S    0    19
+18      Minardi-Ferrari F1 Team        Raul Sanchez   +63.579        +0.193  1:49.938        4        S    0    17
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +65.756        +2.177  1:49.308        5        S    0    18
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello   +68.905        +3.149  1:50.354        7        S    0    20
+21   ING Jaguar Racing Mercedes      George Aldeill   +71.658        +2.753  1:49.866       10        S    0    22
+22   ING Jaguar Racing Mercedes        James Eadorn   +76.927        +5.269  1:49.086        6        S    0    21
+
+Fastest Lap | Devon Raleigh has recorded 1:44.813 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 13/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  00:23:06.392  1:44.813        6        S    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +0.109        +0.109  1:44.964        4        S    0     4
+3         West McLaren-Mercedes        Nill Rosberg    +0.409          +0.3  1:44.977       10        S    0     2
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.604        +0.195  1:44.872        7        S    0     3
+5     Rothmans Williams-Renault      Ken Fassbender    +23.38       +22.776  1:45.933        8        S    0     5
+6     Rothmans Williams-Renault       Antonio Iocco   +23.851        +0.471  1:46.375        7        S    0     7
+7               Renault F1 Team     Marcus Svansson   +29.591         +5.74  1:46.988        7        S    0     9
+8      Mild Seven Toyota Racing    Guillermo Acosta   +30.784        +1.193  1:47.402        4        S    0    11
+9   Marlboro Team Lotus-Renault         Sander Metz   +31.871        +1.087  1:47.176        6        S    0     8
+10                Honda F1 Team       David Redolfe   +31.948        +0.077  1:47.420       12        S    0     6
+11                Honda F1 Team     Katsuno Yoshiro   +32.218         +0.27  1:46.759        7        S    0    14
+12              Renault F1 Team       Tony Calandre   +32.559        +0.341  1:46.634        5        S    0    12
+13  Marlboro Team Lotus-Renault   Charlie Southgate    +33.07        +0.511  1:46.828        7        S    0    13
+14    Winfield Benetton-Renault      Daniil Kovalev   +33.292        +0.222  1:46.618       11        S    0    10
+15    Winfield Benetton-Renault     Kumar Karihayan   +35.447        +2.155  1:47.584        9        S    0    16
+16     Mild Seven Toyota Racing       Quentin Iazzo   +35.618        +0.171  1:46.713        5        S    0    15
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +67.369       +31.751  1:49.191        4        S    0    19
+18      Minardi-Ferrari F1 Team        Raul Sanchez   +70.667        +3.298  1:49.938        4        S    0    17
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +72.314        +1.647  1:49.308        5        S    0    18
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello   +74.834         +2.52  1:50.354        7        S    0    20
+21   ING Jaguar Racing Mercedes      George Aldeill   +78.204         +3.37  1:49.866       10        S    0    22
+22   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap       +28.056  1:49.086        6        S    1    21
+
+Fastest Lap | Devon Raleigh has recorded 1:44.813 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 14/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  00:24:52.708  1:44.813        6        S    0     1
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.353        +0.353  1:44.872        7        S    0     3
+3         West McLaren-Mercedes        Nill Rosberg    +0.881        +0.528  1:44.977       10        S    0     2
+4     Scuderia Ferrari Vodafone          Abel Wolfe     +1.12        +0.239  1:44.964        4        S    0     4
+5     Rothmans Williams-Renault      Ken Fassbender   +24.822       +23.702  1:45.933        8        S    0     5
+6     Rothmans Williams-Renault       Antonio Iocco   +25.983        +1.161  1:46.375        7        S    0     7
+7               Renault F1 Team     Marcus Svansson     +32.0        +6.017  1:46.988        7        S    0     9
+8               Renault F1 Team       Tony Calandre   +33.955        +1.955  1:46.634        5        S    0    12
+9                 Honda F1 Team     Katsuno Yoshiro   +33.988        +0.033  1:46.759        7        S    0    14
+10     Mild Seven Toyota Racing    Guillermo Acosta   +34.088          +0.1  1:47.402        4        S    0    11
+11  Marlboro Team Lotus-Renault         Sander Metz   +34.323        +0.235  1:47.176        6        S    0     8
+12    Winfield Benetton-Renault      Daniil Kovalev   +34.385        +0.062  1:46.618       11        S    0    10
+13  Marlboro Team Lotus-Renault   Charlie Southgate   +35.521        +1.136  1:46.828        7        S    0    13
+14                Honda F1 Team       David Redolfe   +36.917        +1.396  1:47.420       12        S    0     6
+15    Winfield Benetton-Renault     Kumar Karihayan   +37.706        +0.789  1:47.584        9        S    0    16
+16     Mild Seven Toyota Racing       Quentin Iazzo   +38.858        +1.152  1:46.713        5        S    0    15
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +72.742       +33.884  1:49.191        4        S    0    19
+18      Minardi-Ferrari F1 Team        Raul Sanchez   +75.487        +2.745  1:49.938        4        S    0    17
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +79.487          +4.0  1:49.308        5        S    0    18
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello   +80.752        +1.265  1:50.354        7        S    0    20
+21   ING Jaguar Racing Mercedes      George Aldeill   +84.243        +3.491  1:49.866       10        S    0    22
+22   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap       +27.576  1:49.086        6        S    1    21
+
+Fastest Lap | Devon Raleigh has recorded 1:44.813 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 15/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  00:26:38.956  1:44.872        7        S    0     3
+2         West McLaren-Mercedes       Devon Raleigh    +0.569        +0.569  1:44.813        6        S    0     1
+3         West McLaren-Mercedes        Nill Rosberg    +1.232        +0.663  1:44.977       10        S    0     2
+4     Scuderia Ferrari Vodafone          Abel Wolfe      +1.6        +0.368  1:44.964        4        S    0     4
+5     Rothmans Williams-Renault      Ken Fassbender   +26.383       +24.783  1:45.933        8        S    0     5
+6     Rothmans Williams-Renault       Antonio Iocco    +28.38        +1.997  1:46.375        7        S    0     7
+7               Renault F1 Team     Marcus Svansson   +34.483        +6.103  1:46.988        7        S    0     9
+8      Mild Seven Toyota Racing    Guillermo Acosta   +36.732        +2.249  1:47.402        4        S    0    11
+9               Renault F1 Team       Tony Calandre   +36.971        +0.239  1:46.634        5        S    0    12
+10  Marlboro Team Lotus-Renault         Sander Metz   +37.112        +0.141  1:47.176        6        S    0     8
+11                Honda F1 Team     Katsuno Yoshiro   +37.262         +0.15  1:46.759        7        S    0    14
+12  Marlboro Team Lotus-Renault   Charlie Southgate   +37.676        +0.414  1:46.828        7        S    0    13
+13                Honda F1 Team       David Redolfe   +38.615        +0.939  1:47.420       12        S    0     6
+14    Winfield Benetton-Renault     Kumar Karihayan   +39.505         +0.89  1:47.584        9        S    0    16
+15    Winfield Benetton-Renault      Daniil Kovalev    +41.39        +1.885  1:46.618       11        S    0    10
+16     Mild Seven Toyota Racing       Quentin Iazzo   +42.158        +0.768  1:46.713        5        S    0    15
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +81.672       +39.514  1:49.938        4        S    0    17
+18     Red Bull Sauber-Mercedes      Jamie Lorianne  +100.585       +18.913  1:49.191        4        S    1    19
+19     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +7.674  1:49.308        5        S    1    18
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +0.013  1:50.354        7        S    1    20
+21   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +4.084  1:49.866       10        S    1    22
+22   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap         +5.24  1:49.086        6        S    1    21
+
+Fastest Lap | Devon Raleigh has recorded 1:44.813 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 16/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  00:28:26.264  1:44.813        6        S    0     1
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.047        +0.047  1:44.872        7        S    0     3
+3         West McLaren-Mercedes        Nill Rosberg     +1.03        +0.983  1:44.977       10        S    0     2
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +1.139        +0.109  1:44.964        4        S    0     4
+5     Rothmans Williams-Renault      Ken Fassbender   +27.298       +26.159  1:45.933        8        S    0     5
+6                 Honda F1 Team       David Redolfe   +47.407       +20.109  1:47.420       12        S    0     6
+7     Rothmans Williams-Renault       Antonio Iocco   +53.178        +5.771  1:46.375        7        S    1     7
+8               Renault F1 Team     Marcus Svansson   +58.845        +5.667  1:46.988        7        S    1     9
+9   Marlboro Team Lotus-Renault         Sander Metz   +60.774        +1.929  1:47.176        6        S    1     8
+10     Mild Seven Toyota Racing    Guillermo Acosta   +60.894         +0.12  1:47.402        4        S    1    11
+11              Renault F1 Team       Tony Calandre   +61.195        +0.301  1:46.634        5        S    1    12
+12                Honda F1 Team     Katsuno Yoshiro   +61.723        +0.528  1:46.759        7        S    1    14
+13  Marlboro Team Lotus-Renault   Charlie Southgate   +63.047        +1.324  1:46.828        7        S    1    13
+14    Winfield Benetton-Renault     Kumar Karihayan   +64.315        +1.268  1:47.584        9        S    1    16
+15    Winfield Benetton-Renault      Daniil Kovalev   +65.921        +1.606  1:46.618       11        S    1    10
+16     Mild Seven Toyota Racing       Quentin Iazzo   +66.989        +1.068  1:46.713        5        S    1    15
+17     Red Bull Sauber-Mercedes      Jamie Lorianne  +105.736       +38.747  1:49.191        4        S    1    19
+18      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +4.192  1:49.938        4        S    1    17
+19      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +2.178  1:50.354        7        S    1    20
+20     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +0.112  1:49.308        5        S    1    18
+21   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +4.754  1:49.866       10        S    1    22
+22   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +2.473  1:49.086        6        S    1    21
+
+Fastest Lap | Devon Raleigh has recorded 1:44.813 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 17/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:30:17.317  1:44.964        4        S    0     4
+2     Scuderia Ferrari Vodafone   Charles Hérnandez   +18.647       +18.647  1:44.872        7        S    1     3
+3         West McLaren-Mercedes       Devon Raleigh   +18.825        +0.178  1:44.813        6        S    1     1
+4         West McLaren-Mercedes        Nill Rosberg   +19.155         +0.33  1:44.977       10        S    1     2
+5     Rothmans Williams-Renault      Ken Fassbender   +47.461       +28.306  1:45.933        8        S    1     5
+6     Rothmans Williams-Renault       Antonio Iocco   +51.666        +4.205  1:46.375        7        S    1     7
+7               Renault F1 Team     Marcus Svansson   +58.032        +6.366  1:46.988        7        S    1     9
+8               Renault F1 Team       Tony Calandre   +60.276        +2.244  1:46.634        5        S    1    12
+9                 Honda F1 Team     Katsuno Yoshiro   +60.424        +0.148  1:46.759        7        S    1    14
+10  Marlboro Team Lotus-Renault         Sander Metz   +60.626        +0.202  1:47.176        6        S    1     8
+11     Mild Seven Toyota Racing    Guillermo Acosta   +60.774        +0.148  1:47.402        4        S    1    11
+12  Marlboro Team Lotus-Renault   Charlie Southgate   +61.622        +0.848  1:46.828        7        S    1    13
+13    Winfield Benetton-Renault     Kumar Karihayan   +62.249        +0.627  1:47.584        9        S    1    16
+14    Winfield Benetton-Renault      Daniil Kovalev   +64.293        +2.044  1:46.618       11        S    1    10
+15     Mild Seven Toyota Racing       Quentin Iazzo   +66.254        +1.961  1:46.713        5        S    1    15
+16                Honda F1 Team       David Redolfe   +68.348        +2.094  1:47.420       12        S    1     6
+17     Red Bull Sauber-Mercedes      Jamie Lorianne  +105.024       +36.676  1:49.191        4        S    1    19
+18      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +5.323  1:49.938        4        S    1    17
+19     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +0.725  1:49.308        5        S    1    18
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +0.596  1:50.354        7        S    1    20
+21   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +5.055  1:49.866       10        S    1    22
+22   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +0.107  1:48.439       17        S    1    21
+
+Fastest Lap | Devon Raleigh has recorded 1:44.813 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 18/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  00:32:23.346  1:44.813        6        S    1     1
+2         West McLaren-Mercedes        Nill Rosberg     +0.39         +0.39  1:44.977       10        S    1     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.709        +1.319  1:44.872        7        S    1     3
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +3.832        +2.123  1:44.964        4        S    1     4
+5     Rothmans Williams-Renault      Ken Fassbender   +29.469       +25.637  1:45.933        8        S    1     5
+6     Rothmans Williams-Renault       Antonio Iocco   +33.063        +3.594  1:46.375        7        S    1     7
+7               Renault F1 Team     Marcus Svansson   +40.064        +7.001  1:46.988        7        S    1     9
+8               Renault F1 Team       Tony Calandre    +42.21        +2.146  1:46.634        5        S    1    12
+9                 Honda F1 Team     Katsuno Yoshiro   +42.256        +0.046  1:46.759        7        S    1    14
+10  Marlboro Team Lotus-Renault         Sander Metz   +42.366         +0.11  1:47.176        6        S    1     8
+11     Mild Seven Toyota Racing    Guillermo Acosta   +42.598        +0.232  1:47.402        4        S    1    11
+12  Marlboro Team Lotus-Renault   Charlie Southgate   +43.178         +0.58  1:46.828        7        S    1    13
+13    Winfield Benetton-Renault     Kumar Karihayan   +43.547        +0.369  1:47.327       18        S    1    16
+14    Winfield Benetton-Renault      Daniil Kovalev   +46.025        +2.478  1:46.618       11        S    1    10
+15     Mild Seven Toyota Racing       Quentin Iazzo   +51.074        +5.049  1:46.713        5        S    1    15
+16                Honda F1 Team       David Redolfe   +52.005        +0.931  1:47.420       12        S    1     6
+17     Red Bull Sauber-Mercedes      Jamie Lorianne    +87.85       +35.845  1:48.855       18        S    1    19
+18      Minardi-Ferrari F1 Team        Raul Sanchez     +94.1         +6.25  1:49.782       18        S    1    17
+19      Minardi-Ferrari F1 Team  Antonio Bacarrello    +94.26         +0.16  1:48.620       18        S    1    20
+20     Red Bull Sauber-Mercedes       Ernie Cédryck   +96.491        +2.231  1:49.308        5        S    1    18
+21   ING Jaguar Racing Mercedes        James Eadorn   +99.708        +3.217  1:48.439       17        S    1    21
+22   ING Jaguar Racing Mercedes      George Aldeill  +100.787        +1.079  1:49.866       10        S    1    22
+
+Fastest Lap | Devon Raleigh has recorded 1:44.813 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 19/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:34:09.076  1:44.977       10        S    1     2
+2         West McLaren-Mercedes       Devon Raleigh    +0.057        +0.057  1:44.813        6        S    1     1
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +2.105        +2.048  1:44.872        7        S    1     3
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +4.966        +2.861  1:44.964        4        S    1     4
+5     Rothmans Williams-Renault      Ken Fassbender    +30.82       +25.854  1:45.933        8        S    1     5
+6     Rothmans Williams-Renault       Antonio Iocco   +34.446        +3.626  1:46.375        7        S    1     7
+7               Renault F1 Team     Marcus Svansson   +40.514        +6.068  1:46.179       19        S    1     9
+8   Marlboro Team Lotus-Renault         Sander Metz   +42.189        +1.675  1:45.553       19        S    1     8
+9               Renault F1 Team       Tony Calandre    +42.55        +0.361  1:46.070       19        S    1    12
+10     Mild Seven Toyota Racing    Guillermo Acosta   +42.995        +0.445  1:46.127       19        S    1    11
+11    Winfield Benetton-Renault     Kumar Karihayan   +43.176        +0.181  1:45.359       19        S    1    16
+12  Marlboro Team Lotus-Renault   Charlie Southgate   +43.881        +0.705  1:46.432       19        S    1    13
+13                Honda F1 Team     Katsuno Yoshiro   +44.537        +0.656  1:46.759        7        S    1    14
+14    Winfield Benetton-Renault      Daniil Kovalev   +46.181        +1.644  1:45.885       19        S    1    10
+15     Mild Seven Toyota Racing       Quentin Iazzo   +53.361         +7.18  1:46.713        5        S    1    15
+16                Honda F1 Team       David Redolfe   +54.899        +1.538  1:47.420       12        S    1     6
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +91.015       +36.116  1:48.855       18        S    1    19
+18      Minardi-Ferrari F1 Team        Raul Sanchez   +97.109        +6.094  1:48.738       19        S    1    17
+19      Minardi-Ferrari F1 Team  Antonio Bacarrello   +97.132        +0.023  1:48.601       19        S    1    20
+20     Red Bull Sauber-Mercedes       Ernie Cédryck   +99.515        +2.383  1:48.754       19        S    1    18
+21   ING Jaguar Racing Mercedes        James Eadorn  +103.431        +3.916  1:48.439       17        S    1    21
+22   ING Jaguar Racing Mercedes      George Aldeill  +104.568        +1.137  1:49.510       19        S    1    22
+
+Fastest Lap | Devon Raleigh has recorded 1:44.813 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 20/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  00:35:52.826  1:43.693       20        S    1     1
+2         West McLaren-Mercedes        Nill Rosberg    +0.733        +0.733  1:44.483       20        S    1     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +2.786        +2.053  1:44.431       20        S    1     3
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +7.257        +4.471  1:44.964        4        S    1     4
+5     Rothmans Williams-Renault      Ken Fassbender   +32.598       +25.341  1:45.528       20        S    1     5
+6     Rothmans Williams-Renault       Antonio Iocco   +36.399        +3.801  1:45.703       20        S    1     7
+7               Renault F1 Team     Marcus Svansson   +43.243        +6.844  1:46.179       19        S    1     9
+8               Renault F1 Team       Tony Calandre   +44.472        +1.229  1:45.672       20        S    1    12
+9   Marlboro Team Lotus-Renault         Sander Metz   +44.611        +0.139  1:45.553       19        S    1     8
+10     Mild Seven Toyota Racing    Guillermo Acosta   +45.143        +0.532  1:45.898       20        S    1    11
+11    Winfield Benetton-Renault     Kumar Karihayan   +45.433         +0.29  1:45.359       19        S    1    16
+12  Marlboro Team Lotus-Renault   Charlie Southgate     +45.5        +0.067  1:45.370       20        S    1    13
+13                Honda F1 Team     Katsuno Yoshiro   +45.924        +0.424  1:45.137       20        S    1    14
+14    Winfield Benetton-Renault      Daniil Kovalev   +48.611        +2.687  1:45.885       19        S    1    10
+15                Honda F1 Team       David Redolfe   +56.135        +7.524  1:44.985       20        S    1     6
+16     Mild Seven Toyota Racing       Quentin Iazzo   +56.469        +0.334  1:46.713        5        S    1    15
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +96.061       +39.592  1:48.796       20        S    1    19
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello  +101.629        +5.568  1:48.247       20        S    1    20
+19      Minardi-Ferrari F1 Team        Raul Sanchez  +102.476        +0.847  1:48.738       19        S    1    17
+20     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +2.746  1:48.754       19        S    1    18
+21   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap         +4.71  1:48.439       17        S    1    21
+22   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +4.932  1:49.510       19        S    1    22
+
+Fastest Lap | Devon Raleigh has recorded 1:43.693 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 21/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  00:37:36.899  1:43.693       20        S    1     1
+2         West McLaren-Mercedes        Nill Rosberg    +0.106        +0.106  1:43.446       21        S    1     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +2.881        +2.775  1:44.168       21        S    1     3
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +7.621         +4.74  1:44.437       21        S    1     4
+5     Rothmans Williams-Renault      Ken Fassbender   +33.974       +26.353  1:45.449       21        S    1     5
+6     Rothmans Williams-Renault       Antonio Iocco   +40.029        +6.055  1:45.703       20        S    1     7
+7               Renault F1 Team     Marcus Svansson   +45.613        +5.584  1:46.179       19        S    1     9
+8      Mild Seven Toyota Racing    Guillermo Acosta   +47.223         +1.61  1:45.898       20        S    1    11
+9               Renault F1 Team       Tony Calandre   +47.701        +0.478  1:45.672       20        S    1    12
+10  Marlboro Team Lotus-Renault         Sander Metz   +47.786        +0.085  1:45.553       19        S    1     8
+11  Marlboro Team Lotus-Renault   Charlie Southgate   +47.928        +0.142  1:45.370       20        S    1    13
+12                Honda F1 Team     Katsuno Yoshiro   +48.256        +0.328  1:45.137       20        S    1    14
+13    Winfield Benetton-Renault      Daniil Kovalev   +51.207        +2.951  1:45.885       19        S    1    10
+14    Winfield Benetton-Renault     Kumar Karihayan   +51.523        +0.316  1:45.359       19        S    1    16
+15                Honda F1 Team       David Redolfe   +57.777        +6.254  1:44.985       20        S    1     6
+16     Mild Seven Toyota Racing       Quentin Iazzo   +59.056        +1.279  1:46.660       21        S    1    15
+17     Red Bull Sauber-Mercedes      Jamie Lorianne  +101.058       +42.002  1:48.796       20        S    1    19
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +5.651  1:48.247       20        S    1    20
+19      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap         +1.73  1:48.738       19        S    1    17
+20     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap         +2.22  1:48.754       19        S    1    18
+21   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +5.619  1:48.439       17        S    1    21
+22   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +3.815  1:49.302       21        S    1    22
+
+Fastest Lap | Nill Rosberg has recorded 1:43.446 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 22/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:39:20.493  1:43.446       21        S    1     2
+2         West McLaren-Mercedes       Devon Raleigh    +1.639        +1.639  1:43.693       20        S    1     1
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +3.415        +1.776  1:44.128       22        S    1     3
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +8.501        +5.086  1:44.437       21        S    1     4
+5     Rothmans Williams-Renault      Ken Fassbender   +35.528       +27.027  1:45.148       22        S    1     5
+6     Rothmans Williams-Renault       Antonio Iocco   +42.544        +7.016  1:45.703       20        S    1     7
+7               Renault F1 Team     Marcus Svansson   +47.924         +5.38  1:45.905       22        S    1     9
+8   Marlboro Team Lotus-Renault         Sander Metz   +49.581        +1.657  1:45.388       22        S    1     8
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +50.041         +0.46  1:45.370       20        S    1    13
+10                Honda F1 Team     Katsuno Yoshiro   +50.347        +0.306  1:45.137       20        S    1    14
+11     Mild Seven Toyota Racing    Guillermo Acosta   +50.646        +0.299  1:45.898       20        S    1    11
+12              Renault F1 Team       Tony Calandre   +51.234        +0.588  1:45.672       20        S    1    12
+13    Winfield Benetton-Renault      Daniil Kovalev   +53.673        +2.439  1:45.885       19        S    1    10
+14                Honda F1 Team       David Redolfe   +60.855        +7.182  1:44.985       20        S    1     6
+15     Mild Seven Toyota Racing       Quentin Iazzo   +63.248        +2.393  1:46.660       21        S    1    15
+16     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap       +44.285  1:48.796       20        S    1    19
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +6.078  1:48.247       20        S    1    20
+18      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +1.703  1:48.738       19        S    1    17
+19     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +2.881  1:48.754       19        S    1    18
+20   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +6.208  1:48.439       17        S    1    21
+21   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +2.712  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan    +1 Lap         +5.41  1:45.359       19        S    1    16
+
+Fastest Lap | Nill Rosberg has recorded 1:43.446 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 23/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:41:04.623  1:43.446       21        S    1     2
+2         West McLaren-Mercedes       Devon Raleigh    +1.748        +1.748  1:43.693       20        S    1     1
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +3.726        +1.978  1:44.128       22        S    1     3
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +8.508        +4.782  1:44.137       23        S    1     4
+5     Rothmans Williams-Renault      Ken Fassbender   +36.888        +28.38  1:45.148       22        S    1     5
+6     Rothmans Williams-Renault       Antonio Iocco   +44.881        +7.993  1:45.703       20        S    1     7
+7               Renault F1 Team     Marcus Svansson   +50.041         +5.16  1:45.905       22        S    1     9
+8   Marlboro Team Lotus-Renault   Charlie Southgate   +51.751         +1.71  1:45.370       20        S    1    13
+9   Marlboro Team Lotus-Renault         Sander Metz   +52.018        +0.267  1:45.388       22        S    1     8
+10                Honda F1 Team     Katsuno Yoshiro   +52.583        +0.565  1:45.137       20        S    1    14
+11              Renault F1 Team       Tony Calandre   +55.156        +2.573  1:45.672       20        S    1    12
+12     Mild Seven Toyota Racing    Guillermo Acosta   +55.794        +0.638  1:45.898       20        S    1    11
+13    Winfield Benetton-Renault      Daniil Kovalev   +56.648        +0.854  1:45.885       19        S    1    10
+14                Honda F1 Team       David Redolfe   +62.514        +5.866  1:44.985       20        S    1     6
+15     Mild Seven Toyota Racing       Quentin Iazzo   +65.851        +3.337  1:46.660       21        S    1    15
+16     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap       +46.919  1:48.796       20        S    1    19
+17      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +5.555  1:47.141       23        S    1    17
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +2.329  1:48.247       20        S    1    20
+19     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +2.844  1:48.754       19        S    1    18
+20   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +6.608  1:48.439       17        S    1    21
+21   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +2.207  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Nill Rosberg has recorded 1:43.446 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 24/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:42:48.899  1:43.446       21        S    1     2
+2         West McLaren-Mercedes       Devon Raleigh    +1.685        +1.685  1:43.693       20        S    1     1
+3     Scuderia Ferrari Vodafone   Charles Hérnandez      +4.3        +2.615  1:44.128       22        S    1     3
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +8.593        +4.293  1:44.137       23        S    1     4
+5     Rothmans Williams-Renault      Ken Fassbender    +38.16       +29.567  1:45.148       22        S    1     5
+6     Rothmans Williams-Renault       Antonio Iocco    +47.05         +8.89  1:45.703       20        S    1     7
+7               Renault F1 Team     Marcus Svansson    +51.92         +4.87  1:45.905       22        S    1     9
+8   Marlboro Team Lotus-Renault         Sander Metz   +53.523        +1.603  1:45.388       22        S    1     8
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +54.081        +0.558  1:45.370       20        S    1    13
+10                Honda F1 Team     Katsuno Yoshiro   +55.972        +1.891  1:45.137       20        S    1    14
+11              Renault F1 Team       Tony Calandre   +57.215        +1.243  1:45.672       20        S    1    12
+12     Mild Seven Toyota Racing    Guillermo Acosta   +57.886        +0.671  1:45.898       20        S    1    11
+13    Winfield Benetton-Renault      Daniil Kovalev   +59.345        +1.459  1:45.885       19        S    1    10
+14                Honda F1 Team       David Redolfe   +64.245          +4.9  1:44.985       20        S    1     6
+15     Mild Seven Toyota Racing       Quentin Iazzo   +68.494        +4.249  1:46.660       21        S    1    15
+16     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap       +49.395  1:48.796       20        S    1    19
+17      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap         +4.87  1:47.141       23        S    1    17
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +3.273  1:48.247       20        S    1    20
+19     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +2.401  1:48.754       19        S    1    18
+20   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +7.585  1:48.439       17        S    1    21
+21   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap       +76.969  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Nill Rosberg has recorded 1:43.446 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 25/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:48:50.125  1:43.446       21        S    1     2
+2         West McLaren-Mercedes       Devon Raleigh    +1.685        +1.685  1:43.693       20        S    1     1
+3     Scuderia Ferrari Vodafone   Charles Hérnandez      +4.3        +2.615  1:44.128       22        S    1     3
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +8.593        +4.293  1:44.137       23        S    1     4
+5     Rothmans Williams-Renault      Ken Fassbender    +38.16       +29.567  1:45.148       22        S    1     5
+6     Rothmans Williams-Renault       Antonio Iocco    +47.05         +8.89  1:45.703       20        S    1     7
+7               Renault F1 Team     Marcus Svansson    +51.92         +4.87  1:45.905       22        S    1     9
+8   Marlboro Team Lotus-Renault         Sander Metz   +53.523        +1.603  1:45.388       22        S    1     8
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +54.081        +0.558  1:45.370       20        S    1    13
+10              Renault F1 Team       Tony Calandre   +57.215        +3.134  1:45.672       20        S    1    12
+11    Winfield Benetton-Renault      Daniil Kovalev   +59.345         +2.13  1:45.885       19        S    1    10
+12                Honda F1 Team       David Redolfe   +64.245          +4.9  1:44.985       20        S    1     6
+13                Honda F1 Team     Katsuno Yoshiro   +78.922       +14.677  1:45.137       20        S    2    14
+14     Mild Seven Toyota Racing    Guillermo Acosta   +79.916        +0.994  1:45.898       20        S    2    11
+15     Mild Seven Toyota Racing       Quentin Iazzo   +90.544       +10.628  1:46.660       21        S    2    15
+16     Red Bull Sauber-Mercedes      Jamie Lorianne  +140.279       +49.735  1:48.796       20        S    2    19
+17      Minardi-Ferrari F1 Team        Raul Sanchez  +146.069         +5.79  1:47.141       23        S    2    17
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello  +149.622        +3.553  1:48.247       20        S    2    20
+19     Red Bull Sauber-Mercedes       Ernie Cédryck  +150.573        +0.951  1:48.754       19        S    2    18
+20   ING Jaguar Racing Mercedes        James Eadorn  +158.638        +8.065  1:48.439       17        S    2    21
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Nill Rosberg has recorded 1:43.446 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 26/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:54:51.351  1:43.446       21        S    1     2
+2         West McLaren-Mercedes       Devon Raleigh    +1.685        +1.685  1:43.693       20        S    1     1
+3     Scuderia Ferrari Vodafone   Charles Hérnandez      +4.3        +2.615  1:44.128       22        S    1     3
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +8.593        +4.293  1:44.137       23        S    1     4
+5     Rothmans Williams-Renault      Ken Fassbender    +38.16       +29.567  1:45.148       22        S    1     5
+6   Marlboro Team Lotus-Renault         Sander Metz   +53.523       +15.363  1:45.388       22        S    1     8
+7               Renault F1 Team       Tony Calandre   +57.215        +3.692  1:45.672       20        S    1    12
+8     Winfield Benetton-Renault      Daniil Kovalev   +59.345         +2.13  1:45.885       19        S    1    10
+9                 Honda F1 Team       David Redolfe   +64.245          +4.9  1:44.985       20        S    1     6
+10    Rothmans Williams-Renault       Antonio Iocco    +70.03        +5.785  1:45.703       20        S    2     7
+11              Renault F1 Team     Marcus Svansson    +74.57         +4.54  1:45.905       22        S    2     9
+12  Marlboro Team Lotus-Renault   Charlie Southgate   +77.281        +2.711  1:45.370       20        S    2    13
+13                Honda F1 Team     Katsuno Yoshiro   +78.922        +1.641  1:45.137       20        S    2    14
+14     Mild Seven Toyota Racing    Guillermo Acosta   +79.916        +0.994  1:45.898       20        S    2    11
+15     Mild Seven Toyota Racing       Quentin Iazzo   +90.544       +10.628  1:46.660       21        S    2    15
+16     Red Bull Sauber-Mercedes      Jamie Lorianne  +140.279       +49.735  1:48.796       20        S    2    19
+17      Minardi-Ferrari F1 Team        Raul Sanchez  +146.069         +5.79  1:47.141       23        S    2    17
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello  +149.622        +3.553  1:48.247       20        S    2    20
+19     Red Bull Sauber-Mercedes       Ernie Cédryck  +150.573        +0.951  1:48.754       19        S    2    18
+20   ING Jaguar Racing Mercedes        James Eadorn  +158.638        +8.065  1:48.439       17        S    2    21
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Nill Rosberg has recorded 1:43.446 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 27/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:00:52.577  1:43.446       21        S    1     2
+2         West McLaren-Mercedes       Devon Raleigh     +0.35         +0.35  1:43.693       20        S    1     1
+3     Scuderia Ferrari Vodafone   Charles Hérnandez      +0.7         +0.35  1:44.128       22        S    1     3
+4     Scuderia Ferrari Vodafone          Abel Wolfe     +1.05         +0.35  1:44.137       23        S    1     4
+5     Rothmans Williams-Renault      Ken Fassbender      +1.4         +0.35  1:45.148       22        S    1     5
+6                 Honda F1 Team       David Redolfe     +1.75         +0.35  1:44.985       20        S    1     6
+7     Rothmans Williams-Renault       Antonio Iocco      +2.1         +0.35  1:45.703       20        S    2     7
+8               Renault F1 Team     Marcus Svansson     +2.45         +0.35  1:45.905       22        S    2     9
+9   Marlboro Team Lotus-Renault         Sander Metz      +2.8         +0.35  1:45.388       22        S    2     8
+10  Marlboro Team Lotus-Renault   Charlie Southgate     +3.15         +0.35  1:45.370       20        S    2    13
+11                Honda F1 Team     Katsuno Yoshiro      +3.5         +0.35  1:45.137       20        S    2    14
+12     Mild Seven Toyota Racing    Guillermo Acosta     +3.85         +0.35  1:45.898       20        S    2    11
+13              Renault F1 Team       Tony Calandre      +4.2         +0.35  1:45.672       20        S    2    12
+14    Winfield Benetton-Renault      Daniil Kovalev     +4.55         +0.35  1:45.885       19        S    2    10
+15     Mild Seven Toyota Racing       Quentin Iazzo      +4.9         +0.35  1:46.660       21        S    2    15
+16     Red Bull Sauber-Mercedes      Jamie Lorianne     +5.25         +0.35  1:48.796       20        S    2    19
+17      Minardi-Ferrari F1 Team        Raul Sanchez      +5.6         +0.35  1:47.141       23        S    2    17
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello     +5.95         +0.35  1:48.247       20        S    2    20
+19     Red Bull Sauber-Mercedes       Ernie Cédryck      +6.3         +0.35  1:48.754       19        S    2    18
+20   ING Jaguar Racing Mercedes        James Eadorn     +6.65         +0.35  1:48.439       17        S    2    21
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Nill Rosberg has recorded 1:43.446 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 28/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:06:53.803  1:43.446       21        S    1     2
+2         West McLaren-Mercedes       Devon Raleigh     +0.35         +0.35  1:43.693       20        S    1     1
+3     Scuderia Ferrari Vodafone   Charles Hérnandez      +0.7         +0.35  1:44.128       22        S    1     3
+4     Scuderia Ferrari Vodafone          Abel Wolfe     +1.05         +0.35  1:44.137       23        S    1     4
+5     Rothmans Williams-Renault      Ken Fassbender      +1.4         +0.35  1:45.148       22        S    1     5
+6                 Honda F1 Team       David Redolfe     +1.75         +0.35  1:44.985       20        S    1     6
+7     Rothmans Williams-Renault       Antonio Iocco      +2.1         +0.35  1:45.703       20        S    2     7
+8               Renault F1 Team     Marcus Svansson     +2.45         +0.35  1:45.905       22        S    2     9
+9   Marlboro Team Lotus-Renault         Sander Metz      +2.8         +0.35  1:45.388       22        S    2     8
+10  Marlboro Team Lotus-Renault   Charlie Southgate     +3.15         +0.35  1:45.370       20        S    2    13
+11                Honda F1 Team     Katsuno Yoshiro      +3.5         +0.35  1:45.137       20        S    2    14
+12     Mild Seven Toyota Racing    Guillermo Acosta     +3.85         +0.35  1:45.898       20        S    2    11
+13              Renault F1 Team       Tony Calandre      +4.2         +0.35  1:45.672       20        S    2    12
+14    Winfield Benetton-Renault      Daniil Kovalev     +4.55         +0.35  1:45.885       19        S    2    10
+15     Mild Seven Toyota Racing       Quentin Iazzo      +4.9         +0.35  1:46.660       21        S    2    15
+16     Red Bull Sauber-Mercedes      Jamie Lorianne     +5.25         +0.35  1:48.796       20        S    2    19
+17      Minardi-Ferrari F1 Team        Raul Sanchez      +5.6         +0.35  1:47.141       23        S    2    17
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello     +5.95         +0.35  1:48.247       20        S    2    20
+19     Red Bull Sauber-Mercedes       Ernie Cédryck      +6.3         +0.35  1:48.754       19        S    2    18
+20   ING Jaguar Racing Mercedes        James Eadorn     +6.65         +0.35  1:48.439       17        S    2    21
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Nill Rosberg has recorded 1:43.446 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 29/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:08:37.147  1:42.994       29        S    1     1
+2         West McLaren-Mercedes        Nill Rosberg    +0.555        +0.555  1:43.446       21        S    1     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +1.081        +0.526  1:43.375       29        S    1     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.775        +0.694  1:44.128       22        S    1     3
+5     Rothmans Williams-Renault      Ken Fassbender    +2.929        +1.154  1:44.873       29        S    1     5
+6                 Honda F1 Team       David Redolfe    +4.195        +1.266  1:44.985       20        S    1     6
+7     Rothmans Williams-Renault       Antonio Iocco    +7.697        +3.502  1:45.703       20        S    2     7
+8               Renault F1 Team     Marcus Svansson    +7.742        +0.045  1:45.905       22        S    2     9
+9   Marlboro Team Lotus-Renault         Sander Metz    +8.027        +0.285  1:45.388       22        S    2     8
+10  Marlboro Team Lotus-Renault   Charlie Southgate    +8.138        +0.111  1:45.370       20        S    2    13
+11              Renault F1 Team       Tony Calandre    +9.484        +1.346  1:45.672       20        S    2    12
+12     Mild Seven Toyota Racing    Guillermo Acosta   +10.605        +1.121  1:45.898       20        S    2    11
+13                Honda F1 Team     Katsuno Yoshiro   +12.006        +1.401  1:45.137       20        S    2    14
+14      Minardi-Ferrari F1 Team        Raul Sanchez   +12.864        +0.858  1:47.141       23        S    2    17
+15     Mild Seven Toyota Racing       Quentin Iazzo   +13.059        +0.195  1:46.660       21        S    2    15
+16    Winfield Benetton-Renault      Daniil Kovalev   +13.127        +0.068  1:45.885       19        S    2    10
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +14.089        +0.962  1:48.796       20        S    2    19
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello     +14.3        +0.211  1:48.247       20        S    2    20
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +14.954        +0.654  1:48.754       19        S    2    18
+20   ING Jaguar Racing Mercedes        James Eadorn   +16.476        +1.522  1:48.439       17        S    2    21
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Devon Raleigh has recorded 1:42.994 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 30/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:10:20.996  1:43.294       30        S    1     2
+2         West McLaren-Mercedes       Devon Raleigh    +0.059        +0.059  1:42.994       29        S    1     1
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +1.699         +1.64  1:43.375       29        S    1     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.865        +0.166  1:43.939       30        S    1     3
+5     Rothmans Williams-Renault      Ken Fassbender    +4.062        +2.197  1:44.873       29        S    1     5
+6                 Honda F1 Team       David Redolfe    +6.295        +2.233  1:44.985       20        S    1     6
+7     Rothmans Williams-Renault       Antonio Iocco   +11.562        +5.267  1:45.703       20        S    2     7
+8   Marlboro Team Lotus-Renault   Charlie Southgate   +12.793        +1.231  1:45.370       20        S    2    13
+9   Marlboro Team Lotus-Renault         Sander Metz   +12.997        +0.204  1:45.388       22        S    2     8
+10              Renault F1 Team     Marcus Svansson   +13.084        +0.087  1:45.905       22        S    2     9
+11              Renault F1 Team       Tony Calandre   +14.448        +1.364  1:45.672       20        S    2    12
+12     Mild Seven Toyota Racing    Guillermo Acosta   +14.712        +0.264  1:45.898       20        S    2    11
+13                Honda F1 Team     Katsuno Yoshiro   +16.438        +1.726  1:45.137       20        S    2    14
+14    Winfield Benetton-Renault      Daniil Kovalev   +18.584        +2.146  1:45.885       19        S    2    10
+15      Minardi-Ferrari F1 Team        Raul Sanchez   +19.047        +0.463  1:47.141       23        S    2    17
+16     Mild Seven Toyota Racing       Quentin Iazzo   +19.342        +0.295  1:46.660       21        S    2    15
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +21.044        +1.702  1:48.796       20        S    2    19
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello    +21.33        +0.286  1:48.247       20        S    2    20
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +22.075        +0.745  1:48.754       19        S    2    18
+20   ING Jaguar Racing Mercedes        James Eadorn   +23.915         +1.84  1:48.439       17        S    2    21
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Devon Raleigh has recorded 1:42.994 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 31/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:12:04.454  1:42.994       29        S    1     1
+2         West McLaren-Mercedes        Nill Rosberg    +0.445        +0.445  1:43.294       30        S    1     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.757        +1.312  1:43.350       31        S    1     3
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +2.486        +0.729  1:43.375       29        S    1     4
+5     Rothmans Williams-Renault      Ken Fassbender    +5.945        +3.459  1:44.873       29        S    1     5
+6                 Honda F1 Team       David Redolfe    +8.665         +2.72  1:44.985       20        S    1     6
+7     Rothmans Williams-Renault       Antonio Iocco   +15.605         +6.94  1:45.703       20        S    2     7
+8               Renault F1 Team     Marcus Svansson   +16.964        +1.359  1:45.905       22        S    2     9
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +17.587        +0.623  1:45.370       20        S    2    13
+10     Mild Seven Toyota Racing    Guillermo Acosta   +18.731        +1.144  1:45.898       20        S    2    11
+11              Renault F1 Team       Tony Calandre   +18.974        +0.243  1:45.672       20        S    2    12
+12  Marlboro Team Lotus-Renault         Sander Metz   +19.749        +0.775  1:45.388       22        S    2     8
+13                Honda F1 Team     Katsuno Yoshiro   +20.463        +0.714  1:45.137       20        S    2    14
+14    Winfield Benetton-Renault      Daniil Kovalev   +22.973         +2.51  1:45.885       19        S    2    10
+15     Mild Seven Toyota Racing       Quentin Iazzo   +25.599        +2.626  1:46.660       21        S    2    15
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +25.816        +0.217  1:47.141       23        S    2    17
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +27.877        +2.061  1:48.796       20        S    2    19
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello   +27.966        +0.089  1:48.247       20        S    2    20
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +29.941        +1.975  1:48.754       19        S    2    18
+20   ING Jaguar Racing Mercedes        James Eadorn   +31.192        +1.251  1:48.439       17        S    2    21
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Devon Raleigh has recorded 1:42.994 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 32/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:13:48.555  1:42.994       29        S    1     1
+2         West McLaren-Mercedes        Nill Rosberg    +0.025        +0.025  1:43.294       30        S    1     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +1.796        +1.771  1:43.375       29        S    1     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +2.353        +0.557  1:43.350       31        S    1     3
+5     Rothmans Williams-Renault      Ken Fassbender    +7.256        +4.903  1:44.873       29        S    1     5
+6                 Honda F1 Team       David Redolfe   +10.464        +3.208  1:44.985       20        S    1     6
+7               Renault F1 Team     Marcus Svansson    +20.83       +10.366  1:45.905       22        S    2     9
+8     Rothmans Williams-Renault       Antonio Iocco   +21.909        +1.079  1:45.703       20        S    2     7
+9      Mild Seven Toyota Racing    Guillermo Acosta   +22.529         +0.62  1:45.898       20        S    2    11
+10  Marlboro Team Lotus-Renault         Sander Metz   +22.584        +0.055  1:45.388       22        S    2     8
+11              Renault F1 Team       Tony Calandre   +22.883        +0.299  1:45.672       20        S    2    12
+12                Honda F1 Team     Katsuno Yoshiro   +23.077        +0.194  1:45.137       20        S    2    14
+13  Marlboro Team Lotus-Renault   Charlie Southgate    +23.27        +0.193  1:45.370       20        S    2    13
+14    Winfield Benetton-Renault      Daniil Kovalev   +26.034        +2.764  1:45.885       19        S    2    10
+15      Minardi-Ferrari F1 Team        Raul Sanchez   +30.514         +4.48  1:47.141       23        S    2    17
+16     Mild Seven Toyota Racing       Quentin Iazzo   +30.643        +0.129  1:46.660       21        S    2    15
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +33.383         +2.74  1:48.796       20        S    2    19
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello   +34.951        +1.568  1:48.247       20        S    2    20
+19   ING Jaguar Racing Mercedes        James Eadorn   +39.077        +4.126  1:48.439       17        S    2    21
+20     Red Bull Sauber-Mercedes       Ernie Cédryck   +49.567        +10.49  1:48.754       19        S    2    18
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Devon Raleigh has recorded 1:42.994 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 33/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:15:33.326  1:43.294       30        S    1     2
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +0.525        +0.525  1:43.375       29        S    1     4
+3         West McLaren-Mercedes       Devon Raleigh     +1.21        +0.685  1:42.994       29        S    1     1
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.242        +0.032  1:43.350       31        S    1     3
+5     Rothmans Williams-Renault      Ken Fassbender    +8.181        +6.939  1:44.873       29        S    1     5
+6                 Honda F1 Team       David Redolfe   +12.221         +4.04  1:44.985       20        S    1     6
+7               Renault F1 Team     Marcus Svansson   +21.599        +9.378  1:45.539       33        M    2     9
+8     Rothmans Williams-Renault       Antonio Iocco   +21.698        +0.099   1:44.56       33        M    2     7
+9   Marlboro Team Lotus-Renault         Sander Metz   +23.079        +1.381  1:45.266       33        M    2     8
+10     Mild Seven Toyota Racing    Guillermo Acosta   +24.016        +0.937  1:45.898       20        S    2    11
+11  Marlboro Team Lotus-Renault   Charlie Southgate    +24.08        +0.064  1:45.370       20        S    2    13
+12                Honda F1 Team     Katsuno Yoshiro    +25.13         +1.05  1:45.137       20        S    2    14
+13              Renault F1 Team       Tony Calandre    +25.55         +0.42  1:45.672       20        S    2    12
+14    Winfield Benetton-Renault      Daniil Kovalev   +26.418        +0.868  1:45.155       33        M    2    10
+15      Minardi-Ferrari F1 Team        Raul Sanchez   +33.816        +7.398  1:47.141       23        S    2    17
+16     Mild Seven Toyota Racing       Quentin Iazzo   +34.863        +1.047  1:46.660       21        S    2    15
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +39.899        +5.036  1:48.247       20        S    2    20
+18     Red Bull Sauber-Mercedes      Jamie Lorianne   +40.563        +0.664  1:48.796       20        S    2    19
+19   ING Jaguar Racing Mercedes        James Eadorn     +42.7        +2.137  1:48.394       33        M    2    21
+20     Red Bull Sauber-Mercedes       Ernie Cédryck   +53.476       +10.776  1:48.680       33        M    2    18
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Devon Raleigh has recorded 1:42.994 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 34/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:17:17.422  1:43.294       30        S    1     2
+2         West McLaren-Mercedes       Devon Raleigh    +1.247        +1.247  1:42.994       29        S    1     1
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +1.573        +0.326  1:43.375       29        S    1     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +2.974        +1.401  1:43.350       31        S    1     3
+5     Rothmans Williams-Renault      Ken Fassbender   +10.071        +7.097  1:44.873       29        S    1     5
+6                 Honda F1 Team       David Redolfe   +14.542        +4.471  1:44.985       20        S    1     6
+7               Renault F1 Team     Marcus Svansson   +22.583        +8.041   1:45.08       34        M    2     9
+8   Marlboro Team Lotus-Renault         Sander Metz   +24.699        +2.116  1:45.266       33        M    2     8
+9     Rothmans Williams-Renault       Antonio Iocco   +25.027        +0.328   1:44.56       33        M    2     7
+10     Mild Seven Toyota Racing    Guillermo Acosta   +25.169        +0.142  1:45.249       34        M    2    11
+11  Marlboro Team Lotus-Renault   Charlie Southgate   +26.703        +1.534  1:45.370       20        S    2    13
+12    Winfield Benetton-Renault      Daniil Kovalev   +26.737        +0.034  1:44.415       34        M    2    10
+13                Honda F1 Team     Katsuno Yoshiro   +28.388        +1.651  1:45.137       20        S    2    14
+14              Renault F1 Team       Tony Calandre   +28.412        +0.024  1:45.672       20        S    2    12
+15      Minardi-Ferrari F1 Team        Raul Sanchez   +37.609        +9.197  1:47.141       23        S    2    17
+16     Mild Seven Toyota Racing       Quentin Iazzo   +38.723        +1.114  1:46.660       21        S    2    15
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +44.383         +5.66  1:48.247       20        S    2    20
+18     Red Bull Sauber-Mercedes      Jamie Lorianne   +44.429        +0.046  1:47.962       34        M    2    19
+19   ING Jaguar Racing Mercedes        James Eadorn   +47.133        +2.704  1:48.394       33        M    2    21
+20     Red Bull Sauber-Mercedes       Ernie Cédryck   +57.762       +10.629  1:48.382       34        M    2    18
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Devon Raleigh has recorded 1:42.994 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 35/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:19:02.351  1:43.294       30        S    1     2
+2         West McLaren-Mercedes       Devon Raleigh    +0.669        +0.669  1:42.994       29        S    1     1
+3     Scuderia Ferrari Vodafone          Abel Wolfe     +1.14        +0.471  1:43.375       29        S    1     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +3.084        +1.944  1:43.350       31        S    1     3
+5     Rothmans Williams-Renault      Ken Fassbender   +11.322        +8.238  1:44.873       29        S    1     5
+6                 Honda F1 Team       David Redolfe   +16.538        +5.216  1:44.985       20        S    1     6
+7               Renault F1 Team     Marcus Svansson   +23.356        +6.818   1:45.08       34        M    2     9
+8   Marlboro Team Lotus-Renault         Sander Metz   +25.762        +2.406  1:45.266       33        M    2     8
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +26.522         +0.76  1:44.748       35        M    2    13
+10    Rothmans Williams-Renault       Antonio Iocco   +26.534        +0.012   1:44.56       33        M    2     7
+11    Winfield Benetton-Renault      Daniil Kovalev   +27.622        +1.088  1:44.415       34        M    2    10
+12     Mild Seven Toyota Racing    Guillermo Acosta   +27.824        +0.202  1:45.249       34        M    2    11
+13                Honda F1 Team     Katsuno Yoshiro   +28.683        +0.859  1:45.137       20        S    2    14
+14              Renault F1 Team       Tony Calandre   +29.895        +1.212  1:45.672       20        S    2    12
+15      Minardi-Ferrari F1 Team        Raul Sanchez   +40.111       +10.216  1:47.141       23        S    2    17
+16     Mild Seven Toyota Racing       Quentin Iazzo   +41.418        +1.307  1:46.660       21        S    2    15
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +48.882        +7.464  1:47.962       34        M    2    19
+18   ING Jaguar Racing Mercedes        James Eadorn   +50.232         +1.35  1:48.028       35        M    2    21
+19      Minardi-Ferrari F1 Team  Antonio Bacarrello   +50.586        +0.354  1:48.247       20        S    2    20
+20     Red Bull Sauber-Mercedes       Ernie Cédryck   +61.533       +10.947  1:48.382       34        M    2    18
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Devon Raleigh has recorded 1:42.994 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 36/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:20:49.051  1:43.294       30        S    1     2
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +0.308        +0.308  1:43.375       29        S    1     4
+3         West McLaren-Mercedes       Devon Raleigh    +21.56       +21.252  1:42.994       29        S    2     1
+4               Renault F1 Team     Marcus Svansson   +24.077        +2.517   1:45.08       34        M    2     9
+5     Scuderia Ferrari Vodafone   Charles Hérnandez   +24.266        +0.189  1:43.350       31        S    2     3
+6   Marlboro Team Lotus-Renault         Sander Metz   +24.655        +0.389  1:45.266       33        M    2     8
+7   Marlboro Team Lotus-Renault   Charlie Southgate    +26.69        +2.035  1:44.748       35        M    2    13
+8     Winfield Benetton-Renault      Daniil Kovalev   +27.398        +0.708  1:44.415       34        M    2    10
+9      Mild Seven Toyota Racing    Guillermo Acosta   +27.572        +0.174  1:45.249       34        M    2    11
+10    Rothmans Williams-Renault       Antonio Iocco    +28.33        +0.758   1:44.56       33        M    2     7
+11                Honda F1 Team     Katsuno Yoshiro   +30.187        +1.857  1:45.137       20        S    2    14
+12              Renault F1 Team       Tony Calandre   +30.331        +0.144  1:45.672       20        S    2    12
+13    Rothmans Williams-Renault      Ken Fassbender   +33.715        +3.384  1:44.873       29        S    2     5
+14                Honda F1 Team       David Redolfe    +39.55        +5.835  1:44.985       20        S    2     6
+15     Mild Seven Toyota Racing       Quentin Iazzo   +40.594        +1.044  1:45.876       36        H    2    15
+16      Minardi-Ferrari F1 Team        Raul Sanchez    +41.43        +0.836  1:47.141       23        S    2    17
+17     Red Bull Sauber-Mercedes      Jamie Lorianne    +50.39         +8.96  1:47.962       34        M    2    19
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello   +52.086        +1.696  1:48.199       36        M    2    20
+19   ING Jaguar Racing Mercedes        James Eadorn   +52.128        +0.042  1:48.028       35        M    2    21
+20     Red Bull Sauber-Mercedes       Ernie Cédryck   +63.365       +11.237  1:48.382       34        M    2    18
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Devon Raleigh has recorded 1:42.994 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 37/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:22:35.248  1:43.375       29        S    1     4
+2         West McLaren-Mercedes        Nill Rosberg   +20.689       +20.689  1:43.294       30        S    2     2
+3         West McLaren-Mercedes       Devon Raleigh   +22.286        +1.597  1:42.994       29        S    2     1
+4               Renault F1 Team     Marcus Svansson   +23.049        +0.763   1:45.08       34        M    2     9
+5     Scuderia Ferrari Vodafone   Charles Hérnandez    +23.99        +0.941  1:43.350       31        S    2     3
+6   Marlboro Team Lotus-Renault         Sander Metz   +24.958        +0.968  1:45.266       33        M    2     8
+7     Winfield Benetton-Renault      Daniil Kovalev   +25.436        +0.478  1:44.235       37        M    2    10
+8   Marlboro Team Lotus-Renault   Charlie Southgate   +26.156         +0.72  1:44.748       35        M    2    13
+9     Rothmans Williams-Renault       Antonio Iocco   +27.502        +1.346   1:44.56       33        M    2     7
+10              Renault F1 Team       Tony Calandre   +28.286        +0.784  1:44.152       37        M    2    12
+11     Mild Seven Toyota Racing    Guillermo Acosta   +28.328        +0.042  1:45.249       34        M    2    11
+12                Honda F1 Team     Katsuno Yoshiro   +30.183        +1.855  1:45.137       20        S    2    14
+13    Rothmans Williams-Renault      Ken Fassbender   +34.752        +4.569  1:44.873       29        S    2     5
+14     Mild Seven Toyota Racing       Quentin Iazzo    +40.45        +5.698  1:45.876       36        H    2    15
+15                Honda F1 Team       David Redolfe    +41.01         +0.56  1:44.985       20        S    2     6
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +43.271        +2.261  1:47.141       23        S    2    17
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +52.042        +8.771  1:47.849       37        M    2    19
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello   +54.203        +2.161  1:48.199       36        M    2    20
+19   ING Jaguar Racing Mercedes        James Eadorn   +54.241        +0.038  1:48.028       35        M    2    21
+20     Red Bull Sauber-Mercedes       Ernie Cédryck   +65.457       +11.216  1:48.289       37        M    2    18
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Devon Raleigh has recorded 1:42.994 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 38/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:24:42.811  1:43.294       30        S    2     2
+2               Renault F1 Team     Marcus Svansson    +0.411        +0.411  1:44.925       38        M    2     9
+3         West McLaren-Mercedes       Devon Raleigh    +0.831         +0.42  1:42.994       29        S    2     1
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +1.174        +0.343  1:43.375       29        S    2     4
+5     Winfield Benetton-Renault      Daniil Kovalev    +2.116        +0.942  1:44.235       37        M    2    10
+6   Marlboro Team Lotus-Renault         Sander Metz    +2.156         +0.04  1:44.760       38        M    2     8
+7     Scuderia Ferrari Vodafone   Charles Hérnandez    +3.337        +1.181  1:43.350       31        S    2     3
+8     Rothmans Williams-Renault       Antonio Iocco    +4.037          +0.7  1:44.097       38        M    2     7
+9   Marlboro Team Lotus-Renault   Charlie Southgate     +4.21        +0.173  1:44.748       35        M    2    13
+10     Mild Seven Toyota Racing    Guillermo Acosta    +5.957        +1.747  1:45.192       38        M    2    11
+11              Renault F1 Team       Tony Calandre    +6.562        +0.605  1:44.152       37        M    2    12
+12                Honda F1 Team     Katsuno Yoshiro    +8.165        +1.603  1:45.137       20        S    2    14
+13    Rothmans Williams-Renault      Ken Fassbender   +13.755         +5.59  1:44.873       29        S    2     5
+14      Minardi-Ferrari F1 Team        Raul Sanchez   +23.695         +9.94  1:47.141       23        S    2    17
+15                Honda F1 Team       David Redolfe   +28.008        +4.313  1:44.985       20        S    2     6
+16     Red Bull Sauber-Mercedes      Jamie Lorianne   +32.472        +4.464  1:47.849       37        M    2    19
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +35.336        +2.864  1:48.199       36        M    2    20
+18   ING Jaguar Racing Mercedes        James Eadorn   +36.047        +0.711  1:48.028       35        M    2    21
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +46.706       +10.659  1:48.289       37        M    2    18
+20     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  1:45.876       36        H    2    15
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Devon Raleigh has recorded 1:42.994 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 39/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:30:44.037  1:43.294       30        S    2     2
+2               Renault F1 Team     Marcus Svansson    +0.411        +0.411  1:44.925       38        M    2     9
+3         West McLaren-Mercedes       Devon Raleigh    +0.831         +0.42  1:42.994       29        S    2     1
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +1.174        +0.343  1:43.375       29        S    2     4
+5     Winfield Benetton-Renault      Daniil Kovalev    +2.116        +0.942  1:44.235       37        M    2    10
+6   Marlboro Team Lotus-Renault         Sander Metz    +2.156         +0.04  1:44.760       38        M    2     8
+7     Scuderia Ferrari Vodafone   Charles Hérnandez    +3.337        +1.181  1:43.350       31        S    2     3
+8     Rothmans Williams-Renault       Antonio Iocco    +4.037          +0.7  1:44.097       38        M    2     7
+9   Marlboro Team Lotus-Renault   Charlie Southgate     +4.21        +0.173  1:44.748       35        M    2    13
+10     Mild Seven Toyota Racing    Guillermo Acosta    +5.957        +1.747  1:45.192       38        M    2    11
+11              Renault F1 Team       Tony Calandre    +6.562        +0.605  1:44.152       37        M    2    12
+12                Honda F1 Team     Katsuno Yoshiro    +8.165        +1.603  1:45.137       20        S    2    14
+13    Rothmans Williams-Renault      Ken Fassbender   +13.755         +5.59  1:44.873       29        S    2     5
+14      Minardi-Ferrari F1 Team        Raul Sanchez   +23.695         +9.94  1:47.141       23        S    2    17
+15                Honda F1 Team       David Redolfe   +28.008        +4.313  1:44.985       20        S    2     6
+16     Red Bull Sauber-Mercedes      Jamie Lorianne   +32.472        +4.464  1:47.849       37        M    2    19
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +35.336        +2.864  1:48.199       36        M    2    20
+18   ING Jaguar Racing Mercedes        James Eadorn   +36.047        +0.711  1:48.028       35        M    2    21
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +68.926       +32.879  1:48.289       37        M    3    18
+20     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  1:45.876       36        H    2    15
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Devon Raleigh has recorded 1:42.994 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 40/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:36:45.263  1:43.294       30        S    2     2
+2               Renault F1 Team     Marcus Svansson    +0.411        +0.411  1:44.925       38        M    2     9
+3         West McLaren-Mercedes       Devon Raleigh    +0.831         +0.42  1:42.994       29        S    2     1
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +1.174        +0.343  1:43.375       29        S    2     4
+5     Winfield Benetton-Renault      Daniil Kovalev    +2.116        +0.942  1:44.235       37        M    2    10
+6   Marlboro Team Lotus-Renault         Sander Metz    +2.156         +0.04  1:44.760       38        M    2     8
+7     Scuderia Ferrari Vodafone   Charles Hérnandez    +3.337        +1.181  1:43.350       31        S    2     3
+8     Rothmans Williams-Renault       Antonio Iocco    +4.037          +0.7  1:44.097       38        M    2     7
+9   Marlboro Team Lotus-Renault   Charlie Southgate     +4.21        +0.173  1:44.748       35        M    2    13
+10     Mild Seven Toyota Racing    Guillermo Acosta    +5.957        +1.747  1:45.192       38        M    2    11
+11              Renault F1 Team       Tony Calandre    +6.562        +0.605  1:44.152       37        M    2    12
+12                Honda F1 Team     Katsuno Yoshiro    +8.165        +1.603  1:45.137       20        S    2    14
+13    Rothmans Williams-Renault      Ken Fassbender   +13.755         +5.59  1:44.873       29        S    2     5
+14      Minardi-Ferrari F1 Team        Raul Sanchez   +23.695         +9.94  1:47.141       23        S    2    17
+15                Honda F1 Team       David Redolfe   +28.008        +4.313  1:44.985       20        S    2     6
+16     Red Bull Sauber-Mercedes      Jamie Lorianne   +32.472        +4.464  1:47.849       37        M    2    19
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +35.336        +2.864  1:48.199       36        M    2    20
+18   ING Jaguar Racing Mercedes        James Eadorn   +36.047        +0.711  1:48.028       35        M    2    21
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +68.926       +32.879  1:48.289       37        M    3    18
+20     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  1:45.876       36        H    2    15
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Devon Raleigh has recorded 1:42.994 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 41/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:42:46.489  1:43.294       30        S    2     2
+2               Renault F1 Team     Marcus Svansson     +0.35         +0.35  1:44.925       38        M    2     9
+3         West McLaren-Mercedes       Devon Raleigh      +0.7         +0.35  1:42.994       29        S    2     1
+4     Scuderia Ferrari Vodafone          Abel Wolfe     +1.05         +0.35  1:43.375       29        S    2     4
+5     Winfield Benetton-Renault      Daniil Kovalev      +1.4         +0.35  1:44.235       37        M    2    10
+6   Marlboro Team Lotus-Renault         Sander Metz     +1.75         +0.35  1:44.760       38        M    2     8
+7     Scuderia Ferrari Vodafone   Charles Hérnandez      +2.1         +0.35  1:43.350       31        S    2     3
+8     Rothmans Williams-Renault       Antonio Iocco     +2.45         +0.35  1:44.097       38        M    2     7
+9   Marlboro Team Lotus-Renault   Charlie Southgate      +2.8         +0.35  1:44.748       35        M    2    13
+10     Mild Seven Toyota Racing    Guillermo Acosta     +3.15         +0.35  1:45.192       38        M    2    11
+11              Renault F1 Team       Tony Calandre      +3.5         +0.35  1:44.152       37        M    2    12
+12                Honda F1 Team     Katsuno Yoshiro     +3.85         +0.35  1:45.137       20        S    2    14
+13    Rothmans Williams-Renault      Ken Fassbender      +4.2         +0.35  1:44.873       29        S    2     5
+14      Minardi-Ferrari F1 Team        Raul Sanchez     +4.55         +0.35  1:47.141       23        S    2    17
+15                Honda F1 Team       David Redolfe      +4.9         +0.35  1:44.985       20        S    2     6
+16     Red Bull Sauber-Mercedes      Jamie Lorianne     +5.25         +0.35  1:47.849       37        M    2    19
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello      +5.6         +0.35  1:48.199       36        M    2    20
+18   ING Jaguar Racing Mercedes        James Eadorn     +5.95         +0.35  1:48.028       35        M    2    21
+19     Red Bull Sauber-Mercedes       Ernie Cédryck      +6.3         +0.35  1:48.289       37        M    3    18
+20     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  1:45.876       36        H    2    15
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Devon Raleigh has recorded 1:42.994 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 42/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:48:47.715  1:43.294       30        S    2     2
+2               Renault F1 Team     Marcus Svansson     +0.35         +0.35  1:44.925       38        M    2     9
+3         West McLaren-Mercedes       Devon Raleigh      +0.7         +0.35  1:42.994       29        S    2     1
+4     Scuderia Ferrari Vodafone          Abel Wolfe     +1.05         +0.35  1:43.375       29        S    2     4
+5     Winfield Benetton-Renault      Daniil Kovalev      +1.4         +0.35  1:44.235       37        M    2    10
+6   Marlboro Team Lotus-Renault         Sander Metz     +1.75         +0.35  1:44.760       38        M    2     8
+7     Scuderia Ferrari Vodafone   Charles Hérnandez      +2.1         +0.35  1:43.350       31        S    2     3
+8     Rothmans Williams-Renault       Antonio Iocco     +2.45         +0.35  1:44.097       38        M    2     7
+9   Marlboro Team Lotus-Renault   Charlie Southgate      +2.8         +0.35  1:44.748       35        M    2    13
+10     Mild Seven Toyota Racing    Guillermo Acosta     +3.15         +0.35  1:45.192       38        M    2    11
+11              Renault F1 Team       Tony Calandre      +3.5         +0.35  1:44.152       37        M    2    12
+12                Honda F1 Team     Katsuno Yoshiro     +3.85         +0.35  1:45.137       20        S    2    14
+13    Rothmans Williams-Renault      Ken Fassbender      +4.2         +0.35  1:44.873       29        S    2     5
+14      Minardi-Ferrari F1 Team        Raul Sanchez     +4.55         +0.35  1:47.141       23        S    2    17
+15                Honda F1 Team       David Redolfe      +4.9         +0.35  1:44.985       20        S    2     6
+16     Red Bull Sauber-Mercedes      Jamie Lorianne     +5.25         +0.35  1:47.849       37        M    2    19
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello      +5.6         +0.35  1:48.199       36        M    2    20
+18   ING Jaguar Racing Mercedes        James Eadorn     +5.95         +0.35  1:48.028       35        M    2    21
+19     Red Bull Sauber-Mercedes       Ernie Cédryck      +6.3         +0.35  1:48.289       37        M    3    18
+20     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  1:45.876       36        H    2    15
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Devon Raleigh has recorded 1:42.994 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 43/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:50:33.068  1:43.294       30        S    2     2
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +0.008        +0.008  1:43.375       29        S    2     4
+3         West McLaren-Mercedes       Devon Raleigh      +0.6        +0.592  1:42.994       29        S    2     1
+4               Renault F1 Team     Marcus Svansson    +0.811        +0.211  1:44.925       38        M    2     9
+5   Marlboro Team Lotus-Renault         Sander Metz    +0.971         +0.16  1:44.574       43        M    2     8
+6     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.041         +0.07  1:43.350       31        S    2     3
+7     Rothmans Williams-Renault       Antonio Iocco    +1.157        +0.116   1:44.06       43        M    2     7
+8     Winfield Benetton-Renault      Daniil Kovalev    +1.232        +0.075  1:44.235       37        M    2    10
+9      Mild Seven Toyota Racing    Guillermo Acosta    +2.706        +1.474  1:44.908       43        M    2    11
+10              Renault F1 Team       Tony Calandre    +3.041        +0.335  1:44.152       37        M    2    12
+11  Marlboro Team Lotus-Renault   Charlie Southgate     +3.43        +0.389  1:44.748       35        M    2    13
+12    Rothmans Williams-Renault      Ken Fassbender    +3.735        +0.305  1:44.873       29        S    2     5
+13                Honda F1 Team     Katsuno Yoshiro    +4.841        +1.106  1:45.137       20        S    2    14
+14                Honda F1 Team       David Redolfe    +5.326        +0.485  1:44.985       20        S    2     6
+15     Red Bull Sauber-Mercedes      Jamie Lorianne    +6.718        +1.392  1:46.821       43        M    2    19
+16      Minardi-Ferrari F1 Team        Raul Sanchez    +7.445        +0.727  1:47.141       23        S    2    17
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello     +9.45        +2.005  1:48.199       36        M    2    20
+18   ING Jaguar Racing Mercedes        James Eadorn    +9.639        +0.189  1:48.028       35        M    2    21
+19     Red Bull Sauber-Mercedes       Ernie Cédryck     +9.72        +0.081  1:48.289       37        M    3    18
+20     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  1:45.876       36        H    2    15
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Devon Raleigh has recorded 1:42.994 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 44/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:52:15.716  1:42.647       44        M    2     2
+2         West McLaren-Mercedes       Devon Raleigh    +2.031        +2.031  1:42.994       29        S    2     1
+3   Marlboro Team Lotus-Renault         Sander Metz    +2.593        +0.562  1:44.269       44        M    2     8
+4     Rothmans Williams-Renault       Antonio Iocco    +2.959        +0.366   1:44.06       43        M    2     7
+5               Renault F1 Team     Marcus Svansson    +3.172        +0.213  1:44.925       38        M    2     9
+6     Scuderia Ferrari Vodafone          Abel Wolfe    +3.294        +0.122  1:43.375       29        S    2     4
+7               Renault F1 Team       Tony Calandre    +4.326        +1.032  1:43.932       44        M    2    12
+8     Winfield Benetton-Renault      Daniil Kovalev    +4.492        +0.166  1:44.235       37        M    2    10
+9     Scuderia Ferrari Vodafone   Charles Hérnandez    +4.887        +0.395  1:43.350       31        S    2     3
+10  Marlboro Team Lotus-Renault   Charlie Southgate     +5.33        +0.443  1:44.548       44        M    2    13
+11     Mild Seven Toyota Racing    Guillermo Acosta    +5.653        +0.323  1:44.908       43        M    2    11
+12                Honda F1 Team     Katsuno Yoshiro    +6.005        +0.352  1:43.812       44        M    2    14
+13                Honda F1 Team       David Redolfe    +7.045         +1.04  1:44.367       44        M    2     6
+14    Rothmans Williams-Renault      Ken Fassbender    +8.092        +1.047  1:44.873       29        S    2     5
+15      Minardi-Ferrari F1 Team        Raul Sanchez   +11.411        +3.319  1:46.613       44        M    2    17
+16     Red Bull Sauber-Mercedes      Jamie Lorianne   +11.874        +0.463  1:46.821       43        M    2    19
+17   ING Jaguar Racing Mercedes        James Eadorn   +14.516        +2.642  1:47.525       44        M    2    21
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello     +14.6        +0.084  1:47.797       44        M    2    20
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +17.531        +2.931  1:48.289       37        M    3    18
+20     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  1:45.876       36        H    2    15
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Nill Rosberg has recorded 1:42.647 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 45/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:53:57.820  1:42.104       45        M    2     2
+2         West McLaren-Mercedes       Devon Raleigh    +1.914        +1.914  1:41.987       45        M    2     1
+3   Marlboro Team Lotus-Renault         Sander Metz    +4.447        +2.533  1:43.958       45        M    2     8
+4     Rothmans Williams-Renault       Antonio Iocco    +4.625        +0.178  1:43.770       45        M    2     7
+5               Renault F1 Team     Marcus Svansson     +5.13        +0.505  1:44.062       45        M    2     9
+6     Winfield Benetton-Renault      Daniil Kovalev    +5.965        +0.835  1:43.577       45        M    2    10
+7               Renault F1 Team       Tony Calandre     +6.41        +0.445  1:43.932       44        M    2    12
+8     Rothmans Williams-Renault      Ken Fassbender    +8.314        +1.904  1:42.326       45        M    2     5
+9      Mild Seven Toyota Racing    Guillermo Acosta    +8.351        +0.037  1:44.802       45        M    2    11
+10  Marlboro Team Lotus-Renault   Charlie Southgate    +8.681         +0.33  1:44.548       44        M    2    13
+11    Scuderia Ferrari Vodafone          Abel Wolfe    +8.828        +0.147  1:43.375       29        S    2     4
+12                Honda F1 Team       David Redolfe    +9.737        +0.909  1:44.367       44        M    2     6
+13                Honda F1 Team     Katsuno Yoshiro    +9.882        +0.145  1:43.812       44        M    2    14
+14    Scuderia Ferrari Vodafone   Charles Hérnandez    +9.928        +0.046  1:43.350       31        S    2     3
+15      Minardi-Ferrari F1 Team        Raul Sanchez   +16.604        +6.676  1:46.613       44        M    2    17
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello   +20.076        +3.472  1:47.579       45        M    2    20
+17     Red Bull Sauber-Mercedes       Ernie Cédryck   +20.969        +0.893  1:45.542       45        S    3    18
+18   ING Jaguar Racing Mercedes        James Eadorn   +22.137        +1.168  1:47.525       44        M    2    21
+19     Red Bull Sauber-Mercedes      Jamie Lorianne       DNF           DNF  1:46.821       43        M    2    19
+20     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  1:45.876       36        H    2    15
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Devon Raleigh has recorded 1:41.987 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 46/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:55:39.593  1:41.773       46        M    2     2
+2         West McLaren-Mercedes       Devon Raleigh    +2.061        +2.061   1:41.92       46        M    2     1
+3     Rothmans Williams-Renault       Antonio Iocco    +6.859        +4.798  1:43.770       45        M    2     7
+4               Renault F1 Team     Marcus Svansson    +7.284        +0.425  1:43.926       46        M    2     9
+5   Marlboro Team Lotus-Renault         Sander Metz    +7.736        +0.452  1:43.958       45        M    2     8
+6     Winfield Benetton-Renault      Daniil Kovalev    +9.012        +1.276  1:43.577       45        M    2    10
+7     Rothmans Williams-Renault      Ken Fassbender   +10.445        +1.433  1:42.326       45        M    2     5
+8               Renault F1 Team       Tony Calandre   +11.051        +0.606  1:43.932       44        M    2    12
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +11.704        +0.653  1:44.548       44        M    2    13
+10     Mild Seven Toyota Racing    Guillermo Acosta   +11.963        +0.259  1:44.802       45        M    2    11
+11                Honda F1 Team       David Redolfe   +12.199        +0.236  1:44.235       46        M    2     6
+12                Honda F1 Team     Katsuno Yoshiro   +12.199        +0.236  1:43.812       44        M    2    14
+13    Scuderia Ferrari Vodafone          Abel Wolfe   +12.479         +0.28  1:43.375       29        S    2     4
+14    Scuderia Ferrari Vodafone   Charles Hérnandez   +13.575        +1.096  1:43.350       31        S    2     3
+15      Minardi-Ferrari F1 Team        Raul Sanchez   +22.099        +8.524  1:46.613       44        M    2    17
+16     Red Bull Sauber-Mercedes       Ernie Cédryck   +25.566        +3.467  1:45.542       45        S    3    18
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +26.403        +0.837  1:47.579       45        M    2    20
+18   ING Jaguar Racing Mercedes        James Eadorn   +28.149        +1.746  1:47.525       44        M    2    21
+19     Red Bull Sauber-Mercedes      Jamie Lorianne       DNF           DNF  1:46.821       43        M    2    19
+20     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  1:45.876       36        H    2    15
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Nill Rosberg has recorded 1:41.773 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 47/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:57:21.535  1:41.773       46        M    2     2
+2         West McLaren-Mercedes       Devon Raleigh    +2.139        +2.139   1:41.92       46        M    2     1
+3   Marlboro Team Lotus-Renault         Sander Metz   +10.517        +8.378  1:43.958       45        M    2     8
+4               Renault F1 Team     Marcus Svansson   +10.738        +0.221  1:43.926       46        M    2     9
+5     Rothmans Williams-Renault       Antonio Iocco   +10.902        +0.164  1:43.770       45        M    2     7
+6     Winfield Benetton-Renault      Daniil Kovalev    +11.08        +0.178  1:43.577       45        M    2    10
+7     Rothmans Williams-Renault      Ken Fassbender   +11.583        +0.503  1:42.326       45        M    2     5
+8               Renault F1 Team       Tony Calandre   +13.177        +1.594  1:43.932       44        M    2    12
+9                 Honda F1 Team       David Redolfe   +13.406        +0.229  1:43.149       47        M    2     6
+10  Marlboro Team Lotus-Renault   Charlie Southgate   +13.967        +0.561  1:44.205       47        M    2    13
+11     Mild Seven Toyota Racing    Guillermo Acosta    +14.97        +1.003  1:44.802       45        M    2    11
+12                Honda F1 Team     Katsuno Yoshiro   +15.026        +0.056  1:43.812       44        M    2    14
+13    Scuderia Ferrari Vodafone          Abel Wolfe   +16.484        +1.458  1:43.375       29        S    2     4
+14    Scuderia Ferrari Vodafone   Charles Hérnandez   +18.615        +2.131  1:43.350       31        S    2     3
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +28.02        +9.405  1:44.396       47        S    3    18
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +28.411        +0.391  1:46.613       44        M    2    17
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +32.291         +3.88  1:47.579       45        M    2    20
+18   ING Jaguar Racing Mercedes        James Eadorn   +34.111         +1.82  1:47.525       44        M    2    21
+19     Red Bull Sauber-Mercedes      Jamie Lorianne       DNF           DNF  1:46.821       43        M    2    19
+20     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  1:45.876       36        H    2    15
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Nill Rosberg has recorded 1:41.773 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 48/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:59:03.086  1:41.551       48        M    2     2
+2         West McLaren-Mercedes       Devon Raleigh    +2.342        +2.342  1:41.754       48        M    2     1
+3               Renault F1 Team     Marcus Svansson   +13.009       +10.667  1:43.822       48        M    2     9
+4   Marlboro Team Lotus-Renault         Sander Metz    +13.09        +0.081  1:43.958       45        M    2     8
+5     Rothmans Williams-Renault       Antonio Iocco    +13.95         +0.86  1:43.770       45        M    2     7
+6     Winfield Benetton-Renault      Daniil Kovalev   +13.975        +0.025  1:43.577       45        M    2    10
+7               Renault F1 Team       Tony Calandre    +15.22        +1.245  1:43.593       48        M    2    12
+8                 Honda F1 Team       David Redolfe   +15.314        +0.094  1:43.149       47        M    2     6
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +16.502        +1.188  1:44.086       48        M    2    13
+10    Rothmans Williams-Renault      Ken Fassbender   +17.477        +0.975  1:42.326       45        M    2     5
+11    Scuderia Ferrari Vodafone   Charles Hérnandez   +18.242        +0.765  1:41.178       48        M    2     3
+12     Mild Seven Toyota Racing    Guillermo Acosta   +18.487        +0.245  1:44.802       45        M    2    11
+13    Scuderia Ferrari Vodafone          Abel Wolfe   +19.143        +0.656  1:43.375       29        S    2     4
+14                Honda F1 Team     Katsuno Yoshiro   +19.217        +0.074  1:43.812       44        M    2    14
+15     Red Bull Sauber-Mercedes       Ernie Cédryck   +32.189       +12.972  1:44.396       47        S    3    18
+16      Minardi-Ferrari F1 Team        Raul Sanchez     +34.2        +2.011  1:46.613       44        M    2    17
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +38.839        +4.639  1:47.579       45        M    2    20
+18   ING Jaguar Racing Mercedes        James Eadorn   +40.228        +1.389  1:47.525       44        M    2    21
+19     Red Bull Sauber-Mercedes      Jamie Lorianne       DNF           DNF  1:46.821       43        M    2    19
+20     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  1:45.876       36        H    2    15
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Charles Hérnandez has recorded 1:41.178 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 49/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  02:00:44.475  1:41.389       49        M    2     2
+2         West McLaren-Mercedes       Devon Raleigh    +2.454        +2.454  1:41.501       49        M    2     1
+3     Rothmans Williams-Renault       Antonio Iocco    +16.94       +14.486  1:43.770       45        M    2     7
+4                 Honda F1 Team       David Redolfe   +16.986        +0.046  1:43.060       49        M    2     6
+5               Renault F1 Team     Marcus Svansson   +17.331        +0.345  1:43.822       48        M    2     9
+6     Winfield Benetton-Renault      Daniil Kovalev   +17.827        +0.496  1:43.577       45        M    2    10
+7   Marlboro Team Lotus-Renault         Sander Metz   +18.196        +0.369  1:43.958       45        M    2     8
+8               Renault F1 Team       Tony Calandre   +18.382        +0.186  1:43.593       48        M    2    12
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +18.881        +0.499  1:43.768       49        M    2    13
+10    Rothmans Williams-Renault      Ken Fassbender   +19.326        +0.445  1:42.326       45        M    2     5
+11    Scuderia Ferrari Vodafone          Abel Wolfe   +20.787        +1.461  1:43.033       49        M    2     4
+12    Scuderia Ferrari Vodafone   Charles Hérnandez   +21.057         +0.27  1:41.178       48        M    2     3
+13     Mild Seven Toyota Racing    Guillermo Acosta   +21.523        +0.466  1:44.425       49        M    2    11
+14                Honda F1 Team     Katsuno Yoshiro   +23.073         +1.55  1:43.812       44        M    2    14
+15     Red Bull Sauber-Mercedes       Ernie Cédryck   +35.796       +12.723  1:44.396       47        S    3    18
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +40.219        +4.423  1:46.613       44        M    2    17
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +45.402        +5.183  1:47.579       45        M    2    20
+18   ING Jaguar Racing Mercedes        James Eadorn   +46.432         +1.03  1:47.525       44        M    2    21
+19     Red Bull Sauber-Mercedes      Jamie Lorianne       DNF           DNF  1:46.821       43        M    2    19
+20     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  1:45.876       36        H    2    15
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Charles Hérnandez has recorded 1:41.178 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 50/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  02:02:26.161  1:41.389       49        M    2     2
+2         West McLaren-Mercedes       Devon Raleigh    +2.064        +2.064  1:41.296       50        M    2     1
+3                 Honda F1 Team       David Redolfe   +19.489       +17.425  1:43.060       49        M    2     6
+4               Renault F1 Team     Marcus Svansson   +19.524        +0.035  1:43.822       48        M    2     9
+5               Renault F1 Team       Tony Calandre   +21.095        +1.571  1:43.593       48        M    2    12
+6   Marlboro Team Lotus-Renault         Sander Metz   +21.139        +0.044  1:43.958       45        M    2     8
+7   Marlboro Team Lotus-Renault   Charlie Southgate   +21.797        +0.658  1:43.768       49        M    2    13
+8     Rothmans Williams-Renault       Antonio Iocco   +21.799        +0.002  1:43.770       45        M    2     7
+9     Winfield Benetton-Renault      Daniil Kovalev   +21.989         +0.19  1:43.577       45        M    2    10
+10    Scuderia Ferrari Vodafone   Charles Hérnandez    +24.14        +2.151  1:41.178       48        M    2     3
+11    Scuderia Ferrari Vodafone          Abel Wolfe   +24.427        +0.287  1:43.033       49        M    2     4
+12     Mild Seven Toyota Racing    Guillermo Acosta   +24.705        +0.278  1:44.425       49        M    2    11
+13                Honda F1 Team     Katsuno Yoshiro    +25.74        +1.035  1:43.812       44        M    2    14
+14    Rothmans Williams-Renault      Ken Fassbender    +25.91         +0.17  1:42.326       45        M    2     5
+15     Red Bull Sauber-Mercedes       Ernie Cédryck   +39.556       +13.646  1:44.396       47        S    3    18
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +45.327        +5.771  1:46.613       44        M    2    17
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +51.533        +6.206  1:47.579       45        M    2    20
+18   ING Jaguar Racing Mercedes        James Eadorn   +52.604        +1.071  1:47.525       44        M    2    21
+19     Red Bull Sauber-Mercedes      Jamie Lorianne       DNF           DNF  1:46.821       43        M    2    19
+20     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  1:45.876       36        H    2    15
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Charles Hérnandez has recorded 1:41.178 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 51/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  02:04:07.476  1:41.315       51        M    2     2
+2         West McLaren-Mercedes       Devon Raleigh    +1.776        +1.776  1:41.027       51        M    2     1
+3                 Honda F1 Team       David Redolfe   +21.033       +19.257  1:42.858       51        M    2     6
+4               Renault F1 Team     Marcus Svansson    +22.76        +1.727  1:43.822       48        M    2     9
+5   Marlboro Team Lotus-Renault         Sander Metz   +23.695        +0.935  1:43.871       51        M    2     8
+6               Renault F1 Team       Tony Calandre   +23.773        +0.078  1:43.593       48        M    2    12
+7   Marlboro Team Lotus-Renault   Charlie Southgate   +24.265        +0.492  1:43.768       49        M    2    13
+8     Winfield Benetton-Renault      Daniil Kovalev   +25.129        +0.864  1:43.577       45        M    2    10
+9     Rothmans Williams-Renault       Antonio Iocco   +26.369         +1.24  1:43.770       45        M    2     7
+10    Scuderia Ferrari Vodafone   Charles Hérnandez   +26.652        +0.283  1:41.178       48        M    2     3
+11                Honda F1 Team     Katsuno Yoshiro   +27.579        +0.927  1:43.154       51        M    2    14
+12    Rothmans Williams-Renault      Ken Fassbender   +28.333        +0.754  1:42.326       45        M    2     5
+13     Mild Seven Toyota Racing    Guillermo Acosta    +29.48        +1.147  1:44.425       49        M    2    11
+14    Scuderia Ferrari Vodafone          Abel Wolfe   +30.123        +0.643  1:43.033       49        M    2     4
+15     Red Bull Sauber-Mercedes       Ernie Cédryck   +43.136       +13.013  1:44.396       47        S    3    18
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +51.281        +8.145  1:46.613       44        M    2    17
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +58.019        +6.738  1:47.579       45        M    2    20
+18   ING Jaguar Racing Mercedes        James Eadorn   +59.706        +1.687  1:47.525       44        M    2    21
+19     Red Bull Sauber-Mercedes      Jamie Lorianne       DNF           DNF  1:46.821       43        M    2    19
+20     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  1:45.876       36        H    2    15
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Devon Raleigh has recorded 1:41.027 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 52/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  02:05:48.405  1:40.929       52        M    2     2
+2         West McLaren-Mercedes       Devon Raleigh    +2.337        +2.337  1:41.027       51        M    2     1
+3                 Honda F1 Team       David Redolfe   +22.743       +20.406  1:42.638       52        M    2     6
+4               Renault F1 Team     Marcus Svansson   +26.034        +3.291  1:43.822       48        M    2     9
+5   Marlboro Team Lotus-Renault         Sander Metz   +27.349        +1.315  1:43.871       51        M    2     8
+6     Winfield Benetton-Renault      Daniil Kovalev   +27.476        +0.127  1:43.276       52        M    2    10
+7               Renault F1 Team       Tony Calandre   +27.635        +0.159  1:43.593       48        M    2    12
+8   Marlboro Team Lotus-Renault   Charlie Southgate   +27.781        +0.146  1:43.768       49        M    2    13
+9                 Honda F1 Team     Katsuno Yoshiro   +30.152        +2.371  1:43.154       51        M    2    14
+10    Scuderia Ferrari Vodafone   Charles Hérnandez    +30.47        +0.318  1:41.178       48        M    2     3
+11    Rothmans Williams-Renault       Antonio Iocco   +30.505        +0.035  1:43.770       45        M    2     7
+12    Rothmans Williams-Renault      Ken Fassbender   +31.473        +0.968  1:42.326       45        M    2     5
+13    Scuderia Ferrari Vodafone          Abel Wolfe   +32.341        +0.868  1:43.033       49        M    2     4
+14     Mild Seven Toyota Racing    Guillermo Acosta   +33.888        +1.547  1:44.425       49        M    2    11
+15     Red Bull Sauber-Mercedes       Ernie Cédryck   +47.379       +13.491  1:44.396       47        S    3    18
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +59.987       +12.608  1:46.613       44        M    2    17
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello    +64.51        +4.523   1:47.42       52        M    2    20
+18   ING Jaguar Racing Mercedes        James Eadorn   +69.094        +4.584  1:47.525       44        M    2    21
+19     Red Bull Sauber-Mercedes      Jamie Lorianne       DNF           DNF  1:46.821       43        M    2    19
+20     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  1:45.876       36        H    2    15
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Nill Rosberg has recorded 1:40.929 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Le Castellet Grand Prix — France | Lap 53/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  02:07:28.819  1:40.414       53        M    2     2
+2         West McLaren-Mercedes       Devon Raleigh    +2.406        +2.406  1:40.483       53        M    2     1
+3                 Honda F1 Team       David Redolfe   +24.625       +22.219  1:42.295       53        M    2     6
+4               Renault F1 Team     Marcus Svansson    +29.56        +4.935  1:43.822       48        M    2     9
+5   Marlboro Team Lotus-Renault         Sander Metz   +31.151        +1.591  1:43.871       51        M    2     8
+6               Renault F1 Team       Tony Calandre   +32.424        +1.273  1:43.593       48        M    2    12
+7   Marlboro Team Lotus-Renault   Charlie Southgate   +32.767        +0.343  1:43.768       49        M    2    13
+8     Winfield Benetton-Renault      Daniil Kovalev   +32.785        +0.018  1:43.276       52        M    2    10
+9     Scuderia Ferrari Vodafone          Abel Wolfe   +33.865         +1.08  1:41.937       53        M    2     4
+10    Rothmans Williams-Renault      Ken Fassbender   +34.321        +0.456  1:42.326       45        M    2     5
+11    Scuderia Ferrari Vodafone   Charles Hérnandez   +34.755        +0.434  1:41.178       48        M    2     3
+12                Honda F1 Team     Katsuno Yoshiro   +34.926        +0.171  1:43.154       51        M    2    14
+13    Rothmans Williams-Renault       Antonio Iocco   +35.539        +0.613  1:43.770       45        M    2     7
+14     Mild Seven Toyota Racing    Guillermo Acosta   +38.345        +2.806  1:44.425       49        M    2    11
+15     Red Bull Sauber-Mercedes       Ernie Cédryck   +51.771       +13.426  1:44.396       47        S    3    18
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +66.997       +15.226  1:46.613       44        M    2    17
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +71.494        +4.497  1:47.397       53        M    2    20
+18   ING Jaguar Racing Mercedes        James Eadorn   +76.438        +4.944  1:47.525       44        M    2    21
+19     Red Bull Sauber-Mercedes      Jamie Lorianne       DNF           DNF  1:46.821       43        M    2    19
+20     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  1:45.876       36        H    2    15
+21   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:49.302       21        S    1    22
+22    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  1:45.359       19        S    1    16
+
+Fastest Lap | Nill Rosberg has recorded 1:40.414 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *

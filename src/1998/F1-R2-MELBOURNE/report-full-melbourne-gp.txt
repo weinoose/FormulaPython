@@ -1,0 +1,1566 @@
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 1/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP  FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  00:01:35.810  NaN     NaN        S    0     3
+2         West McLaren-Mercedes        Nill Rosberg    +0.395        +0.395  NaN     NaN        S    0     1
+3         West McLaren-Mercedes       Devon Raleigh    +0.527        +0.132  NaN     NaN        S    0     4
+4     Rothmans Williams-Renault      Ken Fassbender    +1.224        +0.697  NaN     NaN        S    0     5
+5     Scuderia Ferrari Vodafone          Abel Wolfe    +1.278        +0.054  NaN     NaN        S    0     2
+6     Winfield Benetton-Renault      Daniil Kovalev    +2.211        +0.933  NaN     NaN        S    0     6
+7                 Honda F1 Team       David Redolfe    +4.128        +1.917  NaN     NaN        S    0     9
+8               Renault F1 Team     Marcus Svansson    +4.159        +0.031  NaN     NaN        S    0    10
+9   Marlboro Team Lotus-Renault         Sander Metz    +4.682        +0.523  NaN     NaN        S    0    12
+10              Renault F1 Team       Tony Calandre    +4.686        +0.004  NaN     NaN        S    0    11
+11  Marlboro Team Lotus-Renault   Charlie Southgate    +6.172        +1.486  NaN     NaN        S    0    13
+12     Mild Seven Toyota Racing    Guillermo Acosta    +6.802         +0.63  NaN     NaN        S    0    16
+13      Minardi-Ferrari F1 Team        Raul Sanchez    +7.563        +0.761  NaN     NaN        S    0    17
+14   ING Jaguar Racing Mercedes      George Aldeill    +8.509        +0.946  NaN     NaN        S    0    18
+15     Red Bull Sauber-Mercedes      Jamie Lorianne    +8.833        +0.324  NaN     NaN        S    0    20
+16   ING Jaguar Racing Mercedes        James Eadorn     +8.84        +0.007  NaN     NaN        S    0    19
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello    +9.057        +0.217  NaN     NaN        S    0    22
+18     Red Bull Sauber-Mercedes       Ernie Cédryck    +10.43        +1.373  NaN     NaN        S    0    21
+19    Rothmans Williams-Renault       Antonio Iocco   +41.535       +31.105  NaN     NaN        S    0     8
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  NaN     NaN        S    0    14
+
+Fastest Lap | Charles Hérnandez has recorded NaN on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 2/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP  FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  00:06:33.704  NaN     NaN        S    0     3
+2         West McLaren-Mercedes        Nill Rosberg    +0.395        +0.395  NaN     NaN        S    0     1
+3         West McLaren-Mercedes       Devon Raleigh    +0.527        +0.132  NaN     NaN        S    0     4
+4     Rothmans Williams-Renault      Ken Fassbender    +1.224        +0.697  NaN     NaN        S    0     5
+5     Scuderia Ferrari Vodafone          Abel Wolfe    +1.278        +0.054  NaN     NaN        S    0     2
+6     Winfield Benetton-Renault      Daniil Kovalev    +2.211        +0.933  NaN     NaN        S    0     6
+7                 Honda F1 Team       David Redolfe    +4.128        +1.917  NaN     NaN        S    0     9
+8               Renault F1 Team     Marcus Svansson    +4.159        +0.031  NaN     NaN        S    0    10
+9   Marlboro Team Lotus-Renault         Sander Metz    +4.682        +0.523  NaN     NaN        S    0    12
+10              Renault F1 Team       Tony Calandre    +4.686        +0.004  NaN     NaN        S    0    11
+11  Marlboro Team Lotus-Renault   Charlie Southgate    +6.172        +1.486  NaN     NaN        S    0    13
+12     Mild Seven Toyota Racing    Guillermo Acosta    +6.802         +0.63  NaN     NaN        S    0    16
+13      Minardi-Ferrari F1 Team        Raul Sanchez    +7.563        +0.761  NaN     NaN        S    0    17
+14   ING Jaguar Racing Mercedes      George Aldeill    +8.509        +0.946  NaN     NaN        S    0    18
+15     Red Bull Sauber-Mercedes      Jamie Lorianne    +8.833        +0.324  NaN     NaN        S    0    20
+16   ING Jaguar Racing Mercedes        James Eadorn     +8.84        +0.007  NaN     NaN        S    0    19
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello    +9.057        +0.217  NaN     NaN        S    0    22
+18     Red Bull Sauber-Mercedes       Ernie Cédryck    +10.43        +1.373  NaN     NaN        S    0    21
+19    Rothmans Williams-Renault       Antonio Iocco   +70.295       +59.865  NaN     NaN        S    1     8
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  NaN     NaN        S    0    14
+
+Fastest Lap | Charles Hérnandez has recorded NaN on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 3/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP  FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  00:11:31.598  NaN     NaN        S    0     3
+2         West McLaren-Mercedes        Nill Rosberg    +0.395        +0.395  NaN     NaN        S    0     1
+3         West McLaren-Mercedes       Devon Raleigh    +0.527        +0.132  NaN     NaN        S    0     4
+4     Rothmans Williams-Renault      Ken Fassbender    +1.224        +0.697  NaN     NaN        S    0     5
+5     Scuderia Ferrari Vodafone          Abel Wolfe    +1.278        +0.054  NaN     NaN        S    0     2
+6     Winfield Benetton-Renault      Daniil Kovalev    +2.211        +0.933  NaN     NaN        S    0     6
+7                 Honda F1 Team       David Redolfe    +4.128        +1.917  NaN     NaN        S    0     9
+8               Renault F1 Team     Marcus Svansson    +4.159        +0.031  NaN     NaN        S    0    10
+9   Marlboro Team Lotus-Renault         Sander Metz    +4.682        +0.523  NaN     NaN        S    0    12
+10              Renault F1 Team       Tony Calandre    +4.686        +0.004  NaN     NaN        S    0    11
+11  Marlboro Team Lotus-Renault   Charlie Southgate    +6.172        +1.486  NaN     NaN        S    0    13
+12     Mild Seven Toyota Racing    Guillermo Acosta    +6.802         +0.63  NaN     NaN        S    0    16
+13      Minardi-Ferrari F1 Team        Raul Sanchez    +7.563        +0.761  NaN     NaN        S    0    17
+14   ING Jaguar Racing Mercedes      George Aldeill    +8.509        +0.946  NaN     NaN        S    0    18
+15     Red Bull Sauber-Mercedes      Jamie Lorianne    +8.833        +0.324  NaN     NaN        S    0    20
+16   ING Jaguar Racing Mercedes        James Eadorn     +8.84        +0.007  NaN     NaN        S    0    19
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello    +9.057        +0.217  NaN     NaN        S    0    22
+18     Red Bull Sauber-Mercedes       Ernie Cédryck    +10.43        +1.373  NaN     NaN        S    0    21
+19    Rothmans Williams-Renault       Antonio Iocco   +70.295       +59.865  NaN     NaN        S    1     8
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  NaN     NaN        S    0    14
+
+Fastest Lap | Charles Hérnandez has recorded NaN on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 4/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP  FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  00:16:29.492  NaN     NaN        S    0     3
+2         West McLaren-Mercedes        Nill Rosberg     +0.35         +0.35  NaN     NaN        S    0     1
+3         West McLaren-Mercedes       Devon Raleigh      +0.7         +0.35  NaN     NaN        S    0     4
+4     Rothmans Williams-Renault      Ken Fassbender     +1.05         +0.35  NaN     NaN        S    0     5
+5     Scuderia Ferrari Vodafone          Abel Wolfe      +1.4         +0.35  NaN     NaN        S    0     2
+6     Winfield Benetton-Renault      Daniil Kovalev     +1.75         +0.35  NaN     NaN        S    0     6
+7                 Honda F1 Team       David Redolfe      +2.1         +0.35  NaN     NaN        S    0     9
+8               Renault F1 Team     Marcus Svansson     +2.45         +0.35  NaN     NaN        S    0    10
+9   Marlboro Team Lotus-Renault         Sander Metz      +2.8         +0.35  NaN     NaN        S    0    12
+10              Renault F1 Team       Tony Calandre     +3.15         +0.35  NaN     NaN        S    0    11
+11  Marlboro Team Lotus-Renault   Charlie Southgate      +3.5         +0.35  NaN     NaN        S    0    13
+12     Mild Seven Toyota Racing    Guillermo Acosta     +3.85         +0.35  NaN     NaN        S    0    16
+13      Minardi-Ferrari F1 Team        Raul Sanchez      +4.2         +0.35  NaN     NaN        S    0    17
+14   ING Jaguar Racing Mercedes      George Aldeill     +4.55         +0.35  NaN     NaN        S    0    18
+15     Red Bull Sauber-Mercedes      Jamie Lorianne      +4.9         +0.35  NaN     NaN        S    0    20
+16   ING Jaguar Racing Mercedes        James Eadorn     +5.25         +0.35  NaN     NaN        S    0    19
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello      +5.6         +0.35  NaN     NaN        S    0    22
+18     Red Bull Sauber-Mercedes       Ernie Cédryck     +5.95         +0.35  NaN     NaN        S    0    21
+19    Rothmans Williams-Renault       Antonio Iocco      +6.3         +0.35  NaN     NaN        S    1     8
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  NaN     NaN        S    0    14
+
+Fastest Lap | Charles Hérnandez has recorded NaN on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 5/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP  FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  00:21:27.386  NaN     NaN        S    0     3
+2         West McLaren-Mercedes        Nill Rosberg     +0.35         +0.35  NaN     NaN        S    0     1
+3         West McLaren-Mercedes       Devon Raleigh      +0.7         +0.35  NaN     NaN        S    0     4
+4     Rothmans Williams-Renault      Ken Fassbender     +1.05         +0.35  NaN     NaN        S    0     5
+5     Scuderia Ferrari Vodafone          Abel Wolfe      +1.4         +0.35  NaN     NaN        S    0     2
+6     Winfield Benetton-Renault      Daniil Kovalev     +1.75         +0.35  NaN     NaN        S    0     6
+7                 Honda F1 Team       David Redolfe      +2.1         +0.35  NaN     NaN        S    0     9
+8               Renault F1 Team     Marcus Svansson     +2.45         +0.35  NaN     NaN        S    0    10
+9   Marlboro Team Lotus-Renault         Sander Metz      +2.8         +0.35  NaN     NaN        S    0    12
+10              Renault F1 Team       Tony Calandre     +3.15         +0.35  NaN     NaN        S    0    11
+11  Marlboro Team Lotus-Renault   Charlie Southgate      +3.5         +0.35  NaN     NaN        S    0    13
+12     Mild Seven Toyota Racing    Guillermo Acosta     +3.85         +0.35  NaN     NaN        S    0    16
+13      Minardi-Ferrari F1 Team        Raul Sanchez      +4.2         +0.35  NaN     NaN        S    0    17
+14   ING Jaguar Racing Mercedes      George Aldeill     +4.55         +0.35  NaN     NaN        S    0    18
+15     Red Bull Sauber-Mercedes      Jamie Lorianne      +4.9         +0.35  NaN     NaN        S    0    20
+16   ING Jaguar Racing Mercedes        James Eadorn     +5.25         +0.35  NaN     NaN        S    0    19
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello      +5.6         +0.35  NaN     NaN        S    0    22
+18     Red Bull Sauber-Mercedes       Ernie Cédryck     +5.95         +0.35  NaN     NaN        S    0    21
+19    Rothmans Williams-Renault       Antonio Iocco      +6.3         +0.35  NaN     NaN        S    1     8
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF  NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF  NaN     NaN        S    0    14
+
+Fastest Lap | Charles Hérnandez has recorded NaN on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 6/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:22:59.534  1:31.798       6        S    0     1
+2         West McLaren-Mercedes       Devon Raleigh    +0.186        +0.186  1:31.634       6        S    0     4
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.398        +0.212  1:32.546       6        S    0     3
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +1.375        +0.977  1:32.122       6        S    0     2
+5     Rothmans Williams-Renault      Ken Fassbender    +2.246        +0.871  1:33.344       6        S    0     5
+6                 Honda F1 Team       David Redolfe    +3.178        +0.932  1:33.226       6        S    0     9
+7     Winfield Benetton-Renault      Daniil Kovalev    +3.348         +0.17  1:33.745       6        S    0     6
+8               Renault F1 Team     Marcus Svansson    +3.548          +0.2  1:33.245       6        S    0    10
+9   Marlboro Team Lotus-Renault         Sander Metz    +4.493        +0.945  1:33.841       6        S    0    12
+10              Renault F1 Team       Tony Calandre    +6.325        +1.832  1:35.322       6        S    0    11
+11  Marlboro Team Lotus-Renault   Charlie Southgate    +6.855         +0.53  1:35.503       6        S    0    13
+12     Mild Seven Toyota Racing    Guillermo Acosta    +6.992        +0.137  1:35.290       6        S    0    16
+13      Minardi-Ferrari F1 Team        Raul Sanchez    +7.394        +0.402  1:35.342       6        S    0    17
+14     Red Bull Sauber-Mercedes      Jamie Lorianne    +8.298        +0.904  1:35.546       6        S    0    20
+15   ING Jaguar Racing Mercedes        James Eadorn    +8.813        +0.515  1:35.711       6        S    0    19
+16     Red Bull Sauber-Mercedes       Ernie Cédryck    +9.031        +0.218  1:35.229       6        S    0    21
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello    +9.039        +0.008  1:35.586       6        S    0    22
+18   ING Jaguar Racing Mercedes      George Aldeill    +9.182        +0.143   1:36.78       6        S    0    18
+19    Rothmans Williams-Renault       Antonio Iocco   +13.087        +3.905  1:38.934       6        S    1     8
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Devon Raleigh has recorded 1:31.634 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 7/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  00:24:30.924  1:31.204       7        S    0     4
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.291        +0.291  1:31.283       7        S    0     3
+3         West McLaren-Mercedes        Nill Rosberg    +0.525        +0.234  1:31.798       6        S    0     1
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +2.089        +1.564  1:32.104       7        S    0     2
+5     Rothmans Williams-Renault      Ken Fassbender    +3.431        +1.342  1:32.575       7        S    0     5
+6                 Honda F1 Team       David Redolfe    +4.625        +1.194  1:32.836       7        S    0     9
+7               Renault F1 Team     Marcus Svansson    +5.574        +0.949  1:33.245       6        S    0    10
+8     Winfield Benetton-Renault      Daniil Kovalev    +6.223        +0.649  1:33.745       6        S    0     6
+9   Marlboro Team Lotus-Renault         Sander Metz    +6.372        +0.149  1:33.269       7        S    0    12
+10  Marlboro Team Lotus-Renault   Charlie Southgate    +8.735        +2.363  1:33.270       7        S    0    13
+11              Renault F1 Team       Tony Calandre    +8.762        +0.027  1:33.827       7        S    0    11
+12     Mild Seven Toyota Racing    Guillermo Acosta    +9.536        +0.774  1:33.934       7        S    0    16
+13      Minardi-Ferrari F1 Team        Raul Sanchez   +11.711        +2.175  1:35.342       6        S    0    17
+14     Red Bull Sauber-Mercedes      Jamie Lorianne   +13.123        +1.412  1:35.546       6        S    0    20
+15   ING Jaguar Racing Mercedes      George Aldeill   +13.285        +0.162  1:35.493       7        S    0    18
+16     Red Bull Sauber-Mercedes       Ernie Cédryck   +13.338        +0.053  1:35.229       6        S    0    21
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +13.806        +0.468  1:35.586       6        S    0    22
+18   ING Jaguar Racing Mercedes        James Eadorn   +14.062        +0.256  1:35.711       6        S    0    19
+19    Rothmans Williams-Renault       Antonio Iocco   +15.382         +1.32  1:33.685       7        S    1     8
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Devon Raleigh has recorded 1:31.204 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 8/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:26:01.313  1:29.864       8        S    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +1.765        +1.765  1:30.064       8        S    0     2
+3     Rothmans Williams-Renault      Ken Fassbender    +3.763        +1.998  1:30.721       8        S    0     5
+4                 Honda F1 Team       David Redolfe    +6.045        +2.282  1:31.808       8        S    0     9
+5     Winfield Benetton-Renault      Daniil Kovalev    +6.676        +0.631  1:30.842       8        S    0     6
+6               Renault F1 Team     Marcus Svansson    +7.195        +0.519  1:32.009       8        S    0    10
+7     Scuderia Ferrari Vodafone   Charles Hérnandez    +7.604        +0.409  1:31.283       7        S    0     3
+8   Marlboro Team Lotus-Renault         Sander Metz    +8.974         +1.37  1:32.991       8        S    0    12
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +10.654         +1.68  1:32.308       8        S    0    13
+10     Mild Seven Toyota Racing    Guillermo Acosta   +12.688        +2.034  1:33.540       8        S    0    16
+11      Minardi-Ferrari F1 Team        Raul Sanchez   +15.761        +3.073  1:34.439       8        S    0    17
+12   ING Jaguar Racing Mercedes      George Aldeill   +16.352        +0.591  1:33.456       8        S    0    18
+13     Red Bull Sauber-Mercedes       Ernie Cédryck   +17.726        +1.374  1:34.777       8        S    0    21
+14      Minardi-Ferrari F1 Team  Antonio Bacarrello   +17.817        +0.091  1:34.400       8        S    0    22
+15     Red Bull Sauber-Mercedes      Jamie Lorianne    +18.78        +0.963  1:35.546       6        S    0    20
+16   ING Jaguar Racing Mercedes        James Eadorn   +19.778        +0.998  1:35.711       6        S    0    19
+17    Rothmans Williams-Renault       Antonio Iocco   +22.248         +2.47  1:33.685       7        S    1     8
+18        West McLaren-Mercedes       Devon Raleigh   +31.092        +8.844  1:31.204       7        S    0     4
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:29.864 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 9/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:30:59.207  1:29.864       8        S    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +1.765        +1.765  1:30.064       8        S    0     2
+3     Rothmans Williams-Renault      Ken Fassbender    +3.763        +1.998  1:30.721       8        S    0     5
+4                 Honda F1 Team       David Redolfe    +6.045        +2.282  1:31.808       8        S    0     9
+5     Winfield Benetton-Renault      Daniil Kovalev    +6.676        +0.631  1:30.842       8        S    0     6
+6               Renault F1 Team     Marcus Svansson    +7.195        +0.519  1:32.009       8        S    0    10
+7     Scuderia Ferrari Vodafone   Charles Hérnandez    +7.604        +0.409  1:31.283       7        S    0     3
+8   Marlboro Team Lotus-Renault         Sander Metz    +8.974         +1.37  1:32.991       8        S    0    12
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +10.654         +1.68  1:32.308       8        S    0    13
+10     Mild Seven Toyota Racing    Guillermo Acosta   +12.688        +2.034  1:33.540       8        S    0    16
+11      Minardi-Ferrari F1 Team        Raul Sanchez   +15.761        +3.073  1:34.439       8        S    0    17
+12   ING Jaguar Racing Mercedes      George Aldeill   +16.352        +0.591  1:33.456       8        S    0    18
+13     Red Bull Sauber-Mercedes       Ernie Cédryck   +17.726        +1.374  1:34.777       8        S    0    21
+14      Minardi-Ferrari F1 Team  Antonio Bacarrello   +17.817        +0.091  1:34.400       8        S    0    22
+15     Red Bull Sauber-Mercedes      Jamie Lorianne    +18.78        +0.963  1:35.546       6        S    0    20
+16   ING Jaguar Racing Mercedes        James Eadorn   +19.778        +0.998  1:35.711       6        S    0    19
+17    Rothmans Williams-Renault       Antonio Iocco   +22.248         +2.47  1:33.685       7        S    1     8
+18        West McLaren-Mercedes       Devon Raleigh   +59.872       +37.624  1:31.204       7        S    1     4
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:29.864 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 10/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:35:57.101  1:29.864       8        S    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +1.765        +1.765  1:30.064       8        S    0     2
+3     Rothmans Williams-Renault      Ken Fassbender    +3.763        +1.998  1:30.721       8        S    0     5
+4                 Honda F1 Team       David Redolfe    +6.045        +2.282  1:31.808       8        S    0     9
+5     Winfield Benetton-Renault      Daniil Kovalev    +6.676        +0.631  1:30.842       8        S    0     6
+6               Renault F1 Team     Marcus Svansson    +7.195        +0.519  1:32.009       8        S    0    10
+7     Scuderia Ferrari Vodafone   Charles Hérnandez    +7.604        +0.409  1:31.283       7        S    0     3
+8   Marlboro Team Lotus-Renault         Sander Metz    +8.974         +1.37  1:32.991       8        S    0    12
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +10.654         +1.68  1:32.308       8        S    0    13
+10     Mild Seven Toyota Racing    Guillermo Acosta   +12.688        +2.034  1:33.540       8        S    0    16
+11      Minardi-Ferrari F1 Team        Raul Sanchez   +15.761        +3.073  1:34.439       8        S    0    17
+12   ING Jaguar Racing Mercedes      George Aldeill   +16.352        +0.591  1:33.456       8        S    0    18
+13     Red Bull Sauber-Mercedes       Ernie Cédryck   +17.726        +1.374  1:34.777       8        S    0    21
+14      Minardi-Ferrari F1 Team  Antonio Bacarrello   +17.817        +0.091  1:34.400       8        S    0    22
+15     Red Bull Sauber-Mercedes      Jamie Lorianne    +18.78        +0.963  1:35.546       6        S    0    20
+16   ING Jaguar Racing Mercedes        James Eadorn   +19.778        +0.998  1:35.711       6        S    0    19
+17    Rothmans Williams-Renault       Antonio Iocco   +22.248         +2.47  1:33.685       7        S    1     8
+18        West McLaren-Mercedes       Devon Raleigh   +59.872       +37.624  1:31.204       7        S    1     4
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:29.864 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 11/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:40:54.995  1:29.864       8        S    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe     +0.35         +0.35  1:30.064       8        S    0     2
+3     Rothmans Williams-Renault      Ken Fassbender      +0.7         +0.35  1:30.721       8        S    0     5
+4                 Honda F1 Team       David Redolfe     +1.05         +0.35  1:31.808       8        S    0     9
+5     Winfield Benetton-Renault      Daniil Kovalev      +1.4         +0.35  1:30.842       8        S    0     6
+6               Renault F1 Team     Marcus Svansson     +1.75         +0.35  1:32.009       8        S    0    10
+7     Scuderia Ferrari Vodafone   Charles Hérnandez      +2.1         +0.35  1:31.283       7        S    0     3
+8   Marlboro Team Lotus-Renault         Sander Metz     +2.45         +0.35  1:32.991       8        S    0    12
+9   Marlboro Team Lotus-Renault   Charlie Southgate      +2.8         +0.35  1:32.308       8        S    0    13
+10     Mild Seven Toyota Racing    Guillermo Acosta     +3.15         +0.35  1:33.540       8        S    0    16
+11      Minardi-Ferrari F1 Team        Raul Sanchez      +3.5         +0.35  1:34.439       8        S    0    17
+12   ING Jaguar Racing Mercedes      George Aldeill     +3.85         +0.35  1:33.456       8        S    0    18
+13     Red Bull Sauber-Mercedes       Ernie Cédryck      +4.2         +0.35  1:34.777       8        S    0    21
+14      Minardi-Ferrari F1 Team  Antonio Bacarrello     +4.55         +0.35  1:34.400       8        S    0    22
+15     Red Bull Sauber-Mercedes      Jamie Lorianne      +4.9         +0.35  1:35.546       6        S    0    20
+16   ING Jaguar Racing Mercedes        James Eadorn     +5.25         +0.35  1:35.711       6        S    0    19
+17    Rothmans Williams-Renault       Antonio Iocco      +5.6         +0.35  1:33.685       7        S    1     8
+18        West McLaren-Mercedes       Devon Raleigh     +5.95         +0.35  1:31.204       7        S    1     4
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:29.864 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 12/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:45:52.889  1:29.864       8        S    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe     +0.35         +0.35  1:30.064       8        S    0     2
+3     Rothmans Williams-Renault      Ken Fassbender      +0.7         +0.35  1:30.721       8        S    0     5
+4                 Honda F1 Team       David Redolfe     +1.05         +0.35  1:31.808       8        S    0     9
+5     Winfield Benetton-Renault      Daniil Kovalev      +1.4         +0.35  1:30.842       8        S    0     6
+6               Renault F1 Team     Marcus Svansson     +1.75         +0.35  1:32.009       8        S    0    10
+7     Scuderia Ferrari Vodafone   Charles Hérnandez      +2.1         +0.35  1:31.283       7        S    0     3
+8   Marlboro Team Lotus-Renault         Sander Metz     +2.45         +0.35  1:32.991       8        S    0    12
+9   Marlboro Team Lotus-Renault   Charlie Southgate      +2.8         +0.35  1:32.308       8        S    0    13
+10     Mild Seven Toyota Racing    Guillermo Acosta     +3.15         +0.35  1:33.540       8        S    0    16
+11      Minardi-Ferrari F1 Team        Raul Sanchez      +3.5         +0.35  1:34.439       8        S    0    17
+12   ING Jaguar Racing Mercedes      George Aldeill     +3.85         +0.35  1:33.456       8        S    0    18
+13     Red Bull Sauber-Mercedes       Ernie Cédryck      +4.2         +0.35  1:34.777       8        S    0    21
+14      Minardi-Ferrari F1 Team  Antonio Bacarrello     +4.55         +0.35  1:34.400       8        S    0    22
+15     Red Bull Sauber-Mercedes      Jamie Lorianne      +4.9         +0.35  1:35.546       6        S    0    20
+16   ING Jaguar Racing Mercedes        James Eadorn     +5.25         +0.35  1:35.711       6        S    0    19
+17    Rothmans Williams-Renault       Antonio Iocco      +5.6         +0.35  1:33.685       7        S    1     8
+18        West McLaren-Mercedes       Devon Raleigh     +5.95         +0.35  1:31.204       7        S    1     4
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:29.864 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 13/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:47:22.465  1:29.226      13        S    0     2
+2         West McLaren-Mercedes        Nill Rosberg    +0.117        +0.117  1:29.692      13        S    0     1
+3     Rothmans Williams-Renault      Ken Fassbender    +0.734        +0.617   1:29.61      13        S    0     5
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +2.807        +2.073  1:30.282      13        S    0     3
+5   Marlboro Team Lotus-Renault         Sander Metz    +3.785        +0.978  1:30.911      13        S    0    12
+6     Winfield Benetton-Renault      Daniil Kovalev     +3.81        +0.025  1:30.842       8        S    0     6
+7                 Honda F1 Team       David Redolfe    +3.994        +0.184  1:31.808       8        S    0     9
+8               Renault F1 Team     Marcus Svansson    +4.414         +0.42  1:32.009       8        S    0    10
+9      Mild Seven Toyota Racing    Guillermo Acosta    +5.151        +0.737  1:31.576      13        S    0    16
+10  Marlboro Team Lotus-Renault   Charlie Southgate     +5.78        +0.629  1:32.308       8        S    0    13
+11      Minardi-Ferrari F1 Team        Raul Sanchez    +7.479        +1.699  1:33.555      13        S    0    17
+12   ING Jaguar Racing Mercedes      George Aldeill    +7.961        +0.482  1:33.456       8        S    0    18
+13     Red Bull Sauber-Mercedes      Jamie Lorianne    +8.082        +0.121  1:32.757      13        S    0    20
+14      Minardi-Ferrari F1 Team  Antonio Bacarrello    +8.441        +0.359  1:33.467      13        S    0    22
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +9.061         +0.62  1:34.437      13        S    0    21
+16    Rothmans Williams-Renault       Antonio Iocco    +12.82        +3.759  1:33.685       7        S    1     8
+17   ING Jaguar Racing Mercedes        James Eadorn   +13.106        +0.286  1:35.711       6        S    0    19
+18        West McLaren-Mercedes       Devon Raleigh   +23.772       +10.666  1:31.204       7        S    1     4
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Abel Wolfe has recorded 1:29.226 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 14/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:48:51.223  1:28.641      14        S    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +1.794        +1.794  1:29.226      13        S    0     2
+3     Rothmans Williams-Renault      Ken Fassbender    +2.569        +0.775   1:29.61      13        S    0     5
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +3.677        +1.108  1:29.628      14        S    0     3
+5   Marlboro Team Lotus-Renault         Sander Metz    +6.244        +2.567  1:30.911      13        S    0    12
+6                 Honda F1 Team       David Redolfe    +6.677        +0.433  1:31.441      14        S    0     9
+7     Winfield Benetton-Renault      Daniil Kovalev    +6.996        +0.319  1:30.842       8        S    0     6
+8               Renault F1 Team     Marcus Svansson    +7.527        +0.531  1:31.870      14        S    0    10
+9   Marlboro Team Lotus-Renault   Charlie Southgate    +7.813        +0.286  1:30.791      14        S    0    13
+10     Mild Seven Toyota Racing    Guillermo Acosta     +9.28        +1.467  1:31.576      13        S    0    16
+11   ING Jaguar Racing Mercedes      George Aldeill   +12.125        +2.845  1:32.922      14        S    0    18
+12      Minardi-Ferrari F1 Team        Raul Sanchez   +12.296        +0.171  1:33.555      13        S    0    17
+13     Red Bull Sauber-Mercedes      Jamie Lorianne   +13.088        +0.792  1:32.757      13        S    0    20
+14     Red Bull Sauber-Mercedes       Ernie Cédryck   +13.216        +0.128  1:32.913      14        S    0    21
+15      Minardi-Ferrari F1 Team  Antonio Bacarrello   +14.625        +1.409  1:33.467      13        S    0    22
+16    Rothmans Williams-Renault       Antonio Iocco   +15.072        +0.447  1:31.010      14        S    1     8
+17   ING Jaguar Racing Mercedes        James Eadorn   +18.108        +3.036  1:33.760      14        S    0    19
+18        West McLaren-Mercedes       Devon Raleigh   +24.788         +6.68  1:29.774      14        S    1     4
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 15/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:50:20.713  1:28.641      14        S    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +2.081        +2.081  1:29.226      13        S    0     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +3.265        +1.184  1:29.078      15        S    0     3
+4     Rothmans Williams-Renault      Ken Fassbender    +3.594        +0.329   1:29.61      13        S    0     5
+5                 Honda F1 Team       David Redolfe     +7.96        +4.366  1:30.772      15        S    0     9
+6     Winfield Benetton-Renault      Daniil Kovalev    +8.039        +0.079  1:30.533      15        S    0     6
+7   Marlboro Team Lotus-Renault         Sander Metz    +8.723        +0.684  1:30.911      13        S    0    12
+8               Renault F1 Team     Marcus Svansson    +9.117        +0.394   1:31.08      15        S    0    10
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +10.812        +1.695  1:30.791      14        S    0    13
+10     Mild Seven Toyota Racing    Guillermo Acosta   +11.554        +0.742  1:31.576      13        S    0    16
+11   ING Jaguar Racing Mercedes      George Aldeill   +16.187        +4.633  1:32.922      14        S    0    18
+12     Red Bull Sauber-Mercedes      Jamie Lorianne   +16.556        +0.369  1:32.757      13        S    0    20
+13     Red Bull Sauber-Mercedes       Ernie Cédryck   +16.924        +0.368  1:32.913      14        S    0    21
+14      Minardi-Ferrari F1 Team        Raul Sanchez   +17.233        +0.309  1:33.555      13        S    0    17
+15    Rothmans Williams-Renault       Antonio Iocco   +17.926        +0.693  1:31.010      14        S    1     8
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello   +17.993        +0.067  1:32.857      15        S    0    22
+17   ING Jaguar Racing Mercedes        James Eadorn   +23.088        +5.095  1:33.760      14        S    0    19
+18        West McLaren-Mercedes       Devon Raleigh   +24.556        +1.468  1:29.258      15        S    1     4
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 16/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:51:50.488  1:28.641      14        S    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +2.018        +2.018  1:29.226      13        S    0     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +3.121        +1.103  1:29.078      15        S    0     3
+4     Rothmans Williams-Renault      Ken Fassbender    +4.252        +1.131   1:29.61      13        S    0     5
+5                 Honda F1 Team       David Redolfe     +8.91        +4.658  1:30.724      16        S    0     9
+6   Marlboro Team Lotus-Renault         Sander Metz    +9.879        +0.969  1:30.911      13        S    0    12
+7     Winfield Benetton-Renault      Daniil Kovalev   +10.189         +0.31  1:30.533      15        S    0     6
+8               Renault F1 Team     Marcus Svansson    +10.68        +0.491   1:31.08      15        S    0    10
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +12.965        +2.285  1:30.791      14        S    0    13
+10     Mild Seven Toyota Racing    Guillermo Acosta   +14.417        +1.452  1:31.576      13        S    0    16
+11   ING Jaguar Racing Mercedes      George Aldeill   +19.203        +4.786  1:32.791      16        S    0    18
+12     Red Bull Sauber-Mercedes      Jamie Lorianne   +19.536        +0.333  1:32.755      16        S    0    20
+13     Red Bull Sauber-Mercedes       Ernie Cédryck   +19.988        +0.452  1:32.839      16        S    0    21
+14      Minardi-Ferrari F1 Team        Raul Sanchez     +20.1        +0.112  1:32.641      16        S    0    17
+15      Minardi-Ferrari F1 Team  Antonio Bacarrello   +21.903        +1.803  1:32.857      15        S    0    22
+16    Rothmans Williams-Renault       Antonio Iocco   +24.501        +2.598  1:31.010      14        S    1     8
+17        West McLaren-Mercedes       Devon Raleigh   +25.102        +0.601  1:29.258      15        S    1     4
+18   ING Jaguar Racing Mercedes        James Eadorn   +32.265        +7.163  1:33.760      14        S    0    19
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 17/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:53:20.021  1:28.641      14        S    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +2.532        +2.532  1:29.226      13        S    0     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +3.616        +1.084  1:29.078      15        S    0     3
+4     Rothmans Williams-Renault      Ken Fassbender    +5.171        +1.555   1:29.61      13        S    0     5
+5                 Honda F1 Team       David Redolfe   +10.913        +5.742  1:30.724      16        S    0     9
+6   Marlboro Team Lotus-Renault         Sander Metz   +11.358        +0.445  1:30.911      13        S    0    12
+7               Renault F1 Team     Marcus Svansson   +12.091        +0.733  1:30.943      17        S    0    10
+8     Winfield Benetton-Renault      Daniil Kovalev   +12.134        +0.043  1:30.533      15        S    0     6
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +15.357        +3.223  1:30.791      14        S    0    13
+10     Mild Seven Toyota Racing    Guillermo Acosta   +17.457          +2.1  1:31.576      13        S    0    16
+11     Red Bull Sauber-Mercedes      Jamie Lorianne   +22.676        +5.219  1:32.673      17        S    0    20
+12   ING Jaguar Racing Mercedes      George Aldeill   +23.228        +0.552  1:32.791      16        S    0    18
+13     Red Bull Sauber-Mercedes       Ernie Cédryck   +23.374        +0.146  1:32.839      16        S    0    21
+14      Minardi-Ferrari F1 Team        Raul Sanchez   +24.051        +0.677  1:32.641      16        S    0    17
+15    Rothmans Williams-Renault       Antonio Iocco   +25.544        +1.493  1:30.576      17        S    1     8
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello    +25.61        +0.066  1:32.857      15        S    0    22
+17        West McLaren-Mercedes       Devon Raleigh   +26.905        +1.295  1:29.258      15        S    1     4
+18   ING Jaguar Racing Mercedes        James Eadorn   +38.436       +11.531  1:33.760      14        S    0    19
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 18/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:54:49.523  1:28.641      14        S    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe     +2.81         +2.81  1:29.226      13        S    0     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +4.528        +1.718  1:29.078      15        S    0     3
+4     Rothmans Williams-Renault      Ken Fassbender    +6.299        +1.771   1:29.61      13        S    0     5
+5   Marlboro Team Lotus-Renault         Sander Metz   +13.082        +6.783  1:30.911      13        S    0    12
+6                 Honda F1 Team       David Redolfe   +13.239        +0.157  1:30.724      16        S    0     9
+7               Renault F1 Team     Marcus Svansson   +13.664        +0.425  1:30.943      17        S    0    10
+8     Winfield Benetton-Renault      Daniil Kovalev   +14.078        +0.414  1:30.533      15        S    0     6
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +17.701        +3.623  1:30.791      14        S    0    13
+10     Mild Seven Toyota Racing    Guillermo Acosta   +22.312        +4.611  1:31.576      13        S    0    16
+11   ING Jaguar Racing Mercedes      George Aldeill   +26.652         +4.34  1:32.791      16        S    0    18
+12     Red Bull Sauber-Mercedes      Jamie Lorianne    +26.76        +0.108  1:32.673      17        S    0    20
+13     Red Bull Sauber-Mercedes       Ernie Cédryck   +27.181        +0.421  1:32.839      16        S    0    21
+14      Minardi-Ferrari F1 Team        Raul Sanchez   +27.497        +0.316  1:32.641      16        S    0    17
+15      Minardi-Ferrari F1 Team  Antonio Bacarrello   +29.423        +1.926  1:32.857      15        S    0    22
+16    Rothmans Williams-Renault       Antonio Iocco   +30.162        +0.739  1:30.576      17        S    1     8
+17        West McLaren-Mercedes       Devon Raleigh   +30.286        +0.124  1:29.258      15        S    1     4
+18   ING Jaguar Racing Mercedes        James Eadorn   +43.671       +13.385  1:33.760      14        S    0    19
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 19/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:56:19.680  1:28.641      14        S    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe     +2.45         +2.45  1:29.226      13        S    0     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +4.494        +2.044  1:29.078      15        S    0     3
+4     Rothmans Williams-Renault      Ken Fassbender     +7.02        +2.526   1:29.61      13        S    0     5
+5   Marlboro Team Lotus-Renault         Sander Metz   +14.377        +7.357  1:30.911      13        S    0    12
+6               Renault F1 Team     Marcus Svansson   +14.561        +0.184  1:30.943      17        S    0    10
+7                 Honda F1 Team       David Redolfe   +15.354        +0.793  1:30.724      16        S    0     9
+8     Winfield Benetton-Renault      Daniil Kovalev   +15.439        +0.085  1:30.533      15        S    0     6
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +19.414        +3.975  1:30.791      14        S    0    13
+10     Mild Seven Toyota Racing    Guillermo Acosta   +24.351        +4.937  1:31.576      13        S    0    16
+11   ING Jaguar Racing Mercedes      George Aldeill   +29.653        +5.302  1:32.791      16        S    0    18
+12      Minardi-Ferrari F1 Team        Raul Sanchez    +30.34        +0.687  1:32.641      16        S    0    17
+13     Red Bull Sauber-Mercedes      Jamie Lorianne   +30.807        +0.467  1:32.673      17        S    0    20
+14     Red Bull Sauber-Mercedes       Ernie Cédryck   +32.336        +1.529  1:32.839      16        S    0    21
+15    Rothmans Williams-Renault       Antonio Iocco   +33.088        +0.752  1:30.576      17        S    1     8
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello    +34.87        +1.782  1:32.857      15        S    0    22
+17        West McLaren-Mercedes       Devon Raleigh   +36.005        +1.135  1:29.258      15        S    1     4
+18   ING Jaguar Racing Mercedes        James Eadorn   +51.564       +15.559  1:33.760      14        S    0    19
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 20/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:57:49.700  1:28.641      14        S    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +2.505        +2.505  1:29.226      13        S    0     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +4.524        +2.019  1:29.078      15        S    0     3
+4     Rothmans Williams-Renault      Ken Fassbender    +7.815        +3.291   1:29.61      13        S    0     5
+5               Renault F1 Team     Marcus Svansson   +15.675         +7.86  1:30.943      17        S    0    10
+6   Marlboro Team Lotus-Renault         Sander Metz   +16.233        +0.558  1:30.911      13        S    0    12
+7                 Honda F1 Team       David Redolfe   +16.757        +0.524  1:30.724      16        S    0     9
+8     Winfield Benetton-Renault      Daniil Kovalev   +16.933        +0.176  1:30.533      15        S    0     6
+9   Marlboro Team Lotus-Renault   Charlie Southgate     +21.6        +4.667  1:30.791      14        S    0    13
+10     Mild Seven Toyota Racing    Guillermo Acosta   +26.906        +5.306  1:31.576      13        S    0    16
+11   ING Jaguar Racing Mercedes      George Aldeill   +33.466         +6.56  1:32.791      16        S    0    18
+12      Minardi-Ferrari F1 Team        Raul Sanchez   +34.581        +1.115  1:32.641      16        S    0    17
+13     Red Bull Sauber-Mercedes      Jamie Lorianne   +36.066        +1.485  1:32.673      17        S    0    20
+14     Red Bull Sauber-Mercedes       Ernie Cédryck   +36.811        +0.745  1:32.839      16        S    0    21
+15    Rothmans Williams-Renault       Antonio Iocco    +37.26        +0.449  1:30.576      17        S    1     8
+16        West McLaren-Mercedes       Devon Raleigh     +37.5         +0.24  1:29.258      15        S    1     4
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +39.006        +1.506  1:32.857      15        S    0    22
+18   ING Jaguar Racing Mercedes        James Eadorn   +59.067       +20.061  1:33.760      14        S    0    19
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 21/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:59:19.778  1:28.641      14        S    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +2.888        +2.888  1:29.226      13        S    0     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +4.696        +1.808  1:29.078      15        S    0     3
+4     Rothmans Williams-Renault      Ken Fassbender    +8.773        +4.077   1:29.61      13        S    0     5
+5   Marlboro Team Lotus-Renault         Sander Metz   +17.385        +8.612  1:30.911      13        S    0    12
+6                 Honda F1 Team       David Redolfe   +17.547        +0.162  1:30.724      16        S    0     9
+7               Renault F1 Team     Marcus Svansson   +17.776        +0.229  1:30.943      17        S    0    10
+8     Winfield Benetton-Renault      Daniil Kovalev   +18.079        +0.303  1:30.533      15        S    0     6
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +23.788        +5.709  1:30.791      14        S    0    13
+10     Mild Seven Toyota Racing    Guillermo Acosta   +29.319        +5.531  1:31.576      13        S    0    16
+11   ING Jaguar Racing Mercedes      George Aldeill   +36.997        +7.678  1:32.791      16        S    0    18
+12      Minardi-Ferrari F1 Team        Raul Sanchez   +37.734        +0.737  1:32.641      16        S    0    17
+13     Red Bull Sauber-Mercedes      Jamie Lorianne    +39.25        +1.516  1:32.673      17        S    0    20
+14    Rothmans Williams-Renault       Antonio Iocco   +40.457        +1.207  1:30.576      17        S    1     8
+15     Red Bull Sauber-Mercedes       Ernie Cédryck   +41.011        +0.554  1:32.839      16        S    0    21
+16        West McLaren-Mercedes       Devon Raleigh   +42.201         +1.19  1:29.258      15        S    1     4
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +43.501          +1.3  1:32.857      15        S    0    22
+18   ING Jaguar Racing Mercedes        James Eadorn    +63.13       +19.629  1:33.760      14        S    0    19
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 22/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:00:49.651  1:28.641      14        S    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +3.325        +3.325  1:29.226      13        S    0     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez     +5.23        +1.905  1:29.078      15        S    0     3
+4     Rothmans Williams-Renault      Ken Fassbender    +10.28         +5.05   1:29.61      13        S    0     5
+5   Marlboro Team Lotus-Renault         Sander Metz   +19.867        +9.587  1:30.911      13        S    0    12
+6     Winfield Benetton-Renault      Daniil Kovalev   +20.818        +0.951  1:30.533      15        S    0     6
+7               Renault F1 Team     Marcus Svansson   +21.726        +0.908  1:30.943      17        S    0    10
+8   Marlboro Team Lotus-Renault   Charlie Southgate   +26.907        +5.181  1:30.791      14        S    0    13
+9      Mild Seven Toyota Racing    Guillermo Acosta   +33.435        +6.528  1:31.576      13        S    0    16
+10     Red Bull Sauber-Mercedes      Jamie Lorianne   +42.676        +9.241  1:32.673      17        S    0    20
+11      Minardi-Ferrari F1 Team        Raul Sanchez   +43.687        +1.011  1:32.641      16        S    0    17
+12    Rothmans Williams-Renault       Antonio Iocco   +44.066        +0.379  1:30.576      17        S    1     8
+13        West McLaren-Mercedes       Devon Raleigh   +45.508        +1.442  1:29.258      15        S    1     4
+14     Red Bull Sauber-Mercedes       Ernie Cédryck   +46.871        +1.363  1:32.839      16        S    0    21
+15      Minardi-Ferrari F1 Team  Antonio Bacarrello   +50.132        +3.261  1:32.857      15        S    0    22
+16   ING Jaguar Racing Mercedes        James Eadorn   +69.406       +19.274  1:33.760      14        S    0    19
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 23/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:06:09.825  1:28.641      14        S    1     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +3.055        +3.055  1:29.226      13        S    1     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez     +5.36        +2.305  1:29.078      15        S    1     3
+4     Rothmans Williams-Renault      Ken Fassbender    +10.81         +5.45   1:29.61      13        S    1     5
+5   Marlboro Team Lotus-Renault         Sander Metz   +19.587        +8.777  1:30.911      13        S    1    12
+6     Winfield Benetton-Renault      Daniil Kovalev   +20.968        +1.381  1:30.533      15        S    1     6
+7               Renault F1 Team     Marcus Svansson   +22.496        +1.528  1:30.943      17        S    1    10
+8   Marlboro Team Lotus-Renault   Charlie Southgate   +28.107        +5.611  1:30.791      14        S    1    13
+9      Mild Seven Toyota Racing    Guillermo Acosta   +33.155        +5.048  1:31.576      13        S    1    16
+10     Red Bull Sauber-Mercedes      Jamie Lorianne   +42.466        +9.311  1:32.673      17        S    1    20
+11      Minardi-Ferrari F1 Team        Raul Sanchez   +44.057        +1.591  1:32.641      16        S    1    17
+12    Rothmans Williams-Renault       Antonio Iocco   +44.086        +0.029  1:30.576      17        S    2     8
+13        West McLaren-Mercedes       Devon Raleigh   +45.468        +1.382  1:29.258      15        S    2     4
+14     Red Bull Sauber-Mercedes       Ernie Cédryck   +46.751        +1.283  1:32.839      16        S    1    21
+15                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello   +62.352        +2.721  1:32.857      15        S    1    22
+17   ING Jaguar Racing Mercedes        James Eadorn   +69.226        +6.874  1:33.760      14        S    1    19
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 24/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:11:07.719  1:28.641      14        S    1     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +3.055        +3.055  1:29.226      13        S    1     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez     +5.36        +2.305  1:29.078      15        S    1     3
+4     Rothmans Williams-Renault      Ken Fassbender    +10.81         +5.45   1:29.61      13        S    1     5
+5   Marlboro Team Lotus-Renault         Sander Metz   +19.587        +8.777  1:30.911      13        S    1    12
+6     Winfield Benetton-Renault      Daniil Kovalev   +20.968        +1.381  1:30.533      15        S    1     6
+7               Renault F1 Team     Marcus Svansson   +22.496        +1.528  1:30.943      17        S    1    10
+8   Marlboro Team Lotus-Renault   Charlie Southgate   +28.107        +5.611  1:30.791      14        S    1    13
+9      Mild Seven Toyota Racing    Guillermo Acosta   +33.155        +5.048  1:31.576      13        S    1    16
+10     Red Bull Sauber-Mercedes      Jamie Lorianne   +42.466        +9.311  1:32.673      17        S    1    20
+11      Minardi-Ferrari F1 Team        Raul Sanchez   +44.057        +1.591  1:32.641      16        S    1    17
+12    Rothmans Williams-Renault       Antonio Iocco   +44.086        +0.029  1:30.576      17        S    2     8
+13        West McLaren-Mercedes       Devon Raleigh   +45.468        +1.382  1:29.258      15        S    2     4
+14     Red Bull Sauber-Mercedes       Ernie Cédryck   +46.751        +1.283  1:32.839      16        S    1    21
+15                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello   +62.352        +2.721  1:32.857      15        S    1    22
+17   ING Jaguar Racing Mercedes        James Eadorn   +69.226        +6.874  1:33.760      14        S    1    19
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 25/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:16:05.613  1:28.641      14        S    1     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe     +0.35         +0.35  1:29.226      13        S    1     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez      +0.7         +0.35  1:29.078      15        S    1     3
+4     Rothmans Williams-Renault      Ken Fassbender     +1.05         +0.35   1:29.61      13        S    1     5
+5   Marlboro Team Lotus-Renault         Sander Metz      +1.4         +0.35  1:30.911      13        S    1    12
+6     Winfield Benetton-Renault      Daniil Kovalev     +1.75         +0.35  1:30.533      15        S    1     6
+7               Renault F1 Team     Marcus Svansson      +2.1         +0.35  1:30.943      17        S    1    10
+8   Marlboro Team Lotus-Renault   Charlie Southgate     +2.45         +0.35  1:30.791      14        S    1    13
+9      Mild Seven Toyota Racing    Guillermo Acosta      +2.8         +0.35  1:31.576      13        S    1    16
+10     Red Bull Sauber-Mercedes      Jamie Lorianne     +3.15         +0.35  1:32.673      17        S    1    20
+11      Minardi-Ferrari F1 Team        Raul Sanchez      +3.5         +0.35  1:32.641      16        S    1    17
+12    Rothmans Williams-Renault       Antonio Iocco     +3.85         +0.35  1:30.576      17        S    2     8
+13        West McLaren-Mercedes       Devon Raleigh      +4.2         +0.35  1:29.258      15        S    2     4
+14     Red Bull Sauber-Mercedes       Ernie Cédryck     +4.55         +0.35  1:32.839      16        S    1    21
+15      Minardi-Ferrari F1 Team  Antonio Bacarrello     +5.25          +0.7  1:32.857      15        S    1    22
+16   ING Jaguar Racing Mercedes        James Eadorn      +5.6         +0.35  1:33.760      14        S    1    19
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 26/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:21:03.507  1:28.641      14        S    1     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe     +0.35         +0.35  1:29.226      13        S    1     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez      +0.7         +0.35  1:29.078      15        S    1     3
+4     Rothmans Williams-Renault      Ken Fassbender     +1.05         +0.35   1:29.61      13        S    1     5
+5   Marlboro Team Lotus-Renault         Sander Metz      +1.4         +0.35  1:30.911      13        S    1    12
+6     Winfield Benetton-Renault      Daniil Kovalev     +1.75         +0.35  1:30.533      15        S    1     6
+7               Renault F1 Team     Marcus Svansson      +2.1         +0.35  1:30.943      17        S    1    10
+8   Marlboro Team Lotus-Renault   Charlie Southgate     +2.45         +0.35  1:30.791      14        S    1    13
+9      Mild Seven Toyota Racing    Guillermo Acosta      +2.8         +0.35  1:31.576      13        S    1    16
+10     Red Bull Sauber-Mercedes      Jamie Lorianne     +3.15         +0.35  1:32.673      17        S    1    20
+11      Minardi-Ferrari F1 Team        Raul Sanchez      +3.5         +0.35  1:32.641      16        S    1    17
+12    Rothmans Williams-Renault       Antonio Iocco     +3.85         +0.35  1:30.576      17        S    2     8
+13        West McLaren-Mercedes       Devon Raleigh      +4.2         +0.35  1:29.258      15        S    2     4
+14     Red Bull Sauber-Mercedes       Ernie Cédryck     +4.55         +0.35  1:32.839      16        S    1    21
+15      Minardi-Ferrari F1 Team  Antonio Bacarrello      +4.9         +0.35  1:32.857      15        S    1    22
+16   ING Jaguar Racing Mercedes        James Eadorn     +5.25         +0.35  1:33.760      14        S    1    19
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 27/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:22:34.429  1:29.226      13        S    1     2
+2         West McLaren-Mercedes        Nill Rosberg    +0.071        +0.071  1:28.641      14        S    1     1
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.195        +0.124  1:29.078      15        S    1     3
+4     Rothmans Williams-Renault      Ken Fassbender    +2.241        +2.046   1:29.61      13        S    1     5
+5   Marlboro Team Lotus-Renault         Sander Metz    +3.006        +0.765  1:30.911      13        S    1    12
+6               Renault F1 Team     Marcus Svansson    +3.823        +0.817  1:30.943      17        S    1    10
+7     Winfield Benetton-Renault      Daniil Kovalev     +4.45        +0.627  1:30.533      15        S    1     6
+8   Marlboro Team Lotus-Renault   Charlie Southgate    +4.748        +0.298  1:30.791      14        S    1    13
+9      Mild Seven Toyota Racing    Guillermo Acosta    +5.448          +0.7  1:31.576      13        S    1    16
+10    Rothmans Williams-Renault       Antonio Iocco    +5.987        +0.539  1:30.576      17        S    2     8
+11     Red Bull Sauber-Mercedes      Jamie Lorianne    +6.135        +0.148  1:32.673      17        S    1    20
+12      Minardi-Ferrari F1 Team        Raul Sanchez    +6.496        +0.361  1:32.641      16        S    1    17
+13   ING Jaguar Racing Mercedes        James Eadorn    +8.565        +2.069  1:33.760      14        S    1    19
+14      Minardi-Ferrari F1 Team  Antonio Bacarrello    +8.609        +0.044  1:32.857      15        S    1    22
+15        West McLaren-Mercedes       Devon Raleigh    +9.356        +0.747  1:29.258      15        S    2     4
+16     Red Bull Sauber-Mercedes       Ernie Cédryck    +9.929        +0.573  1:32.839      16        S    1    21
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 28/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:24:04.607  1:29.226      13        S    1     2
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.536        +1.536  1:29.078      15        S    1     3
+3         West McLaren-Mercedes        Nill Rosberg     +2.13        +0.594  1:28.641      14        S    1     1
+4     Rothmans Williams-Renault      Ken Fassbender    +3.312        +1.182   1:29.61      13        S    1     5
+5               Renault F1 Team     Marcus Svansson    +5.083        +1.771  1:30.943      17        S    1    10
+6   Marlboro Team Lotus-Renault         Sander Metz    +5.356        +0.273  1:30.911      13        S    1    12
+7     Winfield Benetton-Renault      Daniil Kovalev     +5.44        +0.084  1:30.533      15        S    1     6
+8   Marlboro Team Lotus-Renault   Charlie Southgate    +6.481        +1.041  1:30.791      14        S    1    13
+9      Mild Seven Toyota Racing    Guillermo Acosta    +7.043        +0.562  1:31.576      13        S    1    16
+10    Rothmans Williams-Renault       Antonio Iocco    +8.805        +1.762  1:30.576      17        S    2     8
+11     Red Bull Sauber-Mercedes      Jamie Lorianne    +9.187        +0.382  1:32.673      17        S    1    20
+12      Minardi-Ferrari F1 Team        Raul Sanchez    +9.379        +0.192  1:32.641      16        S    1    17
+13        West McLaren-Mercedes       Devon Raleigh   +12.532        +3.153  1:29.258      15        S    2     4
+14   ING Jaguar Racing Mercedes        James Eadorn   +12.928        +0.396  1:33.760      14        S    1    19
+15     Red Bull Sauber-Mercedes       Ernie Cédryck   +13.625        +0.697  1:32.839      16        S    1    21
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello   +14.178        +0.553  1:32.857      15        S    1    22
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 29/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:25:34.425  1:29.226      13        S    1     2
+2         West McLaren-Mercedes        Nill Rosberg    +3.073        +3.073  1:28.641      14        S    1     1
+3     Rothmans Williams-Renault      Ken Fassbender    +4.957        +1.884   1:29.61      13        S    1     5
+4               Renault F1 Team     Marcus Svansson    +5.979        +1.022  1:30.714      29        S    1    10
+5   Marlboro Team Lotus-Renault         Sander Metz     +6.51        +0.531  1:30.911      13        S    1    12
+6   Marlboro Team Lotus-Renault   Charlie Southgate    +9.405        +2.895  1:30.791      14        S    1    13
+7      Mild Seven Toyota Racing    Guillermo Acosta     +9.46        +0.055  1:31.576      13        S    1    16
+8     Winfield Benetton-Renault      Daniil Kovalev    +9.693        +0.233  1:30.533      15        S    1     6
+9     Rothmans Williams-Renault       Antonio Iocco   +12.497        +2.804  1:30.576      17        S    2     8
+10     Red Bull Sauber-Mercedes      Jamie Lorianne   +12.913        +0.416  1:32.673      17        S    1    20
+11      Minardi-Ferrari F1 Team        Raul Sanchez   +13.285        +0.372  1:32.641      16        S    1    17
+12        West McLaren-Mercedes       Devon Raleigh   +15.137        +1.852  1:29.258      15        S    2     4
+13     Red Bull Sauber-Mercedes       Ernie Cédryck   +17.671        +2.534  1:32.839      16        S    1    21
+14      Minardi-Ferrari F1 Team  Antonio Bacarrello   +18.079        +0.408  1:32.857      15        S    1    22
+15   ING Jaguar Racing Mercedes        James Eadorn   +18.288        +0.209  1:33.760      14        S    1    19
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 30/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:30:32.319  1:29.226      13        S    1     2
+2         West McLaren-Mercedes        Nill Rosberg    +3.073        +3.073  1:28.641      14        S    1     1
+3     Rothmans Williams-Renault      Ken Fassbender    +4.957        +1.884   1:29.61      13        S    1     5
+4               Renault F1 Team     Marcus Svansson    +5.979        +1.022  1:30.714      29        S    1    10
+5   Marlboro Team Lotus-Renault         Sander Metz     +6.51        +0.531  1:30.911      13        S    1    12
+6   Marlboro Team Lotus-Renault   Charlie Southgate    +9.405        +2.895  1:30.791      14        S    1    13
+7      Mild Seven Toyota Racing    Guillermo Acosta     +9.46        +0.055  1:31.576      13        S    1    16
+8     Winfield Benetton-Renault      Daniil Kovalev    +9.693        +0.233  1:30.533      15        S    1     6
+9     Rothmans Williams-Renault       Antonio Iocco   +12.497        +2.804  1:30.576      17        S    2     8
+10     Red Bull Sauber-Mercedes      Jamie Lorianne   +12.913        +0.416  1:32.673      17        S    1    20
+11      Minardi-Ferrari F1 Team        Raul Sanchez   +13.285        +0.372  1:32.641      16        S    1    17
+12        West McLaren-Mercedes       Devon Raleigh   +15.137        +1.852  1:29.258      15        S    2     4
+13     Red Bull Sauber-Mercedes       Ernie Cédryck   +17.671        +2.534  1:32.839      16        S    1    21
+14      Minardi-Ferrari F1 Team  Antonio Bacarrello   +18.079        +0.408  1:32.857      15        S    1    22
+15   ING Jaguar Racing Mercedes        James Eadorn   +18.288        +0.209  1:33.760      14        S    1    19
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 31/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:35:30.213  1:29.226      13        S    1     2
+2         West McLaren-Mercedes        Nill Rosberg    +3.073        +3.073  1:28.641      14        S    1     1
+3     Rothmans Williams-Renault      Ken Fassbender    +4.957        +1.884   1:29.61      13        S    1     5
+4               Renault F1 Team     Marcus Svansson    +5.979        +1.022  1:30.714      29        S    1    10
+5   Marlboro Team Lotus-Renault         Sander Metz     +6.51        +0.531  1:30.911      13        S    1    12
+6   Marlboro Team Lotus-Renault   Charlie Southgate    +9.405        +2.895  1:30.791      14        S    1    13
+7      Mild Seven Toyota Racing    Guillermo Acosta     +9.46        +0.055  1:31.576      13        S    1    16
+8     Winfield Benetton-Renault      Daniil Kovalev    +9.693        +0.233  1:30.533      15        S    1     6
+9     Rothmans Williams-Renault       Antonio Iocco   +12.497        +2.804  1:30.576      17        S    2     8
+10     Red Bull Sauber-Mercedes      Jamie Lorianne   +12.913        +0.416  1:32.673      17        S    1    20
+11      Minardi-Ferrari F1 Team        Raul Sanchez   +13.285        +0.372  1:32.641      16        S    1    17
+12        West McLaren-Mercedes       Devon Raleigh   +15.137        +1.852  1:29.258      15        S    2     4
+13     Red Bull Sauber-Mercedes       Ernie Cédryck   +17.671        +2.534  1:32.839      16        S    1    21
+14      Minardi-Ferrari F1 Team  Antonio Bacarrello   +18.079        +0.408  1:32.857      15        S    1    22
+15   ING Jaguar Racing Mercedes        James Eadorn   +18.288        +0.209  1:33.760      14        S    1    19
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 32/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:40:28.107  1:29.226      13        S    1     2
+2         West McLaren-Mercedes        Nill Rosberg     +0.35         +0.35  1:28.641      14        S    1     1
+3     Rothmans Williams-Renault      Ken Fassbender      +0.7         +0.35   1:29.61      13        S    1     5
+4               Renault F1 Team     Marcus Svansson     +1.05         +0.35  1:30.714      29        S    1    10
+5   Marlboro Team Lotus-Renault         Sander Metz      +1.4         +0.35  1:30.911      13        S    1    12
+6   Marlboro Team Lotus-Renault   Charlie Southgate     +1.75         +0.35  1:30.791      14        S    1    13
+7      Mild Seven Toyota Racing    Guillermo Acosta      +2.1         +0.35  1:31.576      13        S    1    16
+8     Winfield Benetton-Renault      Daniil Kovalev     +2.45         +0.35  1:30.533      15        S    1     6
+9     Rothmans Williams-Renault       Antonio Iocco      +2.8         +0.35  1:30.576      17        S    2     8
+10     Red Bull Sauber-Mercedes      Jamie Lorianne     +3.15         +0.35  1:32.673      17        S    1    20
+11      Minardi-Ferrari F1 Team        Raul Sanchez      +3.5         +0.35  1:32.641      16        S    1    17
+12        West McLaren-Mercedes       Devon Raleigh     +3.85         +0.35  1:29.258      15        S    2     4
+13     Red Bull Sauber-Mercedes       Ernie Cédryck      +4.2         +0.35  1:32.839      16        S    1    21
+14      Minardi-Ferrari F1 Team  Antonio Bacarrello     +4.55         +0.35  1:32.857      15        S    1    22
+15   ING Jaguar Racing Mercedes        James Eadorn      +4.9         +0.35  1:33.760      14        S    1    19
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 33/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:45:26.001  1:29.226      13        S    1     2
+2         West McLaren-Mercedes        Nill Rosberg     +0.35         +0.35  1:28.641      14        S    1     1
+3     Rothmans Williams-Renault      Ken Fassbender      +0.7         +0.35   1:29.61      13        S    1     5
+4               Renault F1 Team     Marcus Svansson     +1.05         +0.35  1:30.714      29        S    1    10
+5   Marlboro Team Lotus-Renault         Sander Metz      +1.4         +0.35  1:30.911      13        S    1    12
+6   Marlboro Team Lotus-Renault   Charlie Southgate     +1.75         +0.35  1:30.791      14        S    1    13
+7      Mild Seven Toyota Racing    Guillermo Acosta      +2.1         +0.35  1:31.576      13        S    1    16
+8     Winfield Benetton-Renault      Daniil Kovalev     +2.45         +0.35  1:30.533      15        S    1     6
+9     Rothmans Williams-Renault       Antonio Iocco      +2.8         +0.35  1:30.576      17        S    2     8
+10     Red Bull Sauber-Mercedes      Jamie Lorianne     +3.15         +0.35  1:32.673      17        S    1    20
+11      Minardi-Ferrari F1 Team        Raul Sanchez      +3.5         +0.35  1:32.641      16        S    1    17
+12        West McLaren-Mercedes       Devon Raleigh     +3.85         +0.35  1:29.258      15        S    2     4
+13     Red Bull Sauber-Mercedes       Ernie Cédryck      +4.2         +0.35  1:32.839      16        S    1    21
+14      Minardi-Ferrari F1 Team  Antonio Bacarrello     +4.55         +0.35  1:32.857      15        S    1    22
+15   ING Jaguar Racing Mercedes        James Eadorn      +4.9         +0.35  1:33.760      14        S    1    19
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Nill Rosberg has recorded 1:28.641 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 34/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:46:53.705  1:27.704      34        S    1     2
+2         West McLaren-Mercedes        Nill Rosberg    +1.561        +1.561  1:28.641      14        S    1     1
+3               Renault F1 Team     Marcus Svansson    +1.844        +0.283  1:28.497      34        S    1    10
+4     Rothmans Williams-Renault      Ken Fassbender     +2.39        +0.546  1:29.393      34        S    1     5
+5   Marlboro Team Lotus-Renault         Sander Metz    +3.094        +0.704  1:29.398      34        S    1    12
+6      Mild Seven Toyota Racing    Guillermo Acosta     +3.61        +0.516  1:29.214      34        S    1    16
+7   Marlboro Team Lotus-Renault   Charlie Southgate    +3.686        +0.076  1:29.639      34        S    1    13
+8     Winfield Benetton-Renault      Daniil Kovalev    +4.847        +1.161  1:30.100      34        S    1     6
+9       Minardi-Ferrari F1 Team        Raul Sanchez    +6.502        +1.655  1:30.705      34        S    1    17
+10        West McLaren-Mercedes       Devon Raleigh    +7.806        +1.304  1:29.258      15        S    2     4
+11     Red Bull Sauber-Mercedes      Jamie Lorianne    +8.071        +0.265  1:32.624      34        S    1    20
+12      Minardi-Ferrari F1 Team  Antonio Bacarrello    +8.393        +0.322  1:31.547      34        S    1    22
+13     Red Bull Sauber-Mercedes       Ernie Cédryck    +8.394        +0.001  1:31.898      34        S    1    21
+14   ING Jaguar Racing Mercedes        James Eadorn    +8.904         +0.51  1:31.707      34        S    1    19
+15    Rothmans Williams-Renault       Antonio Iocco   +10.109        +1.205  1:30.576      17        S    2     8
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Abel Wolfe has recorded 1:27.704 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 35/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:48:21.643  1:27.704      34        S    1     2
+2         West McLaren-Mercedes        Nill Rosberg    +2.204        +2.204  1:28.581      35        S    1     1
+3               Renault F1 Team     Marcus Svansson    +2.568        +0.364  1:28.497      34        S    1    10
+4      Mild Seven Toyota Racing    Guillermo Acosta    +4.655        +2.087  1:28.983      35        S    1    16
+5     Rothmans Williams-Renault      Ken Fassbender    +4.795         +0.14  1:29.393      34        S    1     5
+6   Marlboro Team Lotus-Renault         Sander Metz    +4.948        +0.153  1:29.398      34        S    1    12
+7     Winfield Benetton-Renault      Daniil Kovalev    +5.226        +0.278  1:28.316      35        S    1     6
+8   Marlboro Team Lotus-Renault   Charlie Southgate    +5.479        +0.253  1:29.639      34        S    1    13
+9         West McLaren-Mercedes       Devon Raleigh    +9.011        +3.532  1:29.143      35        M    2     4
+10      Minardi-Ferrari F1 Team        Raul Sanchez    +9.565        +0.554  1:30.705      34        S    1    17
+11     Red Bull Sauber-Mercedes      Jamie Lorianne   +11.562        +1.997  1:31.429      35        S    1    20
+12      Minardi-Ferrari F1 Team  Antonio Bacarrello   +11.872         +0.31  1:31.417      35        S    1    22
+13   ING Jaguar Racing Mercedes        James Eadorn   +13.384        +1.512  1:31.707      34        S    1    19
+14    Rothmans Williams-Renault       Antonio Iocco   +13.511        +0.127  1:30.576      17        S    2     8
+15     Red Bull Sauber-Mercedes       Ernie Cédryck   +15.834        +2.323  1:31.898      34        S    1    21
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Abel Wolfe has recorded 1:27.704 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 36/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:49:49.266  1:27.623      36        S    1     2
+2               Renault F1 Team     Marcus Svansson    +3.642        +3.642  1:28.497      34        S    1    10
+3         West McLaren-Mercedes        Nill Rosberg    +5.128        +1.486  1:28.581      35        S    1     1
+4     Rothmans Williams-Renault      Ken Fassbender    +5.627        +0.499  1:28.454      36        S    1     5
+5   Marlboro Team Lotus-Renault         Sander Metz    +6.322        +0.695  1:28.997      36        S    1    12
+6      Mild Seven Toyota Racing    Guillermo Acosta    +6.619        +0.297  1:28.983      35        S    1    16
+7   Marlboro Team Lotus-Renault   Charlie Southgate    +6.888        +0.269  1:29.032      36        S    1    13
+8     Winfield Benetton-Renault      Daniil Kovalev    +6.914        +0.026  1:28.316      35        S    1     6
+9         West McLaren-Mercedes       Devon Raleigh    +9.557        +2.643  1:28.168      36        M    2     4
+10      Minardi-Ferrari F1 Team        Raul Sanchez   +13.378        +3.821  1:30.705      34        S    1    17
+11      Minardi-Ferrari F1 Team  Antonio Bacarrello   +15.369        +1.991  1:31.120      36        S    1    22
+12     Red Bull Sauber-Mercedes      Jamie Lorianne   +15.804        +0.435  1:31.429      35        S    1    20
+13   ING Jaguar Racing Mercedes        James Eadorn   +17.352        +1.548  1:31.591      36        S    1    19
+14    Rothmans Williams-Renault       Antonio Iocco   +17.989        +0.637  1:30.576      17        S    2     8
+15     Red Bull Sauber-Mercedes       Ernie Cédryck   +19.836        +1.847  1:31.625      36        S    1    21
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Abel Wolfe has recorded 1:27.623 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 37/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:51:16.969  1:27.623      36        S    1     2
+2               Renault F1 Team     Marcus Svansson    +5.127        +5.127  1:28.497      34        S    1    10
+3         West McLaren-Mercedes        Nill Rosberg    +5.555        +0.428  1:28.129      37        S    1     1
+4     Rothmans Williams-Renault      Ken Fassbender    +7.153        +1.598  1:28.454      36        S    1     5
+5      Mild Seven Toyota Racing    Guillermo Acosta    +7.777        +0.624  1:28.861      37        S    1    16
+6     Winfield Benetton-Renault      Daniil Kovalev    +7.892        +0.115  1:28.316      35        S    1     6
+7   Marlboro Team Lotus-Renault   Charlie Southgate    +7.923        +0.031  1:28.738      37        S    1    13
+8   Marlboro Team Lotus-Renault         Sander Metz    +8.396        +0.473  1:28.997      36        S    1    12
+9         West McLaren-Mercedes       Devon Raleigh   +10.138        +1.742  1:28.168      36        M    2     4
+10      Minardi-Ferrari F1 Team        Raul Sanchez   +17.087        +6.949  1:30.705      34        S    1    17
+11    Rothmans Williams-Renault       Antonio Iocco   +20.249        +3.162  1:29.963      37        M    2     8
+12   ING Jaguar Racing Mercedes        James Eadorn   +20.261        +0.012  1:30.612      37        S    1    19
+13     Red Bull Sauber-Mercedes      Jamie Lorianne   +20.343        +0.082  1:31.429      35        S    1    20
+14      Minardi-Ferrari F1 Team  Antonio Bacarrello   +20.377        +0.034  1:31.120      36        S    1    22
+15     Red Bull Sauber-Mercedes       Ernie Cédryck   +23.311        +2.934  1:31.177      37        S    1    21
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Abel Wolfe has recorded 1:27.623 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 38/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:52:44.756  1:27.623      36        S    1     2
+2               Renault F1 Team     Marcus Svansson    +7.169        +7.169  1:28.497      34        S    1    10
+3     Rothmans Williams-Renault      Ken Fassbender    +8.412        +1.243  1:28.454      36        S    1     5
+4      Mild Seven Toyota Racing    Guillermo Acosta   +10.153        +1.741  1:28.861      37        S    1    16
+5   Marlboro Team Lotus-Renault         Sander Metz   +10.285        +0.132  1:28.997      36        S    1    12
+6     Winfield Benetton-Renault      Daniil Kovalev   +10.458        +0.173  1:28.316      35        S    1     6
+7         West McLaren-Mercedes       Devon Raleigh   +10.868         +0.41  1:28.168      36        M    2     4
+8   Marlboro Team Lotus-Renault   Charlie Southgate   +13.653        +2.785  1:28.738      37        S    1    13
+9       Minardi-Ferrari F1 Team        Raul Sanchez   +21.745        +8.092  1:30.705      34        S    1    17
+10    Rothmans Williams-Renault       Antonio Iocco   +22.917        +1.172  1:29.963      37        M    2     8
+11   ING Jaguar Racing Mercedes        James Eadorn   +23.245        +0.328  1:30.612      37        S    1    19
+12      Minardi-Ferrari F1 Team  Antonio Bacarrello   +24.387        +1.142  1:31.120      36        S    1    22
+13     Red Bull Sauber-Mercedes      Jamie Lorianne   +25.614        +1.227  1:31.429      35        S    1    20
+14     Red Bull Sauber-Mercedes       Ernie Cédryck   +26.342        +0.728  1:30.817      38        S    1    21
+15        West McLaren-Mercedes        Nill Rosberg   +26.438        +0.096  1:28.129      37        S    1     1
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Abel Wolfe has recorded 1:27.623 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 39/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:54:12.485  1:27.623      36        S    1     2
+2     Rothmans Williams-Renault      Ken Fassbender    +7.951        +7.951  1:27.268      39        S    1     5
+3               Renault F1 Team     Marcus Svansson    +8.767        +0.816  1:28.497      34        S    1    10
+4   Marlboro Team Lotus-Renault         Sander Metz   +11.289        +2.522  1:28.733      39        S    1    12
+5      Mild Seven Toyota Racing    Guillermo Acosta   +11.669         +0.38  1:28.861      37        S    1    16
+6     Winfield Benetton-Renault      Daniil Kovalev   +11.935        +0.266  1:28.316      35        S    1     6
+7         West McLaren-Mercedes       Devon Raleigh   +13.899        +1.964  1:28.168      36        M    2     4
+8   Marlboro Team Lotus-Renault   Charlie Southgate    +15.31        +1.411  1:28.738      37        S    1    13
+9       Minardi-Ferrari F1 Team        Raul Sanchez   +24.165        +8.855  1:30.149      39        S    1    17
+10    Rothmans Williams-Renault       Antonio Iocco   +25.343        +1.178  1:29.963      37        M    2     8
+11      Minardi-Ferrari F1 Team  Antonio Bacarrello   +29.071        +3.728  1:31.120      36        S    1    22
+12   ING Jaguar Racing Mercedes        James Eadorn   +29.562        +0.491  1:30.612      37        S    1    19
+13     Red Bull Sauber-Mercedes      Jamie Lorianne   +30.222         +0.66  1:31.429      35        S    1    20
+14     Red Bull Sauber-Mercedes       Ernie Cédryck   +30.234        +0.012  1:30.817      38        S    1    21
+15        West McLaren-Mercedes        Nill Rosberg   +57.071       +26.837  1:28.129      37        S    2     1
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Ken Fassbender has recorded 1:27.268 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 40/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:55:40.047  1:27.561      40        S    1     2
+2     Rothmans Williams-Renault      Ken Fassbender    +8.744        +8.744  1:27.268      39        S    1     5
+3               Renault F1 Team     Marcus Svansson   +10.528        +1.784  1:28.497      34        S    1    10
+4   Marlboro Team Lotus-Renault         Sander Metz   +12.333        +1.805  1:28.605      40        S    1    12
+5      Mild Seven Toyota Racing    Guillermo Acosta   +13.173         +0.84  1:28.861      37        S    1    16
+6         West McLaren-Mercedes       Devon Raleigh   +14.751        +1.578  1:28.168      36        M    2     4
+7     Winfield Benetton-Renault      Daniil Kovalev   +16.084        +1.333  1:28.316      35        S    1     6
+8   Marlboro Team Lotus-Renault   Charlie Southgate   +17.104         +1.02  1:28.738      37        S    1    13
+9       Minardi-Ferrari F1 Team        Raul Sanchez   +26.804          +9.7  1:30.149      39        S    1    17
+10    Rothmans Williams-Renault       Antonio Iocco   +27.664         +0.86  1:29.882      40        M    2     8
+11      Minardi-Ferrari F1 Team  Antonio Bacarrello    +33.23        +5.566  1:31.120      36        S    1    22
+12     Red Bull Sauber-Mercedes      Jamie Lorianne   +33.322        +0.092  1:30.662      40        S    1    20
+13     Red Bull Sauber-Mercedes       Ernie Cédryck   +34.214        +0.892  1:30.817      38        S    1    21
+14   ING Jaguar Racing Mercedes        James Eadorn   +34.407        +0.193  1:30.612      37        S    1    19
+15        West McLaren-Mercedes        Nill Rosberg    +62.08       +27.673  1:28.129      37        S    2     1
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Ken Fassbender has recorded 1:27.268 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 41/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:57:07.497  1:27.450      41        S    1     2
+2     Rothmans Williams-Renault      Ken Fassbender    +9.496        +9.496  1:27.268      39        S    1     5
+3               Renault F1 Team     Marcus Svansson   +12.161        +2.665  1:28.497      34        S    1    10
+4      Mild Seven Toyota Racing    Guillermo Acosta    +15.29        +3.129  1:28.861      37        S    1    16
+5         West McLaren-Mercedes       Devon Raleigh   +15.887        +0.597  1:28.168      36        M    2     4
+6   Marlboro Team Lotus-Renault         Sander Metz   +16.045        +0.158  1:28.605      40        S    1    12
+7     Winfield Benetton-Renault      Daniil Kovalev   +17.846        +1.801  1:28.316      35        S    1     6
+8   Marlboro Team Lotus-Renault   Charlie Southgate     +19.1        +1.254  1:28.738      37        S    1    13
+9     Rothmans Williams-Renault       Antonio Iocco   +30.192       +11.092  1:29.882      40        M    2     8
+10      Minardi-Ferrari F1 Team        Raul Sanchez   +30.966        +0.774  1:30.149      39        S    1    17
+11      Minardi-Ferrari F1 Team  Antonio Bacarrello   +36.576         +5.61  1:30.795      41        S    1    22
+12   ING Jaguar Racing Mercedes        James Eadorn   +37.612        +1.036  1:30.612      37        S    1    19
+13     Red Bull Sauber-Mercedes      Jamie Lorianne   +38.218        +0.606  1:30.662      40        S    1    20
+14     Red Bull Sauber-Mercedes       Ernie Cédryck   +38.369        +0.151  1:30.817      38        S    1    21
+15        West McLaren-Mercedes        Nill Rosberg   +66.441       +28.072  1:28.129      37        S    2     1
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Ken Fassbender has recorded 1:27.268 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 42/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:58:35.202  1:27.450      41        S    1     2
+2     Rothmans Williams-Renault      Ken Fassbender   +10.043       +10.043  1:27.268      39        S    1     5
+3               Renault F1 Team     Marcus Svansson   +13.847        +3.804  1:28.497      34        S    1    10
+4   Marlboro Team Lotus-Renault         Sander Metz   +17.226        +3.379  1:28.605      40        S    1    12
+5         West McLaren-Mercedes       Devon Raleigh    +17.28        +0.054  1:28.168      36        M    2     4
+6      Mild Seven Toyota Racing    Guillermo Acosta   +17.693        +0.413  1:28.861      37        S    1    16
+7     Winfield Benetton-Renault      Daniil Kovalev   +19.172        +1.479  1:28.316      35        S    1     6
+8   Marlboro Team Lotus-Renault   Charlie Southgate   +21.137        +1.965  1:28.738      37        S    1    13
+9     Rothmans Williams-Renault       Antonio Iocco    +31.97       +10.833  1:29.483      42        M    2     8
+10      Minardi-Ferrari F1 Team        Raul Sanchez   +34.446        +2.476  1:30.149      39        S    1    17
+11      Minardi-Ferrari F1 Team  Antonio Bacarrello   +40.438        +5.992  1:30.795      41        S    1    22
+12     Red Bull Sauber-Mercedes      Jamie Lorianne   +41.336        +0.898  1:30.662      40        S    1    20
+13   ING Jaguar Racing Mercedes        James Eadorn   +41.847        +0.511  1:30.612      37        S    1    19
+14     Red Bull Sauber-Mercedes       Ernie Cédryck   +66.195       +24.348  1:30.817      38        S    1    21
+15        West McLaren-Mercedes        Nill Rosberg   +69.589        +3.394  1:28.129      37        S    2     1
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Ken Fassbender has recorded 1:27.268 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 43/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  02:00:03.001  1:27.450      41        S    1     2
+2     Rothmans Williams-Renault      Ken Fassbender   +10.756       +10.756  1:27.268      39        S    1     5
+3               Renault F1 Team     Marcus Svansson   +15.935        +5.179  1:28.497      34        S    1    10
+4         West McLaren-Mercedes       Devon Raleigh   +18.129        +2.194  1:28.168      36        M    2     4
+5   Marlboro Team Lotus-Renault         Sander Metz   +19.037        +0.908  1:28.605      40        S    1    12
+6      Mild Seven Toyota Racing    Guillermo Acosta   +19.096        +0.059  1:28.861      37        S    1    16
+7     Winfield Benetton-Renault      Daniil Kovalev   +19.866         +0.77  1:28.316      35        S    1     6
+8   Marlboro Team Lotus-Renault   Charlie Southgate   +23.269        +3.403  1:28.738      37        S    1    13
+9     Rothmans Williams-Renault       Antonio Iocco   +33.057        +9.788  1:28.886      43        M    2     8
+10      Minardi-Ferrari F1 Team        Raul Sanchez    +38.07        +5.013  1:30.149      39        S    1    17
+11      Minardi-Ferrari F1 Team  Antonio Bacarrello   +44.791        +6.721  1:30.795      41        S    1    22
+12     Red Bull Sauber-Mercedes      Jamie Lorianne   +45.754        +0.963  1:30.662      40        S    1    20
+13   ING Jaguar Racing Mercedes        James Eadorn   +46.773        +1.019  1:30.612      37        S    1    19
+14        West McLaren-Mercedes        Nill Rosberg   +73.868       +27.095  1:28.129      37        S    2     1
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap       +27.544  1:30.817      38        S    2    21
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Ken Fassbender has recorded 1:27.268 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 44/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  02:01:30.785  1:27.450      41        S    1     2
+2     Rothmans Williams-Renault      Ken Fassbender   +11.307       +11.307  1:27.268      39        S    1     5
+3         West McLaren-Mercedes       Devon Raleigh   +17.376        +6.069  1:27.031      44        M    2     4
+4               Renault F1 Team     Marcus Svansson   +17.719        +0.343  1:28.497      34        S    1    10
+5     Winfield Benetton-Renault      Daniil Kovalev   +20.661        +2.942  1:28.316      35        S    1     6
+6      Mild Seven Toyota Racing    Guillermo Acosta   +20.704        +0.043  1:28.861      37        S    1    16
+7   Marlboro Team Lotus-Renault         Sander Metz   +21.039        +0.335  1:28.605      40        S    1    12
+8   Marlboro Team Lotus-Renault   Charlie Southgate   +25.194        +4.155  1:28.738      37        S    1    13
+9     Rothmans Williams-Renault       Antonio Iocco    +34.68        +9.486  1:28.886      43        M    2     8
+10      Minardi-Ferrari F1 Team        Raul Sanchez   +41.892        +7.212  1:30.149      39        S    1    17
+11      Minardi-Ferrari F1 Team  Antonio Bacarrello   +49.027        +7.135  1:30.795      41        S    1    22
+12     Red Bull Sauber-Mercedes      Jamie Lorianne   +50.527          +1.5  1:30.662      40        S    1    20
+13   ING Jaguar Racing Mercedes        James Eadorn    +53.17        +2.643  1:30.612      37        S    1    19
+14        West McLaren-Mercedes        Nill Rosberg   +76.421       +23.251  1:28.129      37        S    2     1
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap       +31.143  1:30.817      38        S    2    21
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Devon Raleigh has recorded 1:27.031 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 45/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  02:02:59.047  1:27.450      41        S    1     2
+2     Rothmans Williams-Renault      Ken Fassbender   +11.592       +11.592  1:27.268      39        S    1     5
+3         West McLaren-Mercedes       Devon Raleigh   +16.587        +4.995  1:27.031      44        M    2     4
+4               Renault F1 Team     Marcus Svansson   +19.128        +2.541  1:28.497      34        S    1    10
+5     Winfield Benetton-Renault      Daniil Kovalev   +21.809        +2.681  1:28.316      35        S    1     6
+6      Mild Seven Toyota Racing    Guillermo Acosta   +23.053        +1.244  1:28.861      37        S    1    16
+7   Marlboro Team Lotus-Renault         Sander Metz   +24.055        +1.002  1:28.605      40        S    1    12
+8   Marlboro Team Lotus-Renault   Charlie Southgate   +27.005         +2.95  1:28.738      37        S    1    13
+9     Rothmans Williams-Renault       Antonio Iocco   +35.939        +8.934  1:28.886      43        M    2     8
+10      Minardi-Ferrari F1 Team        Raul Sanchez   +44.927        +8.988  1:30.149      39        S    1    17
+11      Minardi-Ferrari F1 Team  Antonio Bacarrello   +53.018        +8.091  1:30.795      41        S    1    22
+12     Red Bull Sauber-Mercedes      Jamie Lorianne   +53.063        +0.045  1:30.662      40        S    1    20
+13   ING Jaguar Racing Mercedes        James Eadorn   +56.969        +3.906  1:30.612      37        S    1    19
+14        West McLaren-Mercedes        Nill Rosberg    +77.17       +20.201  1:28.129      37        S    2     1
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap       +35.495  1:30.817      38        S    2    21
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Devon Raleigh has recorded 1:27.031 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 46/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  02:04:26.808  1:27.450      41        S    1     2
+2     Rothmans Williams-Renault      Ken Fassbender   +12.308       +12.308  1:27.268      39        S    1     5
+3         West McLaren-Mercedes       Devon Raleigh   +16.644        +4.336  1:27.031      44        M    2     4
+4               Renault F1 Team     Marcus Svansson   +20.882        +4.238  1:28.497      34        S    1    10
+5     Winfield Benetton-Renault      Daniil Kovalev    +23.32        +2.438  1:28.316      35        S    1     6
+6   Marlboro Team Lotus-Renault         Sander Metz    +25.46         +2.14  1:28.605      40        S    1    12
+7      Mild Seven Toyota Racing    Guillermo Acosta   +25.967        +0.507  1:28.861      37        S    1    16
+8   Marlboro Team Lotus-Renault   Charlie Southgate   +29.128        +3.161  1:28.738      37        S    1    13
+9     Rothmans Williams-Renault       Antonio Iocco   +37.805        +8.677  1:28.886      43        M    2     8
+10      Minardi-Ferrari F1 Team        Raul Sanchez   +49.031       +11.226  1:30.149      39        S    1    17
+11     Red Bull Sauber-Mercedes      Jamie Lorianne   +56.952        +7.921  1:30.662      40        S    1    20
+12      Minardi-Ferrari F1 Team  Antonio Bacarrello   +57.648        +0.696  1:30.795      41        S    1    22
+13   ING Jaguar Racing Mercedes        James Eadorn   +61.516        +3.868  1:30.612      37        S    1    19
+14        West McLaren-Mercedes        Nill Rosberg   +78.177       +16.661  1:28.129      37        S    2     1
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap       +39.661  1:30.817      38        S    2    21
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Devon Raleigh has recorded 1:27.031 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 47/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  02:05:54.416  1:27.450      41        S    1     2
+2     Rothmans Williams-Renault      Ken Fassbender   +13.452       +13.452  1:27.268      39        S    1     5
+3         West McLaren-Mercedes       Devon Raleigh   +16.433        +2.981  1:27.031      44        M    2     4
+4               Renault F1 Team     Marcus Svansson   +22.874        +6.441  1:28.497      34        S    1    10
+5     Winfield Benetton-Renault      Daniil Kovalev   +25.123        +2.249  1:28.316      35        S    1     6
+6      Mild Seven Toyota Racing    Guillermo Acosta   +28.142        +3.019  1:28.861      37        S    1    16
+7   Marlboro Team Lotus-Renault         Sander Metz   +28.178        +0.036  1:28.605      40        S    1    12
+8   Marlboro Team Lotus-Renault   Charlie Southgate   +31.755        +3.577  1:28.738      37        S    1    13
+9     Rothmans Williams-Renault       Antonio Iocco    +40.56        +8.805  1:28.886      43        M    2     8
+10      Minardi-Ferrari F1 Team        Raul Sanchez   +52.984       +12.424  1:30.149      39        S    1    17
+11     Red Bull Sauber-Mercedes      Jamie Lorianne   +61.417        +8.433  1:30.662      40        S    1    20
+12        West McLaren-Mercedes        Nill Rosberg   +81.395       +19.978  1:28.129      37        S    2     1
+13      Minardi-Ferrari F1 Team  Antonio Bacarrello   +85.839        +4.444  1:30.795      41        S    2    22
+14   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +3.888  1:30.612      37        S    2    19
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +32.32  1:30.817      38        S    2    21
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Devon Raleigh has recorded 1:27.031 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 48/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  02:07:22.271  1:27.450      41        S    1     2
+2     Rothmans Williams-Renault      Ken Fassbender   +14.596       +14.596  1:27.268      39        S    1     5
+3         West McLaren-Mercedes       Devon Raleigh   +16.218        +1.622  1:27.031      44        M    2     4
+4               Renault F1 Team     Marcus Svansson    +24.98        +8.762  1:28.497      34        S    1    10
+5     Winfield Benetton-Renault      Daniil Kovalev   +26.949        +1.969  1:28.316      35        S    1     6
+6   Marlboro Team Lotus-Renault         Sander Metz   +31.812        +4.863  1:28.605      40        S    1    12
+7   Marlboro Team Lotus-Renault   Charlie Southgate   +35.393        +3.581  1:28.738      37        S    1    13
+8     Rothmans Williams-Renault       Antonio Iocco   +42.479        +7.086  1:28.886      43        M    2     8
+9      Mild Seven Toyota Racing    Guillermo Acosta   +53.525       +11.046  1:28.861      37        S    2    16
+10      Minardi-Ferrari F1 Team        Raul Sanchez   +83.524       +29.999  1:30.149      39        S    2    17
+11        West McLaren-Mercedes        Nill Rosberg   +83.804         +0.28  1:28.129      37        S    2     1
+12     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap        +5.008  1:30.662      40        S    2    20
+13      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +2.507  1:30.795      41        S    2    22
+14   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +4.139  1:30.612      37        S    2    19
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap       +30.364  1:30.817      38        S    2    21
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Devon Raleigh has recorded 1:27.031 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 49/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  02:08:50.322  1:27.450      41        S    1     2
+2         West McLaren-Mercedes       Devon Raleigh   +16.551       +16.551  1:27.031      44        M    2     4
+3     Rothmans Williams-Renault      Ken Fassbender   +37.526       +20.975  1:27.268      39        S    2     5
+4     Rothmans Williams-Renault       Antonio Iocco   +47.173        +9.647  1:28.886      43        M    2     8
+5               Renault F1 Team     Marcus Svansson   +50.533         +3.36  1:28.497      34        S    2    10
+6     Winfield Benetton-Renault      Daniil Kovalev   +51.602        +1.069  1:28.316      35        S    2     6
+7   Marlboro Team Lotus-Renault         Sander Metz   +56.554        +4.952  1:28.605      40        S    2    12
+8      Mild Seven Toyota Racing    Guillermo Acosta   +61.366        +4.812  1:28.861      37        S    2    16
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +66.088        +4.722  1:28.738      37        S    2    13
+10        West McLaren-Mercedes        Nill Rosberg   +84.791       +18.703  1:28.129      37        S    2     1
+11      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +3.597  1:30.149      39        S    2    17
+12     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap        +5.459  1:30.662      40        S    2    20
+13      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +2.066  1:30.795      41        S    2    22
+14   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +4.044  1:30.612      37        S    2    19
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap       +28.039  1:30.225      49        M    2    21
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Devon Raleigh has recorded 1:27.031 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 50/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  02:10:18.252  1:27.450      41        S    1     2
+2         West McLaren-Mercedes       Devon Raleigh   +16.084       +16.084  1:27.031      44        M    2     4
+3     Rothmans Williams-Renault      Ken Fassbender   +39.957       +23.873  1:27.268      39        S    2     5
+4     Rothmans Williams-Renault       Antonio Iocco   +48.163        +8.206  1:28.886      43        M    2     8
+5     Winfield Benetton-Renault      Daniil Kovalev   +53.293         +5.13  1:28.316      35        S    2     6
+6               Renault F1 Team     Marcus Svansson   +53.485        +0.192  1:28.497      34        S    2    10
+7   Marlboro Team Lotus-Renault         Sander Metz   +59.531        +6.046  1:28.605      40        S    2    12
+8      Mild Seven Toyota Racing    Guillermo Acosta   +64.336        +4.805  1:28.861      37        S    2    16
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +69.385        +5.049  1:28.738      37        S    2    13
+10        West McLaren-Mercedes        Nill Rosberg   +85.395        +16.01  1:28.129      37        S    2     1
+11      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +7.238  1:30.149      39        S    2    17
+12     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap        +5.994  1:30.662      40        S    2    20
+13      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +2.764  1:30.795      41        S    2    22
+14   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +2.677  1:30.612      37        S    2    19
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap       +25.952  1:29.954      50        M    2    21
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Devon Raleigh has recorded 1:27.031 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 51/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  02:12:02.706  1:27.031      44        M    2     4
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +6.509        +6.509  1:27.450      41        S    2     2
+3     Rothmans Williams-Renault      Ken Fassbender    +24.67       +18.161  1:27.268      39        S    2     5
+4     Rothmans Williams-Renault       Antonio Iocco   +34.775       +10.105  1:28.886      43        M    2     8
+5               Renault F1 Team     Marcus Svansson   +38.427        +3.652  1:28.497      34        S    2    10
+6     Winfield Benetton-Renault      Daniil Kovalev   +38.781        +0.354  1:28.316      35        S    2     6
+7   Marlboro Team Lotus-Renault         Sander Metz   +45.634        +6.853  1:28.605      40        S    2    12
+8      Mild Seven Toyota Racing    Guillermo Acosta   +50.763        +5.129  1:28.861      37        S    2    16
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +55.453         +4.69  1:28.738      37        S    2    13
+10        West McLaren-Mercedes        Nill Rosberg   +69.009       +13.556  1:28.068      51        M    2     1
+11      Minardi-Ferrari F1 Team        Raul Sanchez   +80.124       +11.115  1:30.149      39        S    2    17
+12      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +8.905  1:30.795      41        S    2    22
+13     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap        +0.297  1:30.662      40        S    2    20
+14   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +1.506  1:30.612      37        S    2    19
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap       +24.646  1:29.912      51        M    2    21
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Devon Raleigh has recorded 1:27.031 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 52/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  02:13:29.622  1:26.915      52        M    2     4
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +8.408        +8.408  1:27.450      41        S    2     2
+3     Rothmans Williams-Renault      Ken Fassbender   +26.232       +17.824  1:27.268      39        S    2     5
+4     Rothmans Williams-Renault       Antonio Iocco   +36.549       +10.317  1:28.690      52        M    2     8
+5               Renault F1 Team     Marcus Svansson   +40.878        +4.329  1:28.497      34        S    2    10
+6     Winfield Benetton-Renault      Daniil Kovalev   +42.395        +1.517  1:28.316      35        S    2     6
+7   Marlboro Team Lotus-Renault         Sander Metz   +48.898        +6.503  1:28.605      40        S    2    12
+8      Mild Seven Toyota Racing    Guillermo Acosta     +53.1        +4.202  1:28.861      37        S    2    16
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +58.891        +5.791  1:28.738      37        S    2    13
+10        West McLaren-Mercedes        Nill Rosberg   +70.318       +11.427  1:28.068      51        M    2     1
+11      Minardi-Ferrari F1 Team        Raul Sanchez   +83.669       +13.351  1:30.149      39        S    2    17
+12      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +8.089  1:29.644      52        M    2    22
+13   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +1.073  1:28.915      52        M    2    19
+14     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap        +0.213  1:30.634      52        M    2    20
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap       +27.085  1:29.912      51        M    2    21
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Devon Raleigh has recorded 1:26.915 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 53/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  02:14:56.472  1:26.850      53        M    2     4
+2     Scuderia Ferrari Vodafone          Abel Wolfe   +10.123       +10.123  1:27.450      41        S    2     2
+3     Rothmans Williams-Renault      Ken Fassbender   +27.251       +17.128  1:27.268      39        S    2     5
+4     Rothmans Williams-Renault       Antonio Iocco   +38.122       +10.871  1:28.423      53        M    2     8
+5               Renault F1 Team     Marcus Svansson   +43.084        +4.962  1:28.497      34        S    2    10
+6     Winfield Benetton-Renault      Daniil Kovalev   +43.173        +0.089  1:27.628      53        M    2     6
+7   Marlboro Team Lotus-Renault         Sander Metz   +51.553         +8.38  1:28.605      40        S    2    12
+8      Mild Seven Toyota Racing    Guillermo Acosta   +53.721        +2.168  1:27.471      53        M    2    16
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +61.289        +7.568  1:28.738      37        S    2    13
+10        West McLaren-Mercedes        Nill Rosberg   +71.516       +10.227  1:28.048      53        M    2     1
+11      Minardi-Ferrari F1 Team        Raul Sanchez   +86.027       +14.511  1:29.208      53        M    2    17
+12   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap         +8.44  1:28.486      53        M    2    19
+13      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +0.438  1:29.644      52        M    2    22
+14     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap        +0.446  1:29.156      53        M    2    20
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap       +28.356  1:29.912      51        M    2    21
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Devon Raleigh has recorded 1:26.850 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 54/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  02:16:23.547  1:26.850      53        M    2     4
+2     Scuderia Ferrari Vodafone          Abel Wolfe   +10.899       +10.899  1:27.450      41        S    2     2
+3     Rothmans Williams-Renault      Ken Fassbender   +26.212       +15.313  1:26.036      54        M    2     5
+4     Rothmans Williams-Renault       Antonio Iocco   +41.061       +14.849  1:28.423      53        M    2     8
+5     Winfield Benetton-Renault      Daniil Kovalev    +42.27        +1.209  1:26.171      54        M    2     6
+6               Renault F1 Team     Marcus Svansson   +42.868        +0.598  1:26.858      54        M    2    10
+7   Marlboro Team Lotus-Renault         Sander Metz   +51.691        +8.823  1:27.213      54        M    2    12
+8      Mild Seven Toyota Racing    Guillermo Acosta    +54.22        +2.529  1:27.471      53        M    2    16
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +61.268        +7.048  1:27.054      54        M    2    13
+10        West McLaren-Mercedes        Nill Rosberg   +71.566       +10.298  1:27.124      54        M    2     1
+11      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap       +16.445  1:29.058      54        M    2    17
+12      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +8.307  1:28.488      54        M    2    22
+13   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +0.206  1:28.486      53        M    2    19
+14     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap        +0.414  1:28.662      54        M    2    20
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +29.16  1:29.466      54        M    2    21
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Ken Fassbender has recorded 1:26.036 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 55/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  02:17:50.238  1:26.691      55        M    2     4
+2     Scuderia Ferrari Vodafone          Abel Wolfe   +11.228       +11.228  1:27.020      55        M    2     2
+3     Rothmans Williams-Renault      Ken Fassbender   +25.405       +14.177  1:25.884      55        M    2     5
+4     Rothmans Williams-Renault       Antonio Iocco    +41.72       +16.315  1:27.350      55        M    2     8
+5               Renault F1 Team     Marcus Svansson   +42.056        +0.336  1:25.878      55        M    2    10
+6     Winfield Benetton-Renault      Daniil Kovalev   +43.098        +1.042  1:26.171      54        M    2     6
+7   Marlboro Team Lotus-Renault         Sander Metz   +52.234        +9.136  1:27.213      54        M    2    12
+8      Mild Seven Toyota Racing    Guillermo Acosta   +55.224         +2.99  1:27.471      53        M    2    16
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +61.718        +6.494  1:27.054      54        M    2    13
+10        West McLaren-Mercedes        Nill Rosberg   +71.928        +10.21  1:27.052      55        M    2     1
+11      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap       +17.952  1:28.559      55        M    2    17
+12   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +8.271  1:28.317      55        M    2    19
+13      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +0.634  1:28.488      54        M    2    22
+14     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap        +0.244  1:28.662      54        M    2    20
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap       +30.045  1:29.466      54        M    2    21
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Marcus Svansson has recorded 1:25.878 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 56/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  02:19:17.224  1:26.691      55        M    2     4
+2     Scuderia Ferrari Vodafone          Abel Wolfe   +10.877       +10.877  1:26.635      56        M    2     2
+3     Rothmans Williams-Renault      Ken Fassbender    +24.07       +13.193  1:25.651      56        M    2     5
+4     Rothmans Williams-Renault       Antonio Iocco   +42.109       +18.039  1:27.350      55        M    2     8
+5               Renault F1 Team     Marcus Svansson   +42.731        +0.622  1:25.878      55        M    2    10
+6     Winfield Benetton-Renault      Daniil Kovalev   +43.949        +1.218  1:26.171      54        M    2     6
+7   Marlboro Team Lotus-Renault         Sander Metz   +51.944        +7.995  1:26.696      56        M    2    12
+8      Mild Seven Toyota Racing    Guillermo Acosta   +55.226        +3.282  1:26.988      56        M    2    16
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +61.849        +6.623  1:27.054      54        M    2    13
+10        West McLaren-Mercedes        Nill Rosberg   +73.041       +11.192  1:27.052      55        M    2     1
+11      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap       +18.329  1:28.476      56        M    2    17
+12   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +9.755  1:28.317      55        M    2    19
+13      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +0.697  1:28.488      54        M    2    22
+14     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap         +0.03  1:28.662      54        M    2    20
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap       +29.623  1:29.387      56        M    2    21
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Ken Fassbender has recorded 1:25.651 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 57/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  02:20:44.018  1:26.691      55        M    2     4
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +8.708        +8.708  1:24.625      57        M    2     2
+3     Rothmans Williams-Renault      Ken Fassbender   +22.707       +13.999  1:25.431      57        M    2     5
+4               Renault F1 Team     Marcus Svansson   +43.032       +20.325  1:25.878      55        M    2    10
+5     Winfield Benetton-Renault      Daniil Kovalev   +44.305        +1.273  1:26.171      54        M    2     6
+6     Rothmans Williams-Renault       Antonio Iocco   +47.043        +2.738  1:27.350      55        M    2     8
+7   Marlboro Team Lotus-Renault         Sander Metz   +51.588        +4.545  1:26.438      57        M    2    12
+8      Mild Seven Toyota Racing    Guillermo Acosta   +56.321        +4.733  1:26.988      56        M    2    16
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +61.793        +5.472  1:26.738      57        M    2    13
+10        West McLaren-Mercedes        Nill Rosberg   +73.649       +11.856  1:27.052      55        M    2     1
+11      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap       +18.887  1:27.959      57        M    2    17
+12     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap       +10.146  1:27.623      57        M    2    20
+13      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +0.241  1:27.894      57        M    2    22
+14   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +0.998  1:28.317      55        M    2    19
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap       +29.735  1:28.975      57        M    2    21
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Abel Wolfe has recorded 1:24.625 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Melbourne Grand Prix — Australia | Lap 58/58
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  02:22:10.162  1:26.144      58        M    2     4
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +6.841        +6.841  1:24.277      58        M    2     2
+3     Rothmans Williams-Renault      Ken Fassbender   +21.483       +14.642   1:24.92      58        M    2     5
+4               Renault F1 Team     Marcus Svansson   +43.089       +21.606  1:25.878      55        M    2    10
+5     Winfield Benetton-Renault      Daniil Kovalev   +45.763        +2.674  1:26.171      54        M    2     6
+6     Rothmans Williams-Renault       Antonio Iocco   +48.741        +2.978  1:27.350      55        M    2     8
+7   Marlboro Team Lotus-Renault         Sander Metz   +51.807        +3.066  1:26.363      58        M    2    12
+8      Mild Seven Toyota Racing    Guillermo Acosta   +56.721        +4.914  1:26.544      58        M    2    16
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +62.225        +5.504  1:26.576      58        M    2    13
+10        West McLaren-Mercedes        Nill Rosberg   +73.827       +11.602  1:26.321      58        M    2     1
+11      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap       +20.316  1:27.750      58        M    2    17
+12     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap       +10.238  1:27.623      57        M    2    20
+13   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +0.831  1:27.435      58        M    2    19
+14      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +0.241  1:27.894      57        M    2    22
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +31.85  1:28.975      57        M    2    21
+16    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:29.078      15        S    1     3
+17                Honda F1 Team       David Redolfe       DNF           DNF  1:30.724      16        S    0     9
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:32.791      16        S    0    18
+19              Renault F1 Team       Tony Calandre       DNF           DNF  1:33.827       7        S    0    11
+20                Honda F1 Team     Katsuno Yoshiro       DNF           DNF       NaN     NaN        S    0     7
+21    Winfield Benetton-Renault     Kumar Karihayan       DNF           DNF       NaN     NaN        S    0    15
+22     Mild Seven Toyota Racing       Quentin Iazzo       DNF           DNF       NaN     NaN        S    0    14
+
+Fastest Lap | Abel Wolfe has recorded 1:24.277 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *

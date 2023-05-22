@@ -1,0 +1,1431 @@
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 1/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP  FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:01:53.802  NaN     NaN        W    0     4
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.143        +0.143  NaN     NaN        W    0     3
+3         West McLaren-Mercedes       Devon Raleigh    +1.184        +1.041  NaN     NaN        W    0     1
+4         West McLaren-Mercedes        Nill Rosberg    +1.194         +0.01  NaN     NaN        W    0     2
+5     Rothmans Williams-Renault      Ken Fassbender    +1.906        +0.712  NaN     NaN        W    0     5
+6               Renault F1 Team     Marcus Svansson    +3.527        +1.621  NaN     NaN        W    0     9
+7     Winfield Benetton-Renault      Daniil Kovalev    +3.544        +0.017  NaN     NaN        W    0     8
+8     Rothmans Williams-Renault       Antonio Iocco    +4.555        +1.011  NaN     NaN        W    0    10
+9                 Honda F1 Team     Katsuno Yoshiro    +4.864        +0.309  NaN     NaN        W    0    11
+10    Winfield Benetton-Renault     Kumar Karihayan    +5.734         +0.87  NaN     NaN        W    0    13
+11     Mild Seven Toyota Racing    Guillermo Acosta    +5.862        +0.128  NaN     NaN        W    0    15
+12  Marlboro Team Lotus-Renault   Charlie Southgate     +6.12        +0.258  NaN     NaN        W    0    16
+13     Mild Seven Toyota Racing       Quentin Iazzo    +6.976        +0.856  NaN     NaN        W    0    17
+14              Renault F1 Team       Tony Calandre    +7.101        +0.125  NaN     NaN        W    0    12
+15      Minardi-Ferrari F1 Team        Raul Sanchez    +7.152        +0.051  NaN     NaN        W    0    14
+16     Red Bull Sauber-Mercedes      Jamie Lorianne    +8.152          +1.0  NaN     NaN        W    0    19
+17     Red Bull Sauber-Mercedes       Ernie Cédryck    +8.612         +0.46  NaN     NaN        W    0    18
+18   ING Jaguar Racing Mercedes        James Eadorn    +9.272         +0.66  NaN     NaN        W    0    21
+19   ING Jaguar Racing Mercedes      George Aldeill    +9.792         +0.52  NaN     NaN        W    0    22
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello    +9.823        +0.031  NaN     NaN        W    0    20
+21  Marlboro Team Lotus-Renault         Sander Metz   +11.289        +1.466  NaN     NaN        W    0     7
+22                Honda F1 Team       David Redolfe       DNF           DNF  NaN     NaN        W    0     6
+
+Fastest Lap | Abel Wolfe has recorded NaN on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 2/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP  FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:07:03.425  NaN     NaN        W    0     4
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.143        +0.143  NaN     NaN        W    0     3
+3         West McLaren-Mercedes       Devon Raleigh    +1.184        +1.041  NaN     NaN        W    0     1
+4         West McLaren-Mercedes        Nill Rosberg    +1.194         +0.01  NaN     NaN        W    0     2
+5     Rothmans Williams-Renault      Ken Fassbender    +1.906        +0.712  NaN     NaN        W    0     5
+6               Renault F1 Team     Marcus Svansson    +3.527        +1.621  NaN     NaN        W    0     9
+7     Winfield Benetton-Renault      Daniil Kovalev    +3.544        +0.017  NaN     NaN        W    0     8
+8     Rothmans Williams-Renault       Antonio Iocco    +4.555        +1.011  NaN     NaN        W    0    10
+9                 Honda F1 Team     Katsuno Yoshiro    +4.864        +0.309  NaN     NaN        W    0    11
+10    Winfield Benetton-Renault     Kumar Karihayan    +5.734         +0.87  NaN     NaN        W    0    13
+11     Mild Seven Toyota Racing    Guillermo Acosta    +5.862        +0.128  NaN     NaN        W    0    15
+12  Marlboro Team Lotus-Renault   Charlie Southgate     +6.12        +0.258  NaN     NaN        W    0    16
+13     Mild Seven Toyota Racing       Quentin Iazzo    +6.976        +0.856  NaN     NaN        W    0    17
+14              Renault F1 Team       Tony Calandre    +7.101        +0.125  NaN     NaN        W    0    12
+15      Minardi-Ferrari F1 Team        Raul Sanchez    +7.152        +0.051  NaN     NaN        W    0    14
+16     Red Bull Sauber-Mercedes      Jamie Lorianne    +8.152          +1.0  NaN     NaN        W    0    19
+17     Red Bull Sauber-Mercedes       Ernie Cédryck    +8.612         +0.46  NaN     NaN        W    0    18
+18   ING Jaguar Racing Mercedes        James Eadorn    +9.272         +0.66  NaN     NaN        W    0    21
+19   ING Jaguar Racing Mercedes      George Aldeill    +9.792         +0.52  NaN     NaN        W    0    22
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello    +9.823        +0.031  NaN     NaN        W    0    20
+21  Marlboro Team Lotus-Renault         Sander Metz   +11.289        +1.466  NaN     NaN        W    0     7
+22                Honda F1 Team       David Redolfe       DNF           DNF  NaN     NaN        W    0     6
+
+Fastest Lap | Abel Wolfe has recorded NaN on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 3/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP  FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:12:13.048  NaN     NaN        W    0     4
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.143        +0.143  NaN     NaN        W    0     3
+3         West McLaren-Mercedes       Devon Raleigh    +1.184        +1.041  NaN     NaN        W    0     1
+4         West McLaren-Mercedes        Nill Rosberg    +1.194         +0.01  NaN     NaN        W    0     2
+5     Rothmans Williams-Renault      Ken Fassbender    +1.906        +0.712  NaN     NaN        W    0     5
+6               Renault F1 Team     Marcus Svansson    +3.527        +1.621  NaN     NaN        W    0     9
+7     Winfield Benetton-Renault      Daniil Kovalev    +3.544        +0.017  NaN     NaN        W    0     8
+8     Rothmans Williams-Renault       Antonio Iocco    +4.555        +1.011  NaN     NaN        W    0    10
+9                 Honda F1 Team     Katsuno Yoshiro    +4.864        +0.309  NaN     NaN        W    0    11
+10    Winfield Benetton-Renault     Kumar Karihayan    +5.734         +0.87  NaN     NaN        W    0    13
+11     Mild Seven Toyota Racing    Guillermo Acosta    +5.862        +0.128  NaN     NaN        W    0    15
+12  Marlboro Team Lotus-Renault   Charlie Southgate     +6.12        +0.258  NaN     NaN        W    0    16
+13     Mild Seven Toyota Racing       Quentin Iazzo    +6.976        +0.856  NaN     NaN        W    0    17
+14              Renault F1 Team       Tony Calandre    +7.101        +0.125  NaN     NaN        W    0    12
+15      Minardi-Ferrari F1 Team        Raul Sanchez    +7.152        +0.051  NaN     NaN        W    0    14
+16     Red Bull Sauber-Mercedes      Jamie Lorianne    +8.152          +1.0  NaN     NaN        W    0    19
+17     Red Bull Sauber-Mercedes       Ernie Cédryck    +8.612         +0.46  NaN     NaN        W    0    18
+18   ING Jaguar Racing Mercedes        James Eadorn    +9.272         +0.66  NaN     NaN        W    0    21
+19   ING Jaguar Racing Mercedes      George Aldeill    +9.792         +0.52  NaN     NaN        W    0    22
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello    +9.823        +0.031  NaN     NaN        W    0    20
+21  Marlboro Team Lotus-Renault         Sander Metz   +11.289        +1.466  NaN     NaN        W    0     7
+22                Honda F1 Team       David Redolfe       DNF           DNF  NaN     NaN        W    0     6
+
+Fastest Lap | Abel Wolfe has recorded NaN on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 4/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP  FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:17:22.671  NaN     NaN        W    0     4
+2     Scuderia Ferrari Vodafone   Charles Hérnandez     +0.35         +0.35  NaN     NaN        W    0     3
+3         West McLaren-Mercedes       Devon Raleigh      +0.7         +0.35  NaN     NaN        W    0     1
+4         West McLaren-Mercedes        Nill Rosberg     +1.05         +0.35  NaN     NaN        W    0     2
+5     Rothmans Williams-Renault      Ken Fassbender      +1.4         +0.35  NaN     NaN        W    0     5
+6               Renault F1 Team     Marcus Svansson     +1.75         +0.35  NaN     NaN        W    0     9
+7     Winfield Benetton-Renault      Daniil Kovalev      +2.1         +0.35  NaN     NaN        W    0     8
+8     Rothmans Williams-Renault       Antonio Iocco     +2.45         +0.35  NaN     NaN        W    0    10
+9                 Honda F1 Team     Katsuno Yoshiro      +2.8         +0.35  NaN     NaN        W    0    11
+10    Winfield Benetton-Renault     Kumar Karihayan     +3.15         +0.35  NaN     NaN        W    0    13
+11     Mild Seven Toyota Racing    Guillermo Acosta      +3.5         +0.35  NaN     NaN        W    0    15
+12  Marlboro Team Lotus-Renault   Charlie Southgate     +3.85         +0.35  NaN     NaN        W    0    16
+13     Mild Seven Toyota Racing       Quentin Iazzo      +4.2         +0.35  NaN     NaN        W    0    17
+14              Renault F1 Team       Tony Calandre     +4.55         +0.35  NaN     NaN        W    0    12
+15      Minardi-Ferrari F1 Team        Raul Sanchez      +4.9         +0.35  NaN     NaN        W    0    14
+16     Red Bull Sauber-Mercedes      Jamie Lorianne     +5.25         +0.35  NaN     NaN        W    0    19
+17     Red Bull Sauber-Mercedes       Ernie Cédryck      +5.6         +0.35  NaN     NaN        W    0    18
+18   ING Jaguar Racing Mercedes        James Eadorn     +5.95         +0.35  NaN     NaN        W    0    21
+19   ING Jaguar Racing Mercedes      George Aldeill      +6.3         +0.35  NaN     NaN        W    0    22
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello     +6.65         +0.35  NaN     NaN        W    0    20
+21  Marlboro Team Lotus-Renault         Sander Metz      +7.0         +0.35  NaN     NaN        W    0     7
+22                Honda F1 Team       David Redolfe       DNF           DNF  NaN     NaN        W    0     6
+
+Fastest Lap | Abel Wolfe has recorded NaN on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 5/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP  FL. FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:22:32.294  NaN     NaN        W    0     4
+2     Scuderia Ferrari Vodafone   Charles Hérnandez     +0.35         +0.35  NaN     NaN        W    0     3
+3         West McLaren-Mercedes       Devon Raleigh      +0.7         +0.35  NaN     NaN        W    0     1
+4         West McLaren-Mercedes        Nill Rosberg     +1.05         +0.35  NaN     NaN        W    0     2
+5     Rothmans Williams-Renault      Ken Fassbender      +1.4         +0.35  NaN     NaN        W    0     5
+6               Renault F1 Team     Marcus Svansson     +1.75         +0.35  NaN     NaN        W    0     9
+7     Winfield Benetton-Renault      Daniil Kovalev      +2.1         +0.35  NaN     NaN        W    0     8
+8     Rothmans Williams-Renault       Antonio Iocco     +2.45         +0.35  NaN     NaN        W    0    10
+9                 Honda F1 Team     Katsuno Yoshiro      +2.8         +0.35  NaN     NaN        W    0    11
+10    Winfield Benetton-Renault     Kumar Karihayan     +3.15         +0.35  NaN     NaN        W    0    13
+11     Mild Seven Toyota Racing    Guillermo Acosta      +3.5         +0.35  NaN     NaN        W    0    15
+12  Marlboro Team Lotus-Renault   Charlie Southgate     +3.85         +0.35  NaN     NaN        W    0    16
+13     Mild Seven Toyota Racing       Quentin Iazzo      +4.2         +0.35  NaN     NaN        W    0    17
+14              Renault F1 Team       Tony Calandre     +4.55         +0.35  NaN     NaN        W    0    12
+15      Minardi-Ferrari F1 Team        Raul Sanchez      +4.9         +0.35  NaN     NaN        W    0    14
+16     Red Bull Sauber-Mercedes      Jamie Lorianne     +5.25         +0.35  NaN     NaN        W    0    19
+17     Red Bull Sauber-Mercedes       Ernie Cédryck      +5.6         +0.35  NaN     NaN        W    0    18
+18   ING Jaguar Racing Mercedes        James Eadorn     +5.95         +0.35  NaN     NaN        W    0    21
+19   ING Jaguar Racing Mercedes      George Aldeill      +6.3         +0.35  NaN     NaN        W    0    22
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello     +6.65         +0.35  NaN     NaN        W    0    20
+21  Marlboro Team Lotus-Renault         Sander Metz      +7.0         +0.35  NaN     NaN        W    0     7
+22                Honda F1 Team       David Redolfe       DNF           DNF  NaN     NaN        W    0     6
+
+Fastest Lap | Abel Wolfe has recorded NaN on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 6/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:24:24.365  1:51.021       6        W    0     2
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.141        +1.141  1:52.861       6        W    0     3
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +1.429        +0.288    1:53.5       6        W    0     4
+4         West McLaren-Mercedes       Devon Raleigh    +1.959         +0.53  1:53.329       6        W    0     1
+5     Rothmans Williams-Renault      Ken Fassbender    +2.235        +0.276  1:52.906       6        W    0     5
+6     Winfield Benetton-Renault      Daniil Kovalev    +3.012        +0.777  1:52.983       6        W    0     8
+7     Rothmans Williams-Renault       Antonio Iocco    +3.323        +0.311  1:52.944       6        W    0    10
+8               Renault F1 Team     Marcus Svansson    +3.748        +0.425  1:54.068       6        W    0     9
+9                 Honda F1 Team     Katsuno Yoshiro    +4.135        +0.387  1:53.405       6        W    0    11
+10    Winfield Benetton-Renault     Kumar Karihayan    +4.898        +0.763  1:53.819       6        W    0    13
+11     Mild Seven Toyota Racing    Guillermo Acosta    +6.572        +1.674  1:55.143       6        W    0    15
+12     Mild Seven Toyota Racing       Quentin Iazzo    +6.836        +0.264  1:54.707       6        W    0    17
+13  Marlboro Team Lotus-Renault   Charlie Southgate     +7.12        +0.284  1:55.341       6        W    0    16
+14      Minardi-Ferrari F1 Team        Raul Sanchez    +7.457        +0.337  1:54.628       6        W    0    14
+15     Red Bull Sauber-Mercedes      Jamie Lorianne    +7.736        +0.279  1:54.557       6        W    0    19
+16              Renault F1 Team       Tony Calandre    +8.925        +1.189  1:56.446       6        W    0    12
+17   ING Jaguar Racing Mercedes        James Eadorn    +8.937        +0.012  1:55.057       6        W    0    21
+18   ING Jaguar Racing Mercedes      George Aldeill    +9.547         +0.61  1:55.318       6        W    0    22
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +10.342        +0.795  1:56.813       6        W    0    18
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello   +10.721        +0.379  1:56.141       6        W    0    20
+21  Marlboro Team Lotus-Renault         Sander Metz   +13.226        +2.505  1:58.297       6        W    0     7
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Nill Rosberg has recorded 1:51.021 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 7/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:26:16.182  1:51.021       6        W    0     2
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +1.063        +1.063  1:51.451       7        W    0     4
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.382        +0.319  1:52.058       7        W    0     3
+4         West McLaren-Mercedes       Devon Raleigh    +1.934        +0.552  1:51.792       7        W    0     1
+5     Rothmans Williams-Renault      Ken Fassbender    +3.082        +1.148  1:52.664       7        W    0     5
+6     Rothmans Williams-Renault       Antonio Iocco     +4.02        +0.938  1:52.514       7        W    0    10
+7     Winfield Benetton-Renault      Daniil Kovalev    +4.755        +0.735  1:52.983       6        W    0     8
+8               Renault F1 Team     Marcus Svansson    +5.966        +1.211  1:54.035       7        W    0     9
+9     Winfield Benetton-Renault     Kumar Karihayan    +7.961        +1.995  1:53.819       6        W    0    13
+10     Mild Seven Toyota Racing    Guillermo Acosta    +8.537        +0.576  1:53.782       7        W    0    15
+11                Honda F1 Team     Katsuno Yoshiro    +8.577         +0.04  1:53.405       6        W    0    11
+12  Marlboro Team Lotus-Renault   Charlie Southgate    +9.478        +0.901  1:54.175       7        W    0    16
+13      Minardi-Ferrari F1 Team        Raul Sanchez    +9.608         +0.13  1:53.967       7        W    0    14
+14     Mild Seven Toyota Racing       Quentin Iazzo    +9.854        +0.246  1:54.707       6        W    0    17
+15     Red Bull Sauber-Mercedes      Jamie Lorianne    +12.26        +2.406  1:54.557       6        W    0    19
+16              Renault F1 Team       Tony Calandre   +12.409        +0.149  1:55.300       7        W    0    12
+17   ING Jaguar Racing Mercedes      George Aldeill    +13.22        +0.811  1:55.318       6        W    0    22
+18   ING Jaguar Racing Mercedes        James Eadorn   +13.886        +0.666  1:55.057       6        W    0    21
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +14.004        +0.118  1:55.479       7        W    0    18
+20  Marlboro Team Lotus-Renault         Sander Metz   +14.151        +0.147  1:52.742       7        W    0     7
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +15.193        +1.042  1:56.141       6        W    0    20
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Nill Rosberg has recorded 1:51.021 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 8/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:28:07.782  1:51.021       6        W    0     2
+2         West McLaren-Mercedes       Devon Raleigh    +1.069        +1.069  1:50.735       8        W    0     1
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +2.201        +1.132  1:51.451       7        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +2.545        +0.344  1:52.058       7        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender    +3.635         +1.09  1:52.153       8        W    0     5
+6     Rothmans Williams-Renault       Antonio Iocco    +5.614        +1.979  1:52.514       7        W    0    10
+7               Renault F1 Team     Marcus Svansson    +6.635        +1.021  1:52.268       8        W    0     9
+8     Winfield Benetton-Renault      Daniil Kovalev     +6.77        +0.135  1:52.983       6        W    0     8
+9     Winfield Benetton-Renault     Kumar Karihayan   +10.102        +3.332  1:53.741       8        W    0    13
+10                Honda F1 Team     Katsuno Yoshiro    +10.71        +0.608  1:53.405       6        W    0    11
+11     Mild Seven Toyota Racing    Guillermo Acosta    +11.41          +0.7  1:53.782       7        W    0    15
+12     Mild Seven Toyota Racing       Quentin Iazzo   +11.565        +0.155  1:53.311       8        W    0    17
+13      Minardi-Ferrari F1 Team        Raul Sanchez   +12.502        +0.937  1:53.967       7        W    0    14
+14  Marlboro Team Lotus-Renault   Charlie Southgate   +13.099        +0.597  1:54.175       7        W    0    16
+15     Red Bull Sauber-Mercedes      Jamie Lorianne   +15.052        +1.953  1:54.392       8        W    0    19
+16              Renault F1 Team       Tony Calandre   +15.963        +0.911  1:55.153       8        W    0    12
+17   ING Jaguar Racing Mercedes      George Aldeill   +16.045        +0.082  1:54.425       8        W    0    22
+18     Red Bull Sauber-Mercedes       Ernie Cédryck   +17.111        +1.066  1:54.707       8        W    0    18
+19   ING Jaguar Racing Mercedes        James Eadorn   +17.445        +0.334  1:55.057       6        W    0    21
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello   +17.557        +0.112  1:53.964       8        W    0    20
+21  Marlboro Team Lotus-Renault         Sander Metz   +17.982        +0.425  1:52.742       7        W    0     7
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:50.735 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 9/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:29:58.993  1:51.021       6        W    0     2
+2         West McLaren-Mercedes       Devon Raleigh    +0.202        +0.202  1:50.344       9        W    0     1
+3     Scuderia Ferrari Vodafone          Abel Wolfe     +2.55        +2.348  1:51.451       7        W    0     4
+4     Rothmans Williams-Renault      Ken Fassbender    +3.861        +1.311  1:51.437       9        W    0     5
+5     Scuderia Ferrari Vodafone   Charles Hérnandez    +4.032        +0.171  1:52.058       7        W    0     3
+6               Renault F1 Team     Marcus Svansson    +7.278        +3.246  1:51.854       9        W    0     9
+7     Rothmans Williams-Renault       Antonio Iocco    +7.333        +0.055  1:52.514       7        W    0    10
+8     Winfield Benetton-Renault      Daniil Kovalev    +7.744        +0.411  1:52.185       9        W    0     8
+9                 Honda F1 Team     Katsuno Yoshiro   +12.452        +4.708  1:52.952       9        W    0    11
+10     Mild Seven Toyota Racing    Guillermo Acosta   +13.898        +1.446  1:53.699       9        W    0    15
+11    Winfield Benetton-Renault     Kumar Karihayan    +13.92        +0.022  1:53.741       8        W    0    13
+12      Minardi-Ferrari F1 Team        Raul Sanchez   +14.269        +0.349  1:52.977       9        W    0    14
+13  Marlboro Team Lotus-Renault   Charlie Southgate   +14.963        +0.694  1:53.075       9        W    0    16
+14     Mild Seven Toyota Racing       Quentin Iazzo   +15.307        +0.344  1:53.311       8        W    0    17
+15              Renault F1 Team       Tony Calandre   +17.427         +2.12  1:52.675       9        W    0    12
+16     Red Bull Sauber-Mercedes      Jamie Lorianne   +18.011        +0.584   1:54.17       9        W    0    19
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +19.483        +1.472  1:53.136       9        W    0    20
+18   ING Jaguar Racing Mercedes      George Aldeill   +20.476        +0.993  1:54.425       8        W    0    22
+19   ING Jaguar Racing Mercedes        James Eadorn   +20.488        +0.012  1:54.254       9        W    0    21
+20     Red Bull Sauber-Mercedes       Ernie Cédryck   +20.671        +0.183  1:54.707       8        W    0    18
+21  Marlboro Team Lotus-Renault         Sander Metz   +21.995        +1.324  1:52.742       7        W    0     7
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:50.344 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 10/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:31:49.809  1:50.816      10        W    0     2
+2         West McLaren-Mercedes       Devon Raleigh    +1.327        +1.327  1:50.344       9        W    0     1
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +3.008        +1.681  1:51.274      10        W    0     4
+4     Rothmans Williams-Renault      Ken Fassbender     +3.44        +0.432  1:50.395      10        W    0     5
+5     Scuderia Ferrari Vodafone   Charles Hérnandez    +6.142        +2.702  1:52.058       7        W    0     3
+6     Winfield Benetton-Renault      Daniil Kovalev    +8.901        +2.759  1:51.973      10        W    0     8
+7     Rothmans Williams-Renault       Antonio Iocco    +8.931         +0.03  1:52.414      10        W    0    10
+8               Renault F1 Team     Marcus Svansson    +10.19        +1.259  1:51.854       9        W    0     9
+9                 Honda F1 Team     Katsuno Yoshiro   +14.179        +3.989  1:52.542      10        W    0    11
+10      Minardi-Ferrari F1 Team        Raul Sanchez   +16.042        +1.863  1:52.589      10        W    0    14
+11     Mild Seven Toyota Racing    Guillermo Acosta   +16.157        +0.115  1:53.075      10        W    0    15
+12    Winfield Benetton-Renault     Kumar Karihayan   +16.836        +0.679  1:53.732      10        W    0    13
+13     Mild Seven Toyota Racing       Quentin Iazzo    +17.22        +0.384  1:52.729      10        W    0    17
+14  Marlboro Team Lotus-Renault   Charlie Southgate   +18.263        +1.043  1:53.075       9        W    0    16
+15              Renault F1 Team       Tony Calandre   +19.383         +1.12  1:52.675       9        W    0    12
+16     Red Bull Sauber-Mercedes      Jamie Lorianne   +21.452        +2.069   1:54.17       9        W    0    19
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +22.462         +1.01  1:53.136       9        W    0    20
+18   ING Jaguar Racing Mercedes      George Aldeill   +22.939        +0.477  1:53.278      10        W    0    22
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +23.639          +0.7  1:53.784      10        W    0    18
+20   ING Jaguar Racing Mercedes        James Eadorn   +24.542        +0.903  1:54.254       9        W    0    21
+21  Marlboro Team Lotus-Renault         Sander Metz   +24.628        +0.086  1:52.742       7        W    0     7
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:50.344 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 11/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:33:40.297  1:50.488      11        W    0     2
+2         West McLaren-Mercedes       Devon Raleigh    +1.463        +1.463  1:50.344       9        W    0     1
+3     Rothmans Williams-Renault      Ken Fassbender    +3.301        +1.838  1:50.349      11        W    0     5
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +4.724        +1.423  1:51.274      10        W    0     4
+5     Scuderia Ferrari Vodafone   Charles Hérnandez    +6.796        +2.072  1:51.142      11        W    0     3
+6     Rothmans Williams-Renault       Antonio Iocco    +9.917        +3.121  1:51.474      11        W    0    10
+7     Winfield Benetton-Renault      Daniil Kovalev   +10.553        +0.636  1:51.973      10        W    0     8
+8               Renault F1 Team     Marcus Svansson    +12.23        +1.677  1:51.854       9        W    0     9
+9                 Honda F1 Team     Katsuno Yoshiro   +16.297        +4.067  1:52.542      10        W    0    11
+10      Minardi-Ferrari F1 Team        Raul Sanchez   +18.117         +1.82  1:52.562      11        W    0    14
+11     Mild Seven Toyota Racing    Guillermo Acosta   +19.267         +1.15  1:53.075      10        W    0    15
+12  Marlboro Team Lotus-Renault   Charlie Southgate   +20.709        +1.442  1:52.933      11        W    0    16
+13    Winfield Benetton-Renault     Kumar Karihayan   +21.117        +0.408  1:53.732      10        W    0    13
+14     Mild Seven Toyota Racing       Quentin Iazzo   +21.281        +0.164  1:52.729      10        W    0    17
+15              Renault F1 Team       Tony Calandre   +21.413        +0.132  1:52.518      11        W    0    12
+16     Red Bull Sauber-Mercedes      Jamie Lorianne   +23.991        +2.578  1:53.027      11        W    0    19
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello    +24.99        +0.999  1:53.015      11        W    0    20
+18   ING Jaguar Racing Mercedes      George Aldeill   +25.872        +0.882  1:53.278      10        W    0    22
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +26.064        +0.192  1:52.913      11        W    0    18
+20   ING Jaguar Racing Mercedes        James Eadorn   +28.324         +2.26  1:54.254       9        W    0    21
+21  Marlboro Team Lotus-Renault         Sander Metz   +29.227        +0.903  1:52.742       7        W    0     7
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:50.344 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 12/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:35:30.398  1:50.101      12        W    0     2
+2         West McLaren-Mercedes       Devon Raleigh     +2.82         +2.82  1:50.344       9        W    0     1
+3     Rothmans Williams-Renault      Ken Fassbender    +4.072        +1.252  1:50.349      11        W    0     5
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +5.416        +1.344  1:50.793      12        W    0     4
+5     Scuderia Ferrari Vodafone   Charles Hérnandez    +7.186         +1.77  1:50.491      12        W    0     3
+6     Rothmans Williams-Renault       Antonio Iocco   +11.479        +4.293  1:51.474      11        W    0    10
+7     Winfield Benetton-Renault      Daniil Kovalev   +11.666        +0.187  1:51.214      12        W    0     8
+8               Renault F1 Team     Marcus Svansson   +13.868        +2.202  1:51.738      12        W    0     9
+9                 Honda F1 Team     Katsuno Yoshiro   +18.207        +4.339  1:52.010      12        W    0    11
+10      Minardi-Ferrari F1 Team        Raul Sanchez   +19.803        +1.596  1:51.786      12        W    0    14
+11     Mild Seven Toyota Racing    Guillermo Acosta    +20.53        +0.727  1:51.364      12        W    0    15
+12  Marlboro Team Lotus-Renault   Charlie Southgate   +20.752        +0.222  1:50.144      12        W    0    16
+13              Renault F1 Team       Tony Calandre   +22.546        +1.794  1:51.233      12        W    0    12
+14     Mild Seven Toyota Racing       Quentin Iazzo   +23.369        +0.823  1:52.188      12        W    0    17
+15    Winfield Benetton-Renault     Kumar Karihayan   +23.759         +0.39  1:52.742      12        W    0    13
+16     Red Bull Sauber-Mercedes       Ernie Cédryck   +29.578        +5.819  1:52.913      11        W    0    18
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +29.683        +0.105  1:53.027      11        W    0    19
+18   ING Jaguar Racing Mercedes        James Eadorn   +29.958        +0.275  1:51.735      12        W    0    21
+19   ING Jaguar Racing Mercedes      George Aldeill   +30.108         +0.15  1:53.278      10        W    0    22
+20  Marlboro Team Lotus-Renault         Sander Metz   +32.767        +2.659  1:52.742       7        W    0     7
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +38.929        +6.162  1:53.015      11        W    0    20
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Nill Rosberg has recorded 1:50.101 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 13/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:37:20.158  1:49.760      13        W    0     2
+2     Rothmans Williams-Renault      Ken Fassbender    +3.328        +3.328  1:49.016      13        W    0     5
+3         West McLaren-Mercedes       Devon Raleigh    +4.452        +1.124  1:50.344       9        W    0     1
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +6.025        +1.573  1:50.369      13        W    0     4
+5     Scuderia Ferrari Vodafone   Charles Hérnandez    +7.673        +1.648  1:50.247      13        W    0     3
+6     Winfield Benetton-Renault      Daniil Kovalev   +12.126        +4.453   1:50.22      13        W    0     8
+7     Rothmans Williams-Renault       Antonio Iocco   +13.129        +1.003  1:51.410      13        W    0    10
+8               Renault F1 Team     Marcus Svansson   +14.355        +1.226  1:50.247      13        W    0     9
+9                 Honda F1 Team     Katsuno Yoshiro   +19.174        +4.819  1:50.726      13        W    0    11
+10      Minardi-Ferrari F1 Team        Raul Sanchez   +21.905        +2.731  1:51.786      12        W    0    14
+11  Marlboro Team Lotus-Renault   Charlie Southgate   +21.923        +0.018  1:50.144      12        W    0    16
+12     Mild Seven Toyota Racing    Guillermo Acosta   +22.104        +0.181  1:51.334      13        W    0    15
+13              Renault F1 Team       Tony Calandre   +23.513        +1.409  1:50.726      13        W    0    12
+14     Mild Seven Toyota Racing       Quentin Iazzo     +24.3        +0.787  1:50.691      13        W    0    17
+15    Winfield Benetton-Renault     Kumar Karihayan   +26.788        +2.488  1:52.742      12        W    0    13
+16     Red Bull Sauber-Mercedes      Jamie Lorianne    +31.36        +4.572  1:51.437      13        W    0    19
+17   ING Jaguar Racing Mercedes        James Eadorn    +31.74         +0.38  1:51.542      13        W    0    21
+18     Red Bull Sauber-Mercedes       Ernie Cédryck   +31.982        +0.242  1:52.164      13        W    0    18
+19   ING Jaguar Racing Mercedes      George Aldeill   +32.255        +0.273  1:51.907      13        W    0    22
+20  Marlboro Team Lotus-Renault         Sander Metz   +32.628        +0.373  1:49.621      13        W    0     7
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +41.127        +8.499  1:51.958      13        W    0    20
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Ken Fassbender has recorded 1:49.016 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 14/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:39:10.482  1:49.760      13        W    0     2
+2     Rothmans Williams-Renault      Ken Fassbender    +1.757        +1.757  1:48.753      14        W    0     5
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +4.437         +2.68  1:48.736      14        W    0     4
+4         West McLaren-Mercedes       Devon Raleigh    +4.523        +0.086  1:50.344       9        W    0     1
+5     Scuderia Ferrari Vodafone   Charles Hérnandez    +6.242        +1.719  1:48.893      14        W    0     3
+6     Rothmans Williams-Renault       Antonio Iocco    +12.15        +5.908  1:49.345      14        W    0    10
+7     Winfield Benetton-Renault      Daniil Kovalev   +12.172        +0.022   1:50.22      13        W    0     8
+8               Renault F1 Team     Marcus Svansson   +14.525        +2.353  1:50.247      13        W    0     9
+9                 Honda F1 Team     Katsuno Yoshiro   +19.861        +5.336  1:50.726      13        W    0    11
+10      Minardi-Ferrari F1 Team        Raul Sanchez   +22.383        +2.522  1:50.801      14        W    0    14
+11     Mild Seven Toyota Racing    Guillermo Acosta     +22.7        +0.317  1:50.919      14        W    0    15
+12              Renault F1 Team       Tony Calandre   +23.949        +1.249  1:50.726      13        W    0    12
+13  Marlboro Team Lotus-Renault   Charlie Southgate   +24.578        +0.629  1:50.144      12        W    0    16
+14     Mild Seven Toyota Racing       Quentin Iazzo   +25.171        +0.593  1:50.691      13        W    0    17
+15    Winfield Benetton-Renault     Kumar Karihayan   +29.558        +4.387  1:52.742      12        W    0    13
+16     Red Bull Sauber-Mercedes      Jamie Lorianne   +32.917        +3.359  1:51.437      13        W    0    19
+17   ING Jaguar Racing Mercedes        James Eadorn   +34.088        +1.171  1:51.542      13        W    0    21
+18  Marlboro Team Lotus-Renault         Sander Metz    +36.61        +2.522  1:49.621      13        W    0     7
+19   ING Jaguar Racing Mercedes      George Aldeill   +36.675        +0.065  1:51.907      13        W    0    22
+20     Red Bull Sauber-Mercedes       Ernie Cédryck   +36.852        +0.177  1:52.164      13        W    0    18
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +42.794        +5.942  1:51.958      13        W    0    20
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Abel Wolfe has recorded 1:48.736 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 15/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:40:59.761  1:49.279      15        W    0     2
+2     Rothmans Williams-Renault      Ken Fassbender    +1.834        +1.834  1:48.753      14        W    0     5
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +3.433        +1.599  1:48.275      15        W    0     4
+4         West McLaren-Mercedes       Devon Raleigh    +4.546        +1.113  1:49.301      15        W    0     1
+5     Scuderia Ferrari Vodafone   Charles Hérnandez    +5.725        +1.179  1:48.762      15        W    0     3
+6     Winfield Benetton-Renault      Daniil Kovalev   +12.733        +7.008   1:49.84      15        W    0     8
+7     Rothmans Williams-Renault       Antonio Iocco   +13.093         +0.36  1:49.345      14        W    0    10
+8               Renault F1 Team     Marcus Svansson    +16.13        +3.037  1:50.247      13        W    0     9
+9                 Honda F1 Team     Katsuno Yoshiro   +21.205        +5.075  1:50.622      15        W    0    11
+10     Mild Seven Toyota Racing    Guillermo Acosta   +24.538        +3.333  1:50.919      14        W    0    15
+11      Minardi-Ferrari F1 Team        Raul Sanchez   +25.802        +1.264  1:50.801      14        W    0    14
+12     Mild Seven Toyota Racing       Quentin Iazzo   +26.712         +0.91  1:50.691      13        W    0    17
+13  Marlboro Team Lotus-Renault   Charlie Southgate   +27.146        +0.434  1:50.144      12        W    0    16
+14              Renault F1 Team       Tony Calandre   +27.258        +0.112  1:50.726      13        W    0    12
+15    Winfield Benetton-Renault     Kumar Karihayan   +31.319        +4.061  1:51.040      15        W    0    13
+16     Red Bull Sauber-Mercedes      Jamie Lorianne   +35.415        +4.096  1:51.437      13        W    0    19
+17  Marlboro Team Lotus-Renault         Sander Metz   +36.907        +1.492  1:49.575      15        W    0     7
+18   ING Jaguar Racing Mercedes        James Eadorn    +38.41        +1.503  1:51.542      13        W    0    21
+19   ING Jaguar Racing Mercedes      George Aldeill   +39.685        +1.275  1:51.907      13        W    0    22
+20     Red Bull Sauber-Mercedes       Ernie Cédryck   +40.804        +1.119  1:52.164      13        W    0    18
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +45.686        +4.882  1:51.958      13        W    0    20
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Abel Wolfe has recorded 1:48.275 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 16/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:42:48.284  1:48.523      16        W    0     2
+2     Rothmans Williams-Renault      Ken Fassbender    +2.459        +2.459  1:48.753      14        W    0     5
+3         West McLaren-Mercedes       Devon Raleigh    +3.452        +0.993  1:47.429      16        W    0     1
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +3.763        +0.311  1:48.275      15        W    0     4
+5     Scuderia Ferrari Vodafone   Charles Hérnandez    +5.812        +2.049   1:48.61      16        W    0     3
+6     Winfield Benetton-Renault      Daniil Kovalev   +14.518        +8.706   1:49.84      15        W    0     8
+7     Rothmans Williams-Renault       Antonio Iocco   +15.641        +1.123  1:49.345      14        W    0    10
+8               Renault F1 Team     Marcus Svansson   +17.743        +2.102  1:50.135      16        W    0     9
+9      Mild Seven Toyota Racing    Guillermo Acosta   +26.588        +8.845  1:50.573      16        W    0    15
+10                Honda F1 Team     Katsuno Yoshiro   +26.987        +0.399  1:50.622      15        W    0    11
+11  Marlboro Team Lotus-Renault   Charlie Southgate   +29.763        +2.776  1:50.144      12        W    0    16
+12      Minardi-Ferrari F1 Team        Raul Sanchez   +30.595        +0.832  1:50.801      14        W    0    14
+13     Mild Seven Toyota Racing       Quentin Iazzo    +30.62        +0.025  1:50.691      13        W    0    17
+14              Renault F1 Team       Tony Calandre   +31.211        +0.591  1:50.726      13        W    0    12
+15    Winfield Benetton-Renault     Kumar Karihayan    +33.86        +2.649  1:51.040      15        W    0    13
+16  Marlboro Team Lotus-Renault         Sander Metz   +37.894        +4.034  1:49.510      16        W    0     7
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +38.689        +0.795  1:51.437      13        W    0    19
+18   ING Jaguar Racing Mercedes        James Eadorn   +42.615        +3.926  1:51.542      13        W    0    21
+19   ING Jaguar Racing Mercedes      George Aldeill   +42.817        +0.202  1:51.655      16        W    0    22
+20     Red Bull Sauber-Mercedes       Ernie Cédryck   +43.735        +0.918  1:51.454      16        W    0    18
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +49.031        +5.296  1:51.867      16        W    0    20
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:47.429 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 17/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:44:36.608  1:48.324      17        W    0     2
+2         West McLaren-Mercedes       Devon Raleigh    +2.403        +2.403  1:47.275      17        W    0     1
+3     Rothmans Williams-Renault      Ken Fassbender    +3.087        +0.684  1:48.753      14        W    0     5
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +3.413        +0.326  1:47.974      17        W    0     4
+5     Scuderia Ferrari Vodafone   Charles Hérnandez    +6.153         +2.74   1:48.61      16        W    0     3
+6     Winfield Benetton-Renault      Daniil Kovalev   +16.085        +9.932   1:49.84      15        W    0     8
+7               Renault F1 Team     Marcus Svansson    +18.81        +2.725  1:49.391      17        W    0     9
+8     Rothmans Williams-Renault       Antonio Iocco   +20.105        +1.295  1:49.345      14        W    0    10
+9      Mild Seven Toyota Racing    Guillermo Acosta    +29.25        +9.145  1:50.573      16        W    0    15
+10                Honda F1 Team     Katsuno Yoshiro   +31.322        +2.072  1:50.622      15        W    0    11
+11  Marlboro Team Lotus-Renault   Charlie Southgate    +33.94        +2.618  1:50.144      12        W    0    16
+12              Renault F1 Team       Tony Calandre   +35.222        +1.282  1:50.726      13        W    0    12
+13      Minardi-Ferrari F1 Team        Raul Sanchez    +35.62        +0.398  1:50.801      14        W    0    14
+14     Mild Seven Toyota Racing       Quentin Iazzo   +35.957        +0.337  1:50.691      13        W    0    17
+15    Winfield Benetton-Renault     Kumar Karihayan   +36.446        +0.489   1:50.91      17        W    0    13
+16  Marlboro Team Lotus-Renault         Sander Metz   +39.572        +3.126  1:49.510      16        W    0     7
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +42.231        +2.659  1:51.437      13        W    0    19
+18   ING Jaguar Racing Mercedes      George Aldeill   +47.569        +5.338  1:51.655      16        W    0    22
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +48.371        +0.802  1:51.454      16        W    0    18
+20   ING Jaguar Racing Mercedes        James Eadorn   +48.465        +0.094  1:51.542      13        W    0    21
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +52.476        +4.011  1:51.768      17        W    0    20
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:47.275 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 18/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:46:24.780  1:48.172      18        W    0     2
+2         West McLaren-Mercedes       Devon Raleigh    +2.651        +2.651  1:47.275      17        W    0     1
+3     Rothmans Williams-Renault      Ken Fassbender    +3.994        +1.343  1:48.753      14        W    0     5
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +5.687        +1.693  1:47.974      17        W    0     4
+5     Scuderia Ferrari Vodafone   Charles Hérnandez    +6.611        +0.924   1:48.61      16        W    0     3
+6     Winfield Benetton-Renault      Daniil Kovalev   +17.847       +11.236   1:49.84      15        W    0     8
+7               Renault F1 Team     Marcus Svansson   +20.738        +2.891  1:49.391      17        W    0     9
+8     Rothmans Williams-Renault       Antonio Iocco    +20.86        +0.122  1:48.927      18        W    0    10
+9      Mild Seven Toyota Racing    Guillermo Acosta   +31.791       +10.931  1:50.573      16        W    0    15
+10                Honda F1 Team     Katsuno Yoshiro    +33.37        +1.579   1:50.22      18        W    0    11
+11  Marlboro Team Lotus-Renault   Charlie Southgate   +36.516        +3.146  1:50.144      12        W    0    16
+12              Renault F1 Team       Tony Calandre   +36.557        +0.041  1:49.506      18        W    0    12
+13     Mild Seven Toyota Racing       Quentin Iazzo   +38.279        +1.722  1:50.494      18        W    0    17
+14      Minardi-Ferrari F1 Team        Raul Sanchez    +40.35        +2.071  1:50.801      14        W    0    14
+15    Winfield Benetton-Renault     Kumar Karihayan   +40.604        +0.254   1:50.91      17        W    0    13
+16  Marlboro Team Lotus-Renault         Sander Metz   +41.997        +1.393  1:49.510      16        W    0     7
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +46.019        +4.022  1:51.437      13        W    0    19
+18   ING Jaguar Racing Mercedes        James Eadorn   +51.869         +5.85  1:51.542      13        W    0    21
+19     Red Bull Sauber-Mercedes       Ernie Cédryck   +53.082        +1.213  1:51.454      16        W    0    18
+20   ING Jaguar Racing Mercedes      George Aldeill   +53.212         +0.13  1:51.655      16        W    0    22
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +56.419        +3.207  1:51.768      17        W    0    20
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:47.275 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 19/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:48:13.439  1:48.172      18        W    0     2
+2         West McLaren-Mercedes       Devon Raleigh    +2.201        +2.201  1:47.275      17        W    0     1
+3     Rothmans Williams-Renault      Ken Fassbender    +4.265        +2.064  1:48.753      14        W    0     5
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +5.433        +1.168  1:47.974      17        W    0     4
+5     Scuderia Ferrari Vodafone   Charles Hérnandez    +6.746        +1.313   1:48.61      16        W    0     3
+6     Winfield Benetton-Renault      Daniil Kovalev   +19.338       +12.592   1:49.84      15        W    0     8
+7               Renault F1 Team     Marcus Svansson   +22.104        +2.766  1:49.391      17        W    0     9
+8     Rothmans Williams-Renault       Antonio Iocco   +23.902        +1.798  1:48.927      18        W    0    10
+9                 Honda F1 Team     Katsuno Yoshiro   +35.919       +12.017   1:50.22      18        W    0    11
+10     Mild Seven Toyota Racing    Guillermo Acosta   +36.956        +1.037  1:50.573      16        W    0    15
+11  Marlboro Team Lotus-Renault   Charlie Southgate   +37.797        +0.841  1:49.940      19        W    0    16
+12              Renault F1 Team       Tony Calandre   +39.154        +1.357  1:49.506      18        W    0    12
+13     Mild Seven Toyota Racing       Quentin Iazzo   +40.451        +1.297  1:50.494      18        W    0    17
+14      Minardi-Ferrari F1 Team        Raul Sanchez   +42.593        +2.142  1:50.801      14        W    0    14
+15  Marlboro Team Lotus-Renault         Sander Metz    +42.73        +0.137  1:49.392      19        W    0     7
+16    Winfield Benetton-Renault     Kumar Karihayan   +43.397        +0.667   1:50.91      17        W    0    13
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +49.113        +5.716  1:51.437      13        W    0    19
+18     Red Bull Sauber-Mercedes       Ernie Cédryck   +55.829        +6.716  1:51.406      19        W    0    18
+19   ING Jaguar Racing Mercedes        James Eadorn   +57.341        +1.512  1:51.542      13        W    0    21
+20   ING Jaguar Racing Mercedes      George Aldeill   +58.665        +1.324  1:51.655      16        W    0    22
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello     +60.0        +1.335  1:51.768      17        W    0    20
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:47.275 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 20/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:50:01.510  1:48.071      20        W    0     2
+2         West McLaren-Mercedes       Devon Raleigh     +1.98         +1.98  1:47.275      17        W    0     1
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +5.321        +3.341  1:47.958      20        W    0     4
+4     Rothmans Williams-Renault      Ken Fassbender    +6.623        +1.302  1:48.753      14        W    0     5
+5     Scuderia Ferrari Vodafone   Charles Hérnandez    +7.321        +0.698   1:48.61      16        W    0     3
+6     Winfield Benetton-Renault      Daniil Kovalev    +21.36       +14.039   1:49.84      15        W    0     8
+7               Renault F1 Team     Marcus Svansson   +25.136        +3.776  1:49.391      17        W    0     9
+8     Rothmans Williams-Renault       Antonio Iocco   +26.332        +1.196  1:48.927      18        W    0    10
+9                 Honda F1 Team     Katsuno Yoshiro   +38.372        +12.04   1:50.22      18        W    0    11
+10     Mild Seven Toyota Racing    Guillermo Acosta   +39.638        +1.266  1:50.573      16        W    0    15
+11  Marlboro Team Lotus-Renault   Charlie Southgate   +39.668         +0.03  1:49.940      19        W    0    16
+12              Renault F1 Team       Tony Calandre   +40.514        +0.846  1:49.431      20        W    0    12
+13  Marlboro Team Lotus-Renault         Sander Metz   +45.048        +4.534  1:49.392      19        W    0     7
+14     Mild Seven Toyota Racing       Quentin Iazzo   +45.166        +0.118  1:50.494      18        W    0    17
+15      Minardi-Ferrari F1 Team        Raul Sanchez   +45.795        +0.629  1:50.801      14        W    0    14
+16    Winfield Benetton-Renault     Kumar Karihayan   +47.119        +1.324   1:50.91      17        W    0    13
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +52.702        +5.583  1:51.437      13        W    0    19
+18     Red Bull Sauber-Mercedes       Ernie Cédryck   +59.507        +6.805  1:51.406      19        W    0    18
+19   ING Jaguar Racing Mercedes        James Eadorn   +61.548        +2.041  1:51.542      13        W    0    21
+20   ING Jaguar Racing Mercedes      George Aldeill   +62.668         +1.12  1:51.655      16        W    0    22
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +62.876        +0.208  1:50.946      20        W    0    20
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:47.275 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 21/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:51:49.679  1:48.071      20        W    0     2
+2         West McLaren-Mercedes       Devon Raleigh    +1.771        +1.771  1:47.275      17        W    0     1
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +5.834        +4.063  1:47.958      20        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +7.395        +1.561  1:48.242      21        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender    +7.788        +0.393  1:48.753      14        W    0     5
+6     Winfield Benetton-Renault      Daniil Kovalev   +23.091       +15.303   1:49.84      15        W    0     8
+7               Renault F1 Team     Marcus Svansson   +27.053        +3.962  1:49.391      17        W    0     9
+8     Rothmans Williams-Renault       Antonio Iocco    +28.16        +1.107  1:48.927      18        W    0    10
+9                 Honda F1 Team     Katsuno Yoshiro   +40.717       +12.557   1:50.22      18        W    0    11
+10              Renault F1 Team       Tony Calandre   +41.479        +0.762  1:49.134      21        W    0    12
+11     Mild Seven Toyota Racing    Guillermo Acosta   +42.489         +1.01  1:50.573      16        W    0    15
+12  Marlboro Team Lotus-Renault   Charlie Southgate   +42.911        +0.422  1:49.940      19        W    0    16
+13  Marlboro Team Lotus-Renault         Sander Metz   +46.843        +3.932  1:49.392      19        W    0     7
+14     Mild Seven Toyota Racing       Quentin Iazzo   +47.887        +1.044  1:50.494      18        W    0    17
+15      Minardi-Ferrari F1 Team        Raul Sanchez   +48.308        +0.421  1:50.681      21        W    0    14
+16    Winfield Benetton-Renault     Kumar Karihayan    +48.71        +0.402  1:49.760      21        W    0    13
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +56.438        +7.728  1:51.437      13        W    0    19
+18     Red Bull Sauber-Mercedes       Ernie Cédryck   +62.898         +6.46  1:51.406      19        W    0    18
+19   ING Jaguar Racing Mercedes        James Eadorn   +65.465        +2.567  1:51.542      13        W    0    21
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello   +66.218        +0.753  1:50.946      20        W    0    20
+21   ING Jaguar Racing Mercedes      George Aldeill   +66.497        +0.279  1:51.655      16        W    0    22
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:47.275 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 22/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:53:37.455  1:47.776      22        W    0     2
+2         West McLaren-Mercedes       Devon Raleigh    +1.826        +1.826  1:47.275      17        W    0     1
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +6.546         +4.72  1:47.958      20        W    0     4
+4     Rothmans Williams-Renault      Ken Fassbender    +8.783        +2.237  1:48.753      14        W    0     5
+5     Scuderia Ferrari Vodafone   Charles Hérnandez    +9.838        +1.055  1:48.242      21        W    0     3
+6     Winfield Benetton-Renault      Daniil Kovalev   +24.992       +15.154  1:49.677      22        W    0     8
+7     Rothmans Williams-Renault       Antonio Iocco    +29.08        +4.088  1:48.696      22        W    0    10
+8               Renault F1 Team     Marcus Svansson   +29.286        +0.206  1:49.391      17        W    0     9
+9               Renault F1 Team       Tony Calandre   +45.448       +16.162  1:49.134      21        W    0    12
+10  Marlboro Team Lotus-Renault   Charlie Southgate   +46.334        +0.886  1:49.940      19        W    0    16
+11     Mild Seven Toyota Racing    Guillermo Acosta   +46.658        +0.324  1:50.573      16        W    0    15
+12  Marlboro Team Lotus-Renault         Sander Metz   +49.905        +3.247  1:49.392      19        W    0     7
+13     Mild Seven Toyota Racing       Quentin Iazzo   +51.864        +1.959  1:50.494      18        W    0    17
+14    Winfield Benetton-Renault     Kumar Karihayan   +52.657        +0.793  1:49.760      21        W    0    13
+15      Minardi-Ferrari F1 Team        Raul Sanchez   +53.227         +0.57  1:50.681      21        W    0    14
+16                Honda F1 Team     Katsuno Yoshiro    +54.06        +0.833   1:50.22      18        W    0    11
+17     Red Bull Sauber-Mercedes      Jamie Lorianne    +60.15         +6.09  1:51.437      13        W    0    19
+18     Red Bull Sauber-Mercedes       Ernie Cédryck    +66.94         +6.79  1:51.406      19        W    0    18
+19   ING Jaguar Racing Mercedes        James Eadorn   +69.637        +2.697  1:51.542      13        W    0    21
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello   +69.769        +0.132  1:50.946      20        W    0    20
+21   ING Jaguar Racing Mercedes      George Aldeill   +69.929         +0.16  1:51.208      22        W    0    22
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:47.275 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 23/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:55:25.284  1:47.776      22        W    0     2
+2         West McLaren-Mercedes       Devon Raleigh    +2.137        +2.137  1:47.275      17        W    0     1
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +7.079        +4.942  1:47.958      20        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +9.619         +2.54   1:47.61      23        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender    +9.942        +0.323  1:48.753      14        W    0     5
+6     Winfield Benetton-Renault      Daniil Kovalev   +26.826       +16.884  1:49.663      23        W    0     8
+7     Rothmans Williams-Renault       Antonio Iocco   +31.251        +4.425  1:48.696      22        W    0    10
+8               Renault F1 Team     Marcus Svansson   +33.427        +2.176  1:49.391      17        W    0     9
+9               Renault F1 Team       Tony Calandre    +48.37       +14.943  1:49.134      21        W    0    12
+10  Marlboro Team Lotus-Renault   Charlie Southgate    +48.38         +0.01  1:49.875      23        W    0    16
+11     Mild Seven Toyota Racing    Guillermo Acosta   +50.195        +1.815  1:50.573      16        W    0    15
+12  Marlboro Team Lotus-Renault         Sander Metz   +51.987        +1.792  1:49.392      19        W    0     7
+13     Mild Seven Toyota Racing       Quentin Iazzo   +54.433        +2.446  1:50.398      23        W    0    17
+14    Winfield Benetton-Renault     Kumar Karihayan   +54.487        +0.054  1:49.659      23        W    0    13
+15                Honda F1 Team     Katsuno Yoshiro   +55.688        +1.201  1:49.456      23        W    0    11
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +56.647        +0.959  1:50.681      21        W    0    14
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +64.099        +7.452  1:51.437      13        W    0    19
+18     Red Bull Sauber-Mercedes       Ernie Cédryck   +70.896        +6.797  1:51.406      19        W    0    18
+19   ING Jaguar Racing Mercedes        James Eadorn   +73.383        +2.487  1:51.542      13        W    0    21
+20   ING Jaguar Racing Mercedes      George Aldeill   +74.312        +0.929  1:51.208      22        W    0    22
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +74.679        +0.367  1:50.946      20        W    0    20
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:47.275 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 24/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:57:14.011  1:47.776      22        W    0     2
+2         West McLaren-Mercedes       Devon Raleigh    +1.355        +1.355  1:47.275      17        W    0     1
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +6.847        +5.492  1:47.958      20        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +9.038        +2.191   1:47.61      23        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender    +9.142        +0.104  1:47.927      24        W    0     5
+6     Winfield Benetton-Renault      Daniil Kovalev   +27.774       +18.632  1:49.663      23        W    0     8
+7     Rothmans Williams-Renault       Antonio Iocco   +32.717        +4.943  1:48.696      22        W    0    10
+8               Renault F1 Team     Marcus Svansson   +34.609        +1.892  1:49.391      17        W    0     9
+9               Renault F1 Team       Tony Calandre   +49.397       +14.788  1:49.134      21        W    0    12
+10  Marlboro Team Lotus-Renault   Charlie Southgate   +51.144        +1.747  1:49.875      23        W    0    16
+11     Mild Seven Toyota Racing    Guillermo Acosta   +52.119        +0.975  1:50.573      16        W    0    15
+12  Marlboro Team Lotus-Renault         Sander Metz   +53.137        +1.018  1:49.392      19        W    0     7
+13     Mild Seven Toyota Racing       Quentin Iazzo   +57.587         +4.45  1:50.398      23        W    0    17
+14    Winfield Benetton-Renault     Kumar Karihayan   +57.606        +0.019  1:49.659      23        W    0    13
+15                Honda F1 Team     Katsuno Yoshiro   +60.197        +2.591  1:49.456      23        W    0    11
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +60.282        +0.085  1:50.681      21        W    0    14
+17     Red Bull Sauber-Mercedes      Jamie Lorianne   +67.385        +7.103  1:51.437      13        W    0    19
+18     Red Bull Sauber-Mercedes       Ernie Cédryck   +73.726        +6.341  1:51.406      19        W    0    18
+19   ING Jaguar Racing Mercedes      George Aldeill   +76.865        +3.139  1:51.208      22        W    0    22
+20   ING Jaguar Racing Mercedes        James Eadorn   +76.875         +0.01  1:51.542      13        W    0    21
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello     +77.0        +0.125  1:50.946      20        W    0    20
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:47.275 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 25/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:59:01.753  1:47.742      25        W    0     2
+2         West McLaren-Mercedes       Devon Raleigh    +1.173        +1.173  1:47.275      17        W    0     1
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +7.163         +5.99  1:47.958      20        W    0     4
+4     Rothmans Williams-Renault      Ken Fassbender      +9.2        +2.037  1:47.800      25        W    0     5
+5     Scuderia Ferrari Vodafone   Charles Hérnandez    +9.554        +0.354   1:47.61      23        W    0     3
+6     Winfield Benetton-Renault      Daniil Kovalev   +29.818       +20.264  1:49.663      23        W    0     8
+7     Rothmans Williams-Renault       Antonio Iocco   +35.258         +5.44  1:48.696      22        W    0    10
+8               Renault F1 Team     Marcus Svansson    +37.99        +2.732  1:49.391      17        W    0     9
+9               Renault F1 Team       Tony Calandre    +51.61        +13.62  1:49.134      21        W    0    12
+10  Marlboro Team Lotus-Renault   Charlie Southgate   +53.634        +2.024  1:49.875      23        W    0    16
+11  Marlboro Team Lotus-Renault         Sander Metz    +53.88        +0.246  1:48.485      25        W    0     7
+12     Mild Seven Toyota Racing    Guillermo Acosta   +55.774        +1.894  1:50.573      16        W    0    15
+13    Winfield Benetton-Renault     Kumar Karihayan   +61.026        +5.252  1:49.659      23        W    0    13
+14                Honda F1 Team     Katsuno Yoshiro   +61.824        +0.798  1:49.369      25        W    0    11
+15     Mild Seven Toyota Racing       Quentin Iazzo   +62.346        +0.522  1:50.398      23        W    0    17
+16     Red Bull Sauber-Mercedes      Jamie Lorianne   +73.539       +11.193  1:51.437      13        W    0    19
+17     Red Bull Sauber-Mercedes       Ernie Cédryck   +78.561        +5.022  1:51.406      19        W    0    18
+18   ING Jaguar Racing Mercedes        James Eadorn   +80.466        +1.905  1:51.333      25        W    0    21
+19   ING Jaguar Racing Mercedes      George Aldeill   +81.514        +1.048  1:51.208      22        W    0    22
+20      Minardi-Ferrari F1 Team        Raul Sanchez   +81.625        +0.111  1:50.681      21        W    0    14
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +83.872        +2.247  1:50.946      20        W    0    20
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:47.275 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 26/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:00:50.120  1:47.194      26        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +1.067        +1.067  1:47.742      25        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe     +7.08        +6.013  1:47.958      20        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +9.724        +2.644   1:47.61      23        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender   +10.501        +0.777  1:47.800      25        W    0     5
+6     Winfield Benetton-Renault      Daniil Kovalev   +31.001         +20.5  1:49.551      26        W    0     8
+7     Rothmans Williams-Renault       Antonio Iocco   +37.191         +6.19  1:48.696      22        W    0    10
+8               Renault F1 Team     Marcus Svansson   +39.036        +1.845  1:49.391      17        W    0     9
+9               Renault F1 Team       Tony Calandre    +53.05       +14.014  1:49.134      21        W    0    12
+10  Marlboro Team Lotus-Renault   Charlie Southgate   +55.378        +2.328  1:49.875      23        W    0    16
+11  Marlboro Team Lotus-Renault         Sander Metz   +56.254        +0.876  1:48.485      25        W    0     7
+12     Mild Seven Toyota Racing    Guillermo Acosta   +58.113        +1.859  1:50.573      16        W    0    15
+13    Winfield Benetton-Renault     Kumar Karihayan   +63.329        +5.216  1:49.659      23        W    0    13
+14     Mild Seven Toyota Racing       Quentin Iazzo   +64.556        +1.227  1:50.398      23        W    0    17
+15                Honda F1 Team     Katsuno Yoshiro   +66.129        +1.573  1:49.369      25        W    0    11
+16     Red Bull Sauber-Mercedes      Jamie Lorianne   +76.634       +10.505  1:51.437      13        W    0    19
+17     Red Bull Sauber-Mercedes       Ernie Cédryck   +81.648        +5.014  1:51.406      19        W    0    18
+18   ING Jaguar Racing Mercedes        James Eadorn   +85.734        +4.086  1:51.333      25        W    0    21
+19      Minardi-Ferrari F1 Team        Raul Sanchez   +86.177        +0.443  1:50.681      21        W    0    14
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello   +88.369        +2.192  1:50.946      20        W    0    20
+21   ING Jaguar Racing Mercedes      George Aldeill   +88.431        +0.062  1:51.208      22        W    0    22
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:47.194 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 27/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:02:37.588  1:47.194      26        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +1.125        +1.125  1:47.526      27        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +7.878        +6.753  1:47.958      20        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +10.159        +2.281   1:47.61      23        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender   +11.502        +1.343  1:47.800      25        W    0     5
+6     Winfield Benetton-Renault      Daniil Kovalev   +33.746       +22.244  1:49.551      26        W    0     8
+7               Renault F1 Team     Marcus Svansson    +42.77        +9.024  1:49.391      17        W    0     9
+8               Renault F1 Team       Tony Calandre   +56.341       +13.571  1:49.134      21        W    0    12
+9   Marlboro Team Lotus-Renault   Charlie Southgate    +57.68        +1.339  1:49.770      27        W    0    16
+10  Marlboro Team Lotus-Renault         Sander Metz   +60.488        +2.808  1:48.485      25        W    0     7
+11     Mild Seven Toyota Racing    Guillermo Acosta    +61.85        +1.362  1:50.573      16        W    0    15
+12    Winfield Benetton-Renault     Kumar Karihayan    +67.17         +5.32  1:49.659      23        W    0    13
+13     Mild Seven Toyota Racing       Quentin Iazzo   +68.841        +1.671  1:50.398      23        W    0    17
+14                Honda F1 Team     Katsuno Yoshiro   +69.053        +0.212  1:49.369      25        W    0    11
+15     Red Bull Sauber-Mercedes      Jamie Lorianne   +81.601       +12.548  1:51.437      13        W    0    19
+16     Red Bull Sauber-Mercedes       Ernie Cédryck   +86.832        +5.231  1:51.406      19        W    0    18
+17    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+18   ING Jaguar Racing Mercedes        James Eadorn    +89.89        +0.401  1:51.333      25        W    0    21
+19      Minardi-Ferrari F1 Team        Raul Sanchez   +91.823        +1.933  1:50.681      21        W    0    14
+20   ING Jaguar Racing Mercedes      George Aldeill   +92.086        +0.263  1:51.123      27        W    0    22
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +92.865        +0.779  1:50.946      20        W    0    20
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:47.194 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 28/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:04:25.260  1:47.194      26        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +1.288        +1.288  1:47.526      27        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +8.919        +7.631  1:47.958      20        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +10.884        +1.965   1:47.61      23        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender   +12.289        +1.405  1:47.800      25        W    0     5
+6     Winfield Benetton-Renault      Daniil Kovalev   +36.103       +23.814  1:49.551      26        W    0     8
+7               Renault F1 Team     Marcus Svansson   +45.629        +9.526  1:49.391      17        W    0     9
+8               Renault F1 Team       Tony Calandre   +58.757       +13.128  1:49.134      21        W    0    12
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +60.244        +1.487  1:49.770      27        W    0    16
+10  Marlboro Team Lotus-Renault         Sander Metz   +62.317        +2.073  1:48.485      25        W    0     7
+11    Winfield Benetton-Renault     Kumar Karihayan   +70.571        +8.254  1:49.659      23        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo   +71.583        +1.012  1:50.398      23        W    0    17
+13                Honda F1 Team     Katsuno Yoshiro   +73.504        +1.921  1:49.369      25        W    0    11
+14     Red Bull Sauber-Mercedes      Jamie Lorianne   +86.226       +12.722  1:51.437      13        W    0    19
+15     Red Bull Sauber-Mercedes       Ernie Cédryck   +91.607        +5.381  1:51.406      19        W    0    18
+16   ING Jaguar Racing Mercedes        James Eadorn   +95.923        +4.316  1:51.333      25        W    0    21
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +96.217        +0.294  1:50.681      21        W    0    14
+18   ING Jaguar Racing Mercedes      George Aldeill   +98.069        +1.852  1:51.123      27        W    0    22
+19      Minardi-Ferrari F1 Team  Antonio Bacarrello  +101.879         +3.81  1:50.946      20        W    0    20
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:47.194 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 29/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:06:12.559  1:47.194      26        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +1.615        +1.615  1:47.526      27        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +9.862        +8.247  1:47.958      20        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +11.799        +1.937   1:47.61      23        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender   +13.626        +1.827  1:47.800      25        W    0     5
+6     Winfield Benetton-Renault      Daniil Kovalev   +38.639       +25.013  1:49.551      26        W    0     8
+7               Renault F1 Team     Marcus Svansson   +47.979         +9.34  1:49.391      17        W    0     9
+8               Renault F1 Team       Tony Calandre   +61.057       +13.078  1:49.134      21        W    0    12
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +63.257          +2.2  1:49.770      27        W    0    16
+10  Marlboro Team Lotus-Renault         Sander Metz   +64.495        +1.238  1:48.485      25        W    0     7
+11    Winfield Benetton-Renault     Kumar Karihayan   +73.593        +9.098  1:49.659      23        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo   +74.794        +1.201  1:50.398      23        W    0    17
+13                Honda F1 Team     Katsuno Yoshiro   +75.885        +1.091  1:49.369      25        W    0    11
+14     Red Bull Sauber-Mercedes      Jamie Lorianne   +90.479       +14.594  1:51.437      13        W    0    19
+15     Red Bull Sauber-Mercedes       Ernie Cédryck   +95.751        +5.272  1:51.406      19        W    0    18
+16   ING Jaguar Racing Mercedes        James Eadorn  +100.053        +4.302  1:51.333      25        W    0    21
+17      Minardi-Ferrari F1 Team        Raul Sanchez  +100.854        +0.801  1:50.681      21        W    0    14
+18   ING Jaguar Racing Mercedes      George Aldeill  +102.472        +1.618  1:51.123      27        W    0    22
+19      Minardi-Ferrari F1 Team  Antonio Bacarrello  +106.459        +3.987  1:50.946      20        W    0    20
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:47.194 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 30/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:08:00.504  1:47.194      26        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +1.397        +1.397  1:47.526      27        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +9.825        +8.428  1:47.908      30        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +11.637        +1.812   1:47.61      23        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender   +14.353        +2.716  1:47.800      25        W    0     5
+6               Renault F1 Team     Marcus Svansson   +51.068       +36.715  1:49.391      17        W    0     9
+7               Renault F1 Team       Tony Calandre   +64.502       +13.434  1:49.134      21        W    0    12
+8   Marlboro Team Lotus-Renault         Sander Metz   +66.918        +2.416  1:48.485      25        W    0     7
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +68.254        +1.336  1:49.770      27        W    0    16
+10    Winfield Benetton-Renault     Kumar Karihayan    +77.16        +8.906  1:49.659      23        W    0    13
+11                Honda F1 Team     Katsuno Yoshiro   +77.982        +0.822  1:49.369      25        W    0    11
+12     Mild Seven Toyota Racing       Quentin Iazzo   +79.586        +1.604  1:50.398      23        W    0    17
+13    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+14     Red Bull Sauber-Mercedes      Jamie Lorianne    +93.92         +3.36  1:51.386      30        W    0    19
+15     Red Bull Sauber-Mercedes       Ernie Cédryck   +99.077        +5.157  1:51.271      30        W    0    18
+16   ING Jaguar Racing Mercedes        James Eadorn  +103.632        +4.555  1:51.333      25        W    0    21
+17      Minardi-Ferrari F1 Team        Raul Sanchez  +106.143        +2.511  1:50.681      21        W    0    14
+18   ING Jaguar Racing Mercedes      George Aldeill  +106.203         +0.06  1:51.123      27        W    0    22
+19      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +3.624  1:50.946      20        W    0    20
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:47.194 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 31/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:09:47.636  1:47.132      31        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +1.547        +1.547  1:47.282      31        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe   +10.617         +9.07  1:47.908      30        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +12.772        +2.155   1:47.61      23        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender    +15.42        +2.648  1:47.800      25        W    0     5
+6               Renault F1 Team     Marcus Svansson   +53.231       +37.811  1:49.294      31        W    0     9
+7               Renault F1 Team       Tony Calandre    +67.76       +14.529  1:49.134      21        W    0    12
+8   Marlboro Team Lotus-Renault         Sander Metz   +69.689        +1.929  1:48.485      25        W    0     7
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +71.254        +1.565  1:49.770      27        W    0    16
+10                Honda F1 Team     Katsuno Yoshiro   +79.597        +8.343  1:48.747      31        W    0    11
+11    Winfield Benetton-Renault     Kumar Karihayan   +79.966        +0.369  1:49.659      23        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo   +82.609        +2.643  1:50.155      31        W    0    17
+13     Red Bull Sauber-Mercedes      Jamie Lorianne   +98.731       +16.122  1:51.386      30        W    0    19
+14     Red Bull Sauber-Mercedes       Ernie Cédryck  +104.274        +5.543  1:51.271      30        W    0    18
+15   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +4.638  1:51.333      25        W    0    21
+16      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +1.774  1:50.681      21        W    0    14
+17   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +0.959  1:51.123      27        W    0    22
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +3.424  1:50.946      20        W    0    20
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:47.132 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 32/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:11:35.108  1:47.132      31        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +1.437        +1.437  1:47.282      31        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe   +10.829        +9.392  1:47.684      32        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +13.524        +2.695   1:47.61      23        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender   +16.097        +2.573  1:47.800      25        W    0     5
+6               Renault F1 Team     Marcus Svansson   +55.262       +39.165  1:49.294      31        W    0     9
+7               Renault F1 Team       Tony Calandre   +70.067       +14.805  1:49.134      21        W    0    12
+8   Marlboro Team Lotus-Renault         Sander Metz   +72.151        +2.084  1:48.485      25        W    0     7
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +73.931         +1.78  1:49.770      27        W    0    16
+10    Winfield Benetton-Renault     Kumar Karihayan   +81.727        +7.796  1:49.233      32        W    0    13
+11                Honda F1 Team     Katsuno Yoshiro   +82.209        +0.482  1:48.747      31        W    0    11
+12     Mild Seven Toyota Racing       Quentin Iazzo   +87.198        +4.989  1:50.155      31        W    0    17
+13     Red Bull Sauber-Mercedes      Jamie Lorianne  +102.583       +15.385  1:51.324      32        W    0    19
+14     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +7.219  1:51.271      30        W    0    18
+15   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +3.389  1:51.333      25        W    0    21
+16      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +2.713  1:50.681      21        W    0    14
+17   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap         +1.09  1:51.123      27        W    0    22
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +2.601  1:50.946      20        W    0    20
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:47.132 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 33/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:13:22.081  1:46.973      33        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +2.166        +2.166  1:47.282      31        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +11.89        +9.724  1:47.684      32        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +14.489        +2.599   1:47.61      23        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender   +17.192        +2.703  1:47.800      25        W    0     5
+6               Renault F1 Team     Marcus Svansson   +58.914       +41.722  1:49.294      31        W    0     9
+7               Renault F1 Team       Tony Calandre   +72.463       +13.549  1:49.134      21        W    0    12
+8   Marlboro Team Lotus-Renault         Sander Metz   +74.842        +2.379  1:48.485      25        W    0     7
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +76.799        +1.957  1:49.770      27        W    0    16
+10    Winfield Benetton-Renault     Kumar Karihayan   +84.436        +7.637  1:49.233      32        W    0    13
+11                Honda F1 Team     Katsuno Yoshiro   +85.652        +1.216  1:48.747      31        W    0    11
+12     Mild Seven Toyota Racing       Quentin Iazzo   +91.371        +5.719  1:50.155      31        W    0    17
+13     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap       +16.068  1:51.324      32        W    0    19
+14     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +6.475  1:51.085      33        W    0    18
+15   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +4.136  1:51.333      25        W    0    21
+16      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +1.314  1:50.432      33        W    0    14
+17   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +2.653  1:51.123      27        W    0    22
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +1.773  1:50.946      20        W    0    20
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:46.973 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 34/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:15:09.227  1:46.973      33        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +2.513        +2.513  1:47.282      31        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe   +12.401        +9.888  1:47.657      34        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +14.995        +2.594   1:47.61      23        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender     +18.2        +3.205  1:47.800      25        W    0     5
+6               Renault F1 Team     Marcus Svansson   +60.855       +42.655  1:49.086      34        W    0     9
+7               Renault F1 Team       Tony Calandre   +74.813       +13.958  1:49.134      21        W    0    12
+8   Marlboro Team Lotus-Renault         Sander Metz   +76.858        +2.045  1:48.485      25        W    0     7
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +79.721        +2.863  1:49.770      27        W    0    16
+10                Honda F1 Team     Katsuno Yoshiro   +87.587        +7.866  1:48.747      31        W    0    11
+11    Winfield Benetton-Renault     Kumar Karihayan   +88.795        +1.208  1:49.233      32        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo   +94.771        +5.976  1:50.155      31        W    0    17
+13     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap       +20.954  1:51.324      32        W    0    19
+14     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +2.841  1:51.085      33        W    0    18
+15      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +3.814  1:50.161      34        W    0    14
+16   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap         +0.05  1:51.333      25        W    0    21
+17   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +4.059  1:51.123      27        W    0    22
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +1.738  1:50.946      20        W    0    20
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:46.973 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 35/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:16:56.443  1:46.973      33        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +3.022        +3.022  1:47.282      31        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe   +13.961       +10.939  1:47.657      34        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +17.526        +3.565   1:47.61      23        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender   +19.226          +1.7  1:47.800      25        W    0     5
+6               Renault F1 Team     Marcus Svansson   +62.622       +43.396  1:48.982      35        W    0     9
+7               Renault F1 Team       Tony Calandre   +77.463       +14.841  1:49.134      21        W    0    12
+8   Marlboro Team Lotus-Renault         Sander Metz   +80.897        +3.434  1:48.485      25        W    0     7
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +82.609        +1.712  1:49.770      27        W    0    16
+10                Honda F1 Team     Katsuno Yoshiro   +89.998        +7.389  1:48.747      31        W    0    11
+11    Winfield Benetton-Renault     Kumar Karihayan   +91.298          +1.3  1:49.233      32        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo  +102.351       +11.053  1:50.155      31        W    0    17
+13     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap       +21.367  1:51.085      33        W    0    18
+14     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap        +0.153  1:51.324      32        W    0    19
+15   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap         +1.97  1:50.627      35        W    0    21
+16      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +0.356  1:50.161      34        W    0    14
+17   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap         +4.29  1:51.123      27        W    0    22
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +1.662  1:50.946      20        W    0    20
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:46.973 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 36/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:18:43.299  1:46.856      36        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +3.647        +3.647  1:47.282      31        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe   +14.804       +11.157  1:47.657      34        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +18.109        +3.305  1:47.439      36        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender   +20.461        +2.352  1:47.800      25        W    0     5
+6               Renault F1 Team     Marcus Svansson   +65.138       +44.677  1:48.982      35        W    0     9
+7               Renault F1 Team       Tony Calandre   +80.166       +15.028  1:49.134      21        W    0    12
+8   Marlboro Team Lotus-Renault         Sander Metz   +83.228        +3.062  1:48.485      25        W    0     7
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +85.436        +2.208  1:49.683      36        W    0    16
+10                Honda F1 Team     Katsuno Yoshiro   +92.699        +7.263  1:48.747      31        W    0    11
+11    Winfield Benetton-Renault     Kumar Karihayan   +94.267        +1.568  1:49.233      32        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo  +105.683       +11.416  1:50.155      31        W    0    17
+13     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap       +21.884  1:50.552      36        W    0    19
+14     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +0.422  1:51.085      33        W    0    18
+15   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +2.034  1:50.627      35        W    0    21
+16      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +2.718  1:50.161      34        W    0    14
+17   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +2.313  1:51.123      27        W    0    22
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +1.488  1:50.946      20        W    0    20
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:46.856 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 37/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:20:30.728  1:46.856      36        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +3.329        +3.329  1:47.111      37        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe   +15.149        +11.82  1:47.657      34        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +18.864        +3.715  1:47.439      36        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender   +21.604         +2.74  1:47.800      25        W    0     5
+6               Renault F1 Team     Marcus Svansson   +68.253       +46.649  1:48.982      35        W    0     9
+7               Renault F1 Team       Tony Calandre   +82.811       +14.558  1:49.134      21        W    0    12
+8   Marlboro Team Lotus-Renault         Sander Metz   +84.677        +1.866  1:48.485      25        W    0     7
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +88.268        +3.591  1:49.683      36        W    0    16
+10                Honda F1 Team     Katsuno Yoshiro   +94.834        +6.566  1:48.747      31        W    0    11
+11    Winfield Benetton-Renault     Kumar Karihayan   +96.795        +1.961  1:49.233      32        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo    +1 Lap       +11.537  1:50.078      37        W    0    17
+13     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap       +22.709  1:50.480      37        W    0    18
+14     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap        +1.011  1:50.552      36        W    0    19
+15      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +4.935  1:50.161      34        W    0    14
+16   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +0.704  1:50.627      35        W    0    21
+17   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +1.433  1:51.123      27        W    0    22
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +0.152  1:50.163      37        W    0    20
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:46.856 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 38/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:22:17.433  1:46.705      38        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +4.637        +4.637  1:47.111      37        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe   +15.965       +11.328  1:47.521      38        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +19.537        +3.572  1:47.378      38        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender   +22.914        +3.377  1:47.800      25        W    0     5
+6               Renault F1 Team     Marcus Svansson   +70.804        +47.89  1:48.982      35        W    0     9
+7               Renault F1 Team       Tony Calandre   +85.637       +14.833  1:49.134      21        W    0    12
+8   Marlboro Team Lotus-Renault         Sander Metz   +86.821        +1.184  1:48.485      25        W    0     7
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +91.646        +4.825  1:49.683      36        W    0    16
+10                Honda F1 Team     Katsuno Yoshiro   +97.349        +5.703  1:48.747      31        W    0    11
+11    Winfield Benetton-Renault     Kumar Karihayan   +99.794        +2.445  1:49.233      32        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo    +1 Lap       +12.066  1:50.078      37        W    0    17
+13     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap       +23.684  1:50.197      38        W    0    19
+14     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +0.494  1:50.480      37        W    0    18
+15      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +4.749  1:50.161      34        W    0    14
+16   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +1.481  1:50.627      35        W    0    21
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +0.331  1:50.028      38        W    0    20
+18   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +2.157  1:51.123      27        W    0    22
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:46.705 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 39/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:24:04.082  1:46.649      39        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +4.909        +4.909  1:46.921      39        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe   +16.779        +11.87  1:47.463      39        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +20.939         +4.16  1:47.378      38        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender   +24.244        +3.305  1:47.800      25        W    0     5
+6               Renault F1 Team     Marcus Svansson   +73.307       +49.063  1:48.982      35        W    0     9
+7               Renault F1 Team       Tony Calandre   +88.358       +15.051  1:49.134      21        W    0    12
+8   Marlboro Team Lotus-Renault         Sander Metz   +89.552        +1.194  1:48.485      25        W    0     7
+9   Marlboro Team Lotus-Renault   Charlie Southgate   +94.878        +5.326  1:49.683      36        W    0    16
+10                Honda F1 Team     Katsuno Yoshiro   +99.961        +5.083  1:48.747      31        W    0    11
+11    Winfield Benetton-Renault     Kumar Karihayan  +103.656        +3.695  1:49.233      32        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo    +1 Lap       +11.192  1:49.637      39        W    0    17
+13     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap         +24.9  1:50.358      39        W    0    18
+14     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap        +1.025  1:50.197      38        W    0    19
+15      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +4.368  1:50.161      34        W    0    14
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +1.466  1:50.028      38        W    0    20
+17   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +1.433  1:50.627      35        W    0    21
+18   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +1.218  1:51.123      27        W    0    22
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:46.649 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 40/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:25:50.780  1:46.649      39        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +4.998        +4.998  1:46.787      40        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe   +17.296       +12.298  1:47.215      40        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +21.58        +4.284  1:47.339      40        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender   +25.501        +3.921  1:47.800      25        W    0     5
+6               Renault F1 Team     Marcus Svansson   +75.778       +50.277  1:48.982      35        W    0     9
+7               Renault F1 Team       Tony Calandre   +90.777       +14.999  1:49.116      40        W    0    12
+8   Marlboro Team Lotus-Renault         Sander Metz   +91.975        +1.198  1:48.485      25        W    0     7
+9   Marlboro Team Lotus-Renault   Charlie Southgate    +97.63        +5.655   1:49.45      40        W    0    16
+10                Honda F1 Team     Katsuno Yoshiro  +102.495        +4.865  1:48.747      31        W    0    11
+11    Winfield Benetton-Renault     Kumar Karihayan    +1 Lap        +4.952  1:49.233      32        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo    +1 Lap       +10.663  1:49.637      39        W    0    17
+13     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap       +25.911  1:50.358      39        W    0    18
+14     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap        +0.058  1:50.004      40        W    0    19
+15      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +5.042  1:50.161      34        W    0    14
+16   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +2.361   1:50.14      40        W    0    21
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +0.479  1:50.028      38        W    0    20
+18   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +2.155  1:51.123      27        W    0    22
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:46.649 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 41/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:27:37.701  1:46.649      39        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +4.879        +4.879  1:46.787      40        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe   +17.615       +12.736  1:47.215      40        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +21.819        +4.204  1:47.160      41        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender   +26.613        +4.794  1:47.800      25        W    0     5
+6               Renault F1 Team     Marcus Svansson   +77.523        +50.91  1:48.666      41        W    0     9
+7               Renault F1 Team       Tony Calandre   +92.997       +15.474  1:49.116      40        W    0    12
+8   Marlboro Team Lotus-Renault         Sander Metz   +93.271        +0.274  1:48.217      41        W    0     7
+9   Marlboro Team Lotus-Renault   Charlie Southgate  +100.387        +7.116   1:49.45      40        W    0    16
+10                Honda F1 Team     Katsuno Yoshiro  +105.086        +4.699  1:48.747      31        W    0    11
+11    Winfield Benetton-Renault     Kumar Karihayan    +1 Lap        +4.729  1:49.233      32        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo    +1 Lap       +11.833  1:49.637      39        W    0    17
+13     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap       +27.391  1:50.004      40        W    0    19
+14     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +2.996  1:50.358      39        W    0    18
+15      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +1.256  1:50.161      34        W    0    14
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +2.019  1:50.028      38        W    0    20
+17   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +1.072   1:50.14      40        W    0    21
+18   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +1.588  1:50.775      41        W    0    22
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:46.649 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 42/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:29:25.039  1:46.649      39        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +4.485        +4.485  1:46.787      40        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe   +17.895        +13.41  1:47.215      40        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +21.81        +3.915  1:47.160      41        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender   +27.748        +5.938  1:47.800      25        W    0     5
+6               Renault F1 Team     Marcus Svansson   +78.978        +51.23  1:48.666      41        W    0     9
+7   Marlboro Team Lotus-Renault         Sander Metz    +93.98       +15.002  1:48.047      42        W    0     7
+8               Renault F1 Team       Tony Calandre   +95.642        +1.662  1:49.116      40        W    0    12
+9   Marlboro Team Lotus-Renault   Charlie Southgate  +102.695        +7.053   1:49.45      40        W    0    16
+10                Honda F1 Team     Katsuno Yoshiro    +106.9        +4.205  1:48.747      31        W    0    11
+11    Winfield Benetton-Renault     Kumar Karihayan    +1 Lap       +15.562  1:49.233      32        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo    +1 Lap        +3.269  1:49.637      39        W    0    17
+13     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap        +26.56  1:50.004      40        W    0    19
+14      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap         +2.94  1:49.277      42        W    0    14
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +0.187  1:50.358      39        W    0    18
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +3.315  1:50.028      38        W    0    20
+17   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +1.113   1:50.14      40        W    0    21
+18   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +1.601  1:50.775      41        W    0    22
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:46.649 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 43/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:31:11.688  1:46.649      39        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +4.386        +4.386   1:46.55      43        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe   +18.467       +14.081  1:47.215      40        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +22.345        +3.878  1:47.160      41        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender   +28.664        +6.319  1:47.565      43        W    0     5
+6               Renault F1 Team     Marcus Svansson   +80.967       +52.303  1:48.637      43        W    0     9
+7   Marlboro Team Lotus-Renault         Sander Metz   +96.147        +15.18  1:48.047      42        W    0     7
+8               Renault F1 Team       Tony Calandre   +98.456        +2.309  1:49.116      40        W    0    12
+9   Marlboro Team Lotus-Renault   Charlie Southgate  +105.467        +7.011  1:49.421      43        W    0    16
+10                Honda F1 Team     Katsuno Yoshiro    +1 Lap        +3.907  1:48.747      31        W    0    11
+11    Winfield Benetton-Renault     Kumar Karihayan    +1 Lap       +15.863  1:49.233      32        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo    +1 Lap        +3.641  1:49.637      39        W    0    17
+13     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap       +27.248  1:50.004      40        W    0    19
+14     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +2.537  1:49.894      43        W    0    18
+15      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +0.983  1:49.277      42        W    0    14
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +2.959  1:50.028      38        W    0    20
+17   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +1.467   1:50.14      40        W    0    21
+18   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +1.917  1:50.775      41        W    0    22
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Nill Rosberg has recorded 1:46.55 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 44/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:32:58.262  1:46.574      44        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +4.931        +4.931   1:46.55      43        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +19.62       +14.689  1:47.215      40        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +23.154        +3.534  1:47.160      41        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender   +30.078        +6.924  1:47.565      43        W    0     5
+6               Renault F1 Team     Marcus Svansson   +83.314       +53.236  1:48.637      43        W    0     9
+7   Marlboro Team Lotus-Renault         Sander Metz   +98.798       +15.484  1:48.047      42        W    0     7
+8               Renault F1 Team       Tony Calandre  +100.631        +1.833  1:48.748      44        W    0    12
+9   Marlboro Team Lotus-Renault   Charlie Southgate    +1 Lap        +9.485  1:49.421      43        W    0    16
+10                Honda F1 Team     Katsuno Yoshiro    +1 Lap        +1.643  1:48.747      31        W    0    11
+11    Winfield Benetton-Renault     Kumar Karihayan    +1 Lap       +15.972  1:49.068      44        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo    +1 Lap        +4.085  1:49.512      44        W    0    17
+13     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap       +28.346  1:50.004      40        W    0    19
+14      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +1.769  1:48.859      44        W    0    14
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +1.904  1:49.894      43        W    0    18
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +3.024  1:50.028      38        W    0    20
+17   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +1.375   1:50.14      40        W    0    21
+18   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +2.075  1:50.775      41        W    0    22
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Nill Rosberg has recorded 1:46.55 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 45/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:34:44.634  1:46.372      45        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +6.229        +6.229   1:46.55      43        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe   +20.578       +14.349  1:47.215      40        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +23.975        +3.397  1:47.160      41        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender    +31.81        +7.835  1:47.565      43        W    0     5
+6               Renault F1 Team     Marcus Svansson   +86.329       +54.519  1:48.637      43        W    0     9
+7   Marlboro Team Lotus-Renault         Sander Metz   +101.13       +14.801  1:48.047      42        W    0     7
+8               Renault F1 Team       Tony Calandre  +103.331        +2.201  1:48.748      44        W    0    12
+9   Marlboro Team Lotus-Renault   Charlie Southgate    +1 Lap        +9.664  1:49.251      45        W    0    16
+10                Honda F1 Team     Katsuno Yoshiro    +1 Lap        +1.572  1:48.747      31        W    0    11
+11    Winfield Benetton-Renault     Kumar Karihayan    +1 Lap       +15.885  1:49.068      44        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo    +1 Lap        +6.102  1:49.512      44        W    0    17
+13     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap       +27.703  1:50.004      40        W    0    19
+14      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +1.194  1:48.859      44        W    0    14
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +2.326  1:49.894      43        W    0    18
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +4.011  1:50.028      38        W    0    20
+17   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +4.456  1:50.775      41        W    0    22
+18   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +0.161   1:50.14      40        W    0    21
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:46.372 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 46/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:36:31.518  1:46.372      45        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +6.146        +6.146   1:46.55      43        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe   +20.684       +14.538  1:46.990      46        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +24.239        +3.555  1:47.148      46        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender   +32.232        +7.993  1:47.306      46        W    0     5
+6               Renault F1 Team     Marcus Svansson   +88.068       +55.836  1:48.622      46        W    0     9
+7   Marlboro Team Lotus-Renault         Sander Metz   +102.99       +14.922  1:48.047      42        W    0     7
+8               Renault F1 Team       Tony Calandre  +105.553        +2.563  1:48.748      44        W    0    12
+9                 Honda F1 Team     Katsuno Yoshiro    +1 Lap       +10.214  1:48.084      46        W    0    11
+10  Marlboro Team Lotus-Renault   Charlie Southgate    +1 Lap        +1.408  1:49.251      45        W    0    16
+11    Winfield Benetton-Renault     Kumar Karihayan    +1 Lap       +15.511  1:49.068      44        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo    +1 Lap        +6.519  1:49.512      44        W    0    17
+13      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap       +28.562  1:48.859      44        W    0    14
+14     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap        +1.599  1:50.004      40        W    0    19
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +2.164  1:49.894      43        W    0    18
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +3.727  1:50.028      38        W    0    20
+17   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +4.385  1:50.121      46        W    0    21
+18   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +0.376  1:50.658      46        W    0    22
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:46.372 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 47/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:38:17.893  1:46.372      45        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +8.618        +8.618   1:46.55      43        W    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe   +21.133       +12.515  1:46.824      47        W    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +25.326        +4.193  1:47.148      46        W    0     3
+5     Rothmans Williams-Renault      Ken Fassbender   +33.438        +8.112  1:47.306      46        W    0     5
+6               Renault F1 Team     Marcus Svansson   +89.921       +56.483  1:48.227      47        W    0     9
+7   Marlboro Team Lotus-Renault         Sander Metz  +105.192       +15.271  1:48.047      42        W    0     7
+8               Renault F1 Team       Tony Calandre    +1 Lap        +2.614  1:48.628      47        W    0    12
+9                 Honda F1 Team     Katsuno Yoshiro    +1 Lap       +10.929  1:48.084      46        W    0    11
+10  Marlboro Team Lotus-Renault   Charlie Southgate    +1 Lap        +1.384  1:49.251      45        W    0    16
+11    Winfield Benetton-Renault     Kumar Karihayan    +1 Lap       +15.471  1:49.068      44        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo    +1 Lap        +8.688  1:49.512      44        W    0    17
+13      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap       +27.055  1:48.859      44        W    0    14
+14     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap        +2.754  1:50.004      40        W    0    19
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +2.055  1:49.894      43        W    0    18
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap         +3.54  1:50.028      38        W    0    20
+17   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +4.326  1:50.121      46        W    0    21
+18   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +1.889  1:50.658      46        W    0    22
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:46.372 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 48/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:40:03.791  1:45.898      48        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +9.145        +9.145  1:46.425      48        W    0     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez   +28.221       +19.076  1:47.148      46        W    0     3
+4     Rothmans Williams-Renault      Ken Fassbender   +35.771         +7.55  1:47.306      46        W    0     5
+5     Scuderia Ferrari Vodafone          Abel Wolfe       DNF           DNF  1:46.824      47        W    0     4
+6               Renault F1 Team     Marcus Svansson   +92.492       +17.527  1:48.227      47        W    0     9
+7   Marlboro Team Lotus-Renault         Sander Metz    +1 Lap       +17.647  1:48.047      42        W    0     7
+8               Renault F1 Team       Tony Calandre    +1 Lap        +0.084  1:48.315      48        W    0    12
+9                 Honda F1 Team     Katsuno Yoshiro    +1 Lap       +11.169  1:48.084      46        W    0    11
+10  Marlboro Team Lotus-Renault   Charlie Southgate    +1 Lap        +1.725  1:48.896      48        W    0    16
+11    Winfield Benetton-Renault     Kumar Karihayan    +1 Lap       +19.734  1:49.068      44        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo    +1 Lap        +4.988  1:49.459      48        W    0    17
+13      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap       +27.382  1:48.859      44        W    0    14
+14     Red Bull Sauber-Mercedes      Jamie Lorianne    +1 Lap        +3.097  1:50.004      40        W    0    19
+15     Red Bull Sauber-Mercedes       Ernie Cédryck    +1 Lap        +2.248  1:49.894      43        W    0    18
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap        +3.617  1:50.028      38        W    0    20
+17   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +4.326  1:50.121      46        W    0    21
+18   ING Jaguar Racing Mercedes      George Aldeill    +1 Lap        +2.196  1:50.658      46        W    0    22
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:45.898 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 49/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:45:13.414  1:45.898      48        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +9.145        +9.145  1:46.425      48        W    0     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez   +28.221       +19.076  1:47.148      46        W    0     3
+4     Rothmans Williams-Renault      Ken Fassbender   +35.771         +7.55  1:47.306      46        W    0     5
+5     Scuderia Ferrari Vodafone          Abel Wolfe       DNF           DNF  1:46.824      47        W    0     4
+6               Renault F1 Team     Marcus Svansson   +92.492       +17.527  1:48.227      47        W    0     9
+7   Marlboro Team Lotus-Renault         Sander Metz  +110.139       +17.647  1:48.047      42        W    0     7
+8               Renault F1 Team       Tony Calandre  +110.223        +0.084  1:48.315      48        W    0    12
+9                 Honda F1 Team     Katsuno Yoshiro  +121.392       +11.169  1:48.084      46        W    0    11
+10  Marlboro Team Lotus-Renault   Charlie Southgate  +123.117        +1.725  1:48.896      48        W    0    16
+11    Winfield Benetton-Renault     Kumar Karihayan  +142.851       +19.734  1:49.068      44        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo  +147.839        +4.988  1:49.459      48        W    0    17
+13      Minardi-Ferrari F1 Team        Raul Sanchez  +175.221       +27.382  1:48.859      44        W    0    14
+14     Red Bull Sauber-Mercedes      Jamie Lorianne  +178.318        +3.097  1:50.004      40        W    0    19
+15     Red Bull Sauber-Mercedes       Ernie Cédryck  +180.566        +2.248  1:49.894      43        W    0    18
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello  +184.183        +3.617  1:50.028      38        W    0    20
+17   ING Jaguar Racing Mercedes        James Eadorn  +188.509        +4.326  1:50.121      46        W    0    21
+18   ING Jaguar Racing Mercedes      George Aldeill  +190.705        +2.196  1:50.658      46        W    0    22
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:45.898 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 50/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:50:23.037  1:45.898      48        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +9.145        +9.145  1:46.425      48        W    0     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez   +28.221       +19.076  1:47.148      46        W    0     3
+4     Rothmans Williams-Renault      Ken Fassbender   +35.771         +7.55  1:47.306      46        W    0     5
+5     Scuderia Ferrari Vodafone          Abel Wolfe       DNF           DNF  1:46.824      47        W    0     4
+6               Renault F1 Team     Marcus Svansson   +92.492       +17.527  1:48.227      47        W    0     9
+7   Marlboro Team Lotus-Renault         Sander Metz  +110.139       +17.647  1:48.047      42        W    0     7
+8               Renault F1 Team       Tony Calandre  +110.223        +0.084  1:48.315      48        W    0    12
+9                 Honda F1 Team     Katsuno Yoshiro  +121.392       +11.169  1:48.084      46        W    0    11
+10  Marlboro Team Lotus-Renault   Charlie Southgate  +123.117        +1.725  1:48.896      48        W    0    16
+11    Winfield Benetton-Renault     Kumar Karihayan  +142.851       +19.734  1:49.068      44        W    0    13
+12     Mild Seven Toyota Racing       Quentin Iazzo  +147.839        +4.988  1:49.459      48        W    0    17
+13      Minardi-Ferrari F1 Team        Raul Sanchez  +175.221       +27.382  1:48.859      44        W    0    14
+14     Red Bull Sauber-Mercedes      Jamie Lorianne  +178.318        +3.097  1:50.004      40        W    0    19
+15     Red Bull Sauber-Mercedes       Ernie Cédryck  +180.566        +2.248  1:49.894      43        W    0    18
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello  +184.183        +3.617  1:50.028      38        W    0    20
+17   ING Jaguar Racing Mercedes        James Eadorn  +188.509        +4.326  1:50.121      46        W    0    21
+18   ING Jaguar Racing Mercedes      George Aldeill  +190.705        +2.196  1:50.658      46        W    0    22
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:45.898 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 51/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  01:55:32.660  1:45.898      48        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg     +0.35         +0.35  1:46.425      48        W    0     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez      +0.7         +0.35  1:47.148      46        W    0     3
+4     Rothmans Williams-Renault      Ken Fassbender     +1.05         +0.35  1:47.306      46        W    0     5
+5               Renault F1 Team     Marcus Svansson     +1.75          +0.7  1:48.227      47        W    0     9
+6   Marlboro Team Lotus-Renault         Sander Metz      +2.1         +0.35  1:48.047      42        W    0     7
+7               Renault F1 Team       Tony Calandre     +2.45         +0.35  1:48.315      48        W    0    12
+8                 Honda F1 Team     Katsuno Yoshiro      +2.8         +0.35  1:48.084      46        W    0    11
+9   Marlboro Team Lotus-Renault   Charlie Southgate     +3.15         +0.35  1:48.896      48        W    0    16
+10    Winfield Benetton-Renault     Kumar Karihayan      +3.5         +0.35  1:49.068      44        W    0    13
+11     Mild Seven Toyota Racing       Quentin Iazzo     +3.85         +0.35  1:49.459      48        W    0    17
+12      Minardi-Ferrari F1 Team        Raul Sanchez      +4.2         +0.35  1:48.859      44        W    0    14
+13     Red Bull Sauber-Mercedes      Jamie Lorianne     +4.55         +0.35  1:50.004      40        W    0    19
+14     Red Bull Sauber-Mercedes       Ernie Cédryck      +4.9         +0.35  1:49.894      43        W    0    18
+15      Minardi-Ferrari F1 Team  Antonio Bacarrello     +5.25         +0.35  1:50.028      38        W    0    20
+16   ING Jaguar Racing Mercedes        James Eadorn      +5.6         +0.35  1:50.121      46        W    0    21
+17   ING Jaguar Racing Mercedes      George Aldeill     +5.95         +0.35  1:50.658      46        W    0    22
+18    Scuderia Ferrari Vodafone          Abel Wolfe       DNF           DNF  1:46.824      47        W    0     4
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:45.898 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 52/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  02:00:42.283  1:45.898      48        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg     +0.35         +0.35  1:46.425      48        W    0     2
+3     Scuderia Ferrari Vodafone   Charles Hérnandez      +0.7         +0.35  1:47.148      46        W    0     3
+4     Rothmans Williams-Renault      Ken Fassbender     +1.05         +0.35  1:47.306      46        W    0     5
+5               Renault F1 Team     Marcus Svansson      +1.4         +0.35  1:48.227      47        W    0     9
+6   Marlboro Team Lotus-Renault         Sander Metz     +1.75         +0.35  1:48.047      42        W    0     7
+7               Renault F1 Team       Tony Calandre      +2.1         +0.35  1:48.315      48        W    0    12
+8                 Honda F1 Team     Katsuno Yoshiro     +2.45         +0.35  1:48.084      46        W    0    11
+9   Marlboro Team Lotus-Renault   Charlie Southgate      +2.8         +0.35  1:48.896      48        W    0    16
+10    Winfield Benetton-Renault     Kumar Karihayan     +3.15         +0.35  1:49.068      44        W    0    13
+11     Mild Seven Toyota Racing       Quentin Iazzo      +3.5         +0.35  1:49.459      48        W    0    17
+12      Minardi-Ferrari F1 Team        Raul Sanchez     +3.85         +0.35  1:48.859      44        W    0    14
+13     Red Bull Sauber-Mercedes      Jamie Lorianne      +4.2         +0.35  1:50.004      40        W    0    19
+14     Red Bull Sauber-Mercedes       Ernie Cédryck     +4.55         +0.35  1:49.894      43        W    0    18
+15      Minardi-Ferrari F1 Team  Antonio Bacarrello      +4.9         +0.35  1:50.028      38        W    0    20
+16   ING Jaguar Racing Mercedes        James Eadorn     +5.25         +0.35  1:50.121      46        W    0    21
+17   ING Jaguar Racing Mercedes      George Aldeill      +5.6         +0.35  1:50.658      46        W    0    22
+18    Scuderia Ferrari Vodafone          Abel Wolfe       DNF           DNF  1:46.824      47        W    0     4
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:45.898 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Wet Conditions | Monza Grand Prix — Italy | Lap 53/53
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  02:02:27.058  1:44.775      53        W    0     1
+2         West McLaren-Mercedes        Nill Rosberg    +1.011        +1.011  1:45.436      53        W    0     2
+3     Rothmans Williams-Renault      Ken Fassbender    +1.309        +0.298  1:45.033      53        W    0     5
+4     Scuderia Ferrari Vodafone   Charles Hérnandez    +2.119         +0.81  1:46.194      53        W    0     3
+5               Renault F1 Team     Marcus Svansson    +3.753        +1.634  1:47.128      53        W    0     9
+6   Marlboro Team Lotus-Renault         Sander Metz    +4.367        +0.614  1:47.392      53        W    0     7
+7   Marlboro Team Lotus-Renault   Charlie Southgate    +5.363        +0.996  1:47.338      53        W    0    16
+8                 Honda F1 Team     Katsuno Yoshiro    +5.391        +0.028  1:47.716      53        W    0    11
+9               Renault F1 Team       Tony Calandre    +6.023        +0.632  1:48.315      48        W    0    12
+10     Mild Seven Toyota Racing       Quentin Iazzo    +6.374        +0.351  1:47.649      53        W    0    17
+11      Minardi-Ferrari F1 Team        Raul Sanchez    +6.493        +0.119  1:47.417      53        W    0    14
+12    Winfield Benetton-Renault     Kumar Karihayan    +6.554        +0.061  1:48.179      53        W    0    13
+13     Red Bull Sauber-Mercedes      Jamie Lorianne     +7.45        +0.896  1:48.025      53        W    0    19
+14     Red Bull Sauber-Mercedes       Ernie Cédryck    +8.237        +0.787  1:48.462      53        W    0    18
+15   ING Jaguar Racing Mercedes        James Eadorn    +9.462        +1.225  1:48.986      53        W    0    21
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello   +10.767        +1.305  1:50.028      38        W    0    20
+17   ING Jaguar Racing Mercedes      George Aldeill    +12.15        +1.383  1:50.658      46        W    0    22
+18    Scuderia Ferrari Vodafone          Abel Wolfe       DNF           DNF  1:46.824      47        W    0     4
+19    Winfield Benetton-Renault      Daniil Kovalev       DNF           DNF  1:49.551      26        W    0     8
+20     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF  1:50.573      16        W    0    15
+21    Rothmans Williams-Renault       Antonio Iocco       DNF           DNF  1:48.696      22        W    0    10
+22                Honda F1 Team       David Redolfe       DNF           DNF       NaN     NaN        W    0     6
+
+Fastest Lap | Devon Raleigh has recorded 1:44.775 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *

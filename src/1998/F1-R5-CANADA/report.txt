@@ -1,0 +1,260 @@
+Montréal GP — Canada | FP forecast: Dry | Qualifying forecast: Dry | Race forecast: Dry
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Free Practice 1 Session | Dry Conditions | Montréal Grand Prix — Canada
+                  MANUFACTURERS             DRIVERS       FL.      GAP  FL. LAP FL. TIRE
+1         West McLaren-Mercedes       Devon Raleigh  1:20.817  FASTEST       70        H
+2         West McLaren-Mercedes        Nill Rosberg  1:20.974   +0.157       70        H
+3     Scuderia Ferrari Vodafone          Abel Wolfe  1:21.194   +0.377       70        H
+4     Scuderia Ferrari Vodafone   Charles Hérnandez  1:21.198   +0.381       69        H
+5     Rothmans Williams-Renault      Ken Fassbender  1:21.873   +1.056       70        H
+6     Winfield Benetton-Renault      Daniil Kovalev  1:22.326   +1.509       70        H
+7     Rothmans Williams-Renault       Antonio Iocco  1:22.477    +1.66       70        H
+8                 Honda F1 Team       David Redolfe  1:22.632   +1.815       70        H
+9               Renault F1 Team     Marcus Svansson  1:22.683   +1.866       70        H
+10                Honda F1 Team     Katsuno Yoshiro  1:22.950   +2.133       68        H
+11  Marlboro Team Lotus-Renault   Charlie Southgate  1:23.009   +2.192       70        H
+12              Renault F1 Team       Tony Calandre  1:23.075   +2.258       70        H
+13  Marlboro Team Lotus-Renault         Sander Metz  1:23.075   +2.258       70        H
+14    Winfield Benetton-Renault     Kumar Karihayan  1:23.161   +2.344       70        H
+15     Mild Seven Toyota Racing       Quentin Iazzo  1:23.638   +2.821       69        H
+16     Mild Seven Toyota Racing    Guillermo Acosta  1:23.748   +2.931       69        H
+17      Minardi-Ferrari F1 Team        Raul Sanchez  1:24.607    +3.79       70        H
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello  1:25.239   +4.422       70        H
+19     Red Bull Sauber-Mercedes      Jamie Lorianne  1:25.305   +4.488       67        H
+20   ING Jaguar Racing Mercedes      George Aldeill  1:25.387    +4.57       70        H
+21     Red Bull Sauber-Mercedes       Ernie Cédryck  1:25.527    +4.71       69        H
+22   ING Jaguar Racing Mercedes        James Eadorn  1:25.555   +4.738       70        H
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Free Practice 2 Session | Dry Conditions | Montréal Grand Prix — Canada
+                  MANUFACTURERS             DRIVERS       FL.      GAP  FL. LAP FL. TIRE
+1     Scuderia Ferrari Vodafone          Abel Wolfe  1:19.790  FASTEST       70        M
+2         West McLaren-Mercedes        Nill Rosberg  1:20.176   +0.386       70        M
+3         West McLaren-Mercedes       Devon Raleigh  1:20.221   +0.431       70        M
+4     Scuderia Ferrari Vodafone   Charles Hérnandez  1:20.334   +0.544       69        M
+5      Red Bull Sauber-Mercedes       Ernie Cédryck  1:20.534   +0.744       70        S
+6    ING Jaguar Racing Mercedes        James Eadorn  1:20.665   +0.875       70        S
+7    ING Jaguar Racing Mercedes      George Aldeill  1:20.825   +1.035       70        S
+8     Rothmans Williams-Renault      Ken Fassbender  1:20.967   +1.177       70        M
+9       Minardi-Ferrari F1 Team  Antonio Bacarrello  1:21.584   +1.794       70        S
+10    Rothmans Williams-Renault       Antonio Iocco  1:21.852   +2.062       70        M
+11    Winfield Benetton-Renault      Daniil Kovalev  1:21.930    +2.14       70        M
+12                Honda F1 Team       David Redolfe  1:22.277   +2.487       70        M
+13                Honda F1 Team     Katsuno Yoshiro  1:22.379   +2.589       69        M
+14              Renault F1 Team       Tony Calandre  1:22.424   +2.634       69        M
+15  Marlboro Team Lotus-Renault         Sander Metz  1:22.578   +2.788       70        M
+16    Winfield Benetton-Renault     Kumar Karihayan  1:22.616   +2.826       69        M
+17              Renault F1 Team     Marcus Svansson  1:22.683   +2.893       67        M
+18  Marlboro Team Lotus-Renault   Charlie Southgate  1:22.756   +2.966       70        M
+19     Mild Seven Toyota Racing    Guillermo Acosta  1:23.087   +3.297       70        M
+20     Mild Seven Toyota Racing       Quentin Iazzo  1:23.138   +3.348       69        M
+21      Minardi-Ferrari F1 Team        Raul Sanchez  1:24.307   +4.517       69        M
+22     Red Bull Sauber-Mercedes      Jamie Lorianne  1:25.084   +5.294       56        M
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Free Practice 3 Session | Dry Conditions | Montréal Grand Prix — Canada
+                  MANUFACTURERS             DRIVERS       FL.      GAP  FL. LAP FL. TIRE
+1     Scuderia Ferrari Vodafone          Abel Wolfe  1:18.563  FASTEST       70        S
+2         West McLaren-Mercedes        Nill Rosberg  1:19.200   +0.637       69        S
+3     Scuderia Ferrari Vodafone   Charles Hérnandez  1:19.307   +0.744       70        S
+4         West McLaren-Mercedes       Devon Raleigh  1:19.325   +0.762       70        S
+5    ING Jaguar Racing Mercedes      George Aldeill  1:20.527   +1.964       70        S
+6     Rothmans Williams-Renault      Ken Fassbender  1:20.561   +1.998       63        S
+7    ING Jaguar Racing Mercedes        James Eadorn  1:20.561   +1.998       70        S
+8      Red Bull Sauber-Mercedes       Ernie Cédryck  1:20.775   +2.212       69        S
+9       Minardi-Ferrari F1 Team  Antonio Bacarrello  1:21.174   +2.611       70        S
+10    Rothmans Williams-Renault       Antonio Iocco  1:21.195   +2.632       61        S
+11                Honda F1 Team       David Redolfe  1:21.355   +2.792       61        S
+12    Winfield Benetton-Renault      Daniil Kovalev  1:21.400   +2.837       61        S
+13                Honda F1 Team     Katsuno Yoshiro   1:21.42   +2.857       58        S
+14              Renault F1 Team     Marcus Svansson  1:21.540   +2.977       63        S
+15              Renault F1 Team       Tony Calandre  1:21.617   +3.054       62        S
+16  Marlboro Team Lotus-Renault   Charlie Southgate  1:21.686   +3.123       59        S
+17  Marlboro Team Lotus-Renault         Sander Metz  1:21.757   +3.194       60        S
+18    Winfield Benetton-Renault     Kumar Karihayan  1:21.855   +3.292       59        S
+19     Mild Seven Toyota Racing       Quentin Iazzo  1:22.066   +3.503       59        S
+20     Mild Seven Toyota Racing    Guillermo Acosta  1:22.129   +3.566       59        S
+21      Minardi-Ferrari F1 Team        Raul Sanchez  1:23.438   +4.875       59        S
+22     Red Bull Sauber-Mercedes      Jamie Lorianne  1:23.792   +5.229       58        S
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+DNF | Fast Lap 3 | George Aldeill went through barriers and, he is OUT! Disaster for ING Jaguar Racing Mercedes!
+Qualifying Session | Dry Conditions | Montréal Grand Prix — Canada
+                  MANUFACTURERS             DRIVERS       FL.      GAP
+1         West McLaren-Mercedes       Devon Raleigh  1:14.972  FASTEST
+2         West McLaren-Mercedes        Nill Rosberg  1:15.030   +0.058
+3     Scuderia Ferrari Vodafone   Charles Hérnandez  1:15.218   +0.246
+4     Scuderia Ferrari Vodafone          Abel Wolfe  1:15.451   +0.479
+5     Rothmans Williams-Renault      Ken Fassbender  1:16.098   +1.126
+6     Rothmans Williams-Renault       Antonio Iocco  1:16.155   +1.183
+7     Winfield Benetton-Renault      Daniil Kovalev  1:16.245   +1.273
+8                 Honda F1 Team       David Redolfe  1:16.563   +1.591
+9                 Honda F1 Team     Katsuno Yoshiro  1:16.708   +1.736
+10    Winfield Benetton-Renault     Kumar Karihayan  1:16.876   +1.904
+11              Renault F1 Team       Tony Calandre  1:16.876   +1.904
+12     Mild Seven Toyota Racing    Guillermo Acosta  1:17.046   +2.074
+13  Marlboro Team Lotus-Renault   Charlie Southgate  1:17.066   +2.094
+14  Marlboro Team Lotus-Renault         Sander Metz  1:17.098   +2.126
+15              Renault F1 Team     Marcus Svansson  1:17.116   +2.144
+16     Mild Seven Toyota Racing       Quentin Iazzo  1:17.236   +2.264
+17      Minardi-Ferrari F1 Team        Raul Sanchez  1:18.325   +3.353
+18   ING Jaguar Racing Mercedes        James Eadorn  1:18.510   +3.538
+19     Red Bull Sauber-Mercedes      Jamie Lorianne  1:18.638   +3.666
+20   ING Jaguar Racing Mercedes      George Aldeill  1:18.656   +3.684
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello  1:18.686   +3.714
+22     Red Bull Sauber-Mercedes       Ernie Cédryck  1:19.107   +4.135
+
+Pole Position | Devon Raleigh has clinched the pole position with 1:14.972 in dry conditions.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ERR | Lap 1 | Ernie Cédryck made mistake and missed the braking point. He has lost 1.593 seconds!
+ERR | Lap 3 | Guillermo Acosta made mistake and understeer at the entry of the corner. He has lost 1.484 seconds!
+ERR | Lap 4 | Antonio Iocco made mistake and understeer at the entry of the corner. He has lost 2.576 seconds!
+ERR | Lap 4 | Guillermo Acosta made mistake and understeer at the entry of the corner. He has lost 2.339 seconds!
+DNF | Lap 4 | James Eadorn has forced to retire due to Engine issue. Disaster for ING Jaguar Racing Mercedes!
+PEN | Lap 6 | 3 secs. penalty to Kumar Karihayan for the excessive amount of corner-cutting. 
+ERR | Lap 6 | George Aldeill made mistake and oversteer at the exit of the corner. He has lost 4.327 seconds!
+ERR | Lap 6 | Raul Sanchez made mistake and locked his brakes. He has lost 1.959 seconds!
+ERR | Lap 7 | Guillermo Acosta made mistake and missed the braking point. He has lost 1.454 seconds!
+ERR | Lap 8 | George Aldeill made mistake and oversteer at the exit of the corner. He has lost 2.028 seconds!
+ERR | Lap 12 | Guillermo Acosta made mistake and oversteer at the exit of the corner. He has lost 4.094 seconds!
+ERR | Lap 14 | Guillermo Acosta made mistake and oversteer at the exit of the corner. He has lost 3.909 seconds!
+ERR | Lap 14 | Ernie Cédryck made mistake and understeer at the entry of the corner. He has lost 2.212 seconds!
+ERR | Lap 16 | Daniil Kovalev made mistake and locked his brakes. He has lost 1.449 seconds!
+ERR | Lap 16 | Guillermo Acosta made mistake and understeer at the entry of the corner. He has lost 3.29 seconds!
+ERR | Lap 16 | James Eadorn made mistake and oversteer at the exit of the corner. He has lost 2.14 seconds!
+ERR | Lap 16 | George Aldeill made mistake and oversteer at the exit of the corner. He has lost 1.847 seconds!
+ERR | Lap 19 | Kumar Karihayan made mistake and locked his brakes. He has lost 2.461 seconds!
+PIT | Lap 19 | Pit-stop for Jamie Lorianne with 2.22 seconds stationary. He is on Soft compound.
+PIT | Lap 19 | Pit-stop for Ernie Cédryck with 2.47 seconds stationary. He is on Soft compound.
+ERR | Lap 19 | James Eadorn made mistake and locked his brakes. He has lost 4.404 seconds!
+PIT | Lap 19 | Pit-stop for George Aldeill with 2.47 seconds stationary. He is on Medium compound.
+PIT | Lap 19 | Pit-stop for Antonio Bacarrello with 2.1 seconds stationary. He is on Medium compound.
+PIT | Lap 20 | Pit-stop for Antonio Iocco with 2.2 seconds stationary. He is on Medium compound.
+PIT | Lap 20 | Pit-stop for Daniil Kovalev with 2.5 seconds stationary. He is on Soft compound.
+ERR | Lap 20 | Kumar Karihayan made mistake and missed the braking point. He has lost 1.853 seconds!
+PIT | Lap 20 | Pit-stop for Kumar Karihayan with 2.04 seconds stationary. He is on Medium compound.
+PIT | Lap 20 | Pit-stop for David Redolfe with 2.13 seconds stationary. He is on Medium compound.
+PIT | Lap 20 | Pit-stop for Katsuno Yoshiro with 2.35 seconds stationary. He is on Medium compound.
+PIT | Lap 20 | Pit-stop for Sander Metz with 3.46 seconds stationary. He is on Soft compound.
+PIT | Lap 20 | Pit-stop for Charlie Southgate with 3.25 seconds stationary. He is on Soft compound.
+PIT | Lap 20 | Pit-stop for Tony Calandre with 2.03 seconds stationary. He is on Medium compound.
+PIT | Lap 20 | Pit-stop for Marcus Svansson with 2.26 seconds stationary. He is on Medium compound.
+ERR | Lap 20 | Guillermo Acosta made mistake and missed the braking point. He has lost 1.529 seconds!
+PIT | Lap 20 | Pit-stop for Guillermo Acosta with 2.12 seconds stationary. He is on Medium compound.
+PIT | Lap 20 | Pit-stop for Quentin Iazzo with 2.38 seconds stationary. He is on Medium compound.
+PIT | Lap 20 | Pit-stop for Raul Sanchez with 3.4 seconds stationary. He is on Medium compound.
+PIT | Lap 21 | Pit-stop for Devon Raleigh with 2.39 seconds stationary. He is on Medium compound.
+PIT | Lap 21 | Pit-stop for Nill Rosberg with 2.21 seconds stationary. He is on Soft compound.
+PIT | Lap 21 | Pit-stop for Charles Hérnandez with 2.36 seconds stationary. He is on Soft compound.
+PIT | Lap 21 | Pit-stop for Ken Fassbender with 2.07 seconds stationary. He is on Soft compound.
+ERR | Lap 21 | Antonio Bacarrello made mistake and missed the braking point. He has lost 2.484 seconds!
+PIT | Lap 22 | Pit-stop for Abel Wolfe with 2.09 seconds stationary. He is on Soft compound.
+ERR | Lap 22 | George Aldeill made mistake and understeer at the entry of the corner. He has lost 3.476 seconds!
+DNF | Lap 23 | David Redolfe went through barriers and, he is OUT! Disaster for Honda F1 Team!
+ERR | Lap 24 | James Eadorn made mistake and locked his brakes. He has lost 1.783 seconds!
+ERR | Lap 25 | Antonio Iocco made mistake and missed the braking point. He has lost 4.164 seconds!
+ERR | Lap 28 | Antonio Iocco made mistake and oversteer at the exit of the corner. He has lost 1.791 seconds!
+ERR | Lap 28 | Tony Calandre made mistake and oversteer at the exit of the corner. He has lost 2.358 seconds!
+ERR | Lap 29 | Kumar Karihayan made mistake and oversteer at the exit of the corner. He has lost 2.681 seconds!
+ERR | Lap 29 | Marcus Svansson made mistake and understeer at the entry of the corner. He has lost 1.427 seconds!
+ERR | Lap 30 | James Eadorn made mistake and locked his brakes. He has lost 4.537 seconds!
+ERR | Lap 31 | Ernie Cédryck made mistake and oversteer at the exit of the corner. He has lost 1.585 seconds!
+ERR | Lap 31 | Antonio Bacarrello made mistake and overflowed off the track. He has lost 1.541 seconds!
+ERR | Lap 32 | Katsuno Yoshiro made mistake and understeer at the entry of the corner. He has lost 2.857 seconds!
+PEN | Lap 35 | 3 secs. penalty to Quentin Iazzo for the excessive amount of corner-cutting. 
+ERR | Lap 35 | Raul Sanchez made mistake and oversteer at the exit of the corner. He has lost 1.748 seconds!
+ERR | Lap 36 | Tony Calandre made mistake and locked his brakes. He has lost 2.609 seconds!
+PIT | Lap 37 | Pit-stop for Jamie Lorianne with 2.08 seconds stationary. He is on Medium compound.
+PIT | Lap 37 | Pit-stop for Ernie Cédryck with 2.13 seconds stationary. He is on Medium compound.
+ERR | Lap 37 | James Eadorn made mistake and missed the braking point. He has lost 1.336 seconds!
+INC | Lap 38 | Oh, no! Antonio Iocco has spun-round. He has lost 16.324 seconds.
+ERR | Lap 38 | George Aldeill made mistake and locked his brakes. He has lost 1.692 seconds!
+PIT | Lap 39 | Pit-stop for Daniil Kovalev with 2.96 seconds stationary. He is on Medium compound.
+PIT | Lap 39 | Pit-stop for Sander Metz with 2.93 seconds stationary. He is on Medium compound.
+PIT | Lap 39 | Pit-stop for Charlie Southgate with 3.47 seconds stationary. He is on Medium compound.
+ERR | Lap 39 | Guillermo Acosta made mistake and locked his brakes. He has lost 4.523 seconds!
+ERR | Lap 40 | Tony Calandre made mistake and missed the braking point. He has lost 1.842 seconds!
+PIT | Lap 41 | Pit-stop for Nill Rosberg with 2.3 seconds stationary. He is on Medium compound.
+PIT | Lap 41 | Pit-stop for Charles Hérnandez with 2.34 seconds stationary. He is on Medium compound.
+PIT | Lap 41 | Pit-stop for Ken Fassbender with 2.72 seconds stationary. He is on Medium compound.
+ERR | Lap 41 | George Aldeill made mistake and oversteer at the exit of the corner. He has lost 3.966 seconds!
+PIT | Lap 43 | Pit-stop for Abel Wolfe with 2.41 seconds stationary. He is on Medium compound.
+ERR | Lap 43 | Guillermo Acosta made mistake and locked his brakes. He has lost 4.037 seconds!
+INC | Lap 44 | Oh, no! Tony Calandre has spun-round. He has lost 8.759 seconds.
+ERR | Lap 44 | Quentin Iazzo made mistake and locked his brakes. He has lost 4.307 seconds!
+ERR | Lap 45 | Antonio Iocco made mistake and oversteer at the exit of the corner. He has lost 4.35 seconds!
+ERR | Lap 45 | James Eadorn made mistake and locked his brakes. He has lost 2.029 seconds!
+PIT | Lap 46 | Disaster for George Aldeill with 14.0 seconds stationary. He is on Soft compound.
+PIT | Lap 46 | Pit-stop for Antonio Bacarrello with 3.76 seconds stationary. He is on Soft compound.
+PIT | Lap 47 | Pit-stop for Antonio Iocco with 2.11 seconds stationary. He is on Soft compound.
+PIT | Lap 47 | Bad news for Tony Calandre with 9.5 seconds stationary. He is on Soft compound.
+PIT | Lap 48 | Pit-stop for Kumar Karihayan with 2.36 seconds stationary. He is on Soft compound.
+PIT | Lap 48 | Pit-stop for Guillermo Acosta with 2.33 seconds stationary. He is on Soft compound.
+PIT | Lap 48 | Pit-stop for Quentin Iazzo with 2.48 seconds stationary. He is on Soft compound.
+PIT | Lap 48 | Pit-stop for Raul Sanchez with 3.49 seconds stationary. He is on Soft compound.
+PIT | Lap 49 | Pit-stop for Katsuno Yoshiro with 2.11 seconds stationary. He is on Soft compound.
+PIT | Lap 49 | Pit-stop for Marcus Svansson with 3.26 seconds stationary. He is on Soft compound.
+ERR | Lap 49 | James Eadorn made mistake and locked his brakes. He has lost 1.435 seconds!
+ERR | Lap 49 | George Aldeill made mistake and missed the braking point. He has lost 4.418 seconds!
+INC | Lap 49 | Oh, no! George Aldeill has lost control and crushed into his front-wing. He is willing to box!
+DNF | Lap 50 | Jamie Lorianne crashed into the walls and, he is OUT! Disaster for Red Bull Sauber-Mercedes!
+PIT | Lap 50 | Pit-stop for George Aldeill with 9.87 seconds stationary. He is on Soft compound.
+PIT | Lap 51 | Pit-stop for Devon Raleigh with 2.41 seconds stationary. He is on Soft compound.
+ERR | Lap 52 | James Eadorn made mistake and missed the braking point. He has lost 4.672 seconds!
+DNF | Lap 53 | Ken Fassbender has forced to retire due to Transmission issue. Disaster for Rothmans Williams-Renault!
+ERR | Lap 54 | Guillermo Acosta made mistake and understeer at the entry of the corner. He has lost 1.681 seconds!
+ERR | Lap 54 | Antonio Bacarrello made mistake and locked his brakes. He has lost 1.587 seconds!
+ERR | Lap 55 | Tony Calandre made mistake and understeer at the entry of the corner. He has lost 1.858 seconds!
+ERR | Lap 56 | Antonio Iocco made mistake and overflowed off the track. He has lost 3.928 seconds!
+INC | Lap 57 | Oh, no! Antonio Iocco has lost control and crushed into his front-wing. He is willing to box!
+ERR | Lap 57 | Guillermo Acosta made mistake and missed the braking point. He has lost 3.137 seconds!
+ERR | Lap 57 | George Aldeill made mistake and understeer at the entry of the corner. He has lost 4.928 seconds!
+PIT | Lap 58 | Pit-stop for Antonio Iocco with 8.79 seconds stationary. He is on Soft compound.
+ERR | Lap 58 | David Redolfe made mistake and overflowed off the track. He has lost 1.889 seconds!
+ERR | Lap 58 | Quentin Iazzo made mistake and missed the braking point. He has lost 1.424 seconds!
+ERR | Lap 58 | George Aldeill made mistake and locked his brakes. He has lost 4.126 seconds!
+ERR | Lap 59 | George Aldeill made mistake and overflowed off the track. He has lost 1.652 seconds!
+ERR | Lap 60 | Tony Calandre made mistake and overflowed off the track. He has lost 1.344 seconds!
+ERR | Lap 60 | George Aldeill made mistake and locked his brakes. He has lost 2.816 seconds!
+ERR | Lap 61 | Kumar Karihayan made mistake and oversteer at the exit of the corner. He has lost 1.393 seconds!
+ERR | Lap 63 | David Redolfe made mistake and oversteer at the exit of the corner. He has lost 2.401 seconds!
+ERR | Lap 63 | Quentin Iazzo made mistake and understeer at the entry of the corner. He has lost 1.469 seconds!
+ERR | Lap 63 | George Aldeill made mistake and oversteer at the exit of the corner. He has lost 5.106 seconds!
+ERR | Lap 64 | Antonio Iocco made mistake and oversteer at the exit of the corner. He has lost 3.309 seconds!
+ERR | Lap 64 | Guillermo Acosta made mistake and missed the braking point. He has lost 1.821 seconds!
+PIT | Lap 64 | Pit-stop for Ernie Cédryck with 2.26 seconds stationary. He is on Soft compound.
+PIT | Lap 64 | Pit-stop for Antonio Bacarrello with 3.88 seconds stationary. He is on Soft compound.
+ERR | Lap 66 | Guillermo Acosta made mistake and understeer at the entry of the corner. He has lost 1.399 seconds!
+ERR | Lap 66 | Ernie Cédryck made mistake and missed the braking point. He has lost 1.595 seconds!
+DNF | Lap 66 | George Aldeill has forced to retire due to Engine issue. Disaster for ING Jaguar Racing Mercedes!
+ERR | Lap 67 | Nill Rosberg made mistake and oversteer at the exit of the corner. He has lost 1.357 seconds!
+ERR | Lap 67 | George Aldeill made mistake and locked his brakes. He has lost 2.233 seconds!
+ERR | Lap 68 | Ernie Cédryck made mistake and understeer at the entry of the corner. He has lost 1.587 seconds!
+ERR | Lap 69 | James Eadorn made mistake and missed the braking point. He has lost 1.699 seconds!
+ERR | Lap 70 | Guillermo Acosta made mistake and understeer at the entry of the corner. He has lost 1.827 seconds!
+ERR | Lap 70 | James Eadorn made mistake and oversteer at the exit of the corner. He has lost 1.78 seconds!
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Montréal Grand Prix — Canada | 70 Laps
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT   PENALTY  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  01:39:06.140  1:20.277       68        M    2      None     2
+2         West McLaren-Mercedes       Devon Raleigh    +1.054        +1.054  1:19.338       67        S    2      None     1
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +9.781        +8.727  1:20.728       69        M    2      None     3
+4     Scuderia Ferrari Vodafone          Abel Wolfe   +10.736        +0.955  1:20.233       67        M    2      None     4
+5     Winfield Benetton-Renault      Daniil Kovalev    +1 Lap      +122.076  1:23.072       69        M    2      None     7
+6                 Honda F1 Team     Katsuno Yoshiro    +1 Lap        +5.942  1:21.944       53        S    2      None     9
+7               Renault F1 Team       Tony Calandre    +1 Lap       +21.125  1:22.161       61        S    2      None    11
+8   Marlboro Team Lotus-Renault         Sander Metz    +1 Lap        +0.345  1:22.893       69        M    2      None    14
+9               Renault F1 Team     Marcus Svansson    +1 Lap        +0.475  1:21.860       61        S    2      None    15
+10    Winfield Benetton-Renault     Kumar Karihayan    +1 Lap        +2.424  1:22.177       63        S    2  +3 secs.    10
+11  Marlboro Team Lotus-Renault   Charlie Southgate    +1 Lap        +0.373  1:23.286       64        M    2      None    13
+12     Mild Seven Toyota Racing       Quentin Iazzo   +2 Laps       +20.639  1:23.315       61        S    2  +3 secs.    16
+13    Rothmans Williams-Renault       Antonio Iocco   +2 Laps        +7.939  1:19.774       70        S    3      None     6
+14     Mild Seven Toyota Racing    Guillermo Acosta   +2 Laps       +23.624  1:23.144       60        S    2      None    12
+15      Minardi-Ferrari F1 Team        Raul Sanchez   +3 Laps       +76.917  1:23.739       56        S    2      None    17
+16     Red Bull Sauber-Mercedes       Ernie Cédryck   +3 Laps         +28.2  1:21.512       70        S    3      None    22
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +3 Laps       +12.566  1:21.822       70        S    3      None    21
+18   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:24.664       61        S    3      None    20
+19    Rothmans Williams-Renault      Ken Fassbender       DNF           DNF  1:23.204       51        M    2      None     5
+20     Red Bull Sauber-Mercedes      Jamie Lorianne       DNF           DNF  1:26.986       46        M    2      None    19
+21                Honda F1 Team       David Redolfe       DNF           DNF  1:26.184        6        S    1      None     8
+22   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:31.057        3        S    0      None    18
+
+Fastest Lap | Devon Raleigh has recorded 1:19.338 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
