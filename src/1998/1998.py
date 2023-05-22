@@ -14,7 +14,7 @@ execution = 'simulation' # data or simulation for output/run mode.
 current = '1998'
 
 # GP Selection
-GP = 'Montréal'
+GP = 'Le Castellet'
 
 # Spec. Selection
 spec = 'Formula 1'
