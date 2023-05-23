@@ -21,7 +21,7 @@ def upgrade(engineer_crew,designer,cto,aerodynamicst,min_budget,max_budget,spent
     elif engineer_crew == 'Very Bad':
         phase_3 = uniform(0.25,0.60)*(-1.0)
 
-    return ((((round(((phase_1) + (phase_2) + (phase_3)),3))*1.417)**1.3)/1.3)
+    return round(((((round(((phase_1) + (phase_2) + (phase_3)),3))*1.417)**1.3)/1.3),3)
 
 def design(designer_name,designer,cto,aerodynamicst,focus,focus_r,min_budget,max_budget,spent_budget,engineer_crew,pit_package,FW_R,RW_R,chassis_R,base_R,sidepod_R,suspension_R): 
     # budgest unit is million.
@@ -237,5 +237,3 @@ def driver(automated, status, quality, style, char, preferences, w):
     print(f'Wet: {wet}')
 
     print(f'\nDriver("TEAM","NAME","NATL",None,{pace},{braking},{smoothness},{adaptability},{consistency},{fitness},{aggression},{attack},{defence},{start},{wet},[None],{str(choice(unique))})')
-
-driver(True, 'Rookie', None, None, None, None, None)

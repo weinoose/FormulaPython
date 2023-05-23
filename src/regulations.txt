@@ -19,15 +19,22 @@ Finances: 82M$ + plus sponsorships to maximizing it.
 <<< 2021 yılında bu puanları +4.95 şeklinde araç üretimi esnasında hanesine yazar.
 <<< 2022 yılında bu puanları +6.00 şeklinde araç üretimi esnasında hanesine yazar.
 
-Prize money after GP's
+PRIZE MONEYS
+Prize money if multi-year regulations available:
 1st - 500.000
 2nd - 750.000
 3rd - 1.000.000
 Puan Alanlar - 1.500.000
 Puansız Kapatanlar - 2.000.000
 
-* İlk 4 yarış güncelleme yasağı vardır.
+Prize money if one-year regulations available:
+1st - 1.000.000
+2nd - 1.500.000
+3rd - 2.000.000
+Puan Alanlar - 3.000.000
+Puansız Kapatanlar - 4.000.000
 
+REGULATIONS
 1998-1999-2000-2001-2002-2003-2004
 Engine: V10 3.0L
 Engine: One-year usage

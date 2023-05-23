@@ -254,7 +254,10 @@ class Tire():
             if hotlap == 0:
                 ERROR = choice([(incident - error_rate)/10,(incident - error_rate)/25,(incident - error_rate)/50,(incident - error_rate)/75,(incident - error_rate)/100])
                 if (ERROR >= 1.332) and (mode[0] == 'sunday'):
-                    print(f'{Fore.LIGHTYELLOW_EX}ERR | Lap {lap} | {driver.name} made mistake and {choice(MISTAKES)}. He has lost {round(ERROR,3)} seconds!{Style.RESET_ALL}')
+                    if SAFETY_CAR[lap][-1] != 1:
+                        print(f'{Fore.LIGHTYELLOW_EX}ERR | Lap {lap} | {driver.name} made mistake and {choice(MISTAKES)}. He has lost {round(ERROR,3)} seconds!{Style.RESET_ALL}')
+                    else:
+                        pass
 
         # # # 3.5: Normal Lap
         CRU, CRD = ((driver.consistency-40)/7.5), ((100-driver.consistency)/5)
@@ -1315,7 +1318,7 @@ def R(circuit,session,weather):
                         if K.name == defender:
                             defender_obj = K
                     
-                    following_distance = (0.350)*(position-1)
+                    following_distance = (0.666)*(position-1)
 
                     if position == 1:
                         if len(DNF[attacker]) > 1:
