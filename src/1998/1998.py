@@ -1315,7 +1315,7 @@ def R(circuit,session,weather):
                         if K.name == defender:
                             defender_obj = K
                     
-                    following_distance = (0.350)*(position-1)
+                    following_distance = (0.666)*(position-1)
 
                     if position == 1:
                         if len(DNF[attacker]) > 1:
