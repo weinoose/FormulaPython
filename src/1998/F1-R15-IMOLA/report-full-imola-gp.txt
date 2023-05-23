@@ -1,0 +1,1701 @@
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 1/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP  FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:01:34.623  NaN     NaN        M    0     1
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.047        +0.047  NaN     NaN        S    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +0.558        +0.511  NaN     NaN        S    0     3
+4     Rothmans Williams-Renault      Ken Fassbender    +1.457        +0.899  NaN     NaN        M    0     4
+5                 Honda F1 Team       David Redolfe    +2.134        +0.677  NaN     NaN        S    0     5
+6   Marlboro Team Lotus-Renault         Sander Metz    +2.163        +0.029  NaN     NaN        S    0     6
+7               Renault F1 Team     Marcus Svansson    +2.852        +0.689  NaN     NaN        S    0     8
+8     Winfield Benetton-Renault      Daniil Kovalev     +3.01        +0.158  NaN     NaN        M    0     7
+9      Mild Seven Toyota Racing       Quentin Iazzo     +3.67         +0.66  NaN     NaN        S    0    10
+10              Renault F1 Team       August Wehner    +4.049        +0.379  NaN     NaN        S    0    11
+11    Rothmans Williams-Renault       Antonio Iocco    +4.115        +0.066  NaN     NaN        S    0     9
+12                Honda F1 Team     Katsuno Yoshiro    +5.482        +1.367  NaN     NaN        S    0    15
+13     Mild Seven Toyota Racing    Guillermo Acosta    +5.581        +0.099  NaN     NaN        M    0    13
+14  Marlboro Team Lotus-Renault   Charlie Southgate     +6.02        +0.439  NaN     NaN        M    0    12
+15    Winfield Benetton-Renault     Kumar Karihayan    +6.285        +0.265  NaN     NaN        M    0    14
+16      Minardi-Ferrari F1 Team        Raul Sanchez    +7.006        +0.721  NaN     NaN        S    0    16
+17   ING Jaguar Racing Mercedes        James Eadorn    +8.327        +1.321  NaN     NaN        S    0    18
+18        West McLaren-Mercedes       Devon Raleigh     +8.37        +0.043  NaN     NaN        S    0    22
+19     Red Bull Sauber-Mercedes        Jérémy Claes    +8.704        +0.334  NaN     NaN        M    0    17
+20     Red Bull Sauber-Mercedes       Matteo de Vos    +9.086        +0.382  NaN     NaN        S    0    21
+21   ING Jaguar Racing Mercedes      George Aldeill    +9.436         +0.35  NaN     NaN        M    0    19
+22      Minardi-Ferrari F1 Team  Antonio Bacarrello     +9.95        +0.514  NaN     NaN        M    0    20
+
+Fastest Lap | Nill Rosberg has recorded NaN on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 2/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP  FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:03:07.056  NaN     NaN        M    0     1
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.888        +0.888  NaN     NaN        S    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +1.042        +0.154  NaN     NaN        S    0     3
+4                 Honda F1 Team       David Redolfe    +2.801        +1.759  NaN     NaN        S    0     5
+5     Rothmans Williams-Renault      Ken Fassbender    +2.911         +0.11  NaN     NaN        M    0     4
+6   Marlboro Team Lotus-Renault         Sander Metz    +4.074        +1.163  NaN     NaN        S    0     6
+7               Renault F1 Team     Marcus Svansson    +4.385        +0.311  NaN     NaN        S    0     8
+8      Mild Seven Toyota Racing       Quentin Iazzo    +5.534        +1.149  NaN     NaN        S    0    10
+9               Renault F1 Team       August Wehner    +5.707        +0.173  NaN     NaN        S    0    11
+10                Honda F1 Team     Katsuno Yoshiro    +5.852        +0.145  NaN     NaN        S    0    15
+11    Rothmans Williams-Renault       Antonio Iocco    +6.001        +0.149  NaN     NaN        S    0     9
+12    Winfield Benetton-Renault      Daniil Kovalev     +6.08        +0.079  NaN     NaN        M    0     7
+13     Mild Seven Toyota Racing    Guillermo Acosta    +7.959        +1.879  NaN     NaN        M    0    13
+14  Marlboro Team Lotus-Renault   Charlie Southgate    +9.495        +1.536  NaN     NaN        M    0    12
+15      Minardi-Ferrari F1 Team        Raul Sanchez     +9.81        +0.315  NaN     NaN        S    0    16
+16    Winfield Benetton-Renault     Kumar Karihayan    +9.895        +0.085  NaN     NaN        M    0    14
+17        West McLaren-Mercedes       Devon Raleigh   +11.558        +1.663  NaN     NaN        S    0    22
+18   ING Jaguar Racing Mercedes        James Eadorn    +12.28        +0.722  NaN     NaN        S    0    18
+19     Red Bull Sauber-Mercedes        Jérémy Claes   +12.644        +0.364  NaN     NaN        M    0    17
+20     Red Bull Sauber-Mercedes       Matteo de Vos   +13.152        +0.508  NaN     NaN        S    0    21
+21   ING Jaguar Racing Mercedes      George Aldeill   +13.252          +0.1  NaN     NaN        M    0    19
+22      Minardi-Ferrari F1 Team  Antonio Bacarrello   +14.083        +0.831  NaN     NaN        M    0    20
+
+Fastest Lap | Nill Rosberg has recorded NaN on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 3/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:04:39.376  1:32.320       3        M    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +1.013        +1.013  1:32.290       3        S    0     3
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.534        +0.521  1:32.965       3        S    0     2
+4     Rothmans Williams-Renault      Ken Fassbender    +3.373        +1.839  1:32.782       3        M    0     4
+5                 Honda F1 Team       David Redolfe    +3.733         +0.36       NaN     NaN        S    0     5
+6   Marlboro Team Lotus-Renault         Sander Metz    +4.294        +0.561  1:32.539       3        S    0     6
+7               Renault F1 Team     Marcus Svansson    +4.472        +0.178  1:32.407       3        S    0     8
+8      Mild Seven Toyota Racing       Quentin Iazzo    +5.901        +1.429  1:32.687       3        S    0    10
+9               Renault F1 Team       August Wehner    +6.042        +0.141  1:32.655       3        S    0    11
+10    Rothmans Williams-Renault       Antonio Iocco    +7.191        +1.149  1:33.510       3        S    0     9
+11    Winfield Benetton-Renault      Daniil Kovalev    +7.432        +0.241  1:33.672       3        M    0     7
+12                Honda F1 Team     Katsuno Yoshiro    +8.582         +1.15       NaN     NaN        S    0    15
+13     Mild Seven Toyota Racing    Guillermo Acosta   +10.434        +1.852  1:34.794       3        M    0    13
+14    Winfield Benetton-Renault     Kumar Karihayan   +11.258        +0.824  1:33.682       3        M    0    14
+15  Marlboro Team Lotus-Renault   Charlie Southgate   +11.469        +0.211  1:34.294       3        M    0    12
+16      Minardi-Ferrari F1 Team        Raul Sanchez    +12.18        +0.711   1:34.69       3        S    0    16
+17        West McLaren-Mercedes       Devon Raleigh   +12.633        +0.453  1:33.394       3        S    0    22
+18   ING Jaguar Racing Mercedes        James Eadorn   +15.326        +2.693  1:35.366       3        S    0    18
+19     Red Bull Sauber-Mercedes        Jérémy Claes   +15.998        +0.672  1:35.674       3        M    0    17
+20     Red Bull Sauber-Mercedes       Matteo de Vos   +16.433        +0.435  1:35.601       3        S    0    21
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +19.823         +3.39       NaN     NaN        M    0    20
+22   ING Jaguar Racing Mercedes      George Aldeill   +28.735        +8.912       NaN     NaN        M    0    19
+
+Fastest Lap | Abel Wolfe has recorded 1:32.290 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 4/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:06:11.672  1:32.296       4        M    0     1
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.756        +0.756  1:31.517       4        S    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +1.364        +0.608  1:32.290       3        S    0     3
+4     Rothmans Williams-Renault      Ken Fassbender    +3.868        +2.504  1:32.782       3        M    0     4
+5   Marlboro Team Lotus-Renault         Sander Metz      +4.1        +0.232  1:32.101       4        S    0     6
+6      Mild Seven Toyota Racing       Quentin Iazzo    +5.556        +1.456  1:31.950       4        S    0    10
+7               Renault F1 Team       August Wehner    +5.651        +0.095  1:31.905       4        S    0    11
+8                 Honda F1 Team       David Redolfe    +5.999        +0.348       NaN     NaN        S    0     5
+9     Rothmans Williams-Renault       Antonio Iocco    +6.588        +0.589  1:31.693       4        S    0     9
+10              Renault F1 Team     Marcus Svansson    +7.582        +0.994  1:32.407       3        S    0     8
+11                Honda F1 Team     Katsuno Yoshiro     +8.14        +0.558  1:31.854       4        S    0    15
+12    Winfield Benetton-Renault      Daniil Kovalev    +9.678        +1.538  1:33.672       3        M    0     7
+13     Mild Seven Toyota Racing    Guillermo Acosta   +11.797        +2.119  1:33.658       4        M    0    13
+14  Marlboro Team Lotus-Renault   Charlie Southgate   +12.636        +0.839  1:33.462       4        M    0    12
+15    Winfield Benetton-Renault     Kumar Karihayan   +12.883        +0.247  1:33.682       3        M    0    14
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +14.057        +1.174  1:34.172       4        S    0    16
+17        West McLaren-Mercedes       Devon Raleigh   +15.578        +1.521  1:33.394       3        S    0    22
+18   ING Jaguar Racing Mercedes        James Eadorn   +18.645        +3.067  1:35.366       3        S    0    18
+19     Red Bull Sauber-Mercedes        Jérémy Claes   +19.759        +1.114  1:35.674       3        M    0    17
+20     Red Bull Sauber-Mercedes       Matteo de Vos   +19.898        +0.139  1:35.601       3        S    0    21
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +23.984        +4.086  1:36.456       4        M    0    20
+22   ING Jaguar Racing Mercedes      George Aldeill   +32.533        +8.549  1:36.094       4        M    0    19
+
+Fastest Lap | Charles Hérnandez has recorded 1:31.517 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 5/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:07:43.372  1:31.700        5        M    0     1
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.708        +0.708  1:31.517        4        S    0     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe     +0.86        +0.152  1:31.195        5        S    0     3
+4     Rothmans Williams-Renault      Ken Fassbender    +4.335        +3.475  1:32.167        5        M    0     4
+5   Marlboro Team Lotus-Renault         Sander Metz     +4.36        +0.025  1:31.959        5        S    0     6
+6      Mild Seven Toyota Racing       Quentin Iazzo    +4.452        +0.092  1:30.596        5        S    0    10
+7                 Honda F1 Team       David Redolfe    +5.332         +0.88  1:31.032        5        S    0     5
+8     Rothmans Williams-Renault       Antonio Iocco    +6.082         +0.75  1:31.194        5        S    0     9
+9               Renault F1 Team     Marcus Svansson    +6.616        +0.534  1:30.733        5        S    0     8
+10              Renault F1 Team       August Wehner    +7.367        +0.751  1:31.905        4        S    0    11
+11                Honda F1 Team     Katsuno Yoshiro    +8.181        +0.814  1:31.741        5        S    0    15
+12    Winfield Benetton-Renault      Daniil Kovalev   +11.394        +3.213  1:33.416        5        M    0     7
+13  Marlboro Team Lotus-Renault   Charlie Southgate   +13.651        +2.257  1:32.715        5        M    0    12
+14    Winfield Benetton-Renault     Kumar Karihayan    +14.13        +0.479  1:32.947        5        M    0    14
+15     Mild Seven Toyota Racing    Guillermo Acosta   +15.031        +0.901  1:33.658        4        M    0    13
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +15.568        +0.537  1:33.211        5        S    0    16
+17        West McLaren-Mercedes       Devon Raleigh   +15.569        +0.001  1:31.690        5        S    0    22
+18   ING Jaguar Racing Mercedes        James Eadorn   +20.203        +4.634  1:33.258        5        S    0    18
+19     Red Bull Sauber-Mercedes       Matteo de Vos   +22.808        +2.605  1:34.609        5        S    0    21
+20     Red Bull Sauber-Mercedes        Jérémy Claes   +23.736        +0.928  1:35.674        3        M    0    17
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +28.016         +4.28  1:35.732        5        M    0    20
+22   ING Jaguar Racing Mercedes      George Aldeill   +35.261        +7.245  1:34.428        5        M    0    19
+
+Fastest Lap | Quentin Iazzo has recorded 1:30.596 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 6/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:09:13.550  1:29.318        6        S    0     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.476        +0.476  1:29.946        6        S    0     2
+3         West McLaren-Mercedes        Nill Rosberg    +2.014        +1.538  1:31.700        5        M    0     1
+4      Mild Seven Toyota Racing       Quentin Iazzo    +5.365        +3.351  1:30.596        5        S    0    10
+5     Rothmans Williams-Renault      Ken Fassbender    +5.712        +0.347  1:31.555        6        M    0     4
+6                 Honda F1 Team       David Redolfe    +5.828        +0.116  1:30.673        6        S    0     5
+7   Marlboro Team Lotus-Renault         Sander Metz    +6.091        +0.263  1:31.909        6        S    0     6
+8               Renault F1 Team     Marcus Svansson     +6.26        +0.169  1:29.823        6        S    0     8
+9     Rothmans Williams-Renault       Antonio Iocco    +6.582        +0.322  1:30.678        6        S    0     9
+10              Renault F1 Team       August Wehner    +7.045        +0.463  1:29.856        6        S    0    11
+11                Honda F1 Team     Katsuno Yoshiro    +7.779        +0.734  1:29.775        6        S    0    15
+12    Winfield Benetton-Renault      Daniil Kovalev   +13.892        +6.113  1:32.676        6        M    0     7
+13  Marlboro Team Lotus-Renault   Charlie Southgate   +16.583        +2.691  1:32.715        5        M    0    12
+14    Winfield Benetton-Renault     Kumar Karihayan   +16.657        +0.074  1:32.705        6        M    0    14
+15      Minardi-Ferrari F1 Team        Raul Sanchez   +17.636        +0.979  1:32.245        6        S    0    16
+16        West McLaren-Mercedes       Devon Raleigh   +17.691        +0.055  1:31.690        5        S    0    22
+17     Mild Seven Toyota Racing    Guillermo Acosta   +17.904        +0.213  1:33.050        6        M    0    13
+18   ING Jaguar Racing Mercedes        James Eadorn   +23.898        +5.994  1:33.258        5        S    0    18
+19     Red Bull Sauber-Mercedes       Matteo de Vos   +25.809        +1.911  1:33.179        6        S    0    21
+20     Red Bull Sauber-Mercedes        Jérémy Claes   +28.993        +3.184  1:35.435        6        M    0    17
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +33.426        +4.433  1:35.587        6        M    0    20
+22   ING Jaguar Racing Mercedes      George Aldeill   +38.864        +5.438  1:33.781        6        M    0    19
+
+Fastest Lap | Abel Wolfe has recorded 1:29.318 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 7/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:10:42.598  1:29.048        7        S    0     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +2.652        +2.652  1:29.946        6        S    0     2
+3         West McLaren-Mercedes        Nill Rosberg    +4.603        +1.951  1:31.637        7        M    0     1
+4   Marlboro Team Lotus-Renault         Sander Metz    +6.836        +2.233  1:29.793        7        S    0     6
+5      Mild Seven Toyota Racing       Quentin Iazzo    +7.337        +0.501  1:30.596        5        S    0    10
+6                 Honda F1 Team       David Redolfe    +7.621        +0.284  1:30.673        6        S    0     5
+7     Rothmans Williams-Renault      Ken Fassbender    +7.927        +0.306  1:31.263        7        M    0     4
+8     Rothmans Williams-Renault       Antonio Iocco    +8.491        +0.564  1:30.678        6        S    0     9
+9                 Honda F1 Team     Katsuno Yoshiro    +8.558        +0.067  1:29.775        6        S    0    15
+10              Renault F1 Team       August Wehner    +8.807        +0.249  1:29.856        6        S    0    11
+11              Renault F1 Team     Marcus Svansson    +9.781        +0.974  1:29.823        6        S    0     8
+12    Winfield Benetton-Renault      Daniil Kovalev   +17.213        +7.432  1:32.369        7        M    0     7
+13    Winfield Benetton-Renault     Kumar Karihayan   +19.095        +1.882  1:31.485        7        M    0    14
+14        West McLaren-Mercedes       Devon Raleigh   +19.909        +0.814  1:31.266        7        S    0    22
+15      Minardi-Ferrari F1 Team        Raul Sanchez   +20.763        +0.854  1:32.175        7        S    0    16
+16     Mild Seven Toyota Racing    Guillermo Acosta    +20.99        +0.227  1:32.134        7        M    0    13
+17  Marlboro Team Lotus-Renault   Charlie Southgate   +21.056        +0.066  1:32.715        5        M    0    12
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +29.059        +8.003  1:32.298        7        S    0    21
+19   ING Jaguar Racing Mercedes        James Eadorn    +29.43        +0.371  1:33.258        5        S    0    18
+20     Red Bull Sauber-Mercedes        Jérémy Claes   +33.448        +4.018  1:33.503        7        M    0    17
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +41.823        +8.375  1:35.587        6        M    0    20
+22   ING Jaguar Racing Mercedes      George Aldeill   +43.613         +1.79  1:33.781        6        M    0    19
+
+Fastest Lap | Abel Wolfe has recorded 1:29.048 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 8/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:12:12.069  1:29.048        7        S    0     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +2.453        +2.453  1:29.272        8        S    0     2
+3         West McLaren-Mercedes        Nill Rosberg    +6.219        +3.766  1:31.087        8        M    0     1
+4   Marlboro Team Lotus-Renault         Sander Metz    +8.268        +2.049  1:29.793        7        S    0     6
+5     Rothmans Williams-Renault      Ken Fassbender    +8.845        +0.577  1:30.389        8        M    0     4
+6                 Honda F1 Team       David Redolfe    +9.242        +0.397  1:30.673        6        S    0     5
+7                 Honda F1 Team     Katsuno Yoshiro    +9.929        +0.687  1:29.775        6        S    0    15
+8     Rothmans Williams-Renault       Antonio Iocco   +10.797        +0.868  1:30.678        6        S    0     9
+9               Renault F1 Team     Marcus Svansson   +11.453        +0.656  1:29.823        6        S    0     8
+10              Renault F1 Team       August Wehner   +11.783         +0.33  1:29.856        6        S    0    11
+11     Mild Seven Toyota Racing       Quentin Iazzo   +11.961        +0.178  1:30.596        5        S    0    10
+12    Winfield Benetton-Renault      Daniil Kovalev   +18.351         +6.39  1:30.608        8        M    0     7
+13        West McLaren-Mercedes       Devon Raleigh   +20.395        +2.044  1:29.957        8        S    0    22
+14    Winfield Benetton-Renault     Kumar Karihayan   +20.718        +0.323  1:31.093        8        M    0    14
+15      Minardi-Ferrari F1 Team        Raul Sanchez   +24.387        +3.669  1:32.175        7        S    0    16
+16  Marlboro Team Lotus-Renault   Charlie Southgate   +24.977         +0.59  1:32.715        5        M    0    12
+17     Mild Seven Toyota Racing    Guillermo Acosta   +25.275        +0.298  1:32.134        7        M    0    13
+18   ING Jaguar Racing Mercedes        James Eadorn   +32.474        +7.199  1:32.514        8        S    0    18
+19     Red Bull Sauber-Mercedes       Matteo de Vos   +33.865        +1.391  1:32.298        7        S    0    21
+20     Red Bull Sauber-Mercedes        Jérémy Claes   +37.868        +4.003  1:33.503        7        M    0    17
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +46.383        +8.515  1:34.030        8        M    0    20
+22   ING Jaguar Racing Mercedes      George Aldeill   +48.164        +1.781  1:33.781        6        M    0    19
+
+Fastest Lap | Abel Wolfe has recorded 1:29.048 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 9/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:13:41.108  1:29.039        9        S    0     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez     +2.29         +2.29  1:28.876        9        S    0     2
+3         West McLaren-Mercedes        Nill Rosberg    +7.181        +4.891  1:30.001        9        M    0     1
+4     Rothmans Williams-Renault      Ken Fassbender    +9.824        +2.643  1:30.018        9        M    0     4
+5   Marlboro Team Lotus-Renault         Sander Metz    +9.995        +0.171  1:29.793        7        S    0     6
+6                 Honda F1 Team       David Redolfe   +10.655         +0.66  1:30.451        9        S    0     5
+7                 Honda F1 Team     Katsuno Yoshiro   +10.856        +0.201  1:29.775        6        S    0    15
+8     Rothmans Williams-Renault       Antonio Iocco   +11.663        +0.807  1:29.905        9        S    0     9
+9               Renault F1 Team     Marcus Svansson   +11.984        +0.321  1:29.570        9        S    0     8
+10              Renault F1 Team       August Wehner    +12.49        +0.506  1:29.746        9        S    0    11
+11     Mild Seven Toyota Racing       Quentin Iazzo   +13.106        +0.616  1:30.183        9        S    0    10
+12        West McLaren-Mercedes       Devon Raleigh   +19.493        +6.387  1:28.137        9        S    0    22
+13    Winfield Benetton-Renault      Daniil Kovalev   +19.818        +0.325  1:30.506        9        M    0     7
+14    Winfield Benetton-Renault     Kumar Karihayan   +24.653        +4.835  1:31.093        8        M    0    14
+15     Mild Seven Toyota Racing    Guillermo Acosta   +27.339        +2.686  1:31.102        9        M    0    13
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +27.603        +0.264  1:32.175        7        S    0    16
+17  Marlboro Team Lotus-Renault   Charlie Southgate   +28.269        +0.666  1:32.331        9        M    0    12
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +38.995       +10.726  1:32.298        7        S    0    21
+19   ING Jaguar Racing Mercedes        James Eadorn   +41.666        +2.671  1:32.514        8        S    0    18
+20     Red Bull Sauber-Mercedes        Jérémy Claes   +41.916         +0.25  1:33.087        9        M    0    17
+21   ING Jaguar Racing Mercedes      George Aldeill   +52.255       +10.339  1:33.130        9        M    0    19
+22      Minardi-Ferrari F1 Team  Antonio Bacarrello   +52.956        +0.701  1:34.030        8        M    0    20
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 10/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:15:10.118  1:29.010       10        S    0     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +2.377        +2.377  1:28.876        9        S    0     2
+3         West McLaren-Mercedes        Nill Rosberg    +8.145        +5.768  1:29.974       10        M    0     1
+4   Marlboro Team Lotus-Renault         Sander Metz   +11.254        +3.109  1:29.793        7        S    0     6
+5     Rothmans Williams-Renault      Ken Fassbender   +11.724         +0.47  1:30.018        9        M    0     4
+6                 Honda F1 Team       David Redolfe   +12.567        +0.843  1:30.451        9        S    0     5
+7     Rothmans Williams-Renault       Antonio Iocco   +12.698        +0.131  1:29.905        9        S    0     9
+8                 Honda F1 Team     Katsuno Yoshiro   +12.707        +0.009  1:29.775        6        S    0    15
+9               Renault F1 Team       August Wehner   +13.255        +0.548  1:29.746        9        S    0    11
+10     Mild Seven Toyota Racing       Quentin Iazzo   +14.284        +1.029  1:30.183        9        S    0    10
+11              Renault F1 Team     Marcus Svansson   +14.482        +0.198  1:29.570        9        S    0     8
+12        West McLaren-Mercedes       Devon Raleigh   +19.482          +5.0  1:28.137        9        S    0    22
+13    Winfield Benetton-Renault      Daniil Kovalev   +21.696        +2.214  1:30.506        9        M    0     7
+14    Winfield Benetton-Renault     Kumar Karihayan   +26.916         +5.22  1:31.093        8        M    0    14
+15     Mild Seven Toyota Racing    Guillermo Acosta   +29.907        +2.991  1:31.102        9        M    0    13
+16  Marlboro Team Lotus-Renault   Charlie Southgate   +30.897         +0.99  1:31.637       10        M    0    12
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +31.161        +0.264  1:32.175        7        S    0    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +43.162       +12.001  1:32.298        7        S    0    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes   +45.669        +2.507  1:32.763       10        M    0    17
+20   ING Jaguar Racing Mercedes        James Eadorn   +45.755        +0.086  1:32.514        8        S    0    18
+21   ING Jaguar Racing Mercedes      George Aldeill   +57.634       +11.879  1:33.130        9        M    0    19
+22      Minardi-Ferrari F1 Team  Antonio Bacarrello   +58.897        +1.263  1:34.030        8        M    0    20
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 11/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:16:39.507  1:29.010       10        S    0     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.913        +1.913  1:28.876        9        S    0     2
+3         West McLaren-Mercedes        Nill Rosberg    +8.305        +6.392  1:29.549       11        M    0     1
+4   Marlboro Team Lotus-Renault         Sander Metz   +12.791        +4.486  1:29.793        7        S    0     6
+5     Rothmans Williams-Renault       Antonio Iocco    +13.24        +0.449  1:29.905        9        S    0     9
+6                 Honda F1 Team       David Redolfe   +13.253        +0.013  1:30.074       11        S    0     5
+7               Renault F1 Team       August Wehner    +13.57        +0.317  1:29.704       11        S    0    11
+8     Rothmans Williams-Renault      Ken Fassbender   +13.685        +0.115  1:30.018        9        M    0     4
+9      Mild Seven Toyota Racing       Quentin Iazzo   +15.088        +1.403  1:30.183        9        S    0    10
+10                Honda F1 Team     Katsuno Yoshiro   +15.263        +0.175  1:29.775        6        S    0    15
+11              Renault F1 Team     Marcus Svansson   +16.533         +1.27  1:29.570        9        S    0     8
+12        West McLaren-Mercedes       Devon Raleigh   +19.303         +2.77  1:28.137        9        S    0    22
+13    Winfield Benetton-Renault      Daniil Kovalev   +22.815        +3.512  1:30.506        9        M    0     7
+14    Winfield Benetton-Renault     Kumar Karihayan   +28.533        +5.718  1:31.006       11        M    0    14
+15  Marlboro Team Lotus-Renault   Charlie Southgate    +31.89        +3.357  1:30.381       11        M    0    12
+16     Mild Seven Toyota Racing    Guillermo Acosta   +32.052        +0.162  1:31.102        9        M    0    13
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +34.824        +2.772  1:32.175        7        S    0    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +46.831       +12.007  1:32.298        7        S    0    21
+19   ING Jaguar Racing Mercedes        James Eadorn   +49.563        +2.732  1:32.514        8        S    0    18
+20     Red Bull Sauber-Mercedes        Jérémy Claes   +49.888        +0.325  1:32.763       10        M    0    17
+21   ING Jaguar Racing Mercedes      George Aldeill   +61.928        +12.04  1:33.130        9        M    0    19
+22      Minardi-Ferrari F1 Team  Antonio Bacarrello    +63.19        +1.262  1:33.681       11        M    0    20
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 12/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:18:08.652  1:29.010       10        S    0     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez     +1.68         +1.68  1:28.876        9        S    0     2
+3         West McLaren-Mercedes        Nill Rosberg      +8.8         +7.12  1:29.549       11        M    0     1
+4     Rothmans Williams-Renault       Antonio Iocco   +14.525        +5.725  1:29.905        9        S    0     9
+5   Marlboro Team Lotus-Renault         Sander Metz    +14.62        +0.095  1:29.793        7        S    0     6
+6                 Honda F1 Team       David Redolfe   +15.154        +0.534  1:30.074       11        S    0     5
+7               Renault F1 Team       August Wehner   +15.247        +0.093  1:29.704       11        S    0    11
+8     Rothmans Williams-Renault      Ken Fassbender   +15.422        +0.175  1:30.018        9        M    0     4
+9      Mild Seven Toyota Racing       Quentin Iazzo   +16.313        +0.891  1:30.183        9        S    0    10
+10              Renault F1 Team     Marcus Svansson   +17.181        +0.868  1:29.570        9        S    0     8
+11                Honda F1 Team     Katsuno Yoshiro   +17.894        +0.713  1:29.775        6        S    0    15
+12        West McLaren-Mercedes       Devon Raleigh   +19.426        +1.532  1:28.137        9        S    0    22
+13    Winfield Benetton-Renault      Daniil Kovalev   +24.722        +5.296  1:30.506        9        M    0     7
+14    Winfield Benetton-Renault     Kumar Karihayan   +30.674        +5.952  1:31.006       11        M    0    14
+15  Marlboro Team Lotus-Renault   Charlie Southgate    +33.93        +3.256  1:30.381       11        M    0    12
+16     Mild Seven Toyota Racing    Guillermo Acosta   +36.186        +2.256  1:31.102        9        M    0    13
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +38.699        +2.513  1:32.175        7        S    0    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos    +51.21       +12.511  1:32.298        7        S    0    21
+19   ING Jaguar Racing Mercedes        James Eadorn   +53.689        +2.479  1:32.514        8        S    0    18
+20     Red Bull Sauber-Mercedes        Jérémy Claes   +53.747        +0.058  1:32.763       10        M    0    17
+21   ING Jaguar Racing Mercedes      George Aldeill   +66.813       +13.066  1:33.130        9        M    0    19
+22      Minardi-Ferrari F1 Team  Antonio Bacarrello   +67.962        +1.149  1:33.681       11        M    0    20
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 13/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:19:37.945  1:29.010       10        S    0     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.412        +1.412  1:28.876        9        S    0     2
+3         West McLaren-Mercedes        Nill Rosberg     +9.17        +7.758  1:29.549       11        M    0     1
+4   Marlboro Team Lotus-Renault         Sander Metz   +15.217        +6.047  1:29.793        7        S    0     6
+5                 Honda F1 Team       David Redolfe   +15.439        +0.222  1:29.577       13        S    0     5
+6     Rothmans Williams-Renault       Antonio Iocco   +15.802        +0.363  1:29.905        9        S    0     9
+7     Rothmans Williams-Renault      Ken Fassbender   +16.792         +0.99  1:30.018        9        M    0     4
+8               Renault F1 Team       August Wehner   +16.809        +0.017  1:29.704       11        S    0    11
+9      Mild Seven Toyota Racing       Quentin Iazzo   +17.635        +0.826  1:30.183        9        S    0    10
+10              Renault F1 Team     Marcus Svansson   +17.763        +0.128  1:29.570        9        S    0     8
+11        West McLaren-Mercedes       Devon Raleigh   +18.317        +0.554  1:28.137        9        S    0    22
+12                Honda F1 Team     Katsuno Yoshiro   +18.392        +0.075  1:29.775        6        S    0    15
+13    Winfield Benetton-Renault      Daniil Kovalev    +26.07        +7.678  1:30.506        9        M    0     7
+14    Winfield Benetton-Renault     Kumar Karihayan   +32.642        +6.572  1:31.006       11        M    0    14
+15  Marlboro Team Lotus-Renault   Charlie Southgate   +35.798        +3.156  1:30.381       11        M    0    12
+16     Mild Seven Toyota Racing    Guillermo Acosta   +38.697        +2.899  1:31.102        9        M    0    13
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +42.785        +4.088  1:32.175        7        S    0    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +55.448       +12.663  1:32.298        7        S    0    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes   +57.094        +1.646   1:32.64       13        M    0    17
+20   ING Jaguar Racing Mercedes        James Eadorn   +57.655        +0.561  1:32.514        8        S    0    18
+21   ING Jaguar Racing Mercedes      George Aldeill   +71.269       +13.614  1:33.130        9        M    0    19
+22      Minardi-Ferrari F1 Team  Antonio Bacarrello   +72.565        +1.296  1:33.681       11        M    0    20
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 14/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:21:07.238  1:29.010       10        S    0     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.291        +1.291  1:28.876        9        S    0     2
+3         West McLaren-Mercedes        Nill Rosberg    +9.581         +8.29  1:29.549       11        M    0     1
+4                 Honda F1 Team       David Redolfe   +16.576        +6.995  1:29.577       13        S    0     5
+5     Rothmans Williams-Renault       Antonio Iocco   +16.663        +0.087  1:29.905        9        S    0     9
+6   Marlboro Team Lotus-Renault         Sander Metz   +17.002        +0.339  1:29.793        7        S    0     6
+7     Rothmans Williams-Renault      Ken Fassbender   +18.188        +1.186  1:30.018        9        M    0     4
+8               Renault F1 Team       August Wehner   +18.316        +0.128  1:29.704       11        S    0    11
+9               Renault F1 Team     Marcus Svansson   +19.189        +0.873  1:29.570        9        S    0     8
+10        West McLaren-Mercedes       Devon Raleigh   +19.199         +0.01  1:28.137        9        S    0    22
+11                Honda F1 Team     Katsuno Yoshiro   +19.776        +0.577  1:29.775        6        S    0    15
+12     Mild Seven Toyota Racing       Quentin Iazzo   +21.019        +1.243  1:30.183        9        S    0    10
+13    Winfield Benetton-Renault      Daniil Kovalev   +27.261        +6.242  1:30.483       14        M    0     7
+14    Winfield Benetton-Renault     Kumar Karihayan   +34.281         +7.02  1:30.932       14        M    0    14
+15  Marlboro Team Lotus-Renault   Charlie Southgate   +37.949        +3.668  1:30.381       11        M    0    12
+16     Mild Seven Toyota Racing    Guillermo Acosta   +41.332        +3.383  1:31.102        9        M    0    13
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +46.398        +5.066  1:32.175        7        S    0    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +59.324       +12.926  1:32.298        7        S    0    21
+19   ING Jaguar Racing Mercedes        James Eadorn   +61.119        +1.795  1:32.514        8        S    0    18
+20     Red Bull Sauber-Mercedes        Jérémy Claes   +61.407        +0.288   1:32.64       13        M    0    17
+21   ING Jaguar Racing Mercedes      George Aldeill   +76.902       +15.495  1:33.130        9        M    0    19
+22      Minardi-Ferrari F1 Team  Antonio Bacarrello   +78.203        +1.301  1:33.681       11        M    0    20
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 15/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:22:36.519  1:29.010       10        S    0     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez     +1.34         +1.34  1:28.876        9        S    0     2
+3         West McLaren-Mercedes        Nill Rosberg   +10.118        +8.778  1:29.549       11        M    0     1
+4     Rothmans Williams-Renault       Antonio Iocco   +17.401        +7.283  1:29.905        9        S    0     9
+5                 Honda F1 Team       David Redolfe    +17.77        +0.369  1:29.577       13        S    0     5
+6     Rothmans Williams-Renault      Ken Fassbender   +18.758        +0.988  1:29.851       15        M    0     4
+7               Renault F1 Team       August Wehner   +18.951        +0.193  1:29.704       11        S    0    11
+8   Marlboro Team Lotus-Renault         Sander Metz   +18.965        +0.014  1:29.793        7        S    0     6
+9               Renault F1 Team     Marcus Svansson   +19.809        +0.844  1:29.570        9        S    0     8
+10                Honda F1 Team     Katsuno Yoshiro   +20.412        +0.603  1:29.775        6        S    0    15
+11        West McLaren-Mercedes       Devon Raleigh   +21.881        +1.469  1:28.137        9        S    0    22
+12     Mild Seven Toyota Racing       Quentin Iazzo   +23.218        +1.337  1:30.183        9        S    0    10
+13    Winfield Benetton-Renault      Daniil Kovalev   +28.743        +5.525  1:30.483       14        M    0     7
+14    Winfield Benetton-Renault     Kumar Karihayan   +35.861        +7.118  1:30.860       15        M    0    14
+15  Marlboro Team Lotus-Renault   Charlie Southgate   +40.234        +4.373  1:30.381       11        M    0    12
+16     Mild Seven Toyota Racing    Guillermo Acosta   +43.647        +3.413  1:31.102        9        M    0    13
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +50.377         +6.73  1:32.175        7        S    0    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +64.589       +14.212  1:32.298        7        S    0    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes   +66.782        +2.193   1:32.64       13        M    0    17
+20   ING Jaguar Racing Mercedes        James Eadorn   +69.098        +2.316  1:32.514        8        S    0    18
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +84.098         +15.0  1:33.681       11        M    0    20
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 16/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:24:05.717  1:29.010       10        S    0     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.458        +1.458  1:28.876        9        S    0     2
+3         West McLaren-Mercedes        Nill Rosberg     +10.5        +9.042  1:29.549       11        M    0     1
+4     Rothmans Williams-Renault       Antonio Iocco   +18.313        +7.813  1:29.905        9        S    0     9
+5     Rothmans Williams-Renault      Ken Fassbender   +19.257        +0.944  1:29.697       16        M    0     4
+6               Renault F1 Team       August Wehner   +19.906        +0.649  1:29.704       11        S    0    11
+7                 Honda F1 Team       David Redolfe   +20.045        +0.139  1:29.577       13        S    0     5
+8   Marlboro Team Lotus-Renault         Sander Metz   +20.202        +0.157  1:29.793        7        S    0     6
+9               Renault F1 Team     Marcus Svansson   +21.192         +0.99  1:29.570        9        S    0     8
+10        West McLaren-Mercedes       Devon Raleigh   +21.285        +0.093  1:28.137        9        S    0    22
+11                Honda F1 Team     Katsuno Yoshiro   +22.999        +1.714  1:29.775        6        S    0    15
+12     Mild Seven Toyota Racing       Quentin Iazzo   +24.963        +1.964  1:30.183        9        S    0    10
+13    Winfield Benetton-Renault      Daniil Kovalev   +30.289        +5.326  1:30.483       14        M    0     7
+14    Winfield Benetton-Renault     Kumar Karihayan   +38.133        +7.844  1:30.860       15        M    0    14
+15  Marlboro Team Lotus-Renault   Charlie Southgate   +42.376        +4.243  1:30.381       11        M    0    12
+16     Mild Seven Toyota Racing    Guillermo Acosta   +45.678        +3.302  1:31.102        9        M    0    13
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +54.627        +8.949  1:32.175        7        S    0    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +68.984       +14.357  1:32.298        7        S    0    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes   +73.925        +4.941   1:32.64       13        M    0    17
+20   ING Jaguar Racing Mercedes        James Eadorn   +75.167        +1.242  1:32.514        8        S    0    18
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello   +88.806       +13.639  1:33.681       11        M    0    20
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 17/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:25:35.242  1:29.010       10        S    0     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.543        +1.543  1:28.876        9        S    0     2
+3         West McLaren-Mercedes        Nill Rosberg   +10.563         +9.02  1:29.549       11        M    0     1
+4     Rothmans Williams-Renault      Ken Fassbender   +19.516        +8.953  1:29.697       16        M    0     4
+5     Rothmans Williams-Renault       Antonio Iocco   +19.522        +0.006  1:29.905        9        S    0     9
+6               Renault F1 Team       August Wehner   +20.334        +0.812  1:29.704       11        S    0    11
+7                 Honda F1 Team       David Redolfe   +20.525        +0.191  1:29.577       13        S    0     5
+8               Renault F1 Team     Marcus Svansson   +21.217        +0.692  1:29.550       17        S    0     8
+9   Marlboro Team Lotus-Renault         Sander Metz   +22.357         +1.14  1:29.793        7        S    0     6
+10        West McLaren-Mercedes       Devon Raleigh   +24.167         +1.81  1:28.137        9        S    0    22
+11                Honda F1 Team     Katsuno Yoshiro   +26.431        +2.264  1:29.775        6        S    0    15
+12     Mild Seven Toyota Racing       Quentin Iazzo   +27.751         +1.32  1:30.183        9        S    0    10
+13    Winfield Benetton-Renault      Daniil Kovalev   +31.516        +3.765  1:30.483       14        M    0     7
+14    Winfield Benetton-Renault     Kumar Karihayan   +39.686         +8.17  1:30.860       15        M    0    14
+15  Marlboro Team Lotus-Renault   Charlie Southgate   +44.069        +4.383  1:30.381       11        M    0    12
+16     Mild Seven Toyota Racing    Guillermo Acosta   +47.899         +3.83  1:31.102        9        M    0    13
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +58.106       +10.207  1:32.175        7        S    0    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +72.881       +14.775  1:32.298        7        S    0    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes   +78.094        +5.213   1:32.64       13        M    0    17
+20   ING Jaguar Racing Mercedes        James Eadorn   +79.512        +1.418  1:32.514        8        S    0    18
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap       +14.001  1:33.681       11        M    0    20
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 18/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:27:04.462  1:29.010       10        S    0     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.595        +1.595  1:28.876        9        S    0     2
+3         West McLaren-Mercedes        Nill Rosberg   +10.685         +9.09  1:29.342       18        M    0     1
+4     Rothmans Williams-Renault       Antonio Iocco    +20.58        +9.895  1:29.905        9        S    0     9
+5     Rothmans Williams-Renault      Ken Fassbender   +20.694        +0.114  1:29.697       16        M    0     4
+6               Renault F1 Team       August Wehner    +21.08        +0.386  1:29.704       11        S    0    11
+7                 Honda F1 Team       David Redolfe    +21.46         +0.38  1:29.577       13        S    0     5
+8               Renault F1 Team     Marcus Svansson   +22.419        +0.959  1:29.550       17        S    0     8
+9   Marlboro Team Lotus-Renault         Sander Metz    +23.35        +0.931  1:29.793        7        S    0     6
+10        West McLaren-Mercedes       Devon Raleigh     +23.4         +0.05  1:28.137        9        S    0    22
+11                Honda F1 Team     Katsuno Yoshiro   +28.119        +4.719  1:29.775        6        S    0    15
+12    Winfield Benetton-Renault      Daniil Kovalev     +32.2        +4.081  1:29.903       18        M    0     7
+13     Mild Seven Toyota Racing       Quentin Iazzo   +32.435        +0.235  1:30.183        9        S    0    10
+14    Winfield Benetton-Renault     Kumar Karihayan   +41.425         +8.99  1:30.860       15        M    0    14
+15  Marlboro Team Lotus-Renault   Charlie Southgate   +45.867        +4.442  1:30.381       11        M    0    12
+16     Mild Seven Toyota Racing    Guillermo Acosta   +49.777         +3.91  1:31.098       18        M    0    13
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +62.439       +12.662  1:32.175        7        S    0    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +77.334       +14.895  1:32.298        7        S    0    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes   +82.489        +5.155   1:32.64       13        M    0    17
+20   ING Jaguar Racing Mercedes        James Eadorn   +84.543        +2.054  1:32.514        8        S    0    18
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap       +13.463  1:33.681       11        M    0    20
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 19/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:28:33.931  1:29.010       10        S    0     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.758        +1.758  1:28.876        9        S    0     2
+3         West McLaren-Mercedes        Nill Rosberg   +10.804        +9.046  1:29.342       18        M    0     1
+4     Rothmans Williams-Renault       Antonio Iocco   +21.232       +10.428  1:29.905        9        S    0     9
+5               Renault F1 Team       August Wehner   +22.605        +1.373  1:29.704       11        S    0    11
+6     Rothmans Williams-Renault      Ken Fassbender   +22.762        +0.157  1:29.697       16        M    0     4
+7                 Honda F1 Team       David Redolfe   +23.076        +0.314  1:29.577       13        S    0     5
+8               Renault F1 Team     Marcus Svansson   +23.181        +0.105  1:29.550       17        S    0     8
+9         West McLaren-Mercedes       Devon Raleigh   +24.674        +1.493  1:28.137        9        S    0    22
+10  Marlboro Team Lotus-Renault         Sander Metz   +25.039        +0.365  1:29.793        7        S    0     6
+11                Honda F1 Team     Katsuno Yoshiro   +30.062        +5.023  1:29.775        6        S    0    15
+12     Mild Seven Toyota Racing       Quentin Iazzo    +33.66        +3.598  1:30.183        9        S    0    10
+13    Winfield Benetton-Renault      Daniil Kovalev   +33.767        +0.107  1:29.903       18        M    0     7
+14    Winfield Benetton-Renault     Kumar Karihayan   +43.024        +9.257  1:30.860       15        M    0    14
+15  Marlboro Team Lotus-Renault   Charlie Southgate    +47.53        +4.506  1:30.381       11        M    0    12
+16     Mild Seven Toyota Racing    Guillermo Acosta   +54.084        +6.554  1:31.098       18        M    0    13
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +66.367       +12.283  1:32.175        7        S    0    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +81.808       +15.441  1:32.298        7        S    0    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes   +86.289        +4.481   1:32.64       13        M    0    17
+20   ING Jaguar Racing Mercedes        James Eadorn   +88.858        +2.569  1:32.514        8        S    0    18
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap       +13.587  1:33.681       11        M    0    20
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 20/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  00:30:03.872  1:29.010       10        S    0     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.212        +1.212  1:28.876        9        S    0     2
+3         West McLaren-Mercedes        Nill Rosberg   +10.465        +9.253  1:29.342       18        M    0     1
+4     Rothmans Williams-Renault      Ken Fassbender   +23.038       +12.573  1:29.697       16        M    0     4
+5               Renault F1 Team       August Wehner   +23.146        +0.108  1:29.704       11        S    0    11
+6                 Honda F1 Team       David Redolfe   +23.261        +0.115  1:29.577       13        S    0     5
+7               Renault F1 Team     Marcus Svansson   +23.712        +0.451  1:29.550       17        S    0     8
+8     Rothmans Williams-Renault       Antonio Iocco   +23.762         +0.05  1:29.905        9        S    0     9
+9         West McLaren-Mercedes       Devon Raleigh   +24.468        +0.706  1:28.137        9        S    0    22
+10  Marlboro Team Lotus-Renault         Sander Metz   +26.216        +1.748  1:29.793        7        S    0     6
+11     Mild Seven Toyota Racing       Quentin Iazzo   +34.698        +8.482  1:30.183        9        S    0    10
+12    Winfield Benetton-Renault      Daniil Kovalev   +36.465        +1.767  1:29.903       18        M    0     7
+13    Winfield Benetton-Renault     Kumar Karihayan   +45.137        +8.672  1:30.860       15        M    0    14
+14  Marlboro Team Lotus-Renault   Charlie Southgate   +49.542        +4.405  1:30.381       11        M    0    12
+15     Mild Seven Toyota Racing    Guillermo Acosta   +56.546        +7.004  1:31.098       18        M    0    13
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +70.828       +14.282  1:32.175        7        S    0    16
+17     Red Bull Sauber-Mercedes       Matteo de Vos   +86.543       +15.715  1:32.298        7        S    0    21
+18                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+19     Red Bull Sauber-Mercedes        Jérémy Claes    +1 Lap        +1.625   1:32.64       13        M    0    17
+20   ING Jaguar Racing Mercedes        James Eadorn    +1 Lap        +1.986  1:32.514        8        S    0    18
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap       +13.419  1:33.598       20        M    0    20
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 21/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:35:02.849  1:29.342       18        M    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe   +12.025       +12.025  1:29.010       10        S    1     3
+3     Rothmans Williams-Renault      Ken Fassbender   +12.574        +0.549  1:29.697       16        M    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +13.137        +0.563  1:28.876        9        S    1     2
+5     Winfield Benetton-Renault      Daniil Kovalev     +26.0       +12.863  1:29.903       18        M    0     7
+6     Winfield Benetton-Renault     Kumar Karihayan   +34.672        +8.672  1:30.860       15        M    0    14
+7                 Honda F1 Team       David Redolfe   +35.346        +0.674  1:29.577       13        S    1     5
+8     Rothmans Williams-Renault       Antonio Iocco   +35.907        +0.561  1:29.905        9        S    1     9
+9               Renault F1 Team     Marcus Svansson   +35.987         +0.08  1:29.550       17        S    1     8
+10              Renault F1 Team       August Wehner   +36.141        +0.154  1:29.704       11        S    1    11
+11        West McLaren-Mercedes       Devon Raleigh   +36.273        +0.132  1:28.137        9        S    1    22
+12  Marlboro Team Lotus-Renault         Sander Metz   +38.601        +2.328  1:29.793        7        S    1     6
+13  Marlboro Team Lotus-Renault   Charlie Southgate   +39.077        +0.476  1:30.381       11        M    0    12
+14     Mild Seven Toyota Racing       Quentin Iazzo   +46.463        +7.386  1:30.183        9        S    1    10
+15     Mild Seven Toyota Racing    Guillermo Acosta   +68.241       +21.778  1:31.098       18        M    1    13
+16                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +84.313        +5.706  1:32.175        7        S    1    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +98.558       +14.245  1:32.298        7        S    1    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes  +102.472        +3.914   1:32.64       13        M    1    17
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello  +119.627       +17.155  1:33.598       20        M    1    20
+21   ING Jaguar Racing Mercedes        James Eadorn  +126.718        +7.091  1:32.514        8        S    1    18
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 22/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:39:51.361  1:29.342       18        M    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe   +12.025       +12.025  1:29.010       10        S    1     3
+3     Rothmans Williams-Renault      Ken Fassbender   +12.574        +0.549  1:29.697       16        M    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez   +13.137        +0.563  1:28.876        9        S    1     2
+5     Winfield Benetton-Renault      Daniil Kovalev     +26.0       +12.863  1:29.903       18        M    0     7
+6                 Honda F1 Team       David Redolfe   +35.346        +9.346  1:29.577       13        S    1     5
+7     Rothmans Williams-Renault       Antonio Iocco   +35.907        +0.561  1:29.905        9        S    1     9
+8               Renault F1 Team     Marcus Svansson   +35.987         +0.08  1:29.550       17        S    1     8
+9               Renault F1 Team       August Wehner   +36.141        +0.154  1:29.704       11        S    1    11
+10        West McLaren-Mercedes       Devon Raleigh   +36.273        +0.132  1:28.137        9        S    1    22
+11  Marlboro Team Lotus-Renault         Sander Metz   +38.601        +2.328  1:29.793        7        S    1     6
+12     Mild Seven Toyota Racing       Quentin Iazzo   +46.463        +7.862  1:30.183        9        S    1    10
+13    Winfield Benetton-Renault     Kumar Karihayan   +56.712       +10.249  1:30.860       15        M    1    14
+14  Marlboro Team Lotus-Renault   Charlie Southgate   +62.527        +5.815  1:30.381       11        M    1    12
+15     Mild Seven Toyota Racing    Guillermo Acosta   +68.241        +5.714  1:31.098       18        M    1    13
+16                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +84.313        +5.706  1:32.175        7        S    1    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +98.558       +14.245  1:32.298        7        S    1    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes  +102.472        +3.914   1:32.64       13        M    1    17
+20      Minardi-Ferrari F1 Team  Antonio Bacarrello  +119.627       +17.155  1:33.598       20        M    1    20
+21   ING Jaguar Racing Mercedes        James Eadorn  +126.718        +7.091  1:32.514        8        S    1    18
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 23/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:44:39.873  1:29.342       18        M    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe     +0.35         +0.35  1:29.010       10        S    1     3
+3     Rothmans Williams-Renault      Ken Fassbender      +0.7         +0.35  1:29.697       16        M    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez     +1.05         +0.35  1:28.876        9        S    1     2
+5     Winfield Benetton-Renault      Daniil Kovalev      +1.4         +0.35  1:29.903       18        M    0     7
+6                 Honda F1 Team       David Redolfe     +1.75         +0.35  1:29.577       13        S    1     5
+7     Rothmans Williams-Renault       Antonio Iocco      +2.1         +0.35  1:29.905        9        S    1     9
+8               Renault F1 Team     Marcus Svansson     +2.45         +0.35  1:29.550       17        S    1     8
+9               Renault F1 Team       August Wehner      +2.8         +0.35  1:29.704       11        S    1    11
+10        West McLaren-Mercedes       Devon Raleigh     +3.15         +0.35  1:28.137        9        S    1    22
+11  Marlboro Team Lotus-Renault         Sander Metz      +3.5         +0.35  1:29.793        7        S    1     6
+12     Mild Seven Toyota Racing       Quentin Iazzo     +3.85         +0.35  1:30.183        9        S    1    10
+13    Winfield Benetton-Renault     Kumar Karihayan      +4.2         +0.35  1:30.860       15        M    1    14
+14  Marlboro Team Lotus-Renault   Charlie Southgate     +4.55         +0.35  1:30.381       11        M    1    12
+15     Mild Seven Toyota Racing    Guillermo Acosta      +4.9         +0.35  1:31.098       18        M    1    13
+16      Minardi-Ferrari F1 Team        Raul Sanchez      +5.6          +0.7  1:32.175        7        S    1    16
+17     Red Bull Sauber-Mercedes       Matteo de Vos     +5.95         +0.35  1:32.298        7        S    1    21
+18     Red Bull Sauber-Mercedes        Jérémy Claes      +6.3         +0.35   1:32.64       13        M    1    17
+19      Minardi-Ferrari F1 Team  Antonio Bacarrello     +6.65         +0.35  1:33.598       20        M    1    20
+20   ING Jaguar Racing Mercedes        James Eadorn      +7.0         +0.35  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 24/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:49:28.385  1:29.342       18        M    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe     +0.35         +0.35  1:29.010       10        S    1     3
+3     Rothmans Williams-Renault      Ken Fassbender      +0.7         +0.35  1:29.697       16        M    0     4
+4     Scuderia Ferrari Vodafone   Charles Hérnandez     +1.05         +0.35  1:28.876        9        S    1     2
+5     Winfield Benetton-Renault      Daniil Kovalev      +1.4         +0.35  1:29.903       18        M    0     7
+6                 Honda F1 Team       David Redolfe     +1.75         +0.35  1:29.577       13        S    1     5
+7     Rothmans Williams-Renault       Antonio Iocco      +2.1         +0.35  1:29.905        9        S    1     9
+8               Renault F1 Team     Marcus Svansson     +2.45         +0.35  1:29.550       17        S    1     8
+9               Renault F1 Team       August Wehner      +2.8         +0.35  1:29.704       11        S    1    11
+10        West McLaren-Mercedes       Devon Raleigh     +3.15         +0.35  1:28.137        9        S    1    22
+11  Marlboro Team Lotus-Renault         Sander Metz      +3.5         +0.35  1:29.793        7        S    1     6
+12     Mild Seven Toyota Racing       Quentin Iazzo     +3.85         +0.35  1:30.183        9        S    1    10
+13    Winfield Benetton-Renault     Kumar Karihayan      +4.2         +0.35  1:30.860       15        M    1    14
+14  Marlboro Team Lotus-Renault   Charlie Southgate     +4.55         +0.35  1:30.381       11        M    1    12
+15     Mild Seven Toyota Racing    Guillermo Acosta      +4.9         +0.35  1:31.098       18        M    1    13
+16      Minardi-Ferrari F1 Team        Raul Sanchez     +5.25         +0.35  1:32.175        7        S    1    16
+17     Red Bull Sauber-Mercedes       Matteo de Vos      +5.6         +0.35  1:32.298        7        S    1    21
+18     Red Bull Sauber-Mercedes        Jérémy Claes     +5.95         +0.35   1:32.64       13        M    1    17
+19      Minardi-Ferrari F1 Team  Antonio Bacarrello      +6.3         +0.35  1:33.598       20        M    1    20
+20   ING Jaguar Racing Mercedes        James Eadorn     +6.65         +0.35  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 25/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:50:57.407  1:29.022       25        M    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +2.233        +2.233  1:29.010       10        S    1     3
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +2.621        +0.388  1:28.876        9        S    1     2
+4     Rothmans Williams-Renault      Ken Fassbender    +3.104        +0.483  1:29.697       16        M    0     4
+5     Winfield Benetton-Renault      Daniil Kovalev    +3.946        +0.842  1:29.903       18        M    0     7
+6                 Honda F1 Team       David Redolfe    +5.459        +1.513  1:29.577       13        S    1     5
+7               Renault F1 Team     Marcus Svansson    +6.053        +0.594  1:29.550       17        S    1     8
+8     Rothmans Williams-Renault       Antonio Iocco      +6.1        +0.047  1:29.905        9        S    1     9
+9   Marlboro Team Lotus-Renault         Sander Metz    +6.979        +0.879  1:29.793        7        S    1     6
+10    Winfield Benetton-Renault     Kumar Karihayan    +7.129         +0.15  1:30.860       15        M    1    14
+11     Mild Seven Toyota Racing       Quentin Iazzo    +7.591        +0.462  1:30.183        9        S    1    10
+12     Mild Seven Toyota Racing    Guillermo Acosta    +7.647        +0.056  1:31.098       18        M    1    13
+13        West McLaren-Mercedes       Devon Raleigh    +7.702        +0.055  1:28.137        9        S    1    22
+14              Renault F1 Team       August Wehner    +7.768        +0.066  1:29.704       11        S    1    11
+15  Marlboro Team Lotus-Renault   Charlie Southgate   +10.116        +2.348  1:30.381       11        M    1    12
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +10.798        +0.682  1:32.175        7        S    1    16
+17     Red Bull Sauber-Mercedes       Matteo de Vos   +11.076        +0.278  1:32.298        7        S    1    21
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello   +11.115        +0.039  1:33.598       20        M    1    20
+19   ING Jaguar Racing Mercedes        James Eadorn   +12.883        +1.768  1:32.514        8        S    1    18
+20     Red Bull Sauber-Mercedes        Jérémy Claes   +13.035        +0.152   1:32.64       13        M    1    17
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 26/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:52:26.668  1:29.022       25        M    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe     +3.31         +3.31  1:29.010       10        S    1     3
+3     Scuderia Ferrari Vodafone   Charles Hérnandez    +3.749        +0.439  1:28.876        9        S    1     2
+4     Winfield Benetton-Renault      Daniil Kovalev    +4.606        +0.857  1:29.903       18        M    0     7
+5     Rothmans Williams-Renault      Ken Fassbender    +6.083        +1.477  1:29.697       16        M    0     4
+6               Renault F1 Team     Marcus Svansson     +8.54        +2.457  1:29.550       17        S    1     8
+7     Rothmans Williams-Renault       Antonio Iocco     +8.65         +0.11  1:29.905        9        S    1     9
+8                 Honda F1 Team       David Redolfe    +8.655        +0.005  1:29.577       13        S    1     5
+9      Mild Seven Toyota Racing    Guillermo Acosta    +9.463        +0.808  1:31.076       26        S    1    13
+10  Marlboro Team Lotus-Renault         Sander Metz     +9.48        +0.017  1:29.793        7        S    1     6
+11    Winfield Benetton-Renault     Kumar Karihayan    +9.671        +0.191  1:30.860       15        M    1    14
+12              Renault F1 Team       August Wehner   +10.364        +0.693  1:29.704       11        S    1    11
+13     Mild Seven Toyota Racing       Quentin Iazzo   +10.365        +0.001  1:30.183        9        S    1    10
+14        West McLaren-Mercedes       Devon Raleigh   +11.696        +1.331  1:28.137        9        S    1    22
+15  Marlboro Team Lotus-Renault   Charlie Southgate   +12.466         +0.77  1:30.381       11        M    1    12
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +15.723        +3.257  1:32.175        7        S    1    16
+17     Red Bull Sauber-Mercedes       Matteo de Vos   +16.897        +1.174  1:32.298        7        S    1    21
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello   +17.684        +0.787  1:33.598       20        M    1    20
+19   ING Jaguar Racing Mercedes        James Eadorn   +17.859        +0.175  1:32.514        8        S    1    18
+20     Red Bull Sauber-Mercedes        Jérémy Claes   +19.567        +1.708   1:32.64       13        M    1    17
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 27/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:53:55.933  1:29.022       25        M    0     1
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +4.551        +4.551  1:28.876        9        S    1     2
+3     Winfield Benetton-Renault      Daniil Kovalev    +4.872        +0.321  1:29.530       27        M    0     7
+4     Scuderia Ferrari Vodafone          Abel Wolfe    +4.991        +0.119  1:29.010       10        S    1     3
+5     Rothmans Williams-Renault      Ken Fassbender    +6.837        +1.846  1:29.697       16        M    0     4
+6     Rothmans Williams-Renault       Antonio Iocco   +10.691        +3.854  1:29.905        9        S    1     9
+7               Renault F1 Team     Marcus Svansson   +11.154        +0.463  1:29.550       17        S    1     8
+8      Mild Seven Toyota Racing    Guillermo Acosta   +11.647        +0.493  1:31.076       26        S    1    13
+9                 Honda F1 Team       David Redolfe   +11.668        +0.021  1:29.577       13        S    1     5
+10  Marlboro Team Lotus-Renault         Sander Metz   +11.881        +0.213  1:29.793        7        S    1     6
+11              Renault F1 Team       August Wehner   +13.296        +1.415  1:29.704       11        S    1    11
+12     Mild Seven Toyota Racing       Quentin Iazzo   +13.324        +0.028  1:30.183        9        S    1    10
+13    Winfield Benetton-Renault     Kumar Karihayan    +13.63        +0.306  1:30.860       15        M    1    14
+14  Marlboro Team Lotus-Renault   Charlie Southgate   +13.685        +0.055  1:30.381       11        M    1    12
+15        West McLaren-Mercedes       Devon Raleigh    +14.09        +0.405  1:28.137        9        S    1    22
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +20.978        +6.888  1:32.175        7        S    1    16
+17     Red Bull Sauber-Mercedes       Matteo de Vos    +21.17        +0.192  1:32.298        7        S    1    21
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello   +21.439        +0.269  1:33.019       27        S    1    20
+19   ING Jaguar Racing Mercedes        James Eadorn   +23.603        +2.164  1:32.514        8        S    1    18
+20     Red Bull Sauber-Mercedes        Jérémy Claes   +24.934        +1.331   1:32.64       13        M    1    17
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 28/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:55:25.094  1:29.022       25        M    0     1
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +5.675        +5.675  1:28.876        9        S    1     2
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +6.329        +0.654  1:29.010       10        S    1     3
+4     Rothmans Williams-Renault      Ken Fassbender    +7.301        +0.972  1:29.625       28        M    0     4
+5     Winfield Benetton-Renault      Daniil Kovalev    +8.703        +1.402  1:29.530       27        M    0     7
+6     Rothmans Williams-Renault       Antonio Iocco   +12.325        +3.622  1:29.905        9        S    1     9
+7               Renault F1 Team     Marcus Svansson   +12.754        +0.429  1:29.550       17        S    1     8
+8                 Honda F1 Team       David Redolfe   +13.264         +0.51  1:29.577       13        S    1     5
+9   Marlboro Team Lotus-Renault         Sander Metz   +14.129        +0.865  1:29.793        7        S    1     6
+10     Mild Seven Toyota Racing    Guillermo Acosta   +14.874        +0.745  1:31.076       26        S    1    13
+11    Winfield Benetton-Renault     Kumar Karihayan   +15.087        +0.213  1:30.618       28        S    1    14
+12              Renault F1 Team       August Wehner   +15.248        +0.161  1:29.704       11        S    1    11
+13     Mild Seven Toyota Racing       Quentin Iazzo   +15.472        +0.224  1:30.183        9        S    1    10
+14        West McLaren-Mercedes       Devon Raleigh   +17.804        +2.332  1:28.137        9        S    1    22
+15  Marlboro Team Lotus-Renault   Charlie Southgate   +18.149        +0.345  1:30.381       11        M    1    12
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +25.276        +7.127  1:32.175        7        S    1    16
+17     Red Bull Sauber-Mercedes       Matteo de Vos   +26.206         +0.93  1:32.298        7        S    1    21
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello   +27.306          +1.1  1:33.019       27        S    1    20
+19   ING Jaguar Racing Mercedes        James Eadorn   +27.692        +0.386  1:32.514        8        S    1    18
+20     Red Bull Sauber-Mercedes        Jérémy Claes   +29.083        +1.391   1:32.64       13        M    1    17
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 29/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1         West McLaren-Mercedes        Nill Rosberg  INTERVAL  00:56:54.291  1:29.022       25        M    0     1
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +6.385        +6.385  1:29.010       10        S    1     3
+3     Scuderia Ferrari Vodafone   Charles Hérnandez     +6.45        +0.065  1:28.876        9        S    1     2
+4     Rothmans Williams-Renault      Ken Fassbender    +8.282        +1.832  1:29.625       28        M    0     4
+5     Winfield Benetton-Renault      Daniil Kovalev    +9.655        +1.373  1:29.530       27        M    0     7
+6               Renault F1 Team     Marcus Svansson    +13.83        +4.175  1:29.550       17        S    1     8
+7     Rothmans Williams-Renault       Antonio Iocco   +14.216        +0.386  1:29.905        9        S    1     9
+8                 Honda F1 Team       David Redolfe   +14.463        +0.247  1:29.577       13        S    1     5
+9      Mild Seven Toyota Racing    Guillermo Acosta   +15.073         +0.61  1:29.395       29        S    1    13
+10  Marlboro Team Lotus-Renault         Sander Metz   +15.249        +0.176  1:29.793        7        S    1     6
+11     Mild Seven Toyota Racing       Quentin Iazzo   +17.038        +1.789  1:30.183        9        S    1    10
+12              Renault F1 Team       August Wehner   +17.112        +0.074  1:29.704       11        S    1    11
+13    Winfield Benetton-Renault     Kumar Karihayan   +17.531        +0.419  1:30.618       28        S    1    14
+14        West McLaren-Mercedes       Devon Raleigh   +17.898        +0.367  1:28.137        9        S    1    22
+15  Marlboro Team Lotus-Renault   Charlie Southgate   +18.935        +1.037  1:29.982       29        S    1    12
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +28.825         +9.89  1:32.175        7        S    1    16
+17     Red Bull Sauber-Mercedes       Matteo de Vos   +31.041        +2.216  1:32.298        7        S    1    21
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello   +31.581         +0.54  1:33.019       27        S    1    20
+19     Red Bull Sauber-Mercedes        Jérémy Claes   +34.482        +2.901   1:32.64       13        M    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 30/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:01:49.188  1:29.010       10        S    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.064        +0.064  1:28.876        9        S    1     2
+3               Renault F1 Team     Marcus Svansson    +7.445        +7.381  1:29.550       17        S    1     8
+4     Rothmans Williams-Renault       Antonio Iocco    +7.831        +0.386  1:29.905        9        S    1     9
+5                 Honda F1 Team       David Redolfe    +8.078        +0.247  1:29.577       13        S    1     5
+6      Mild Seven Toyota Racing    Guillermo Acosta    +8.687        +0.609  1:29.395       29        S    1    13
+7   Marlboro Team Lotus-Renault         Sander Metz    +8.864        +0.177  1:29.793        7        S    1     6
+8      Mild Seven Toyota Racing       Quentin Iazzo   +10.653        +1.789  1:30.183        9        S    1    10
+9               Renault F1 Team       August Wehner   +10.727        +0.074  1:29.704       11        S    1    11
+10    Winfield Benetton-Renault     Kumar Karihayan   +11.146        +0.419  1:30.618       28        S    1    14
+11        West McLaren-Mercedes       Devon Raleigh   +11.512        +0.366  1:28.137        9        S    1    22
+12  Marlboro Team Lotus-Renault   Charlie Southgate    +12.55        +1.038  1:29.982       29        S    1    12
+13        West McLaren-Mercedes        Nill Rosberg   +15.995        +3.445  1:29.022       25        M    1     1
+14      Minardi-Ferrari F1 Team        Raul Sanchez    +22.44        +6.445  1:32.175        7        S    1    16
+15     Red Bull Sauber-Mercedes       Matteo de Vos   +24.656        +2.216  1:32.298        7        S    1    21
+16    Rothmans Williams-Renault      Ken Fassbender   +24.787        +0.131  1:29.625       28        M    1     4
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +25.195        +0.408  1:33.019       27        S    1    20
+18    Winfield Benetton-Renault      Daniil Kovalev   +25.469        +0.274  1:29.530       27        M    1     7
+19     Red Bull Sauber-Mercedes        Jérémy Claes   +28.097        +2.628   1:32.64       13        M    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 31/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:06:37.700  1:29.010       10        S    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.064        +0.064  1:28.876        9        S    1     2
+3               Renault F1 Team     Marcus Svansson    +7.445        +7.381  1:29.550       17        S    1     8
+4     Rothmans Williams-Renault       Antonio Iocco    +7.831        +0.386  1:29.905        9        S    1     9
+5                 Honda F1 Team       David Redolfe    +8.078        +0.247  1:29.577       13        S    1     5
+6      Mild Seven Toyota Racing    Guillermo Acosta    +8.687        +0.609  1:29.395       29        S    1    13
+7   Marlboro Team Lotus-Renault         Sander Metz    +8.864        +0.177  1:29.793        7        S    1     6
+8      Mild Seven Toyota Racing       Quentin Iazzo   +10.653        +1.789  1:30.183        9        S    1    10
+9               Renault F1 Team       August Wehner   +10.727        +0.074  1:29.704       11        S    1    11
+10    Winfield Benetton-Renault     Kumar Karihayan   +11.146        +0.419  1:30.618       28        S    1    14
+11        West McLaren-Mercedes       Devon Raleigh   +11.512        +0.366  1:28.137        9        S    1    22
+12  Marlboro Team Lotus-Renault   Charlie Southgate    +12.55        +1.038  1:29.982       29        S    1    12
+13        West McLaren-Mercedes        Nill Rosberg   +15.995        +3.445  1:29.022       25        M    1     1
+14      Minardi-Ferrari F1 Team        Raul Sanchez    +22.44        +6.445  1:32.175        7        S    1    16
+15     Red Bull Sauber-Mercedes       Matteo de Vos   +24.656        +2.216  1:32.298        7        S    1    21
+16    Rothmans Williams-Renault      Ken Fassbender   +24.787        +0.131  1:29.625       28        M    1     4
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +25.195        +0.408  1:33.019       27        S    1    20
+18    Winfield Benetton-Renault      Daniil Kovalev   +25.469        +0.274  1:29.530       27        M    1     7
+19     Red Bull Sauber-Mercedes        Jérémy Claes   +28.097        +2.628   1:32.64       13        M    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 32/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:11:26.212  1:29.010       10        S    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez     +0.35         +0.35  1:28.876        9        S    1     2
+3               Renault F1 Team     Marcus Svansson      +0.7         +0.35  1:29.550       17        S    1     8
+4     Rothmans Williams-Renault       Antonio Iocco     +1.05         +0.35  1:29.905        9        S    1     9
+5                 Honda F1 Team       David Redolfe      +1.4         +0.35  1:29.577       13        S    1     5
+6      Mild Seven Toyota Racing    Guillermo Acosta     +1.75         +0.35  1:29.395       29        S    1    13
+7   Marlboro Team Lotus-Renault         Sander Metz      +2.1         +0.35  1:29.793        7        S    1     6
+8      Mild Seven Toyota Racing       Quentin Iazzo     +2.45         +0.35  1:30.183        9        S    1    10
+9               Renault F1 Team       August Wehner      +2.8         +0.35  1:29.704       11        S    1    11
+10    Winfield Benetton-Renault     Kumar Karihayan     +3.15         +0.35  1:30.618       28        S    1    14
+11        West McLaren-Mercedes       Devon Raleigh      +3.5         +0.35  1:28.137        9        S    1    22
+12  Marlboro Team Lotus-Renault   Charlie Southgate     +3.85         +0.35  1:29.982       29        S    1    12
+13        West McLaren-Mercedes        Nill Rosberg      +4.2         +0.35  1:29.022       25        M    1     1
+14      Minardi-Ferrari F1 Team        Raul Sanchez     +4.55         +0.35  1:32.175        7        S    1    16
+15     Red Bull Sauber-Mercedes       Matteo de Vos      +4.9         +0.35  1:32.298        7        S    1    21
+16    Rothmans Williams-Renault      Ken Fassbender     +5.25         +0.35  1:29.625       28        M    1     4
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello      +5.6         +0.35  1:33.019       27        S    1    20
+18    Winfield Benetton-Renault      Daniil Kovalev     +5.95         +0.35  1:29.530       27        M    1     7
+19     Red Bull Sauber-Mercedes        Jérémy Claes      +6.3         +0.35   1:32.64       13        M    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 33/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:16:14.724  1:29.010       10        S    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez     +0.35         +0.35  1:28.876        9        S    1     2
+3               Renault F1 Team     Marcus Svansson      +0.7         +0.35  1:29.550       17        S    1     8
+4     Rothmans Williams-Renault       Antonio Iocco     +1.05         +0.35  1:29.905        9        S    1     9
+5                 Honda F1 Team       David Redolfe      +1.4         +0.35  1:29.577       13        S    1     5
+6      Mild Seven Toyota Racing    Guillermo Acosta     +1.75         +0.35  1:29.395       29        S    1    13
+7   Marlboro Team Lotus-Renault         Sander Metz      +2.1         +0.35  1:29.793        7        S    1     6
+8      Mild Seven Toyota Racing       Quentin Iazzo     +2.45         +0.35  1:30.183        9        S    1    10
+9               Renault F1 Team       August Wehner      +2.8         +0.35  1:29.704       11        S    1    11
+10    Winfield Benetton-Renault     Kumar Karihayan     +3.15         +0.35  1:30.618       28        S    1    14
+11        West McLaren-Mercedes       Devon Raleigh      +3.5         +0.35  1:28.137        9        S    1    22
+12  Marlboro Team Lotus-Renault   Charlie Southgate     +3.85         +0.35  1:29.982       29        S    1    12
+13        West McLaren-Mercedes        Nill Rosberg      +4.2         +0.35  1:29.022       25        M    1     1
+14      Minardi-Ferrari F1 Team        Raul Sanchez     +4.55         +0.35  1:32.175        7        S    1    16
+15     Red Bull Sauber-Mercedes       Matteo de Vos      +4.9         +0.35  1:32.298        7        S    1    21
+16    Rothmans Williams-Renault      Ken Fassbender     +5.25         +0.35  1:29.625       28        M    1     4
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello      +5.6         +0.35  1:33.019       27        S    1    20
+18    Winfield Benetton-Renault      Daniil Kovalev     +5.95         +0.35  1:29.530       27        M    1     7
+19     Red Bull Sauber-Mercedes        Jérémy Claes      +6.3         +0.35   1:32.64       13        M    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:28.137 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 34/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  01:17:43.146  1:28.071       34        M    1     2
+2               Renault F1 Team     Marcus Svansson     +0.35         +0.35  1:28.073       34        M    1     8
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +1.775        +1.425  1:29.010       10        S    1     3
+4     Rothmans Williams-Renault       Antonio Iocco    +2.101        +0.326  1:29.474       34        M    1     9
+5                 Honda F1 Team       David Redolfe    +2.594        +0.493  1:29.577       13        S    1     5
+6               Renault F1 Team       August Wehner    +2.677        +0.083  1:28.300       34        M    1    11
+7   Marlboro Team Lotus-Renault         Sander Metz    +3.077          +0.4  1:29.399       34        M    1     6
+8      Mild Seven Toyota Racing    Guillermo Acosta    +3.289        +0.212  1:29.395       29        S    1    13
+9         West McLaren-Mercedes       Devon Raleigh    +3.554        +0.265  1:28.137        9        S    1    22
+10  Marlboro Team Lotus-Renault   Charlie Southgate    +5.294         +1.74  1:29.866       34        S    1    12
+11     Mild Seven Toyota Racing       Quentin Iazzo    +5.781        +0.487  1:30.183        9        S    1    10
+12    Winfield Benetton-Renault     Kumar Karihayan    +6.906        +1.125  1:30.618       28        S    1    14
+13     Red Bull Sauber-Mercedes       Matteo de Vos    +7.287        +0.381  1:30.808       34        M    1    21
+14        West McLaren-Mercedes        Nill Rosberg    +7.296        +0.009  1:29.022       25        M    1     1
+15      Minardi-Ferrari F1 Team  Antonio Bacarrello     +7.52        +0.224  1:30.342       34        S    1    20
+16    Winfield Benetton-Renault      Daniil Kovalev    +7.563        +0.043  1:29.530       27        M    1     7
+17    Rothmans Williams-Renault      Ken Fassbender    +7.822        +0.259  1:29.625       28        M    1     4
+18      Minardi-Ferrari F1 Team        Raul Sanchez    +8.731        +0.909  1:32.175        7        S    1    16
+19     Red Bull Sauber-Mercedes        Jérémy Claes    +8.958        +0.227  1:31.081       34        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Charles Hérnandez has recorded 1:28.071 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 35/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  01:19:10.605  1:27.459       35        M    1     2
+2               Renault F1 Team     Marcus Svansson    +0.986        +0.986  1:28.073       34        M    1     8
+3     Scuderia Ferrari Vodafone          Abel Wolfe    +2.604        +1.618  1:28.288       35        M    1     3
+4                 Honda F1 Team       David Redolfe    +2.981        +0.377  1:27.845       35        M    1     5
+5     Rothmans Williams-Renault       Antonio Iocco    +3.294        +0.313  1:28.652       35        M    1     9
+6      Mild Seven Toyota Racing    Guillermo Acosta     +3.48        +0.186  1:27.649       35        S    1    13
+7   Marlboro Team Lotus-Renault         Sander Metz    +3.991        +0.511  1:28.372       35        M    1     6
+8               Renault F1 Team       August Wehner    +4.413        +0.422  1:28.300       34        M    1    11
+9         West McLaren-Mercedes       Devon Raleigh    +5.754        +1.341  1:28.137        9        S    1    22
+10  Marlboro Team Lotus-Renault   Charlie Southgate    +6.343        +0.589  1:28.507       35        S    1    12
+11    Winfield Benetton-Renault     Kumar Karihayan     +7.16        +0.817  1:27.712       35        S    1    14
+12     Mild Seven Toyota Racing       Quentin Iazzo     +7.34         +0.18  1:29.018       35        M    1    10
+13        West McLaren-Mercedes        Nill Rosberg    +9.982        +2.642  1:29.022       25        M    1     1
+14      Minardi-Ferrari F1 Team  Antonio Bacarrello   +10.235        +0.253  1:30.173       35        S    1    20
+15     Red Bull Sauber-Mercedes       Matteo de Vos   +10.326        +0.091  1:30.498       35        M    1    21
+16    Rothmans Williams-Renault      Ken Fassbender   +11.645        +1.319  1:29.625       28        M    1     4
+17     Red Bull Sauber-Mercedes        Jérémy Claes   +11.876        +0.231  1:30.377       35        S    1    17
+18      Minardi-Ferrari F1 Team        Raul Sanchez   +12.618        +0.742  1:31.345       35        M    1    16
+19    Winfield Benetton-Renault      Daniil Kovalev   +13.234        +0.616  1:29.530       27        M    1     7
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Charles Hérnandez has recorded 1:27.459 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 36/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  01:20:37.867  1:27.262       36        M    1     2
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +2.058        +2.058  1:26.716       36        M    1     3
+3               Renault F1 Team     Marcus Svansson    +3.481        +1.423  1:28.073       34        M    1     8
+4     Rothmans Williams-Renault       Antonio Iocco    +4.123        +0.642  1:28.091       36        M    1     9
+5      Mild Seven Toyota Racing    Guillermo Acosta    +4.327        +0.204  1:27.649       35        S    1    13
+6                 Honda F1 Team       David Redolfe    +4.439        +0.112  1:27.845       35        M    1     5
+7               Renault F1 Team       August Wehner    +5.274        +0.835  1:28.123       36        M    1    11
+8   Marlboro Team Lotus-Renault         Sander Metz    +5.301        +0.027  1:28.372       35        M    1     6
+9         West McLaren-Mercedes       Devon Raleigh    +5.626        +0.325  1:27.134       36        M    1    22
+10  Marlboro Team Lotus-Renault   Charlie Southgate    +6.756         +1.13  1:27.674       36        S    1    12
+11    Winfield Benetton-Renault     Kumar Karihayan    +7.282        +0.526  1:27.384       36        S    1    14
+12     Mild Seven Toyota Racing       Quentin Iazzo    +8.227        +0.945  1:28.149       36        M    1    10
+13        West McLaren-Mercedes        Nill Rosberg   +11.038        +2.811  1:28.317       36        S    1     1
+14     Red Bull Sauber-Mercedes       Matteo de Vos   +14.979        +3.941  1:30.498       35        M    1    21
+15    Rothmans Williams-Renault      Ken Fassbender    +15.41        +0.431  1:29.625       28        M    1     4
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +15.857        +0.447  1:30.500       36        M    1    16
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +16.611        +0.754  1:30.173       35        S    1    20
+18    Winfield Benetton-Renault      Daniil Kovalev    +17.27        +0.659  1:29.530       27        M    1     7
+19     Red Bull Sauber-Mercedes        Jérémy Claes   +17.371        +0.101  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Abel Wolfe has recorded 1:26.716 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 37/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  01:22:05.045  1:27.177       37        M    1     2
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +2.523        +2.523  1:26.716       36        M    1     3
+3               Renault F1 Team     Marcus Svansson    +5.054        +2.531  1:28.073       34        M    1     8
+4     Rothmans Williams-Renault       Antonio Iocco    +5.446        +0.392  1:28.091       36        M    1     9
+5   Marlboro Team Lotus-Renault         Sander Metz     +5.97        +0.524  1:27.847       37        M    1     6
+6                 Honda F1 Team       David Redolfe    +6.275        +0.305  1:27.845       35        M    1     5
+7      Mild Seven Toyota Racing    Guillermo Acosta     +6.38        +0.105  1:27.649       35        S    1    13
+8   Marlboro Team Lotus-Renault   Charlie Southgate    +6.885        +0.505  1:27.307       37        S    1    12
+9               Renault F1 Team       August Wehner    +6.949        +0.064  1:28.123       36        M    1    11
+10        West McLaren-Mercedes       Devon Raleigh    +8.213        +1.264  1:27.134       36        M    1    22
+11    Winfield Benetton-Renault     Kumar Karihayan    +8.551        +0.338  1:27.384       36        S    1    14
+12     Mild Seven Toyota Racing       Quentin Iazzo    +9.901         +1.35  1:28.149       36        M    1    10
+13        West McLaren-Mercedes        Nill Rosberg   +11.595        +1.694  1:27.735       37        S    1     1
+14    Rothmans Williams-Renault      Ken Fassbender   +17.737        +6.142  1:29.504       37        S    1     4
+15      Minardi-Ferrari F1 Team  Antonio Bacarrello   +20.167         +2.43  1:30.173       35        S    1    20
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +20.532        +0.365  1:30.500       36        M    1    16
+17    Winfield Benetton-Renault      Daniil Kovalev    +21.05        +0.518  1:29.530       27        M    1     7
+18     Red Bull Sauber-Mercedes        Jérémy Claes   +21.192        +0.142  1:30.377       35        S    1    17
+19     Red Bull Sauber-Mercedes       Matteo de Vos   +22.757        +1.565  1:30.498       35        M    1    21
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Abel Wolfe has recorded 1:26.716 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 38/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  01:23:32.150  1:27.105       38        M    1     2
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +2.883        +2.883  1:26.716       36        M    1     3
+3     Rothmans Williams-Renault       Antonio Iocco    +6.017        +3.134  1:27.676       38        M    1     9
+4               Renault F1 Team     Marcus Svansson    +6.173        +0.156  1:28.073       34        M    1     8
+5                 Honda F1 Team       David Redolfe    +7.025        +0.852  1:27.845       35        M    1     5
+6   Marlboro Team Lotus-Renault         Sander Metz    +7.093        +0.068  1:27.847       37        M    1     6
+7               Renault F1 Team       August Wehner    +7.567        +0.474  1:27.723       38        M    1    11
+8   Marlboro Team Lotus-Renault   Charlie Southgate    +7.629        +0.062  1:27.307       37        S    1    12
+9      Mild Seven Toyota Racing    Guillermo Acosta     +8.92        +1.291  1:27.649       35        S    1    13
+10        West McLaren-Mercedes       Devon Raleigh    +9.292        +0.372  1:27.134       36        M    1    22
+11    Winfield Benetton-Renault     Kumar Karihayan    +9.519        +0.227  1:27.384       36        S    1    14
+12        West McLaren-Mercedes        Nill Rosberg   +12.049         +2.53  1:27.558       38        S    1     1
+13     Mild Seven Toyota Racing       Quentin Iazzo   +12.131        +0.082  1:28.149       36        M    1    10
+14    Rothmans Williams-Renault      Ken Fassbender   +17.797        +5.666  1:27.165       38        S    1     4
+15    Winfield Benetton-Renault      Daniil Kovalev   +23.178        +5.381  1:29.232       38        S    1     7
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello   +24.106        +0.928  1:30.173       35        S    1    20
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +24.691        +0.585  1:30.500       36        M    1    16
+18     Red Bull Sauber-Mercedes        Jérémy Claes   +24.914        +0.223  1:30.377       35        S    1    17
+19     Red Bull Sauber-Mercedes       Matteo de Vos   +27.337        +2.423  1:30.498       35        M    1    21
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Abel Wolfe has recorded 1:26.716 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 39/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  01:24:59.370  1:27.105       38        M    1     2
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +2.709        +2.709  1:26.716       36        M    1     3
+3               Renault F1 Team     Marcus Svansson    +6.125        +3.416  1:27.171       39        M    1     8
+4   Marlboro Team Lotus-Renault         Sander Metz    +7.904        +1.779  1:27.847       37        M    1     6
+5               Renault F1 Team       August Wehner    +7.911        +0.007  1:27.564       39        M    1    11
+6     Rothmans Williams-Renault       Antonio Iocco    +7.953        +0.042  1:27.676       38        M    1     9
+7                 Honda F1 Team       David Redolfe     +9.12        +1.167  1:27.845       35        M    1     5
+8      Mild Seven Toyota Racing    Guillermo Acosta    +9.716        +0.596  1:27.649       35        S    1    13
+9     Winfield Benetton-Renault     Kumar Karihayan    +9.791        +0.075  1:27.384       36        S    1    14
+10        West McLaren-Mercedes        Nill Rosberg   +10.344        +0.553  1:25.515       39        S    1     1
+11        West McLaren-Mercedes       Devon Raleigh   +10.609        +0.265  1:27.134       36        M    1    22
+12  Marlboro Team Lotus-Renault   Charlie Southgate   +11.387        +0.778  1:27.307       37        S    1    12
+13     Mild Seven Toyota Racing       Quentin Iazzo   +13.875        +2.488  1:28.149       36        M    1    10
+14    Rothmans Williams-Renault      Ken Fassbender    +17.45        +3.575  1:26.873       39        S    1     4
+15    Winfield Benetton-Renault      Daniil Kovalev   +23.621        +6.171  1:27.662       39        S    1     7
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +27.096        +3.475  1:29.625       39        M    1    16
+17     Red Bull Sauber-Mercedes       Matteo de Vos   +30.965        +3.869  1:30.498       35        M    1    21
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello   +36.689        +5.724  1:30.173       35        S    1    20
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Nill Rosberg has recorded 1:25.515 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 40/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  01:29:47.882  1:27.105       38        M    1     2
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +2.709        +2.709  1:26.716       36        M    1     3
+3               Renault F1 Team     Marcus Svansson    +6.125        +3.416  1:27.171       39        M    1     8
+4   Marlboro Team Lotus-Renault         Sander Metz    +7.904        +1.779  1:27.847       37        M    1     6
+5               Renault F1 Team       August Wehner    +7.911        +0.007  1:27.564       39        M    1    11
+6     Rothmans Williams-Renault       Antonio Iocco    +7.953        +0.042  1:27.676       38        M    1     9
+7                 Honda F1 Team       David Redolfe     +9.12        +1.167  1:27.845       35        M    1     5
+8      Mild Seven Toyota Racing    Guillermo Acosta    +9.716        +0.596  1:27.649       35        S    1    13
+9     Winfield Benetton-Renault     Kumar Karihayan    +9.791        +0.075  1:27.384       36        S    1    14
+10        West McLaren-Mercedes        Nill Rosberg   +10.344        +0.553  1:25.515       39        S    1     1
+11        West McLaren-Mercedes       Devon Raleigh   +10.609        +0.265  1:27.134       36        M    1    22
+12  Marlboro Team Lotus-Renault   Charlie Southgate   +11.387        +0.778  1:27.307       37        S    1    12
+13     Mild Seven Toyota Racing       Quentin Iazzo   +13.875        +2.488  1:28.149       36        M    1    10
+14    Rothmans Williams-Renault      Ken Fassbender    +17.45        +3.575  1:26.873       39        S    1     4
+15    Winfield Benetton-Renault      Daniil Kovalev   +23.621        +6.171  1:27.662       39        S    1     7
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +27.096        +3.475  1:29.625       39        M    1    16
+17     Red Bull Sauber-Mercedes       Matteo de Vos   +30.965        +3.869  1:30.498       35        M    1    21
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello   +59.729       +28.764  1:30.173       35        S    2    20
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Nill Rosberg has recorded 1:25.515 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 41/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  01:34:36.394  1:27.105       38        M    1     2
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +2.709        +2.709  1:26.716       36        M    1     3
+3               Renault F1 Team     Marcus Svansson    +6.125        +3.416  1:27.171       39        M    1     8
+4   Marlboro Team Lotus-Renault         Sander Metz    +7.904        +1.779  1:27.847       37        M    1     6
+5               Renault F1 Team       August Wehner    +7.911        +0.007  1:27.564       39        M    1    11
+6     Rothmans Williams-Renault       Antonio Iocco    +7.953        +0.042  1:27.676       38        M    1     9
+7                 Honda F1 Team       David Redolfe     +9.12        +1.167  1:27.845       35        M    1     5
+8      Mild Seven Toyota Racing    Guillermo Acosta    +9.716        +0.596  1:27.649       35        S    1    13
+9     Winfield Benetton-Renault     Kumar Karihayan    +9.791        +0.075  1:27.384       36        S    1    14
+10        West McLaren-Mercedes        Nill Rosberg   +10.344        +0.553  1:25.515       39        S    1     1
+11        West McLaren-Mercedes       Devon Raleigh   +10.609        +0.265  1:27.134       36        M    1    22
+12  Marlboro Team Lotus-Renault   Charlie Southgate   +11.387        +0.778  1:27.307       37        S    1    12
+13     Mild Seven Toyota Racing       Quentin Iazzo   +13.875        +2.488  1:28.149       36        M    1    10
+14    Rothmans Williams-Renault      Ken Fassbender    +17.45        +3.575  1:26.873       39        S    1     4
+15    Winfield Benetton-Renault      Daniil Kovalev   +23.621        +6.171  1:27.662       39        S    1     7
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +27.096        +3.475  1:29.625       39        M    1    16
+17     Red Bull Sauber-Mercedes       Matteo de Vos   +30.965        +3.869  1:30.498       35        M    1    21
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello   +59.729       +28.764  1:30.173       35        S    2    20
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Nill Rosberg has recorded 1:25.515 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 42/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  01:39:24.906  1:27.105       38        M    1     2
+2     Scuderia Ferrari Vodafone          Abel Wolfe     +0.35         +0.35  1:26.716       36        M    1     3
+3               Renault F1 Team     Marcus Svansson      +0.7         +0.35  1:27.171       39        M    1     8
+4   Marlboro Team Lotus-Renault         Sander Metz     +1.05         +0.35  1:27.847       37        M    1     6
+5               Renault F1 Team       August Wehner      +1.4         +0.35  1:27.564       39        M    1    11
+6     Rothmans Williams-Renault       Antonio Iocco     +1.75         +0.35  1:27.676       38        M    1     9
+7                 Honda F1 Team       David Redolfe      +2.1         +0.35  1:27.845       35        M    1     5
+8      Mild Seven Toyota Racing    Guillermo Acosta     +2.45         +0.35  1:27.649       35        S    1    13
+9     Winfield Benetton-Renault     Kumar Karihayan      +2.8         +0.35  1:27.384       36        S    1    14
+10        West McLaren-Mercedes        Nill Rosberg     +3.15         +0.35  1:25.515       39        S    1     1
+11        West McLaren-Mercedes       Devon Raleigh      +3.5         +0.35  1:27.134       36        M    1    22
+12  Marlboro Team Lotus-Renault   Charlie Southgate     +3.85         +0.35  1:27.307       37        S    1    12
+13     Mild Seven Toyota Racing       Quentin Iazzo      +4.2         +0.35  1:28.149       36        M    1    10
+14    Rothmans Williams-Renault      Ken Fassbender     +4.55         +0.35  1:26.873       39        S    1     4
+15    Winfield Benetton-Renault      Daniil Kovalev      +4.9         +0.35  1:27.662       39        S    1     7
+16      Minardi-Ferrari F1 Team        Raul Sanchez     +5.25         +0.35  1:29.625       39        M    1    16
+17     Red Bull Sauber-Mercedes       Matteo de Vos      +5.6         +0.35  1:30.498       35        M    1    21
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello     +5.95         +0.35  1:30.173       35        S    2    20
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Nill Rosberg has recorded 1:25.515 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 43/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  01:44:13.418  1:27.105       38        M    1     2
+2     Scuderia Ferrari Vodafone          Abel Wolfe     +0.35         +0.35  1:26.716       36        M    1     3
+3               Renault F1 Team     Marcus Svansson      +0.7         +0.35  1:27.171       39        M    1     8
+4   Marlboro Team Lotus-Renault         Sander Metz     +1.05         +0.35  1:27.847       37        M    1     6
+5               Renault F1 Team       August Wehner      +1.4         +0.35  1:27.564       39        M    1    11
+6     Rothmans Williams-Renault       Antonio Iocco     +1.75         +0.35  1:27.676       38        M    1     9
+7                 Honda F1 Team       David Redolfe      +2.1         +0.35  1:27.845       35        M    1     5
+8      Mild Seven Toyota Racing    Guillermo Acosta     +2.45         +0.35  1:27.649       35        S    1    13
+9     Winfield Benetton-Renault     Kumar Karihayan      +2.8         +0.35  1:27.384       36        S    1    14
+10        West McLaren-Mercedes        Nill Rosberg     +3.15         +0.35  1:25.515       39        S    1     1
+11        West McLaren-Mercedes       Devon Raleigh      +3.5         +0.35  1:27.134       36        M    1    22
+12  Marlboro Team Lotus-Renault   Charlie Southgate     +3.85         +0.35  1:27.307       37        S    1    12
+13     Mild Seven Toyota Racing       Quentin Iazzo      +4.2         +0.35  1:28.149       36        M    1    10
+14    Rothmans Williams-Renault      Ken Fassbender     +4.55         +0.35  1:26.873       39        S    1     4
+15    Winfield Benetton-Renault      Daniil Kovalev      +4.9         +0.35  1:27.662       39        S    1     7
+16      Minardi-Ferrari F1 Team        Raul Sanchez     +5.25         +0.35  1:29.625       39        M    1    16
+17     Red Bull Sauber-Mercedes       Matteo de Vos      +5.6         +0.35  1:30.498       35        M    1    21
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello     +5.95         +0.35  1:30.173       35        S    2    20
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Nill Rosberg has recorded 1:25.515 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 44/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:45:39.954  1:26.185       44        M    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez     +0.27         +0.27  1:26.805       44        M    1     2
+3   Marlboro Team Lotus-Renault         Sander Metz    +1.978        +1.708  1:27.462       44        M    1     6
+4               Renault F1 Team     Marcus Svansson    +2.233        +0.255  1:27.171       39        M    1     8
+5               Renault F1 Team       August Wehner    +2.428        +0.195  1:27.563       44        M    1    11
+6      Mild Seven Toyota Racing    Guillermo Acosta    +3.075        +0.647  1:27.161       44        S    1    13
+7     Winfield Benetton-Renault     Kumar Karihayan    +3.326        +0.251  1:27.060       44        S    1    14
+8     Rothmans Williams-Renault       Antonio Iocco    +3.781        +0.455  1:27.676       38        M    1     9
+9                 Honda F1 Team       David Redolfe    +4.833        +1.052  1:27.845       35        M    1     5
+10  Marlboro Team Lotus-Renault   Charlie Southgate    +4.838        +0.005  1:27.307       37        S    1    12
+11     Mild Seven Toyota Racing       Quentin Iazzo    +5.083        +0.245  1:27.417       44        M    1    10
+12        West McLaren-Mercedes       Devon Raleigh    +5.742        +0.659  1:27.134       36        M    1    22
+13    Rothmans Williams-Renault      Ken Fassbender    +6.672         +0.93  1:26.873       39        S    1     4
+14    Winfield Benetton-Renault      Daniil Kovalev    +7.074        +0.402  1:27.662       39        S    1     7
+15        West McLaren-Mercedes        Nill Rosberg    +7.379        +0.305  1:25.515       39        S    1     1
+16      Minardi-Ferrari F1 Team        Raul Sanchez    +9.151        +1.772  1:29.625       39        M    1    16
+17     Red Bull Sauber-Mercedes       Matteo de Vos    +9.238        +0.087  1:30.174       44        M    1    21
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello   +11.857        +2.619  1:30.173       35        S    2    20
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Nill Rosberg has recorded 1:25.515 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 45/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:47:06.333  1:26.185       44        M    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.586        +1.586  1:26.805       44        M    1     2
+3               Renault F1 Team       August Wehner    +3.002        +1.416  1:26.953       45        M    1    11
+4   Marlboro Team Lotus-Renault         Sander Metz    +3.805        +0.803  1:27.462       44        M    1     6
+5               Renault F1 Team     Marcus Svansson    +4.082        +0.277  1:27.171       39        M    1     8
+6                 Honda F1 Team       David Redolfe    +6.736        +2.654  1:27.845       35        M    1     5
+7      Mild Seven Toyota Racing    Guillermo Acosta    +6.871        +0.135  1:27.161       44        S    1    13
+8      Mild Seven Toyota Racing       Quentin Iazzo    +7.244        +0.373  1:27.417       44        M    1    10
+9     Winfield Benetton-Renault     Kumar Karihayan    +7.311        +0.067  1:27.060       44        S    1    14
+10  Marlboro Team Lotus-Renault   Charlie Southgate    +7.917        +0.606  1:27.307       37        S    1    12
+11    Winfield Benetton-Renault      Daniil Kovalev    +7.988        +0.071  1:27.292       45        S    1     7
+12    Rothmans Williams-Renault       Antonio Iocco    +8.109        +0.121  1:27.676       38        M    1     9
+13    Rothmans Williams-Renault      Ken Fassbender     +8.82        +0.711  1:26.873       39        S    1     4
+14        West McLaren-Mercedes        Nill Rosberg     +9.32          +0.5  1:25.515       39        S    1     1
+15        West McLaren-Mercedes       Devon Raleigh   +10.363        +1.043  1:27.134       36        M    1    22
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +13.458        +3.095  1:29.625       39        M    1    16
+17     Red Bull Sauber-Mercedes       Matteo de Vos   +15.139        +1.681  1:30.174       44        M    1    21
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello   +17.558        +2.419  1:30.173       35        S    2    20
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Nill Rosberg has recorded 1:25.515 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 46/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:48:33.457  1:26.185       44        M    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.047        +0.047  1:25.585       46        M    1     2
+3   Marlboro Team Lotus-Renault         Sander Metz    +3.821        +3.774   1:27.14       46        M    1     6
+4               Renault F1 Team       August Wehner    +3.854        +0.033  1:26.953       45        M    1    11
+5               Renault F1 Team     Marcus Svansson    +3.884         +0.03  1:26.926       46        M    1     8
+6      Mild Seven Toyota Racing    Guillermo Acosta     +6.86        +2.976  1:27.113       46        S    1    13
+7     Winfield Benetton-Renault     Kumar Karihayan    +7.543        +0.683  1:27.060       44        S    1    14
+8      Mild Seven Toyota Racing       Quentin Iazzo    +7.736        +0.193  1:27.417       44        M    1    10
+9   Marlboro Team Lotus-Renault   Charlie Southgate    +7.778        +0.042  1:26.985       46        S    1    12
+10                Honda F1 Team       David Redolfe    +7.877        +0.099  1:27.845       35        M    1     5
+11    Rothmans Williams-Renault       Antonio Iocco    +8.088        +0.211  1:27.103       46        M    1     9
+12        West McLaren-Mercedes       Devon Raleigh    +8.989        +0.901   1:25.75       46        M    1    22
+13    Rothmans Williams-Renault      Ken Fassbender    +11.27        +2.281  1:26.873       39        S    1     4
+14    Winfield Benetton-Renault      Daniil Kovalev   +12.205        +0.935  1:27.292       45        S    1     7
+15        West McLaren-Mercedes        Nill Rosberg   +12.795         +0.59  1:25.515       39        S    1     1
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +17.678        +4.883  1:29.625       39        M    1    16
+17     Red Bull Sauber-Mercedes       Matteo de Vos   +17.738         +0.06  1:29.723       46        M    1    21
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello   +22.165        +4.427  1:30.173       35        S    2    20
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Nill Rosberg has recorded 1:25.515 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 47/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  01:49:59.247  1:25.585       46        M    1     2
+2     Scuderia Ferrari Vodafone          Abel Wolfe     +0.45         +0.45  1:26.185       44        M    1     3
+3   Marlboro Team Lotus-Renault         Sander Metz    +5.391        +4.941   1:27.14       46        M    1     6
+4               Renault F1 Team     Marcus Svansson    +5.646        +0.255  1:26.926       46        M    1     8
+5               Renault F1 Team       August Wehner    +6.942        +1.296  1:26.953       45        M    1    11
+6     Winfield Benetton-Renault     Kumar Karihayan     +9.09        +2.148  1:27.060       44        S    1    14
+7                 Honda F1 Team       David Redolfe    +9.212        +0.122  1:27.125       47        M    1     5
+8      Mild Seven Toyota Racing       Quentin Iazzo    +9.484        +0.272  1:27.417       44        M    1    10
+9      Mild Seven Toyota Racing    Guillermo Acosta    +9.633        +0.149  1:27.113       46        S    1    13
+10    Rothmans Williams-Renault       Antonio Iocco     +9.75        +0.117  1:27.103       46        M    1     9
+11  Marlboro Team Lotus-Renault   Charlie Southgate   +11.015        +1.265  1:26.985       46        S    1    12
+12    Rothmans Williams-Renault      Ken Fassbender    +11.83        +0.815  1:26.351       47        S    1     4
+13        West McLaren-Mercedes       Devon Raleigh   +12.126        +0.296   1:25.75       46        M    1    22
+14        West McLaren-Mercedes        Nill Rosberg   +12.286         +0.16  1:25.281       47        S    1     1
+15    Winfield Benetton-Renault      Daniil Kovalev   +12.925        +0.639  1:26.509       47        S    1     7
+16     Red Bull Sauber-Mercedes       Matteo de Vos    +21.82        +8.895  1:29.723       46        M    1    21
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +21.917        +0.097  1:29.625       39        M    1    16
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello   +27.151        +5.234  1:30.173       35        S    2    20
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Nill Rosberg has recorded 1:25.281 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 48/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:51:25.293  1:25.596       48        M    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +0.351        +0.351  1:25.585       46        M    1     2
+3   Marlboro Team Lotus-Renault         Sander Metz    +7.102        +6.751   1:27.14       46        M    1     6
+4               Renault F1 Team     Marcus Svansson    +8.421        +1.319  1:26.926       46        M    1     8
+5               Renault F1 Team       August Wehner    +10.09        +1.669  1:26.953       45        M    1    11
+6     Winfield Benetton-Renault     Kumar Karihayan   +11.647        +1.557  1:27.060       44        S    1    14
+7   Marlboro Team Lotus-Renault   Charlie Southgate   +11.832        +0.185  1:26.863       48        S    1    12
+8      Mild Seven Toyota Racing       Quentin Iazzo   +11.864        +0.032  1:27.417       44        M    1    10
+9      Mild Seven Toyota Racing    Guillermo Acosta   +12.166        +0.302  1:27.113       46        S    1    13
+10    Rothmans Williams-Renault       Antonio Iocco   +12.798        +0.632  1:27.103       46        M    1     9
+11        West McLaren-Mercedes       Devon Raleigh    +13.45        +0.652   1:25.75       46        M    1    22
+12                Honda F1 Team       David Redolfe   +13.733        +0.283  1:27.125       47        M    1     5
+13    Winfield Benetton-Renault      Daniil Kovalev    +13.77        +0.037  1:26.509       47        S    1     7
+14    Rothmans Williams-Renault      Ken Fassbender   +14.936        +1.166  1:26.351       47        S    1     4
+15        West McLaren-Mercedes        Nill Rosberg   +14.946         +0.01  1:25.281       47        S    1     1
+16     Red Bull Sauber-Mercedes       Matteo de Vos   +25.695       +10.749  1:29.723       46        M    1    21
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +27.023        +1.328  1:29.625       39        M    1    16
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello    +30.21        +3.187  1:29.104       48        S    2    20
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Nill Rosberg has recorded 1:25.281 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 49/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  01:52:51.129  1:25.485       49        M    1     2
+2     Scuderia Ferrari Vodafone          Abel Wolfe    +0.305        +0.305  1:25.596       48        M    1     3
+3   Marlboro Team Lotus-Renault         Sander Metz    +9.091        +8.786   1:27.14       46        M    1     6
+4               Renault F1 Team     Marcus Svansson    +9.257        +0.166  1:26.672       49        M    1     8
+5               Renault F1 Team       August Wehner   +12.181        +2.924  1:26.953       45        M    1    11
+6   Marlboro Team Lotus-Renault   Charlie Southgate   +13.437        +1.256  1:26.863       48        S    1    12
+7     Rothmans Williams-Renault       Antonio Iocco   +13.636        +0.199  1:26.675       49        M    1     9
+8      Mild Seven Toyota Racing       Quentin Iazzo   +13.673        +0.037  1:27.417       44        M    1    10
+9      Mild Seven Toyota Racing    Guillermo Acosta   +13.847        +0.174  1:27.113       46        S    1    13
+10    Winfield Benetton-Renault      Daniil Kovalev   +14.001        +0.154  1:26.066       49        S    1     7
+11    Rothmans Williams-Renault      Ken Fassbender   +14.476        +0.475  1:25.377       49        S    1     4
+12    Winfield Benetton-Renault     Kumar Karihayan   +14.778        +0.302  1:27.060       44        S    1    14
+13                Honda F1 Team       David Redolfe   +14.938         +0.16  1:27.040       49        M    1     5
+14        West McLaren-Mercedes        Nill Rosberg   +16.799        +1.861  1:25.281       47        S    1     1
+15        West McLaren-Mercedes       Devon Raleigh   +17.203        +0.404   1:25.75       46        M    1    22
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +30.746       +13.543  1:29.558       49        M    1    16
+17     Red Bull Sauber-Mercedes       Matteo de Vos   +30.857        +0.111  1:29.723       46        M    1    21
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello   +33.188        +2.331  1:28.813       49        S    2    20
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Nill Rosberg has recorded 1:25.281 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 50/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:54:16.567  1:25.132       50        M    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.819        +1.819  1:25.485       49        M    1     2
+3               Renault F1 Team     Marcus Svansson   +10.428        +8.609  1:26.609       50        M    1     8
+4   Marlboro Team Lotus-Renault         Sander Metz   +11.255        +0.827   1:27.14       46        M    1     6
+5      Mild Seven Toyota Racing       Quentin Iazzo   +15.146        +3.891  1:26.911       50        M    1    10
+6   Marlboro Team Lotus-Renault   Charlie Southgate   +15.431        +0.285  1:26.863       48        S    1    12
+7               Renault F1 Team       August Wehner   +15.726        +0.295  1:26.953       45        M    1    11
+8      Mild Seven Toyota Racing    Guillermo Acosta   +16.909        +1.183  1:27.113       46        S    1    13
+9     Winfield Benetton-Renault     Kumar Karihayan   +17.916        +1.007  1:27.060       44        S    1    14
+10    Rothmans Williams-Renault      Ken Fassbender   +18.512        +0.596  1:25.377       49        S    1     4
+11    Winfield Benetton-Renault      Daniil Kovalev   +18.555        +0.043  1:26.066       49        S    1     7
+12        West McLaren-Mercedes       Devon Raleigh   +19.137        +0.582   1:25.75       46        M    1    22
+13    Rothmans Williams-Renault       Antonio Iocco   +19.301        +0.164  1:26.675       49        M    1     9
+14                Honda F1 Team       David Redolfe   +20.001          +0.7  1:27.040       49        M    1     5
+15        West McLaren-Mercedes        Nill Rosberg   +20.573        +0.572  1:25.281       47        S    1     1
+16     Red Bull Sauber-Mercedes       Matteo de Vos   +34.901       +14.328  1:29.482       50        M    1    21
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +35.452        +0.551  1:29.558       49        M    1    16
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello   +37.251        +1.799  1:28.813       49        S    2    20
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Abel Wolfe has recorded 1:25.132 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 51/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:55:42.686  1:25.132       50        M    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez     +1.88         +1.88  1:25.485       49        M    1     2
+3               Renault F1 Team     Marcus Svansson    +11.94        +10.06  1:26.609       50        M    1     8
+4   Marlboro Team Lotus-Renault         Sander Metz   +13.139        +1.199   1:27.14       46        M    1     6
+5   Marlboro Team Lotus-Renault   Charlie Southgate   +16.519         +3.38  1:26.863       48        S    1    12
+6      Mild Seven Toyota Racing       Quentin Iazzo   +16.805        +0.286  1:26.911       50        M    1    10
+7               Renault F1 Team       August Wehner   +17.349        +0.544  1:26.953       45        M    1    11
+8      Mild Seven Toyota Racing    Guillermo Acosta    +18.08        +0.731  1:27.113       46        S    1    13
+9     Winfield Benetton-Renault     Kumar Karihayan   +18.651        +0.571  1:26.854       51        S    1    14
+10        West McLaren-Mercedes       Devon Raleigh    +19.11        +0.459   1:25.75       46        M    1    22
+11    Winfield Benetton-Renault      Daniil Kovalev   +19.201        +0.091  1:26.066       49        S    1     7
+12    Rothmans Williams-Renault       Antonio Iocco   +20.526        +1.325  1:26.675       49        M    1     9
+13    Rothmans Williams-Renault      Ken Fassbender   +20.575        +0.049  1:25.377       49        S    1     4
+14                Honda F1 Team       David Redolfe   +21.296        +0.721  1:27.040       49        M    1     5
+15        West McLaren-Mercedes        Nill Rosberg   +21.538        +0.242  1:25.281       47        S    1     1
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +38.609       +17.071  1:29.275       51        M    1    16
+17     Red Bull Sauber-Mercedes       Matteo de Vos   +39.111        +0.502  1:29.482       50        M    1    21
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello   +41.209        +2.098  1:28.813       49        S    2    20
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Abel Wolfe has recorded 1:25.132 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 52/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:57:08.790  1:25.132       50        M    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.616        +1.616  1:25.485       49        M    1     2
+3               Renault F1 Team     Marcus Svansson   +13.114       +11.498  1:26.609       50        M    1     8
+4   Marlboro Team Lotus-Renault         Sander Metz   +15.063        +1.949   1:27.14       46        M    1     6
+5   Marlboro Team Lotus-Renault   Charlie Southgate    +18.68        +3.617  1:26.863       48        S    1    12
+6      Mild Seven Toyota Racing       Quentin Iazzo   +18.748        +0.068  1:26.911       50        M    1    10
+7               Renault F1 Team       August Wehner   +18.909        +0.161  1:26.953       45        M    1    11
+8      Mild Seven Toyota Racing    Guillermo Acosta   +19.559         +0.65  1:27.113       46        S    1    13
+9     Winfield Benetton-Renault     Kumar Karihayan   +19.881        +0.322  1:26.854       51        S    1    14
+10        West McLaren-Mercedes       Devon Raleigh   +21.135        +1.254   1:25.75       46        M    1    22
+11    Winfield Benetton-Renault      Daniil Kovalev   +21.739        +0.604  1:26.066       49        S    1     7
+12    Rothmans Williams-Renault      Ken Fassbender   +21.907        +0.168  1:25.377       49        S    1     4
+13                Honda F1 Team       David Redolfe   +22.037         +0.13  1:26.845       52        M    1     5
+14        West McLaren-Mercedes        Nill Rosberg   +22.252        +0.215  1:25.281       47        S    1     1
+15    Rothmans Williams-Renault       Antonio Iocco   +22.286        +0.034  1:26.675       49        M    1     9
+16      Minardi-Ferrari F1 Team        Raul Sanchez   +42.355       +20.069  1:29.275       51        M    1    16
+17      Minardi-Ferrari F1 Team  Antonio Bacarrello   +43.424        +1.069  1:28.318       52        S    2    20
+18     Red Bull Sauber-Mercedes       Matteo de Vos    +43.51        +0.086  1:29.482       50        M    1    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Abel Wolfe has recorded 1:25.132 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 53/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  01:58:34.848  1:25.132       50        M    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.679        +1.679  1:25.485       49        M    1     2
+3               Renault F1 Team     Marcus Svansson   +14.267       +12.588  1:26.609       50        M    1     8
+4   Marlboro Team Lotus-Renault         Sander Metz    +16.77        +2.503   1:27.14       46        M    1     6
+5   Marlboro Team Lotus-Renault   Charlie Southgate   +20.099        +3.329  1:26.863       48        S    1    12
+6               Renault F1 Team       August Wehner   +20.381        +0.282  1:26.953       45        M    1    11
+7      Mild Seven Toyota Racing       Quentin Iazzo   +21.196        +0.815  1:26.911       50        M    1    10
+8     Winfield Benetton-Renault      Daniil Kovalev   +21.199        +0.003  1:25.518       53        S    1     7
+9     Winfield Benetton-Renault     Kumar Karihayan   +21.215        +0.016  1:26.854       51        S    1    14
+10     Mild Seven Toyota Racing    Guillermo Acosta   +21.257        +0.042  1:27.113       46        S    1    13
+11    Rothmans Williams-Renault      Ken Fassbender   +21.525        +0.268  1:25.377       49        S    1     4
+12        West McLaren-Mercedes       Devon Raleigh   +22.399        +0.874   1:25.75       46        M    1    22
+13                Honda F1 Team       David Redolfe   +22.841        +0.442  1:26.845       52        M    1     5
+14    Rothmans Williams-Renault       Antonio Iocco   +24.273        +1.432  1:26.675       49        M    1     9
+15        West McLaren-Mercedes        Nill Rosberg   +25.755        +1.482  1:25.281       47        S    1     1
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello   +45.677       +19.922  1:28.310       53        S    2    20
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +45.925        +0.248  1:29.275       51        M    1    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +49.109        +3.184  1:29.482       50        M    1    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Abel Wolfe has recorded 1:25.132 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 54/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  02:00:00.676  1:25.132       50        M    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.839        +1.839  1:25.485       49        M    1     2
+3               Renault F1 Team     Marcus Svansson   +15.833       +13.994  1:26.609       50        M    1     8
+4   Marlboro Team Lotus-Renault         Sander Metz   +18.635        +2.802   1:27.14       46        M    1     6
+5   Marlboro Team Lotus-Renault   Charlie Southgate   +22.002        +3.367  1:26.863       48        S    1    12
+6     Winfield Benetton-Renault     Kumar Karihayan   +22.799        +0.797  1:26.854       51        S    1    14
+7               Renault F1 Team       August Wehner   +24.334        +1.535  1:26.953       45        M    1    11
+8     Winfield Benetton-Renault      Daniil Kovalev   +24.773        +0.439  1:25.518       53        S    1     7
+9      Mild Seven Toyota Racing       Quentin Iazzo   +25.791        +1.018  1:26.911       50        M    1    10
+10    Rothmans Williams-Renault      Ken Fassbender   +26.026        +0.235  1:25.377       49        S    1     4
+11        West McLaren-Mercedes       Devon Raleigh   +26.831        +0.805   1:25.75       46        M    1    22
+12    Rothmans Williams-Renault       Antonio Iocco   +27.447        +0.616  1:26.675       49        M    1     9
+13                Honda F1 Team       David Redolfe   +27.528        +0.081  1:26.845       52        M    1     5
+14        West McLaren-Mercedes        Nill Rosberg   +27.622        +0.094  1:25.281       47        S    1     1
+15     Mild Seven Toyota Racing    Guillermo Acosta   +46.428       +18.806  1:27.113       46        S    2    13
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello   +48.464        +2.036  1:28.310       53        S    2    20
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +50.304         +1.84  1:29.275       51        M    1    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +53.781        +3.477  1:29.482       50        M    1    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Abel Wolfe has recorded 1:25.132 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 55/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  02:01:26.647  1:25.132       50        M    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.807        +1.807  1:25.485       49        M    1     2
+3               Renault F1 Team     Marcus Svansson   +17.032       +15.225  1:26.609       50        M    1     8
+4   Marlboro Team Lotus-Renault         Sander Metz    +20.35        +3.318   1:27.14       46        M    1     6
+5      Mild Seven Toyota Racing       Quentin Iazzo   +26.617        +6.267  1:26.796       55        M    1    10
+6               Renault F1 Team       August Wehner   +27.232        +0.615  1:26.953       45        M    1    11
+7     Winfield Benetton-Renault      Daniil Kovalev   +28.224        +0.992  1:25.518       53        S    1     7
+8     Rothmans Williams-Renault      Ken Fassbender   +28.297        +0.073  1:25.377       49        S    1     4
+9         West McLaren-Mercedes       Devon Raleigh   +30.135        +1.838   1:25.75       46        M    1    22
+10                Honda F1 Team       David Redolfe   +30.501        +0.366  1:26.845       52        M    1     5
+11    Rothmans Williams-Renault       Antonio Iocco   +30.593        +0.092  1:26.675       49        M    1     9
+12        West McLaren-Mercedes        Nill Rosberg    +31.38        +0.787  1:25.281       47        S    1     1
+13  Marlboro Team Lotus-Renault   Charlie Southgate   +47.046       +15.666  1:26.863       48        S    2    12
+14     Mild Seven Toyota Racing    Guillermo Acosta   +48.315        +1.269  1:27.113       46        S    2    13
+15    Winfield Benetton-Renault     Kumar Karihayan   +48.329        +0.014  1:26.854       51        S    2    14
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello   +51.349         +3.02  1:28.310       53        S    2    20
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +54.092        +2.743  1:29.275       51        M    1    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +57.677        +3.585  1:29.482       50        M    1    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Abel Wolfe has recorded 1:25.132 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 56/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  02:02:52.279  1:25.132       50        M    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +2.049        +2.049  1:25.485       49        M    1     2
+3               Renault F1 Team     Marcus Svansson   +18.396       +16.347  1:26.609       50        M    1     8
+4   Marlboro Team Lotus-Renault         Sander Metz   +22.889        +4.493   1:27.14       46        M    1     6
+5      Mild Seven Toyota Racing       Quentin Iazzo    +28.27        +5.381  1:26.796       55        M    1    10
+6     Winfield Benetton-Renault      Daniil Kovalev   +28.274        +0.004  1:25.518       53        S    1     7
+7               Renault F1 Team       August Wehner   +28.557        +0.283  1:26.953       45        M    1    11
+8         West McLaren-Mercedes       Devon Raleigh   +29.402        +0.845  1:24.899       56        M    1    22
+9     Rothmans Williams-Renault      Ken Fassbender    +30.17        +0.768  1:25.377       49        S    1     4
+10                Honda F1 Team       David Redolfe   +31.086        +0.916  1:26.217       56        M    1     5
+11    Rothmans Williams-Renault       Antonio Iocco   +31.209        +0.123  1:26.248       56        M    1     9
+12        West McLaren-Mercedes        Nill Rosberg    +33.32        +2.111  1:25.281       47        S    1     1
+13     Mild Seven Toyota Racing    Guillermo Acosta   +49.577       +16.257  1:26.893       56        S    2    13
+14    Winfield Benetton-Renault     Kumar Karihayan   +49.681        +0.104  1:26.854       51        S    2    14
+15  Marlboro Team Lotus-Renault   Charlie Southgate    +49.95        +0.269  1:26.863       48        S    2    12
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello   +54.574        +4.624  1:28.310       53        S    2    20
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +58.359        +3.785  1:29.275       51        M    1    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +61.924        +3.565  1:29.482       50        M    1    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Devon Raleigh has recorded 1:24.899 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 57/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  02:04:18.016  1:25.132       50        M    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +2.028        +2.028  1:25.485       49        M    1     2
+3               Renault F1 Team     Marcus Svansson   +19.738        +17.71  1:26.609       50        M    1     8
+4   Marlboro Team Lotus-Renault         Sander Metz   +24.508         +4.77   1:27.14       46        M    1     6
+5      Mild Seven Toyota Racing       Quentin Iazzo   +29.097        +4.589  1:26.563       57        M    1    10
+6               Renault F1 Team       August Wehner   +29.214        +0.117  1:26.394       57        M    1    11
+7     Winfield Benetton-Renault      Daniil Kovalev   +29.836        +0.622  1:25.518       53        S    1     7
+8     Rothmans Williams-Renault      Ken Fassbender   +30.061        +0.225  1:25.377       49        S    1     4
+9         West McLaren-Mercedes       Devon Raleigh    +30.52        +0.459  1:24.899       56        M    1    22
+10    Rothmans Williams-Renault       Antonio Iocco   +32.195        +1.675  1:26.248       56        M    1     9
+11        West McLaren-Mercedes        Nill Rosberg    +32.28        +0.085  1:24.697       57        S    1     1
+12                Honda F1 Team       David Redolfe    +32.88          +0.6  1:26.217       56        M    1     5
+13    Winfield Benetton-Renault     Kumar Karihayan   +51.009       +18.129  1:26.854       51        S    2    14
+14  Marlboro Team Lotus-Renault   Charlie Southgate   +51.809          +0.8  1:26.863       48        S    2    12
+15     Mild Seven Toyota Racing    Guillermo Acosta    +52.26        +0.451  1:26.893       56        S    2    13
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello   +60.586        +8.326  1:28.310       53        S    2    20
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +62.145        +1.559  1:29.275       51        M    1    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +69.141        +6.996  1:29.482       50        M    1    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Nill Rosberg has recorded 1:24.697 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 58/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  02:05:43.513  1:25.132       50        M    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +2.052        +2.052  1:25.485       49        M    1     2
+3               Renault F1 Team     Marcus Svansson   +20.969       +18.917  1:26.609       50        M    1     8
+4   Marlboro Team Lotus-Renault         Sander Metz    +26.24        +5.271   1:27.14       46        M    1     6
+5               Renault F1 Team       August Wehner   +30.108        +3.868  1:26.391       58        M    1    11
+6     Rothmans Williams-Renault      Ken Fassbender   +30.122        +0.014  1:25.377       49        S    1     4
+7      Mild Seven Toyota Racing       Quentin Iazzo   +30.157        +0.035  1:26.556       58        M    1    10
+8         West McLaren-Mercedes       Devon Raleigh   +30.336        +0.179  1:24.899       56        M    1    22
+9         West McLaren-Mercedes        Nill Rosberg   +32.199        +1.863  1:24.697       57        S    1     1
+10    Winfield Benetton-Renault      Daniil Kovalev   +32.747        +0.548  1:25.518       53        S    1     7
+11    Rothmans Williams-Renault       Antonio Iocco   +33.421        +0.674  1:26.248       56        M    1     9
+12                Honda F1 Team       David Redolfe   +34.771         +1.35  1:26.217       56        M    1     5
+13  Marlboro Team Lotus-Renault   Charlie Southgate   +53.095       +18.324  1:26.783       58        S    2    12
+14     Mild Seven Toyota Racing    Guillermo Acosta   +53.844        +0.749  1:26.893       56        S    2    13
+15    Winfield Benetton-Renault     Kumar Karihayan   +55.418        +1.574  1:26.854       51        S    2    14
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello   +63.446        +8.028  1:28.310       53        S    2    20
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +66.246          +2.8  1:29.275       51        M    1    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +73.437        +7.191  1:29.482       50        M    1    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Nill Rosberg has recorded 1:24.697 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 59/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  02:07:08.648  1:25.132       50        M    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +2.445        +2.445  1:25.485       49        M    1     2
+3               Renault F1 Team     Marcus Svansson    +22.65       +20.205  1:26.609       50        M    1     8
+4   Marlboro Team Lotus-Renault         Sander Metz   +28.172        +5.522  1:27.066       59        M    1     6
+5     Rothmans Williams-Renault      Ken Fassbender   +30.508        +2.336  1:25.377       49        S    1     4
+6         West McLaren-Mercedes        Nill Rosberg   +31.069        +0.561  1:24.004       59        S    1     1
+7               Renault F1 Team       August Wehner   +31.201        +0.132  1:26.228       59        M    1    11
+8      Mild Seven Toyota Racing       Quentin Iazzo   +32.213        +1.012  1:26.556       58        M    1    10
+9     Rothmans Williams-Renault       Antonio Iocco   +34.175        +1.962  1:25.889       59        M    1     9
+10    Winfield Benetton-Renault      Daniil Kovalev   +34.178        +0.003  1:25.518       53        S    1     7
+11        West McLaren-Mercedes       Devon Raleigh   +34.793        +0.615  1:24.899       56        M    1    22
+12                Honda F1 Team       David Redolfe   +36.785        +1.992  1:26.217       56        M    1     5
+13  Marlboro Team Lotus-Renault   Charlie Southgate   +52.954       +16.169  1:24.994       59        S    2    12
+14     Mild Seven Toyota Racing    Guillermo Acosta   +53.976        +1.022  1:25.266       59        S    2    13
+15    Winfield Benetton-Renault     Kumar Karihayan   +57.738        +3.762  1:26.854       51        S    2    14
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello   +67.391        +9.653  1:28.310       53        S    2    20
+17      Minardi-Ferrari F1 Team        Raul Sanchez     +70.4        +3.009  1:29.275       51        M    1    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +77.974        +7.574  1:29.482       50        M    1    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Nill Rosberg has recorded 1:24.004 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 60/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  02:08:34.004  1:25.132       50        M    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +2.237        +2.237  1:25.148       60        M    1     2
+3               Renault F1 Team     Marcus Svansson   +23.946       +21.709  1:26.609       50        M    1     8
+4   Marlboro Team Lotus-Renault         Sander Metz   +29.733        +5.787  1:26.917       60        M    1     6
+5     Rothmans Williams-Renault      Ken Fassbender   +30.398        +0.665  1:25.246       60        S    1     4
+6         West McLaren-Mercedes        Nill Rosberg   +31.806        +1.408  1:24.004       59        S    1     1
+7               Renault F1 Team       August Wehner   +32.454        +0.648  1:26.228       59        M    1    11
+8      Mild Seven Toyota Racing       Quentin Iazzo   +34.022        +1.568  1:26.556       58        M    1    10
+9     Winfield Benetton-Renault      Daniil Kovalev    +34.56        +0.538  1:25.518       53        S    1     7
+10        West McLaren-Mercedes       Devon Raleigh   +35.752        +1.192  1:24.899       56        M    1    22
+11                Honda F1 Team       David Redolfe   +38.781        +3.029  1:26.217       56        M    1     5
+12    Rothmans Williams-Renault       Antonio Iocco   +39.397        +0.616  1:25.889       59        M    1     9
+13     Mild Seven Toyota Racing    Guillermo Acosta    +52.43       +13.033  1:23.809       60        S    2    13
+14  Marlboro Team Lotus-Renault   Charlie Southgate    +52.57         +0.14  1:24.971       60        S    2    12
+15    Winfield Benetton-Renault     Kumar Karihayan   +56.658        +4.088  1:24.275       60        S    2    14
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello    +71.06       +14.402  1:28.310       53        S    2    20
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +74.977        +3.917  1:29.275       51        M    1    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos   +82.375        +7.398  1:29.482       50        M    1    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Guillermo Acosta has recorded 1:23.809 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 61/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  02:09:58.992  1:24.988       61        M    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +2.268        +2.268  1:25.019       61        M    1     2
+3               Renault F1 Team     Marcus Svansson   +25.576       +23.308  1:26.609       50        M    1     8
+4   Marlboro Team Lotus-Renault         Sander Metz   +30.945        +5.369  1:26.199       61        M    1     6
+5         West McLaren-Mercedes        Nill Rosberg   +31.187        +0.242  1:24.004       59        S    1     1
+6     Rothmans Williams-Renault      Ken Fassbender   +32.324        +1.137  1:25.246       60        S    1     4
+7               Renault F1 Team       August Wehner   +33.969        +1.645  1:26.228       59        M    1    11
+8     Winfield Benetton-Renault      Daniil Kovalev   +35.166        +1.197  1:25.518       53        S    1     7
+9         West McLaren-Mercedes       Devon Raleigh   +37.719        +2.553  1:24.899       56        M    1    22
+10     Mild Seven Toyota Racing       Quentin Iazzo    +37.76        +0.041  1:26.556       58        M    1    10
+11                Honda F1 Team       David Redolfe   +40.341        +2.581  1:26.217       56        M    1     5
+12    Rothmans Williams-Renault       Antonio Iocco   +41.601         +1.26  1:25.889       59        M    1     9
+13  Marlboro Team Lotus-Renault   Charlie Southgate    +51.38        +9.779  1:23.798       61        S    2    12
+14     Mild Seven Toyota Racing    Guillermo Acosta   +51.713        +0.333  1:23.809       60        S    2    13
+15    Winfield Benetton-Renault     Kumar Karihayan   +55.623         +3.91  1:23.953       61        S    2    14
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello   +77.613        +21.99  1:28.310       53        S    2    20
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +78.938        +1.325  1:28.948       61        M    1    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos    +1 Lap        +7.583  1:29.134       61        M    1    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Charlie Southgate has recorded 1:23.798 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 62/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  02:11:23.974  1:24.982       62        M    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.892        +1.892  1:24.606       62        M    1     2
+3               Renault F1 Team     Marcus Svansson   +26.929       +25.037  1:26.335       62        M    1     8
+4   Marlboro Team Lotus-Renault         Sander Metz   +32.025        +5.096  1:26.061       62        M    1     6
+5     Rothmans Williams-Renault      Ken Fassbender   +32.536        +0.511  1:25.194       62        S    1     4
+6         West McLaren-Mercedes        Nill Rosberg   +34.165        +1.629  1:24.004       59        S    1     1
+7               Renault F1 Team       August Wehner   +35.278        +1.113  1:26.228       59        M    1    11
+8     Winfield Benetton-Renault      Daniil Kovalev   +36.528         +1.25  1:25.518       53        S    1     7
+9         West McLaren-Mercedes       Devon Raleigh   +36.614        +0.086  1:23.877       62        M    1    22
+10     Mild Seven Toyota Racing       Quentin Iazzo   +40.079        +3.465  1:26.556       58        M    1    10
+11                Honda F1 Team       David Redolfe   +41.696        +1.617  1:26.217       56        M    1     5
+12    Rothmans Williams-Renault       Antonio Iocco   +43.136         +1.44  1:25.889       59        M    1     9
+13  Marlboro Team Lotus-Renault   Charlie Southgate   +50.385        +7.249  1:23.798       61        S    2    12
+14     Mild Seven Toyota Racing    Guillermo Acosta   +52.911        +2.526  1:23.809       60        S    2    13
+15    Winfield Benetton-Renault     Kumar Karihayan   +54.539        +1.628  1:23.897       62        S    2    14
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello   +81.204       +26.665  1:28.310       53        S    2    20
+17      Minardi-Ferrari F1 Team        Raul Sanchez   +82.748        +1.544  1:28.792       62        M    1    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos    +1 Lap        +7.668  1:28.877       62        M    1    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Charlie Southgate has recorded 1:23.798 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Imola Grand Prix — Italy | Lap 63/63
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT  GRID
+1     Scuderia Ferrari Vodafone          Abel Wolfe  INTERVAL  02:12:48.660  1:24.686       63        M    1     3
+2     Scuderia Ferrari Vodafone   Charles Hérnandez    +1.647        +1.647  1:24.441       63        M    1     2
+3               Renault F1 Team     Marcus Svansson   +28.492       +26.845  1:26.249       63        M    1     8
+4     Rothmans Williams-Renault      Ken Fassbender   +32.911        +4.419  1:25.061       63        S    1     4
+5   Marlboro Team Lotus-Renault         Sander Metz   +33.735        +0.824  1:26.061       62        M    1     6
+6         West McLaren-Mercedes        Nill Rosberg   +34.628        +0.893  1:24.004       59        S    1     1
+7               Renault F1 Team       August Wehner   +35.697        +1.069  1:25.105       63        M    1    11
+8         West McLaren-Mercedes       Devon Raleigh   +38.117         +2.42  1:23.877       62        M    1    22
+9     Winfield Benetton-Renault      Daniil Kovalev   +38.421        +0.304  1:25.518       53        S    1     7
+10     Mild Seven Toyota Racing       Quentin Iazzo   +42.084        +3.663  1:26.556       58        M    1    10
+11                Honda F1 Team       David Redolfe   +42.224         +0.14  1:25.214       63        M    1     5
+12    Rothmans Williams-Renault       Antonio Iocco   +45.587        +3.363  1:25.889       59        M    1     9
+13  Marlboro Team Lotus-Renault   Charlie Southgate   +49.224        +3.637  1:23.524       63        S    2    12
+14     Mild Seven Toyota Racing    Guillermo Acosta   +51.917        +2.693  1:23.691       63        S    2    13
+15    Winfield Benetton-Renault     Kumar Karihayan   +53.082        +1.165  1:23.229       63        S    2    14
+16      Minardi-Ferrari F1 Team  Antonio Bacarrello   +84.597       +31.515  1:28.078       63        S    2    20
+17      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap        +2.856  1:28.792       62        M    1    16
+18     Red Bull Sauber-Mercedes       Matteo de Vos    +1 Lap       +11.335  1:28.877       62        M    1    21
+19     Red Bull Sauber-Mercedes        Jérémy Claes       DNF           DNF  1:30.377       35        S    1    17
+20   ING Jaguar Racing Mercedes        James Eadorn       DNF           DNF  1:32.514        8        S    1    18
+21                Honda F1 Team     Katsuno Yoshiro       DNF           DNF  1:29.775        6        S    0    15
+22   ING Jaguar Racing Mercedes      George Aldeill       DNF           DNF  1:33.130        9        M    0    19
+
+Fastest Lap | Kumar Karihayan has recorded 1:23.229 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *

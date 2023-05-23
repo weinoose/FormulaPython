@@ -13,7 +13,7 @@ execution = 'simulation' # data or simulation for output/run mode.
 current = '1998'
 
 # GP Selection
-GP = 'Zandvoort'
+GP = 'Monza'
 
 # Spec. Selection
 spec = 'Formula 1'
@@ -518,30 +518,30 @@ class Manufacturer():
             return ((self.braking*5) + (self.downforce*2) + (self.vortex*1) + (self.drag*3))/11
 
 if spec == 'Formula 1':
-    mclaren = Manufacturer('West McLaren-Mercedes','Perfect',MERCEDES,91,89,89,87,88,90,77,+0.00,'Balanced') # Adrian Newey | 96 89 89 | Perfect Eng. | Low Rel. | 26M$
-    ferrari = Manufacturer('Scuderia Ferrari Vodafone','Perfect',FERRARI,92,85,94,90,92,91,80,+0.00,'Balanced') # Aldo Costa | 94 91 91 | Perfect Eng. | Balanced Rel. | 26M$
+    mclaren = Manufacturer('West McLaren-Mercedes','Perfect',MERCEDES,96,89,89,87,93,95,77,+0.00,'Balanced') # Adrian Newey | 96 89 89 | Perfect Eng. | Low Rel. | 26M$
+    ferrari = Manufacturer('Scuderia Ferrari Vodafone','Perfect',FERRARI,92,85,94,90,92,91,85,+0.00,'Balanced') # Aldo Costa | 94 91 91 | Perfect Eng. | Balanced Rel. | 26M$
     williams = Manufacturer('Rothmans Williams-Renault','Good',RENAULT,85,89,85,77,84,81,72,+0.00,'Unbalanced') # Paddy Lowe | 89 81 81 | Perfect Eng. | Low Rel. | 22M$
-    benetton = Manufacturer('Winfield Benetton-Renault','Good',RENAULT,85,85,84,82,88,84,77,-4.30,'Stiff Rear') # Pat Symonds | 86 81 81 | Good Eng. | Balanced Rel. | 22M$
-    honda = Manufacturer('Honda F1 Team','Good',HONDA,82,83,79,79,82,81,77,-1.96,'Balanced') # Simone Resta | 82 74 72 | Average Eng. | Balanced Rel. | 26M$
-    lotus = Manufacturer('Marlboro Team Lotus-Renault','Average',RENAULT,85,81,80,76,76,75,94,+2.55,'Balanced') # John Barnard | 91 91 91 | Good Eng. | High Rel. | 22M$
-    renault = Manufacturer('Renault F1 Team','Average',RENAULT,84,87,78,73,83,80,74,+0.00,'Balanced') # James Allison | 94 86 84 | Good Eng. | Balanced Rel. | 18M$
-    toyota = Manufacturer('Mild Seven Toyota Racing','Perfect',TOYOTA,83,85,76,80,77,77,80,+0.00,'Balanced') # Nick Flynn | 80 72 72 | Good Eng. | Balanced Rel. | 22M$
+    benetton = Manufacturer('Winfield Benetton-Renault','Good',RENAULT,85,85,88,82,88,84,77,-4.30,'Stiff Rear') # Pat Symonds | 86 81 81 | Good Eng. | Balanced Rel. | 22M$
+    honda = Manufacturer('Honda F1 Team','Good',HONDA,82,83,83,79,86,85,77,-1.96,'Balanced') # Simone Resta | 82 74 72 | Average Eng. | Balanced Rel. | 26M$
+    lotus = Manufacturer('Marlboro Team Lotus-Renault','Average',RENAULT,90,81,80,80,76,75,94,+2.55,'Balanced') # John Barnard | 91 91 91 | Good Eng. | High Rel. | 22M$
+    renault = Manufacturer('Renault F1 Team','Average',RENAULT,84,87,78,77,83,80,74,+0.00,'Balanced') # James Allison | 94 86 84 | Good Eng. | Balanced Rel. | 18M$
+    toyota = Manufacturer('Mild Seven Toyota Racing','Perfect',TOYOTA,83,85,76,84,77,77,80,+0.00,'Balanced') # Nick Flynn | 80 72 72 | Good Eng. | Balanced Rel. | 22M$
     sauber = Manufacturer('Red Bull Sauber-Mercedes','Perfect',MERCEDES,71,62,66,63,62,61,81,-4.78,'Balanced') # Ronnie Durand | 76 76 76 | Bad Eng. | Balanced Rel. | 12M$
     jaguar = Manufacturer('ING Jaguar Racing Mercedes','Bad',MERCEDES,64,66,66,67,64,66,82,+0.00,'Balanced') # Raymond Coughlan | 80 74 74 | Bad Eng. | Balanced Rel. | 12M$
     minardi = Manufacturer('Minardi-Ferrari F1 Team','Bad',FERRARI,68,61,66,63,64,62,79,+0.00,'Balanced') # Ignacio La Chazelle | 72 70 70  | Bad Eng. | Balanced Rel. | 12M$
     manufacturers = [honda,jaguar,lotus,toyota,minardi,sauber,renault,williams,ferrari,mclaren,benetton]
 elif spec == 'Formula 2':
     carlin = Manufacturer('Carlin','Perfect',MECACHROME,91,91,91,91,91,91,91,+0.00,None)
-    manor = Manufacturer('Manor Racing','Good',MECACHROME,91,89,89,90,90,90,90,+0.00,None)
-    dams = Manufacturer('DAMS','Good',MECACHROME,91,87,87,89,89,89,89,+0.00,None)
-    art = Manufacturer('ART Grand Prix','Average',MECACHROME,91,85,85,88,88,88,88,+0.00,None)
-    rbf2 = Manufacturer('Red Bull F2','Good',MECACHROME,91,83,83,87,87,87,87,+0.00,None)
-    clark = Manufacturer('Clark Grand Prix Engineering','Good',MECACHROME,91,81,81,86,86,86,86,+0.00,None)
-    stewart = Manufacturer('Stewart Grand Prix','Average',MECACHROME,91,79,79,85,85,85,85,+0.00,None)
-    draco = Manufacturer('Draco Grand Prix Engineering','Average',MECACHROME,91,77,77,84,84,84,84,+0.00,None)
-    falcon = Manufacturer('Falcon Grand Prix','Average',MECACHROME,91,75,75,83,83,83,83,+0.00,None)
-    fortec = Manufacturer('Fortec Motorsport','Average',MECACHROME,91,73,73,82,82,82,82,+0.00,None)
-    sn = Manufacturer('Super Nova Racing','Average',MECACHROME,91,71,71,81,81,81,81,+0.00,None)
+    manor = Manufacturer('Manor Racing','Good',MECACHROME,91,89,89,90,90,91,91,+0.00,None)
+    dams = Manufacturer('DAMS','Good',MECACHROME,91,87,87,89,89,91,91,+0.00,None)
+    art = Manufacturer('ART Grand Prix','Average',MECACHROME,91,85,85,88,88,91,91,+0.00,None)
+    rbf2 = Manufacturer('Red Bull F2','Good',MECACHROME,91,83,83,87,87,91,91,+0.00,None)
+    clark = Manufacturer('Clark Grand Prix Engineering','Good',MECACHROME,91,81,81,86,86,91,91,+0.00,None)
+    stewart = Manufacturer('Stewart Grand Prix','Average',MECACHROME,91,79,79,85,85,91,91,+0.00,None)
+    draco = Manufacturer('Draco Grand Prix Engineering','Average',MECACHROME,91,77,77,84,84,91,91,+0.00,None)
+    falcon = Manufacturer('Falcon Grand Prix','Average',MECACHROME,91,75,75,83,83,91,91,+0.00,None)
+    fortec = Manufacturer('Fortec Motorsport','Average',MECACHROME,91,73,73,82,82,91,91,+0.00,None)
+    sn = Manufacturer('Super Nova Racing','Average',MECACHROME,91,71,71,81,81,91,91,+0.00,None)
     manufacturers = [art,carlin,clark,dams,draco,falcon,fortec,manor,rbf2,stewart,sn]
 
 # Drivers
@@ -588,35 +588,35 @@ class Driver():
             return 0
         
 if spec == 'Formula 1':
-    D1 = Driver(mclaren,"Devon Raleigh",None,None,91,92,84,92,86,92,92,94,86,86,94,[None],'Balanced') # 1
-    D2 = Driver(mclaren,"Nill Rosberg",None,None,94,88,88,94,88,82,86,88,88,90,90,[None],'Balanced') # 3
-    D3 = Driver(ferrari,"Charles Hérnandez",None,None,94,92,80,84,88,88,82,84,84,88,84,[None],'Balanced') # 2
-    D4 = Driver(ferrari,"Abel Wolfe",None,None,86,94,96,88,92,92,82,88,90,92,86,[None],'Stiff Rear') # 1
-    D5 = Driver(williams,"Ken Fassbender",None,None,86,86,84,84,92,94,94,94,90,90,90,[None],'Unbalanced') # 1
-    D6 = Driver(williams,"Antonio Iocco",None,None,77,80,77,72,72,72,77,81,77,72,77,[None],'Balanced') # 3
-    D7 = Driver(benetton,"Daniil Kovalev",None,None,90,86,80,84,90,80,80,82,82,82,82,[None],'Balanced') # 2
-    D8 = Driver(benetton,"Kumar Karihayan",None,None,68,68,68,68,74,68,68,68,68,64,68,[None],'Balanced') # 1
-    D9 = Driver(honda,"David Redolfe",None,None,76,86,84,84,84,72,76,76,76,82,88,[None],'Balanced') # 1
-    D10 = Driver(honda,"Katsuno Yoshiro",None,None,82,82,76,76,76,76,88,88,86,88,72,[None],'Balanced') # 2
-    D11 = Driver(lotus,"Sander Metz",None,None,84,84,84,82,86,82,80,88,88,82,90,[None],'Balanced') # 1
-    D12 = Driver(lotus,"Charlie Southgate",None,None,82,82,82,90,86,86,86,80,76,82,76,[None],'Balanced') # 2
-    D13 = Driver(renault,"Tony Calandre",None,None,79,79,82,82,82,82,79,79,76,76,76,[None],'Balanced') # 1
-    D14 = Driver(renault,"Marcus Svansson",None,None,84,86,80,80,76,88,86,84,84,82,80,[None],'Balanced') # 2
-    D15 = Driver(toyota,"Guillermo Acosta",None,None,75,75,72,75,72,72,75,80,80,80,76,[None],'Balanced') # 1
-    D16 = Driver(toyota,"Quentin Iazzo",None,None,76,80,76,72,72,72,72,76,76,76,76,[None],'Balanced') # 2
-    D17 = Driver(sauber,"Jamie Lorianne",None,None,74,74,76,76,76,76,76,76,76,74,74,[None],'Balanced') # 3
-    D18 = Driver(sauber,"Ernie Cédryck",None,None,70,70,70,70,72,76,70,70,70,74,74,[None],'Balanced') # 3
-    D19 = Driver(jaguar,"James Eadorn",None,None,66,66,66,64,74,64,64,68,68,64,68,[None],'Balanced') # 4
-    D20 = Driver(jaguar,"George Aldeill",None,None,66,66,66,64,74,64,64,68,68,64,68,[None],'Balanced') # 4
-    D21 = Driver(minardi,"Raul Sanchez",None,None,88,86,88,88,80,80,82,84,76,88,84,[None],'Balanced') # 1
-    D22 = Driver(minardi,"Antonio Bacarrello",None,None,72,72,66,66,72,76,70,70,70,74,74,[None],'Balanced') # 2
+    D1 = Driver(mclaren,"Devon Raleigh",None,None,91,92,84,92,86,92,92,94,86,86,94,[None],'Balanced') # 1998
+    D2 = Driver(mclaren,"Nill Rosberg",None,None,94,88,88,94,88,82,86,88,88,90,90,[None],'Balanced') # 1998 - 2000 - 2001
+    D3 = Driver(ferrari,"Charles Hérnandez",None,None,94,92,80,84,88,88,82,84,84,88,84,[None],'Balanced') # 1998 - 1999
+    D4 = Driver(ferrari,"Abel Wolfe",None,None,86,94,96,88,92,92,82,88,90,92,86,[None],'Stiff Rear') # 1998
+    D5 = Driver(williams,"Ken Fassbender",None,None,86,86,84,84,92,94,94,94,90,90,90,[None],'Unbalanced') # 1998
+    D6 = Driver(williams,"Mattia Lori",None,None,77,80,77,72,72,72,77,81,77,72,77,[None],'Balanced') # 1998 - 2000 - 2001
+    D7 = Driver(benetton,"Daniil Kovalev",None,None,90,86,80,84,90,80,80,82,82,82,82,[None],'Balanced') # 1998 - 1999
+    D8 = Driver(benetton,"Sarvesh Sharaf",None,None,68,68,68,68,74,68,68,68,68,64,68,[None],'Balanced') # 1998
+    D9 = Driver(honda,"David Redolfe",None,None,76,86,84,84,84,72,76,76,76,82,88,[None],'Balanced') # 1998
+    D10 = Driver(honda,"Katsuno Yoshiro",None,None,82,82,76,76,76,76,88,88,86,88,72,[None],'Balanced') # 1998 - 1999
+    D11 = Driver(lotus,"Sander Metz",None,None,84,84,84,82,86,82,80,88,88,82,90,[None],'Balanced') # 1998
+    D12 = Driver(lotus,"Charlie Southgate",None,None,82,82,82,90,86,86,86,80,76,82,76,[None],'Balanced') # 1998 - 1999
+    D13 = Driver(renault,"August Wehner",None,None,79,79,82,82,82,82,79,79,76,76,76,[None],'Balanced') # 1998
+    D14 = Driver(renault,"Marcus Svansson",None,None,84,86,80,80,76,88,86,84,84,82,80,[None],'Balanced') # 1998 - 1999
+    D15 = Driver(toyota,"Guillermo Acosta",None,None,75,75,72,75,72,72,75,80,80,80,76,[None],'Balanced') # 1998
+    D16 = Driver(toyota,"Quentin Iazzo",None,None,76,80,76,72,72,72,72,76,76,76,76,[None],'Balanced') # 1998 - 1999
+    D17 = Driver(sauber,"Jérémy Claes",None,None,74,74,76,76,76,76,76,76,76,74,74,[None],'Balanced') # 1998 - 2000 - 2001
+    D18 = Driver(sauber,"Matteo de Vos",None,None,70,70,70,70,72,76,70,70,70,74,74,[None],'Balanced') # 1998 - 2000 - 2001
+    D19 = Driver(jaguar,"James Eadorn",None,None,66,66,66,64,74,64,64,68,68,64,68,[None],'Balanced') # 1998 - 2000 - 2001 - 2002
+    D20 = Driver(jaguar,"George Aldeill",None,None,66,66,66,64,74,64,64,68,68,64,68,[None],'Balanced') # 1998 - 2000 - 2001 - 2002
+    D21 = Driver(minardi,"Raul Sanchez",None,None,88,86,88,88,80,80,82,84,76,88,84,[None],'Balanced') # 1998
+    D22 = Driver(minardi,"Antonio Bacarrello",None,None,72,72,66,66,72,76,70,70,70,74,74,[None],'Balanced') # 1998 - 1999
     drivers = [D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16,D17,D18,D19,D20,D21,D22]
 
 elif spec == 'Formula 2':
     D1 = Driver(art,"Théo Fernandez","FRA",None,70,68,73,73,76,78,74,73,73,71,70,[None],None)
     D2 = Driver(art,"Stuart Reddsey","GBR",None,62,62,69,72,64,75,67,72,69,70,62,[None],None)
-    D3 = Driver(carlin,"Neill Jordan","GBR",None,72,64,59,58,64,58,58,65,63,64,72,[None],None)
-    D4 = Driver(carlin,"Erwin Andrews","AUS",None,65,66,67,66,71,64,67,64,65,62,65,[None],None)
+    D3 = Driver(carlin,"Vincent White","GBR",None,72,64,59,58,64,58,58,65,63,64,72,[None],None)
+    D4 = Driver(carlin,"Derek West","AUS",None,65,66,67,66,71,64,67,64,65,62,65,[None],None)
     D5 = Driver(clark,"Oleg Rasmussen","SWE",None,68,68,68,68,74,66,65,68,70,69,68,[None],None)
     D6 = Driver(clark,"Rudy Wolfe","GER",None,77,81,76,68,71,67,76,81,76,73,77,[None],None)
     D7 = Driver(dams,"Francesco Bagnia","ITA",None,66,66,64,70,68,70,69,67,69,68,66,[None],None)
@@ -628,11 +628,11 @@ elif spec == 'Formula 2':
     D13 = Driver(fortec,"Juan Angel Ramirez","ARG",None,69,73,71,65,76,62,66,69,68,70,69,[None],None)
     D14 = Driver(fortec,"Esteban Caillero","COL",None,73,77,74,69,77,74,74,76,80,75,73,[None],None)
     D15 = Driver(manor,"Matthew Barker","GBR",None,76,76,75,72,80,75,75,74,78,77,76,[None],None)
-    D16 = Driver(manor,"Itoku Saiyka","JPN",None,75,71,68,68,71,70,73,74,72,73,75,[None],None)
+    D16 = Driver(manor,"Itoku Sayika","JPN",None,75,71,68,68,71,70,73,74,72,73,75,[None],None)
     D17 = Driver(rbf2,"Chris Puertas","BRA",None,66,64,64,71,68,72,67,65,72,66,66,[None],None)
-    D18 = Driver(rbf2,"David Frueshl","GER",None,74,71,68,62,70,61,68,68,65,68,74,[None],None)
+    D18 = Driver(rbf2,"David Boeck","GER",None,74,71,68,62,70,61,68,68,65,68,74,[None],None)
     D19 = Driver(stewart,"Alejandro Macerta","URU",None,73,68,69,73,69,70,73,70,70,74,73,[None],None)
-    D20 = Driver(stewart,"Tyson Douglas","USA",None,70,69,69,76,70,80,70,71,81,75,70,[None],None)
+    D20 = Driver(stewart,"Rich Douglas","USA",None,70,69,69,76,70,80,70,71,81,75,70,[None],None)
     D21 = Driver(sn,"Antonio Raineri","ITA",None,61,62,71,64,68,64,67,66,62,61,61,[None],None)
     D22 = Driver(sn,"Mauro Milani","ITA",None,59,58,65,69,66,73,67,67,66,64,59,[None],None)
     drivers = [D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16,D17,D18,D19,D20,D21,D22]

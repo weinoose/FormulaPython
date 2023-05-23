@@ -15,3 +15,12 @@ Belgian GP
 Renault: 6M front-wing
 
 German GP
+Lotus: 6,5M base, 2M chassis
+Honda: 1M sidepod, 1M suspension, 6M rear-wing
+Toyota: 7,5M base
+Benetton: 6M rear-wing
+
+Brazilian GP
+Ferrari: 7.5M reliability
+McLaren: 2M chassis, 1M sidepod, 1M suspension
+Renault: 8M base
