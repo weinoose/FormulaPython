@@ -7,7 +7,6 @@ import datetime
 import sys
 
 # Application Modes
-verbosity = True # True or False for further telemetry & data.
 execution = 'simulation' # data or simulation for output/run mode.
 
 # Season (Current) Selection
@@ -18,6 +17,11 @@ GP = 'Sakhir'
 
 # Spec. Selection
 spec = 'Formula 1'
+
+if spec == 'Formula 1':
+    verbosity = True # True or False for further telemetry & data.
+else:
+    verbosity = False
 
 # Error Handling for Vehicle Specs and Spec. Configuration
 spec_list = ['Formula 1','Formula 2']
@@ -75,8 +79,8 @@ class Tyre():
         self.pace = pace
         self.durability = durability
 
-bridgestone = Tyre('Bridgestone',1.6,7.6)
-michelin = Tyre('Michelin',1.3,5.6)
+bridgestone = Tyre('Bridgestone',1.6,2.6)
+michelin = Tyre('Michelin',1.3,2.6)
 goodyear = Tyre('Goodyear',0.3,2.6)
 pirelli = Tyre('Pirelli',0.0,0.0)
 
@@ -525,17 +529,17 @@ if spec == 'Formula 1':
     haas = Manufacturer('Haas F1 Team','Good',FERRARI,80,80,80,77,77,77,67,+0.00,'Balanced')
     manufacturers = [mercedes,redbull,ferrari,mclaren,alpine,alphatauri,astonmartin,williams,alfaromeo,haas]
 elif spec == 'Formula 2':
-    prema = Manufacturer('Prema Racing','Good',MECACHROME,91,85,85,88,88,88,88,+0.00,None)
-    virtuosi = Manufacturer('Virtuosi Racing','Average',MECACHROME,91,79,79,85,85,85,85,+0.00,None)
-    carlin = Manufacturer('Carlin','Perfect',MECACHROME,91,89,89,90,90,90,90,+0.00,None)
-    hitech = Manufacturer('Hitech Grand Prix','Average',MECACHROME,91,83,83,87,87,87,87,+0.00,None)
-    art = Manufacturer('ART Grand Prix','Perfect',MECACHROME,91,87,87,89,89,89,89,+0.00,None)
-    mp = Manufacturer('MP Motorsport','Good',MECACHROME,91,91,91,91,91,91,91,+0.00,None)
-    campos = Manufacturer('Campos Racing','Average',MECACHROME,91,71,71,81,81,81,81,+0.00,None)
-    dams = Manufacturer('DAMS','Good',MECACHROME,91,81,81,86,86,86,86,+0.00,None)
-    trident = Manufacturer('Trident','Average',MECACHROME,91,75,75,83,83,83,83,+0.00,None)
-    charouz = Manufacturer('Charouz Racing System','Bad',MECACHROME,91,77,77,84,84,84,84,+0.00,None)
-    van = Manufacturer('Van Amersfoot Racing','Perfect',MECACHROME,91,73,73,82,82,82,82,+0.00,None)
+    prema = Manufacturer('Prema Racing','Good',MECACHROME,91,91,91,85,85,85,85,+0.00,None) # 4th best.
+    virtuosi = Manufacturer('Virtuosi Racing','Average',MECACHROME,91,91,91,79,79,79,79,+0.00,None) # 7th best.
+    carlin = Manufacturer('Carlin','Perfect',MECACHROME,91,91,91,89,89,89,89,+0.00,None) # 2nd best.
+    hitech = Manufacturer('Hitech Grand Prix','Average',MECACHROME,91,91,91,83,83,83,83,+0.00,None) # 5th best.
+    art = Manufacturer('ART Grand Prix','Perfect',MECACHROME,91,91,91,87,87,87,87,+0.00,None) # 3rd best.
+    mp = Manufacturer('MP Motorsport','Good',MECACHROME,91,91,91,91,91,91,91,+0.00,None) # best.
+    campos = Manufacturer('Campos Racing','Average',MECACHROME,91,91,91,79,79,79,79,+0.00,None) # 11th best.
+    dams = Manufacturer('DAMS','Good',MECACHROME,91,91,91,81,81,81,81,+0.00,None) # 6th best.
+    trident = Manufacturer('Trident','Average',MECACHROME,91,91,91,79,79,79,79,+0.00,None) # 9th best.
+    charouz = Manufacturer('Charouz Racing System','Bad',MECACHROME,91,91,91,79,79,79,79,+0.00,None) # 8th best.
+    van = Manufacturer('Van Amersfoot Racing','Perfect',MECACHROME,91,91,91,79,79,79,79,+0.00,None) # 10th best.
     manufacturers = [prema,virtuosi,carlin,hitech,art,mp,campos,dams,trident,charouz,van]
 
 # Drivers
@@ -1318,7 +1322,7 @@ def R(circuit,session,weather):
                         if K.name == defender:
                             defender_obj = K
                     
-                    following_distance = (0.666)*(position-1)
+                    following_distance = (0.444)*(position-1)
 
                     if position == 1:
                         if len(DNF[attacker]) > 1:
