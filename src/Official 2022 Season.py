@@ -1241,7 +1241,7 @@ def R(circuit,session,weather):
                                 TIRE_USAGE[driver.name] += 3.332
                                 TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                         else:
-                            if lap + 3 > circuit.circuit_laps:
+                            if lap + 2 > circuit.circuit_laps:
                                 if FIA(current)[10] == True:
                                     if AHEAD[driver.name][-1] >= 24.0 + uniform(0.75,2.00):
                                         TIRE_USAGE[driver.name] = 0
