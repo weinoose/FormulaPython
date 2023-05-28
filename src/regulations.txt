@@ -1,38 +1,32 @@
-In-Year Upgrade Schedule
-Upgrades applies on based this parts; Chassis, Front Wing, Rear Wing, Base, Sidepod and Suspension.
-* Each part and research design takes 3, production 2; total 3 calendar weeks.
-* Each team has to leave a budget for in-season upgrades or next-season regulation researches.
-* Each team can maintain maxiumum 3 projects per one time. (max. 2 project for either development or research.)
-Prices for upgrades or researches shown below:
+CAR DEVELOPMENT FINANCIAL REGULATIONS
+* In the same regulation period, only two times of durability updates are allowed.
 * Chassis (2.000.000 - 4.000.000)
 * Front Wing (3.000.000 - 6.000.000)
 * Rear Wing (3.000.000 - 6.000.000)
 * Base (4.000.000 - 8.000.000)
 * Sidepod (500.000 - 1.000.000)
 * Suspension (500.000 - 1.000.000)
-* Durability (4.000.000 - 8.000.000) / Aynı regülasyon dönemi içinde sadece 2 kez güncelleme getirilebilinir.
+* Durability (4.000.000 - 8.000.000)
 
-Finances: 82M$ + plus sponsorships to maximizing it.
-* Araştırma sonuçları, gelecek regülasyonlara (1.325x veya 1.65x) daha fazla olarak geçer. 
-* Bu şart bir regülasyonun çoklu yıllar boyunca devam etmesi halinde geçerlidir.
-Ör: 2018 yılı için güncelleme yapmayan ve sonuçta her bir parça için +3 araştırma puanı kazanan X takımı >>>
-<<< 2021 yılında bu puanları +4 şeklinde araç üretimi esnasında hanesine yazar.
-<<< 2022 yılında bu puanları +5 şeklinde araç üretimi esnasında hanesine yazar.
+RESEARCHING REGULATIONS
+* Research results multiplied by 1.325x in the first year and multiplied by 1.65x in the following years.
+* An A team in the 2018 season did not make any upgrades and aligned all their budgets for next year's regulation research. 
+* In this case, every +3 update returns as; +4 for 2019 and +5 for 2020 and 2021.
 
-PRIZE MONEYS
-Prize money if multi-year regulations available:
+PRIZE MONEY
+Prize money if multi-year regulations are available:
 1st - 500.000
 2nd - 750.000
 3rd - 1.000.000
-Puan Alanlar - 1.500.000
-Puansız Kapatanlar - 2.000.000
+Within the points - 1.500.000
+Out of points - 2.000.000
 
-Prize money if one-year regulations available:
+Prize money if one-year regulations are available:
 1st - 1.000.000
 2nd - 1.500.000
 3rd - 2.000.000
-Puan Alanlar - 3.000.000
-Puansız Kapatanlar - 4.000.000
+Within the points - 3.000.000
+Out of points - 4.000.000
 
 REGULATIONS
 1998-1999-2000-2001-2002-2003-2004
@@ -53,9 +47,9 @@ ERS: None
 
 2005
 Engine: V8 2.4L
-Engine Continiuty: One-year usage.
+Engine Continuity: One-year usage.
 Chassis: One-year usage.
-In-Year Car Development: Active (Max. 2 upgrade allowed for each spec.)
+In-Year Car Development: Active (Max. 2 upgrades allowed for each spec.)
 First Available Research Date: First Available Research Date: Start of the 2003 Season for 2006 Regulations
 Max. Driver Contract Lenght: 4 years.
 F1 Logistics Supplier: DHL
@@ -85,9 +79,9 @@ ERS: None
 
 2009-2010
 Engine: V8 2.4L
-Engine Continiuty: One concept, multi-year usage. (Engines are frozen.)
+Engine Continuity: One concept, multi-year usage. (Engines are frozen.)
 Chassis: One concept, multi-year usage.
-In-Year Car Development: Active (Max. 2 upgrade allowed for each spec.)
+In-Year Car Development: Active (Max. 2 upgrades allowed for each spec.)
 First Available Research Date: Start of the 2009 Season for 2012 Regulations
 Max. Driver Contract Lenght: 4 years.
 F1 Logistics Supplier: DHL
@@ -101,7 +95,7 @@ ERS: None
 
 2011-2012-2013
 Engine: V8 2.4L
-Engine Continiuty: One concept, multi-year usage. (Engines are frozen.)
+Engine Continuity: One concept, multi-year usage. (Engines are frozen.)
 Chassis: One concept, multi-year usage.
 In-Year Car Development: Active (Max. 1 upgrade allowed for each spec.)
 First Available Research Date: Start of the 2011 Season for 2014 Regulations
@@ -117,9 +111,9 @@ ERS: None
 
 2014-2015
 Engine: V6 1.6L
-Engine Continiuty: One-year usage.
+Engine Continuity: One-year usage.
 Chassis: One concept, multi-year usage.
-In-Year Car Development: Active (Max. 2 upgrade allowed for each spec.)
+In-Year Car Development: Active (Max. 2 upgrades allowed for each spec.)
 First Available Research Date: Start of the 2013 Season for 2016 Regulations
 Max. Driver Contract Lenght: 5 years.
 F1 Logistics Supplier: DHL
@@ -133,9 +127,9 @@ ERS: Active
 
 2016
 Engine: V6 1.6L
-Engine Continiuty: One-year usage.
+Engine Continuity: One-year usage.
 Chassis: One-year usage.
-In-Year Car Development: Active (Max. 2 upgrade allowed for each spec.)
+In-Year Car Development: Active (Max. 2 upgrades allowed for each spec.)
 First Available Research Date: Start of the 2014 Season for 2017 Regulations
 Max. Driver Contract Lenght: 5 years.
 F1 Logistics Supplier: DHL
@@ -149,9 +143,9 @@ ERS: Active
 
 2017
 Engine: V6 1.6L
-Engine Continiuty: One-year usage.
+Engine Continuity: One-year usage.
 Chassis: One-year usage.
-In-Year Car Development: Active (Max. 2 upgrade allowed for each spec.)
+In-Year Car Development: Active (Max. 2 upgrades allowed for each spec.)
 First Available Research Date: Start of the 2015 Season for 2018 Regulations
 Max. Driver Contract Lenght: 5 years.
 F1 Logistics Supplier: DHL
@@ -165,7 +159,7 @@ ERS: Active
 
 2018-2019-2020
 Engine: V6 1.6L
-Engine Continiuty: One-year usage.
+Engine Continuity: One-year usage.
 Chassis: One concept, multi-year usage.
 In-Year Car Development: Active (Max. 1 upgrade allowed for each spec.)
 First Available Research Date: Start of the 2018 Season for 2021 Regulations
@@ -181,9 +175,9 @@ ERS: Active
 
 2021
 Engine: V6 1.6L
-Engine Continiuty: One-year usage.
+Engine Continuity: One-year usage.
 Chassis: One-year usage.
-In-Year Car Development: Active (Max. 2 upgrade allowed for each spec.)
+In-Year Car Development: Active (Max. 2 upgrades allowed for each spec.)
 First Available Research Date: Start of the 2019 Season for 2022 Regulations
 Max. Driver Contract Lenght: 6 years.
 F1 Logistics Supplier: DHL
@@ -197,9 +191,9 @@ ERS: Active
 
 2022-2023-2024-2025
 Engine: V6 1.6L
-Engine Continiuty: One concept, multi-year usage. (Engines are frozen.)
+Engine Continuity: One concept, multi-year usage. (Engines are frozen.)
 Chassis: One concept, multi-year usage.
-In-Year Car Development: Active (Max. 2 upgrade allowed for each spec.)
+In-Year Car Development: Active (Max. 2 upgrades allowed for each spec.)
 First Available Research Date: Start of the 2022 Season for 2025 Regulations
 Max. Driver Contract Lenght: 6 years.
 F1 Logistics Supplier: DHL
@@ -212,4 +206,4 @@ DRS: Active
 ERS: Active
 
 2025-?
-No information provided for 2025 regulations.
+No information was provided for 2025 regulations.
