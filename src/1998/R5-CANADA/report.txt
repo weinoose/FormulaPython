@@ -1,0 +1,259 @@
+Montréal GP — Canada | FP forecast: Dump | Qualifying forecast: Dump | Race forecast: Dump
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Free Practice 1 Session | Dump Conditions | Montréal Grand Prix — Canada
+                  MANUFACTURERS             DRIVERS       FL.      GAP  FL. LAP FL. TIRE
+1         West McLaren-Mercedes       Devon Raleigh  1:28.882  FASTEST       70        I
+2     Scuderia Ferrari Vodafone   Charles Hérnandez  1:28.991   +0.109       70        I
+3     Scuderia Ferrari Vodafone        Herbert Wolf  1:29.021   +0.139       70        I
+4         West McLaren-Mercedes        Nill Rosberg  1:29.221   +0.339       69        I
+5     Rothmans Williams-Renault      Ken Fassbender  1:30.105   +1.223       70        I
+6   Marlboro Team Lotus-Renault         Sander Metz  1:30.584   +1.702       70        I
+7                 Honda F1 Team       David Redolfe  1:30.655   +1.773       70        I
+8     Alfa Romeo Sauber-Ferrari        Jérémy Claes  1:30.787   +1.905       70        I
+9     Winfield Benetton-Renault      Daniil Kovalev  1:30.932    +2.05       70        I
+10    Alfa Romeo Sauber-Ferrari       Matteo de Vos  1:31.021   +2.139       70        I
+11                Honda F1 Team     Katsuno Yoshiro  1:31.230   +2.348       70        I
+12  Marlboro Team Lotus-Renault   Charlie Southgate  1:31.308   +2.426       70        I
+13    Rothmans Williams-Renault         Mattia Lori  1:31.310   +2.428       69        I
+14    Winfield Benetton-Renault      Sarvesh Sharaf  1:31.629   +2.747       69        I
+15     Mild Seven Toyota Racing    Guillermo Acosta  1:31.891   +3.009       70        I
+16     Parmalat Brabham-Renault       August Wehner  1:31.989   +3.107       70        I
+17     Parmalat Brabham-Renault     Marcus Svansson  1:32.051   +3.169       70        I
+18     Mild Seven Toyota Racing     Aaron Hérnandez  1:32.096   +3.214       70        I
+19     ING Jaguar Racing Toyota         Sam Maloney  1:33.016   +4.134       69        I
+20      Minardi-Ferrari F1 Team        Raul Sanchez  1:33.197   +4.315       70        I
+21     ING Jaguar Racing Toyota       Matt Rockwell  1:33.462    +4.58       70        I
+22      Minardi-Ferrari F1 Team  Antonio Bacarrello  1:34.233   +5.351       68        I
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Free Practice 2 Session | Dump Conditions | Montréal Grand Prix — Canada
+                  MANUFACTURERS             DRIVERS       FL.      GAP  FL. LAP FL. TIRE
+1     Scuderia Ferrari Vodafone        Herbert Wolf  1:28.677  FASTEST       70        I
+2         West McLaren-Mercedes        Nill Rosberg  1:28.822   +0.145       70        I
+3         West McLaren-Mercedes       Devon Raleigh  1:28.894   +0.217       70        I
+4     Scuderia Ferrari Vodafone   Charles Hérnandez  1:29.075   +0.398       70        I
+5     Rothmans Williams-Renault      Ken Fassbender  1:30.495   +1.818       70        I
+6   Marlboro Team Lotus-Renault         Sander Metz  1:30.778   +2.101       70        I
+7                 Honda F1 Team       David Redolfe  1:30.787    +2.11       68        I
+8     Winfield Benetton-Renault      Daniil Kovalev  1:30.870   +2.193       70        I
+9     Rothmans Williams-Renault         Mattia Lori  1:30.902   +2.225       70        I
+10    Alfa Romeo Sauber-Ferrari       Matteo de Vos  1:31.159   +2.482       69        I
+11    Alfa Romeo Sauber-Ferrari        Jérémy Claes  1:31.292   +2.615       70        I
+12  Marlboro Team Lotus-Renault   Charlie Southgate  1:31.409   +2.732       70        I
+13     Parmalat Brabham-Renault     Marcus Svansson  1:31.620   +2.943       70        I
+14                Honda F1 Team     Katsuno Yoshiro  1:31.700   +3.023       69        I
+15    Winfield Benetton-Renault      Sarvesh Sharaf  1:31.906   +3.229       70        I
+16     Mild Seven Toyota Racing    Guillermo Acosta  1:32.150   +3.473       69        I
+17     Mild Seven Toyota Racing     Aaron Hérnandez  1:32.235   +3.558       69        I
+18     Parmalat Brabham-Renault       August Wehner  1:32.239   +3.562       70        I
+19      Minardi-Ferrari F1 Team        Raul Sanchez  1:33.107    +4.43       70        I
+20     ING Jaguar Racing Toyota       Matt Rockwell  1:33.194   +4.517       70        I
+21     ING Jaguar Racing Toyota         Sam Maloney  1:33.772   +5.095       66        I
+22      Minardi-Ferrari F1 Team  Antonio Bacarrello   1:33.83   +5.153       69        I
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Free Practice 3 Session | Dump Conditions | Montréal Grand Prix — Canada
+                  MANUFACTURERS             DRIVERS       FL.      GAP  FL. LAP FL. TIRE
+1     Scuderia Ferrari Vodafone        Herbert Wolf  1:28.992  FASTEST       70        I
+2         West McLaren-Mercedes       Devon Raleigh  1:29.025   +0.033       70        I
+3         West McLaren-Mercedes        Nill Rosberg  1:29.217   +0.225       70        I
+4     Scuderia Ferrari Vodafone   Charles Hérnandez  1:29.278   +0.286       69        I
+5     Rothmans Williams-Renault      Ken Fassbender  1:30.132    +1.14       70        I
+6                 Honda F1 Team       David Redolfe  1:30.599   +1.607       70        I
+7   Marlboro Team Lotus-Renault         Sander Metz  1:30.756   +1.764       70        I
+8     Alfa Romeo Sauber-Ferrari       Matteo de Vos  1:30.777   +1.785       70        I
+9     Winfield Benetton-Renault      Daniil Kovalev  1:31.239   +2.247       70        I
+10  Marlboro Team Lotus-Renault   Charlie Southgate  1:31.254   +2.262       70        I
+11                Honda F1 Team     Katsuno Yoshiro  1:31.296   +2.304       70        I
+12    Rothmans Williams-Renault         Mattia Lori  1:31.357   +2.365       70        I
+13    Alfa Romeo Sauber-Ferrari        Jérémy Claes  1:31.510   +2.518       69        I
+14    Winfield Benetton-Renault      Sarvesh Sharaf  1:31.625   +2.633       70        I
+15     Mild Seven Toyota Racing    Guillermo Acosta  1:31.870   +2.878       70        I
+16     Parmalat Brabham-Renault       August Wehner  1:32.129   +3.137       70        I
+17     Parmalat Brabham-Renault     Marcus Svansson  1:32.188   +3.196       68        I
+18     Mild Seven Toyota Racing     Aaron Hérnandez  1:32.528   +3.536       70        I
+19     ING Jaguar Racing Toyota         Sam Maloney  1:33.044   +4.052       70        I
+20     ING Jaguar Racing Toyota       Matt Rockwell  1:33.161   +4.169       70        I
+21      Minardi-Ferrari F1 Team        Raul Sanchez  1:33.525   +4.533       69        I
+22      Minardi-Ferrari F1 Team  Antonio Bacarrello  1:33.955   +4.963       70        I
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Qualifying Session | Dump Conditions | Montréal Grand Prix — Canada
+                  MANUFACTURERS             DRIVERS       FL.      GAP
+1         West McLaren-Mercedes       Devon Raleigh  1:25.846  FASTEST
+2     Scuderia Ferrari Vodafone   Charles Hérnandez  1:25.980   +0.134
+3     Scuderia Ferrari Vodafone        Herbert Wolf  1:26.069   +0.223
+4         West McLaren-Mercedes        Nill Rosberg  1:26.414   +0.568
+5     Rothmans Williams-Renault      Ken Fassbender  1:27.075   +1.229
+6   Marlboro Team Lotus-Renault         Sander Metz  1:27.385   +1.539
+7                 Honda F1 Team       David Redolfe  1:27.477   +1.631
+8     Alfa Romeo Sauber-Ferrari        Jérémy Claes  1:27.662   +1.816
+9     Rothmans Williams-Renault         Mattia Lori  1:27.955   +2.109
+10    Alfa Romeo Sauber-Ferrari       Matteo de Vos  1:27.964   +2.118
+11    Winfield Benetton-Renault      Daniil Kovalev  1:28.045   +2.199
+12                Honda F1 Team     Katsuno Yoshiro  1:28.084   +2.238
+13  Marlboro Team Lotus-Renault   Charlie Southgate  1:28.421   +2.575
+14    Winfield Benetton-Renault      Sarvesh Sharaf  1:28.655   +2.809
+15     Parmalat Brabham-Renault     Marcus Svansson  1:28.673   +2.827
+16     Parmalat Brabham-Renault       August Wehner  1:28.796    +2.95
+17     Mild Seven Toyota Racing    Guillermo Acosta  1:28.884   +3.038
+18     Mild Seven Toyota Racing     Aaron Hérnandez  1:28.941   +3.095
+19      Minardi-Ferrari F1 Team        Raul Sanchez  1:29.521   +3.675
+20     ING Jaguar Racing Toyota         Sam Maloney  1:29.717   +3.871
+21     ING Jaguar Racing Toyota       Matt Rockwell  1:30.129   +4.283
+22      Minardi-Ferrari F1 Team  Antonio Bacarrello  1:30.515   +4.669
+
+Pole Position | Devon Raleigh has clinched the pole position with 1:25.846 in dump conditions.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ERR | Lap 1 | Jérémy Claes made mistake and overflowed off the track. He has lost 2.76 seconds!
+ERR | Lap 1 | Sam Maloney made mistake and locked his brakes. He has lost 5.317 seconds!
+INC | Lap 1 | OOOHHH! Guillermo Acosta and August Wehner GOT COLLIDED! Guillermo Acosta IS OUT! August Wehner HAS NO DAMAGE!.
+SFC | Lap 2 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+SFC | Lap 3 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+SFC | Lap 4 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+SFC | Lap 5 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+ERR | Lap 6 | August Wehner made mistake and locked his brakes. He has lost 1.496 seconds!
+ERR | Lap 7 | Mattia Lori made mistake and locked his brakes. He has lost 1.46 seconds!
+ERR | Lap 7 | Sarvesh Sharaf made mistake and overflowed off the track. He has lost 5.22 seconds!
+ERR | Lap 8 | Katsuno Yoshiro made mistake and overflowed off the track. He has lost 2.131 seconds!
+ERR | Lap 8 | Jérémy Claes made mistake and understeer at the entry of the corner. He has lost 2.022 seconds!
+ERR | Lap 8 | Sam Maloney made mistake and missed the braking point. He has lost 5.404 seconds!
+ERR | Lap 9 | Mattia Lori made mistake and missed the braking point. He has lost 1.579 seconds!
+ERR | Lap 10 | Mattia Lori made mistake and oversteer at the exit of the corner. He has lost 5.241 seconds!
+ERR | Lap 11 | Mattia Lori made mistake and overflowed off the track. He has lost 1.449 seconds!
+ERR | Lap 12 | Aaron Hérnandez made mistake and overflowed off the track. He has lost 4.648 seconds!
+ERR | Lap 12 | Antonio Bacarrello made mistake and locked his brakes. He has lost 2.197 seconds!
+DNF | Lap 12 | Antonio Bacarrello has forced to retire due to Engine issue. Disaster for Minardi-Ferrari F1 Team!
+ERR | Lap 13 | August Wehner made mistake and locked his brakes. He has lost 1.465 seconds!
+ERR | Lap 14 | Matteo de Vos made mistake and understeer at the entry of the corner. He has lost 1.573 seconds!
+ERR | Lap 15 | Mattia Lori made mistake and overflowed off the track. He has lost 2.642 seconds!
+ERR | Lap 15 | Marcus Svansson made mistake and understeer at the entry of the corner. He has lost 1.637 seconds!
+ERR | Lap 15 | Antonio Bacarrello made mistake and oversteer at the exit of the corner. He has lost 1.468 seconds!
+DNF | Lap 16 | Herbert Wolf has forced to retire due to Alternator issue. Disaster for Scuderia Ferrari Vodafone!
+ERR | Lap 16 | Jérémy Claes made mistake and missed the braking point. He has lost 1.765 seconds!
+PEN | Lap 16 | 3 secs. penalty to Jérémy Claes for the excessive amount of corner-cutting.
+ERR | Lap 17 | Sander Metz made mistake and oversteer at the exit of the corner. He has lost 1.391 seconds!
+ERR | Lap 18 | Marcus Svansson made mistake and oversteer at the exit of the corner. He has lost 1.701 seconds!
+ERR | Lap 20 | Sarvesh Sharaf made mistake and locked his brakes. He has lost 4.86 seconds!
+ERR | Lap 20 | Aaron Hérnandez made mistake and locked his brakes. He has lost 1.472 seconds!
+ERR | Lap 21 | Sam Maloney made mistake and locked his brakes. He has lost 2.498 seconds!
+ERR | Lap 22 | Sam Maloney made mistake and locked his brakes. He has lost 1.97 seconds!
+ERR | Lap 23 | David Redolfe made mistake and missed the braking point. He has lost 1.514 seconds!
+ERR | Lap 24 | Mattia Lori made mistake and missed the braking point. He has lost 3.339 seconds!
+ERR | Lap 24 | David Redolfe made mistake and overflowed off the track. He has lost 1.444 seconds!
+ERR | Lap 24 | Katsuno Yoshiro made mistake and oversteer at the exit of the corner. He has lost 1.505 seconds!
+ERR | Lap 24 | Sam Maloney made mistake and locked his brakes. He has lost 2.846 seconds!
+ERR | Lap 25 | Sam Maloney made mistake and oversteer at the exit of the corner. He has lost 4.136 seconds!
+ERR | Lap 25 | Raul Sanchez made mistake and missed the braking point. He has lost 3.462 seconds!
+ERR | Lap 26 | August Wehner made mistake and overflowed off the track. He has lost 2.794 seconds!
+ERR | Lap 26 | Aaron Hérnandez made mistake and understeer at the entry of the corner. He has lost 2.148 seconds!
+ERR | Lap 27 | Guillermo Acosta made mistake and overflowed off the track. He has lost 4.102 seconds!
+ERR | Lap 27 | Matt Rockwell made mistake and locked his brakes. He has lost 4.873 seconds!
+ERR | Lap 28 | Guillermo Acosta made mistake and locked his brakes. He has lost 4.278 seconds!
+ERR | Lap 28 | Aaron Hérnandez made mistake and missed the braking point. He has lost 4.819 seconds!
+PEN | Lap 28 | 3 secs. penalty to Raul Sanchez for the excessive amount of corner-cutting.
+ERR | Lap 30 | Jérémy Claes made mistake and missed the braking point. He has lost 1.375 seconds!
+PEN | Lap 31 | 3 secs. penalty to Aaron Hérnandez for the excessive amount of corner-cutting. 
+DNF | Lap 33 | Charlie Southgate has forced to retire due to Steering issue. Disaster for Marlboro Team Lotus-Renault!
+ERR | Lap 33 | Marcus Svansson made mistake and locked his brakes. He has lost 3.288 seconds!
+ERR | Lap 33 | Guillermo Acosta made mistake and understeer at the entry of the corner. He has lost 2.053 seconds!
+ERR | Lap 33 | Antonio Bacarrello made mistake and understeer at the entry of the corner. He has lost 1.859 seconds!
+INC | Lap 34 | Oh, no! Sander Metz has spun-round. He has lost 15.817 seconds.
+ERR | Lap 34 | Matt Rockwell made mistake and oversteer at the exit of the corner. He has lost 3.7 seconds!
+ERR | Lap 34 | Antonio Bacarrello made mistake and locked his brakes. He has lost 1.347 seconds!
+ERR | Lap 35 | August Wehner made mistake and understeer at the entry of the corner. He has lost 1.352 seconds!
+DNF | Lap 35 | Matteo de Vos has forced to retire due to Gearbox Driveline issue. Disaster for Alfa Romeo Sauber-Ferrari!
+ERR | Lap 36 | Matt Rockwell made mistake and missed the braking point. He has lost 4.519 seconds!
+DNF | Lap 36 | Matt Rockwell has forced to retire due to Steering issue. Disaster for ING Jaguar Racing Toyota!
+ERR | Lap 37 | Matteo de Vos made mistake and overflowed off the track. He has lost 3.736 seconds!
+DNF | Lap 37 | Sam Maloney has forced to retire due to Engine issue. Disaster for ING Jaguar Racing Toyota!
+ERR | Lap 39 | David Redolfe made mistake and overflowed off the track. He has lost 4.17 seconds!
+ERR | Lap 39 | Matteo de Vos made mistake and oversteer at the exit of the corner. He has lost 4.43 seconds!
+ERR | Lap 39 | Antonio Bacarrello made mistake and missed the braking point. He has lost 2.619 seconds!
+ERR | Lap 41 | Mattia Lori made mistake and understeer at the entry of the corner. He has lost 1.529 seconds!
+ERR | Lap 41 | Matteo de Vos made mistake and oversteer at the exit of the corner. He has lost 2.035 seconds!
+ERR | Lap 42 | Nill Rosberg made mistake and locked his brakes. He has lost 1.511 seconds!
+ERR | Lap 42 | Mattia Lori made mistake and locked his brakes. He has lost 1.559 seconds!
+ERR | Lap 42 | Sarvesh Sharaf made mistake and missed the braking point. He has lost 4.151 seconds!
+DNF | Lap 42 | Sarvesh Sharaf has forced to retire due to Clutch issue. Disaster for Winfield Benetton-Renault!
+ERR | Lap 42 | Katsuno Yoshiro made mistake and oversteer at the exit of the corner. He has lost 3.326 seconds!
+ERR | Lap 42 | August Wehner made mistake and locked his brakes. He has lost 2.122 seconds!
+PIT | Lap 42 | Pit-stop for Marcus Svansson with 2.35 seconds stationary. He is on Intermediate compound.
+PIT | Lap 42 | Pit-stop for Aaron Hérnandez with 2.62 seconds stationary. He is on Intermediate compound.
+ERR | Lap 42 | Sam Maloney made mistake and locked his brakes. He has lost 2.431 seconds!
+PIT | Lap 42 | Pit-stop for Raul Sanchez with 2.32 seconds stationary. He is on Intermediate compound.
+SFC | Lap 43 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+PIT | Lap 43 | Pit-stop for Devon Raleigh with 2.69 seconds stationary. He is on Intermediate compound.
+PIT | Lap 43 | Pit-stop for Nill Rosberg with 2.48 seconds stationary. He is on Intermediate compound.
+PIT | Lap 43 | Pit-stop for Charles Hérnandez with 2.4 seconds stationary. He is on Intermediate compound.
+PIT | Lap 43 | Pit-stop for Ken Fassbender with 2.08 seconds stationary. He is on Intermediate compound.
+PIT | Lap 43 | Pit-stop for Mattia Lori with 2.03 seconds stationary. He is on Intermediate compound.
+PIT | Lap 43 | Pit-stop for Daniil Kovalev with 2.95 seconds stationary. He is on Intermediate compound.
+PIT | Lap 43 | Pit-stop for David Redolfe with 2.0 seconds stationary. He is on Intermediate compound.
+PIT | Lap 43 | Pit-stop for Katsuno Yoshiro with 2.46 seconds stationary. He is on Intermediate compound.
+PIT | Lap 43 | Pit-stop for Sander Metz with 2.06 seconds stationary. He is on Intermediate compound.
+PIT | Lap 43 | Pit-stop for August Wehner with 2.22 seconds stationary. He is on Intermediate compound.
+PIT | Lap 43 | Pit-stop for Jérémy Claes with 2.34 seconds stationary. He is on Intermediate compound.
+SFC | Lap 44 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+SFC | Lap 45 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+SFC | Lap 46 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+DNF | Lap 48 | Charles Hérnandez has forced to retire due to Engine issue. Disaster for Scuderia Ferrari Vodafone!
+ERR | Lap 48 | David Redolfe made mistake and understeer at the entry of the corner. He has lost 1.608 seconds!
+ERR | Lap 48 | Matteo de Vos made mistake and missed the braking point. He has lost 1.639 seconds!
+ERR | Lap 49 | Jérémy Claes made mistake and overflowed off the track. He has lost 4.108 seconds!
+ERR | Lap 50 | Katsuno Yoshiro made mistake and overflowed off the track. He has lost 2.431 seconds!
+ERR | Lap 51 | Katsuno Yoshiro made mistake and oversteer at the exit of the corner. He has lost 1.772 seconds!
+ERR | Lap 52 | Mattia Lori made mistake and missed the braking point. He has lost 1.755 seconds!
+DNF | Lap 53 | Mattia Lori has forced to retire due to Fuel Pressure issue. Disaster for Rothmans Williams-Renault!
+ERR | Lap 53 | Charlie Southgate made mistake and oversteer at the exit of the corner. He has lost 1.685 seconds!
+ERR | Lap 53 | Guillermo Acosta made mistake and missed the braking point. He has lost 3.68 seconds!
+ERR | Lap 53 | Sam Maloney made mistake and understeer at the entry of the corner. He has lost 4.718 seconds!
+ERR | Lap 55 | August Wehner made mistake and understeer at the entry of the corner. He has lost 2.807 seconds!
+ERR | Lap 55 | Sam Maloney made mistake and understeer at the entry of the corner. He has lost 4.254 seconds!
+ERR | Lap 57 | Mattia Lori made mistake and locked his brakes. He has lost 2.48 seconds!
+ERR | Lap 57 | Aaron Hérnandez made mistake and understeer at the entry of the corner. He has lost 4.966 seconds!
+ERR | Lap 58 | Mattia Lori made mistake and oversteer at the exit of the corner. He has lost 2.138 seconds!
+ERR | Lap 59 | Mattia Lori made mistake and missed the braking point. He has lost 2.927 seconds!
+ERR | Lap 59 | August Wehner made mistake and understeer at the entry of the corner. He has lost 3.104 seconds!
+ERR | Lap 60 | Marcus Svansson made mistake and missed the braking point. He has lost 1.453 seconds!
+ERR | Lap 60 | Guillermo Acosta made mistake and missed the braking point. He has lost 2.158 seconds!
+ERR | Lap 60 | Antonio Bacarrello made mistake and overflowed off the track. He has lost 1.439 seconds!
+ERR | Lap 61 | Sarvesh Sharaf made mistake and understeer at the entry of the corner. He has lost 2.305 seconds!
+ERR | Lap 61 | Sam Maloney made mistake and oversteer at the exit of the corner. He has lost 1.499 seconds!
+ERR | Lap 62 | Sarvesh Sharaf made mistake and oversteer at the exit of the corner. He has lost 2.282 seconds!
+INC | Lap 63 | Oh, no! Daniil Kovalev has spun-round. He has lost 10.533 seconds.
+ERR | Lap 63 | Aaron Hérnandez made mistake and understeer at the entry of the corner. He has lost 2.3 seconds!
+ERR | Lap 64 | Devon Raleigh made mistake and understeer at the entry of the corner. He has lost 1.41 seconds!
+ERR | Lap 64 | Matteo de Vos made mistake and overflowed off the track. He has lost 2.115 seconds!
+ERR | Lap 65 | Matt Rockwell made mistake and locked his brakes. He has lost 1.96 seconds!
+ERR | Lap 66 | Sam Maloney made mistake and oversteer at the exit of the corner. He has lost 2.101 seconds!
+ERR | Lap 67 | Jérémy Claes made mistake and missed the braking point. He has lost 3.778 seconds!
+ERR | Lap 68 | Matt Rockwell made mistake and locked his brakes. He has lost 2.224 seconds!
+ERR | Lap 68 | Antonio Bacarrello made mistake and missed the braking point. He has lost 2.093 seconds!
+ERR | Lap 70 | David Redolfe made mistake and missed the braking point. He has lost 1.542 seconds!
+ERR | Lap 70 | Antonio Bacarrello made mistake and locked his brakes. He has lost 1.522 seconds!
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dump Conditions | Montréal Grand Prix — Canada | 70 Laps
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL. FL. LAP FL. TIRE  PIT   PENALTY  GRID
+1         West McLaren-Mercedes       Devon Raleigh  INTERVAL  02:14:32.126  1:29.066      70        I    1      None     1
+2         West McLaren-Mercedes        Nill Rosberg    +4.958        +4.958  1:29.439      69        I    1      None     4
+3     Rothmans Williams-Renault      Ken Fassbender   +31.826       +26.868  1:30.379      70        I    1      None     5
+4                 Honda F1 Team       David Redolfe   +39.107        +7.281  1:31.064      69        I    1      None     7
+5   Marlboro Team Lotus-Renault         Sander Metz   +45.608        +6.501  1:31.095      70        I    1      None     6
+6     Winfield Benetton-Renault      Daniil Kovalev   +57.478        +11.87  1:31.012      70        I    1      None    11
+7                 Honda F1 Team     Katsuno Yoshiro   +62.479        +5.001  1:31.509      69        I    1      None    12
+8     Alfa Romeo Sauber-Ferrari        Jérémy Claes   +63.275        +0.796  1:31.706      64        I    1  +3 secs.     8
+9      Parmalat Brabham-Renault     Marcus Svansson   +73.563       +10.288  1:32.313      70        I    1      None    15
+10     Mild Seven Toyota Racing     Aaron Hérnandez   +79.698        +6.135  1:32.622      69        I    1  +3 secs.    18
+11     Parmalat Brabham-Renault       August Wehner   +84.224        +4.526  1:32.277      70        I    1      None    16
+12      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap       +22.434  1:34.163      67        I    1  +3 secs.    19
+13    Rothmans Williams-Renault         Mattia Lori       DNF           DNF  1:36.078      51        I    1      None     9
+14    Scuderia Ferrari Vodafone   Charles Hérnandez       DNF           DNF  1:34.486      26        I    1      None     2
+15    Winfield Benetton-Renault      Sarvesh Sharaf       DNF           DNF  1:37.422      17        I    0      None    14
+16     ING Jaguar Racing Toyota         Sam Maloney       DNF           DNF  1:39.134      11        I    0      None    20
+17     ING Jaguar Racing Toyota       Matt Rockwell       DNF           DNF  1:39.289      31        I    0      None    21
+18    Alfa Romeo Sauber-Ferrari       Matteo de Vos       DNF           DNF  1:36.574      21        I    0      None    10
+19  Marlboro Team Lotus-Renault   Charlie Southgate       DNF           DNF  1:37.468      12        I    0      None    13
+20    Scuderia Ferrari Vodafone        Herbert Wolf       DNF           DNF  1:35.579      15        I    0      None     3
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello       DNF           DNF  1:40.537      11        I    0      None    22
+22     Mild Seven Toyota Racing    Guillermo Acosta       DNF           DNF       NaN     NaN        I    0      None    17
+
+Fastest Lap | Devon Raleigh has recorded 1:29.066 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *

@@ -1,0 +1,235 @@
+Austin GP — United States | FP forecast: Dry | Qualifying forecast: Dump | Race forecast: Dry
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Free Practice 1 Session | Dry Conditions | Austin Grand Prix — United States
+                  MANUFACTURERS             DRIVERS       FL.      GAP  FL. LAP FL. TIRE
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  1:43.638  FASTEST       56        H
+2     Scuderia Ferrari Vodafone        Herbert Wolf  1:43.674   +0.036       56        H
+3         West McLaren-Mercedes       Devon Raleigh  1:43.742   +0.104       56        H
+4         West McLaren-Mercedes        Nill Rosberg  1:43.807   +0.169       56        H
+5     Rothmans Williams-Renault      Ken Fassbender  1:45.349   +1.711       56        H
+6     Rothmans Williams-Renault         Mattia Lori  1:45.507   +1.869       56        H
+7     Winfield Benetton-Renault      Daniil Kovalev  1:45.519   +1.881       56        H
+8     Alfa Romeo Sauber-Ferrari        Jérémy Claes  1:45.549   +1.911       56        H
+9   Marlboro Team Lotus-Renault   Charlie Southgate  1:45.694   +2.056       56        H
+10  Marlboro Team Lotus-Renault         Sander Metz  1:45.751   +2.113       56        H
+11    Alfa Romeo Sauber-Ferrari       Matteo de Vos  1:45.839   +2.201       56        H
+12                Honda F1 Team       David Redolfe  1:45.845   +2.207       56        H
+13                Honda F1 Team     Katsuno Yoshiro  1:46.233   +2.595       56        H
+14     Parmalat Brabham-Renault     Marcus Svansson  1:46.532   +2.894       56        H
+15     Mild Seven Toyota Racing     Aaron Hérnandez  1:46.900   +3.262       56        H
+16     Mild Seven Toyota Racing    Guillermo Acosta  1:46.911   +3.273       56        H
+17    Winfield Benetton-Renault      Sarvesh Sharaf  1:46.967   +3.329       50        H
+18     Parmalat Brabham-Renault       August Wehner  1:47.068    +3.43       55        H
+19     ING Jaguar Racing Toyota       Matt Rockwell  1:47.304   +3.666       56        H
+20     ING Jaguar Racing Toyota         Sam Maloney  1:48.037   +4.399       52        H
+21      Minardi-Ferrari F1 Team        Raul Sanchez  1:48.544   +4.906       56        H
+22      Minardi-Ferrari F1 Team  Antonio Bacarrello  1:48.932   +5.294       56        H
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Free Practice 2 Session | Dry Conditions | Austin Grand Prix — United States
+                  MANUFACTURERS             DRIVERS       FL.      GAP  FL. LAP FL. TIRE
+1     Scuderia Ferrari Vodafone   Charles Hérnandez   1:42.28  FASTEST       56        M
+2     Scuderia Ferrari Vodafone        Herbert Wolf  1:42.285   +0.005       55        M
+3         West McLaren-Mercedes        Nill Rosberg  1:42.291   +0.011       56        M
+4         West McLaren-Mercedes       Devon Raleigh  1:42.623   +0.343       56        M
+5     Rothmans Williams-Renault      Ken Fassbender  1:43.637   +1.357       56        M
+6     Winfield Benetton-Renault      Daniil Kovalev  1:44.281   +2.001       56        M
+7     Rothmans Williams-Renault         Mattia Lori  1:44.436   +2.156       56        M
+8                 Honda F1 Team       David Redolfe  1:44.568   +2.288       56        M
+9   Marlboro Team Lotus-Renault         Sander Metz  1:44.751   +2.471       55        M
+10    Alfa Romeo Sauber-Ferrari       Matteo de Vos  1:44.769   +2.489       56        M
+11  Marlboro Team Lotus-Renault   Charlie Southgate  1:44.824   +2.544       56        M
+12    Alfa Romeo Sauber-Ferrari        Jérémy Claes  1:44.905   +2.625       56        M
+13                Honda F1 Team     Katsuno Yoshiro  1:45.012   +2.732       56        M
+14     Parmalat Brabham-Renault       August Wehner  1:45.403   +3.123       56        M
+15    Winfield Benetton-Renault      Sarvesh Sharaf  1:45.413   +3.133       53        M
+16     Parmalat Brabham-Renault     Marcus Svansson  1:45.459   +3.179       55        M
+17     Mild Seven Toyota Racing     Aaron Hérnandez  1:45.778   +3.498       55        M
+18     Mild Seven Toyota Racing    Guillermo Acosta  1:46.028   +3.748       55        M
+19     ING Jaguar Racing Toyota         Sam Maloney  1:46.183   +3.903       55        M
+20     ING Jaguar Racing Toyota       Matt Rockwell  1:46.468   +4.188       55        M
+21      Minardi-Ferrari F1 Team        Raul Sanchez  1:47.277   +4.997       55        M
+22      Minardi-Ferrari F1 Team  Antonio Bacarrello  1:48.093   +5.813       56        M
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Free Practice 3 Session | Dry Conditions | Austin Grand Prix — United States
+                  MANUFACTURERS             DRIVERS       FL.      GAP  FL. LAP FL. TIRE
+1     Scuderia Ferrari Vodafone        Herbert Wolf  1:40.535  FASTEST       56        S
+2         West McLaren-Mercedes        Nill Rosberg  1:40.684   +0.149       56        S
+3         West McLaren-Mercedes       Devon Raleigh  1:40.784   +0.249       56        S
+4     Scuderia Ferrari Vodafone   Charles Hérnandez  1:40.870   +0.335       56        S
+5     Rothmans Williams-Renault      Ken Fassbender  1:42.161   +1.626       56        S
+6                 Honda F1 Team       David Redolfe  1:42.709   +2.174       56        S
+7     Rothmans Williams-Renault         Mattia Lori  1:42.766   +2.231       56        S
+8     Winfield Benetton-Renault      Daniil Kovalev  1:42.785    +2.25       56        S
+9   Marlboro Team Lotus-Renault   Charlie Southgate  1:42.857   +2.322       56        S
+10    Alfa Romeo Sauber-Ferrari        Jérémy Claes  1:42.909   +2.374       56        S
+11  Marlboro Team Lotus-Renault         Sander Metz  1:43.095    +2.56       55        S
+12                Honda F1 Team     Katsuno Yoshiro  1:43.293   +2.758       56        S
+13    Winfield Benetton-Renault      Sarvesh Sharaf  1:43.307   +2.772       55        S
+14    Alfa Romeo Sauber-Ferrari       Matteo de Vos  1:43.416   +2.881       54        S
+15     Parmalat Brabham-Renault     Marcus Svansson  1:43.879   +3.344       56        S
+16     Mild Seven Toyota Racing     Aaron Hérnandez  1:44.117   +3.582       55        S
+17     Parmalat Brabham-Renault       August Wehner  1:44.406   +3.871       53        S
+18     Mild Seven Toyota Racing    Guillermo Acosta  1:44.424   +3.889       56        S
+19     ING Jaguar Racing Toyota         Sam Maloney  1:44.825    +4.29       54        S
+20     ING Jaguar Racing Toyota       Matt Rockwell  1:45.013   +4.478       56        S
+21      Minardi-Ferrari F1 Team        Raul Sanchez  1:45.718   +5.183       55        S
+22      Minardi-Ferrari F1 Team  Antonio Bacarrello  1:46.688   +6.153       55        S
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+DNF | Fast Lap 2 | Guillermo Acosta damaged his suspension and, he is OUT! Disaster for Mild Seven Toyota Racing!
+DNF | Fast Lap 2 | Matt Rockwell has forced to retire due to Exhaust issue. Disaster for ING Jaguar Racing Toyota!
+Qualifying Session | Dump Conditions | Austin Grand Prix — United States
+                  MANUFACTURERS             DRIVERS       FL.      GAP
+1         West McLaren-Mercedes       Devon Raleigh  1:53.756  FASTEST
+2     Scuderia Ferrari Vodafone        Herbert Wolf  1:53.831   +0.075
+3         West McLaren-Mercedes        Nill Rosberg  1:53.900   +0.144
+4     Scuderia Ferrari Vodafone   Charles Hérnandez  1:53.998   +0.242
+5     Rothmans Williams-Renault      Ken Fassbender  1:55.227   +1.471
+6   Marlboro Team Lotus-Renault         Sander Metz    1:55.5   +1.744
+7                 Honda F1 Team       David Redolfe   1:55.83   +2.074
+8     Rothmans Williams-Renault         Mattia Lori  1:55.863   +2.107
+9     Alfa Romeo Sauber-Ferrari        Jérémy Claes  1:56.004   +2.248
+10    Winfield Benetton-Renault      Daniil Kovalev  1:56.171   +2.415
+11    Alfa Romeo Sauber-Ferrari       Matteo de Vos  1:56.188   +2.432
+12    Winfield Benetton-Renault      Sarvesh Sharaf   1:56.36   +2.604
+13  Marlboro Team Lotus-Renault   Charlie Southgate  1:56.465   +2.709
+14                Honda F1 Team     Katsuno Yoshiro  1:56.721   +2.965
+15     Parmalat Brabham-Renault     Marcus Svansson  1:56.899   +3.143
+16     Mild Seven Toyota Racing     Aaron Hérnandez  1:57.022   +3.266
+17     Parmalat Brabham-Renault       August Wehner  1:57.074   +3.318
+18     Mild Seven Toyota Racing    Guillermo Acosta  1:57.221   +3.465
+19     ING Jaguar Racing Toyota         Sam Maloney  1:57.967   +4.211
+20      Minardi-Ferrari F1 Team        Raul Sanchez  1:58.485   +4.729
+21      Minardi-Ferrari F1 Team  Antonio Bacarrello  1:58.839   +5.083
+22     ING Jaguar Racing Toyota       Matt Rockwell  2:1.8610   +8.105
+
+Pole Position | Devon Raleigh has clinched the pole position with 1:53.756 in dump conditions.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+INC | Lap 1 | Oh, no! Matt Rockwell has spun-round. He has lost 14.69 seconds.
+ERR | Lap 3 | Sarvesh Sharaf made mistake and missed the braking point. He has lost 3.116 seconds!
+ERR | Lap 3 | Matt Rockwell made mistake and oversteer at the exit of the corner. He has lost 1.68 seconds!
+ERR | Lap 4 | Marcus Svansson made mistake and locked his brakes. He has lost 1.634 seconds!
+ERR | Lap 4 | Matt Rockwell made mistake and missed the braking point. He has lost 3.29 seconds!
+ERR | Lap 6 | Sarvesh Sharaf made mistake and oversteer at the exit of the corner. He has lost 1.942 seconds!
+ERR | Lap 6 | Matt Rockwell made mistake and missed the braking point. He has lost 2.079 seconds!
+ERR | Lap 6 | Antonio Bacarrello made mistake and locked his brakes. He has lost 2.993 seconds!
+ERR | Lap 7 | Sarvesh Sharaf made mistake and missed the braking point. He has lost 2.056 seconds!
+ERR | Lap 7 | Sam Maloney made mistake and overflowed off the track. He has lost 1.346 seconds!
+ERR | Lap 7 | Matt Rockwell made mistake and understeer at the entry of the corner. He has lost 2.27 seconds!
+ERR | Lap 8 | Sarvesh Sharaf made mistake and oversteer at the exit of the corner. He has lost 1.433 seconds!
+ERR | Lap 11 | Katsuno Yoshiro made mistake and oversteer at the exit of the corner. He has lost 2.109 seconds!
+PEN | Lap 12 | 3 secs. penalty to Matteo de Vos for the excessive amount of corner-cutting. 
+INC | Lap 13 | Oh, no! Marcus Svansson has spun-round. He has lost 9.953 seconds.
+ERR | Lap 13 | Matt Rockwell made mistake and understeer at the entry of the corner. He has lost 1.741 seconds!
+ERR | Lap 15 | Katsuno Yoshiro made mistake and missed the braking point. He has lost 1.437 seconds!
+PIT | Lap 16 | Pit-stop for Marcus Svansson with 3.14 seconds stationary. He is on Soft compound.
+ERR | Lap 16 | Jérémy Claes made mistake and overflowed off the track. He has lost 1.419 seconds!
+ERR | Lap 16 | Sam Maloney made mistake and understeer at the entry of the corner. He has lost 1.364 seconds!
+PIT | Lap 16 | Pit-stop for Matt Rockwell with 2.97 seconds stationary. He is on Soft compound.
+PEN | Lap 16 | 3 secs. penalty to Raul Sanchez for the excessive amount of corner-cutting.
+ERR | Lap 17 | Sarvesh Sharaf made mistake and oversteer at the exit of the corner. He has lost 1.832 seconds!
+ERR | Lap 17 | David Redolfe made mistake and missed the braking point. He has lost 2.886 seconds!
+PIT | Lap 18 | Pit-stop for Guillermo Acosta with 2.17 seconds stationary. He is on Soft compound.
+PIT | Lap 18 | Pit-stop for Antonio Bacarrello with 3.4 seconds stationary. He is on Soft compound.
+PIT | Lap 19 | Pit-stop for Mattia Lori with 2.13 seconds stationary. He is on Soft compound.
+PIT | Lap 19 | Pit-stop for Daniil Kovalev with 2.12 seconds stationary. He is on Soft compound.
+PIT | Lap 19 | Pit-stop for Sarvesh Sharaf with 2.76 seconds stationary. He is on Soft compound.
+PIT | Lap 19 | Pit-stop for David Redolfe with 2.34 seconds stationary. He is on Soft compound.
+PIT | Lap 19 | Pit-stop for Katsuno Yoshiro with 2.12 seconds stationary. He is on Medium compound.
+PIT | Lap 19 | Pit-stop for Sander Metz with 2.22 seconds stationary. He is on Soft compound.
+PIT | Lap 19 | Pit-stop for Charlie Southgate with 2.01 seconds stationary. He is on Soft compound.
+PIT | Lap 19 | Pit-stop for August Wehner with 3.26 seconds stationary. He is on Soft compound.
+PIT | Lap 19 | Pit-stop for Aaron Hérnandez with 2.27 seconds stationary. He is on Medium compound.
+PIT | Lap 19 | Pit-stop for Jérémy Claes with 2.02 seconds stationary. He is on Soft compound.
+PIT | Lap 19 | Pit-stop for Matteo de Vos with 2.0 seconds stationary. He is on Soft compound.
+PIT | Lap 19 | Pit-stop for Sam Maloney with 2.5 seconds stationary. He is on Soft compound.
+PIT | Lap 19 | Pit-stop for Raul Sanchez with 2.26 seconds stationary. He is on Soft compound.
+PIT | Lap 20 | Pit-stop for Devon Raleigh with 2.85 seconds stationary. He is on Soft compound.
+PIT | Lap 20 | Pit-stop for Nill Rosberg with 2.56 seconds stationary. He is on Soft compound.
+PIT | Lap 20 | Pit-stop for Charles Hérnandez with 2.44 seconds stationary. He is on Soft compound.
+PIT | Lap 20 | Pit-stop for Ken Fassbender with 2.04 seconds stationary. He is on Soft compound.
+ERR | Lap 20 | Mattia Lori made mistake and overflowed off the track. He has lost 2.356 seconds!
+ERR | Lap 20 | Sarvesh Sharaf made mistake and understeer at the entry of the corner. He has lost 1.875 seconds!
+PIT | Lap 21 | Pit-stop for Herbert Wolf with 2.62 seconds stationary. He is on Soft compound.
+ERR | Lap 21 | Sarvesh Sharaf made mistake and overflowed off the track. He has lost 3.25 seconds!
+ERR | Lap 21 | Guillermo Acosta made mistake and missed the braking point. He has lost 2.717 seconds!
+ERR | Lap 22 | Jérémy Claes made mistake and understeer at the entry of the corner. He has lost 1.679 seconds!
+INC | Lap 22 | OOOHHH! Jérémy Claes and Mattia Lori GOT COLLIDED! Mattia Lori IS OUT! Jérémy Claes HAS DAMAGE!.
+SFC | Lap 23 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+PIT | Lap 23 | Pit-stop for Jérémy Claes with 8.91 seconds stationary. He is on Medium compound.
+SFC | Lap 24 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+SFC | Lap 25 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+SFC | Lap 26 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+DNF | Lap 27 | Sarvesh Sharaf spun-off and, he is OUT! Disaster for Winfield Benetton-Renault!
+ERR | Lap 27 | Matt Rockwell made mistake and overflowed off the track. He has lost 1.917 seconds!
+SFC | Lap 28 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+SFC | Lap 29 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+SFC | Lap 30 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+SFC | Lap 31 | Safety Car Is Out! Yellow Flags Waving Around the Track.
+ERR | Lap 33 | Aaron Hérnandez made mistake and oversteer at the exit of the corner. He has lost 3.752 seconds!
+ERR | Lap 34 | Sam Maloney made mistake and missed the braking point. He has lost 1.524 seconds!
+ERR | Lap 34 | Raul Sanchez made mistake and oversteer at the exit of the corner. He has lost 1.86 seconds!
+ERR | Lap 35 | David Redolfe made mistake and overflowed off the track. He has lost 1.7 seconds!
+ERR | Lap 35 | Aaron Hérnandez made mistake and locked his brakes. He has lost 1.365 seconds!
+ERR | Lap 36 | Matt Rockwell made mistake and oversteer at the exit of the corner. He has lost 1.624 seconds!
+DNF | Lap 38 | Charlie Southgate has forced to retire due to Engine issue. Disaster for Marlboro Team Lotus-Renault!
+ERR | Lap 38 | Jérémy Claes made mistake and oversteer at the exit of the corner. He has lost 3.012 seconds!
+ERR | Lap 39 | Sarvesh Sharaf made mistake and understeer at the entry of the corner. He has lost 5.106 seconds!
+DNF | Lap 39 | Marcus Svansson has forced to retire due to Puncture issue. Disaster for Parmalat Brabham-Renault!
+ERR | Lap 39 | Matt Rockwell made mistake and missed the braking point. He has lost 1.626 seconds!
+ERR | Lap 40 | Matt Rockwell made mistake and understeer at the entry of the corner. He has lost 2.191 seconds!
+PIT | Lap 40 | Pit-stop for Matt Rockwell with 2.01 seconds stationary. He is on Medium compound.
+PIT | Lap 41 | Bad news for Antonio Bacarrello with 7.0 seconds stationary. He is on Medium compound.
+ERR | Lap 42 | Katsuno Yoshiro made mistake and overflowed off the track. He has lost 3.557 seconds!
+PIT | Lap 42 | Pit-stop for Guillermo Acosta with 2.4 seconds stationary. He is on Medium compound.
+PIT | Lap 43 | Pit-stop for August Wehner with 2.32 seconds stationary. He is on Medium compound.
+PIT | Lap 43 | Pit-stop for Matteo de Vos with 2.08 seconds stationary. He is on Medium compound.
+PIT | Lap 43 | Pit-stop for Sam Maloney with 2.38 seconds stationary. He is on Medium compound.
+PIT | Lap 43 | Pit-stop for Raul Sanchez with 2.15 seconds stationary. He is on Medium compound.
+ERR | Lap 43 | Antonio Bacarrello made mistake and missed the braking point. He has lost 2.041 seconds!
+PIT | Lap 44 | Pit-stop for Daniil Kovalev with 2.7 seconds stationary. He is on Medium compound.
+PIT | Lap 44 | Pit-stop for David Redolfe with 2.24 seconds stationary. He is on Medium compound.
+PIT | Lap 44 | Pit-stop for Sander Metz with 2.34 seconds stationary. He is on Medium compound.
+ERR | Lap 44 | Raul Sanchez made mistake and locked his brakes. He has lost 1.882 seconds!
+PIT | Lap 45 | Pit-stop for Ken Fassbender with 2.52 seconds stationary. He is on Medium compound.
+PIT | Lap 46 | Pit-stop for Devon Raleigh with 2.53 seconds stationary. He is on Medium compound.
+PIT | Lap 46 | Pit-stop for Nill Rosberg with 2.33 seconds stationary. He is on Medium compound.
+PIT | Lap 46 | Pit-stop for Charles Hérnandez with 2.72 seconds stationary. He is on Medium compound.
+INC | Lap 46 | David Redolfe has an issue. He has lost the Exhaust System! Disaster for Honda F1 Team!
+ERR | Lap 46 | August Wehner made mistake and missed the braking point. He has lost 1.494 seconds!
+ERR | Lap 46 | Sam Maloney made mistake and oversteer at the exit of the corner. He has lost 1.616 seconds!
+PIT | Lap 47 | Pit-stop for Herbert Wolf with 2.73 seconds stationary. He is on Medium compound.
+ERR | Lap 48 | Sarvesh Sharaf made mistake and locked his brakes. He has lost 4.905 seconds!
+ERR | Lap 48 | Marcus Svansson made mistake and oversteer at the exit of the corner. He has lost 2.101 seconds!
+ERR | Lap 49 | Antonio Bacarrello made mistake and overflowed off the track. He has lost 1.656 seconds!
+INC | Lap 50 | Oh, no! Katsuno Yoshiro has spun-round. He has lost 8.737 seconds.
+ERR | Lap 51 | Antonio Bacarrello made mistake and missed the braking point. He has lost 4.174 seconds!
+ERR | Lap 56 | Sarvesh Sharaf made mistake and overflowed off the track. He has lost 1.456 seconds!
+ERR | Lap 56 | Antonio Bacarrello made mistake and overflowed off the track. He has lost 1.43 seconds!
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Race Session | Dry Conditions | Austin Grand Prix — United States | 56 Laps
+                  MANUFACTURERS             DRIVERS  INTERVAL           GAP       FL.  FL. LAP FL. TIRE  PIT   PENALTY  GRID
+1     Scuderia Ferrari Vodafone   Charles Hérnandez  INTERVAL  02:17:09.047  1:43.197       56        M    2      None     4
+2         West McLaren-Mercedes       Devon Raleigh    +1.092        +1.092  1:43.071       55        M    2      None     1
+3         West McLaren-Mercedes        Nill Rosberg    +2.457        +1.365  1:43.361       56        M    2      None     3
+4     Scuderia Ferrari Vodafone        Herbert Wolf    +4.037         +1.58  1:44.074       54        M    2      None     2
+5     Rothmans Williams-Renault      Ken Fassbender   +32.009       +27.972   1:44.84       56        M    2      None     5
+6     Winfield Benetton-Renault      Daniil Kovalev   +47.404       +15.395  1:45.152       56        M    2      None    10
+7     Alfa Romeo Sauber-Ferrari        Jérémy Claes    +51.64        +4.236  1:47.520       45        M    2      None     9
+8     Alfa Romeo Sauber-Ferrari       Matteo de Vos   +58.232        +6.592  1:45.727       55        M    2  +3 secs.    11
+9   Marlboro Team Lotus-Renault         Sander Metz   +61.419        +3.187  1:45.553       56        M    2      None     6
+10                Honda F1 Team     Katsuno Yoshiro   +74.922       +13.503  1:48.257       37        M    1      None    14
+11                Honda F1 Team       David Redolfe   +75.732         +0.81  1:46.571       56        M    2      None     7
+12     Parmalat Brabham-Renault       August Wehner   +77.675        +1.943  1:46.696       56        M    2      None    17
+13     Mild Seven Toyota Racing    Guillermo Acosta   +79.671        +1.996  1:46.427       56        M    2      None    18
+14     Mild Seven Toyota Racing     Aaron Hérnandez   +92.031        +12.36  1:49.188       48        M    1      None    16
+15     ING Jaguar Racing Toyota         Sam Maloney    +1 Lap       +11.206  1:47.331       55        M    2      None    19
+16     ING Jaguar Racing Toyota       Matt Rockwell    +1 Lap        +8.385  1:47.614       56        M    2      None    22
+17      Minardi-Ferrari F1 Team        Raul Sanchez    +1 Lap       +21.637  1:48.763       54        M    2  +3 secs.    20
+18      Minardi-Ferrari F1 Team  Antonio Bacarrello    +1 Lap       +24.733  1:49.535       55        M    2      None    21
+19     Parmalat Brabham-Renault     Marcus Svansson       DNF           DNF  1:49.224       33        S    1      None    15
+20  Marlboro Team Lotus-Renault   Charlie Southgate       DNF           DNF  1:47.900       32        S    1      None    13
+21    Winfield Benetton-Renault      Sarvesh Sharaf       DNF           DNF  1:50.792       22        S    1      None    12
+22    Rothmans Williams-Renault         Mattia Lori       DNF           DNF  1:50.331       13        S    1      None     8
+
+Fastest Lap | Devon Raleigh has recorded 1:43.071 on this track.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
