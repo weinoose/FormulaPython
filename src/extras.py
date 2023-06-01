@@ -49,7 +49,7 @@ def upgrade(part,spent,engineers,designer,cto,aerodynamicst):
     return f'{part} has upgraded by +{round(round(((((round(((phase_1) + (phase_2) + (phase_3)),3))*1.417)**1.3)/1.3),3))}.'
 
 
-def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,box,FW_R,RW_R,chassis_R,base_R,sidepod_R,suspension_R): 
+def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,box,regulation,FW_R,RW_R,chassis_R,base_R,sidepod_R,suspension_R): 
     spent = (spent + 0.1) - 13.0
     phase_1 = ((spent/13.0) + 0.5)*13.75
 
@@ -150,6 +150,19 @@ def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,bo
     elif head == 'Gordon Murray':
         FW += uniform(2.011,5.01)
         CHASSIS += uniform(2.011,5.01)
+
+    if 2004 >= regulation >= 1998:
+        RELIABILITY -= 10
+    elif 2008 >= regulation >= 2005:
+        RELIABILITY -= 7
+    elif 2012 >= regulation >= 2009:
+        RELIABILITY -= 4
+    elif 2018 >= regulation >= 2013:
+        RELIABILITY += 0
+    elif 2021 >= regulation >= 2019:
+        RELIABILITY += 4
+    elif regulation >= 2022:
+        RELIABILITY += 7
     
     return f"Manufacturer($,{CREW},$,{round(CHASSIS)},{round(FW)},{round(RW)},{round(BASE)},{round(SIDEPOD)},{round(SUSPENSION)},{round(RELIABILITY)},{WEIGHT},'{concept}')"
 
