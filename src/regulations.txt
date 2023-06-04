@@ -9,30 +9,23 @@ CAR DEVELOPMENT FINANCIAL REGULATIONS
 * Durability (4.000.000 - 8.000.000)
 
 RESEARCHING REGULATIONS
-* Max. 1 research allowed for each spec. per one regulation period.
-If a team works for a gamechanger regulation date:
-* Research results multiplies by 1x
-Else:
-* Research results multiplied by 1.4x in the first year and multiplied by 1.5x in the following years (2nd and 3rd years).
-Example:
-* An A team in the 2018 season did not make any upgrades and aligned all their budgets for next year's regulation research. 
-* In this case, every +3 update returns as; +3 for 2021 regulations.
-* In this case, every +3 update returns as; +4.2 to +4 for 2019 regulations.
-* In this case, every +3 update returns as; +4.5 to +5 for 2020 regulations.
+* Max. 2 research projects allowed for each spec. per one regulation period.
+* An A team in the 2017 season did not make any upgrades and aligned all their budgets for next year's regulation research. 
+> In this case, every +x update returns as; +x for 2018 regulations initial car design.
+> In this case, every +x update returns as; +(x+1) for 2021 regulations initial car design.
 
 FIRST AVAILABLE RESEARCH DATES
-Start of the 2002 Season for 2005 Regulations
-Start of the 2003 Season for 2006 Regulations
-Start of the 2004 Season for 2007 Regulations
-Start of the 2006 Season for 2009 Regulations
-Start of the 2008 Season for 2011 Regulations
-Start of the 2011 Season for 2014 Regulations
-Start of the 2013 Season for 2016 Regulations
-Start of the 2014 Season for 2017 Regulations
-Start of the 2015 Season for 2018 Regulations
-Start of the 2018 Season for 2021 Regulations
-Start of the 2019 Season for 2022 Regulations
-Start of the 2023 Season for 2026 Regulations
+* Start of the 2001 Season for 2005 Regulations
+* Start of the 2002 Season for 2006 Regulations
+* Start of the 2005 Season for 2009 Regulations
+* Start of the 2004 Season for 2011 Regulations
+* Start of the 2010 Season for 2014 Regulations
+* Start of the 2012 Season for 2016 Regulations
+* Start of the 2013 Season for 2017 Regulations
+* Start of the 2014 Season for 2018 Regulations
+* Start of the 2017 Season for 2021 Regulations
+* Start of the 2018 Season for 2022 Regulations
+* Start of the 2022 Season for 2026 Regulations
 
 PRIZE MONEY
 Prize money if multi-year regulations are available:
@@ -52,205 +45,177 @@ Out of points - 4.000.000
 REGULATIONS
 1998-1999-2000-2001-2002-2003-2004
 Engine: V10 3.0L
-Engine: One-year usage
-Chassis: One concept, multi-year usage
-In-Year Car Development: Active (Max. 1 upgrade allowed for each spec.)
+Engine Continuity & Continuity: One-year usage & Active
+Chassis: Multi-year usage with one concept.
+In-Year Car Development: ?
 Max. Driver Contract Lenght: 4 years
 Pit-stop regulations: Option/Prime
-Safety regulations: Poor
+Durability: Poor
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Bridgestone
 FIA Fuel Supplier: Shell
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
 F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-Free-Practice and Quali: 3 and 1-staged
 DRS: None
 ERS: None
 
 2005
 Engine: V10 3.0L
-Engine Continuity: One-year usage
-Chassis: One-year usage
-In-Year Car Development: Active (Max. 2 upgrades allowed for each spec.)
+Engine Continuity & Continuity: One-year usage & Active
+Chassis: One-shot
+In-Year Car Development: ?
 Max. Driver Contract Lenght: 4 years
 Pit-stop regulations: Banned
-Safety regulations: Average
+Durability: Average
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Bridgestone
 FIA Fuel Supplier: Shell
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
 F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-Free-Practice and Quali: 3 and 1-staged
 DRS: None
 ERS: None
 
-2006
+2006-2007-2008
 Engine: V8 2.4L
-Engine: Multi-year usage of the same engine until end of the 2008 season. / frozen.
-Chassis: One-year usage
-In-Year Car Development: Active (Max. 2 upgrades allowed for each spec.)
+Engine Development & Continuity: Engines were frozen until end of the 2013 season.
+Chassis: Multi-year usage with one concept.
+In-Year Car Development: ?
 Max. Driver Contract Lenght: 4 years
 Pit-stop regulations: Option/Prime
-Safety regulations: Average
+Durability: Average
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Bridgestone
 FIA Fuel Supplier: Shell
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
 F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-Free-Practice and Quali: 3 and 1-staged
-DRS: None
-ERS: None
-
-2007-2008
-Engine: V8 2.4L
-Engine: Multi-year usage of the same engine until end of the 2008 season. / frozen.
-Chassis: One concept, multi-year usage
-In-Year Car Development: Active (Max. 1 upgrade allowed for each spec.)
-Max. Driver Contract Lenght: 4 years
-Pit-stop regulations: Option/Prime
-Safety regulations: Average
-F1 Logistics Supplier: DHL
-FIA Tire Supplier: Bridgestone
-FIA Fuel Supplier: Shell
-F1 Points System: 25-18-15-12-10-8-6-4-2-1
-F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-Free-Practice and Quali: 3 and 1-staged
 DRS: None
 ERS: None
 
 2009-2010
 Engine: V8 2.4L
-Engine Continuity: One-year usage
-Chassis: One concept, multi-year usage
-In-Year Car Development: Active (Max. 1 upgrades allowed for each spec.)
+Engine Development & Continuity: Engines were frozen until end of the 2013 season.
+Chassis: Multi-year usage with one concept.
+In-Year Car Development: ?
 Max. Driver Contract Lenght: 4 years
 Pit-stop regulations: Option/Prime
-Safety regulations: Good
+Durability: Good
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Shell
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
 F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-Free-Practice and Quali: 3 and 1-staged
 DRS: None
 ERS: None
 
 2011-2012-2013
 Engine: V8 2.4L
-Engine Continuity: One-year usage
-Chassis: One concept, multi-year usage
-In-Year Car Development: Active (Max. 1 upgrade allowed for each spec.)
+Engine Development & Continuity: Engines were frozen until end of the 2013 season.
+Chassis: Multi-year usage with one concept.
+In-Year Car Development: ?
 Max. Driver Contract Lenght: 4 years
 Pit-stop regulations: Soft/Medium/Hard
-Safety regulations: Good
+Durability: Good
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Shell
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
 F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-Free-Practice and Quali: 3 and 1-staged
 DRS: Active
-ERS: None
+ERS: Active under the name of KERS
 
 2014-2015
 Engine: V6 1.6L
-Engine Continuity: One-year usage
-Chassis: One concept, multi-year usage
-In-Year Car Development: Active (Max. 2 upgrades allowed for each spec.)
+Engine Continuity & Continuity: One-year usage & Active
+Chassis: Multi-year usage with one concept.
+In-Year Car Development: ?
 Max. Driver Contract Lenght: 5 years
 Pit-stop regulations: Soft/Medium/Hard
-Safety regulations: Decent
+Durability: Decent
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Petronas
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
 F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-Free-Practice and Quali: 3 and 1-staged
 DRS: Active
 ERS: Active
 
 2016
 Engine: V6 1.6L
-Engine Continuity: One-year usage
-Chassis: One-year usage
-In-Year Car Development: Active (Max. 2 upgrades allowed for each spec.)
+Engine Continuity & Continuity: One-year usage & Active
+Chassis: One-shot
+In-Year Car Development: ?
 Max. Driver Contract Lenght: 5 years
 Pit-stop regulations: Soft/Medium/Hard
-Safety regulations: Decent
+Durability: Decent
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Petronas
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
 F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-Free-Practice and Quali: 3 and 1-staged
 DRS: Active
 ERS: Active
 
 2017
 Engine: V6 1.6L
-Engine Continuity: One-year usage
-Chassis: One-year usage
-In-Year Car Development: Active (Max. 2 upgrades allowed for each spec.)
+Engine Continuity & Continuity: One-year usage & Active
+Chassis: One-shot
+In-Year Car Development: ?
 Max. Driver Contract Lenght: 5 years
 Pit-stop regulations: Soft/Medium/Hard
-Safety regulations: Decent
+Durability: Decent
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Petronas
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
 F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-Free-Practice and Quali: 3 and 1-staged
 DRS: Active
 ERS: Active
 
 2018-2019-2020
 Engine: V6 1.6L
-Engine Continuity: One-year usage
-Chassis: One concept, multi-year usage
-In-Year Car Development: Active (Max. 1 upgrade allowed for each spec.)
+Engine Continuity & Continuity: One-year usage & Active
+Chassis: Multi-year usage with one concept.
+In-Year Car Development: ?
 Max. Driver Contract Lenght: 5 years
 Pit-stop regulations: Soft/Medium/Hard
-Safety regulations: Decent
+Durability: Decent
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Petronas
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
 F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-Free-Practice and Quali: 3 and 1-staged
 DRS: Active
 ERS: Active
 
 2021
 Engine: V6 1.6L
-Engine Continuity: One-year usage
-Chassis: One-year usage
-In-Year Car Development: Active (Max. 2 upgrades allowed for each spec.)
+Engine Continuity & Continuity: One-year usage & Active
+Chassis: One-shot
+In-Year Car Development: ?
 Max. Driver Contract Lenght: 6 years
 Pit-stop regulations: Soft/Medium/Hard
-Safety regulations: Decent
+Durability: Decent
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Aramco
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
 F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-Free-Practice and Quali: 3 and 1-staged
 DRS: Active
 ERS: Active
 
 2022-2023-2024-2025
 Engine: V6 1.6L
-Engine: Multi-year usage of the same engine until end of the 2025 season. / frozen.
-Chassis: One concept, multi-year usage
-In-Year Car Development: Active (Max. 2 upgrades allowed for each spec.)
+Engine: Engines were frozen until end of the 2025 season.
+Chassis: Multi-year usage with one concept.
+In-Year Car Development: ?
 Max. Driver Contract Lenght: 6 years
 Pit-stop regulations: Soft/Medium/Hard
-Safety regulations: Decent
+Durability: Improved
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Aramco
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
 F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-Free-Practice and Quali: 3 and 1-staged
 DRS: Active
 ERS: Active
 
