@@ -1,21 +1,21 @@
 from random import uniform, choice, randint
 import pandas as pd
 
-def upgrade(part,spent,engineers,designer,cto,aerodynamicst):
+def upgrade(goal,part,spent,engineers,designer,cto,aerodynamicst):
     
     # Part Development
     if part == 'Front Wing':
-        min_budget = 3.0
-        max_budget = 6.0
+        min_budget = 2.5
+        max_budget = 5.0
     elif part == 'Rear Wing':
-        min_budget = 3.0
+        min_budget = 2.5
         max_budget = 6.0
     elif part == 'Chassis':
         min_budget = 2.0
         max_budget = 4.0
     elif part == 'Base':
-        min_budget = 4.0
-        max_budget = 8.0
+        min_budget = 2.5
+        max_budget = 5.0
     elif part == 'Sidepod':
         min_budget = 0.5
         max_budget = 1.0
@@ -23,17 +23,20 @@ def upgrade(part,spent,engineers,designer,cto,aerodynamicst):
         min_budget = 0.5
         max_budget = 1.0
     elif part == 'Durability':
-        min_budget = 4.0
-        max_budget = 8.0
+        min_budget = 2.0
+        max_budget = 4.0
+    elif part == 'Engine':
+        min_budget = 2.5
+        max_budget = 5.0
 
     min_point = ((((designer*5) + (cto*3) + (aerodynamicst*2))/10)/110)
     max_point = ((((designer*5) + (cto*3) + (aerodynamicst*2))/10)/90)
     
     limit = max_budget - min_budget
-    spent = (spent + 0.1) - min_budget
+    spentx = (spent + 0.1) - min_budget
 
     phase_1 = uniform(min_point,max_point)    
-    phase_2 = (spent/limit) + 0.5
+    phase_2 = (spentx/limit) + 0.5
 
     if engineers == 'Perfect':
         phase_3 = uniform(0.35,0.75)
@@ -46,12 +49,54 @@ def upgrade(part,spent,engineers,designer,cto,aerodynamicst):
     elif engineers == 'Very Bad':
         phase_3 = uniform(0.25,0.60)*(-1.0)
 
-    return f'{part} has upgraded by +{round(round(((((round(((phase_1) + (phase_2) + (phase_3)),3))*1.417)**1.3)/1.3),3))}.'
+    # If development failed?
+    if goal == 'Upgrade':
+        pb1 = randint(1,106) >= designer
+        pb2 = randint(1,106) >= cto
+        pb3 = randint(1,106) >= aerodynamicst
+        
+        if (pb1 and pb2 and pb3) == True:
+            FAIL = uniform(4.25,7.75)*(-1.0)
+            iffail = 'However, there were problems which negatively affected the development process.'
+        else:
+            if (pb1 and pb2) == True:
+                FAIL = uniform(4.25,7.75)*(-1.0)
+                iffail = 'However, there were problems which negatively affected the development process.'
+            else:
+                if (pb1 and pb3) == True:
+                    FAIL = uniform(4.25,7.75)*(-1.0)
+                    iffail = 'However, there were problems which negatively affected the development process.'
+                else: 
+                    if (pb2 and pb3) == True:
+                        FAIL = uniform(4.25,7.75)*(-1.0)
+                        iffail = 'However, there were problems which negatively affected the development process.'
+                    else:
+                        FAIL = 0
+                        iffail = 'There were no issues to concern.'
+    else:
+        FAIL = 0
+        iffail = 'There were no issues to concern.'
 
+    final = round((round((phase_1 + phase_2 + phase_3)*10))//uniform(4.25,5.75))
 
-def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,box,regulation,FW_R,RW_R,chassis_R,base_R,sidepod_R,suspension_R): 
-    spent = (spent + 0.1) - 13.0
-    phase_1 = ((spent/13.0) + 0.5)*13.75
+    if goal == 'Upgrade':
+        final = round(final) + round(FAIL)
+        if FAIL == 0:
+            return f'{part} has upgraded by +{final}.\n{iffail}'
+        else:
+            return f'{part} has upgraded by {final}.\n{iffail}'
+    else:
+        res = (round((final//uniform(1.25,1.75))))
+        if round(res) == 0:
+            return f'{part} has positively researched by +1.'
+        else:
+            return f'{part} has positively researched by +{(res)}'
+
+def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,box,regulation,researches):
+
+    # Money Talks
+    spentx = (spent + 0.1) - 22.5
+    phase_1 = ((spentx/30.0) + 0.5)*13.75
 
     if engineers == 'Perfect':
         phase_3 = uniform(2.50,5.00)
@@ -65,12 +110,12 @@ def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,bo
         phase_3 = uniform(2.50,5.00)*(-1.0)
 
     if concept == 'Front Stiff': 
-        FW = 45 + phase_1 + phase_3 +  uniform(((((designer*4.5) + (cto*2.5) + (aerodynamicst*4.5))/50))-5.5,((((designer*4.5) + (cto*2.5) + (aerodynamicst*4.5))/50))+5.5) + FW_R
-        RW = 45 + phase_1 + phase_3 +  uniform(((((designer*3.5) + (cto*1.5) + (aerodynamicst*3.5))/50))-5.5,((((designer*3.5) + (cto*1.5) + (aerodynamicst*3.5))/50))+5.5) + RW_R
-        CHASSIS = 45 + phase_1 + phase_3 +  uniform(((((designer*4.5) + (cto*4.5) + (aerodynamicst*2.5))/50))-5.5,((((designer*4.5) + (cto*4.5) + (aerodynamicst*2.5))/50))+5.5) + chassis_R
-        BASE = 45 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*3) + (aerodynamicst*3))/50))-5.5,((((designer*4) + (cto*3) + (aerodynamicst*3))/50))+5.5) + base_R
-        SIDEPOD = 45 + phase_1 + phase_3 +  uniform(((((designer*5) + (cto*3) + (aerodynamicst*2))/50))-5.5,((((designer*5) + (cto*3) + (aerodynamicst*2))/50))+5.5) + sidepod_R
-        SUSPENSION = 45 + phase_1 + phase_3 +  uniform(((((designer*2.5) + (cto*4.5) + (aerodynamicst*1.5))/50))-5.5,((((designer*2.5) + (cto*4.5) + (aerodynamicst*1.5))/50))+5.5) + suspension_R
+        FW = 45 + phase_1 + phase_3 +  uniform(((((designer*4.5) + (cto*2.5) + (aerodynamicst*4.5))/50))-5.5,((((designer*4.5) + (cto*2.5) + (aerodynamicst*4.5))/50))+5.5) + researches[0]
+        RW = 45 + phase_1 + phase_3 +  uniform(((((designer*3.5) + (cto*1.5) + (aerodynamicst*3.5))/50))-5.5,((((designer*3.5) + (cto*1.5) + (aerodynamicst*3.5))/50))+5.5) + researches[1]
+        CHASSIS = 45 + phase_1 + phase_3 +  uniform(((((designer*4.5) + (cto*4.5) + (aerodynamicst*2.5))/50))-5.5,((((designer*4.5) + (cto*4.5) + (aerodynamicst*2.5))/50))+5.5) + researches[2]
+        BASE = 45 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*3) + (aerodynamicst*3))/50))-5.5,((((designer*4) + (cto*3) + (aerodynamicst*3))/50))+5.5) + researches[3]
+        SIDEPOD = 45 + phase_1 + phase_3 +  uniform(((((designer*5) + (cto*3) + (aerodynamicst*2))/50))-5.5,((((designer*5) + (cto*3) + (aerodynamicst*2))/50))+5.5) + researches[4]
+        SUSPENSION = 45 + phase_1 + phase_3 +  uniform(((((designer*2.5) + (cto*4.5) + (aerodynamicst*1.5))/50))-5.5,((((designer*2.5) + (cto*4.5) + (aerodynamicst*1.5))/50))+5.5) + researches[5]
         w = choice([1,0,-1,-1,-1])
         if w == 1:
             WEIGHT = f'+{uniform(1.01,4.98)}'
@@ -79,12 +124,12 @@ def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,bo
         else:
             WEIGHT = f'Optimal Weight'
     elif concept == 'Rear Stiff':
-        FW = 45 + phase_1 + phase_3 +  uniform(((((designer*3.5) + (cto*1.5) + (aerodynamicst*3.5))/50))-5.5,((((designer*3.5) + (cto*1.5) + (aerodynamicst*3.5))/50))+5.5) + FW_R
-        RW = 45 + phase_1 + phase_3 +  uniform(((((designer*4.5) + (cto*2.5) + (aerodynamicst*4.5))/50))-5.5,((((designer*4.5) + (cto*2.5) + (aerodynamicst*4.5))/50))+5.5) + RW_R
-        CHASSIS = 45 + phase_1 + phase_3 +  uniform(((((designer*3.5) + (cto*3.5) + (aerodynamicst*1.5))/50))-5.5,((((designer*3.5) + (cto*3.5) + (aerodynamicst*1.5))/50))+5.5) + chassis_R
-        BASE = 45 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*3) + (aerodynamicst*3))/50))-5.5,((((designer*4) + (cto*3) + (aerodynamicst*3))/50))+5.5) + base_R
-        SIDEPOD = 45 + phase_1 + phase_3 +  uniform(((((designer*5) + (cto*3) + (aerodynamicst*2))/50))-5.5,((((designer*5) + (cto*3) + (aerodynamicst*2))/50))+5.5) + sidepod_R
-        SUSPENSION = 45 + phase_1 + phase_3 +  uniform(((((designer*3.5) + (cto*5.5) + (aerodynamicst*2.5))/50))-5.5,((((designer*3.5) + (cto*5.5) + (aerodynamicst*2.5))/50))+5.5) + suspension_R
+        FW = 45 + phase_1 + phase_3 +  uniform(((((designer*3.5) + (cto*1.5) + (aerodynamicst*3.5))/50))-5.5,((((designer*3.5) + (cto*1.5) + (aerodynamicst*3.5))/50))+5.5) + researches[0]
+        RW = 45 + phase_1 + phase_3 +  uniform(((((designer*4.5) + (cto*2.5) + (aerodynamicst*4.5))/50))-5.5,((((designer*4.5) + (cto*2.5) + (aerodynamicst*4.5))/50))+5.5) + researches[1]
+        CHASSIS = 45 + phase_1 + phase_3 +  uniform(((((designer*3.5) + (cto*3.5) + (aerodynamicst*1.5))/50))-5.5,((((designer*3.5) + (cto*3.5) + (aerodynamicst*1.5))/50))+5.5) + researches[2]
+        BASE = 45 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*3) + (aerodynamicst*3))/50))-5.5,((((designer*4) + (cto*3) + (aerodynamicst*3))/50))+5.5) + researches[3]
+        SIDEPOD = 45 + phase_1 + phase_3 +  uniform(((((designer*5) + (cto*3) + (aerodynamicst*2))/50))-5.5,((((designer*5) + (cto*3) + (aerodynamicst*2))/50))+5.5) + researches[4]
+        SUSPENSION = 45 + phase_1 + phase_3 +  uniform(((((designer*3.5) + (cto*5.5) + (aerodynamicst*2.5))/50))-5.5,((((designer*3.5) + (cto*5.5) + (aerodynamicst*2.5))/50))+5.5) + researches[5]
         w = choice([-1,0,1,1,1])
         if w == 1:
             WEIGHT = f'+{uniform(1.01,4.98)}'
@@ -93,12 +138,12 @@ def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,bo
         else:
             WEIGHT = f'Optimal Weight'
     elif concept == 'Balanced' or 'Unbalanced':
-        FW = 45 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*2) + (aerodynamicst*4))/50))-5.5,((((designer*4) + (cto*2) + (aerodynamicst*4))/50))+5.5) + FW_R
-        RW = 45 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*2) + (aerodynamicst*4))/50))-5.5,((((designer*4) + (cto*2) + (aerodynamicst*4))/50))+5.5) + RW_R
-        CHASSIS = 45 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*4) + (aerodynamicst*2))/50))-5.5,((((designer*4) + (cto*4) + (aerodynamicst*2))/50))+5.5) + chassis_R
-        BASE = 45 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*3) + (aerodynamicst*3))/50))-5.5,((((designer*4) + (cto*3) + (aerodynamicst*3))/50))+5.5) + base_R
-        SIDEPOD = 45 + phase_1 + phase_3 +  uniform(((((designer*5) + (cto*3) + (aerodynamicst*2))/50))-5.5,((((designer*5) + (cto*3) + (aerodynamicst*2))/50))+5.5) + sidepod_R
-        SUSPENSION = 45 + phase_1 + phase_3 +  uniform(((((designer*3) + (cto*5) + (aerodynamicst*2))/50))-5.5,((((designer*3) + (cto*5) + (aerodynamicst*2))/50))+5.5) + suspension_R
+        FW = 45 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*2) + (aerodynamicst*4))/50))-5.5,((((designer*4) + (cto*2) + (aerodynamicst*4))/50))+5.5) + researches[0]
+        RW = 45 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*2) + (aerodynamicst*4))/50))-5.5,((((designer*4) + (cto*2) + (aerodynamicst*4))/50))+5.5) + researches[1]
+        CHASSIS = 45 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*4) + (aerodynamicst*2))/50))-5.5,((((designer*4) + (cto*4) + (aerodynamicst*2))/50))+5.5) + researches[2]
+        BASE = 45 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*3) + (aerodynamicst*3))/50))-5.5,((((designer*4) + (cto*3) + (aerodynamicst*3))/50))+5.5) + researches[3]
+        SIDEPOD = 45 + phase_1 + phase_3 +  uniform(((((designer*5) + (cto*3) + (aerodynamicst*2))/50))-5.5,((((designer*5) + (cto*3) + (aerodynamicst*2))/50))+5.5) + researches[4]
+        SUSPENSION = 45 + phase_1 + phase_3 +  uniform(((((designer*3) + (cto*5) + (aerodynamicst*2))/50))-5.5,((((designer*3) + (cto*5) + (aerodynamicst*2))/50))+5.5) + researches[5]
         w = choice([-1,1,0,0,0])
         if w == 1:
             WEIGHT = f'{round(uniform(1.01,4.98),2)}'
