@@ -1,53 +1,65 @@
 CAR DEVELOPMENT FINANCIAL REGULATIONS
 * In the same regulation period, only two times of durability updates are allowed.
 * Chassis (2.000.000 - 4.000.000)
-* Front Wing (3.000.000 - 6.000.000)
-* Rear Wing (3.000.000 - 6.000.000)
-* Base (4.000.000 - 8.000.000)
+* Front Wing (2.500.000 - 5.000.000)
+* Rear Wing (2.500.000 - 5.000.000)
+* Base (2.500.000 - 5.000.000)
 * Sidepod (500.000 - 1.000.000)
 * Suspension (500.000 - 1.000.000)
-* Durability (4.000.000 - 8.000.000)
+* Car/Engine Durability (2.000.000 - 4.000.000)
+* Engine (2.500.000 - 5.000.000)
 
 RESEARCHING REGULATIONS
-* Max. 2 research projects allowed for each spec. per one regulation period.
+* Max. 2 research projects allowed for each spec. for one specific regulation changes.
 * An A team in the 2017 season did not make any upgrades and aligned all their budgets for next year's regulation research. 
 > In this case, every +x update returns as; +x for 2018 regulations initial car design.
 > In this case, every +x update returns as; +(x+1) for 2021 regulations initial car design.
 
-FIRST AVAILABLE RESEARCH DATES
-* Start of the 2001 Season for 2005 Regulations
-* Start of the 2002 Season for 2006 Regulations
-* Start of the 2005 Season for 2009 Regulations
-* Start of the 2004 Season for 2011 Regulations
-* Start of the 2010 Season for 2014 Regulations
-* Start of the 2012 Season for 2016 Regulations
-* Start of the 2013 Season for 2017 Regulations
-* Start of the 2014 Season for 2018 Regulations
-* Start of the 2017 Season for 2021 Regulations
-* Start of the 2018 Season for 2022 Regulations
-* Start of the 2022 Season for 2026 Regulations
+AVAILABLE RESEARCH DATES
+* 2001, 2002, 2003, 2004 seasons are eligible to research for 2005 regulations.
+* 2002, 2003, 2004, 2005 seasons are eligible to research for 2006 regulations.
+* 2005, 2006, 2007, 2008 seasons are eligible to research for 2009 regulations.
+* 2007, 2008, 2009, 2010 seasons are eligible to research for 2011 regulations.
+* 2010, 2011, 2012, 2013 seasons are eligible to research for 2014 regulations.
+* 2012, 2013, 2014, 2015 seasons are eligible to research for 2016 regulations.
+* 2013, 2014, 2015, 2016 seasons are eligible to research for 2017 regulations.
+* 2014, 2015, 2016, 2017 seasons are eligible to research for 2018 regulations.
+* 2017, 2018, 2019, 2020 seasons are eligible to research for 2021 regulations.
+* 2018, 2019, 2020, 2021 seasons are eligible to research for 2022 regulations.
+* 2022, 2023, 2024, 2025 seasons are eligible to research for 2026 regulations.
 
-PRIZE MONEY
-Prize money if multi-year regulations are available:
-1st - 500.000
-2nd - 750.000
-3rd - 1.000.000
-Within the points - 1.500.000
-Out of points - 2.000.000
+PRIZE MONEY PER RACE
+1st - 0.5 Million $
+2nd - 1.0 Million $
+3rd - 1.5 Million $
+Within the points - 2.0 Million $
+Out of points - 2.5 Million $
 
-Prize money if one-year regulations are available:
-1st - 1.000.000
-2nd - 1.500.000
-3rd - 2.000.000
-Within the points - 3.000.000
-Out of points - 4.000.000
+END OF THE SEASON PRIZE MONEY
+1st - 46 Million $
+2nd - 40 Million $
+3rd - 34 Million $
+4th - 26 Million $
+5th - 22 Million $
+6th - 18 Million $
+7th - 16 Million $
+8th - 14 Million $
+9th - 12 Million $
+10th and below - 10 Million $
+
+FINANCIAL HINTS
+After end of the season, teams can do 4 specific thing with the leftover money.
+1 - Can build the next season's car.
+2 - Can hire the pit crew.
+3 - Can store the money for additional car development process within the season.
+4 - Can store the money for additional researches for further regulation changes.
 
 REGULATIONS
 1998-1999-2000-2001-2002-2003-2004
 Engine: V10 3.0L
 Engine Continuity & Continuity: One-year usage & Active
 Chassis: Multi-year usage with one concept.
-In-Year Car Development: ?
+In-Year Car Development: Active & Max. 1 successful upgrade for each component except durability.
 Max. Driver Contract Lenght: 4 years
 Pit-stop regulations: Option/Prime
 Durability: Poor
@@ -63,7 +75,7 @@ ERS: None
 Engine: V10 3.0L
 Engine Continuity & Continuity: One-year usage & Active
 Chassis: One-shot
-In-Year Car Development: ?
+In-Year Car Development: Active & Max. 1 successful upgrade for each component except durability.
 Max. Driver Contract Lenght: 4 years
 Pit-stop regulations: Banned
 Durability: Average
@@ -79,7 +91,7 @@ ERS: None
 Engine: V8 2.4L
 Engine Development & Continuity: Engines were frozen until end of the 2013 season.
 Chassis: Multi-year usage with one concept.
-In-Year Car Development: ?
+In-Year Car Development: Active & Max. 1 successful upgrade for each component except durability.
 Max. Driver Contract Lenght: 4 years
 Pit-stop regulations: Option/Prime
 Durability: Average
@@ -95,7 +107,7 @@ ERS: None
 Engine: V8 2.4L
 Engine Development & Continuity: Engines were frozen until end of the 2013 season.
 Chassis: Multi-year usage with one concept.
-In-Year Car Development: ?
+In-Year Car Development: Active & Max. 1 successful upgrade for each component except durability.
 Max. Driver Contract Lenght: 4 years
 Pit-stop regulations: Option/Prime
 Durability: Good
@@ -111,7 +123,7 @@ ERS: None
 Engine: V8 2.4L
 Engine Development & Continuity: Engines were frozen until end of the 2013 season.
 Chassis: Multi-year usage with one concept.
-In-Year Car Development: ?
+In-Year Car Development: Active & Max. 1 successful upgrade for each component except durability.
 Max. Driver Contract Lenght: 4 years
 Pit-stop regulations: Soft/Medium/Hard
 Durability: Good
@@ -127,7 +139,7 @@ ERS: Active under the name of KERS
 Engine: V6 1.6L
 Engine Continuity & Continuity: One-year usage & Active
 Chassis: Multi-year usage with one concept.
-In-Year Car Development: ?
+In-Year Car Development: Active & Max. 1 successful upgrade for each component except durability.
 Max. Driver Contract Lenght: 5 years
 Pit-stop regulations: Soft/Medium/Hard
 Durability: Decent
@@ -143,7 +155,7 @@ ERS: Active
 Engine: V6 1.6L
 Engine Continuity & Continuity: One-year usage & Active
 Chassis: One-shot
-In-Year Car Development: ?
+In-Year Car Development: Active & Max. 1 successful upgrade for each component except durability.
 Max. Driver Contract Lenght: 5 years
 Pit-stop regulations: Soft/Medium/Hard
 Durability: Decent
@@ -159,7 +171,7 @@ ERS: Active
 Engine: V6 1.6L
 Engine Continuity & Continuity: One-year usage & Active
 Chassis: One-shot
-In-Year Car Development: ?
+In-Year Car Development: Active & Max. 1 successful upgrade for each component except durability.
 Max. Driver Contract Lenght: 5 years
 Pit-stop regulations: Soft/Medium/Hard
 Durability: Decent
@@ -175,7 +187,7 @@ ERS: Active
 Engine: V6 1.6L
 Engine Continuity & Continuity: One-year usage & Active
 Chassis: Multi-year usage with one concept.
-In-Year Car Development: ?
+In-Year Car Development: Active & Max. 1 successful upgrade for each component except durability.
 Max. Driver Contract Lenght: 5 years
 Pit-stop regulations: Soft/Medium/Hard
 Durability: Decent
@@ -191,7 +203,7 @@ ERS: Active
 Engine: V6 1.6L
 Engine Continuity & Continuity: One-year usage & Active
 Chassis: One-shot
-In-Year Car Development: ?
+In-Year Car Development: Active & Max. 1 successful upgrade for each component except durability.
 Max. Driver Contract Lenght: 6 years
 Pit-stop regulations: Soft/Medium/Hard
 Durability: Decent
@@ -207,7 +219,7 @@ ERS: Active
 Engine: V6 1.6L
 Engine: Engines were frozen until end of the 2025 season.
 Chassis: Multi-year usage with one concept.
-In-Year Car Development: ?
+In-Year Car Development: Active & Max. 1 successful upgrade for each component except durability.
 Max. Driver Contract Lenght: 6 years
 Pit-stop regulations: Soft/Medium/Hard
 Durability: Improved
