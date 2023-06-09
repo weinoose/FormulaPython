@@ -372,16 +372,21 @@ class Tire():
         else:
             return (CL0) + (CL1) + (CL2)
 
-s = Tire('Soft',FIA(current)[4],1.0,1.0000)
-m = Tire('Medium',FIA(current)[4],1.7,1.0117)
-h = Tire('Hard',FIA(current)[4],2.4,1.0217)
-inter = Tire('Intermediate',FIA(current)[4],2.4,1.2517)
-w = Tire('Wet',FIA(current)[4],2.8,1.3717)
-
-# Pit-box Era's
-strategy_era = ['1998','2006','2007']
+# Changeability of Pit Assist
+strategy_era = ['1998','2006','2009']
 durability_era = ['2005']
 entertainment_era = ['2011','2014','2016','2017','2018','2021','2022']
+
+if current in entertainment_era:
+    s = Tire('Soft',FIA(current)[4],1.0,1.0000)
+    m = Tire('Medium',FIA(current)[4],1.7,1.0117)
+    h = Tire('Hard',FIA(current)[4],2.4,1.0217)
+    inter = Tire('Intermediate',FIA(current)[4],2.4,1.2517)
+    w = Tire('Wet',FIA(current)[4],2.8,1.3717)
+elif current in durability_era:
+    pass
+elif current in strategy_era:
+    pass  
 
 # Circuits
 class Circuit():
