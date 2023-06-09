@@ -1,33 +1,27 @@
 from random import uniform, choice, randint
 import pandas as pd
 
-def upgrade(goal,part,spent,engineers,designer,cto,aerodynamicst):
+def upgrade(goal,regulation,part,spent,engineers,designer,cto,aerodynamicst):
     
     # Part Development
     if part == 'Front Wing':
-        min_budget = 2.5
-        max_budget = 5.0
+        min_budget = 3.0
+        max_budget = 6.0
     elif part == 'Rear Wing':
-        min_budget = 2.5
+        min_budget = 3.0
         max_budget = 6.0
     elif part == 'Chassis':
-        min_budget = 2.0
-        max_budget = 4.0
+        min_budget = 3.0
+        max_budget = 6.0
     elif part == 'Base':
-        min_budget = 2.5
-        max_budget = 5.0
+        min_budget = 4.0
+        max_budget = 8.0
     elif part == 'Sidepod':
-        min_budget = 0.5
-        max_budget = 1.0
+        min_budget = 1.0
+        max_budget = 2.0
     elif part == 'Suspension':
-        min_budget = 0.5
-        max_budget = 1.0
-    elif part == 'Durability':
-        min_budget = 2.0
-        max_budget = 4.0
-    elif part == 'Engine':
-        min_budget = 2.5
-        max_budget = 5.0
+        min_budget = 1.0
+        max_budget = 2.0
 
     min_point = ((((designer*5) + (cto*3) + (aerodynamicst*2))/10)/110)
     max_point = ((((designer*5) + (cto*3) + (aerodynamicst*2))/10)/90)
@@ -48,6 +42,36 @@ def upgrade(goal,part,spent,engineers,designer,cto,aerodynamicst):
         phase_3 = uniform(0.00,0.40)*(-1.0)
     elif engineers == 'Very Bad':
         phase_3 = uniform(0.25,0.60)*(-1.0)
+    
+    # x0.666 +4 0.4 saniye
+    # x1.000 +6 0.6 saniye
+    # x1.500 +9 1.0 saniye
+    # x2.000 +12 1.5 saniye
+
+    if regulation == 1998:
+        svv = 1.500
+    elif regulation == 2005:
+        svv = 1.333
+    elif regulation == 2006:
+        svv = 1.000
+    elif regulation == 2009:
+        svv = 2.000
+    elif regulation == 2011:
+        svv = 1.000
+    elif regulation == 2014:
+        svv = 1.333
+    elif regulation == 2016:
+        svv = 1.333
+    elif regulation == 2017:
+        svv = 1.333
+    elif regulation == 2018:
+        svv = 0.666
+    elif regulation == 2021:
+        svv = 1.333
+    elif regulation == 2022:
+        svv = 1.333
+
+    final = round((round((round((phase_1 + phase_2 + phase_3)*10))//uniform(4.25,5.75)))*(svv))
 
     # If development failed?
     if goal == 'Upgrade':
@@ -56,19 +80,19 @@ def upgrade(goal,part,spent,engineers,designer,cto,aerodynamicst):
         pb3 = randint(1,106) >= aerodynamicst
         
         if (pb1 and pb2 and pb3) == True:
-            FAIL = uniform(4.25,7.75)*(-1.0)
+            FAIL = uniform(final-3.75,final+1.25)*(-1.0)
             iffail = 'However, there were problems which negatively affected the development process.'
         else:
             if (pb1 and pb2) == True:
-                FAIL = uniform(4.25,7.75)*(-1.0)
+                FAIL = uniform(final-3.75,final+1.25)*(-1.0)
                 iffail = 'However, there were problems which negatively affected the development process.'
             else:
                 if (pb1 and pb3) == True:
-                    FAIL = uniform(4.25,7.75)*(-1.0)
+                    FAIL = uniform(final-3.75,final+1.25)*(-1.0)
                     iffail = 'However, there were problems which negatively affected the development process.'
                 else: 
                     if (pb2 and pb3) == True:
-                        FAIL = uniform(4.25,7.75)*(-1.0)
+                        FAIL = uniform(final-3.75,final+1.25)*(-1.0)
                         iffail = 'However, there were problems which negatively affected the development process.'
                     else:
                         FAIL = 0
@@ -77,20 +101,26 @@ def upgrade(goal,part,spent,engineers,designer,cto,aerodynamicst):
         FAIL = 0
         iffail = 'There were no issues to concern.'
 
-    final = round((round((phase_1 + phase_2 + phase_3)*10))//uniform(4.25,5.75))
-
     if goal == 'Upgrade':
         final = round(final) + round(FAIL)
         if FAIL == 0:
             return f'{part} has upgraded by +{final}.\n{iffail}'
         else:
-            return f'{part} has upgraded by {final}.\n{iffail}'
+            if final >= 0:
+                return f'{part} has upgraded by +{final}.\n{iffail}'
+            else:
+                return f'{part} has upgraded by {final}.\n{iffail}'
     else:
         res = (round((final//uniform(1.25,1.75))))
         if round(res) == 0:
             return f'{part} has positively researched by +1.'
         else:
             return f'{part} has positively researched by +{(res)}'
+
+c = 0
+while c < 100:
+    print(upgrade('Upgrade',2018,'Front Wing',6.0,'Perfect',96,89,89))
+    c += 1
 
 def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,box,regulation,researches):
 

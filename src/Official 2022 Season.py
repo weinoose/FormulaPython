@@ -112,23 +112,23 @@ def FIA(C):
     elif C == '2005':
         return [1.09750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700]
     elif C == '2006':
-        return [1.11750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700]
+        return [1.11750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700] # 2006-2008 | no process in 2 years.
     elif C == '2009':
-        return [1.16500*(spex),False,False,'DHL',pirelli,shell,605,2,5,3,False,115,0.0675]
+        return [1.16500*(spex),False,False,'DHL',pirelli,shell,605,2,5,3,False,115,0.0675] # 2009-2010 | cars got 1.5 seconds faster in 1 year.
     elif C == '2011':
-        return [1.15250*(spex),True,True,'DHL',pirelli,shell,640,2,5,3,False,110,0.0675]
+        return [1.15250*(spex),True,True,'DHL',pirelli,shell,640,2,5,3,False,110,0.0675] # 2011-2013 | no process in 3 years.
     elif C == '2014':
-        return [1.15750*(spex),True,True,'DHL',pirelli,petronas,691,2,3,5,True,109,0.0650]
+        return [1.15750*(spex),True,True,'DHL',pirelli,petronas,691,2,3,5,True,109,0.0650] # 2014-2015 | cars got 0.750 seconds faster in 1 year.
     elif C == '2016':
-        return [1.07000*(spex),True,True,'DHL',pirelli,petronas,702,2,3,5,True,108,0.0650]
+        return [1.07000*(spex),True,True,'DHL',pirelli,petronas,702,2,3,5,True,108,0.0650] # Singular
     elif C == '2017':
-        return [1.01750*(spex),True,True,'DHL',pirelli,petronas,728,2,5,3,True,112,0.0650]
+        return [1.01750*(spex),True,True,'DHL',pirelli,petronas,728,2,5,3,True,112,0.0650] # Singular
     elif C == '2018':
-        return [0.99250*(spex),True,True,'DHL',pirelli,petronas,734,2,5,3,True,116,0.0650]
+        return [0.99250*(spex),True,True,'DHL',pirelli,petronas,734,2,5,3,True,116,0.0650] # 2018-2020 | cars got 0.750 seconds faster in 3 years.
     elif C == '2021':
-        return [0.99000*(spex),True,True,'DHL',pirelli,aramco,752,2,5,3,True,118,0.0625]
+        return [0.99000*(spex),True,True,'DHL',pirelli,aramco,752,2,5,3,True,118,0.0625] # Singular
     elif C == '2022':
-        return [1.00000*(spex),True,True,'DHL',pirelli,aramco,798,5,2,3,True,112,0.0625]
+        return [1.00000*(spex),True,True,'DHL',pirelli,aramco,798,5,2,3,True,112,0.0625] # Undefined
 
 # Visual Plugins
 borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'
@@ -498,11 +498,19 @@ class Engine():
         self.power = power
         self.durability = durability
 
-HONDA = Engine('Red Bull Powertrains Honda',FIA(current)[5],93,77)
-FERRARI = Engine('Ferrari',FIA(current)[5],91,72)
-RENAULT = Engine('Renault',FIA(current)[5],87,72)
-MERCEDES = Engine('Mercedes',FIA(current)[5],87,92)
-MECACHROME = Engine('Mecachrome',FIA(current)[5],86,76) # for Formula 2 engines.
+HONDA_0 = Engine('Red Bull Powertrains Honda',FIA(current)[5],93,77) # Red Bull
+HONDA_1 = Engine('Red Bull Powertrains Honda',FIA(current)[5],93,77) # AlphaTauri
+FERRARI_F = Engine('Ferrari',FIA(current)[5],91,72) # Ferrari
+FERRARI_0 = Engine('Ferrari',FIA(current)[5],91,72) # Haas
+FERRARI_1 = Engine('Ferrari',FIA(current)[5],91,72) # Alfa Romeo
+RENAULT_F = Engine('Renault',FIA(current)[5],87,72) # Alpine
+MERCEDES_F = Engine('Mercedes',FIA(current)[5],87,92) # Mercedes
+MERCEDES_0 = Engine('Mercedes',FIA(current)[5],87,92) # Williams
+MERCEDES_1 = Engine('Mercedes',FIA(current)[5],87,92) # Aston Martin
+MERCEDES_2 = Engine('Mercedes',FIA(current)[5],87,92) # McLaren
+
+# Formula 2 Engines
+MECACHROME = Engine('Mecachrome',FIA(current)[5],86,76)
 
 # Manufacturers
 class Manufacturer():
@@ -533,7 +541,9 @@ class Manufacturer():
         self.development = development
         self.weight = weight
         self.style = style
-        self.manufacturer_tyre_coeff = round(((((((self.suspension**2)*7) + ((self.RW**2)*3))/1000))/495) + 0.0217,3)
+        # Tire Performance Analysis
+        thing = ((self.vortex + self.braking + (self.suspension*2) + self.RW) - (self.drag + self.downforce))
+        self.manufacturer_tyre_coeff = round(((thing)/1450),3)
 
         if self.manufacturer_tyre_coeff <= 0.120:
             self.manufacturer_tyre_coeff_print = 'Very Bad'
@@ -588,16 +598,16 @@ class Manufacturer():
             return ((self.braking*5) + (self.downforce*2) + (self.vortex*1) + (self.drag*3))/11
 
 if spec == 'Formula 1':
-    mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team','Good',MERCEDES,91,89,84,89,79,89,106,+0.00,'Balanced',0.000)
-    redbull = Manufacturer('Oracle Red Bull Racing','Perfect',HONDA,89,92,92,92,92,92,86,+5.00,'Unbalanced',0.000)
-    ferrari = Manufacturer('Scuderia Ferrari','Average',FERRARI,96,96,89,89,94,79,79,+0.00,'Stiff Front',0.000)
-    mclaren = Manufacturer('McLaren F1 Team','Perfect',MERCEDES,79,84,79,84,84,84,106,+0.00,'Unbalanced',0.000)
-    alpine = Manufacturer('BWT Alpine F1 Team','Good',RENAULT,86,82,82,86,86,82,82,+0.00,'Stiff Front',0.000)
-    alphatauri = Manufacturer('Scuderia AlphaTauri','Good',HONDA,77,77,84,84,75,75,82,+0.00,'Balanced',0.000)
-    astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team','Average',MERCEDES,79,79,79,81,81,79,104,+0.00,'Unbalanced',0.000)
-    williams = Manufacturer('Williams Racing','Good',MERCEDES,77,77,77,77,84,88,104,+0.00,'Stiff Front',0.000)
-    alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen','Good',FERRARI,86,84,79,79,79,79,84,-5.00,'Unbalanced',0.000)
-    haas = Manufacturer('Haas F1 Team','Good',FERRARI,81,81,81,79,79,79,86,+0.00,'Balanced',0.000)
+    mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team','Good',MERCEDES_F,91,89,84,89,79,89,106,+0.00,'Balanced',0.000)
+    redbull = Manufacturer('Oracle Red Bull Racing','Perfect',HONDA_0,89,92,92,92,92,92,86,+5.00,'Unbalanced',0.000)
+    ferrari = Manufacturer('Scuderia Ferrari','Average',FERRARI_F,96,96,89,89,94,79,79,+0.00,'Stiff Front',0.000)
+    mclaren = Manufacturer('McLaren F1 Team','Perfect',MERCEDES_2,79,84,79,84,84,84,106,+0.00,'Unbalanced',0.000)
+    alpine = Manufacturer('BWT Alpine F1 Team','Good',RENAULT_F,86,82,82,86,86,82,82,+0.00,'Stiff Front',0.000)
+    alphatauri = Manufacturer('Scuderia AlphaTauri','Good',HONDA_1,77,77,84,84,75,75,82,+0.00,'Balanced',0.000)
+    astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team','Average',MERCEDES_1,79,79,79,81,81,79,104,+0.00,'Unbalanced',0.000)
+    williams = Manufacturer('Williams Racing','Good',MERCEDES_0,77,77,77,77,84,88,104,+0.00,'Stiff Front',0.000)
+    alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen','Good',FERRARI_1,86,84,79,79,79,79,84,-5.00,'Unbalanced',0.000)
+    haas = Manufacturer('Haas F1 Team','Good',FERRARI_0,81,81,81,79,79,79,86,+0.00,'Balanced',0.000)
     manufacturers = [mercedes,redbull,ferrari,mclaren,alpine,alphatauri,astonmartin,williams,alfaromeo,haas]
 elif spec == 'Formula 2':
     prema = Manufacturer('Prema Racing','Good',MECACHROME,91,91,91,85,85,85,85,+0.00,None,0.000) # 4th best.
@@ -1312,7 +1322,7 @@ def R(circuit,session,weather):
                                 TIRE_USAGE[driver.name] += 3.332
                                 TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                         else:
-                            if lap + 1 == circuit.circuit_laps:
+                            if lap + 2 == circuit.circuit_laps:
                                 if FIA(current)[10] == True:
                                     if AHEAD[driver.name][-1] >= 24.0 + uniform(0.50,1.00):
                                         TIRE_USAGE[driver.name] = 0
@@ -1913,7 +1923,7 @@ elif execution == 'data':
     MF['Manufacturer'] = MF_N
     MF['Engine'] = MF_E
     MF['Overall'] = MF_P
-    MF['Tire Performance'] = TP
+    MF['Tire Performance Quality'] = TP
     MF = MF.sort_values('Overall',ascending=False)
     MF = MF.reset_index()
     MF = MF.drop(axis=1, columns=['index'])
