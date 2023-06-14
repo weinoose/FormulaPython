@@ -221,7 +221,7 @@ class Tire():
         banker = (FIA(current)[6] + driver.team.weight)
         if self.title == 'Wet':
             TOTAL_WEIGHT = ((banker)*(FIA(current)[12])) + (((1.0217*circuit.laptime/85.00))*3)
-        elif self.title == 'Dump':
+        elif self.title == 'Intermediate':
             TOTAL_WEIGHT = ((banker)*(FIA(current)[12])) + (((1.0170*circuit.laptime/85.00))*3)
         else:
             TOTAL_WEIGHT = ((banker)*(FIA(current)[12]))
@@ -250,7 +250,7 @@ class Tire():
             performance = ((driver.team.performance(circuit.circuit_type))*1.00)
             if self.title == 'Wet':
                 CL1 = (((((performance/100)**2)*9.50) - 4)*(-1.0)) + TOTAL_WEIGHT + TRACTION_EFFECT_Q + ERS - driver.team.development
-            elif self.title == 'Dump':
+            elif self.title == 'Intermediate':
                 CL1 = (((((performance/100)**2)*10.00) - 4)*(-1.0)) + TOTAL_WEIGHT + TRACTION_EFFECT_Q + ERS - driver.team.development
             else:
                 CL1 = (((((performance/100)**2)*10.25) - 4)*(-1.0)) + TOTAL_WEIGHT + TRACTION_EFFECT_Q + ERS - driver.team.development
@@ -258,7 +258,7 @@ class Tire():
             performance = ((driver.team.performance(circuit.circuit_type))*1.00)
             if self.title == 'Wet':
                 CL1 = (((((performance/100)**2)*9.50) - 4)*(-1.0)) + TOTAL_WEIGHT + TRACTION_EFFECT_R + (ERS/3) - driver.team.development
-            elif self.title == 'Dump':
+            elif self.title == 'Intermediate':
                 CL1 = (((((performance/100)**2)*10.00) - 4)*(-1.0)) + TOTAL_WEIGHT + TRACTION_EFFECT_R + (ERS/3) - driver.team.development
             else:
                 CL1 = (((((performance/100)**2)*10.25) - 4)*(-1.0)) + TOTAL_WEIGHT + TRACTION_EFFECT_R + (ERS/3) - driver.team.development
@@ -266,7 +266,7 @@ class Tire():
             performance = ((driver.team.performance(circuit.circuit_type))*1.00)
             if self.title == 'Wet':
                 CL1 = (((((performance/100)**2)*9.50) - 4)*(-1.0)) + TOTAL_WEIGHT + (ERS/3) - driver.team.development
-            elif self.title == 'Dump':
+            elif self.title == 'Intermediate':
                 CL1 = (((((performance/100)**2)*10.00) - 4)*(-1.0)) + TOTAL_WEIGHT + (ERS/3) - driver.team.development
             else:
                 CL1 = (((((performance/100)**2)*10.25) - 4)*(-1.0)) + TOTAL_WEIGHT + (ERS/3) - driver.team.development
@@ -384,9 +384,16 @@ if current in entertainment_era:
     inter = Tire('Intermediate',FIA(current)[4],2.4,1.2517)
     w = Tire('Wet',FIA(current)[4],2.8,1.3717)
 elif current in durability_era:
-    pass
+    s = Tire('Soft',FIA(current)[4],1.0,1.0000)
+    m = Tire('Medium',FIA(current)[4],1.7,1.0117)
+    h = Tire('Hard',FIA(current)[4],8.25,1.0217)
+    inter = Tire('Wet',FIA(current)[4],2.8,1.3717)
+    w = Tire('Wet',FIA(current)[4],2.8,1.3717)
 elif current in strategy_era:
-    pass  
+    s = Tire('Soft',FIA(current)[4],1.0,1.0000)
+    h = Tire('Hard',FIA(current)[4],2.4,1.0217)
+    inter = Tire('Wet',FIA(current)[4],2.8,1.3717)
+    w = Tire('Wet',FIA(current)[4],2.8,1.3717)
 
 # Circuits
 class Circuit():
@@ -403,6 +410,34 @@ class Circuit():
         self.tire_series = tire_series
         self.tire_life = tire_life
 
+# # # STRATEGIES
+def STRATEGY(GP):
+    if GP == 'Le Mans':
+        pass
+    elif GP == 'Monza':
+        pass
+    elif GP == 'Sochi':
+        pass
+    elif GP == 'Baku':
+        pass
+    elif GP == 'Spa-Francorchamps':
+        pass
+    elif GP == 'Sakhir':
+        if current in entertainment_era:
+            return [[s,s,h  ,s,m,m],[s,m,s    ,s,s,m,h],[m,h  ,s,s,m,h]]
+        elif current in durability_era:
+            return [[h,h,h,h],[h,h,h,h],[h,h,h,h]]
+        elif current in strategy_era:
+            return [[s,h,s  ,s,s,h,h],[s,s,h  ,s,s,h,h],[s,h,h  ,s,s,s,h]]
+    elif GP == 'Zandvoort':
+        if current in entertainment_era:
+            return [[s,m,m,s,  s,s],[s,m,h,s,  s,s],[m,h,h,  s,s]]
+        elif current in durability_era:
+            return [[h,h,h,h],[h,h,h,h],[h,h,h,h]]
+        elif current in strategy_era:
+            return [[s,s,h,h  ,s,s,h],[s,s,s,h  ,s,h,h],[s,h,h,s  ,s,s,h]]
+        
+
 # # # AGILITY CIRCUITS
 lms = Circuit('Le Mans','France','Agility Circuit',23,FIA(current)[0]*120.75,[[s,m,m    ,s,s,s,h],[s,s,h  ,s,m,m],[s,m,h  ,s,m,h]],5,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy',[6,9,11],6) # 2018-present layout.
 # monza = Circuit('Monza','Italy','Agility Circuit',53,FIA(current)[0]*41.75,[[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy',[21,31,41],29) # 1994-1999 layout.
@@ -416,7 +451,7 @@ baku = Circuit('Baku','Azerbaijan','Agility Circuit',51,FIA(current)[0]*62.25,[[
 spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*65.25,[[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]],2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Easy',[18,26,35],24) # 2007-present layout.
 # sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*17.75,[[s,s,h  ,s,m,m],[s,m,s    ,s,s,m,h],[m,h  ,s,s,m,h]],3,['Dry'],'Easy',[16,23,29],20) # 2020 extra outer layout.
 # sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*71.25,[[s,s,h  ,s,m,m],[s,m,s    ,s,s,m,h],[m,h  ,s,s,m,h]],3,['Dry'],'Easy',[16,23,29],20) # 2010 layout.
-sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*51.75,[[s,s,h  ,s,m,m],[s,m,s    ,s,s,m,h],[m,h  ,s,s,m,h]],3,['Dry'],'Easy',[16,23,29],20) # 2004-2009 & 2011-present layout.
+sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*51.75,STRATEGY('Sakhir'),3,['Dry'],'Easy',[16,23,29],20) # 2004-2009 & 2011-present layout.
 
 # QUICKNESS CIRCUITS
 # silverstone = Circuit('Silverstone','Great Britain','Quickness Circuit',52,FIA(current)[0]*42.25,[[s,s,h    ,s,s,m,m],[s,m,s    ,s,s,m,h],[m,h    ,s,s,h,h]],2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Easy',[14,21,27],18) # 1997-2009 layout.
@@ -458,7 +493,7 @@ istanbul = Circuit('Istanbul','Turkey','Downforce Circuit',58,FIA(current)[0]*45
 miami = Circuit('Miami','United States','Downforce Circuit',57,FIA(current)[0]*49.75,[[s,s,h    ,s,s,m,m],[s,m,s    ,s,s,m,h],[m,h    ,s,s,h,h]],3,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Easy',[19,28,37],26) # 2022-present layout.
 
 # ENGINEERING CIRCUITS
-zandvoort = Circuit('Zandvoort','Netherlands','Engineering Circuit',72,FIA(current)[0]*31.75,[[s,m,m,s,  s,s],[s,m,h,s,  s,s],[m,h,h,  s,s]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump'],'Average',[13,19,24],16) # 2020-present layout.
+zandvoort = Circuit('Zandvoort','Netherlands','Engineering Circuit',72,FIA(current)[0]*31.75,STRATEGY('Zandvoort'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump'],'Average',[13,19,24],16) # 2020-present layout.
 budapest = Circuit('Budapest','Hungary','Engineering Circuit',70,FIA(current)[0]*38.75,[[m,h,  s,s,h,m],[s,s,m,  s,s,h,h],[s,m,s,  s,s,m,h]],1,['Dry','Dry','Dry','Dry','Dump','Dump','Dump'],'Very Hard',[20,30,40],28) # 2003-present layout.
 barcelona = Circuit('Barcelona','Spain','Engineering Circuit',66,FIA(current)[0]*40.25,[[m,h,  s,s,h,m],[s,s,m,  s,s,h,h],[s,m,s,  s,s,m,h]],2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump'],'Hard',[20,30,40],28) # 2007-present layout.
 
@@ -675,7 +710,7 @@ if spec == 'Formula 1':
     VER = Driver(redbull,'Max Verstappen','NET',1,90,93,92,95,93,95,95,95,87,86,94,['México City','Zandvoort','Spielberg','Imola','Spa-Francorchamps'],'Unbalanced') # 92.187 > 92
     LEC = Driver(ferrari,'Charles Leclerc','MNK',16,93,94,89,92,92,88,88,86,86,90,86,['Monte-Carlo','Spa-Francorchamps','Monza','Sakhir','Spielberg'],'Balanced') # 90.989 > 91
     HAM = Driver(mercedes,'Lewis Hamilton','GBR',44,89,89,91,92,91,93,91,92,91,93,92,['Silverstone','Barcelona','Budapest','São Paulo','Montréal','Yas Island'],'Balanced') # 90.97 > 91
-    VET = Driver(astonmartin,'Sebastian Vettel','GER',5,89,91,90,94,88,89,92,94,93,91,93,['Monte-Carlo','Singapore','India','Suzuka','Sepang','Valencia'],'Stiff Rear') # 90.457 > 90
+    VET = Driver(astonmartin,'Sebastian Vettel','GER',5,89,91,90,94,88,89,92,94,93,91,93,['Monte-Carlo','Singapore','India','Suzuka','Sepang','Valencia','Montréal'],'Stiff Rear') # 90.457 > 90
     ALO = Driver(alpine,'Fernando Alonso','ESP',14,87,89,92,93,90,95,86,93,94,94,91,['Budapest','Silverstone','Monza','Barcelona','Valencia','Singapore'],'Stiff Front') # 90.272 > 90
     PER = Driver(redbull,'Sergio Pérez','MEX',11,86,90,94,91,87,92,85,91,95,92,90,['Baku','Jeddah','Monte-Carlo'],'Balanced') # 89.16 > 89
     NOR = Driver(mclaren,'Lando Norris','GBR',4,92,91,87,92,85,94,83,87,87,86,87,['Sochi','Spielberg','Imola'],None) # 88.586 > 89
