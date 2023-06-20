@@ -1,8 +1,11 @@
-CAR DEVELOPMENT REGULATIONS
+CAR DEVELOPMENT/PRODUCTION REGULATIONS
 * In-year car development is active for all regulations terms.
 * In terms of car development, there is no development limitation in each season or regulation period.
 * In terms of durability updates, it is eligible at the middle of the season within a -6/+6 ratio.
-* In terms of engine performance development, details have been written below per regulation.
+* In terms of engine performance development, it is eligible at the middle of the season within a -4/+4 ratio.
+* Car production cost is between 12M$ and 26M$
+
+CAR DEVELOPMENT FINANCIAL REGULATIONS
 * Chassis (3.000.000 - 6.000.000)
 * Front Wing (3.000.000 - 6.000.000)
 * Rear Wing (3.000.000 - 6.000.000)
@@ -46,7 +49,6 @@ REGULATIONS
 1998-1999-2000-2001-2002-2003-2004
 Engine: V10 3.0L
 Engine Continuity: One-year usage.
-Engine Performance Development: In-season developments are not active.
 Chassis: Multi-year usage with one concept.
 Max. Driver Contract Lenght: 4 years
 Pit-stop regulations: Option/Prime
@@ -62,7 +64,6 @@ ERS: None
 2005
 Engine: V10 3.0L
 Engine Continuity: One-year usage.
-Engine Performance Development: In-season developments are not active.
 Chassis: One-shot
 Max. Driver Contract Lenght: 4 years
 Pit-stop regulations: Banned
@@ -78,7 +79,6 @@ ERS: None
 2006-2007-2008
 Engine: V8 2.4L
 Engine Continuity: Engines were frozen until the end of the 2013 season.
-Engine Performance Development: In-season developments are active with the -4/+4 ratio.
 Chassis: Multi-year usage with one concept.
 Max. Driver Contract Lenght: 4 years
 Pit-stop regulations: Option/Prime
@@ -95,7 +95,6 @@ ERS: None
 2009-2010
 Engine: V8 2.4L
 Engine Continuity: Engines were frozen until the end of the 2013 season.
-Engine Performance Development: In-season developments are active with the -4/+4 ratio.
 Chassis: Multi-year usage with one concept.
 Max. Driver Contract Lenght: 4 years
 Pit-stop regulations: Option/Prime
@@ -111,7 +110,6 @@ ERS: None
 2011-2012-2013
 Engine: V8 2.4L
 Engine Continuity: Engines were frozen until the end of the 2013 season.
-Engine Performance Development: In-season developments are active with the -4/+4 ratio.
 Chassis: Multi-year usage with one concept.
 Max. Driver Contract Lenght: 4 years
 Pit-stop regulations: Soft/Medium/Hard
@@ -128,7 +126,6 @@ ERS: Active under the name of KERS
 2014-2015
 Engine: V6 1.6L
 Engine Continuity: One-year usage.
-Engine Performance Development: In-season developments are active with the -4/+4 ratio.
 Chassis: Multi-year usage with one concept.
 Max. Driver Contract Lenght: 5 years
 Pit-stop regulations: Soft/Medium/Hard
@@ -144,7 +141,6 @@ ERS: Active
 2016
 Engine: V6 1.6L
 Engine Continuity: One-year usage.
-Engine Performance Development: In-season developments are active with the -4/+4 ratio.
 Chassis: One-shot
 Max. Driver Contract Lenght: 5 years
 Pit-stop regulations: Soft/Medium/Hard
@@ -160,7 +156,6 @@ ERS: Active
 2017
 Engine: V6 1.6L
 Engine Continuity: One-year usage.
-Engine Performance Development: In-season developments are active with the -4/+4 ratio.
 Chassis: One-shot
 Max. Driver Contract Lenght: 5 years
 Pit-stop regulations: Soft/Medium/Hard
@@ -176,7 +171,6 @@ ERS: Active
 2018-2019-2020
 Engine: V6 1.6L
 Engine Continuity: One-year usage.
-Engine Performance Development: In-season developments are active with the -4/+4 ratio.
 Chassis: Multi-year usage with one concept.
 Max. Driver Contract Lenght: 5 years
 Pit-stop regulations: Soft/Medium/Hard
@@ -192,7 +186,6 @@ ERS: Active
 2021
 Engine: V6 1.6L
 Engine Continuity: One-year usage.
-Engine Performance Development: In-season developments are active with the -4/+4 ratio.
 Chassis: One-shot
 Max. Driver Contract Lenght: 6 years
 Pit-stop regulations: Soft/Medium/Hard
@@ -208,7 +201,6 @@ ERS: Active
 2022-2023-2024-2025
 Engine: V6 1.6L
 Engine Continuity: Engines were frozen until the end of the 2025 season.
-Engine Performance Development: In-season developments are active with the -4/+4 ratio.
 Chassis: Multi-year usage with one concept.
 Max. Driver Contract Lenght: 6 years
 Pit-stop regulations: Soft/Medium/Hard
