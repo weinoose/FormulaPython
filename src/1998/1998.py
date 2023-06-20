@@ -10,16 +10,16 @@ import sys
 execution = 'simulation' # data or simulation for output/run mode.
 
 # Season (Current) Selection
-current = '2022'
+current = '1998'
 
 # GP Selection
-GP = 'Sakhir'
+GP = 'Silverstone'
 
 # Spec. Selection
 spec = 'Formula 1'
 
 if spec == 'Formula 1':
-    verbosity = False # True or False for further telemetry & data.
+    verbosity = True # True or False for further telemetry & data.
 else:
     verbosity = False
 
@@ -794,27 +794,27 @@ class Manufacturer():
 
 if spec == 'Formula 1':
     # Adrian Newey | 96 89 89 | Perfect Eng. | Low Rel. | 26M$ Car | 7.0M$ Pit
-    mclaren = Manufacturer('West McLaren-Mercedes','Good',MERCEDES_0,95,89,84,89,88,88,61,-4.51,'Balanced')
+    mclaren = Manufacturer('West McLaren-Mercedes','Good',MERCEDES_0,95,89,84,89,88,88,61,-4.51,'Balanced',0.000)
     # Aldo Costa | 94 91 91 | Perfect Eng. | Balanced Rel. | 26M$ Car | 7.0M$ Pit
-    ferrari = Manufacturer('Scuderia Ferrari Vodafone','Good',FERRARI_F,91,92,86,93,88,93,70,-2.49,'Balanced')
+    ferrari = Manufacturer('Scuderia Ferrari Vodafone','Good',FERRARI_F,91,92,86,93,88,93,70,-2.49,'Balanced',0.000)
     # Paddy Lowe | 89 81 81 | Perfect Eng. | Low Rel. | 22M$ Car | 7.0M$ Pit
-    williams = Manufacturer('Rothmans Williams-Renault','Good',RENAULT_0,85,82,78,86,88,85,52,-1.94,'Unbalanced')
+    williams = Manufacturer('Rothmans Williams-Renault','Good',RENAULT_0,85,82,78,86,88,85,52,-1.94,'Unbalanced',0.000)
     # James Allison | 94 86 84 | Good Eng. | Balanced Rel. | 22M$ Car | 7.0M$ Pit
-    benetton = Manufacturer('Winfield Benetton-Ferrari','Good',FERRARI_0,85,82,86,81,90,78,69,+3.86,'Balanced')
+    benetton = Manufacturer('Winfield Benetton-Ferrari','Good',FERRARI_0,85,82,86,81,90,78,69,+3.86,'Balanced',0.000)
     # Ray Durand | 76 76 76 | Good Eng. | Balanced Rel. | 26M$ Car | 5.0M$ Pit
-    honda = Manufacturer('Honda F1 Team','Perfect',HONDA_F,80,84,84,79,88,79,73,+1.04,'Balanced')
+    honda = Manufacturer('Honda F1 Team','Perfect',HONDA_F,80,84,84,79,88,79,73,+1.04,'Balanced',0.000)
     # Simone Resta | 82 74 72 | Good Eng. | Low Rel. | 22M$ Car | 7.0M$ Pit
-    sauber = Manufacturer('BWT Sauber-Toyota','Perfect',TOYOTA_0,85,83,83,80,77,79,57,+0.00,'Balanced')
+    sauber = Manufacturer('BWT Sauber-Toyota','Perfect',TOYOTA_0,85,83,83,80,77,79,57,+0.00,'Balanced',0.000)
     # John Barnard | 91 91 91 | Good Eng. | High Rel. | 22M$ Car | 3.0M$ Pit
-    lotus = Manufacturer('Marlboro Team Lotus-Renault','Good',RENAULT_1,81,79,84,84,73,74,77,+0.00,'Balanced')
+    lotus = Manufacturer('Marlboro Team Lotus-Renault','Good',RENAULT_1,81,79,84,84,73,74,77,+0.00,'Balanced',0.000)
     # Pat Symonds | 86 81 81 | Good Eng. | Balanced Rel. | 16M$ Car | 3.0M$ Pit
-    brabham = Manufacturer('Parmalat Brabham-Renault','Average',RENAULT_2,75,76,72,77,75,75,68,+0.00,'Balanced')
+    brabham = Manufacturer('Parmalat Brabham-Renault','Average',RENAULT_2,75,76,72,77,75,75,68,+0.00,'Balanced',0.000)
     # Nick Flynn | 80 72 72 | Good Eng. | Balanced Rel. | 20M$ Car | 5.0M$ Pit
-    toyota = Manufacturer('Mild Seven Toyota Racing','Good',TOYOTA_F,77,81,74,72,81,76,65,+2.63,'Balanced')
+    toyota = Manufacturer('Mild Seven Toyota Racing','Good',TOYOTA_F,77,81,74,72,81,76,65,+2.63,'Balanced',0.000)
     # Raymond Coughlan | 80 76 76 | Average Eng. | Low Rel. | 16M$ Car | 3.0M$ Pit
-    jaguar = Manufacturer('Jaguar Racing Toyota','Good',TOYOTA_1,75,76,66,71,72,79,46,+3.09,'Balanced')
+    jaguar = Manufacturer('Jaguar Racing Toyota','Good',TOYOTA_1,75,76,66,71,72,79,46,+3.09,'Balanced',0.000)
     # Ignacio La Chazelle | 66 62 62  | Bad Eng. | Low Rel. | 12M$ Car | 3.0M$ Pit
-    minardi = Manufacturer('Minardi-Ferrari F1 Team','Average',FERRARI_1,65,62,65,56,64,60,58,-3.56,'Balanced')
+    minardi = Manufacturer('Minardi-Ferrari F1 Team','Average',FERRARI_1,65,62,65,56,64,60,58,-3.56,'Balanced',0.000)
     manufacturers = [honda,jaguar,lotus,toyota,minardi,sauber,brabham,williams,ferrari,mclaren,benetton]
 elif spec == 'Formula 2':
     carlin = Manufacturer('Carlin','Perfect',MECACHROME,91,91,91,91,91,91,91,+0.00,None)
