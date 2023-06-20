@@ -19,7 +19,7 @@ GP = 'Sakhir'
 spec = 'Formula 1'
 
 if spec == 'Formula 1':
-    verbosity = False # True or False for further telemetry & data.
+    verbosity = True # True or False for further telemetry & data.
 else:
     verbosity = False
 
@@ -1572,8 +1572,8 @@ def R(circuit,session,weather):
                 else:
                     pass
         
-        if SAFETY_CAR[lap][-1] == 1: # If there is a safety car scenario, cars has to be lining behind the safety car.
-            if SAFETY_CAR[lap+2][-1] != 1:
+        if SAFETY_CAR[lap][-1] == 1: # If there is safety car, there will be no pass.
+            if SAFETY_CAR[lap+2][-1] != 1: # If there is a safety car scenario, cars has to be lining behind the safety car.
                 # Lap by Lap Report for Safety Car
                 temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
                 for driver in drivers:
@@ -1617,53 +1617,13 @@ def R(circuit,session,weather):
                             LAP_CHART[attacker_obj.name][-1] = LAP_CHART[attacker_obj.name][-1] + (following_distance - interval) + (circuit.laptime + 125)
             else:
                 pass
-        
-        else: # If there is safety car, there will be no pass.
-            # Lap by Lap Report for Overtake Analysis
+        else:
+            # Lap by Lap Analysis for Overtaking/Defence Situations
             temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
             for driver in drivers:
                 temp[driver.name], temptirenamedata[driver.name] = LAP_CHART[driver.name], TIRE_CHART[driver.name]
             TEMP_CLASSIFICATION = ANALYZER(f'LAP {lap} | Race',temp,temptirenamedata,'race-chart')
 
-            # Bug Dealer
-            if lap == 1:
-                pass
-            else:         
-                dp0 = list(TEMP_CLASSIFICATION['DRIVERS'])
-        
-                for i in dp0:
-                    for Q in drivers:
-                        if Q.name == i:
-                            driver = Q
-
-                    now0 = dp0.index(i)+1
-                    then0 = POSITIONS[i][-1]
-
-                    if then0 < now0:
-                        pass
-                    elif then0 == now0:
-                        pass
-                    else:
-                        compound_left = float((TIRE_LEFT[driver.name][-1]).split('%')[1])
-                        power_of_the_dog_0 = (driver.team.performance(circuit.circuit_type))*2.0
-                        power_of_the_dog_1 = (compound_left/1.15)*1.5
-                        power_of_the_dog_2 = (power_of_the_dog_0 + power_of_the_dog_1)**2
-                        if tire.title == 'Soft':
-                            power_of_the_dog_3 = 50000
-                        elif tire.title == 'Medium':
-                            power_of_the_dog_3 = 28750
-                        elif tire.title == 'Hard':
-                            power_of_the_dog_3 = 7500
-                        else:
-                            power_of_the_dog_3 = 50000
-
-                        cakal = (then0 - now0)
-                        dealer = 10**5.5
-                        F = round(driver.attack/1000,3)
-                        the_calculation = round(((1.0) - ((((power_of_the_dog_2 + power_of_the_dog_3)/dealer))*cakal))*1.13,3)
-                        LAP_CHART[i][-1] += uniform(the_calculation-(round(0.125 - F,3)),the_calculation+(F))
-
-            # Real-time Racing | Overtakes and Defence Positions
             fls_, dls_ = list(TEMP_CLASSIFICATION['FL.']), []
             pilots = list(TEMP_CLASSIFICATION['DRIVERS'])
             deltas = list(TEMP_CLASSIFICATION['GAP'])
