@@ -7,7 +7,7 @@ import datetime
 import sys
 
 # Application Modes
-execution = 'simulation' # data or simulation for output/run mode.
+execution = 'data' # data or simulation for output/run mode.
 
 # Season (Current) Selection
 current = '1998'
@@ -105,30 +105,31 @@ aramco = Fuel('Aramco',+2.5,0.0450)
 # Index 10 for if fastest lap points eligible.
 # Index 11 contains fuel tank capacity.
 # Index 12 contains chassis efficiency.
+# Index 13-14-15 for regulation game changer coefficients [volume 2].
 
 def FIA(C): 
     if C == '1998':
-        return [1.18250*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0725]
+        return [1.18250*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0725,11.5,7.5,1]
     elif C == '2005':
-        return [1.09750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700]
+        return [1.09750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700,11.5,7.5,1]
     elif C == '2006':
-        return [1.11750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700]
+        return [1.11750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700,10,7,3]
     elif C == '2009':
-        return [1.16500*(spex),False,False,'DHL',pirelli,shell,605,2,5,3,False,115,0.0675]
+        return [1.16500*(spex),False,False,'DHL',pirelli,shell,605,2,5,3,False,115,0.0675,10,10,0]
     elif C == '2011':
-        return [1.15250*(spex),True,True,'DHL',pirelli,shell,640,2,5,3,False,110,0.0675]
+        return [1.15250*(spex),True,True,'DHL',pirelli,shell,640,2,5,3,False,110,0.0675,10,10,0]
     elif C == '2014':
-        return [1.15750*(spex),True,True,'DHL',pirelli,petronas,691,2,3,5,True,109,0.0650]
+        return [1.15750*(spex),True,True,'DHL',pirelli,petronas,691,2,3,5,True,109,0.0650,11,6,3]
     elif C == '2016':
-        return [1.07000*(spex),True,True,'DHL',pirelli,petronas,702,2,3,5,True,108,0.0650]
+        return [1.07000*(spex),True,True,'DHL',pirelli,petronas,702,2,3,5,True,108,0.0650,11,6,3]
     elif C == '2017':
-        return [1.01750*(spex),True,True,'DHL',pirelli,petronas,728,2,5,3,True,112,0.0650]
+        return [1.01750*(spex),True,True,'DHL',pirelli,petronas,728,2,5,3,True,112,0.0650,10,8,2]
     elif C == '2018':
-        return [0.99250*(spex),True,True,'DHL',pirelli,petronas,734,2,5,3,True,116,0.0650]
+        return [0.99250*(spex),True,True,'DHL',pirelli,petronas,734,2,5,3,True,116,0.0650,10,8,2]
     elif C == '2021':
-        return [0.99000*(spex),True,True,'DHL',pirelli,aramco,752,2,5,3,True,118,0.0625]
+        return [0.99000*(spex),True,True,'DHL',pirelli,aramco,752,2,5,3,True,118,0.0625,10,8,2]
     elif C == '2022':
-        return [1.00000*(spex),True,True,'DHL',pirelli,aramco,798,5,2,3,True,112,0.0625]
+        return [1.00000*(spex),True,True,'DHL',pirelli,aramco,798,5,2,3,True,112,0.0625,7,10,3]
 
 # Visual Plugins
 borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'
@@ -692,17 +693,17 @@ class Engine():
         self.durability = durability
 
 # Formula 1 Engines
-FERRARI_F = Engine('Ferrari',FIA(current)[5],92,86) # Ferrari
-FERRARI_0 = Engine('Ferrari',FIA(current)[5],92,86) # Benetton
-FERRARI_1 = Engine('Ferrari',FIA(current)[5],92,86) # Minardi
-MERCEDES_0 = Engine('Mercedes',FIA(current)[5],90,72) # McLaren
-HONDA_F = Engine('Honda',FIA(current)[5],84,86) # Honda
-RENAULT_0 = Engine('Renault',FIA(current)[5],84,76) # Williams
-RENAULT_1 = Engine('Renault',FIA(current)[5],84,76) # Lotus
-RENAULT_2 = Engine('Renault',FIA(current)[5],84,76) # Brabham
-TOYOTA_F = Engine('Toyota',FIA(current)[5],79,92) # Toyota
-TOYOTA_0 = Engine('Toyota',FIA(current)[5],79,92) # Sauber
-TOYOTA_1 = Engine('Toyota',FIA(current)[5],79,92) # Jaguar
+MERCEDES_0 = Engine('Mercedes',FIA(current)[5],92,72) # McLaren
+FERRARI_F = Engine('Ferrari',FIA(current)[5],89,86) # Ferrari
+FERRARI_0 = Engine('Ferrari',FIA(current)[5],89,86) # Benetton
+FERRARI_1 = Engine('Ferrari',FIA(current)[5],89,86) # Minardi
+HONDA_F = Engine('Honda',FIA(current)[5],84,84) # Honda
+RENAULT_0 = Engine('Renault',FIA(current)[5],82,76) # Williams
+RENAULT_1 = Engine('Renault',FIA(current)[5],82,76) # Lotus
+RENAULT_2 = Engine('Renault',FIA(current)[5],82,76) # Brabham
+TOYOTA_F = Engine('Toyota',FIA(current)[5],77,92) # Toyota
+TOYOTA_0 = Engine('Toyota',FIA(current)[5],77,92) # Sauber
+TOYOTA_1 = Engine('Toyota',FIA(current)[5],77,92) # Jaguar
 
 # Formula 2 Engines
 MECACHROME = Engine('Mecachrome',FIA(current)[5],86,76) # F2 Spec. Only
@@ -772,7 +773,7 @@ class Manufacturer():
         return choice(pitt)
 
     def rating(self):
-        return ((self.powertrain.power*20) + (self.downforce*25) + (self.drag*20) + (self.vortex*20) + (self.braking*15))/100
+        return ((self.powertrain.power*((13+FIA(current)[13]))) + (self.downforce*((15+FIA(current)[14]))) + (self.drag*((17+FIA(current)[15]))) + (self.vortex*20) + (self.braking*15))/100
     
     def performance(self,circuit_type):
         if circuit_type == 'Power Circuit':
