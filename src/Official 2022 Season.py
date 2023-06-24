@@ -7,7 +7,7 @@ import datetime
 import sys
 
 # Application Modes
-execution = 'simulation' # data or simulation for output/run mode.
+execution = 'data' # data or simulation for output/run mode.
 
 # Season (Current) Selection
 current = '2022'
@@ -16,7 +16,7 @@ current = '2022'
 GP = 'Sakhir'
 
 # Spec. Selection
-spec = 'Formula 1'
+spec = 'Formula 2'
 
 if spec == 'Formula 1':
     verbosity = True # True or False for further telemetry & data.
@@ -280,10 +280,13 @@ class Tire():
         
         # # # 3.0: DRIVER
         # # # 3.1: Car/Driver Chemistry
+        CAR_DRIVER_CHEMISTRY = 0
+        """
         if driver.style != driver.team.style:
             CAR_DRIVER_CHEMISTRY = 0
         else:
             CAR_DRIVER_CHEMISTRY = uniform(((driver.adaptability-48)/777),(driver.adaptability/777))*(-1.0)
+        """
 
         # # # 3.2: Circuit/Driver Chemistry
         if circuit.location in driver.favorite:
@@ -693,8 +696,8 @@ class Engine():
         self.durability = durability
 
 # Formula 1 Engines
-HONDA_0 = Engine('Red Bull Powertrains Honda',FIA(current)[5],93,77) # Red Bull
-HONDA_1 = Engine('Red Bull Powertrains Honda',FIA(current)[5],93,77) # AlphaTauri
+HONDA_0 = Engine('Honda',FIA(current)[5],93,77) # Red Bull
+HONDA_1 = Engine('Honda',FIA(current)[5],93,77) # AlphaTauri
 FERRARI_F = Engine('Ferrari',FIA(current)[5],91,72) # Ferrari
 FERRARI_0 = Engine('Ferrari',FIA(current)[5],91,72) # Haas
 FERRARI_1 = Engine('Ferrari',FIA(current)[5],91,72) # Alfa Romeo
@@ -709,9 +712,10 @@ MECACHROME = Engine('Mecachrome',FIA(current)[5],86,76)
 
 # Manufacturers
 class Manufacturer():
-    def __init__(self,title,crew,powertrain,chassis,FW,RW,base,sidepod,suspension,reliability,weight,style,development):
+    def __init__(self,title,crew,powertrain,chassis,FW,RW,base,sidepod,suspension,reliability,weight,development):
         self.title = title
         self.crew = crew
+        
         # Base Attributes
         self.powertrain = powertrain
         self.chassis = chassis
@@ -721,25 +725,55 @@ class Manufacturer():
         self.sidepod = sidepod
         self.suspension = suspension
         self.reliability = ((reliability*1.7) + (self.powertrain.durability*3.3))/5
+        
         # Calculated Attributes
         self.downforce = ((self.base*FIA(current)[7]) + (self.FW*FIA(current)[8]) + (self.RW*FIA(current)[9]))/10
         self.vortex = ((self.FW*5) + (self.sidepod*3) + (self.chassis*2))/10
         self.braking = ((self.FW*5) + (self.suspension*5))/10
+        
         # Extra Calculated Attribute 1
         self.drag = ((self.chassis*5) + (self.base*3) + (self.RW*2))/10
+        
         # Advanced Calculated Attributes
-        self.max_speed = ((self.powertrain.power*7.5) + (self.RW*2.5))/10
-        self.acceleration = ((self.powertrain.power*6.5) + (self.drag*3.5))/10
+        self.max_speed = round(((self.powertrain.power*10.0) + (self.RW*2.0) + (self.drag*3.0))/15,3)
+        self.acceleration = self.powertrain.power
+        
         # Extra Calculated Attribute 2
         self.drs_delta = ((self.powertrain.power*2.5) + (self.RW*7.5))/10
+        
         # Extra Attributes
         self.development = development
         self.weight = weight
-        self.style = style
-        # Tire Performance Analysis
-        thing = ((self.vortex + self.braking + (self.suspension*2) + self.RW) - (self.drag + self.downforce))
-        self.manufacturer_tyre_coeff = round(((thing)/1450),3)
+        
+        # Car Characteristics
+        self.downforced = self.vortex + self.downforce
+        self.powered = self.max_speed + self.rating()
 
+        if self.downforced > self.powered + 4:
+            self.V1 = 'Corners'
+        elif self.powered > self.downforced + 8:
+            self.V1 = 'Straights'
+        else:
+            self.V1 = None
+
+        if self.vortex >= self.downforce + 1.5:
+            self.V2 = 'Calm'
+        elif self.downforce >= self.vortex + 1.5:
+            self.V2 = 'Wild'
+        else:
+            self.V2 = 'Balanced'
+
+        if self.FW > self.RW + 6:
+            self.V3 = 'Weak Rear'
+        elif self.RW > self.FW + 6:
+            self.V3 = 'Weak Front'
+        else:
+            self.V3 = None
+
+        self.characteristic = [self.V1,self.V2,self.V3]
+
+        # Tire Performance Analysis
+        self.manufacturer_tyre_coeff = round(((((self.vortex + self.braking + (self.suspension*2) + self.RW) - (self.drag + self.downforce)))/1450),3)
         if self.manufacturer_tyre_coeff <= 0.120:
             self.manufacturer_tyre_coeff_print = 'Very Bad'
         elif 0.120 <= self.manufacturer_tyre_coeff <= 0.135:
@@ -793,29 +827,29 @@ class Manufacturer():
             return ((self.braking*5) + (self.downforce*2) + (self.vortex*1) + (self.drag*3))/11
 
 if spec == 'Formula 1':
-    mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team','Good',MERCEDES_F,91,89,84,89,79,89,106,+0.00,'Balanced',0.000)
-    redbull = Manufacturer('Oracle Red Bull Racing','Perfect',HONDA_0,89,89,92,94,92,92,86,+5.00,'Unbalanced',0.000)
-    ferrari = Manufacturer('Scuderia Ferrari','Average',FERRARI_F,96,96,89,91,94,79,79,+0.00,'Stiff Front',0.000)
-    mclaren = Manufacturer('McLaren F1 Team','Perfect',MERCEDES_2,79,84,79,84,84,84,106,+0.00,'Unbalanced',0.000)
-    alpine = Manufacturer('BWT Alpine F1 Team','Good',RENAULT_F,86,82,82,86,86,82,82,+0.00,'Stiff Front',0.000)
-    alphatauri = Manufacturer('Scuderia AlphaTauri','Good',HONDA_1,77,77,84,84,75,75,82,+0.00,'Balanced',0.000)
-    astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team','Average',MERCEDES_1,79,79,79,81,81,79,104,+0.00,'Unbalanced',0.000)
-    williams = Manufacturer('Williams Racing','Good',MERCEDES_0,77,77,77,77,84,88,104,+0.00,'Stiff Front',0.000)
-    alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen','Good',FERRARI_1,86,84,79,79,79,79,84,-5.00,'Unbalanced',0.000)
-    haas = Manufacturer('Haas F1 Team','Good',FERRARI_0,81,81,81,79,79,79,86,+0.00,'Balanced',0.000)
+    mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team','Good',MERCEDES_F,91,89,84,89,79,89,106,+0.00,0.000)
+    redbull = Manufacturer('Oracle Red Bull Racing','Perfect',HONDA_0,89,89,92,94,92,92,86,+5.00,0.000)
+    ferrari = Manufacturer('Scuderia Ferrari','Average',FERRARI_F,96,96,89,91,94,79,79,+0.00,0.000)
+    mclaren = Manufacturer('McLaren F1 Team','Perfect',MERCEDES_2,79,84,79,84,84,84,106,+0.00,0.000)
+    alpine = Manufacturer('BWT Alpine F1 Team','Good',RENAULT_F,86,82,82,86,86,82,82,+0.00,0.000)
+    alphatauri = Manufacturer('Scuderia AlphaTauri','Good',HONDA_1,77,77,84,84,75,75,82,+0.00,0.000)
+    astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team','Average',MERCEDES_1,79,79,79,81,81,79,104,+0.00,0.000)
+    williams = Manufacturer('Williams Racing','Good',MERCEDES_0,77,77,77,77,84,88,104,+0.00,0.000)
+    alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen','Good',FERRARI_1,86,84,79,79,79,79,84,-5.00,0.000)
+    haas = Manufacturer('Haas F1 Team','Good',FERRARI_0,81,81,81,79,79,79,86,+0.00,0.000)
     manufacturers = [mercedes,redbull,ferrari,mclaren,alpine,alphatauri,astonmartin,williams,alfaromeo,haas]
 elif spec == 'Formula 2':
-    prema = Manufacturer('Prema Racing','Good',MECACHROME,91,91,91,85,85,85,85,+0.00,None,0.000) # 4th best.
-    virtuosi = Manufacturer('Virtuosi Racing','Average',MECACHROME,91,91,91,79,79,79,79,+0.00,None,0.000) # 7th best.
-    carlin = Manufacturer('Carlin','Perfect',MECACHROME,91,91,91,89,89,89,89,+0.00,None,0.000) # 2nd best.
-    hitech = Manufacturer('Hitech Grand Prix','Average',MECACHROME,91,91,91,83,83,83,83,+0.00,None,0.000) # 5th best.
-    art = Manufacturer('ART Grand Prix','Perfect',MECACHROME,91,91,91,87,87,87,87,+0.00,None,0.000) # 3rd best.
-    mp = Manufacturer('MP Motorsport','Good',MECACHROME,91,91,91,91,91,91,91,+0.00,None,0.000) # best.
-    campos = Manufacturer('Campos Racing','Average',MECACHROME,91,91,91,79,79,79,79,+0.00,None,0.000) # 11th best.
-    dams = Manufacturer('DAMS','Good',MECACHROME,91,91,91,81,81,81,81,+0.00,None,0.000) # 6th best.
-    trident = Manufacturer('Trident','Average',MECACHROME,91,91,91,79,79,79,79,+0.00,None,0.000) # 9th best.
-    charouz = Manufacturer('Charouz Racing System','Bad',MECACHROME,91,91,91,79,79,79,79,+0.00,None,0.000) # 8th best.
-    van = Manufacturer('Van Amersfoot Racing','Perfect',MECACHROME,91,91,91,79,79,79,79,+0.00,None,0.000) # 10th best.
+    prema = Manufacturer('Prema Racing','Good',MECACHROME,91,91,91,85,85,85,85,+0.00,0.000) # 4th best.
+    virtuosi = Manufacturer('Virtuosi Racing','Average',MECACHROME,91,91,91,79,79,79,79,+0.00,0.000) # 7th best.
+    carlin = Manufacturer('Carlin','Perfect',MECACHROME,91,91,91,89,89,89,89,+0.00,0.000) # 2nd best.
+    hitech = Manufacturer('Hitech Grand Prix','Average',MECACHROME,91,91,91,83,83,83,83,+0.00,0.000) # 5th best.
+    art = Manufacturer('ART Grand Prix','Perfect',MECACHROME,91,91,91,87,87,87,87,+0.00,0.000) # 3rd best.
+    mp = Manufacturer('MP Motorsport','Good',MECACHROME,91,91,91,91,91,91,91,+0.00,0.000) # best.
+    campos = Manufacturer('Campos Racing','Average',MECACHROME,91,91,91,79,79,79,79,+0.00,0.000) # 11th best.
+    dams = Manufacturer('DAMS','Good',MECACHROME,91,91,91,81,81,81,81,+0.00,0.000) # 6th best.
+    trident = Manufacturer('Trident','Average',MECACHROME,91,91,91,79,79,79,79,+0.00,0.000) # 9th best.
+    charouz = Manufacturer('Charouz Racing System','Bad',MECACHROME,91,91,91,79,79,79,79,+0.00,0.000) # 8th best.
+    van = Manufacturer('Van Amersfoot Racing','Perfect',MECACHROME,91,91,91,79,79,79,79,+0.00,0.000) # 10th best.
     manufacturers = [prema,virtuosi,carlin,hitech,art,mp,campos,dams,trident,charouz,van]
 
 # Drivers
@@ -837,7 +871,7 @@ class Driver():
         self.start = start
         self.wet = wet
         self.form = uniform(((((fitness*3.5) + (consistency*1.5))/5000)) - 0.025, ((((fitness*3.5) + (consistency*1.5))/5000)) + 0.025)
-        self.favorite= favorite
+        self.favorite = favorite
         self.style = style
     
     def real_qualifying_pace(self):
@@ -862,62 +896,62 @@ class Driver():
             return 0
         
 if spec == 'Formula 1':
-    VER = Driver(redbull,'Max Verstappen','NET',1,90,93,92,95,93,95,95,95,87,86,94,['México City','Zandvoort','Spielberg','Imola','Spa-Francorchamps'],'Unbalanced') # 92.187 > 92
-    LEC = Driver(ferrari,'Charles Leclerc','MNK',16,93,94,89,92,92,88,88,86,86,90,86,['Monte-Carlo','Spa-Francorchamps','Monza','Sakhir','Spielberg'],'Balanced') # 90.989 > 91
-    HAM = Driver(mercedes,'Lewis Hamilton','GBR',44,89,89,91,92,91,93,91,92,91,93,92,['Silverstone','Barcelona','Budapest','São Paulo','Montréal','Yas Island'],'Balanced') # 90.97 > 91
-    VET = Driver(astonmartin,'Sebastian Vettel','GER',5,89,91,90,94,88,89,92,94,93,91,93,['Monte-Carlo','Singapore','India','Suzuka','Sepang','Valencia','Montréal'],'Stiff Rear') # 90.457 > 90
-    ALO = Driver(alpine,'Fernando Alonso','ESP',14,87,89,92,93,90,95,86,93,94,94,91,['Budapest','Silverstone','Monza','Barcelona','Valencia','Singapore'],'Stiff Front') # 90.272 > 90
-    PER = Driver(redbull,'Sergio Pérez','MEX',11,86,90,94,91,87,92,85,91,95,92,90,['Baku','Jeddah','Monte-Carlo'],'Balanced') # 89.16 > 89
-    NOR = Driver(mclaren,'Lando Norris','GBR',4,92,91,87,92,85,94,83,87,87,86,87,['Sochi','Spielberg','Imola'],None) # 88.586 > 89
-    RUS = Driver(mercedes,'George Russell','GBR',63,91,92,87,90,86,94,90,86,86,87,86,['São Paulo','Budapest','Barcelona'],None) # 88.561 > 89
-    SAI = Driver(ferrari,'Carlos Sainz Jr.','ESP',55,87,88,85,89,90,91,84,89,88,85,88,['Monte-Carlo','Silverstone'],'Balanced') # 88.122 > 88
-    BOT = Driver(alfaromeo,'Valtteri Bottas','FIN',77,89,88,87,89,89,84,80,85,92,89,84,['Sochi','Spielberg','Silverstone'],'Stiff Rear') # 87.192 > 87
-    OCO = Driver(alpine,'Esteban Ocon','FRA',31,85,88,87,88,86,91,94,90,90,88,87,['Budapest'],None) # 87.387 > 87
-    STR = Driver(astonmartin,'Lance Stroll','CAN',18,83,83,85,88,86,90,93,88,89,85,89,['Baku'],None) # 86.478 > 86
-    GAS = Driver(alphatauri,'Pierre Gasly','FRA',10,86,86,85,86,85,85,81,84,81,87,85,['Monza'],None) # 85.414 > 85
-    MAG = Driver(haas,'Kevin Magnussen','DEN',20,81,85,85,87,83,86,90,86,85,84,84,['São Paulo'],None) # 84.376 > 84
-    RIC = Driver(mclaren,'Daniel Ricciardo','AUS',3,79,84,84,84,80,80,89,91,85,87,84,['Monte-Carlo','Baku','Singapore','Shanghai','Budapest'],'Stiff Rear') # 83.183 > 83
-    ALB = Driver(williams,'Alex Albon','THI',23,82,82,88,85,84,87,81,82,80,84,81,['Sakhir'],'Stiff Front') # 82.872 > 83
-    TSU = Driver(alphatauri,'Yuki Tsunoda','JPN',22,87,81,81,85,80,84,87,84,83,87,80,['Sakhir'],'Balanced') # 82.866 > 83
-    PIA = Driver(alpine,'Oscar Piastri','AUS',None,87,82,82,81,82,86,80,80,80,81,82,[None],None) # 82.488 > 83
-    MSC = Driver(haas,'Mick Schumacher','GER',47,80,80,82,82,79,81,85,88,84,83,83,['Spielberg'],'Balanced') # 81.676 > 82
-    DEV = Driver(mercedes,'Nyck de Vries','NET',None,81,81,83,85,79,82,82,82,82,83,83,[None],None) # 81.638 > 82
-    RAI = Driver(None,'Kimi Raikkonen','FIN',None,76,91,81,96,71,71,81,89,81,81,81,['Spa-Francorchamps','Melbourne','Suzuka','São Paulo','Budapest'],'Stiff Front') # 80.859 > # 81
-    HUL = Driver(astonmartin,'Nico Hulkenberg','GER',None,84,84,80,80,77,81,79,79,79,82,77,[None],None) # 80.116 > # 80
-    GIO = Driver(ferrari,'Antonio Giovinazzi','ITA',None,81,78,77,83,81,83,77,83,77,80,77,[None],None) # 79.685 > # 80
-    ZHO = Driver(alfaromeo,'Zhou Guanyu','CHN',24,77,77,79,79,79,79,74,77,77,79,79,[None],None) # 77.959 > # 78
-    VAN = Driver(mclaren,'Stoffel Vandoorne','BEL',None,77,77,77,77,77,77,76,77,77,77,78,[None],None) # 77.105 > # 77
-    MAZ = Driver(None,'Nikita Mazepin','RUS',None,76,76,72,76,76,76,95,76,76,76,76,[None],None) # 76.853 > 77
-    LAT = Driver(williams,'Nicholas Latifi','CAN',6,74,74,74,74,74,74,88,74,74,74,74,[None],None) # 75.684 > 76
-    KUB = Driver(alfaromeo,'Robert Kubica','POL',None,73,73,73,73,73,73,73,73,73,73,73,[None],None) # 74.00 > 74
-    BUE = Driver(redbull,'Sébastien Buemi','SUI',None,72,72,95,72,72,72,72,72,72,72,72,[None],None) # 73.811 > 74
-    AIT = Driver(williams,'Jack Aitken','GBR',None,70,70,70,70,70,70,70,70,70,70,70,[None],None) # 70.00 > 70
-    FIT = Driver(haas,'Pietro Fittipaldi','BRA',None,69,69,69,69,69,69,69,69,69,69,69,[None],None) # 69.00 > 69
+    VER = Driver(redbull,'Max Verstappen','NET',1,90,93,92,95,93,95,95,95,87,86,94,['México City','Zandvoort','Spielberg','Imola','Spa-Francorchamps'],[None,None,None]) # 92.187 > 92
+    LEC = Driver(ferrari,'Charles Leclerc','MNK',16,93,94,89,92,92,88,88,86,86,90,86,['Monte-Carlo','Spa-Francorchamps','Monza','Sakhir','Spielberg'],[None,None,None]) # 90.989 > 91
+    HAM = Driver(mercedes,'Lewis Hamilton','GBR',44,89,89,91,92,91,93,91,92,91,93,92,['Silverstone','Barcelona','Budapest','São Paulo','Montréal','Yas Island'],[None,None,None]) # 90.97 > 91
+    VET = Driver(astonmartin,'Sebastian Vettel','GER',5,89,91,90,94,88,89,92,94,93,91,93,['Monte-Carlo','Singapore','India','Suzuka','Sepang','Valencia','Montréal'],[None,None,None]) # 90.457 > 90
+    ALO = Driver(alpine,'Fernando Alonso','ESP',14,87,89,92,93,90,95,86,93,94,94,91,['Budapest','Silverstone','Monza','Barcelona','Valencia','Singapore'],[None,None,None]) # 90.272 > 90
+    PER = Driver(redbull,'Sergio Pérez','MEX',11,86,90,94,91,87,92,85,91,95,92,90,['Baku','Jeddah','Monte-Carlo'],[None,None,None]) # 89.16 > 89
+    NOR = Driver(mclaren,'Lando Norris','GBR',4,92,91,87,92,85,94,83,87,87,86,87,['Sochi','Spielberg','Imola'],[None,None,None]) # 88.586 > 89
+    RUS = Driver(mercedes,'George Russell','GBR',63,91,92,87,90,86,94,90,86,86,87,86,['São Paulo','Budapest','Barcelona'],[None,None,None]) # 88.561 > 89
+    SAI = Driver(ferrari,'Carlos Sainz Jr.','ESP',55,87,88,85,89,90,91,84,89,88,85,88,['Monte-Carlo','Silverstone'],[None,None,None]) # 88.122 > 88
+    BOT = Driver(alfaromeo,'Valtteri Bottas','FIN',77,89,88,87,89,89,84,80,85,92,89,84,['Sochi','Spielberg','Silverstone'],[None,None,None]) # 87.192 > 87
+    OCO = Driver(alpine,'Esteban Ocon','FRA',31,85,88,87,88,86,91,94,90,90,88,87,['Budapest'],[None,None,None]) # 87.387 > 87
+    STR = Driver(astonmartin,'Lance Stroll','CAN',18,83,83,85,88,86,90,93,88,89,85,89,['Baku'],[None,None,None]) # 86.478 > 86
+    GAS = Driver(alphatauri,'Pierre Gasly','FRA',10,86,86,85,86,85,85,81,84,81,87,85,['Monza'],[None,None,None]) # 85.414 > 85
+    MAG = Driver(haas,'Kevin Magnussen','DEN',20,81,85,85,87,83,86,90,86,85,84,84,['São Paulo'],[None,None,None]) # 84.376 > 84
+    RIC = Driver(mclaren,'Daniel Ricciardo','AUS',3,79,84,84,84,80,80,89,91,85,87,84,['Monte-Carlo','Baku','Singapore','Shanghai','Budapest'],[None,None,None]) # 83.183 > 83
+    ALB = Driver(williams,'Alex Albon','THI',23,82,82,88,85,84,87,81,82,80,84,81,['Sakhir'],[None,None,None]) # 82.872 > 83
+    TSU = Driver(alphatauri,'Yuki Tsunoda','JPN',22,87,81,81,85,80,84,87,84,83,87,80,['Sakhir'],[None,None,None]) # 82.866 > 83
+    PIA = Driver(alpine,'Oscar Piastri','AUS',None,87,82,82,81,82,86,80,80,80,81,82,[None],[None,None,None]) # 82.488 > 83
+    MSC = Driver(haas,'Mick Schumacher','GER',47,80,80,82,82,79,81,85,88,84,83,83,['Spielberg'],[None,None,None]) # 81.676 > 82
+    DEV = Driver(mercedes,'Nyck de Vries','NET',None,81,81,83,85,79,82,82,82,82,83,83,[None],[None,None,None]) # 81.638 > 82
+    RAI = Driver(None,'Kimi Raikkonen','FIN',None,76,91,81,96,71,71,81,89,81,81,81,['Spa-Francorchamps','Melbourne','Suzuka','São Paulo','Budapest'],[None,None,None]) # 80.859 > # 81
+    HUL = Driver(astonmartin,'Nico Hulkenberg','GER',None,84,84,80,80,77,81,79,79,79,82,77,[None],[None,None,None]) # 80.116 > # 80
+    GIO = Driver(ferrari,'Antonio Giovinazzi','ITA',None,81,78,77,83,81,83,77,83,77,80,77,[None],[None,None,None]) # 79.685 > # 80
+    ZHO = Driver(alfaromeo,'Zhou Guanyu','CHN',24,77,77,79,79,79,79,74,77,77,79,79,[None],[None,None,None]) # 77.959 > # 78
+    VAN = Driver(mclaren,'Stoffel Vandoorne','BEL',None,77,77,77,77,77,77,76,77,77,77,78,[None],[None,None,None]) # 77.105 > # 77
+    MAZ = Driver(None,'Nikita Mazepin','RUS',None,76,76,72,76,76,76,95,76,76,76,76,[None],[None,None,None]) # 76.853 > 77
+    LAT = Driver(williams,'Nicholas Latifi','CAN',6,74,74,74,74,74,74,88,74,74,74,74,[None],[None,None,None]) # 75.684 > 76
+    KUB = Driver(alfaromeo,'Robert Kubica','POL',None,73,73,73,73,73,73,73,73,73,73,73,[None],[None,None,None]) # 74.00 > 74
+    BUE = Driver(redbull,'Sébastien Buemi','SUI',None,72,72,95,72,72,72,72,72,72,72,72,[None],[None,None,None]) # 73.811 > 74
+    AIT = Driver(williams,'Jack Aitken','GBR',None,70,70,70,70,70,70,70,70,70,70,70,[None],[None,None,None]) # 70.00 > 70
+    FIT = Driver(haas,'Pietro Fittipaldi','BRA',None,69,69,69,69,69,69,69,69,69,69,69,[None],[None,None,None]) # 69.00 > 69
     drivers = [VER,LEC,HAM,VET,ALO,PER,NOR,RUS,SAI,BOT,OCO,STR,GAS,MAG,RIC,ALB,TSU,MSC,ZHO,LAT]
 
 elif spec == 'Formula 2':
-    LAW = Driver(carlin,'Liam Lawson','NZL',None,82,82,82,82,80,82,82,82,82,82,82,[None],None) # 81.546 > 82
-    DOO = Driver(virtuosi,'Jack Doohan','AUS',None,84,84,79,79,79,76,80,80,80,80,80,[None],None) # 81.340 > # 81
-    IWA = Driver(dams,'Ayumu Iwasa','JPN',None,82,82,80,80,77,77,77,77,77,77,77,[None],None) # 80.090 > # 80
-    DRU = Driver(mp,'Felipe Drugovich','BRA',None,78,79,78,78,78,78,78,78,78,78,78,[None],None) # 78.142 > # 78
-    POU = Driver(art,'Théo Pourchaire','FRA',None,82,74,80,80,80,80,80,80,80,80,70,[None],None) # 77.854 > # 78
-    VER = Driver(trident,'Richard Verschoor','NET',None,79,76,76,76,79,79,79,79,79,79,79,[None],None) # 77.704 > # 78
-    VES = Driver(art,'Frederik Vesti','DEN',None,77,76,79,79,79,79,79,79,79,79,77,[None],None) # 77.682 > # 78
-    SAR = Driver(carlin,'Logan Sargeant','USA',None,79,74,80,80,80,80,80,81,80,80,70,[None],None) # 77.481 > # 77
-    HAU = Driver(prema,'Dennis Hauger','DEN',None,76,76,79,79,79,79,79,79,77,77,76,[None],None) # 77.431 > # 77
-    DAR = Driver(prema,'Jehan Daruvala','IND',None,76,76,79,79,79,79,79,79,77,77,76,[None],None) # 77.431 > # 77
-    BOS = Driver(campos,'Ralph Boschung','SUI',None,76,76,76,76,76,76,76,76,76,76,76,[None],None) # 76.000 > # 76
-    COR = Driver(van,'Amaury Cordeel','BEL',None,76,76,76,76,76,76,76,76,76,76,76,[None],None) # 76.000 > # 76
-    FIT = Driver(charouz,'Enzo Fittipaldi','BRA',None,72,72,74,74,76,76,76,76,76,76,70,[None],None) # 73.591 > # 74
-    VIP = Driver(hitech,'Jüri Vips','EST',None,72,72,74,74,74,76,76,76,74,74,74,[None],None) # 73.136 > # 73
-    NIS = Driver(dams,'Roy Nissany','ISR',None,68,70,74,74,74,74,74,74,74,74,74,[None],None) # 71.410 > # 71
-    BEC = Driver(van,'David Beckmann','GER',None,68,70,74,74,74,74,74,74,74,74,74,[None],None) # 71.410 > # 71
-    ARM = Driver(hitech,'Marcus Armstrong','AUS',None,68,70,74,74,74,74,74,74,74,74,74,[None],None) # 71.410 > # 71
-    SAT = Driver(virtuosi,'Marino Sato','JPN',None,66,68,74,72,72,72,72,72,72,72,72,[None],None) # 69.546 > # 70
-    NOV = Driver(mp,'Clément Novalak','FRA',None,66,68,74,72,72,72,72,72,72,72,72,[None],None) # 69.546 > # 70
-    WIL = Driver(trident,'Calan Williams','AUS',None,70,70,74,64,64,72,84,66,66,66,66,[None],None) # 68.546 > # 69
-    CAL = Driver(campos,'Olli Caldwell','GBR',None,70,70,74,64,64,72,84,66,66,66,66,[None],None) # 68.546 > # 69
-    BOL = Driver(charouz,'Cem Bölükbaşı','TUR',None,62,68,72,72,72,72,80,86,66,86,66,[None],None) # 68.409 > # 68
+    LAW = Driver(carlin,'Liam Lawson','NZL',None,82,82,82,82,80,82,82,82,82,82,82,[None],[None,None,None]) # 81.546 > 82
+    DOO = Driver(virtuosi,'Jack Doohan','AUS',None,84,84,79,79,79,76,80,80,80,80,80,[None],[None,None,None]) # 81.340 > # 81
+    IWA = Driver(dams,'Ayumu Iwasa','JPN',None,82,82,80,80,77,77,77,77,77,77,77,[None],[None,None,None]) # 80.090 > # 80
+    DRU = Driver(mp,'Felipe Drugovich','BRA',None,78,79,78,78,78,78,78,78,78,78,78,[None],[None,None,None]) # 78.142 > # 78
+    POU = Driver(art,'Théo Pourchaire','FRA',None,82,74,80,80,80,80,80,80,80,80,70,[None],[None,None,None]) # 77.854 > # 78
+    VER = Driver(trident,'Richard Verschoor','NET',None,79,76,76,76,79,79,79,79,79,79,79,[None],[None,None,None]) # 77.704 > # 78
+    VES = Driver(art,'Frederik Vesti','DEN',None,77,76,79,79,79,79,79,79,79,79,77,[None],[None,None,None]) # 77.682 > # 78
+    SAR = Driver(carlin,'Logan Sargeant','USA',None,79,74,80,80,80,80,80,81,80,80,70,[None],[None,None,None]) # 77.481 > # 77
+    HAU = Driver(prema,'Dennis Hauger','DEN',None,76,76,79,79,79,79,79,79,77,77,76,[None],[None,None,None]) # 77.431 > # 77
+    DAR = Driver(prema,'Jehan Daruvala','IND',None,76,76,79,79,79,79,79,79,77,77,76,[None],[None,None,None]) # 77.431 > # 77
+    BOS = Driver(campos,'Ralph Boschung','SUI',None,76,76,76,76,76,76,76,76,76,76,76,[None],[None,None,None]) # 76.000 > # 76
+    COR = Driver(van,'Amaury Cordeel','BEL',None,76,76,76,76,76,76,76,76,76,76,76,[None],[None,None,None]) # 76.000 > # 76
+    FIT = Driver(charouz,'Enzo Fittipaldi','BRA',None,72,72,74,74,76,76,76,76,76,76,70,[None],[None,None,None]) # 73.591 > # 74
+    VIP = Driver(hitech,'Jüri Vips','EST',None,72,72,74,74,74,76,76,76,74,74,74,[None],[None,None,None]) # 73.136 > # 73
+    NIS = Driver(dams,'Roy Nissany','ISR',None,68,70,74,74,74,74,74,74,74,74,74,[None],[None,None,None]) # 71.410 > # 71
+    BEC = Driver(van,'David Beckmann','GER',None,68,70,74,74,74,74,74,74,74,74,74,[None],[None,None,None]) # 71.410 > # 71
+    ARM = Driver(hitech,'Marcus Armstrong','AUS',None,68,70,74,74,74,74,74,74,74,74,74,[None],[None,None,None]) # 71.410 > # 71
+    SAT = Driver(virtuosi,'Marino Sato','JPN',None,66,68,74,72,72,72,72,72,72,72,72,[None],[None,None,None]) # 69.546 > # 70
+    NOV = Driver(mp,'Clément Novalak','FRA',None,66,68,74,72,72,72,72,72,72,72,72,[None],[None,None,None]) # 69.546 > # 70
+    WIL = Driver(trident,'Calan Williams','AUS',None,70,70,74,64,64,72,84,66,66,66,66,[None],[None,None,None]) # 68.546 > # 69
+    CAL = Driver(campos,'Olli Caldwell','GBR',None,70,70,74,64,64,72,84,66,66,66,66,[None],[None,None,None]) # 68.546 > # 69
+    BOL = Driver(charouz,'Cem Bölükbaşı','TUR',None,62,68,72,72,72,72,80,86,66,86,66,[None],[None,None,None]) # 68.409 > # 68
     drivers = [LAW,DOO,IWA,DRU,POU,VER,VES,SAR,HAU,DAR,BOS,COR,FIT,VIP,NIS,BEC,ARM,SAT,NOV,WIL,CAL,BOL]
 
 # # # End of the Class Deifinition
@@ -2049,32 +2083,40 @@ if execution == 'simulation':
     print(borderline)
 
 elif execution == 'data':
-    borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'
-    
-    # # #
-
-    print(f"{borderline}\nManufacturers' Rating from Best to Worst:")
-    MF_N, MF_E, MF_P = [], [], []
+    print("Manufacturers' Rating from Best to Worst:")
+    MF_N, MF_E, MF_P, MF_D, MF_AS, MF_SLS, MF_C0, MF_C1, MF_C2 = [], [], [], [], [], [], [], [], []
     TP = []
     MF = pd.DataFrame()
     for i in manufacturers:
         MF_N.append(i.title)
         MF_E.append(i.powertrain.brand)
         MF_P.append(i.rating())
+        MF_D.append(i.downforce)
+        MF_AS.append(i.vortex)
+        MF_SLS.append(i.max_speed)
+        MF_C0.append(i.characteristic[0])
+        MF_C1.append(i.characteristic[1])
+        MF_C2.append(i.characteristic[2])
         TP.append(i.manufacturer_tyre_coeff_print)
     MF['Manufacturer'] = MF_N
     MF['Engine'] = MF_E
-    MF['Overall'] = MF_P
-    MF['Tire Performance Quality'] = TP
-    MF = MF.sort_values('Overall',ascending=False)
+    MF['Rating'] = MF_P
+    MF['Downforce'] = MF_D
+    MF['Airflow Sensivity'] = MF_AS
+    MF['Straight Line Speed'] = MF_SLS
+    MF['Attitude'] = MF_C1
+    MF['Favourite'] = MF_C0
+    MF['Flaw'] = MF_C2
+    MF['Tire Performance Rating'] = TP
+    MF = MF.sort_values('Rating',ascending=False)
     MF = MF.reset_index()
     MF = MF.drop(axis=1, columns=['index'])
     print(MF)
 
     # # #
 
-    print(f"{borderline}\nDrivers' Rating from Best to Worst:")
-    D_N, D_T, D_Q, D_R, D_O = [],[],[],[],[]
+    print(f"\nDrivers' Rating from Best to Worst:")
+    D_N, D_T, D_Q, D_R, D_O, D_S, D_FF, D_FW = [],[],[],[],[],[],[],[]
     DR = pd.DataFrame()
     for i in drivers:
         D_N.append(i.name)
@@ -2082,16 +2124,21 @@ elif execution == 'data':
         D_Q.append(i.real_qualifying_pace())
         D_R.append(i.real_race_pace())
         D_O.append(i.real_rating())
+        D_S.append(i.style[0])
+        D_FF.append(i.style[1])
+        D_FW.append(i.style[2])
     DR['Driver'] = D_N
     DR['Team'] = D_T
     DR['Overall'] = D_O
     DR['Quali Pace'] = D_Q
     DR['Race Pace'] = D_R
+    DR['Attitude'] = D_S
+    DR['Favourite'] = D_FF
+    DR['Strength'] = D_FW
     DR = DR.sort_values('Overall',ascending=False)
     DR = DR.reset_index()
     DR = DR.drop(axis=1, columns=['index'])
     print(DR)
-    print(f'{borderline}')
 
 # # # DIFFERENCES FROM REAL FORMULA ONE RACING
 # No red flag and no artificial safety car exist, only safety car.

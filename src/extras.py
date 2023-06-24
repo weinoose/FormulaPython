@@ -167,7 +167,7 @@ def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,bo
             WEIGHT = f'-{uniform(1.01,4.98)}'
         else:
             WEIGHT = f'Optimal Weight'
-    elif concept == 'Balanced' or 'Unbalanced':
+    elif concept == 'Balanced':
         FW = 45 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*2) + (aerodynamicst*4))/50))-5.5,((((designer*4) + (cto*2) + (aerodynamicst*4))/50))+5.5) + researches[0]
         RW = 45 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*2) + (aerodynamicst*4))/50))-5.5,((((designer*4) + (cto*2) + (aerodynamicst*4))/50))+5.5) + researches[1]
         CHASSIS = 45 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*4) + (aerodynamicst*2))/50))-5.5,((((designer*4) + (cto*4) + (aerodynamicst*2))/50))+5.5) + researches[2]
@@ -239,7 +239,7 @@ def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,bo
     elif regulation >= 2022:
         RELIABILITY += 7
     
-    return f"Manufacturer($,{CREW},$,{round(CHASSIS)},{round(FW)},{round(RW)},{round(BASE)},{round(SIDEPOD)},{round(SUSPENSION)},{round(RELIABILITY)},{WEIGHT},'{concept}')"
+    return f"Manufacturer($,{CREW},$,{round(CHASSIS)},{round(FW)},{round(RW)},{round(BASE)},{round(SIDEPOD)},{round(SUSPENSION)},{round(RELIABILITY)},{WEIGHT},{float(0.000)})"
 
 def driver(automated,status,quality,talent,style,like):
     if status != 'Rookie':
@@ -317,7 +317,7 @@ def driver(automated,status,quality,talent,style,like):
     wet = round(50 + P1 + (P2 + randint(-3,3)))
 
     if status != 'Rookie':
-        return f"Driver('$','$',None,None,{pace},{braking},{smoothness},{adaptability},{consistency},{fitness},{aggression},{attack},{defence},{start},{wet},[None],'{like}')"
+        return f"Driver('$','$',None,None,{pace},{braking},{smoothness},{adaptability},{consistency},{fitness},{aggression},{attack},{defence},{start},{wet},[None],[None,None,None])"
     else:
         return f"Quality: {quality}.\nDriver('$','$',None,None,{pace},{braking},{smoothness},{adaptability},{consistency},{fitness},{aggression},{attack},{defence},{start},{wet},[None],'{like}')"
 
