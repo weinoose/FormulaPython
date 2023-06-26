@@ -19,7 +19,7 @@ GP = 'Sakhir'
 spec = 'Formula 1'
 
 if spec == 'Formula 1':
-    verbosity = False # True or False for further telemetry & data.
+    verbosity = True # True or False for further telemetry & data.
 else:
     verbosity = False
 
