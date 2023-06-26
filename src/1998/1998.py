@@ -280,17 +280,37 @@ class Tire():
         
         # # # 3.0: DRIVER
         # # # 3.1: Car/Driver Chemistry
-        if driver.style != driver.team.style:
-            CAR_DRIVER_CHEMISTRY = 0
+        CAR_DRIVER_CHEMISTRY_LIST = []
+        if mode[0] == 'saturday':
+            EFFECT = (0.449) - (driver.adaptability/369)
         else:
-            CAR_DRIVER_CHEMISTRY = uniform(((driver.adaptability-48)/777),(driver.adaptability/777))*(-1.0)
+            EFFECT = (0.309) - (driver.adaptability/431)
+        
+        if driver.style[0] == None:
+            CAR_DRIVER_CHEMISTRY_LIST.append(0.000)
+        else:
+            if driver.style[0] == driver.team.characteristic[1]:
+                CAR_DRIVER_CHEMISTRY_LIST.append(EFFECT*(-1.0))
+            else:
+                CAR_DRIVER_CHEMISTRY_LIST.append(EFFECT)
+
+        if driver.style[1] == None:
+            CAR_DRIVER_CHEMISTRY_LIST.append(0.000)
+        else:
+            if driver.style[1] == driver.team.characteristic[2]:
+                CAR_DRIVER_CHEMISTRY_LIST.append(EFFECT*(-1.0))
+            else:
+                CAR_DRIVER_CHEMISTRY_LIST.append(EFFECT)
+
+        CAR_DRIVER_CHEMISTRY = sum(CAR_DRIVER_CHEMISTRY_LIST)
 
         # # # 3.2: Circuit/Driver Chemistry
-        if circuit.location in driver.favorite:
+        if GP in driver.favorite:
             if mode[0] == 'sunday':
-                BEST = uniform((round(((driver.pace-48)/400),3)),(round((driver.pace/400),3)))
+                BEST = uniform((round(((driver.pace-48)/425),3)),(round((driver.pace/425),3)))*(-1.0)
             else:
-                BEST = uniform((round(((driver.pace-48)/425),3)),(round((driver.pace/425),3)))
+                BEST = uniform((round(((driver.pace-48)/400),3)),(round((driver.pace/400),3)))*(-1.0)
+                
         else:
             BEST = 0
 
@@ -343,21 +363,21 @@ class Tire():
             engine_mode = (0.600 + ((driver.team.powertrain.power)/100))*(-1.0) # Mode 3
             
             if self.title == 'Wet':
-                CL2 = ((((choice(WET)/100)**2)*4.00) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
+                CL2 = ((((choice(WET)/100)**2)*4.00) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) + (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
             elif self.title == 'Intermediate':
-                CL2 = ((((choice(WET)/100)**2)*3.50) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
+                CL2 = ((((choice(WET)/100)**2)*3.50) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) + (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
             else:
-                CL2 = ((((choice(SATURDAY)/100)**2)*3.25) + hotlap)*(-1.0) + (engine_mode + drs[1]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
+                CL2 = ((((choice(SATURDAY)/100)**2)*3.25) + hotlap)*(-1.0) + (engine_mode + drs[1]) + (ERROR) + (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
         
         elif mode[0] == 'sunday' or 'friday':         
             engine_mode = (((driver.team.powertrain.power)/175))*(-1.0) # Mode 2
             
             if self.title == 'Wet':
-                CL2 = ((((choice(WET)/100)**1.50)*4.00) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
+                CL2 = ((((choice(WET)/100)**1.50)*4.00) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) + (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
             elif self.title == 'Intermediate':
-                CL2 = ((((choice(WET)/100)**1.50)*3.50) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
+                CL2 = ((((choice(WET)/100)**1.50)*3.50) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) + (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
             else:
-                CL2 = ((((choice(SUNDAY)/100)**1.75)*3.25) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) - (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
+                CL2 = ((((choice(SUNDAY)/100)**1.75)*3.25) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) + (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
         
         # # # 4.0: FIVE LIGHTS REACTION
         REACTION = (uniform((((driver.start-15)**2))/10000,(((driver.start+5)**2))/10000) - 0.3)
@@ -603,9 +623,12 @@ baku = Circuit('Baku','Azerbaijan','Agility Circuit',51,FIA(current)[0]*62.25,ST
 # spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*62.25,STRATEGY('Spa-Francorchamps'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Easy',[18,26,35],24) # 1995-2003 layout.
 # spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*66.50,STRATEGY('Spa-Francorchamps'),[m,s    ,s,s,m,m,h]],2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Easy',[18,26,35],24) # 2004-2006 layout.
 spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*65.25,STRATEGY('Spa-Francorchamps'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Easy',[18,26,35],24) # 2007-present layout.
+le = Circuit('Le Castellet','France','Power Circuit',53,FIA(current)[0]*52.25,STRATEGY('Le Castellet'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Easy',[16,23,31],21) # 2005-present layout.
 # sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*17.75,STRATEGY('Sakhir'),3,['Dry'],'Easy',[16,23,29],20) # 2020 extra outer layout.
 # sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*71.25,STRATEGY('Sakhir'),3,['Dry'],'Easy',[16,23,29],20) # 2010 layout.
 sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*51.75,STRATEGY('Sakhir'),3,['Dry'],'Easy',[16,23,29],20) # 2004-2009 & 2011-present layout.
+austin = Circuit('Austin','United States','Power Circuit',56,FIA(current)[0]*55.75,STRATEGY('Austin'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Very Easy',[19,28,37],26) # 2012-present layout.
+mexico = Circuit('México City','México','Power Circuit',71,FIA(current)[0]*38.25,STRATEGY('México City'),3,['Dry'],'Easy',[28,43,57],42) # 2015-present layout.
 
 # QUICKNESS CIRCUITS
 # silverstone = Circuit('Silverstone','Great Britain','Quickness Circuit',52,FIA(current)[0]*42.25,STRATEGY('Silverstone'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Easy',[14,21,27],18) # 1997-2009 layout.
@@ -614,13 +637,6 @@ sepang = Circuit('Sepang','Malaysia','Quickness Circuit',56,FIA(current)[0]*54.7
 shanghai = Circuit('Shanghai','China','Quickness Circuit',56,FIA(current)[0]*54.75,STRATEGY('Shanghai'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Easy',[18,26,35],24) # 2004-present layout.
 yeongam = Circuit('Yeongam','South Korea','Quickness Circuit',55,FIA(current)[0]*55.25,STRATEGY('Yeongam'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Easy',[20,30,40],28) # 2010-present layout.
 india = Circuit('India','India','Quickness Circuit',60,FIA(current)[0]*45.25,STRATEGY('India'),3,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Easy',[16,23,29],20) # 2011-present layout.
-
-# STRENGTH CIRCUITS
-le = Circuit('Le Castellet','France','Strength Circuit',53,FIA(current)[0]*52.25,STRATEGY('Le Castellet'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Easy',[16,23,31],21) # 2005-present layout.
-mexico = Circuit('México City','México','Strength Circuit',71,FIA(current)[0]*38.75,STRATEGY('México City'),3,['Dry'],'Easy',[28,43,57],42) # 2015-present layout.
-valencia = Circuit('Valencia','Spain','Strength Circuit',57,FIA(current)[0]*56.25,STRATEGY('Valencia'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Hard',[16,23,29],20) # 2008-present layout.
-austin = Circuit('Austin','United States','Strength Circuit',56,FIA(current)[0]*55.75,STRATEGY('Austin'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Very Easy',[19,28,37],26) # 2012-present layout.
-lusail = Circuit('Lusail','Qatar','Strength Circuit',57,FIA(current)[0]*43.25,STRATEGY('Lusail'),1,['Dry'],'Easy',[25,37,50],36) # 2004-present layout.
 
 # COMPLETENESS CIRCUITS
 # hockenheim = Circuit('Hockenheim','Germany','Completeness Circuit',67,FIA(current)[0]*56.75,STRATEGY('Hockenheim'),2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Average',[18,26,35],24) # 1994-2001 layout.
@@ -634,22 +650,23 @@ spielberg = Circuit('Spielberg','Austuria','Completeness Circuit',71,FIA(current
 portimao = Circuit('Portimão','Portugal','Completeness Circuit',66,FIA(current)[0]*40.75,STRATEGY('Portimão'),1,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Average',[28,43,57],42) # 2008-present layout.
 jeddah = Circuit('Jeddah','Saudi Arabia','Completeness Circuit',50,FIA(current)[0]*49.25,STRATEGY('Jeddah'),3,['Dry'],'Average',[13,19,24],16) # 2021-present layout.
 
-# DOWNFORCE CIRCUITS
-nurburg = Circuit('Nurburg','Germany','Downforce Circuit',60,FIA(current)[0]*50.25,STRATEGY('Nurburg'),1,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Average',[20,30,40],28) # 2002-present layout.
-kyalami = Circuit('Kyalami','South Africa','Downforce Circuit',71,FIA(current)[0]*35.75,STRATEGY('kyalami'),2,['Dry'],'Average',[20,30,40],28) # 2015-present layout.
-# sao = Circuit('São Paulo','Brazil','Downforce Circuit',71,FIA(current)[0]*31.25,STRATEGY('São Paulo'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Average',[28,43,57],42) # 1996-1998 layout.
-sao = Circuit('São Paulo','Brazil','Downforce Circuit',71,FIA(current)[0]*30.75,STRATEGY('São Paulo'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Average',[28,43,57],42) # 1999-present layout.
-# montreal = Circuit('Montréal','Canada','Downforce Circuit',70,FIA(current)[0]*35.75,STRATEGY('Montréal'),3,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Hard',[20,30,40],28) # 1996-2001 layout.
-montreal = Circuit('Montréal','Canada','Downforce Circuit',70,FIA(current)[0]*33.75,STRATEGY('Montréal'),3,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Hard',[20,30,40],28) # 2002-present layout.
-imola = Circuit('Imola','Italy','Downforce Circuit',63,FIA(current)[0]*36.25,STRATEGY('Imola'),1,['Dry','Dry','Dry','Dry','Dump','Dump','Dump'],'Hard',[25,37,50],36) # 2008-present layout.
-suzuka = Circuit('Suzuka','Japan','Downforce Circuit',53,FIA(current)[0]*50.75,STRATEGY('Suzuka'),1,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Hard',[16,23,31],21) # 2009-present layout.
-istanbul = Circuit('Istanbul','Turkey','Downforce Circuit',58,FIA(current)[0]*45.50,STRATEGY('Istanbul'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Easy',[16,23,29],20) # 2005-present layout.
-miami = Circuit('Miami','United States','Downforce Circuit',57,FIA(current)[0]*49.75,STRATEGY('Miami'),3,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Easy',[19,28,37],26) # 2022-present layout.
-
 # ENGINEERING CIRCUITS
-zandvoort = Circuit('Zandvoort','Netherlands','Engineering Circuit',72,FIA(current)[0]*31.75,STRATEGY('Zandvoort'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump'],'Average',[13,19,24],16) # 2020-present layout.
-budapest = Circuit('Budapest','Hungary','Engineering Circuit',70,FIA(current)[0]*38.75,STRATEGY('Budapest'),1,['Dry','Dry','Dry','Dry','Dump','Dump','Dump'],'Very Hard',[20,30,40],28) # 2003-present layout.
-barcelona = Circuit('Barcelona','Spain','Engineering Circuit',66,FIA(current)[0]*40.25,STRATEGY('Barcelona'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump'],'Hard',[20,30,40],28) # 2007-present layout.
+nurburg = Circuit('Nurburg','Germany','Engineering Circuit',60,FIA(current)[0]*50.25,STRATEGY('Nurburg'),1,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Average',[20,30,40],28) # 2002-present layout.
+kyalami = Circuit('Kyalami','South Africa','Engineering Circuit',71,FIA(current)[0]*35.75,STRATEGY('kyalami'),2,['Dry'],'Average',[20,30,40],28) # 2015-present layout.
+# sao = Circuit('São Paulo','Brazil','Engineering Circuit',71,FIA(current)[0]*31.25,STRATEGY('São Paulo'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Average',[28,43,57],42) # 1996-1998 layout.
+sao = Circuit('São Paulo','Brazil','Engineering Circuit',71,FIA(current)[0]*30.75,STRATEGY('São Paulo'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Average',[28,43,57],42) # 1999-present layout.
+# montreal = Circuit('Montréal','Canada','Engineering Circuit',70,FIA(current)[0]*35.75,STRATEGY('Montréal'),3,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Hard',[20,30,40],28) # 1996-2001 layout.
+montreal = Circuit('Montréal','Canada','Engineering Circuit',70,FIA(current)[0]*33.75,STRATEGY('Montréal'),3,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Hard',[20,30,40],28) # 2002-present layout.
+imola = Circuit('Imola','Italy','Engineering Circuit',63,FIA(current)[0]*36.25,STRATEGY('Imola'),1,['Dry','Dry','Dry','Dry','Dump','Dump','Dump'],'Hard',[25,37,50],36) # 2008-present layout.
+istanbul = Circuit('Istanbul','Turkey','Engineering Circuit',58,FIA(current)[0]*45.50,STRATEGY('Istanbul'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Easy',[16,23,29],20) # 2005-present layout.
+lusail = Circuit('Lusail','Qatar','Engineering Circuit',57,FIA(current)[0]*43.25,STRATEGY('Lusail'),1,['Dry'],'Easy',[25,37,50],36) # 2004-present layout.
+miami = Circuit('Miami','United States','Engineering Circuit',57,FIA(current)[0]*49.75,STRATEGY('Miami'),3,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Easy',[19,28,37],26) # 2022-present layout.
+
+# DOWNFORCE CIRCUITS
+zandvoort = Circuit('Zandvoort','Netherlands','Downforce Circuit',72,FIA(current)[0]*31.75,STRATEGY('Zandvoort'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump'],'Average',[13,19,24],16) # 2020-present layout.
+budapest = Circuit('Budapest','Hungary','Downforce Circuit',70,FIA(current)[0]*38.75,STRATEGY('Budapest'),1,['Dry','Dry','Dry','Dry','Dump','Dump','Dump'],'Very Hard',[20,30,40],28) # 2003-present layout.
+suzuka = Circuit('Suzuka','Japan','Downforce Circuit',53,FIA(current)[0]*50.75,STRATEGY('Suzuka'),1,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Hard',[16,23,31],21) # 2009-present layout.
+barcelona = Circuit('Barcelona','Spain','Downforce Circuit',66,FIA(current)[0]*40.25,STRATEGY('Barcelona'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump'],'Hard',[20,30,40],28) # 2007-present layout.
 
 # STREET CIRCUITS
 monaco = Circuit('Monte-Carlo','Monaco','Street Circuit',78,FIA(current)[0]*32.25,STRATEGY('Monte-Carlo'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Hard',[20,30,40],28) # 2003-present layout.
@@ -657,15 +674,15 @@ monaco = Circuit('Monte-Carlo','Monaco','Street Circuit',78,FIA(current)[0]*32.2
 # singapore = Circuit('Singapore','Singapore','Street Circuit',61,FIA(current)[0]*62.25,STRATEGY('Singapore'),3,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Hard',[16,23,29],20) # 2013-2014 layout.
 # singapore = Circuit('Singapore','Singapore','Street Circuit',61,FIA(current)[0]*63.75,STRATEGY('Singapore'),3,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Hard',[16,23,29],20) # 2015-2017 layout.
 singapore = Circuit('Singapore','Singapore','Street Circuit',61,FIA(current)[0]*59.75,STRATEGY('Singapore'),3,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Hard',[16,23,29],20) # 2018-present layout.
+valencia = Circuit('Valencia','Spain','Street Circuit',57,FIA(current)[0]*56.25,STRATEGY('Valencia'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Hard',[16,23,29],20) # 2008-present layout.
 
 circuits = [lms,monza,sochi,baku,
-            spa,sakhir,
+            spa,le,sakhir,austin,mexico,
             silverstone,sepang,shanghai,yeongam,india,
-            le,mexico,valencia,austin,lusail,
             hockenheim,fuji,melbourne,yas,spielberg,portimao,jeddah,
-            nurburg,kyalami,sao,montreal,imola,suzuka,istanbul,miami,
-            zandvoort,budapest,barcelona,
-            monaco,singapore]
+            nurburg,kyalami,sao,montreal,imola,istanbul,lusail,miami,
+            zandvoort,budapest,suzuka,barcelona,
+            monaco,singapore,valencia]
 
 # Error Handling for Circuit Variable
 vtt = 0
@@ -710,9 +727,10 @@ MECACHROME = Engine('Mecachrome',FIA(current)[5],86,76) # F2 Spec. Only
 
 # Manufacturers
 class Manufacturer():
-    def __init__(self,title,crew,powertrain,chassis,FW,RW,base,sidepod,suspension,reliability,weight,style,development):
+    def __init__(self,title,crew,powertrain,chassis,FW,RW,base,sidepod,suspension,reliability,weight):
         self.title = title
         self.crew = crew
+        
         # Base Attributes
         self.powertrain = powertrain
         self.chassis = chassis
@@ -722,25 +740,52 @@ class Manufacturer():
         self.sidepod = sidepod
         self.suspension = suspension
         self.reliability = ((reliability*1.7) + (self.powertrain.durability*3.3))/5
+        
         # Calculated Attributes
-        self.downforce = ((self.base*FIA(current)[7]) + (self.FW*FIA(current)[8]) + (self.RW*FIA(current)[9]))/10
+        self.downforce = (((self.base*FIA(current)[7]) + (self.FW*FIA(current)[8]) + (self.RW*FIA(current)[9]))/10)
+        self.drag = ((self.chassis*5) + (self.base*3) + (self.RW*2))/10
         self.vortex = ((self.FW*5) + (self.sidepod*3) + (self.chassis*2))/10
         self.braking = ((self.FW*5) + (self.suspension*5))/10
-        # Extra Calculated Attribute 1
-        self.drag = ((self.chassis*5) + (self.base*3) + (self.RW*2))/10
+        
         # Advanced Calculated Attributes
-        self.max_speed = ((self.powertrain.power*7.5) + (self.RW*2.5))/10
-        self.acceleration = ((self.powertrain.power*6.5) + (self.drag*3.5))/10
+        self.max_speed = round(((self.powertrain.power*10.0) + (self.RW*2.0) + (self.drag*3.0))/15,3)
+        self.acceleration = self.powertrain.power
+        
         # Extra Calculated Attribute 2
         self.drs_delta = ((self.powertrain.power*2.5) + (self.RW*7.5))/10
+        
         # Extra Attributes
-        self.development = development
         self.weight = weight
-        self.style = style
-        # Tire Performance Analysis
-        thing = ((self.vortex + self.braking + (self.suspension*2) + self.RW) - (self.drag + self.downforce))
-        self.manufacturer_tyre_coeff = round(((thing)/1450),3)
+        
+        # Car Characteristics
+        self.downforced = self.vortex + self.downforce
+        self.powered = self.max_speed + self.rating()
 
+        if self.downforced > self.powered + 4:
+            self.V1 = 'Corners'
+        elif self.powered > self.downforced + 8:
+            self.V1 = 'Straights'
+        else:
+            self.V1 = None
+
+        if self.vortex >= self.downforce + 1.5:
+            self.V2 = 'Calm'
+        elif self.downforce >= self.vortex + 1.5:
+            self.V2 = 'Wild'
+        else:
+            self.V2 = None
+
+        if self.FW > self.RW + 6:
+            self.V3 = 'Weak Rear'
+        elif self.RW > self.FW + 6:
+            self.V3 = 'Weak Front'
+        else:
+            self.V3 = None
+
+        self.characteristic = [self.V1,self.V2,self.V3]
+
+        # Tire Performance Analysis
+        self.manufacturer_tyre_coeff = round(((((self.vortex + self.braking + (self.suspension*2) + self.RW) - (self.drag + self.downforce)))/1450),3)
         if self.manufacturer_tyre_coeff <= 0.120:
             self.manufacturer_tyre_coeff_print = 'Very Bad'
         elif 0.120 <= self.manufacturer_tyre_coeff <= 0.135:
@@ -777,58 +822,77 @@ class Manufacturer():
     
     def performance(self,circuit_type):
         if circuit_type == 'Power Circuit':
-            return ((((self.max_speed+self.acceleration)/2)*5) + (self.downforce*3) + (self.vortex*2) + (self.braking*1))/11
+            if self.V1 == 'Straights':
+                return (((((self.max_speed+self.acceleration)/2)*5) + (self.downforce*3) + (self.vortex*2) + (self.braking*1))/11) + 0.298
+            elif self.V1 == 'Corners':
+                return (((((self.max_speed+self.acceleration)/2)*5) + (self.downforce*3) + (self.vortex*2) + (self.braking*1))/11) + 0.051
+            else:
+                return (((((self.max_speed+self.acceleration)/2)*5) + (self.downforce*3) + (self.vortex*2) + (self.braking*1))/11)
         elif circuit_type == 'Agility Circuit':
-            return ((self.max_speed*5) + (self.braking*3) + (self.vortex*2) + (self.downforce*1))/11
+            if self.V1 == 'Straights':
+                return ((self.max_speed*5) + (self.braking*3) + (self.vortex*2) + (self.downforce*1))/11 + 0.349
+            elif self.V1 == 'Corners':
+                return ((self.max_speed*5) + (self.braking*3) + (self.vortex*2) + (self.downforce*1))/11
+            else:
+                return ((self.max_speed*5) + (self.braking*3) + (self.vortex*2) + (self.downforce*1))/11
         elif circuit_type == 'Quickness Circuit':
-            return ((self.max_speed*5) + (self.downforce*3) + (self.vortex*2) + (self.braking*1))/11
-        elif circuit_type == 'Strength Circuit':
-            return ((self.drag*5) + (self.braking*3) + (self.downforce*2) + (self.vortex*1))/11
+            return ((self.max_speed*4) + (self.downforce*4) + (self.vortex*2) + (self.braking*1))/11
         elif circuit_type == 'Completeness Circuit':
             return ((self.downforce*5) + (self.max_speed*3) + (self.vortex*2) + (self.braking*1))/11
-        elif circuit_type == 'Downforce Circuit':
-            return ((self.downforce*5) + (self.acceleration*3) + (self.vortex*2) + (self.braking*1))/11
         elif circuit_type == 'Engineering Circuit':
-            return ((self.downforce*5) + (self.vortex*3) + (self.acceleration*2) + (self.braking*1))/11
+            if self.V1 == 'Straights':
+                return ((self.downforce*5) + (self.acceleration*3) + (self.vortex*2) + (self.braking*1))/11
+            elif self.V1 == 'Corners':
+                return ((self.downforce*5) + (self.acceleration*3) + (self.vortex*2) + (self.braking*1))/11 + 0.349
+            else:
+                return ((self.downforce*5) + (self.acceleration*3) + (self.vortex*2) + (self.braking*1))/11
+        elif circuit_type == 'Downforce Circuit':
+            if self.V1 == 'Straights':
+                return ((self.downforce*5) + (self.vortex*3) + (self.acceleration*2) + (self.braking*1))/11
+            elif self.V1 == 'Corners':
+                return ((self.downforce*5) + (self.vortex*3) + (self.acceleration*2) + (self.braking*1))/11 + 0.349
+            else:
+                return ((self.downforce*5) + (self.vortex*3) + (self.acceleration*2) + (self.braking*1))/11
         elif circuit_type == 'Street Circuit':
-            return ((self.braking*5) + (self.downforce*2) + (self.vortex*1) + (self.drag*3))/11
+            return ((self.downforce*4) + (self.braking*4) + (self.vortex*2) + (self.acceleration*1))/11
 
 if spec == 'Formula 1':
-    # Adrian Newey | 96 89 89 | Perfect Eng. | Low Rel. | 26M$ Car | 7.0M$ Pit
-    mclaren = Manufacturer('West McLaren-Mercedes','Good',MERCEDES_0,95,89,84,89,88,88,61,-4.51,'Balanced',0.000)
-    # Aldo Costa | 94 91 91 | Perfect Eng. | Balanced Rel. | 26M$ Car | 7.0M$ Pit
-    ferrari = Manufacturer('Scuderia Ferrari Vodafone','Good',FERRARI_F,91,92,86,93,88,93,70,-2.49,'Balanced',0.000)
-    # Paddy Lowe | 89 81 81 | Perfect Eng. | Low Rel. | 22M$ Car | 7.0M$ Pit
-    williams = Manufacturer('Rothmans Williams-Renault','Good',RENAULT_0,85,82,78,86,88,85,52,-1.94,'Unbalanced',0.000)
-    # James Allison | 94 86 84 | Good Eng. | Balanced Rel. | 22M$ Car | 7.0M$ Pit
-    benetton = Manufacturer('Winfield Benetton-Ferrari','Good',FERRARI_0,85,82,86,81,90,78,69,+3.86,'Balanced',0.000)
-    # Ray Durand | 76 76 76 | Good Eng. | Balanced Rel. | 26M$ Car | 5.0M$ Pit
-    honda = Manufacturer('Honda F1 Team','Perfect',HONDA_F,80,84,84,79,88,79,73,+1.04,'Balanced',0.000)
-    # Simone Resta | 82 74 72 | Good Eng. | Low Rel. | 22M$ Car | 7.0M$ Pit
-    sauber = Manufacturer('BWT Sauber-Toyota','Perfect',TOYOTA_0,85,83,83,80,77,79,57,+0.00,'Balanced',0.000)
-    # John Barnard | 91 91 91 | Good Eng. | High Rel. | 22M$ Car | 3.0M$ Pit
-    lotus = Manufacturer('Marlboro Team Lotus-Renault','Good',RENAULT_1,81,79,84,84,73,74,77,+0.00,'Balanced',0.000)
-    # Pat Symonds | 86 81 81 | Good Eng. | Balanced Rel. | 16M$ Car | 3.0M$ Pit
-    brabham = Manufacturer('Parmalat Brabham-Renault','Average',RENAULT_2,75,76,72,77,75,75,68,+0.00,'Balanced',0.000)
-    # Nick Flynn | 80 72 72 | Good Eng. | Balanced Rel. | 20M$ Car | 5.0M$ Pit
-    toyota = Manufacturer('Mild Seven Toyota Racing','Good',TOYOTA_F,77,81,74,72,81,76,65,+2.63,'Balanced',0.000)
-    # Raymond Coughlan | 80 76 76 | Average Eng. | Low Rel. | 16M$ Car | 3.0M$ Pit
-    jaguar = Manufacturer('Jaguar Racing Toyota','Good',TOYOTA_1,75,76,66,71,72,79,46,+3.09,'Balanced',0.000)
-    # Ignacio La Chazelle | 66 62 62  | Bad Eng. | Low Rel. | 12M$ Car | 3.0M$ Pit
-    minardi = Manufacturer('Minardi-Ferrari F1 Team','Average',FERRARI_1,65,62,65,56,64,60,58,-3.56,'Balanced',0.000)
+    # print(design('Perfect','Adrian Newey',96,89,89,'Balanced','Low Reliability',30.0,7.0,1998,[0,0,0,0,0,0]))
+    # print(design('Perfect','Aldo Costa',94,91,91,'Balanced','Balanced Reliability',30.0,7.0,1998,[0,0,0,0,0,0]))
+    # print(design('Perfect','Paddy Lowe',89,81,81,'Balanced','Low Reliability',25.0,7.0,1998,[0,0,0,0,0,0]))
+    # print(design('Good','Simone Resta',82,74,72,'Balanced','Low Reliability',27.5,5.0,1998,[0,0,0,0,0,0]))
+    # print(design('Good','Pat Symonds',86,81,81,'Balanced','Low Reliability',28.0,7.0,1998,[0,0,0,0,0,0]))
+    # print(design('Good','John Barnard',91,91,91,'Balanced','High Reliability',25.0,5.0,1998,[0,0,0,0,0,0]))
+    # print(design('Good','James Allison',84,84,79,'Balanced','High Reliability',20.0,5.0,1998,[0,0,0,0,0,0]))
+    # print(design('Good','Ray Durand',79,79,76,'Front Stiff','Low Reliability',18.0,5.0,1998,[0,0,0,0,0,0]))
+    # print(design('Good','Anthony Coughlan',80,76,76,'Front Stiff','High Reliability',20.0,5.0,1998,[0,0,0,0,0,0]))
+    # print(design('Average','Nick Flynn',80,72,72,'Balanced','Low Reliability',23.0,7.0,1998,[0,0,0,0,0,0]))
+    # print(design('Bad','Ignacio La Chazelle',66,62,62,'Rear Stiff','Low Reliability',18.0,3.0,1998,[0,0,0,0,0,0]))
+
+    mclaren = Manufacturer('West McLaren-Mercedes','Good',MERCEDES_0,95,89,84,89,88,88,61,-4.51)
+    ferrari = Manufacturer('Scuderia Ferrari Vodafone','Good',FERRARI_F,91,92,86,93,88,93,70,-2.49)
+    williams = Manufacturer('Rothmans Williams-Renault','Good',RENAULT_0,85,82,78,86,88,85,52,-1.94)
+    benetton = Manufacturer('Winfield Benetton-Ferrari','Good',FERRARI_0,85,82,86,81,90,78,69,+3.86)
+    honda = Manufacturer('Honda F1 Team','Perfect',HONDA_F,80,84,84,79,88,79,73,+1.04)
+    sauber = Manufacturer('BWT Sauber-Toyota','Perfect',TOYOTA_0,85,83,83,80,77,79,57,+0.00)
+    lotus = Manufacturer('Marlboro Team Lotus-Renault','Good',RENAULT_1,81,79,84,84,73,74,77,+0.00)
+    brabham = Manufacturer('Parmalat Brabham-Renault','Average',RENAULT_2,75,76,72,77,75,75,68,+0.00)
+    toyota = Manufacturer('Mild Seven Toyota Racing','Good',TOYOTA_F,77,81,74,72,81,76,65,+2.63)
+    jaguar = Manufacturer('Jaguar Racing Toyota','Good',TOYOTA_1,75,76,66,71,72,79,46,+3.09)
+    minardi = Manufacturer('Minardi-Ferrari F1 Team','Average',FERRARI_1,65,62,65,56,64,60,58,-3.56)
     manufacturers = [honda,jaguar,lotus,toyota,minardi,sauber,brabham,williams,ferrari,mclaren,benetton]
 elif spec == 'Formula 2':
-    carlin = Manufacturer('Carlin','Perfect',MECACHROME,91,91,91,91,91,91,91,+0.00,None)
-    manor = Manufacturer('Manor Racing','Good',MECACHROME,91,91,91,89,89,89,89,+0.00,None)
-    dams = Manufacturer('DAMS','Good',MECACHROME,91,91,91,87,87,87,87,+0.00,None)
-    art = Manufacturer('ART Grand Prix','Average',MECACHROME,91,91,91,85,85,85,85,+0.00,None)
-    trident = Manufacturer('Trident Racing','Good',MECACHROME,91,91,91,83,83,83,83,+0.00,None)
-    clark = Manufacturer('Clark Grand Prix Engineering','Good',MECACHROME,91,91,91,81,81,81,81,+0.00,None)
-    stewart = Manufacturer('Stewart Grand Prix','Average',MECACHROME,91,91,91,79,79,79,79,+0.00,None)
-    draco = Manufacturer('Draco Grand Prix Engineering','Average',MECACHROME,91,91,91,79,79,79,79,+0.00,None)
-    falcon = Manufacturer('Falcon Grand Prix','Average',MECACHROME,91,91,91,79,79,79,79,+0.00,None)
-    fortec = Manufacturer('Fortec Motorsport','Average',MECACHROME,91,91,91,79,79,79,79,+0.00,None)
-    sn = Manufacturer('Super Nova Racing','Average',MECACHROME,91,91,91,79,79,79,79,+0.00,None)
+    carlin = Manufacturer('Carlin','Perfect',MECACHROME,91,91,91,91,91,91,91,+0.00)
+    manor = Manufacturer('Manor Racing','Good',MECACHROME,91,91,91,89,89,89,89,+0.00)
+    dams = Manufacturer('DAMS','Good',MECACHROME,91,91,91,87,87,87,87,+0.00)
+    art = Manufacturer('ART Grand Prix','Average',MECACHROME,91,91,91,85,85,85,85,+0.00)
+    trident = Manufacturer('Trident Racing','Good',MECACHROME,91,91,91,83,83,83,83,+0.00)
+    clark = Manufacturer('Clark Grand Prix Engineering','Good',MECACHROME,91,91,91,81,81,81,81,+0.00)
+    stewart = Manufacturer('Stewart Grand Prix','Average',MECACHROME,91,91,91,79,79,79,79,+0.00)
+    draco = Manufacturer('Draco Grand Prix Engineering','Average',MECACHROME,91,91,91,79,79,79,79,+0.00)
+    falcon = Manufacturer('Falcon Grand Prix','Average',MECACHROME,91,91,91,79,79,79,79,+0.00)
+    fortec = Manufacturer('Fortec Motorsport','Average',MECACHROME,91,91,91,79,79,79,79,+0.00)
+    sn = Manufacturer('Super Nova Racing','Average',MECACHROME,91,91,91,79,79,79,79,+0.00)
     manufacturers = [art,carlin,clark,dams,draco,falcon,fortec,manor,trident,stewart,sn]
 
 # Drivers
@@ -850,7 +914,7 @@ class Driver():
         self.start = start
         self.wet = wet
         self.form = uniform(((((fitness*3.5) + (consistency*1.5))/5000)) - 0.025, ((((fitness*3.5) + (consistency*1.5))/5000)) + 0.025)
-        self.favorite= favorite
+        self.favorite = favorite
         self.style = style
     
     def real_qualifying_pace(self):
@@ -875,53 +939,53 @@ class Driver():
             return 0
         
 if spec == 'Formula 1':
-    D1 = Driver(mclaren,"Devon Raleigh",None,None,90,90,88,92,96,92,90,90,86,86,92,['Silverstone','Portimão','Istanbul','Suzuka','Montréal'],'Balanced') # 1998
-    D2 = Driver(mclaren,"Nill Rosberg",None,None,94,90,88,96,90,88,88,88,88,90,90,['Melbourne','Monte-Carlo','Yas Island','Singapore','Spa-Francorchamps'],'Balanced') # 1998 - 2000 - 2001
-    D3 = Driver(ferrari,"Charles Hérnandez",None,None,90,96,86,86,92,88,86,86,86,88,86,['Le Castellet','Montréal','Singapore','Budapest','Monza'],'Stiff Front') # 1998 - 1999
-    D4 = Driver(ferrari,"Herbert Wolf",None,None,88,92,96,88,94,92,82,88,90,92,88,['Hockenheim','Austin','Silverstone','México City','Nurburg'],'Stiff Rear') # 1998
-    D5 = Driver(williams,"Ken Fassbender",None,None,88,88,88,88,94,94,88,90,90,90,90,['Monte-Carlo','Silverstone','Spielberg','São Paulo','Monza'],'Unbalanced') # 1998
-    D6 = Driver(williams,"Mattia Lori",None,None,77,80,77,72,72,72,77,81,77,72,77,[None],'Balanced') # 1998 - 2000 - 2001
-    D7 = Driver(benetton,"Daniil Kovalev",None,None,90,86,80,84,90,80,80,82,82,82,82,[None],'Balanced') # 1998 - 1999
-    D8 = Driver(benetton,"Sarvesh Sharaf",None,None,68,68,68,68,70,68,68,68,68,64,68,[None],'Balanced') # 1998
-    D9 = Driver(honda,"Jackson Perry",None,None,76,86,84,84,84,72,76,76,76,82,88,['Monte-Carlo'],'Balanced') # 1998
-    D10 = Driver(honda,"Katsuno Yoshiro",None,None,82,82,76,76,76,76,88,88,86,88,72,['Suzuka'],'Balanced') # 1998 - 1999
-    D17 = Driver(sauber,"Jérémy Claes",None,None,74,74,76,76,76,76,76,76,76,74,74,[None],'Balanced') # 1998 - 2000 - 2001
-    D18 = Driver(sauber,"Matteo de Vos",None,None,70,70,70,70,72,76,70,70,70,74,74,[None],'Balanced') # 1998 - 2000 - 2001
-    D11 = Driver(lotus,"Sander Metz",None,None,84,84,84,82,86,82,80,88,88,82,90,[None],'Balanced') # 1998
-    D12 = Driver(lotus,"Charlie Southgate",None,None,82,82,82,90,86,86,86,80,76,82,76,[None],'Balanced') # 1998 - 1999
-    D13 = Driver(brabham,"August Wehner",None,None,79,79,82,82,82,82,79,79,76,76,76,[None],'Balanced') # 1998
-    D14 = Driver(brabham,"Marcus Svansson",None,None,84,86,80,80,76,88,86,84,84,82,80,[None],'Balanced') # 1998 - 1999
-    D15 = Driver(toyota,"Guillermo Acosta",None,None,75,75,72,75,72,72,75,80,80,80,76,[None],'Balanced') # 1998
-    D16 = Driver(toyota,"Aaron Hérnandez",None,None,76,80,76,72,72,72,72,76,76,76,76,[None],'Balanced') # 1998 - 1999
-    D19 = Driver(jaguar,"Sam Maloney",None,None,74,74,74,74,74,68,68,68,68,64,68,[None],'Balanced') # 1998 - 2000 - 2001 - 2002
-    D20 = Driver(jaguar,"Matt Rockwell",None,None,76,76,70,70,74,68,68,68,68,64,68,[None],'Balanced') # 1998 - 2000 - 2001 - 2002
-    D21 = Driver(minardi,"Raul Sanchez",None,None,88,86,88,88,80,80,82,84,76,88,84,[None],'Balanced') # 1998
-    D22 = Driver(minardi,"Antonio Bacarrello",None,None,72,72,66,66,72,76,70,70,70,74,74,[None],'Balanced') # 1998 - 1999
+    D1 = Driver(mclaren,"Devon Raleigh",None,None,90,90,88,92,96,92,90,90,86,86,92,['Silverstone','Portimão','Istanbul','Suzuka','Montréal'],[None,None]) # 1998
+    D2 = Driver(mclaren,"Nill Rosberg",None,None,94,90,88,96,90,88,88,88,88,90,90,['Melbourne','Monte-Carlo','Yas Island','Singapore','Spa-Francorchamps'],[None,None]) # 1998 - 2000 - 2001
+    D3 = Driver(ferrari,"Charles Hérnandez",None,None,90,96,86,86,92,88,86,86,86,88,86,['Le Castellet','Montréal','Singapore','Budapest','Monza'],[None,None]) # 1998 - 1999
+    D4 = Driver(ferrari,"Herbert Wolf",None,None,88,91,96,91,94,91,84,88,91,91,88,['Hockenheim','Austin','Silverstone','México City','Nurburg'],[None,None]) # 1998
+    D5 = Driver(williams,"Ken Fassbender",None,None,88,88,88,88,94,94,88,90,90,90,90,['Monte-Carlo','Silverstone','Spielberg','São Paulo','Monza'],[None,None]) # 1998
+    D6 = Driver(williams,"Mattia Lori",None,None,77,80,77,72,72,72,77,81,77,72,77,[None],[None,None]) # 1998 - 2000 - 2001
+    D7 = Driver(benetton,"Daniil Kovalev",None,None,90,86,80,84,90,80,80,82,82,82,82,[None],[None,None]) # 1998 - 1999
+    D8 = Driver(benetton,"Sarvesh Sharaf",None,None,68,68,68,68,70,68,68,68,68,64,68,[None],[None,None]) # 1998
+    D9 = Driver(honda,"Jackson Perry",None,None,76,86,84,84,84,72,76,76,76,82,88,['Monte-Carlo'],[None,None]) # 1998
+    D10 = Driver(honda,"Katsuno Yoshiro",None,None,82,82,76,76,76,76,88,88,86,88,72,['Suzuka'],[None,None]) # 1998 - 1999
+    D17 = Driver(sauber,"Jérémy Claes",None,None,74,74,76,76,76,76,76,76,76,74,74,[None],[None,None]) # 1998 - 2000 - 2001
+    D18 = Driver(sauber,"Matteo de Vos",None,None,70,70,70,70,72,76,70,70,70,74,74,[None],[None,None]) # 1998 - 2000 - 2001
+    D11 = Driver(lotus,"Sander Metz",None,None,84,84,84,82,86,82,80,88,88,82,90,[None],[None,None]) # 1998
+    D12 = Driver(lotus,"Charlie Southgate",None,None,82,82,82,90,86,86,86,80,76,82,76,[None],[None,None]) # 1998 - 1999
+    D13 = Driver(brabham,"August Wehner",None,None,79,79,82,82,82,82,79,79,76,76,76,[None],[None,None]) # 1998
+    D14 = Driver(brabham,"Marcus Svansson",None,None,84,86,80,80,76,88,86,84,84,82,80,[None],[None,None]) # 1998 - 1999
+    D15 = Driver(toyota,"Guillermo Acosta",None,None,75,75,72,75,72,72,75,80,80,80,76,[None],[None,None]) # 1998
+    D16 = Driver(toyota,"Aaron Hérnandez",None,None,76,80,76,72,72,72,72,76,76,76,76,[None],[None,None]) # 1998 - 1999
+    D19 = Driver(jaguar,"Sam Maloney",None,None,74,74,74,74,74,68,68,68,68,64,68,[None],[None,None]) # 1998 - 2000 - 2001 - 2002
+    D20 = Driver(jaguar,"Matt Rockwell",None,None,76,76,70,70,74,68,68,68,68,64,68,[None],[None,None]) # 1998 - 2000 - 2001 - 2002
+    D21 = Driver(minardi,"Raul Sanchez",None,None,88,86,88,88,80,80,82,84,76,88,84,[None],[None,None]) # 1998
+    D22 = Driver(minardi,"Antonio Bacarrello",None,None,72,72,66,66,72,76,70,70,70,74,74,[None],[None,None]) # 1998 - 1999
     drivers = [D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16,D17,D18,D19,D20,D21,D22]
 
 elif spec == 'Formula 2':
-    D1 = Driver(art,"Théo Fernandez",None,None,76,77,77,68,82,66,74,72,73,77,76,[None],'Balanced')
-    D2 = Driver(art,"Stuart Reddsey",None,None,70,70,76,84,69,84,74,75,77,74,74,[None],'Balanced')
-    D3 = Driver(carlin,"Vincent White",None,None,75,75,70,77,77,73,76,72,77,72,76,[None],'Unbalanced')
-    D4 = Driver(carlin,"Derek West",None,None,72,66,59,69,68,64,68,65,68,64,69,[None],'Stiff Rear')
-    D5 = Driver(clark,"Oleg Rasmussen",None,None,65,69,66,66,67,68,69,69,68,66,69,[None],'Stiff Rear')
-    D6 = Driver(clark,"Jan Seidel",None,None,67,67,72,77,67,78,71,75,73,71,75,[None],'Balanced')
-    D7 = Driver(dams,"Alan Reddsey",None,None,72,64,57,66,64,69,69,68,63,68,63,[None],'Balanced')
-    D8 = Driver(dams,"Alex Rosnersson",None,None,77,75,73,72,73,76,73,78,77,75,72,[None],'Stiff Front')
-    D9 = Driver(draco,"Carsen Rodriguez",None,None,75,79,73,74,74,73,77,74,79,78,74,[None],'Balanced')
-    D10 = Driver(draco,"Heikki Litmanen",None,None,64,70,76,65,72,67,66,67,72,70,67,[None],'Stiff Front')
-    D11 = Driver(falcon,"Lewis Simmons",None,None,76,74,71,72,72,76,76,74,71,70,75,[None],'Stiff Front')
-    D12 = Driver(falcon,"Daley Harvick",None,None,65,61,64,67,64,66,61,64,64,66,65,[None],'Unbalanced')
-    D13 = Driver(fortec,"Juan Angel Ramirez",None,None,64,65,59,64,64,64,59,59,63,64,64,[None],'Stiff Front')
-    D14 = Driver(fortec,"Esteban Caillero",None,None,64,65,65,69,68,69,67,63,66,66,65,[None],'Unbalanced')
-    D15 = Driver(manor,"Matthew Barker",None,None,76,70,71,76,74,71,75,74,70,72,76,[None],'Stiff Rear')
-    D16 = Driver(manor,"Kai Yoshiro",None,None,81,85,75,70,85,71,78,79,78,77,79,[None],'Balanced')
-    D17 = Driver(trident,"Chris Puertas",None,None,71,66,67,66,70,68,70,72,72,71,66,[None],'Unbalanced')
-    D18 = Driver(trident,"David Boeck",None,None,72,77,75,66,73,68,71,72,71,73,73,[None],'Unbalanced')
-    D19 = Driver(stewart,"Alejandro Macerta",None,None,73,74,73,75,72,70,69,72,70,71,70,[None],'Balanced')
-    D20 = Driver(stewart,"Rich Douglas",None,None,70,66,68,71,71,66,70,70,68,68,70,[None],'Balanced')
-    D21 = Driver(sn,"Antonio Raineri",None,None,72,77,77,72,76,72,76,75,73,73,78,[None],'Stiff Rear')
-    D22 = Driver(sn,"Mauro Milani",None,None,78,76,78,81,75,75,75,76,75,81,77,[None],'Balanced')
+    D1 = Driver(art,"Théo Fernandez",None,None,76,77,77,68,82,66,74,72,73,77,76,[None],[None,None])
+    D2 = Driver(art,"Stuart Reddsey",None,None,70,70,76,84,69,84,74,75,77,74,74,[None],[None,None])
+    D3 = Driver(carlin,"Vincent White",None,None,75,75,70,77,77,73,76,72,77,72,76,[None],[None,None])
+    D4 = Driver(carlin,"Derek West",None,None,72,66,59,69,68,64,68,65,68,64,69,[None],[None,None])
+    D5 = Driver(clark,"Oleg Rasmussen",None,None,65,69,66,66,67,68,69,69,68,66,69,[None],[None,None])
+    D6 = Driver(clark,"Jan Seidel",None,None,67,67,72,77,67,78,71,75,73,71,75,[None],[None,None])
+    D7 = Driver(dams,"Alan Reddsey",None,None,72,64,57,66,64,69,69,68,63,68,63,[None],[None,None])
+    D8 = Driver(dams,"Alex Rosnersson",None,None,77,75,73,72,73,76,73,78,77,75,72,[None],[None,None])
+    D9 = Driver(draco,"Carsen Rodriguez",None,None,75,79,73,74,74,73,77,74,79,78,74,[None],[None,None])
+    D10 = Driver(draco,"Heikki Litmanen",None,None,64,70,76,65,72,67,66,67,72,70,67,[None],[None,None])
+    D11 = Driver(falcon,"Lewis Simmons",None,None,76,74,71,72,72,76,76,74,71,70,75,[None],[None,None])
+    D12 = Driver(falcon,"Daley Harvick",None,None,65,61,64,67,64,66,61,64,64,66,65,[None],[None,None])
+    D13 = Driver(fortec,"Juan Angel Ramirez",None,None,64,65,59,64,64,64,59,59,63,64,64,[None],[None,None])
+    D14 = Driver(fortec,"Esteban Caillero",None,None,64,65,65,69,68,69,67,63,66,66,65,[None],[None,None])
+    D15 = Driver(manor,"Matthew Barker",None,None,76,70,71,76,74,71,75,74,70,72,76,[None],[None,None])
+    D16 = Driver(manor,"Kai Yoshiro",None,None,81,85,75,70,85,71,78,79,78,77,79,[None],[None,None])
+    D17 = Driver(trident,"Chris Puertas",None,None,71,66,67,66,70,68,70,72,72,71,66,[None],[None,None])
+    D18 = Driver(trident,"David Boeck",None,None,72,77,75,66,73,68,71,72,71,73,73,[None],[None,None])
+    D19 = Driver(stewart,"Alejandro Macerta",None,None,73,74,73,75,72,70,69,72,70,71,70,[None],[None,None])
+    D20 = Driver(stewart,"Rich Douglas",None,None,70,66,68,71,71,66,70,70,68,68,70,[None],[None,None])
+    D21 = Driver(sn,"Antonio Raineri",None,None,72,77,77,72,76,72,76,75,73,73,78,[None],[None,None])
+    D22 = Driver(sn,"Mauro Milani",None,None,78,76,78,81,75,75,75,76,75,81,77,[None],[None,None])
     drivers = [D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16,D17,D18,D19,D20,D21,D22]
 
 # # # End of the Class Deifinition
@@ -2053,32 +2117,40 @@ if execution == 'simulation':
     print(borderline)
 
 elif execution == 'data':
-    borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'
-    
-    # # #
-
-    print(f"{borderline}\nManufacturers' Rating from Best to Worst:")
-    MF_N, MF_E, MF_P = [], [], []
+    print("Manufacturers' Rating from Best to Worst:")
+    MF_N, MF_E, MF_P, MF_D, MF_AS, MF_SLS, MF_C0, MF_C1, MF_C2 = [], [], [], [], [], [], [], [], []
     TP = []
     MF = pd.DataFrame()
     for i in manufacturers:
         MF_N.append(i.title)
         MF_E.append(i.powertrain.brand)
         MF_P.append(i.rating())
+        MF_D.append(i.downforce)
+        MF_AS.append(i.vortex)
+        MF_SLS.append(i.max_speed)
+        MF_C0.append(i.characteristic[0])
+        MF_C1.append(i.characteristic[1])
+        MF_C2.append(i.characteristic[2])
         TP.append(i.manufacturer_tyre_coeff_print)
     MF['Manufacturer'] = MF_N
     MF['Engine'] = MF_E
-    MF['Overall'] = MF_P
-    MF['Tire Performance Quality'] = TP
-    MF = MF.sort_values('Overall',ascending=False)
+    MF['Rating'] = MF_P
+    MF['Downforce'] = MF_D
+    MF['Airflow Sensivity'] = MF_AS
+    MF['Straight Line Speed'] = MF_SLS
+    MF['Attitude'] = MF_C1
+    MF['Favourite'] = MF_C0
+    MF['Flaw'] = MF_C2
+    MF['Tire Performance Rating'] = TP
+    MF = MF.sort_values('Rating',ascending=False)
     MF = MF.reset_index()
     MF = MF.drop(axis=1, columns=['index'])
     print(MF)
 
     # # #
 
-    print(f"{borderline}\nDrivers' Rating from Best to Worst:")
-    D_N, D_T, D_Q, D_R, D_O = [],[],[],[],[]
+    print(f"\nDrivers' Rating from Best to Worst:")
+    D_N, D_T, D_Q, D_R, D_O, D_S, D_FF = [],[],[],[],[],[],[]
     DR = pd.DataFrame()
     for i in drivers:
         D_N.append(i.name)
@@ -2086,13 +2158,16 @@ elif execution == 'data':
         D_Q.append(i.real_qualifying_pace())
         D_R.append(i.real_race_pace())
         D_O.append(i.real_rating())
+        D_S.append(i.style[0])
+        D_FF.append(i.style[1])
     DR['Driver'] = D_N
     DR['Team'] = D_T
     DR['Overall'] = D_O
     DR['Quali Pace'] = D_Q
     DR['Race Pace'] = D_R
+    DR['Attitude'] = D_S
+    DR['Favourite'] = D_FF
     DR = DR.sort_values('Overall',ascending=False)
     DR = DR.reset_index()
     DR = DR.drop(axis=1, columns=['index'])
     print(DR)
-    print(f'{borderline}')
