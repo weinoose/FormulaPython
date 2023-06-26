@@ -117,16 +117,11 @@ def upgrade(goal,regulation,part,spent,engineers,designer,cto,aerodynamicst):
         else:
             return f'{part} has positively researched by +{(res)}'
 
-c = 0
-while c < 100:
-    print(upgrade('Upgrade',2018,'Front Wing',6.0,'Perfect',96,89,89))
-    c += 1
-
-def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,box,regulation,researches):
+def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,box,regulation,researches,title,engine):
 
     # Money Talks
-    spentx = (spent + 0.1) - 22.5
-    phase_1 = ((spentx/30.0) + 0.5)*13.75
+    spentx = (spent - 0.1) - 18.0
+    phase_1 = ((spentx/(30.0-18.0)) + 0.5)*13.75
 
     if engineers == 'Perfect':
         phase_3 = uniform(2.50,5.00)
@@ -148,11 +143,11 @@ def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,bo
         SUSPENSION = 45 + phase_1 + phase_3 +  uniform(((((designer*2.5) + (cto*4.5) + (aerodynamicst*1.5))/50))-5.5,((((designer*2.5) + (cto*4.5) + (aerodynamicst*1.5))/50))+5.5) + researches[5]
         w = choice([1,0,-1,-1,-1])
         if w == 1:
-            WEIGHT = f'+{uniform(1.01,4.98)}'
+            WEIGHT = f'+{round(uniform(1.01,4.98),2)}'
         elif w == -1:
-            WEIGHT = f'-{uniform(1.01,4.98)}'
+            WEIGHT = f'-{round(uniform(1.01,4.98),2)}'
         else:
-            WEIGHT = f'Optimal Weight'
+            WEIGHT = 0.00
     elif concept == 'Rear Stiff':
         FW = 45 + phase_1 + phase_3 +  uniform(((((designer*3.5) + (cto*1.5) + (aerodynamicst*3.5))/50))-5.5,((((designer*3.5) + (cto*1.5) + (aerodynamicst*3.5))/50))+5.5) + researches[0]
         RW = 45 + phase_1 + phase_3 +  uniform(((((designer*4.5) + (cto*2.5) + (aerodynamicst*4.5))/50))-5.5,((((designer*4.5) + (cto*2.5) + (aerodynamicst*4.5))/50))+5.5) + researches[1]
@@ -162,11 +157,11 @@ def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,bo
         SUSPENSION = 45 + phase_1 + phase_3 +  uniform(((((designer*3.5) + (cto*5.5) + (aerodynamicst*2.5))/50))-5.5,((((designer*3.5) + (cto*5.5) + (aerodynamicst*2.5))/50))+5.5) + researches[5]
         w = choice([-1,0,1,1,1])
         if w == 1:
-            WEIGHT = f'+{uniform(1.01,4.98)}'
+            WEIGHT = f'+{round(uniform(1.01,4.98),2)}'
         elif w == -1:
-            WEIGHT = f'-{uniform(1.01,4.98)}'
+            WEIGHT = f'-{round(uniform(1.01,4.98),2)}'
         else:
-            WEIGHT = f'Optimal Weight'
+            WEIGHT = 0.00
     elif concept == 'Balanced':
         FW = 45 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*2) + (aerodynamicst*4))/50))-5.5,((((designer*4) + (cto*2) + (aerodynamicst*4))/50))+5.5) + researches[0]
         RW = 45 + phase_1 + phase_3 +  uniform(((((designer*4) + (cto*2) + (aerodynamicst*4))/50))-5.5,((((designer*4) + (cto*2) + (aerodynamicst*4))/50))+5.5) + researches[1]
@@ -239,7 +234,7 @@ def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,bo
     elif regulation >= 2022:
         RELIABILITY += 7
     
-    return f"Manufacturer(MANUFACTURER,{CREW},ENGINE,{round(CHASSIS)},{round(FW)},{round(RW)},{round(BASE)},{round(SIDEPOD)},{round(SUSPENSION)},{round(RELIABILITY)},{WEIGHT})"
+    return f"Manufacturer('{title}','{CREW}',{engine},{round(CHASSIS)},{round(FW)},{round(RW)},{round(BASE)},{round(SIDEPOD)},{round(SUSPENSION)},{round(RELIABILITY)},{WEIGHT})"
 
 def driver(automated,status,quality,talent,style,like):
     if status != 'Rookie':
