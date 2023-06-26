@@ -239,7 +239,7 @@ def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,bo
     elif regulation >= 2022:
         RELIABILITY += 7
     
-    return f"Manufacturer($,{CREW},$,{round(CHASSIS)},{round(FW)},{round(RW)},{round(BASE)},{round(SIDEPOD)},{round(SUSPENSION)},{round(RELIABILITY)},{WEIGHT},{float(0.000)})"
+    return f"Manufacturer(MANUFACTURER,{CREW},ENGINE,{round(CHASSIS)},{round(FW)},{round(RW)},{round(BASE)},{round(SIDEPOD)},{round(SUSPENSION)},{round(RELIABILITY)},{WEIGHT})"
 
 def driver(automated,status,quality,talent,style,like):
     if status != 'Rookie':

@@ -623,9 +623,12 @@ baku = Circuit('Baku','Azerbaijan','Agility Circuit',51,FIA(current)[0]*62.25,ST
 # spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*62.25,STRATEGY('Spa-Francorchamps'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Easy',[18,26,35],24) # 1995-2003 layout.
 # spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*66.50,STRATEGY('Spa-Francorchamps'),[m,s    ,s,s,m,m,h]],2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Easy',[18,26,35],24) # 2004-2006 layout.
 spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*65.25,STRATEGY('Spa-Francorchamps'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Easy',[18,26,35],24) # 2007-present layout.
+le = Circuit('Le Castellet','France','Power Circuit',53,FIA(current)[0]*52.25,STRATEGY('Le Castellet'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Easy',[16,23,31],21) # 2005-present layout.
 # sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*17.75,STRATEGY('Sakhir'),3,['Dry'],'Easy',[16,23,29],20) # 2020 extra outer layout.
 # sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*71.25,STRATEGY('Sakhir'),3,['Dry'],'Easy',[16,23,29],20) # 2010 layout.
 sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*51.75,STRATEGY('Sakhir'),3,['Dry'],'Easy',[16,23,29],20) # 2004-2009 & 2011-present layout.
+austin = Circuit('Austin','United States','Power Circuit',56,FIA(current)[0]*55.75,STRATEGY('Austin'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Very Easy',[19,28,37],26) # 2012-present layout.
+mexico = Circuit('México City','México','Power Circuit',71,FIA(current)[0]*38.25,STRATEGY('México City'),3,['Dry'],'Easy',[28,43,57],42) # 2015-present layout.
 
 # QUICKNESS CIRCUITS
 # silverstone = Circuit('Silverstone','Great Britain','Quickness Circuit',52,FIA(current)[0]*42.25,STRATEGY('Silverstone'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Easy',[14,21,27],18) # 1997-2009 layout.
@@ -634,11 +637,6 @@ sepang = Circuit('Sepang','Malaysia','Quickness Circuit',56,FIA(current)[0]*54.7
 shanghai = Circuit('Shanghai','China','Quickness Circuit',56,FIA(current)[0]*54.75,STRATEGY('Shanghai'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Easy',[18,26,35],24) # 2004-present layout.
 yeongam = Circuit('Yeongam','South Korea','Quickness Circuit',55,FIA(current)[0]*55.25,STRATEGY('Yeongam'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Easy',[20,30,40],28) # 2010-present layout.
 india = Circuit('India','India','Quickness Circuit',60,FIA(current)[0]*45.25,STRATEGY('India'),3,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Easy',[16,23,29],20) # 2011-present layout.
-
-# STRENGTH CIRCUITS
-le = Circuit('Le Castellet','France','Strength Circuit',53,FIA(current)[0]*52.25,STRATEGY('Le Castellet'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Easy',[16,23,31],21) # 2005-present layout.
-mexico = Circuit('México City','México','Strength Circuit',71,FIA(current)[0]*38.25,STRATEGY('México City'),3,['Dry'],'Easy',[28,43,57],42) # 2015-present layout.
-austin = Circuit('Austin','United States','Strength Circuit',56,FIA(current)[0]*55.75,STRATEGY('Austin'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Very Easy',[19,28,37],26) # 2012-present layout.
 
 # COMPLETENESS CIRCUITS
 # hockenheim = Circuit('Hockenheim','Germany','Completeness Circuit',67,FIA(current)[0]*56.75,STRATEGY('Hockenheim'),2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Average',[18,26,35],24) # 1994-2001 layout.
@@ -679,9 +677,8 @@ singapore = Circuit('Singapore','Singapore','Street Circuit',61,FIA(current)[0]*
 valencia = Circuit('Valencia','Spain','Street Circuit',57,FIA(current)[0]*56.25,STRATEGY('Valencia'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Hard',[16,23,29],20) # 2008-present layout.
 
 circuits = [lms,monza,sochi,baku,
-            spa,sakhir,
+            spa,le,sakhir,austin,mexico,
             silverstone,sepang,shanghai,yeongam,india,
-            le,mexico,austin,
             hockenheim,fuji,melbourne,yas,spielberg,portimao,jeddah,
             nurburg,kyalami,sao,montreal,imola,istanbul,lusail,miami,
             zandvoort,budapest,suzuka,barcelona,
@@ -729,7 +726,7 @@ MECACHROME = Engine('Mecachrome',FIA(current)[5],86,76)
 
 # Manufacturers
 class Manufacturer():
-    def __init__(self,title,crew,powertrain,chassis,FW,RW,base,sidepod,suspension,reliability,weight,development):
+    def __init__(self,title,crew,powertrain,chassis,FW,RW,base,sidepod,suspension,reliability,weight):
         self.title = title
         self.crew = crew
         
@@ -757,7 +754,6 @@ class Manufacturer():
         self.drs_delta = ((self.powertrain.power*2.5) + (self.RW*7.5))/10
         
         # Extra Attributes
-        self.development = development
         self.weight = weight
         
         # Car Characteristics
@@ -840,8 +836,6 @@ class Manufacturer():
                 return ((self.max_speed*5) + (self.braking*3) + (self.vortex*2) + (self.downforce*1))/11
         elif circuit_type == 'Quickness Circuit':
             return ((self.max_speed*4) + (self.downforce*4) + (self.vortex*2) + (self.braking*1))/11
-        elif circuit_type == 'Strength Circuit':
-            return ((((self.max_speed+self.drag)/2)*5) + (self.braking*2.5) + (self.downforce*2.5) + (self.vortex*1))/11
         elif circuit_type == 'Completeness Circuit':
             return ((self.downforce*5) + (self.max_speed*3) + (self.vortex*2) + (self.braking*1))/11
         elif circuit_type == 'Engineering Circuit':
@@ -862,29 +856,29 @@ class Manufacturer():
             return ((self.downforce*4) + (self.braking*4) + (self.vortex*2) + (self.acceleration*1))/11
 
 if spec == 'Formula 1':
-    mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team','Good',MERCEDES_F,91,89,84,89,79,89,106,+0.00,0.000)
-    redbull = Manufacturer('Oracle Red Bull Racing','Perfect',HONDA_0,89,89,92,94,92,92,86,+5.00,0.000)
-    ferrari = Manufacturer('Scuderia Ferrari','Average',FERRARI_F,96,96,89,91,94,79,79,+0.00,0.000)
-    mclaren = Manufacturer('McLaren F1 Team','Perfect',MERCEDES_2,79,84,79,84,84,84,106,+0.00,0.000)
-    alpine = Manufacturer('BWT Alpine F1 Team','Good',RENAULT_F,86,82,82,86,86,82,82,+0.00,0.000)
-    alphatauri = Manufacturer('Scuderia AlphaTauri','Good',HONDA_1,77,77,84,84,75,75,82,+0.00,0.000)
-    astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team','Average',MERCEDES_1,79,79,79,81,81,79,104,+0.00,0.000)
-    williams = Manufacturer('Williams Racing','Good',MERCEDES_0,77,77,77,77,84,88,104,+0.00,0.000)
-    alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen','Good',FERRARI_1,86,84,79,79,79,79,84,-5.00,0.000)
-    haas = Manufacturer('Haas F1 Team','Good',FERRARI_0,81,81,81,79,79,79,86,+0.00,0.000)
+    mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team','Good',MERCEDES_F,91,89,84,89,79,89,106,+0.00)
+    redbull = Manufacturer('Oracle Red Bull Racing','Perfect',HONDA_0,89,89,92,94,92,92,86,+5.00)
+    ferrari = Manufacturer('Scuderia Ferrari','Average',FERRARI_F,96,96,89,91,94,79,79,+0.00)
+    mclaren = Manufacturer('McLaren F1 Team','Perfect',MERCEDES_2,79,84,79,84,84,84,106,+0.00)
+    alpine = Manufacturer('BWT Alpine F1 Team','Good',RENAULT_F,86,82,82,86,86,82,82,+0.00)
+    alphatauri = Manufacturer('Scuderia AlphaTauri','Good',HONDA_1,77,77,84,84,75,75,82,+0.00)
+    astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team','Average',MERCEDES_1,79,79,79,81,81,79,104,+0.00)
+    williams = Manufacturer('Williams Racing','Good',MERCEDES_0,77,77,77,77,84,88,104,+0.00)
+    alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen','Good',FERRARI_1,86,84,79,79,79,79,84,-5.00)
+    haas = Manufacturer('Haas F1 Team','Good',FERRARI_0,81,81,81,79,79,79,86,+0.00)
     manufacturers = [mercedes,redbull,ferrari,mclaren,alpine,alphatauri,astonmartin,williams,alfaromeo,haas]
 elif spec == 'Formula 2':
-    prema = Manufacturer('Prema Racing','Good',MECACHROME,91,91,91,85,85,85,85,+0.00,0.000) # 4th best.
-    virtuosi = Manufacturer('Virtuosi Racing','Average',MECACHROME,91,91,91,79,79,79,79,+0.00,0.000) # 7th best.
-    carlin = Manufacturer('Carlin','Perfect',MECACHROME,91,91,91,89,89,89,89,+0.00,0.000) # 2nd best.
-    hitech = Manufacturer('Hitech Grand Prix','Average',MECACHROME,91,91,91,83,83,83,83,+0.00,0.000) # 5th best.
-    art = Manufacturer('ART Grand Prix','Perfect',MECACHROME,91,91,91,87,87,87,87,+0.00,0.000) # 3rd best.
-    mp = Manufacturer('MP Motorsport','Good',MECACHROME,91,91,91,91,91,91,91,+0.00,0.000) # best.
-    campos = Manufacturer('Campos Racing','Average',MECACHROME,91,91,91,79,79,79,79,+0.00,0.000) # 11th best.
-    dams = Manufacturer('DAMS','Good',MECACHROME,91,91,91,81,81,81,81,+0.00,0.000) # 6th best.
-    trident = Manufacturer('Trident','Average',MECACHROME,91,91,91,79,79,79,79,+0.00,0.000) # 9th best.
-    charouz = Manufacturer('Charouz Racing System','Bad',MECACHROME,91,91,91,79,79,79,79,+0.00,0.000) # 8th best.
-    van = Manufacturer('Van Amersfoot Racing','Perfect',MECACHROME,91,91,91,79,79,79,79,+0.00,0.000) # 10th best.
+    prema = Manufacturer('Prema Racing','Good',MECACHROME,91,91,91,85,85,85,85,+0.00) # 4th best.
+    virtuosi = Manufacturer('Virtuosi Racing','Average',MECACHROME,91,91,91,79,79,79,79,+0.00) # 7th best.
+    carlin = Manufacturer('Carlin','Perfect',MECACHROME,91,91,91,89,89,89,89,+0.00) # 2nd best.
+    hitech = Manufacturer('Hitech Grand Prix','Average',MECACHROME,91,91,91,83,83,83,83,+0.00) # 5th best.
+    art = Manufacturer('ART Grand Prix','Perfect',MECACHROME,91,91,91,87,87,87,87,+0.00) # 3rd best.
+    mp = Manufacturer('MP Motorsport','Good',MECACHROME,91,91,91,91,91,91,91,+0.00) # best.
+    campos = Manufacturer('Campos Racing','Average',MECACHROME,91,91,91,79,79,79,79,+0.00) # 11th best.
+    dams = Manufacturer('DAMS','Good',MECACHROME,91,91,91,81,81,81,81,+0.00) # 6th best.
+    trident = Manufacturer('Trident','Average',MECACHROME,91,91,91,79,79,79,79,+0.00) # 9th best.
+    charouz = Manufacturer('Charouz Racing System','Bad',MECACHROME,91,91,91,79,79,79,79,+0.00) # 8th best.
+    van = Manufacturer('Van Amersfoot Racing','Perfect',MECACHROME,91,91,91,79,79,79,79,+0.00) # 10th best.
     manufacturers = [prema,virtuosi,carlin,hitech,art,mp,campos,dams,trident,charouz,van]
 
 # Drivers
