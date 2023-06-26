@@ -614,24 +614,18 @@ def STRATEGY(GP):
         
 # # # AGILITY CIRCUITS
 lms = Circuit('Le Mans','France','Agility Circuit',23,FIA(current)[0]*120.75,STRATEGY('Le Mans'),5,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy',[6,9,11],6) # 2018-present layout.
-# monza = Circuit('Monza','Italy','Agility Circuit',53,FIA(current)[0]*41.75,STRATEGY('Monza'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy',[21,31,41],29) # 1994-1999 layout.
 monza = Circuit('Monza','Italy','Agility Circuit',53,FIA(current)[0]*41.25,STRATEGY('Monza'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy',[21,31,41],29) # 2000-present layout.
 sochi = Circuit('Sochi','Russia','Agility Circuit',53,FIA(current)[0]*54.75,STRATEGY('Sochi'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Hard',[20,30,40],28) # 2014-present layout.
 baku = Circuit('Baku','Azerbaijan','Agility Circuit',51,FIA(current)[0]*62.25,STRATEGY('Baku'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Very Hard',[16,23,31],21) # 2016-present layout.
 
 # # # POWER CIRCUITS
-# spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*62.25,STRATEGY('Spa-Francorchamps'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Easy',[18,26,35],24) # 1995-2003 layout.
-# spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*66.50,STRATEGY('Spa-Francorchamps'),[m,s    ,s,s,m,m,h]],2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Easy',[18,26,35],24) # 2004-2006 layout.
 spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*65.25,STRATEGY('Spa-Francorchamps'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Easy',[18,26,35],24) # 2007-present layout.
 le = Circuit('Le Castellet','France','Power Circuit',53,FIA(current)[0]*52.25,STRATEGY('Le Castellet'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Easy',[16,23,31],21) # 2005-present layout.
-# sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*17.75,STRATEGY('Sakhir'),3,['Dry'],'Easy',[16,23,29],20) # 2020 extra outer layout.
-# sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*71.25,STRATEGY('Sakhir'),3,['Dry'],'Easy',[16,23,29],20) # 2010 layout.
 sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*51.75,STRATEGY('Sakhir'),3,['Dry'],'Easy',[16,23,29],20) # 2004-2009 & 2011-present layout.
 austin = Circuit('Austin','United States','Power Circuit',56,FIA(current)[0]*55.75,STRATEGY('Austin'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Very Easy',[19,28,37],26) # 2012-present layout.
 mexico = Circuit('México City','México','Power Circuit',71,FIA(current)[0]*38.25,STRATEGY('México City'),3,['Dry'],'Easy',[28,43,57],42) # 2015-present layout.
 
 # QUICKNESS CIRCUITS
-# silverstone = Circuit('Silverstone','Great Britain','Quickness Circuit',52,FIA(current)[0]*42.25,STRATEGY('Silverstone'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Easy',[14,21,27],18) # 1997-2009 layout.
 silverstone = Circuit('Silverstone','Great Britain','Quickness Circuit',52,FIA(current)[0]*48.75,STRATEGY('Silverstone'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Easy',[14,21,27],18) # 2010-present layout.
 sepang = Circuit('Sepang','Malaysia','Quickness Circuit',56,FIA(current)[0]*54.75,STRATEGY('Sepang'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Very Easy',[18,26,35],24) # 1999-present layout.
 shanghai = Circuit('Shanghai','China','Quickness Circuit',56,FIA(current)[0]*54.75,STRATEGY('Shanghai'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Easy',[18,26,35],24) # 2004-present layout.
@@ -639,13 +633,10 @@ yeongam = Circuit('Yeongam','South Korea','Quickness Circuit',55,FIA(current)[0]
 india = Circuit('India','India','Quickness Circuit',60,FIA(current)[0]*45.25,STRATEGY('India'),3,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Easy',[16,23,29],20) # 2011-present layout.
 
 # COMPLETENESS CIRCUITS
-# hockenheim = Circuit('Hockenheim','Germany','Completeness Circuit',67,FIA(current)[0]*56.75,STRATEGY('Hockenheim'),2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Average',[18,26,35],24) # 1994-2001 layout.
 hockenheim = Circuit('Hockenheim','Germany','Completeness Circuit',67,FIA(current)[0]*36.25,STRATEGY('Hockenheim'),2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Average',[18,26,35],24) # 2002-present layout.
 fuji = Circuit('Fuji','Japan','Completeness Circuit',67,FIA(current)[0]*40.25,STRATEGY('Fuji'),1,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Average',[18,26,35],24) # 2005-present layout.
-# melbourne = Circuit('Melbourne','Australia','Completeness Circuit',58,FIA(current)[0]*45.25,STRATEGY('Melbourne'),4,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Hard',[20,30,40],28) # 1996-2020 layout.
-melbourne = Circuit('Melbourne','Australia','Completeness Circuit',58,FIA(current)[0]*39.25,STRATEGY('Melbourne'),4,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Hard',[20,30,40],28) # 2021-present layout.
-# yas = Circuit('Yas Island','Abu Dhabi','Completeness Circuit',58,FIA(current)[0]*58.75,STRATEGY('Yas Island'),2,['Dry'],'Average',[16,23,29],20) # 2009-2020 layout.
-yas = Circuit('Yas Island','Abu Dhabi','Completeness Circuit',58,FIA(current)[0]*44.75,STRATEGY('Yas Island'),2,['Dry'],'Average',[16,23,29],20) # 2021-present layout.
+melbourne = Circuit('Melbourne','Australia','Completeness Circuit',58,FIA(current)[0]*45.25,STRATEGY('Melbourne'),4,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Hard',[20,30,40],28) # 1996-2020 layout.
+yas = Circuit('Yas Island','Abu Dhabi','Completeness Circuit',58,FIA(current)[0]*58.75,STRATEGY('Yas Island'),2,['Dry'],'Average',[16,23,29],20) # 2009-2020 layout.
 spielberg = Circuit('Spielberg','Austuria','Completeness Circuit',71,FIA(current)[0]*26.25,STRATEGY('Spielberg'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump'],'Very Easy',[20,30,40],28) # 1996-present layout.
 portimao = Circuit('Portimão','Portugal','Completeness Circuit',66,FIA(current)[0]*40.75,STRATEGY('Portimão'),1,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Average',[28,43,57],42) # 2008-present layout.
 jeddah = Circuit('Jeddah','Saudi Arabia','Completeness Circuit',50,FIA(current)[0]*49.25,STRATEGY('Jeddah'),3,['Dry'],'Average',[13,19,24],16) # 2021-present layout.
@@ -653,9 +644,7 @@ jeddah = Circuit('Jeddah','Saudi Arabia','Completeness Circuit',50,FIA(current)[
 # ENGINEERING CIRCUITS
 nurburg = Circuit('Nurburg','Germany','Engineering Circuit',60,FIA(current)[0]*50.25,STRATEGY('Nurburg'),1,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Average',[20,30,40],28) # 2002-present layout.
 kyalami = Circuit('Kyalami','South Africa','Engineering Circuit',71,FIA(current)[0]*35.75,STRATEGY('kyalami'),2,['Dry'],'Average',[20,30,40],28) # 2015-present layout.
-# sao = Circuit('São Paulo','Brazil','Engineering Circuit',71,FIA(current)[0]*31.25,STRATEGY('São Paulo'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Average',[28,43,57],42) # 1996-1998 layout.
 sao = Circuit('São Paulo','Brazil','Engineering Circuit',71,FIA(current)[0]*30.75,STRATEGY('São Paulo'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Average',[28,43,57],42) # 1999-present layout.
-# montreal = Circuit('Montréal','Canada','Engineering Circuit',70,FIA(current)[0]*35.75,STRATEGY('Montréal'),3,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Hard',[20,30,40],28) # 1996-2001 layout.
 montreal = Circuit('Montréal','Canada','Engineering Circuit',70,FIA(current)[0]*33.75,STRATEGY('Montréal'),3,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Hard',[20,30,40],28) # 2002-present layout.
 imola = Circuit('Imola','Italy','Engineering Circuit',63,FIA(current)[0]*36.25,STRATEGY('Imola'),1,['Dry','Dry','Dry','Dry','Dump','Dump','Dump'],'Hard',[25,37,50],36) # 2008-present layout.
 istanbul = Circuit('Istanbul','Turkey','Engineering Circuit',58,FIA(current)[0]*45.50,STRATEGY('Istanbul'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Easy',[16,23,29],20) # 2005-present layout.
@@ -670,9 +659,6 @@ barcelona = Circuit('Barcelona','Spain','Downforce Circuit',66,FIA(current)[0]*4
 
 # STREET CIRCUITS
 monaco = Circuit('Monte-Carlo','Monaco','Street Circuit',78,FIA(current)[0]*32.25,STRATEGY('Monte-Carlo'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Hard',[20,30,40],28) # 2003-present layout.
-# singapore = Circuit('Singapore','Singapore','Street Circuit',61,FIA(current)[0]*62.75,STRATEGY('Singapore'),3,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Hard',[16,23,29],20) # 2008-2012 layout.
-# singapore = Circuit('Singapore','Singapore','Street Circuit',61,FIA(current)[0]*62.25,STRATEGY('Singapore'),3,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Hard',[16,23,29],20) # 2013-2014 layout.
-# singapore = Circuit('Singapore','Singapore','Street Circuit',61,FIA(current)[0]*63.75,STRATEGY('Singapore'),3,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Hard',[16,23,29],20) # 2015-2017 layout.
 singapore = Circuit('Singapore','Singapore','Street Circuit',61,FIA(current)[0]*59.75,STRATEGY('Singapore'),3,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Hard',[16,23,29],20) # 2018-present layout.
 valencia = Circuit('Valencia','Spain','Street Circuit',57,FIA(current)[0]*56.25,STRATEGY('Valencia'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Hard',[16,23,29],20) # 2008-present layout.
 
@@ -710,17 +696,17 @@ class Engine():
         self.durability = durability
 
 # Formula 1 Engines
-MERCEDES_0 = Engine('Mercedes',FIA(current)[5],92,72) # McLaren
-FERRARI_F = Engine('Ferrari',FIA(current)[5],89,86) # Ferrari
-FERRARI_0 = Engine('Ferrari',FIA(current)[5],89,86) # Benetton
-FERRARI_1 = Engine('Ferrari',FIA(current)[5],89,86) # Minardi
-HONDA_F = Engine('Honda',FIA(current)[5],84,84) # Honda
-RENAULT_0 = Engine('Renault',FIA(current)[5],82,76) # Williams
-RENAULT_1 = Engine('Renault',FIA(current)[5],82,76) # Lotus
-RENAULT_2 = Engine('Renault',FIA(current)[5],82,76) # Brabham
-TOYOTA_F = Engine('Toyota',FIA(current)[5],77,92) # Toyota
-TOYOTA_0 = Engine('Toyota',FIA(current)[5],77,92) # Sauber
-TOYOTA_1 = Engine('Toyota',FIA(current)[5],77,92) # Jaguar
+MERCEDES_0 = Engine('Mercedes',FIA(current)[5],91,70) # McLaren
+FERRARI_F = Engine('Ferrari',FIA(current)[5],94,84) # Ferrari
+FERRARI_0 = Engine('Ferrari',FIA(current)[5],94,84) # Benetton
+FERRARI_1 = Engine('Ferrari',FIA(current)[5],94,84) # Minardi
+HONDA_F = Engine('Honda',FIA(current)[5],87,84) # Honda
+RENAULT_0 = Engine('Renault',FIA(current)[5],84,79) # Williams
+RENAULT_1 = Engine('Renault',FIA(current)[5],84,79) # Lotus
+RENAULT_2 = Engine('Renault',FIA(current)[5],84,79) # Brabham
+TOYOTA_F = Engine('Toyota',FIA(current)[5],79,87) # Toyota
+TOYOTA_0 = Engine('Toyota',FIA(current)[5],79,87) # Sauber
+TOYOTA_1 = Engine('Toyota',FIA(current)[5],79,87) # Jaguar
 
 # Formula 2 Engines
 MECACHROME = Engine('Mecachrome',FIA(current)[5],86,76) # F2 Spec. Only
@@ -857,29 +843,31 @@ class Manufacturer():
             return ((self.downforce*4) + (self.braking*4) + (self.vortex*2) + (self.acceleration*1))/11
 
 if spec == 'Formula 1':
-    # print(design('Perfect','Adrian Newey',96,89,89,'Balanced','Low Reliability',30.0,7.0,1998,[0,0,0,0,0,0]))
-    # print(design('Perfect','Aldo Costa',94,91,91,'Balanced','Balanced Reliability',30.0,7.0,1998,[0,0,0,0,0,0]))
-    # print(design('Perfect','Paddy Lowe',89,81,81,'Balanced','Low Reliability',25.0,7.0,1998,[0,0,0,0,0,0]))
-    # print(design('Good','Simone Resta',82,74,72,'Balanced','Low Reliability',27.5,5.0,1998,[0,0,0,0,0,0]))
-    # print(design('Good','Pat Symonds',86,81,81,'Balanced','Low Reliability',28.0,7.0,1998,[0,0,0,0,0,0]))
-    # print(design('Good','John Barnard',91,91,91,'Balanced','High Reliability',25.0,5.0,1998,[0,0,0,0,0,0]))
-    # print(design('Good','James Allison',84,84,79,'Balanced','High Reliability',20.0,5.0,1998,[0,0,0,0,0,0]))
-    # print(design('Good','Ray Durand',79,79,76,'Front Stiff','Low Reliability',18.0,5.0,1998,[0,0,0,0,0,0]))
-    # print(design('Good','Anthony Coughlan',80,76,76,'Front Stiff','High Reliability',20.0,5.0,1998,[0,0,0,0,0,0]))
-    # print(design('Average','Nick Flynn',80,72,72,'Balanced','Low Reliability',23.0,7.0,1998,[0,0,0,0,0,0]))
-    # print(design('Bad','Ignacio La Chazelle',66,62,62,'Rear Stiff','Low Reliability',18.0,3.0,1998,[0,0,0,0,0,0]))
+    """
+print(design('Perfect','Adrian Newey',96,89,89,'Balanced','Low',30.0,7.0,1998,[0,0,0,0,0,0],'West McLaren-Mercedes','MERCEDES_0'))
+print(design('Perfect','Aldo Costa',94,91,91,'Balanced','Balanced',30.0,7.0,1998,[0,0,0,0,0,0],'Scuderia Ferrari Vodafone','FERRARI_F'))
+print(design('Perfect','Paddy Lowe',89,81,81,'Balanced','Low',25.0,7.0,1998,[0,0,0,0,0,0],'Rothmans Williams-Renault','RENAULT_0'))
+print(design('Good','Simone Resta',82,74,72,'Balanced','Low',27.5,5.0,1998,[0,0,0,0,0,0],'Winfield Benetton-Ferrari','FERRARI_0'))
+print(design('Good','Pat Symonds',86,81,81,'Balanced','Low',28.0,7.0,1998,[0,0,0,0,0,0],'Honda F1 Team','HONDA_F'))
+print(design('Good','John Barnard',91,91,91,'Balanced','High',25.0,5.0,1998,[0,0,0,0,0,0],'BWT Sauber-Toyota','TOYOTA_0'))
+print(design('Good','James Allison',84,84,79,'Balanced','High',20.0,5.0,1998,[0,0,0,0,0,0],'Marlboro Team Lotus-Renault','RENAULT_1'))
+print(design('Good','Ray Durand',79,79,76,'Front Stiff','Low',18.0,5.0,1998,[0,0,0,0,0,0],'Parmalat Brabham-Renault','RENAULT_2'))
+print(design('Good','Anthony Coughlan',80,76,76,'Front Stiff','High',20.0,5.0,1998,[0,0,0,0,0,0],'Mild Seven Toyota Racing','TOYOTA_F'))
+print(design('Average','Nick Flynn',80,72,72,'Balanced','Low',23.0,7.0,1998,[0,0,0,0,0,0],'Jaguar Racing Toyota','TOYOTA_1'))
+print(design('Bad','Ignacio La Chazelle',66,62,62,'Rear Stiff','Low',18.0,3.0,1998,[0,0,0,0,0,0],'Minardi-Ferrari F1 Team','FERRARI_1'))
+    """
 
-    mclaren = Manufacturer('West McLaren-Mercedes','Good',MERCEDES_0,95,89,84,89,88,88,61,-4.51)
-    ferrari = Manufacturer('Scuderia Ferrari Vodafone','Good',FERRARI_F,91,92,86,93,88,93,70,-2.49)
-    williams = Manufacturer('Rothmans Williams-Renault','Good',RENAULT_0,85,82,78,86,88,85,52,-1.94)
-    benetton = Manufacturer('Winfield Benetton-Ferrari','Good',FERRARI_0,85,82,86,81,90,78,69,+3.86)
-    honda = Manufacturer('Honda F1 Team','Perfect',HONDA_F,80,84,84,79,88,79,73,+1.04)
-    sauber = Manufacturer('BWT Sauber-Toyota','Perfect',TOYOTA_0,85,83,83,80,77,79,57,+0.00)
-    lotus = Manufacturer('Marlboro Team Lotus-Renault','Good',RENAULT_1,81,79,84,84,73,74,77,+0.00)
-    brabham = Manufacturer('Parmalat Brabham-Renault','Average',RENAULT_2,75,76,72,77,75,75,68,+0.00)
-    toyota = Manufacturer('Mild Seven Toyota Racing','Good',TOYOTA_F,77,81,74,72,81,76,65,+2.63)
-    jaguar = Manufacturer('Jaguar Racing Toyota','Good',TOYOTA_1,75,76,66,71,72,79,46,+3.09)
-    minardi = Manufacturer('Minardi-Ferrari F1 Team','Average',FERRARI_1,65,62,65,56,64,60,58,-3.56)
+    mclaren = Manufacturer('West McLaren-Mercedes','Perfect',MERCEDES_0,85,94,82,97,88,90,60,1.43)
+    ferrari = Manufacturer('Scuderia Ferrari Vodafone','Perfect',FERRARI_F,92,91,93,94,86,85,62,0.0)
+    williams = Manufacturer('Rothmans Williams-Renault','Perfect',RENAULT_0,84,86,78,80,85,82,50,0.0)
+    benetton = Manufacturer('Winfield Benetton-Ferrari','Bad',FERRARI_0,85,79,82,75,79,88,53,3.04)
+    honda = Manufacturer('Honda F1 Team','Good',HONDA_F,80,82,84,85,79,80,59,2.26)
+    sauber = Manufacturer('BWT Sauber-Toyota','Bad',TOYOTA_0,79,75,79,79,72,80,80,0.0)
+    lotus = Manufacturer('Marlboro Team Lotus-Renault','Perfect',RENAULT_1,72,66,74,75,72,66,75,0.0)
+    brabham = Manufacturer('Parmalat Brabham-Renault','Perfect',RENAULT_2,69,80,62,64,72,72,50,-1.63)
+    toyota = Manufacturer('Mild Seven Toyota Racing','Good',TOYOTA_F,74,72,68,74,65,72,83,+1.45)
+    jaguar = Manufacturer('Jaguar Racing Toyota','Good',TOYOTA_1,76,77,68,68,75,76,61,0.0)
+    minardi = Manufacturer('Minardi-Ferrari F1 Team','Good',FERRARI_1,68,68,70,69,65,64,59,+4.38)
     manufacturers = [honda,jaguar,lotus,toyota,minardi,sauber,brabham,williams,ferrari,mclaren,benetton]
 elif spec == 'Formula 2':
     carlin = Manufacturer('Carlin','Perfect',MECACHROME,91,91,91,91,91,91,91,+0.00)
