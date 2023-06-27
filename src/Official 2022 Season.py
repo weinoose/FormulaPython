@@ -256,27 +256,27 @@ class Tire():
         if mode[0] == 'saturday':
             performance = ((driver.team.performance(circuit.circuit_type))*1.00)
             if self.title == 'Wet':
-                CL1 = (((((performance/100)**2)*9.50) - 4)*(-1.0)) + TOTAL_WEIGHT + TRACTION_EFFECT_Q + ERS - driver.team.development
+                CL1 = (((((performance/100)**2)*9.50) - 4)*(-1.0)) + TOTAL_WEIGHT + TRACTION_EFFECT_Q + ERS
             elif self.title == 'Intermediate':
-                CL1 = (((((performance/100)**2)*10.00) - 4)*(-1.0)) + TOTAL_WEIGHT + TRACTION_EFFECT_Q + ERS - driver.team.development
+                CL1 = (((((performance/100)**2)*10.00) - 4)*(-1.0)) + TOTAL_WEIGHT + TRACTION_EFFECT_Q + ERS
             else:
-                CL1 = (((((performance/100)**2)*10.25) - 4)*(-1.0)) + TOTAL_WEIGHT + TRACTION_EFFECT_Q + ERS - driver.team.development
+                CL1 = (((((performance/100)**2)*10.25) - 4)*(-1.0)) + TOTAL_WEIGHT + TRACTION_EFFECT_Q + ERS
         elif mode[0] == 'sunday':
             performance = ((driver.team.performance(circuit.circuit_type))*1.00)
             if self.title == 'Wet':
-                CL1 = (((((performance/100)**2)*9.50) - 4)*(-1.0)) + TOTAL_WEIGHT + TRACTION_EFFECT_R + (ERS/3) - driver.team.development
+                CL1 = (((((performance/100)**2)*9.50) - 4)*(-1.0)) + TOTAL_WEIGHT + TRACTION_EFFECT_R + (ERS/3)
             elif self.title == 'Intermediate':
-                CL1 = (((((performance/100)**2)*10.00) - 4)*(-1.0)) + TOTAL_WEIGHT + TRACTION_EFFECT_R + (ERS/3) - driver.team.development
+                CL1 = (((((performance/100)**2)*10.00) - 4)*(-1.0)) + TOTAL_WEIGHT + TRACTION_EFFECT_R + (ERS/3)
             else:
-                CL1 = (((((performance/100)**2)*10.25) - 4)*(-1.0)) + TOTAL_WEIGHT + TRACTION_EFFECT_R + (ERS/3) - driver.team.development
+                CL1 = (((((performance/100)**2)*10.25) - 4)*(-1.0)) + TOTAL_WEIGHT + TRACTION_EFFECT_R + (ERS/3)
         elif mode[0] == 'friday':
             performance = ((driver.team.performance(circuit.circuit_type))*1.00)
             if self.title == 'Wet':
-                CL1 = (((((performance/100)**2)*9.50) - 4)*(-1.0)) + TOTAL_WEIGHT + (ERS/3) - driver.team.development
+                CL1 = (((((performance/100)**2)*9.50) - 4)*(-1.0)) + TOTAL_WEIGHT + (ERS/3)
             elif self.title == 'Intermediate':
-                CL1 = (((((performance/100)**2)*10.00) - 4)*(-1.0)) + TOTAL_WEIGHT + (ERS/3) - driver.team.development
+                CL1 = (((((performance/100)**2)*10.00) - 4)*(-1.0)) + TOTAL_WEIGHT + (ERS/3)
             else:
-                CL1 = (((((performance/100)**2)*10.25) - 4)*(-1.0)) + TOTAL_WEIGHT + (ERS/3) - driver.team.development
+                CL1 = (((((performance/100)**2)*10.25) - 4)*(-1.0)) + TOTAL_WEIGHT + (ERS/3)
         
         # # # 3.0: DRIVER
         # # # 3.1: Car/Driver Chemistry
@@ -378,7 +378,14 @@ class Tire():
                 CL2 = ((((choice(WET)/100)**1.50)*3.50) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) + (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
             else:
                 CL2 = ((((choice(SUNDAY)/100)**1.75)*3.25) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) + (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
-        
+
+        # Extreme Track Configuration
+        if GP == 'Le Mans':
+            CL1 = (CL1*3.0) - 88.75
+            CL2 = (CL2*3.0) + 11.25
+        else:
+            pass
+
         # # # 4.0: FIVE LIGHTS REACTION
         REACTION = (uniform((((driver.start-15)**2))/10000,(((driver.start+5)**2))/10000) - 0.3)
         STARTING_GRID = ((mode[1]/2.5) - 0.40) - (REACTION*1.25)
@@ -451,6 +458,11 @@ def STRATEGY(GP):
             return [[s,m,m    ,s,s,m,m,h],[m,h    ,s,s,s,m,h,h],[s,s,h    ,s,s,s,m,h]]
         elif current in strategy_era:
             return [[s,s,h  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
+    elif GP == 'Las Vegas':
+        if current in entertainment_era:
+            return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
+        elif current in strategy_era:
+            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,s,h  ,s,s,s,h]]
     elif GP == 'Spa-Francorchamps':
         if current in entertainment_era:
             return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
@@ -618,6 +630,7 @@ lms = Circuit('Le Mans','France','Agility Circuit',23,FIA(current)[0]*120.75,STR
 monza = Circuit('Monza','Italy','Agility Circuit',53,FIA(current)[0]*41.25,STRATEGY('Monza'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy',[21,31,41],29) # 2000-present layout.
 sochi = Circuit('Sochi','Russia','Agility Circuit',53,FIA(current)[0]*54.75,STRATEGY('Sochi'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Hard',[20,30,40],28) # 2014-present layout.
 baku = Circuit('Baku','Azerbaijan','Agility Circuit',51,FIA(current)[0]*62.25,STRATEGY('Baku'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Very Hard',[16,23,31],21) # 2016-present layout.
+lv = Circuit('Las Vegas','United States','Agility Circuit',50,FIA(current)[0]*33.25,STRATEGY('Las Vegas'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Easy',[21,31,41],29) # 2022-present layout.
 
 # # # POWER CIRCUITS
 # spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*62.25,STRATEGY('Spa-Francorchamps'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Easy',[18,26,35],24) # 1995-2003 layout.
@@ -676,7 +689,7 @@ monaco = Circuit('Monte-Carlo','Monaco','Street Circuit',78,FIA(current)[0]*32.2
 singapore = Circuit('Singapore','Singapore','Street Circuit',61,FIA(current)[0]*59.75,STRATEGY('Singapore'),3,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Hard',[16,23,29],20) # 2018-present layout.
 valencia = Circuit('Valencia','Spain','Street Circuit',57,FIA(current)[0]*56.25,STRATEGY('Valencia'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Hard',[16,23,29],20) # 2008-present layout.
 
-circuits = [lms,monza,sochi,baku,
+circuits = [lms,monza,sochi,baku,lv,
             spa,le,sakhir,austin,mexico,
             silverstone,sepang,shanghai,yeongam,india,
             hockenheim,fuji,melbourne,yas,spielberg,portimao,jeddah,
@@ -1788,7 +1801,7 @@ def R(circuit,session,weather):
                     elif INCIDENT == 'DEFENDER CLEAR & ATTACKER DAMAGED':
                         print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {attacker} HAS DAMAGE BUT {defender} HAS NO! {attacker} IS BOXING!.{Style.RESET_ALL}')
                         BONUS[attacker].append(uniform(19.01,39.99))
-                        BONUS[defender].append(8.750)
+                        BONUS[defender].append(uniform(0.09,5.91))
                         BOX[attacker].append(True)
 
                         if uniform(0.1,100.1) > 0.275:
@@ -1800,7 +1813,7 @@ def R(circuit,session,weather):
                     elif INCIDENT == 'ATTACKER CLEAR & DEFENDER DAMAGED':
                         print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {defender} HAS DAMAGE BUT {attacker} HAS NO! {defender} IS BOXING!.{Style.RESET_ALL}')
                         BONUS[defender].append(uniform(19.01,39.99))
-                        BONUS[attacker].append(8.750)
+                        BONUS[attacker].append(uniform(0.09,5.91))
                         BOX[defender].append(True)
 
                         if uniform(0.1,100.1) > 0.275:
@@ -1811,7 +1824,7 @@ def R(circuit,session,weather):
                             
                     elif INCIDENT == 'DEFENDER DNF & ATTACKER CLEAR':
                         print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {defender} IS OUT! {attacker} HAS NO DAMAGE!.{Style.RESET_ALL}')
-                        BONUS[attacker].append(8.750)
+                        BONUS[attacker].append(uniform(0.09,5.91))
                         BONUS[defender].append((circuit.laptime + 5)*2)
                         DNF[defender].append(True)
                         SAFETY_CAR[lap+1].append(1)
@@ -1820,7 +1833,7 @@ def R(circuit,session,weather):
                         SAFETY_CAR[lap+4].append(1)
                     elif INCIDENT == 'ATTACKER DNF & DEFENDER CLEAR':
                         print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {attacker} IS OUT! {defender} HAS NO DAMAGE!.{Style.RESET_ALL}')
-                        BONUS[defender].append(8.750)
+                        BONUS[defender].append(uniform(0.09,5.91))
                         BONUS[attacker].append((circuit.laptime + 5)*2)
                         DNF[attacker].append(True)
                         SAFETY_CAR[lap+1].append(1)
