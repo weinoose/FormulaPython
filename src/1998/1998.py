@@ -940,11 +940,11 @@ class Driver():
             return 0
         
 if spec == 'Formula 1':
-    D1 = Driver(mclaren,"Devon Raleigh",None,None,90,90,88,92,96,92,90,90,86,86,92,['Silverstone','Portimão','Istanbul','Suzuka','Montréal'],[None,None]) # 1998
-    D2 = Driver(mclaren,"Nill Rosberg",None,None,94,90,88,96,90,88,88,88,88,90,90,['Melbourne','Monte-Carlo','Yas Island','Singapore','Spa-Francorchamps'],[None,None]) # 1998 - 2000 - 2001
-    D3 = Driver(ferrari,"Charles Hérnandez",None,None,90,96,86,86,92,88,86,86,86,88,86,['Le Castellet','Montréal','Singapore','Budapest','Monza'],[None,None]) # 1998 - 1999
-    D4 = Driver(ferrari,"Herbert Wolf",None,None,88,91,96,91,94,91,84,88,91,91,88,['Hockenheim','Austin','Silverstone','México City','Nurburg'],[None,None]) # 1998
-    D5 = Driver(williams,"Ken Fassbender",None,None,88,88,88,88,94,94,88,90,90,90,90,['Monte-Carlo','Silverstone','Spielberg','São Paulo','Monza'],[None,None]) # 1998
+    D1 = Driver(mclaren,"Devon Raleigh",None,None,90,90,88,92,96,92,90,90,86,86,92,[None],[None,None]) # 1998
+    D2 = Driver(mclaren,"Nill Rosberg",None,None,94,90,88,96,90,88,88,88,88,90,90,[None],[None,None]) # 1998 - 2000 - 2001
+    D3 = Driver(ferrari,"Charles Hérnandez",None,None,90,96,86,86,92,88,86,86,86,88,86,[None],[None,None]) # 1998 - 1999
+    D4 = Driver(ferrari,"Herbert Wolf",None,None,88,91,96,91,94,91,84,88,91,91,88,[None],[None,None]) # 1998
+    D5 = Driver(williams,"Ken Fassbender",None,None,88,88,88,88,94,94,88,90,90,90,90,[None],[None,None]) # 1998
     D6 = Driver(williams,"Mattia Lori",None,None,77,80,77,72,72,72,77,81,77,72,77,[None],[None,None]) # 1998 - 2000 - 2001
     D7 = Driver(benetton,"Daniil Kovalev",None,None,90,86,80,84,90,80,80,82,82,82,82,[None],[None,None]) # 1998 - 1999
     D8 = Driver(benetton,"Sarvesh Sharaf",None,None,68,68,68,68,70,68,68,68,68,64,68,[None],[None,None]) # 1998
