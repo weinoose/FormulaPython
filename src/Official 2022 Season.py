@@ -109,7 +109,7 @@ aramco = Fuel('Aramco',+2.5,0.0450)
 
 def FIA(C): 
     if C == '1998':
-        return [1.18250*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0725,11.5,7.5,1]
+        return [1.18250*(spex),False,False,'DHL',bridgestone,shell,585,4,4,2,False,115,0.0725,11.5,7.5,1]
     elif C == '2005':
         return [1.09750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700,11.5,7.5,1]
     elif C == '2006':
