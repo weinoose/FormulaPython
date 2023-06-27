@@ -6,6 +6,6 @@ It has everything in it, yet I feel a bit lazy to demonstrate it. However, if yo
 Feel free to contact me about that: weinoose@gmail.com
 
 Developer Log for the Development Process:
-* 25/03/2023 — Project has started. | v0.0
-* 27/06/2023 — Project has finished. | v1.0
+* 25/03/2023 — Project has started.
+* 27/06/2023 — Project has finished.
 * Current v1.0 — Developer working on first big update based on improved track positions for vehicles during the race.
