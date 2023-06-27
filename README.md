@@ -7,5 +7,5 @@ Feel free to contact me about that: weinoose@gmail.com
 
 Developer Log for the Development Process:
 * 25/03/2023 — Project has started.
-* 26/06/2023 — Project has finished, v1.0 has published.
+* 27/06/2023 — Project has finished, v1.0 has published.
 * Current: Developer working on first big update based on improved track positions for vehicles during the race.
