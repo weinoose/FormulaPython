@@ -109,7 +109,7 @@ aramco = Fuel('Aramco',+2.5,0.0450)
 
 def FIA(C): 
     if C == '1998':
-        return [1.18250*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0725,11.5,7.5,1]
+        return [1.18250*(spex),False,False,'DHL',bridgestone,shell,585,4,4,2,False,115,0.0725,11.5,7.5,1]
     elif C == '2005':
         return [1.09750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700,11.5,7.5,1]
     elif C == '2006':
@@ -696,17 +696,17 @@ class Engine():
         self.durability = durability
 
 # Formula 1 Engines
-MERCEDES_0 = Engine('Mercedes',FIA(current)[5],91,70) # McLaren
-FERRARI_F = Engine('Ferrari',FIA(current)[5],94,84) # Ferrari
-FERRARI_0 = Engine('Ferrari',FIA(current)[5],94,84) # Benetton
-FERRARI_1 = Engine('Ferrari',FIA(current)[5],94,84) # Minardi
-HONDA_F = Engine('Honda',FIA(current)[5],87,84) # Honda
-RENAULT_0 = Engine('Renault',FIA(current)[5],84,79) # Williams
-RENAULT_1 = Engine('Renault',FIA(current)[5],84,79) # Lotus
-RENAULT_2 = Engine('Renault',FIA(current)[5],84,79) # Brabham
-TOYOTA_F = Engine('Toyota',FIA(current)[5],79,87) # Toyota
-TOYOTA_0 = Engine('Toyota',FIA(current)[5],79,87) # Sauber
-TOYOTA_1 = Engine('Toyota',FIA(current)[5],79,87) # Jaguar
+MERCEDES_0 = Engine('Mercedes',FIA(current)[5],91,81) # McLaren
+FERRARI_F = Engine('Ferrari',FIA(current)[5],89,86) # Ferrari
+FERRARI_0 = Engine('Ferrari',FIA(current)[5],89,86) # Benetton
+FERRARI_1 = Engine('Ferrari',FIA(current)[5],89,86) # Minardi
+HONDA_F = Engine('Honda',FIA(current)[5],89,72) # Honda
+RENAULT_0 = Engine('Renault',FIA(current)[5],84,82) # Williams
+RENAULT_1 = Engine('Renault',FIA(current)[5],84,82) # Lotus
+RENAULT_2 = Engine('Renault',FIA(current)[5],84,82) # Brabham
+TOYOTA_F = Engine('Toyota',FIA(current)[5],77,89) # Toyota
+TOYOTA_0 = Engine('Toyota',FIA(current)[5],77,89) # Sauber
+TOYOTA_1 = Engine('Toyota',FIA(current)[5],77,89) # Jaguar
 
 # Formula 2 Engines
 MECACHROME = Engine('Mecachrome',FIA(current)[5],86,76) # F2 Spec. Only
