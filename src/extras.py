@@ -311,10 +311,7 @@ def driver(automated,status,quality,talent,style,like):
     start = round(50 + P1 + (P2 + randint(-3,3)))
     wet = round(50 + P1 + (P2 + randint(-3,3)))
 
-    if status != 'Rookie':
-        return f"Driver('$','$',None,None,{pace},{braking},{smoothness},{adaptability},{consistency},{fitness},{aggression},{attack},{defence},{start},{wet},[None],[None,None,None])"
-    else:
-        return f"Quality: {quality}.\nDriver('$','$',None,None,{pace},{braking},{smoothness},{adaptability},{consistency},{fitness},{aggression},{attack},{defence},{start},{wet},[None],'{like}')"
+    return f"Driver('Team','Name','Nationality','Number',{pace},{braking},{smoothness},{adaptability},{consistency},{fitness},{aggression},{attack},{defence},{start},{wet},[None],[None,None])"
 
 def table(year,serie):
     if serie == 'Formula 1':

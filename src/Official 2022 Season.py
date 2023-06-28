@@ -19,7 +19,7 @@ GP = 'Sakhir'
 spec = 'Formula 1'
 
 if spec == 'Formula 1':
-    verbosity = True # True or False for further telemetry & data.
+    verbosity = False # True or False for further telemetry & data.
 else:
     verbosity = False
 
@@ -106,30 +106,31 @@ aramco = Fuel('Aramco',+2.5,0.0450)
 # Index 11 contains fuel tank capacity.
 # Index 12 contains chassis efficiency.
 # Index 13-14-15 for regulation game changer coefficients [volume 2].
+# Index 16 for overtaking difficulty.
 
 def FIA(C): 
     if C == '1998':
-        return [1.18250*(spex),False,False,'DHL',bridgestone,shell,585,4,4,2,False,115,0.0725,11.5,7.5,1]
+        return [1.18250*(spex),False,False,'DHL',bridgestone,shell,585,4,4,2,False,115,0.0725,11.5,7.5,1,0.251]
     elif C == '2005':
-        return [1.09750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700,11.5,7.5,1]
+        return [1.09750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700,11.5,7.5,1,0.251]
     elif C == '2006':
-        return [1.11750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700,10,7,3]
+        return [1.11750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700,10,7,3,0.276]
     elif C == '2009':
-        return [1.16500*(spex),False,False,'DHL',pirelli,shell,605,2,5,3,False,115,0.0675,10,10,0]
+        return [1.16500*(spex),False,False,'DHL',pirelli,shell,605,2,5,3,False,115,0.0675,10,10,0,0.251]
     elif C == '2011':
-        return [1.15250*(spex),True,True,'DHL',pirelli,shell,640,2,5,3,False,110,0.0675,10,10,0]
+        return [1.15250*(spex),True,True,'DHL',pirelli,shell,640,2,5,3,False,110,0.0675,10,10,0,0.376]
     elif C == '2014':
-        return [1.15750*(spex),True,True,'DHL',pirelli,petronas,691,2,3,5,True,109,0.0650,11,6,3]
+        return [1.15750*(spex),True,True,'DHL',pirelli,petronas,691,2,3,5,True,109,0.0650,11,6,3,0.301]
     elif C == '2016':
-        return [1.07000*(spex),True,True,'DHL',pirelli,petronas,702,2,3,5,True,108,0.0650,11,6,3]
+        return [1.07000*(spex),True,True,'DHL',pirelli,petronas,702,2,3,5,True,108,0.0650,11,6,3,0.376]
     elif C == '2017':
-        return [1.01750*(spex),True,True,'DHL',pirelli,petronas,728,2,5,3,True,112,0.0650,10,8,2]
+        return [1.01750*(spex),True,True,'DHL',pirelli,petronas,728,2,5,3,True,112,0.0650,10,8,2,0.251]
     elif C == '2018':
-        return [0.99250*(spex),True,True,'DHL',pirelli,petronas,734,2,5,3,True,116,0.0650,10,8,2]
+        return [0.99250*(spex),True,True,'DHL',pirelli,petronas,734,2,5,3,True,116,0.0650,10,8,2,0.351]
     elif C == '2021':
-        return [0.99000*(spex),True,True,'DHL',pirelli,aramco,752,2,5,3,True,118,0.0625,10,8,2]
+        return [0.99000*(spex),True,True,'DHL',pirelli,aramco,752,2,5,3,True,118,0.0625,10,8,2,0.351]
     elif C == '2022':
-        return [1.00000*(spex),True,True,'DHL',pirelli,aramco,798,5,2,3,True,112,0.0625,7,10,3]
+        return [1.00000*(spex),True,True,'DHL',pirelli,aramco,798,5,2,3,True,112,0.0625,7,10,3,0.401]
 
 # Visual Plugins
 borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'
@@ -141,7 +142,7 @@ FAILURES = ['gearbox','clutch','driveshaft','halfshaft','throttle','brakes','han
 
             'engine','engine','engine','engine','engine','engine','engine','engine','engine','engine']
 
-MECHANICALS = ['gearing alingment','gearbox driveline'
+MECHANICALS = ['gearing alingment','gearbox driveline',
                'engine modes','engine braking','engine cooling','brake cooling','exhaust system',
                'optimal tire pressure']
 
@@ -628,14 +629,14 @@ def STRATEGY(GP):
 lms = Circuit('Le Mans','France','Agility Circuit',23,FIA(current)[0]*120.75,STRATEGY('Le Mans'),5,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy',[6,9,11],6) # 2018-present layout.
 # monza = Circuit('Monza','Italy','Agility Circuit',53,FIA(current)[0]*41.75,STRATEGY('Monza'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy',[21,31,41],29) # 1994-1999 layout.
 monza = Circuit('Monza','Italy','Agility Circuit',53,FIA(current)[0]*41.25,STRATEGY('Monza'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy',[21,31,41],29) # 2000-present layout.
-sochi = Circuit('Sochi','Russia','Agility Circuit',53,FIA(current)[0]*54.75,STRATEGY('Sochi'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Hard',[20,30,40],28) # 2014-present layout.
-baku = Circuit('Baku','Azerbaijan','Agility Circuit',51,FIA(current)[0]*62.25,STRATEGY('Baku'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Very Hard',[16,23,31],21) # 2016-present layout.
-lv = Circuit('Las Vegas','United States','Agility Circuit',50,FIA(current)[0]*33.25,STRATEGY('Las Vegas'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Easy',[21,31,41],29) # 2022-present layout.
+sochi = Circuit('Sochi','Russia','Agility Circuit',53,FIA(current)[0]*54.75,STRATEGY('Sochi'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Average',[20,30,40],28) # 2014-present layout.
+baku = Circuit('Baku','Azerbaijan','Agility Circuit',51,FIA(current)[0]*62.25,STRATEGY('Baku'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Hard',[16,23,31],21) # 2016-present layout.
+lv = Circuit('Las Vegas','United States','Agility Circuit',50,FIA(current)[0]*33.25,STRATEGY('Las Vegas'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Hard',[21,31,41],29) # 2022-present layout.
 
 # # # POWER CIRCUITS
-# spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*62.25,STRATEGY('Spa-Francorchamps'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Easy',[18,26,35],24) # 1995-2003 layout.
-# spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*66.50,STRATEGY('Spa-Francorchamps'),[m,s    ,s,s,m,m,h]],2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Easy',[18,26,35],24) # 2004-2006 layout.
-spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*65.25,STRATEGY('Spa-Francorchamps'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Easy',[18,26,35],24) # 2007-present layout.
+# spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*62.25,STRATEGY('Spa-Francorchamps'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Very Easy',[18,26,35],24) # 1995-2003 layout.
+# spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*66.50,STRATEGY('Spa-Francorchamps'),[m,s    ,s,s,m,m,h]],2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Very Easy',[18,26,35],24) # 2004-2006 layout.
+spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*65.25,STRATEGY('Spa-Francorchamps'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Very Easy',[18,26,35],24) # 2007-present layout.
 le = Circuit('Le Castellet','France','Power Circuit',53,FIA(current)[0]*52.25,STRATEGY('Le Castellet'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Easy',[16,23,31],21) # 2005-present layout.
 # sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*17.75,STRATEGY('Sakhir'),3,['Dry'],'Easy',[16,23,29],20) # 2020 extra outer layout.
 # sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*71.25,STRATEGY('Sakhir'),3,['Dry'],'Easy',[16,23,29],20) # 2010 layout.
@@ -644,45 +645,45 @@ austin = Circuit('Austin','United States','Power Circuit',56,FIA(current)[0]*55.
 mexico = Circuit('México City','México','Power Circuit',71,FIA(current)[0]*38.25,STRATEGY('México City'),3,['Dry'],'Easy',[28,43,57],42) # 2015-present layout.
 
 # QUICKNESS CIRCUITS
-# silverstone = Circuit('Silverstone','Great Britain','Quickness Circuit',52,FIA(current)[0]*42.25,STRATEGY('Silverstone'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Easy',[14,21,27],18) # 1997-2009 layout.
-silverstone = Circuit('Silverstone','Great Britain','Quickness Circuit',52,FIA(current)[0]*48.75,STRATEGY('Silverstone'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Easy',[14,21,27],18) # 2010-present layout.
+# silverstone = Circuit('Silverstone','Great Britain','Quickness Circuit',52,FIA(current)[0]*42.25,STRATEGY('Silverstone'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Easy',[14,21,27],18) # 1997-2009 layout.
+silverstone = Circuit('Silverstone','Great Britain','Quickness Circuit',52,FIA(current)[0]*48.75,STRATEGY('Silverstone'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Easy',[14,21,27],18) # 2010-present layout.
 sepang = Circuit('Sepang','Malaysia','Quickness Circuit',56,FIA(current)[0]*54.75,STRATEGY('Sepang'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Very Easy',[18,26,35],24) # 1999-present layout.
 shanghai = Circuit('Shanghai','China','Quickness Circuit',56,FIA(current)[0]*54.75,STRATEGY('Shanghai'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Easy',[18,26,35],24) # 2004-present layout.
 yeongam = Circuit('Yeongam','South Korea','Quickness Circuit',55,FIA(current)[0]*55.25,STRATEGY('Yeongam'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Easy',[20,30,40],28) # 2010-present layout.
 india = Circuit('India','India','Quickness Circuit',60,FIA(current)[0]*45.25,STRATEGY('India'),3,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Easy',[16,23,29],20) # 2011-present layout.
 
 # COMPLETENESS CIRCUITS
-# hockenheim = Circuit('Hockenheim','Germany','Completeness Circuit',67,FIA(current)[0]*56.75,STRATEGY('Hockenheim'),2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Average',[18,26,35],24) # 1994-2001 layout.
-hockenheim = Circuit('Hockenheim','Germany','Completeness Circuit',67,FIA(current)[0]*36.25,STRATEGY('Hockenheim'),2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Average',[18,26,35],24) # 2002-present layout.
+# hockenheim = Circuit('Hockenheim','Germany','Completeness Circuit',67,FIA(current)[0]*56.75,STRATEGY('Hockenheim'),2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Easy',[18,26,35],24) # 1994-2001 layout.
+hockenheim = Circuit('Hockenheim','Germany','Completeness Circuit',67,FIA(current)[0]*36.25,STRATEGY('Hockenheim'),2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Easy',[18,26,35],24) # 2002-present layout.
 fuji = Circuit('Fuji','Japan','Completeness Circuit',67,FIA(current)[0]*40.25,STRATEGY('Fuji'),1,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Average',[18,26,35],24) # 2005-present layout.
 # melbourne = Circuit('Melbourne','Australia','Completeness Circuit',58,FIA(current)[0]*45.25,STRATEGY('Melbourne'),4,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Hard',[20,30,40],28) # 1996-2020 layout.
 melbourne = Circuit('Melbourne','Australia','Completeness Circuit',58,FIA(current)[0]*39.25,STRATEGY('Melbourne'),4,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Hard',[20,30,40],28) # 2021-present layout.
-# yas = Circuit('Yas Island','Abu Dhabi','Completeness Circuit',58,FIA(current)[0]*58.75,STRATEGY('Yas Island'),2,['Dry'],'Average',[16,23,29],20) # 2009-2020 layout.
-yas = Circuit('Yas Island','Abu Dhabi','Completeness Circuit',58,FIA(current)[0]*44.75,STRATEGY('Yas Island'),2,['Dry'],'Average',[16,23,29],20) # 2021-present layout.
+# yas = Circuit('Yas Island','Abu Dhabi','Completeness Circuit',58,FIA(current)[0]*58.75,STRATEGY('Yas Island'),2,['Dry'],'Easy',[16,23,29],20) # 2009-2020 layout.
+yas = Circuit('Yas Island','Abu Dhabi','Completeness Circuit',58,FIA(current)[0]*44.75,STRATEGY('Yas Island'),2,['Dry'],'Easy',[16,23,29],20) # 2021-present layout.
 spielberg = Circuit('Spielberg','Austuria','Completeness Circuit',71,FIA(current)[0]*26.25,STRATEGY('Spielberg'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump'],'Very Easy',[20,30,40],28) # 1996-present layout.
 portimao = Circuit('Portimão','Portugal','Completeness Circuit',66,FIA(current)[0]*40.75,STRATEGY('Portimão'),1,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Average',[28,43,57],42) # 2008-present layout.
-jeddah = Circuit('Jeddah','Saudi Arabia','Completeness Circuit',50,FIA(current)[0]*49.25,STRATEGY('Jeddah'),3,['Dry'],'Average',[13,19,24],16) # 2021-present layout.
+jeddah = Circuit('Jeddah','Saudi Arabia','Completeness Circuit',50,FIA(current)[0]*49.25,STRATEGY('Jeddah'),3,['Dry'],'Easy',[13,19,24],16) # 2021-present layout.
 
 # ENGINEERING CIRCUITS
-nurburg = Circuit('Nurburg','Germany','Engineering Circuit',60,FIA(current)[0]*50.25,STRATEGY('Nurburg'),1,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Average',[20,30,40],28) # 2002-present layout.
-kyalami = Circuit('Kyalami','South Africa','Engineering Circuit',71,FIA(current)[0]*35.75,STRATEGY('kyalami'),2,['Dry'],'Average',[20,30,40],28) # 2015-present layout.
-# sao = Circuit('São Paulo','Brazil','Engineering Circuit',71,FIA(current)[0]*31.25,STRATEGY('São Paulo'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Average',[28,43,57],42) # 1996-1998 layout.
-sao = Circuit('São Paulo','Brazil','Engineering Circuit',71,FIA(current)[0]*30.75,STRATEGY('São Paulo'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Average',[28,43,57],42) # 1999-present layout.
+nurburg = Circuit('Nurburg','Germany','Engineering Circuit',60,FIA(current)[0]*50.25,STRATEGY('Nurburg'),1,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Hard',[20,30,40],28) # 2002-present layout.
+kyalami = Circuit('Kyalami','South Africa','Engineering Circuit',71,FIA(current)[0]*35.75,STRATEGY('kyalami'),2,['Dry'],'Hard',[20,30,40],28) # 2015-present layout.
+# sao = Circuit('São Paulo','Brazil','Engineering Circuit',71,FIA(current)[0]*31.25,STRATEGY('São Paulo'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Easy',[28,43,57],42) # 1996-1998 layout.
+sao = Circuit('São Paulo','Brazil','Engineering Circuit',71,FIA(current)[0]*30.75,STRATEGY('São Paulo'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Easy',[28,43,57],42) # 1999-present layout.
 # montreal = Circuit('Montréal','Canada','Engineering Circuit',70,FIA(current)[0]*35.75,STRATEGY('Montréal'),3,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Hard',[20,30,40],28) # 1996-2001 layout.
 montreal = Circuit('Montréal','Canada','Engineering Circuit',70,FIA(current)[0]*33.75,STRATEGY('Montréal'),3,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Hard',[20,30,40],28) # 2002-present layout.
 imola = Circuit('Imola','Italy','Engineering Circuit',63,FIA(current)[0]*36.25,STRATEGY('Imola'),1,['Dry','Dry','Dry','Dry','Dump','Dump','Dump'],'Hard',[25,37,50],36) # 2008-present layout.
 istanbul = Circuit('Istanbul','Turkey','Engineering Circuit',58,FIA(current)[0]*45.50,STRATEGY('Istanbul'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Easy',[16,23,29],20) # 2005-present layout.
-lusail = Circuit('Lusail','Qatar','Engineering Circuit',57,FIA(current)[0]*43.25,STRATEGY('Lusail'),1,['Dry'],'Easy',[25,37,50],36) # 2004-present layout.
+lusail = Circuit('Lusail','Qatar','Engineering Circuit',57,FIA(current)[0]*43.25,STRATEGY('Lusail'),1,['Dry'],'Average',[25,37,50],36) # 2004-present layout.
 miami = Circuit('Miami','United States','Engineering Circuit',57,FIA(current)[0]*49.75,STRATEGY('Miami'),3,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Easy',[19,28,37],26) # 2022-present layout.
 
 # DOWNFORCE CIRCUITS
-zandvoort = Circuit('Zandvoort','Netherlands','Downforce Circuit',72,FIA(current)[0]*31.75,STRATEGY('Zandvoort'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump'],'Average',[13,19,24],16) # 2020-present layout.
-budapest = Circuit('Budapest','Hungary','Downforce Circuit',70,FIA(current)[0]*38.75,STRATEGY('Budapest'),1,['Dry','Dry','Dry','Dry','Dump','Dump','Dump'],'Very Hard',[20,30,40],28) # 2003-present layout.
+zandvoort = Circuit('Zandvoort','Netherlands','Downforce Circuit',72,FIA(current)[0]*31.75,STRATEGY('Zandvoort'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump'],'Hard',[13,19,24],16) # 2020-present layout.
+budapest = Circuit('Budapest','Hungary','Downforce Circuit',70,FIA(current)[0]*38.75,STRATEGY('Budapest'),1,['Dry','Dry','Dry','Dry','Dump','Dump','Dump'],'Hard',[20,30,40],28) # 2003-present layout.
 suzuka = Circuit('Suzuka','Japan','Downforce Circuit',53,FIA(current)[0]*50.75,STRATEGY('Suzuka'),1,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Hard',[16,23,31],21) # 2009-present layout.
 barcelona = Circuit('Barcelona','Spain','Downforce Circuit',66,FIA(current)[0]*40.25,STRATEGY('Barcelona'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump'],'Hard',[20,30,40],28) # 2007-present layout.
 
 # STREET CIRCUITS
-monaco = Circuit('Monte-Carlo','Monaco','Street Circuit',78,FIA(current)[0]*32.25,STRATEGY('Monte-Carlo'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Hard',[20,30,40],28) # 2003-present layout.
+monaco = Circuit('Monte-Carlo','Monaco','Street Circuit',78,FIA(current)[0]*32.25,STRATEGY('Monte-Carlo'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Impossible',[20,30,40],28) # 2003-present layout.
 # singapore = Circuit('Singapore','Singapore','Street Circuit',61,FIA(current)[0]*62.75,STRATEGY('Singapore'),3,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Hard',[16,23,29],20) # 2008-2012 layout.
 # singapore = Circuit('Singapore','Singapore','Street Circuit',61,FIA(current)[0]*62.25,STRATEGY('Singapore'),3,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Hard',[16,23,29],20) # 2013-2014 layout.
 # singapore = Circuit('Singapore','Singapore','Street Circuit',61,FIA(current)[0]*63.75,STRATEGY('Singapore'),3,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Hard',[16,23,29],20) # 2015-2017 layout.
@@ -723,8 +724,8 @@ class Engine():
         self.durability = durability
 
 # Formula 1 Engines
-HONDA_0 = Engine('Honda',FIA(current)[5],93,77) # Red Bull
-HONDA_1 = Engine('Honda',FIA(current)[5],93,77) # AlphaTauri
+HONDA_0 = Engine('Honda',FIA(current)[5],94,77) # Red Bull
+HONDA_1 = Engine('Honda',FIA(current)[5],94,77) # AlphaTauri
 FERRARI_F = Engine('Ferrari',FIA(current)[5],91,72) # Ferrari
 FERRARI_0 = Engine('Ferrari',FIA(current)[5],91,72) # Haas
 FERRARI_1 = Engine('Ferrari',FIA(current)[5],91,72) # Alfa Romeo
@@ -1157,8 +1158,53 @@ def ANALYZER(session,data,tirenamedata,keyword):
     # Final Alingments
     da = pd.DataFrame()
     da = da.reindex(list(range(1,len(list((df.index)))+1)))
+    
     if session == 'Qualifying':
-        df = df.drop(axis=1, columns=['FL. LAP','FL. TIRE'])
+        df = df.drop(axis=1, columns=['FL. TIRE'])
+        DDD, q1f, q2f, q3f, q1, q2, q3 = {}, [], [], [], [], [], []
+
+        for i in list(data.columns):
+            DDD[i] = list(data[i])
+
+        nolandrivers = list(df['DRIVERS'])
+
+        for i in nolandrivers:
+            q1f.append(DDD[i][0])
+            q2f.append(DDD[i][1])
+            q3f.append(DDD[i][2])
+
+        for b,n,m in zip(q1f,q2f,q3f):
+            if b == 499.999:
+                q1.append('DNF')
+            else:
+                i = b
+                integer = i//60
+                decimal = str(i-(integer*60))[0:6]
+                string = str(int(integer)) +':'+ decimal
+                q1.append(string)
+
+            if n == 499.999:
+                q2.append('DNF')
+            else:
+                i = n
+                integer = i//60
+                decimal = str(i-(integer*60))[0:6]
+                string = str(int(integer)) +':'+ decimal
+                q2.append(string)
+
+            if m == 499.999:
+                q3.append('DNF')
+            else:
+                i = m
+                integer = i//60
+                decimal = str(i-(integer*60))[0:6]
+                string = str(int(integer)) +':'+ decimal
+                q3.append(string)
+
+        df['L1'] = q1
+        df['L2'] = q2
+        df['L3'] = q3
+
     for i in list(df.columns):
         da[i] = list(df[i])
 
@@ -1168,8 +1214,8 @@ def ANALYZER(session,data,tirenamedata,keyword):
         
         for i,j in zip(list(da['FL. LAP']),list(da['FL.'])):
             if 2 >= i:
-                dnffloptimizer0.append('NaN')
-                dnffloptimizer1.append('NaN')
+                dnffloptimizer0.append('None')
+                dnffloptimizer1.append('None')
             else:
                 dnffloptimizer0.append(int(i))
                 dnffloptimizer1.append(j)
@@ -1211,9 +1257,176 @@ def ANALYZER(session,data,tirenamedata,keyword):
         da['GAP'] = newgap
 
     # Final Alignments
+
     if keyword == 'race-chart':
         da = da[['MANUFACTURERS','DRIVERS','INTERVAL','GAP','FL.','FL. LAP','FL. TIRE','PIT','GRID']]
+    else:
+        pass
+
+    if session == 'Qualifying':
+        fl31, gap31, l131, l231, l331 = [], [], [], [], []
+        
+        for i in list(da['FL.']):
+            if i == 'DNF':
+                fl31.append('DNF')
+            elif len(str(i.split(':')[1])) != 6:
+                missing = 6 - len(str(i.split(':')[1]))
+                fff = f"{str(i.split(':')[1])}{str(0)*missing}"
+                f = f"{str(i.split(':')[0])}:{fff}"
+                fl31.append(f)
+            else:
+                f = f"{str(i.split(':')[0])}:{str(i.split(':')[1])}"
+                fl31.append(f)
+
+        da['FL.'] = fl31
+
+        for i in list(da['L1']):
+            if i == 'DNF':
+                l131.append('DNF')
+            elif len(str(i.split(':')[1])) != 6:
+                missing = 6 - len(str(i.split(':')[1]))
+                fff = f"{str(i.split(':')[1])}{str(0)*missing}"
+                f = f"{str(i.split(':')[0])}:{fff}"
+                l131.append(f)
+            else:
+                f = f"{str(i.split(':')[0])}:{str(i.split(':')[1])}"
+                l131.append(f)
+
+        da['L1'] = l131
+
+        for i in list(da['L2']):
+            if i == 'DNF':
+                l231.append('DNF')
+            elif len(str(i.split(':')[1])) != 6:
+                missing = 6 - len(str(i.split(':')[1]))
+                fff = f"{str(i.split(':')[1])}{str(0)*missing}"
+                f = f"{str(i.split(':')[0])}:{fff}"
+                l231.append(f)
+            else:
+                f = f"{str(i.split(':')[0])}:{str(i.split(':')[1])}"
+                l231.append(f)
+
+        da['L2'] = l231
+
+        for i in list(da['L3']):
+            if i == 'DNF':
+                l331.append('DNF')
+            elif len(str(i.split(':')[1])) != 6:
+                missing = 6 - len(str(i.split(':')[1]))
+                fff = f"{str(i.split(':')[1])}{str(0)*missing}"
+                f = f"{str(i.split(':')[0])}:{fff}"
+                l331.append(f)
+            else:
+                f = f"{str(i.split(':')[0])}:{str(i.split(':')[1])}"
+                l331.append(f)
+
+        da['L3'] = l331
+        
+        for q in list(da['GAP']):
+            try:
+                if len(str(q.split('.')[1])) != 3:
+                    missing = 3 - len(str(q.split('.')[1]))
+                    ttt = f"{str(q.split('.')[1])}{str(0)*missing}"
+                    t = f"{str(q.split('.')[0])}.{ttt}"
+                    gap31.append(t)
+                else:
+                    t = f"{str(q.split('.')[0])}.{str(q.split('.')[1])}"
+                    gap31.append(t)
+            except:
+                if q == 'FASTEST':
+                    gap31.append('FASTEST')
+                else:
+                    gap31.append('DNF')
+
+        da['GAP'] = gap31
     
+    elif keyword == 'race-chart':
+        fl31, gap31, interval31 = [], [], []
+               
+        for i in list(da['FL.']):
+            if i == 'None':
+                fl31.append('None')
+            elif len(str(i.split(':')[1])) != 6:
+                missing = 6 - len(str(i.split(':')[1]))
+                fff = f"{str(i.split(':')[1])}{str(0)*missing}"
+                f = f"{str(i.split(':')[0])}:{fff}"
+                fl31.append(f)
+            else:
+                f = f"{str(i.split(':')[0])}:{str(i.split(':')[1])}"
+                fl31.append(f)
+
+        da['FL.'] = fl31
+
+        for q in list(da['GAP']):
+            try:
+                if len(str(q.split('.')[1])) != 3:
+                    missing = 3 - len(str(q.split('.')[1]))
+                    ttt = f"{str(q.split('.')[1])}{str(0)*missing}"
+                    t = f"{str(q.split('.')[0])}.{ttt}"
+                    gap31.append(t)
+                else:
+                    t = f"{str(q.split('.')[0])}.{str(q.split('.')[1])}"
+                    gap31.append(t)
+            except:
+                if q == 'DNF':
+                    gap31.append('DNF')
+                elif q == 'None':
+                    gap31.append('None')
+
+        da['GAP'] = gap31
+
+        for q in list(da['INTERVAL']):
+            if list(da['INTERVAL']).index(q) == 0:
+                interval31.append(q)
+            elif q == 'DNF':
+                interval31.append('DNF')
+            elif q == 'None':
+                interval31.append('None')
+            else:
+                try:
+                    if len(str(q.split('.')[1])) != 3:
+                        missing = 3 - len(str(q.split('.')[1]))
+                        ttt = f"{str(q.split('.')[1])}{str(0)*missing}"
+                        t = f"{str(q.split('.')[0])}.{ttt}"
+                        interval31.append(t)
+                    else:
+                        t = f"{str(q.split('.')[0])}.{str(q.split('.')[1])}"
+                        interval31.append(t)
+                except:
+                    interval31.append(q)
+                
+        da['INTERVAL'] = interval31
+    
+    else:
+        fl31, gap31, interval31 = [], [], []
+        
+        for i in list(da['FL.']):
+            if len(str(i.split(':')[1])) != 6:
+                missing = 6 - len(str(i.split(':')[1]))
+                fff = f"{str(i.split(':')[1])}{str(0)*missing}"
+                f = f"{str(i.split(':')[0])}:{fff}"
+                fl31.append(f)
+            else:
+                f = f"{str(i.split(':')[0])}:{str(i.split(':')[1])}"
+                fl31.append(f)
+
+        da['FL.'] = fl31
+        
+        for q in list(da['GAP']):
+            try:
+                if len(str(q.split('.')[1])) != 3:
+                    missing = 3 - len(str(q.split('.')[1]))
+                    ttt = f"{str(q.split('.')[1])}{str(0)*missing}"
+                    t = f"{str(q.split('.')[0])}.{ttt}"
+                    gap31.append(t)
+                else:
+                    t = f"{str(q.split('.')[0])}.{str(q.split('.')[1])}"
+                    gap31.append(t)
+            except:
+                gap31.append('FASTEST')
+
+        da['GAP'] = gap31
+
     return da
 
 # # #
@@ -1307,7 +1520,17 @@ def Q(circuit,session,weather):
             lap_chart, tire_chart = [], []
             for lap in range(circuit.circuit_laps,circuit.circuit_laps+1):
                 tire_left = tire.tire_left(driver,circuit,tire_usage)
-                current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0]),3)
+
+                # track adaptation.
+                folks0 = round(((0.499) - (((driver.adaptability)*((333) + (100-driver.adaptability)))/100000) + ((100-driver.adaptability)/100)),3)
+                folks1 = round(((0.499) - (((driver.adaptability)*((333) + (100-driver.adaptability)))/100000) + ((100-driver.adaptability)/499)),3)
+
+                if c == 0:
+                    current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0]) + (folks0),3)
+                elif c == 1:
+                    current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0]) + (folks1),3)
+                else:
+                    current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0]) + (0.000),3)
                 
                 reliability_defict = driver.team.powertrain.fuel.vulnerability
                 mechanic_failure_odd = ((((((((driver.team.reliability+reliability_defict)*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
@@ -1421,7 +1644,7 @@ def R(circuit,session,weather):
                 driver_error_odd_2 = (((((((driver.consistency*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,57500)
 
             if len(DNF[driver.name]) > 1:
-                LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)))
+                LAP_CHART[driver.name].append((round(circuit.laptime + 225,3)))
                 TIRE_CHART[driver.name].append(tire.title[0])
                 TIRE_USAGE[driver.name] += 0
                 TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
@@ -1430,7 +1653,7 @@ def R(circuit,session,weather):
                 if len(BOX[driver.name]) > 1:
                     if len(TIRE_SETS[driver.name]) == 1:
                         print(f'{Fore.RED}DNF | Lap {lap} | {driver.name} has forced to retire due to severe damage issue. Disaster for {driver.team.title}!{Style.RESET_ALL}')
-                        LAP_CHART[driver.name].append((circuit.laptime + 75)*2)
+                        LAP_CHART[driver.name].append((circuit.laptime + 225)*2)
                         TIRE_CHART[driver.name].append(tire.title[0])
                         TIRE_USAGE[driver.name] += 0
                         TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
@@ -1493,7 +1716,7 @@ def R(circuit,session,weather):
                         MECHANICAL[driver.name].append(True)
                     else:
                         print(f'{Fore.RED}DNF | Lap {lap} | {driver.name} has forced to retire due to {choice(FAILURES)} issue. Disaster for {driver.team.title}!{Style.RESET_ALL}')
-                        LAP_CHART[driver.name].append((circuit.laptime + 75)*2)
+                        LAP_CHART[driver.name].append((circuit.laptime + 225)*2)
                         TIRE_CHART[driver.name].append(tire.title[0])
                         TIRE_USAGE[driver.name] += 0
                         TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
@@ -1511,7 +1734,7 @@ def R(circuit,session,weather):
                     kachow = uniform(0.1,100.1)
                     if kachow > 35.5:
                         print(f'{Fore.RED}DNF | Lap {lap} | {driver.name} {choice(ERRORS)} and, he is OUT! Disaster for {driver.team.title}!{Style.RESET_ALL}')
-                        LAP_CHART[driver.name].append((circuit.laptime + 75)*2)
+                        LAP_CHART[driver.name].append((circuit.laptime + 225)*2)
                         TIRE_CHART[driver.name].append(tire.title[0])
                         TIRE_USAGE[driver.name] += 0
                         TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
@@ -1537,7 +1760,7 @@ def R(circuit,session,weather):
                     if len(BOX[driver.name]) > 1:
                         if len(TIRE_SETS[driver.name]) == 1:
                             print(f'{Fore.RED}DNF | Lap {lap} | {driver.name} has forced to retire due to severe damage issue. Disaster for {driver.team.title}!{Style.RESET_ALL}')
-                            LAP_CHART[driver.name].append((circuit.laptime + 75)*2)
+                            LAP_CHART[driver.name].append((circuit.laptime + 225)*2)
                             TIRE_CHART[driver.name].append(tire.title[0])
                             TIRE_USAGE[driver.name] += 0
                             TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
@@ -1727,19 +1950,6 @@ def R(circuit,session,weather):
                 for K in drivers:
                     if K.name == defender:
                         defender_obj = K
-
-                drs_advantage = (((-1.0)*((0.250) + attacker_obj.team.RW/200))/1.5)
-
-                if circuit.overtake_difficulty == 'Very Hard':
-                    offset = 7.5
-                elif circuit.overtake_difficulty == 'Hard':
-                    offset = 12.5
-                elif circuit.overtake_difficulty == 'Average':
-                    offset = 22.5
-                elif circuit.overtake_difficulty == 'Easy':
-                    offset = 37.5
-                elif circuit.overtake_difficulty == 'Very Easy':
-                    offset = 50
                 
                 ACCIDENT = abs((uniform(0,25) + attacker_obj.attack) - (uniform(0,25) + defender_obj.defence))
                 
@@ -1869,6 +2079,29 @@ def R(circuit,session,weather):
                         pass
 
                 else:
+                    attacker_coming_by = LAP_CHART[attacker][-1] - LAP_CHART[defender][-1] # 0 ile 5 saniye arasında bir değerlendirme
+                    attacker_tire_left = TIRE_LEFT[attacker][-1]
+                    defender_tire_left = TIRE_LEFT[defender][-1]
+                    attacker_tire = TIRE_CHART[attacker][-1]
+                    defender_tire = TIRE_CHART[defender][-1]
+                    the_gap_in_front = gap_in_front
+                    minimum_delta_needed_d = FIA(current)[16]
+                    
+                    drs_advantage = (-1.0)*((0.250) + attacker_obj.team.drs_delta/200)
+                    if circuit.overtake_difficulty == 'Very Hard':
+                        minimum_delta_needed_t = 0.150
+                    elif circuit.overtake_difficulty == 'Hard':
+                        minimum_delta_needed_t = 0.200
+                    elif circuit.overtake_difficulty == 'Average':
+                        minimum_delta_needed_t = 0.250
+                    elif circuit.overtake_difficulty == 'Easy':
+                        minimum_delta_needed_t = 0.350
+                    elif circuit.overtake_difficulty == 'Very Easy':
+                        minimum_delta_needed_t = 0.500
+                    elif circuit.overtake_difficulty == 'Impossible':
+                        minimum_delta_needed_t = 0.100
+
+                    """
                     if (FIA(current)[1] == True) and (circuit.drs_points >= choice([0,1,2,3,4])) and (lap > 1) and (W3 == 'Dry'):
                         if gap_in_front < 1.0:
                             BONUS[attacker].append(drs_advantage)
@@ -1899,14 +2132,7 @@ def R(circuit,session,weather):
                             BONUS[attacker].append(0.250 + ((100-attacker_obj.team.vortex)/50))
                     else:
                         BONUS[attacker].append(1.000 + ((100-attacker_obj.team.vortex)/50))
-
-            # Laptime Trade-Off.
-            for i in BONUS:
-                LAP_CHART[i][-1] = sum(BONUS[i]) + LAP_CHART[i][-1]
-
-        BONUS = {}
-        for i in drivers:
-            BONUS[i.name] = []
+                    """
 
         # Lap by Lap Report | Final Shape
         temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
