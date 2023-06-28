@@ -106,30 +106,31 @@ aramco = Fuel('Aramco',+2.5,0.0450)
 # Index 11 contains fuel tank capacity.
 # Index 12 contains chassis efficiency.
 # Index 13-14-15 for regulation game changer coefficients [volume 2].
+# Index 16 for overtaking difficulty.
 
 def FIA(C): 
     if C == '1998':
-        return [1.18250*(spex),False,False,'DHL',bridgestone,shell,585,4,4,2,False,115,0.0725,11.5,7.5,1]
+        return [1.18250*(spex),False,False,'DHL',bridgestone,shell,585,4,4,2,False,115,0.0725,11.5,7.5,1,0.251]
     elif C == '2005':
-        return [1.09750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700,11.5,7.5,1]
+        return [1.09750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700,11.5,7.5,1,0.251]
     elif C == '2006':
-        return [1.11750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700,10,7,3]
+        return [1.11750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700,10,7,3,0.276]
     elif C == '2009':
-        return [1.16500*(spex),False,False,'DHL',pirelli,shell,605,2,5,3,False,115,0.0675,10,10,0]
+        return [1.16500*(spex),False,False,'DHL',pirelli,shell,605,2,5,3,False,115,0.0675,10,10,0,0.251]
     elif C == '2011':
-        return [1.15250*(spex),True,True,'DHL',pirelli,shell,640,2,5,3,False,110,0.0675,10,10,0]
+        return [1.15250*(spex),True,True,'DHL',pirelli,shell,640,2,5,3,False,110,0.0675,10,10,0,0.376]
     elif C == '2014':
-        return [1.15750*(spex),True,True,'DHL',pirelli,petronas,691,2,3,5,True,109,0.0650,11,6,3]
+        return [1.15750*(spex),True,True,'DHL',pirelli,petronas,691,2,3,5,True,109,0.0650,11,6,3,0.301]
     elif C == '2016':
-        return [1.07000*(spex),True,True,'DHL',pirelli,petronas,702,2,3,5,True,108,0.0650,11,6,3]
+        return [1.07000*(spex),True,True,'DHL',pirelli,petronas,702,2,3,5,True,108,0.0650,11,6,3,0.376]
     elif C == '2017':
-        return [1.01750*(spex),True,True,'DHL',pirelli,petronas,728,2,5,3,True,112,0.0650,10,8,2]
+        return [1.01750*(spex),True,True,'DHL',pirelli,petronas,728,2,5,3,True,112,0.0650,10,8,2,0.251]
     elif C == '2018':
-        return [0.99250*(spex),True,True,'DHL',pirelli,petronas,734,2,5,3,True,116,0.0650,10,8,2]
+        return [0.99250*(spex),True,True,'DHL',pirelli,petronas,734,2,5,3,True,116,0.0650,10,8,2,0.351]
     elif C == '2021':
-        return [0.99000*(spex),True,True,'DHL',pirelli,aramco,752,2,5,3,True,118,0.0625,10,8,2]
+        return [0.99000*(spex),True,True,'DHL',pirelli,aramco,752,2,5,3,True,118,0.0625,10,8,2,0.351]
     elif C == '2022':
-        return [1.00000*(spex),True,True,'DHL',pirelli,aramco,798,5,2,3,True,112,0.0625,7,10,3]
+        return [1.00000*(spex),True,True,'DHL',pirelli,aramco,798,5,2,3,True,112,0.0625,7,10,3,0.401]
 
 # Visual Plugins
 borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'
@@ -141,7 +142,7 @@ FAILURES = ['gearbox','clutch','driveshaft','halfshaft','throttle','brakes','han
 
             'engine','engine','engine','engine','engine','engine','engine','engine','engine','engine']
 
-MECHANICALS = ['gearing alingment','gearbox driveline'
+MECHANICALS = ['gearing alingment','gearbox driveline',
                'engine modes','engine braking','engine cooling','brake cooling','exhaust system',
                'optimal tire pressure']
 
@@ -328,9 +329,9 @@ class Tire():
 
         # # # 3.4: Driver Error During the Lap
         if self.title == 'Intermediate':
-            error_rate = 12.5 - (((driver.consistency * driver.fitness))**(1/4))
+            error_rate = 11.5 - (((driver.consistency * driver.fitness))**(1/4))
         elif self.title == 'Wet':
-            error_rate = 14.5 - (((driver.consistency * driver.fitness))**(1/4))
+            error_rate = 12.5 - (((driver.consistency * driver.fitness))**(1/4))
         else:
             error_rate = 10.5 - (((driver.consistency * driver.fitness))**(1/4))
         
@@ -414,12 +415,12 @@ if current in entertainment_era:
     s = Tire('Soft',FIA(current)[4],1.0,1.0000)
     m = Tire('Medium',FIA(current)[4],1.7,1.0117)
     h = Tire('Hard',FIA(current)[4],2.4,1.0217)
-    inter = Tire('Intermediate',FIA(current)[4],2.4,1.2517)
-    w = Tire('Wet',FIA(current)[4],2.8,1.3717)
+    inter = Tire('Intermediate',FIA(current)[4],2.6,1.2517)
+    w = Tire('Wet',FIA(current)[4],2.6,1.3717)
 elif current in strategy_era:
     s = Tire('Soft',FIA(current)[4],1.0,1.0000)
     h = Tire('Hard',FIA(current)[4],2.4,1.0217)
-    inter, w = Tire('Wet',FIA(current)[4],2.8,1.3717), Tire('Wet',FIA(current)[4],2.8,1.3717) # same compound.
+    inter, w = Tire('Wet',FIA(current)[4],2.6,1.3717), Tire('Wet',FIA(current)[4],2.6,1.3717)
 
 # Circuits
 class Circuit():
@@ -1150,8 +1151,53 @@ def ANALYZER(session,data,tirenamedata,keyword):
     # Final Alingments
     da = pd.DataFrame()
     da = da.reindex(list(range(1,len(list((df.index)))+1)))
+    
     if session == 'Qualifying':
-        df = df.drop(axis=1, columns=['FL. LAP','FL. TIRE'])
+        df = df.drop(axis=1, columns=['FL. TIRE'])
+        DDD, q1f, q2f, q3f, q1, q2, q3 = {}, [], [], [], [], [], []
+
+        for i in list(data.columns):
+            DDD[i] = list(data[i])
+
+        nolandrivers = list(df['DRIVERS'])
+
+        for i in nolandrivers:
+            q1f.append(DDD[i][0])
+            q2f.append(DDD[i][1])
+            q3f.append(DDD[i][2])
+
+        for b,n,m in zip(q1f,q2f,q3f):
+            if b == 499.999:
+                q1.append('DNF')
+            else:
+                i = b
+                integer = i//60
+                decimal = str(i-(integer*60))[0:6]
+                string = str(int(integer)) +':'+ decimal
+                q1.append(string)
+
+            if n == 499.999:
+                q2.append('DNF')
+            else:
+                i = n
+                integer = i//60
+                decimal = str(i-(integer*60))[0:6]
+                string = str(int(integer)) +':'+ decimal
+                q2.append(string)
+
+            if m == 499.999:
+                q3.append('DNF')
+            else:
+                i = m
+                integer = i//60
+                decimal = str(i-(integer*60))[0:6]
+                string = str(int(integer)) +':'+ decimal
+                q3.append(string)
+
+        df['L1'] = q1
+        df['L2'] = q2
+        df['L3'] = q3
+
     for i in list(df.columns):
         da[i] = list(df[i])
 
@@ -1161,8 +1207,8 @@ def ANALYZER(session,data,tirenamedata,keyword):
         
         for i,j in zip(list(da['FL. LAP']),list(da['FL.'])):
             if 2 >= i:
-                dnffloptimizer0.append('NaN')
-                dnffloptimizer1.append('NaN')
+                dnffloptimizer0.append('None')
+                dnffloptimizer1.append('None')
             else:
                 dnffloptimizer0.append(int(i))
                 dnffloptimizer1.append(j)
@@ -1204,9 +1250,176 @@ def ANALYZER(session,data,tirenamedata,keyword):
         da['GAP'] = newgap
 
     # Final Alignments
+
     if keyword == 'race-chart':
         da = da[['MANUFACTURERS','DRIVERS','INTERVAL','GAP','FL.','FL. LAP','FL. TIRE','PIT','GRID']]
+    else:
+        pass
+
+    if session == 'Qualifying':
+        fl31, gap31, l131, l231, l331 = [], [], [], [], []
+        
+        for i in list(da['FL.']):
+            if i == 'DNF':
+                fl31.append('DNF')
+            elif len(str(i.split(':')[1])) != 6:
+                missing = 6 - len(str(i.split(':')[1]))
+                fff = f"{str(i.split(':')[1])}{str(0)*missing}"
+                f = f"{str(i.split(':')[0])}:{fff}"
+                fl31.append(f)
+            else:
+                f = f"{str(i.split(':')[0])}:{str(i.split(':')[1])}"
+                fl31.append(f)
+
+        da['FL.'] = fl31
+
+        for i in list(da['L1']):
+            if i == 'DNF':
+                l131.append('DNF')
+            elif len(str(i.split(':')[1])) != 6:
+                missing = 6 - len(str(i.split(':')[1]))
+                fff = f"{str(i.split(':')[1])}{str(0)*missing}"
+                f = f"{str(i.split(':')[0])}:{fff}"
+                l131.append(f)
+            else:
+                f = f"{str(i.split(':')[0])}:{str(i.split(':')[1])}"
+                l131.append(f)
+
+        da['L1'] = l131
+
+        for i in list(da['L2']):
+            if i == 'DNF':
+                l231.append('DNF')
+            elif len(str(i.split(':')[1])) != 6:
+                missing = 6 - len(str(i.split(':')[1]))
+                fff = f"{str(i.split(':')[1])}{str(0)*missing}"
+                f = f"{str(i.split(':')[0])}:{fff}"
+                l231.append(f)
+            else:
+                f = f"{str(i.split(':')[0])}:{str(i.split(':')[1])}"
+                l231.append(f)
+
+        da['L2'] = l231
+
+        for i in list(da['L3']):
+            if i == 'DNF':
+                l331.append('DNF')
+            elif len(str(i.split(':')[1])) != 6:
+                missing = 6 - len(str(i.split(':')[1]))
+                fff = f"{str(i.split(':')[1])}{str(0)*missing}"
+                f = f"{str(i.split(':')[0])}:{fff}"
+                l331.append(f)
+            else:
+                f = f"{str(i.split(':')[0])}:{str(i.split(':')[1])}"
+                l331.append(f)
+
+        da['L3'] = l331
+        
+        for q in list(da['GAP']):
+            try:
+                if len(str(q.split('.')[1])) != 3:
+                    missing = 3 - len(str(q.split('.')[1]))
+                    ttt = f"{str(q.split('.')[1])}{str(0)*missing}"
+                    t = f"{str(q.split('.')[0])}.{ttt}"
+                    gap31.append(t)
+                else:
+                    t = f"{str(q.split('.')[0])}.{str(q.split('.')[1])}"
+                    gap31.append(t)
+            except:
+                if q == 'FASTEST':
+                    gap31.append('FASTEST')
+                else:
+                    gap31.append('DNF')
+
+        da['GAP'] = gap31
     
+    elif keyword == 'race-chart':
+        fl31, gap31, interval31 = [], [], []
+               
+        for i in list(da['FL.']):
+            if i == 'None':
+                fl31.append('None')
+            elif len(str(i.split(':')[1])) != 6:
+                missing = 6 - len(str(i.split(':')[1]))
+                fff = f"{str(i.split(':')[1])}{str(0)*missing}"
+                f = f"{str(i.split(':')[0])}:{fff}"
+                fl31.append(f)
+            else:
+                f = f"{str(i.split(':')[0])}:{str(i.split(':')[1])}"
+                fl31.append(f)
+
+        da['FL.'] = fl31
+
+        for q in list(da['GAP']):
+            try:
+                if len(str(q.split('.')[1])) != 3:
+                    missing = 3 - len(str(q.split('.')[1]))
+                    ttt = f"{str(q.split('.')[1])}{str(0)*missing}"
+                    t = f"{str(q.split('.')[0])}.{ttt}"
+                    gap31.append(t)
+                else:
+                    t = f"{str(q.split('.')[0])}.{str(q.split('.')[1])}"
+                    gap31.append(t)
+            except:
+                if q == 'DNF':
+                    gap31.append('DNF')
+                elif q == 'None':
+                    gap31.append('None')
+
+        da['GAP'] = gap31
+
+        for q in list(da['INTERVAL']):
+            if list(da['INTERVAL']).index(q) == 0:
+                interval31.append(q)
+            elif q == 'DNF':
+                interval31.append('DNF')
+            elif q == 'None':
+                interval31.append('None')
+            else:
+                try:
+                    if len(str(q.split('.')[1])) != 3:
+                        missing = 3 - len(str(q.split('.')[1]))
+                        ttt = f"{str(q.split('.')[1])}{str(0)*missing}"
+                        t = f"{str(q.split('.')[0])}.{ttt}"
+                        interval31.append(t)
+                    else:
+                        t = f"{str(q.split('.')[0])}.{str(q.split('.')[1])}"
+                        interval31.append(t)
+                except:
+                    interval31.append(q)
+                
+        da['INTERVAL'] = interval31
+    
+    else:
+        fl31, gap31, interval31 = [], [], []
+        
+        for i in list(da['FL.']):
+            if len(str(i.split(':')[1])) != 6:
+                missing = 6 - len(str(i.split(':')[1]))
+                fff = f"{str(i.split(':')[1])}{str(0)*missing}"
+                f = f"{str(i.split(':')[0])}:{fff}"
+                fl31.append(f)
+            else:
+                f = f"{str(i.split(':')[0])}:{str(i.split(':')[1])}"
+                fl31.append(f)
+
+        da['FL.'] = fl31
+        
+        for q in list(da['GAP']):
+            try:
+                if len(str(q.split('.')[1])) != 3:
+                    missing = 3 - len(str(q.split('.')[1]))
+                    ttt = f"{str(q.split('.')[1])}{str(0)*missing}"
+                    t = f"{str(q.split('.')[0])}.{ttt}"
+                    gap31.append(t)
+                else:
+                    t = f"{str(q.split('.')[0])}.{str(q.split('.')[1])}"
+                    gap31.append(t)
+            except:
+                gap31.append('FASTEST')
+
+        da['GAP'] = gap31
+
     return da
 
 # # #
@@ -1300,10 +1513,19 @@ def Q(circuit,session,weather):
             lap_chart, tire_chart = [], []
             for lap in range(circuit.circuit_laps,circuit.circuit_laps+1):
                 tire_left = tire.tire_left(driver,circuit,tire_usage)
-                current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0]),3)
-                
-                reliability_defict = driver.team.powertrain.fuel.vulnerability
-                mechanic_failure_odd = ((((((((driver.team.reliability+reliability_defict)*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
+
+                # track adaptation.
+                folks0 = round(((0.499) - (((driver.adaptability)*((333) + (100-driver.adaptability)))/100000) + ((100-driver.adaptability)/100)),3)
+                folks1 = round(((0.499) - (((driver.adaptability)*((333) + (100-driver.adaptability)))/100000) + ((100-driver.adaptability)/499)),3)
+
+                if c == 0:
+                    current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0]) + (folks0),3)
+                elif c == 1:
+                    current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0]) + (folks1),3)
+                else:
+                    current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0]) + (0.000),3)
+
+                DO_NOT_FINISHED = (((((((((((driver.team.reliability + driver.team.powertrain.durability)/2))+(driver.team.powertrain.fuel.vulnerability))*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
                 
                 if W3 == 'Dump':
                     driver_error_odd = (((((((driver.fitness*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,67500)
@@ -1320,7 +1542,7 @@ def Q(circuit,session,weather):
                     tire_chart.append(tire.title[0])
                     tire_usage += 0
                 else:
-                    if mechanic_failure_odd == True:
+                    if DO_NOT_FINISHED == True:
                         print(f'DNF | Fast Lap {c+1} | {driver.name} has forced to retire due to {choice(FAILURES)} issue. Disaster for {driver.team.title}!')
                         lap_chart.append(499.999)
                         tire_chart.append(tire.title[0])
@@ -1399,9 +1621,7 @@ def R(circuit,session,weather):
             tire_left = tire.tire_left(driver,circuit,TIRE_USAGE[driver.name])
             
             current_laptime = round(tire.laptime(driver,circuit,lap,TIRE_USAGE[driver.name],['sunday',GRID[driver.name]]),3)
-
-            reliability_defict = driver.team.powertrain.fuel.vulnerability
-            mechanic_failure_odd = ((((((((driver.team.reliability+reliability_defict)*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
+            DO_NOT_FINISHED = (((((((((((driver.team.reliability + driver.team.powertrain.durability)/2))+(driver.team.powertrain.fuel.vulnerability))*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
             
             if W3 == 'Dump':
                 driver_error_odd = (((((((driver.fitness*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,67500)
@@ -1414,7 +1634,7 @@ def R(circuit,session,weather):
                 driver_error_odd_2 = (((((((driver.consistency*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,57500)
 
             if len(DNF[driver.name]) > 1:
-                LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)))
+                LAP_CHART[driver.name].append((round(circuit.laptime + 225,3)))
                 TIRE_CHART[driver.name].append(tire.title[0])
                 TIRE_USAGE[driver.name] += 0
                 TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
@@ -1423,7 +1643,7 @@ def R(circuit,session,weather):
                 if len(BOX[driver.name]) > 1:
                     if len(TIRE_SETS[driver.name]) == 1:
                         print(f'{Fore.RED}DNF | Lap {lap} | {driver.name} has forced to retire due to severe damage issue. Disaster for {driver.team.title}!{Style.RESET_ALL}')
-                        LAP_CHART[driver.name].append((circuit.laptime + 75)*2)
+                        LAP_CHART[driver.name].append((circuit.laptime + 225)*2)
                         TIRE_CHART[driver.name].append(tire.title[0])
                         TIRE_USAGE[driver.name] += 0
                         TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
@@ -1475,7 +1695,7 @@ def R(circuit,session,weather):
                     TIRE_USAGE[driver.name] += 0.175
                     TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
             else:
-                if mechanic_failure_odd == True:
+                if DO_NOT_FINISHED == True:
                     the_odd = uniform(0.1,100.1)
                     if the_odd < 25.1:
                         print(f'{Fore.LIGHTRED_EX}INC | Lap {lap} | {driver.name} has an issue. He has lost the {choice(MECHANICALS)}! Disaster for {driver.team.title}!{Style.RESET_ALL}')
@@ -1486,7 +1706,7 @@ def R(circuit,session,weather):
                         MECHANICAL[driver.name].append(True)
                     else:
                         print(f'{Fore.RED}DNF | Lap {lap} | {driver.name} has forced to retire due to {choice(FAILURES)} issue. Disaster for {driver.team.title}!{Style.RESET_ALL}')
-                        LAP_CHART[driver.name].append((circuit.laptime + 75)*2)
+                        LAP_CHART[driver.name].append((circuit.laptime + 225)*2)
                         TIRE_CHART[driver.name].append(tire.title[0])
                         TIRE_USAGE[driver.name] += 0
                         TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
@@ -1504,7 +1724,7 @@ def R(circuit,session,weather):
                     kachow = uniform(0.1,100.1)
                     if kachow > 35.5:
                         print(f'{Fore.RED}DNF | Lap {lap} | {driver.name} {choice(ERRORS)} and, he is OUT! Disaster for {driver.team.title}!{Style.RESET_ALL}')
-                        LAP_CHART[driver.name].append((circuit.laptime + 75)*2)
+                        LAP_CHART[driver.name].append((circuit.laptime + 225)*2)
                         TIRE_CHART[driver.name].append(tire.title[0])
                         TIRE_USAGE[driver.name] += 0
                         TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
@@ -1530,7 +1750,7 @@ def R(circuit,session,weather):
                     if len(BOX[driver.name]) > 1:
                         if len(TIRE_SETS[driver.name]) == 1:
                             print(f'{Fore.RED}DNF | Lap {lap} | {driver.name} has forced to retire due to severe damage issue. Disaster for {driver.team.title}!{Style.RESET_ALL}')
-                            LAP_CHART[driver.name].append((circuit.laptime + 75)*2)
+                            LAP_CHART[driver.name].append((circuit.laptime + 225)*2)
                             TIRE_CHART[driver.name].append(tire.title[0])
                             TIRE_USAGE[driver.name] += 0
                             TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
@@ -1720,19 +1940,6 @@ def R(circuit,session,weather):
                 for K in drivers:
                     if K.name == defender:
                         defender_obj = K
-
-                drs_advantage = (((-1.0)*((0.250) + attacker_obj.team.RW/200))/1.5)
-
-                if circuit.overtake_difficulty == 'Very Hard':
-                    offset = 7.5
-                elif circuit.overtake_difficulty == 'Hard':
-                    offset = 12.5
-                elif circuit.overtake_difficulty == 'Average':
-                    offset = 22.5
-                elif circuit.overtake_difficulty == 'Easy':
-                    offset = 37.5
-                elif circuit.overtake_difficulty == 'Very Easy':
-                    offset = 50
                 
                 ACCIDENT = abs((uniform(0,25) + attacker_obj.attack) - (uniform(0,25) + defender_obj.defence))
                 
@@ -1862,6 +2069,29 @@ def R(circuit,session,weather):
                         pass
 
                 else:
+                    attacker_coming_by = LAP_CHART[attacker][-1] - LAP_CHART[defender][-1] # 0 ile 5 saniye arasında bir değerlendirme
+                    attacker_tire_left = TIRE_LEFT[attacker][-1]
+                    defender_tire_left = TIRE_LEFT[defender][-1]
+                    attacker_tire = TIRE_CHART[attacker][-1]
+                    defender_tire = TIRE_CHART[defender][-1]
+                    the_gap_in_front = gap_in_front
+                    minimum_delta_needed_d = FIA(current)[16]
+                    
+                    drs_advantage = (-1.0)*((0.250) + attacker_obj.team.drs_delta/200)
+                    if circuit.overtake_difficulty == 'Very Hard':
+                        minimum_delta_needed_t = 0.150
+                    elif circuit.overtake_difficulty == 'Hard':
+                        minimum_delta_needed_t = 0.200
+                    elif circuit.overtake_difficulty == 'Average':
+                        minimum_delta_needed_t = 0.250
+                    elif circuit.overtake_difficulty == 'Easy':
+                        minimum_delta_needed_t = 0.350
+                    elif circuit.overtake_difficulty == 'Very Easy':
+                        minimum_delta_needed_t = 0.500
+                    elif circuit.overtake_difficulty == 'Impossible':
+                        minimum_delta_needed_t = 0.100
+
+                    """
                     if (FIA(current)[1] == True) and (circuit.drs_points >= choice([0,1,2,3,4])) and (lap > 1) and (W3 == 'Dry'):
                         if gap_in_front < 1.0:
                             BONUS[attacker].append(drs_advantage)
@@ -1892,14 +2122,7 @@ def R(circuit,session,weather):
                             BONUS[attacker].append(0.250 + ((100-attacker_obj.team.vortex)/50))
                     else:
                         BONUS[attacker].append(1.000 + ((100-attacker_obj.team.vortex)/50))
-
-            # Laptime Trade-Off.
-            for i in BONUS:
-                LAP_CHART[i][-1] = sum(BONUS[i]) + LAP_CHART[i][-1]
-
-        BONUS = {}
-        for i in drivers:
-            BONUS[i.name] = []
+                    """
 
         # Lap by Lap Report | Final Shape
         temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
@@ -1993,7 +2216,7 @@ def R(circuit,session,weather):
     i0 = list(RACE_CLASSIFICATION['INTERVAL'])
     i1 = list(RACE_CLASSIFICATION['GAP'])
     i0[0] = i1[0]
-    i1[0] = None
+    i1[0] = 'GAP'
 
     RACE_CLASSIFICATION['INTERVAL'] = i0
     RACE_CLASSIFICATION['GAP'] = i1
@@ -2106,12 +2329,12 @@ if execution == 'simulation':
         for i in drivers:
             for q in [inter,inter,inter,inter]:
                 TIRE_SETS[i.name].append(q)
-            STINT[i.name].append(CRC.strategy[0][0].title[0])
+            STINT[i.name].append(inter.title[0])
     elif W3 == 'Wet':
         for i in drivers:
             for q in [w,w,w,w]:
                 TIRE_SETS[i.name].append(q)
-            STINT[i.name].append(CRC.strategy[0][0].title[0])
+            STINT[i.name].append(w.title[0])
 
     # Race Session
     R(CRC,'Race',W3)
