@@ -6,6 +6,7 @@ It has everything in it, yet I feel a bit lazy to demonstrate it. However, if yo
 Feel free to contact me about that: weinoose@gmail.com
 
 Developer Log for the Development Process:
-* 25/03/2023 — Project has started.
-* 27/06/2023 — Project has finished.
-* Current v1.0 — Developer working on first big update based on improved track positions for vehicles during the race.
+* 25/03/2023 — v0.0 — Project has started.
+* 28/06/2023 — v1.0 — Project has finished.
+* Current — v1.1 — Developer working on first minor update based on laptime priority when same laptimes occurrs by different drivers.
+* Current — v1.2 — Developer working on first major update based on improved track positions for vehicles during the race.
