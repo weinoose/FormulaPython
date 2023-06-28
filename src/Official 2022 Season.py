@@ -19,7 +19,7 @@ GP = 'Sakhir'
 spec = 'Formula 1'
 
 if spec == 'Formula 1':
-    verbosity = False # True or False for further telemetry & data.
+    verbosity = True # True or False for further telemetry & data.
 else:
     verbosity = False
 
@@ -1531,9 +1531,8 @@ def Q(circuit,session,weather):
                     current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0]) + (folks1),3)
                 else:
                     current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0]) + (0.000),3)
-                
-                reliability_defict = driver.team.powertrain.fuel.vulnerability
-                mechanic_failure_odd = ((((((((driver.team.reliability+reliability_defict)*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
+
+                DO_NOT_FINISHED = (((((((((((driver.team.reliability + driver.team.powertrain.durability)/2))+(driver.team.powertrain.fuel.vulnerability))*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
                 
                 if W3 == 'Dump':
                     driver_error_odd = (((((((driver.fitness*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,67500)
@@ -1550,7 +1549,7 @@ def Q(circuit,session,weather):
                     tire_chart.append(tire.title[0])
                     tire_usage += 0
                 else:
-                    if mechanic_failure_odd == True:
+                    if DO_NOT_FINISHED == True:
                         print(f'DNF | Fast Lap {c+1} | {driver.name} has forced to retire due to {choice(FAILURES)} issue. Disaster for {driver.team.title}!')
                         lap_chart.append(499.999)
                         tire_chart.append(tire.title[0])
@@ -1629,9 +1628,7 @@ def R(circuit,session,weather):
             tire_left = tire.tire_left(driver,circuit,TIRE_USAGE[driver.name])
             
             current_laptime = round(tire.laptime(driver,circuit,lap,TIRE_USAGE[driver.name],['sunday',GRID[driver.name]]),3)
-
-            reliability_defict = driver.team.powertrain.fuel.vulnerability
-            mechanic_failure_odd = ((((((((driver.team.reliability+reliability_defict)*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
+            DO_NOT_FINISHED = (((((((((((driver.team.reliability + driver.team.powertrain.durability)/2))+(driver.team.powertrain.fuel.vulnerability))*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
             
             if W3 == 'Dump':
                 driver_error_odd = (((((((driver.fitness*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,67500)
@@ -1705,7 +1702,7 @@ def R(circuit,session,weather):
                     TIRE_USAGE[driver.name] += 0.175
                     TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
             else:
-                if mechanic_failure_odd == True:
+                if DO_NOT_FINISHED == True:
                     the_odd = uniform(0.1,100.1)
                     if the_odd < 25.1:
                         print(f'{Fore.LIGHTRED_EX}INC | Lap {lap} | {driver.name} has an issue. He has lost the {choice(MECHANICALS)}! Disaster for {driver.team.title}!{Style.RESET_ALL}')
@@ -2226,7 +2223,7 @@ def R(circuit,session,weather):
     i0 = list(RACE_CLASSIFICATION['INTERVAL'])
     i1 = list(RACE_CLASSIFICATION['GAP'])
     i0[0] = i1[0]
-    i1[0] = None
+    i1[0] = 'GAP'
 
     RACE_CLASSIFICATION['INTERVAL'] = i0
     RACE_CLASSIFICATION['GAP'] = i1
