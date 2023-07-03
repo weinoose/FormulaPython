@@ -4,7 +4,7 @@ CAR DEVELOPMENT/PRODUCTION REGULATIONS
 * In terms of durability updates, it is eligible at the middle of the season within a -6/+6 ratio.
 * In terms of the -6/+6 ratio update, every +1 upgrade for durability costs 2 points for car traits. The other way around is the same 2 for 1 is eligible.
 * In terms of car weight updates, it is eligible at the start of the season. Every -1 kilo upgrade costs 2 points of car traits. No other way around.
-* In terms of engine performance development, it is eligible at the middle of the season within a -4/+4 ratio.
+* In terms of engine performance development, it is eligible at the middle of the season to end of the season within a -4/+4 ratio.
 * Car production cost is between 18M$ and 30M$
 
 CAR DEVELOPMENT FINANCIAL REGULATIONS
@@ -26,6 +26,13 @@ IN-REGULATION RESEARCHES
 * An A team in the 1998 season did not make any upgrades and aligned all their budgets for further regulation research.
 > In this case, every +x update returns as; +(x+3) for 1999 regulations initial car design.
 > In this case, every +x update returns as; +(x+5) for 2000 regulations initial car design and goes on...
+
+DIFFERENCES FROM REAL FORMULA ONE RACING
+* We assume that every year of formula racing has the same post-race points distribution, contrary to the truth.
+* We assume that there were no prohibition for tire changes at 2005, contrary to the truth.
+* We assume that blown diffuser never banned in the era of between 2009 and 2011, and cars never slowed down for 2012 and 2013 season.
+* During the era between [1998-2008], contrary to the truth, we assume that Bridgestone is the only tire manufacturer.
+* During the era between [1998-2009], refuelling is not active contrary to the truth. Hence, drivers starts the races with full tank.
 
 AVAILABLE RESEARCH DATES
 * 2001, 2002, 2003, and 2004 seasons are eligible to research for 2005 regulations.
@@ -80,7 +87,7 @@ ERS: None
 
 2006-2007-2008
 Engine: V8 2.4L
-Engine Continuity: Engines were frozen until the end of the 2013 season.
+Engine Continuity: Engines were frozen until the end of the 2013 season. / Starting from 2007 season. / For 2006, it is one-year usage.
 Chassis: Multi-year usage with one concept.
 Max. Driver Contract Lenght: 4 years
 Pit-stop regulations: Option/Prime

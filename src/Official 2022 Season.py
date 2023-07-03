@@ -6,6 +6,10 @@ from colorama import Fore, Style
 import datetime
 import sys
 
+# # # DIFFERENCES FROM REAL FORMULA ONE RACING
+# There is no red flag feature in this simulation. However, safety car and artificial safety car features are available.
+# We assume that each team could find the best strategy and car setup for the feature race in free practice sessions.
+
 # Application Modes
 execution = 'simulation' # data or simulation for output/run mode.
 
@@ -1650,6 +1654,14 @@ def R(circuit,session,weather):
                 TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
 
             elif SAFETY_CAR[lap][-1] == 1:
+                z = 4
+                if tire.title[0] == 'S':
+                    pit_intervalx = [circuit.tire_series[0] - z, circuit.tire_series[0] + z]
+                elif tire.title[0] == 'M':
+                    pit_intervalx = [circuit.tire_series[1] - z, circuit.tire_series[1] + z]
+                else:
+                    pit_intervalx = [circuit.tire_series[2] - z, circuit.tire_series[2] + z]
+
                 if len(BOX[driver.name]) > 1:
                     if len(TIRE_SETS[driver.name]) == 1:
                         print(f'{Fore.RED}DNF | Lap {lap} | {driver.name} has forced to retire due to severe damage issue. Disaster for {driver.team.title}!{Style.RESET_ALL}')
@@ -1680,7 +1692,7 @@ def R(circuit,session,weather):
                         TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                         BOX[driver.name].clear()
                         BOX[driver.name].append(None)
-                elif tire_left < 59.95:
+                elif pit_intervalx[1] >= TIRE_USAGE[driver.name] >= pit_intervalx[0]:
                     if len(TIRE_SETS[driver.name]) == 1:
                         LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)))
                         TIRE_CHART[driver.name].append(tire.title[0])
@@ -2216,7 +2228,6 @@ def R(circuit,session,weather):
         TEMP_FL_INFO = f'\nFastest Lap | {list(TEMP_CLASSIFICATION["DRIVERS"])[dls_.index(min(dls_))]} has recorded {fls_[dls_.index(min(dls_))]} on this track.'
         if verbosity == True:
             racereportfile.write(f'{TEMP_INFO}\n{TEMP_CLASSIFICATION}\n{TEMP_FL_INFO}\n{borderline}\n')
-
         # # # END OF THE LAP
 
     # # # END OF THE GP
@@ -2447,15 +2458,3 @@ elif execution == 'data':
     DR = DR.reset_index()
     DR = DR.drop(axis=1, columns=['index'])
     print(DR)
-
-# # # DIFFERENCES FROM REAL FORMULA ONE RACING
-# No red flag and no artificial safety car exist, only safety car.
-# No changable weather conditions for each session.
-# We assume that every year of formula racing has the same post-race points distribution, contrary to the truth.
-# We assume that each team find the best strategy and car setup for the feature race.
-# We assume that each circuit has the same amount of fuel consumption. However, it is changable fuel supplier to fuel supplier.
-# We assume that blown diffuser never banned in the era of between 2009 and 2011, and cars never slowed down for 2012 season.
-# We assume that engines were frozen at 2006 not 2007, contrary to the truth.
-# We assume that there were no prohibition for tire changes at 2005, contrary to the truth.
-# During the era between [1998-2008], contrary to the truth, we assume that Bridgestone is the only tire manufacturer.
-# During the era between [1998-2009], refuelling is not active contrary to the truth. Hence, drivers starts the races with full tank.
