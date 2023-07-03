@@ -338,7 +338,10 @@ class Tire():
         if (hotlap == 0) and (mode[0] == 'sunday') and (SAFETY_CAR[lap][-1] != 1):
             if uniform(0.01,100.01) <= error_rate:
                 ERROR = choice(list(np.arange(2.249, 5.449, 0.001, dtype=float)))
-                print(f'{Fore.LIGHTYELLOW_EX}ERR | Lap {lap} | {driver.name} made mistake and {choice(MISTAKES)}. He has lost {round(ERROR,3)} seconds!{Style.RESET_ALL}')
+                if len(DNF[driver.name]) > 1:
+                    pass
+                else:
+                    print(f'{Fore.LIGHTYELLOW_EX}ERR | Lap {lap} | {driver.name} made mistake and {choice(MISTAKES)}. He has lost {round(ERROR,3)} seconds!{Style.RESET_ALL}')
             else:
                 ERROR = 0
         else:
@@ -1660,8 +1663,18 @@ def R(circuit,session,weather):
                         tire = TIRE_SETS[driver.name][0]
                         STINT[driver.name].append(f'-{tire.title[0]}')
                         pit_stop = round(driver.team.pit() + 6.5,3)
+
+                        if sum(PENALTY[driver.name]) != 0:
+                            gabigol = sum(PENALTY[driver.name])
+                            pit_stop += sum(PENALTY[driver.name])
+                            PENALTY[driver.name].clear()
+                            PENALTY[driver.name].append(0)
+                            print(f'PIT | Lap {lap} | Pit-stop for {driver.name} but, he has to pay-off his {gabigol} second penalty first. Pit-crew is waiting along.')
+                        else:
+                            gabigol = 0
+
                         PIT[driver.name].append(1)
-                        print(f'PIT | Lap {lap} | Pit-stop for {driver.name} with {pit_stop} seconds stationary. He is on {tire.title} compound.')
+                        print(f'PIT | Lap {lap} | Pit-stop for {driver.name} with {round(pit_stop - gabigol,3)} seconds stationary. He is on {tire.title} compound.')
                         LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)) + pit_stop + 14)
                         TIRE_CHART[driver.name].append(tire.title[0])
                         TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
@@ -1685,13 +1698,24 @@ def R(circuit,session,weather):
                             tire = TIRE_SETS[driver.name][0]
                             STINT[driver.name].append(f'-{tire.title[0]}')
                             pit_stop = round(driver.team.pit(),3)
-                            PIT[driver.name].append(1)
-                            if 10 > pit_stop >= 5.0:
-                                print(f'PIT | Lap {lap} | Bad news for {driver.name} with {pit_stop} seconds stationary. He is on {tire.title} compound.')
-                            elif pit_stop >= 10:
-                                print(f'PIT | Lap {lap} | Disaster for {driver.name} with {pit_stop} seconds stationary. He is on {tire.title} compound.')
+
+                            if sum(PENALTY[driver.name]) != 0:
+                                gabigol = sum(PENALTY[driver.name])
+                                pit_stop += sum(PENALTY[driver.name])
+                                PENALTY[driver.name].clear()
+                                PENALTY[driver.name].append(0)
+                                print(f'PIT | Lap {lap} | Pit-stop for {driver.name} but, he has to pay-off his {gabigol} second penalty first. Pit-crew is waiting along.')
                             else:
-                                print(f'PIT | Lap {lap} | Pit-stop for {driver.name} with {pit_stop} seconds stationary. He is on {tire.title} compound.')
+                                gabigol = 0
+                        
+                            PIT[driver.name].append(1)
+                            KTM = round(pit_stop - gabigol,3)
+                            if 10 > KTM >= 5.0:
+                                print(f'PIT | Lap {lap} | Bad news for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
+                            elif KTM >= 10:
+                                print(f'PIT | Lap {lap} | Disaster for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
+                            else:
+                                print(f'PIT | Lap {lap} | Pit-stop for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
                             LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)) + pit_stop + 14) # Pitted Lap
                             TIRE_CHART[driver.name].append(tire.title[0])
                             TIRE_USAGE[driver.name] += 0.175
@@ -1767,8 +1791,18 @@ def R(circuit,session,weather):
                             tire = TIRE_SETS[driver.name][0]
                             STINT[driver.name].append(f'-{tire.title[0]}')
                             pit_stop = round(driver.team.pit() + 6.5,3)
+
+                            if sum(PENALTY[driver.name]) != 0:
+                                gabigol = sum(PENALTY[driver.name])
+                                pit_stop += sum(PENALTY[driver.name])
+                                PENALTY[driver.name].clear()
+                                PENALTY[driver.name].append(0)
+                                print(f'PIT | Lap {lap} | Pit-stop for {driver.name} but, he has to pay-off his {gabigol} second penalty first. Pit-crew is waiting along.')
+                            else:
+                                gabigol = 0
+
                             PIT[driver.name].append(1)
-                            print(f'PIT | Lap {lap} | Pit-stop for {driver.name} with {pit_stop} seconds stationary. He is on {tire.title} compound.')
+                            print(f'PIT | Lap {lap} | Pit-stop for {driver.name} with {round(pit_stop - gabigol,3)} seconds stationary. He is on {tire.title} compound.')
                             LAP_CHART[driver.name].append(current_laptime + pit_stop + 20)
                             TIRE_CHART[driver.name].append(tire.title[0])
                             TIRE_USAGE[driver.name] += 1
@@ -1793,13 +1827,24 @@ def R(circuit,session,weather):
                                 tire = TIRE_SETS[driver.name][0]
                                 STINT[driver.name].append(f'-{tire.title[0]}')
                                 pit_stop = round(driver.team.pit(),3)
-                                PIT[driver.name].append(1)
-                                if 10 > pit_stop >= 5.0:
-                                    print(f'PIT | Lap {lap} | Bad news for {driver.name} with {pit_stop} seconds stationary. He is on {tire.title} compound.')
-                                elif pit_stop >= 10:
-                                    print(f'PIT | Lap {lap} | Disaster for {driver.name} with {pit_stop} seconds stationary. He is on {tire.title} compound.')
+
+                                if sum(PENALTY[driver.name]) != 0:
+                                    gabigol = sum(PENALTY[driver.name])
+                                    pit_stop += sum(PENALTY[driver.name])
+                                    PENALTY[driver.name].clear()
+                                    PENALTY[driver.name].append(0)
+                                    print(f'PIT | Lap {lap} | Pit-stop for {driver.name} but, he has to pay-off his {gabigol} second penalty first. Pit-crew is waiting along.')
                                 else:
-                                    print(f'PIT | Lap {lap} | Pit-stop for {driver.name} with {pit_stop} seconds stationary. He is on {tire.title} compound.')
+                                    gabigol = 0
+                            
+                                PIT[driver.name].append(1)
+                                KTM = round(pit_stop - gabigol,3)
+                                if 10 > KTM >= 5.0:
+                                    print(f'PIT | Lap {lap} | Bad news for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
+                                elif KTM >= 10:
+                                    print(f'PIT | Lap {lap} | Disaster for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
+                                else:
+                                    print(f'PIT | Lap {lap} | Pit-stop for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
                                 LAP_CHART[driver.name].append(current_laptime + pit_stop + 20)
                                 TIRE_CHART[driver.name].append(tire.title[0])
                                 TIRE_USAGE[driver.name] += 1
@@ -1852,8 +1897,8 @@ def R(circuit,session,weather):
                                 TIRE_CHART[driver.name].append(tire.title[0])
                                 TIRE_USAGE[driver.name] += 1
                                 TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
-                                PENALTY[driver.name].append(3)
-                                print(f'{Fore.CYAN}PEN | Lap {lap} | 3 secs. penalty to {driver.name} for the excessive amount of corner-cutting. {Style.RESET_ALL}')
+                                PENALTY[driver.name].append(5)
+                                print(f'{Fore.CYAN}PEN | Lap {lap} | 5 secs. penalty to {driver.name} for the excessive amount of corner-cutting. {Style.RESET_ALL}')
                             else:
                                 LAP_CHART[driver.name].append(current_laptime)
                                 TIRE_CHART[driver.name].append(tire.title[0])
@@ -2406,7 +2451,6 @@ elif execution == 'data':
 # # # DIFFERENCES FROM REAL FORMULA ONE RACING
 # No red flag and no artificial safety car exist, only safety car.
 # No changable weather conditions for each session.
-# No penalty paying during pit-stops. It has to be added after the race.
 # We assume that every year of formula racing has the same post-race points distribution, contrary to the truth.
 # We assume that each team find the best strategy and car setup for the feature race.
 # We assume that each circuit has the same amount of fuel consumption. However, it is changable fuel supplier to fuel supplier.
