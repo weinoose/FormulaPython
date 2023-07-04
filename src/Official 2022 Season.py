@@ -1615,7 +1615,6 @@ def Q(circuit,session,weather):
 
 # # #
 def R(circuit,session,weather):
-    
     if verbosity == True:
         racereportfile = open(f'report-full-{GP.lower()}-gp.txt','a',encoding='UTF-8')
     
@@ -1687,13 +1686,18 @@ def R(circuit,session,weather):
 
                         PIT[driver.name].append(1)
                         print(f'PIT | Lap {lap} | Pit-stop for {driver.name} with {round(pit_stop - gabigol,3)} seconds stationary. He is on {tire.title} compound.')
-                        LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)) + pit_stop + 14)
+                        LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)) + pit_stop + 20)
                         TIRE_CHART[driver.name].append(tire.title[0])
                         TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                         BOX[driver.name].clear()
                         BOX[driver.name].append(None)
                 elif pit_intervalx[1] >= TIRE_USAGE[driver.name] >= pit_intervalx[0]:
                     if len(TIRE_SETS[driver.name]) == 1:
+                        LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)))
+                        TIRE_CHART[driver.name].append(tire.title[0])
+                        TIRE_USAGE[driver.name] += 0.175
+                        TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
+                    elif SAFETY_CAR[lap+2][-1] != 1:
                         LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)))
                         TIRE_CHART[driver.name].append(tire.title[0])
                         TIRE_USAGE[driver.name] += 0.175
@@ -1728,7 +1732,7 @@ def R(circuit,session,weather):
                                 print(f'PIT | Lap {lap} | Disaster for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
                             else:
                                 print(f'PIT | Lap {lap} | Pit-stop for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
-                            LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)) + pit_stop + 14) # Pitted Lap
+                            LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)) + pit_stop + 20) # Pitted Lap
                             TIRE_CHART[driver.name].append(tire.title[0])
                             TIRE_USAGE[driver.name] += 0.175
                             TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
