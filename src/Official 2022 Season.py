@@ -645,6 +645,7 @@ lv = Circuit('Las Vegas','United States','Agility Circuit',50,FIA(current)[0]*33
 # spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*66.50,STRATEGY('Spa-Francorchamps'),[m,s    ,s,s,m,m,h]],2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Very Easy',[18,26,35],24) # 2004-2006 layout.
 spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*65.25,STRATEGY('Spa-Francorchamps'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Very Easy',[18,26,35],24) # 2007-present layout.
 le = Circuit('Le Castellet','France','Power Circuit',53,FIA(current)[0]*52.25,STRATEGY('Le Castellet'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Easy',[16,23,31],21) # 2005-present layout.
+sepang = Circuit('Sepang','Malaysia','Power Circuit',56,FIA(current)[0]*54.75,STRATEGY('Sepang'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Very Easy',[18,26,35],24) # 1999-present layout.
 # sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*17.75,STRATEGY('Sakhir'),3,['Dry'],'Easy',[16,23,29],20) # 2020 extra outer layout.
 # sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*71.25,STRATEGY('Sakhir'),3,['Dry'],'Easy',[16,23,29],20) # 2010 layout.
 sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*51.75,STRATEGY('Sakhir'),3,['Dry'],'Easy',[16,23,29],20) # 2004-2009 & 2011-present layout.
@@ -654,7 +655,6 @@ mexico = Circuit('México City','México','Power Circuit',71,FIA(current)[0]*38.
 # QUICKNESS CIRCUITS
 # silverstone = Circuit('Silverstone','Great Britain','Quickness Circuit',52,FIA(current)[0]*42.25,STRATEGY('Silverstone'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Easy',[14,21,27],18) # 1997-2009 layout.
 silverstone = Circuit('Silverstone','Great Britain','Quickness Circuit',52,FIA(current)[0]*48.75,STRATEGY('Silverstone'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Easy',[14,21,27],18) # 2010-present layout.
-sepang = Circuit('Sepang','Malaysia','Quickness Circuit',56,FIA(current)[0]*54.75,STRATEGY('Sepang'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Very Easy',[18,26,35],24) # 1999-present layout.
 shanghai = Circuit('Shanghai','China','Quickness Circuit',56,FIA(current)[0]*54.75,STRATEGY('Shanghai'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Easy',[18,26,35],24) # 2004-present layout.
 yeongam = Circuit('Yeongam','South Korea','Quickness Circuit',55,FIA(current)[0]*55.25,STRATEGY('Yeongam'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Easy',[20,30,40],28) # 2010-present layout.
 india = Circuit('India','India','Quickness Circuit',60,FIA(current)[0]*45.25,STRATEGY('India'),3,['Dry','Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Easy',[16,23,29],20) # 2011-present layout.
@@ -733,9 +733,9 @@ class Engine():
 # Formula 1 Engines
 HONDA_0 = Engine('Honda',FIA(current)[5],94,77) # Red Bull
 HONDA_1 = Engine('Honda',FIA(current)[5],94,77) # AlphaTauri
-FERRARI_F = Engine('Ferrari',FIA(current)[5],91,72) # Ferrari
-FERRARI_0 = Engine('Ferrari',FIA(current)[5],91,72) # Haas
-FERRARI_1 = Engine('Ferrari',FIA(current)[5],91,72) # Alfa Romeo
+FERRARI_F = Engine('Ferrari',FIA(current)[5],92,72) # Ferrari
+FERRARI_0 = Engine('Ferrari',FIA(current)[5],92,72) # Haas
+FERRARI_1 = Engine('Ferrari',FIA(current)[5],92,72) # Alfa Romeo
 RENAULT_F = Engine('Renault',FIA(current)[5],87,72) # Alpine
 MERCEDES_F = Engine('Mercedes',FIA(current)[5],87,92) # Mercedes
 MERCEDES_0 = Engine('Mercedes',FIA(current)[5],87,92) # Williams
@@ -850,43 +850,43 @@ class Manufacturer():
                 return (((((self.max_speed+self.acceleration)/2)*5) + (self.downforce*3) + (self.vortex*2) + (self.braking*1))/11)
         elif circuit_type == 'Agility Circuit':
             if self.V1 == 'Straights':
-                return ((self.max_speed*5) + (self.braking*3) + (self.vortex*2) + (self.downforce*1))/11 + 0.349
+                return (((self.max_speed*5) + (self.braking*3) + (self.vortex*2) + (self.downforce*1))/11) + 0.349
             elif self.V1 == 'Corners':
-                return ((self.max_speed*5) + (self.braking*3) + (self.vortex*2) + (self.downforce*1))/11
+                return (((self.max_speed*5) + (self.braking*3) + (self.vortex*2) + (self.downforce*1))/11)
             else:
-                return ((self.max_speed*5) + (self.braking*3) + (self.vortex*2) + (self.downforce*1))/11
+                return (((self.max_speed*5) + (self.braking*3) + (self.vortex*2) + (self.downforce*1))/11)
         elif circuit_type == 'Quickness Circuit':
-            return ((self.max_speed*4) + (self.downforce*4) + (self.vortex*2) + (self.braking*1))/11
+            return (((self.max_speed*4) + (self.downforce*4) + (self.vortex*2) + (self.braking*1))/11)
         elif circuit_type == 'Completeness Circuit':
-            return ((self.downforce*5) + (self.max_speed*3) + (self.vortex*2) + (self.braking*1))/11
+            return (((self.downforce*5) + (self.max_speed*3) + (self.vortex*2) + (self.braking*1))/11)
         elif circuit_type == 'Engineering Circuit':
             if self.V1 == 'Straights':
-                return ((self.downforce*5) + (self.acceleration*3) + (self.vortex*2) + (self.braking*1))/11
+                return (((self.downforce*5) + (self.acceleration*3) + (self.vortex*2) + (self.braking*1))/11)
             elif self.V1 == 'Corners':
-                return ((self.downforce*5) + (self.acceleration*3) + (self.vortex*2) + (self.braking*1))/11 + 0.349
+                return (((self.downforce*5) + (self.acceleration*3) + (self.vortex*2) + (self.braking*1))/11) + 0.349
             else:
-                return ((self.downforce*5) + (self.acceleration*3) + (self.vortex*2) + (self.braking*1))/11
+                return (((self.downforce*5) + (self.acceleration*3) + (self.vortex*2) + (self.braking*1))/11)
         elif circuit_type == 'Downforce Circuit':
             if self.V1 == 'Straights':
-                return ((self.downforce*5) + (self.vortex*3) + (self.acceleration*2) + (self.braking*1))/11
+                return (((self.downforce*5) + (self.vortex*3) + (self.acceleration*2) + (self.braking*1))/11)
             elif self.V1 == 'Corners':
-                return ((self.downforce*5) + (self.vortex*3) + (self.acceleration*2) + (self.braking*1))/11 + 0.349
+                return (((self.downforce*5) + (self.vortex*3) + (self.acceleration*2) + (self.braking*1))/11) + 0.349
             else:
-                return ((self.downforce*5) + (self.vortex*3) + (self.acceleration*2) + (self.braking*1))/11
+                return (((self.downforce*5) + (self.vortex*3) + (self.acceleration*2) + (self.braking*1))/11)
         elif circuit_type == 'Street Circuit':
-            return ((self.downforce*4) + (self.braking*4) + (self.vortex*2) + (self.acceleration*1))/11
+            return (((self.downforce*4) + (self.braking*4) + (self.vortex*2) + (self.acceleration*1))/11)
 
 if spec == 'Formula 1':
     mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team','Good',MERCEDES_F,91,89,84,89,79,89,106,+0.00)
-    redbull = Manufacturer('Oracle Red Bull Racing','Perfect',HONDA_0,89,89,92,94,92,92,86,+5.00)
+    redbull = Manufacturer('Oracle Red Bull Racing','Perfect',HONDA_0,89,89,92,94,92,92,86,+0.00)
     ferrari = Manufacturer('Scuderia Ferrari','Average',FERRARI_F,96,96,89,91,94,79,79,+0.00)
     mclaren = Manufacturer('McLaren F1 Team','Perfect',MERCEDES_2,79,84,79,84,84,84,106,+0.00)
     alpine = Manufacturer('BWT Alpine F1 Team','Good',RENAULT_F,86,82,82,86,86,82,82,+0.00)
-    alphatauri = Manufacturer('Scuderia AlphaTauri','Good',HONDA_1,77,77,84,84,75,75,82,+0.00)
+    alphatauri = Manufacturer('Scuderia AlphaTauri','Good',HONDA_1,74,77,84,84,74,74,82,+0.00)
     astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team','Average',MERCEDES_1,79,79,79,81,81,79,104,+0.00)
     williams = Manufacturer('Williams Racing','Good',MERCEDES_0,77,77,77,77,84,88,104,+0.00)
-    alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen','Good',FERRARI_1,86,84,79,79,79,79,84,-5.00)
-    haas = Manufacturer('Haas F1 Team','Good',FERRARI_0,81,81,81,79,79,79,86,+0.00)
+    alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen','Good',FERRARI_1,86,84,79,79,79,79,84,+0.00)
+    haas = Manufacturer('Haas F1 Team','Good',FERRARI_0,84,81,81,79,79,79,84,+0.00)
     manufacturers = [mercedes,redbull,ferrari,mclaren,alpine,alphatauri,astonmartin,williams,alfaromeo,haas]
 elif spec == 'Formula 2':
     prema = Manufacturer('Prema Racing','Good',MECACHROME,91,91,91,85,85,85,85,+0.00) # 4th best.
@@ -2410,8 +2410,15 @@ if execution == 'simulation':
 elif execution == 'data':
     print("Manufacturers' Rating from Best to Worst:")
     MF_N, MF_E, MF_P, MF_D, MF_AS, MF_SLS, MF_C0, MF_C1, MF_C2 = [], [], [], [], [], [], [], [], []
-    TP = []
+    TP, C = [], []
     MF = pd.DataFrame()
+
+    for i in circuits:
+        if i.location == GP:
+            wanadanara = i.circuit_type
+        else:
+            pass
+
     for i in manufacturers:
         MF_N.append(i.title)
         MF_E.append(i.powertrain.brand)
@@ -2423,6 +2430,7 @@ elif execution == 'data':
         MF_C1.append(i.characteristic[1])
         MF_C2.append(i.characteristic[2])
         TP.append(i.manufacturer_tyre_coeff_print)
+        C.append(round(i.performance(wanadanara),3))
     MF['Manufacturer'] = MF_N
     MF['Engine'] = MF_E
     MF['Rating'] = MF_P
@@ -2432,7 +2440,8 @@ elif execution == 'data':
     MF['Attitude'] = MF_C1
     MF['Favourite'] = MF_C0
     MF['Flaw'] = MF_C2
-    MF['Tire Performance Rating'] = TP
+    MF['Tire Performance'] = TP
+    MF[f'{GP} GP Performance'] = C
     MF = MF.sort_values('Rating',ascending=False)
     MF = MF.reset_index()
     MF = MF.drop(axis=1, columns=['index'])
