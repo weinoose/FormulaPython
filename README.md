@@ -14,4 +14,3 @@ Developer Log for the Development Process:
 * Current — v2.0 — Developer is working on 1st major update based on improved track positions for vehicles during the race.
 * Current — v2.1 — Developer is working on 2nd minor update based on lap time priority when same lap times occur by different drivers in sessions.
 * Current — v2.2 — Developer is working on 3rd minor update based on adding artificial safety car features into the game. For now, there is only the traditional safety car feature is currently active.
-* Current — v2.3 — Developer is working on 4th minor update based on adding changeable weather conditions in each session. For now, if the track is wet, track stays wet until the race finishes. We are planning to add major meteorology update soon.
