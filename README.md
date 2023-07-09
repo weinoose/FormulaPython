@@ -6,11 +6,8 @@ It has everything in it, yet I feel a bit lazy to demonstrate it. However, if yo
 Feel free to contact me about that: weinoose@gmail.com
 
 Developer Log for the Development Process:
-
 * 25/03/2023 — v0.0 — Project has started.
-
 * 28/06/2023 — v1.0 — Project has finished.
-
 * 03/07/2023 — v1.1 — In-game output-based bugs have been cleared.
 * 03/07/2023 — v1.2 — 1st minor update has been published based on the new feature, now in-game penalties can be paid-off during pit stops, not only race finish.
 * 04/07/2023 — v1.3 — In-game bugs have been cleared.
