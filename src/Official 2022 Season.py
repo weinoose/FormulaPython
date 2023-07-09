@@ -14,8 +14,8 @@ import sys
 # Application Modes
 execution = 'simulation' # data or simulation for output/run mode.
 
-# Season (Current) Selection
-current = '2022'
+# Regulation Selection
+regulation = '2022'
 
 # GP Selection
 GP = 'Sakhir'
@@ -53,7 +53,7 @@ elif spec == 'Hypercar': # Not Active
     spex = 1.37000
 
 # Error Handling for Regulations
-reglist = ['1998','2005','2006','2009','2011','2014','2016','2017','2018','2021','2022']
+current, reglist = regulation, ['1998','2005','2006','2009','2011','2014','2016','2017','2018','2021','2022']
 if current in reglist:
     pass
 else:
@@ -1612,10 +1612,7 @@ def Q(circuit,session,weather):
 def R(circuit,session,weather):
     if verbosity == True:
         racereportfile = open(f'report-full-{GP.lower()}-gp.txt','a',encoding='UTF-8')
-    
-    BONUS = {}
-    for i in drivers:
-        BONUS[i.name] = []
+
     data,tirenamedata,tireperformancedata = pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
     for lap in range(1,circuit.circuit_laps+1):
         
@@ -1681,7 +1678,7 @@ def R(circuit,session,weather):
 
                         PIT[driver.name].append(1)
                         print(f'PIT | Lap {lap} | Pit-stop for {driver.name} with {round(pit_stop - gabigol,3)} seconds stationary. He is on {tire.title} compound.')
-                        LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)) + pit_stop + 20)
+                        LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)) + pit_stop + 13)
                         TIRE_CHART[driver.name].append(tire.title[0])
                         TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                         BOX[driver.name].clear()
@@ -1727,7 +1724,7 @@ def R(circuit,session,weather):
                                 print(f'PIT | Lap {lap} | Disaster for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
                             else:
                                 print(f'PIT | Lap {lap} | Pit-stop for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
-                            LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)) + pit_stop + 20) # Pitted Lap
+                            LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)) + pit_stop + 13) # Pitted Lap
                             TIRE_CHART[driver.name].append(tire.title[0])
                             TIRE_USAGE[driver.name] += 0.175
                             TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
@@ -1771,23 +1768,55 @@ def R(circuit,session,weather):
                         TIRE_USAGE[driver.name] += 0
                         TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
 
-                        if uniform(0.01,100.01) < 20.01:
-                            SAFETY_CAR[lap+1].append(1)
-                            SAFETY_CAR[lap+2].append(1)
-                            SAFETY_CAR[lap+3].append(1)
-                            SAFETY_CAR[lap+4].append(1)
-                        else:
-                            pass
+                        SAFETY_CAR[lap+1].append(1)
+                        SAFETY_CAR[lap+2].append(1)
+                        SAFETY_CAR[lap+3].append(1)
+                        SAFETY_CAR[lap+4].append(1)
                         
                         DNF[driver.name].append(True)
-                    else:
-                        TIRE_USAGE[driver.name] += 5
-                        TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
-                        LAP_CHART[driver.name].append(current_laptime + uniform(19.01,39.99))
-                        TIRE_CHART[driver.name].append(tire.title[0])
-                        TIRE_SETS[driver.name].append(s)
-                        print(f'{Fore.LIGHTRED_EX}INC | Lap {lap} | Oh, no! {driver.name} has lost control and crushed into his front-wing. He is willing to box!{Style.RESET_ALL}')                        
-                        BOX[driver.name].append(True)
+                    else:                        
+                        camavinga = choice(['crash','crash','crash','crash','crash','crash','crash','crash','crash'
+                                            'kerb tangle','kerb tangle','front-wing','bodywork','bodywork'])
+                        if camavinga == 'crash':         
+                            TIRE_USAGE[driver.name] += 5
+                    
+                            if uniform(0.01,100.01) < 25.01:
+                                SAFETY_CAR[lap+1].append(1)
+                                SAFETY_CAR[lap+2].append(1)
+                                SAFETY_CAR[lap+3].append(1)
+                                SAFETY_CAR[lap+4].append(1)
+                            else:
+                                pass             
+
+                            TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
+                            TIRE_CHART[driver.name].append(tire.title[0])
+                            TIRE_SETS[driver.name].append(s)           
+                            LAP_CHART[driver.name].append(current_laptime + uniform(19.01,39.99))
+                            print(f'{Fore.LIGHTRED_EX}INC | Lap {lap} | Oh, no! {driver.name} has lost control and crushed into his front-wing. He is willing to box!{Style.RESET_ALL}')                        
+                            BOX[driver.name].append(True)
+                        elif 'kerb tange':
+                            TIRE_USAGE[driver.name] += 1
+                            TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
+                            TIRE_CHART[driver.name].append(tire.title[0])
+                            TIRE_SETS[driver.name].append(s)
+                            LAP_CHART[driver.name].append(current_laptime + uniform(0.51,2.49))
+                            print(f'{Fore.LIGHTRED_EX}INC | Lap {lap} | Unfortunate! {driver.name} just bounced off the kerb. I see some front-wing parts on the ground. He is willing to box!{Style.RESET_ALL}')                        
+                            BOX[driver.name].append(True)
+                        elif 'front wing':
+                            TIRE_USAGE[driver.name] += 1
+                            TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
+                            TIRE_CHART[driver.name].append(tire.title[0])
+                            TIRE_SETS[driver.name].append(s)
+                            LAP_CHART[driver.name].append(current_laptime)
+                            print(f'{Fore.LIGHTRED_EX}INC | Lap {lap} | Look at that! {driver.name} and his car tearing apart. I see some front-wing parts on the ground. He is willing to box!{Style.RESET_ALL}')                        
+                            BOX[driver.name].append(True)
+                        else:
+                            TIRE_USAGE[driver.name] += 1
+                            TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
+                            TIRE_CHART[driver.name].append(tire.title[0])
+                            LAP_CHART[driver.name].append(current_laptime)
+                            print(f'{Fore.LIGHTRED_EX}INC | Lap {lap} | Look at that! {driver.name} and his car tearing apart. I see some {camavinga} damage on the ground. He is gonna lose some pace definetely.')                        
+                            MECHANICAL[driver.name].append(True)
                 else:
                     if len(BOX[driver.name]) > 1:
                         if len(TIRE_SETS[driver.name]) == 1:
@@ -1873,7 +1902,7 @@ def R(circuit,session,weather):
                                 TIRE_USAGE[driver.name] += 3.332
                                 TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                         else:
-                            if (lap + 2 == circuit.circuit_laps):
+                            if (lap + 3 == circuit.circuit_laps) | (lap + 2 == circuit.circuit_laps):
                                 if (FIA(current)[10] == True) & (AHEAD[driver.name][-1] >= 24.0 + uniform(0.50,1.00)):
                                     TIRE_USAGE[driver.name] = 0
                                     TIRE_SETS[driver.name].pop(0)
@@ -2032,11 +2061,14 @@ def R(circuit,session,weather):
                                     'DEFENDER DNF & ATTACKER CLEAR','ATTACKER DNF & DEFENDER CLEAR'])
                     
                     PENALTY_ODDS = choice(['ATTACKER ONLY','DEFENDER ONLY',None])
+            
+                    damage_type = choice(['FRONT-WING','FRONT-WING','PERMANENT BODYWORK'])
+                    damage_type_2 = choice(['FRONT-WING','FRONT-WING','PERMANENT BODYWORK'])
                     
                     if INCIDENT == 'DOUBLE DNF':
                         print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! THEY ARE BOTH OUT!.{Style.RESET_ALL}')
-                        BONUS[attacker].append((circuit.laptime + 5)*2)
-                        BONUS[defender].append((circuit.laptime + 5)*2)
+                        LAP_CHART[attacker][-1] += ((circuit.laptime + 5)*2)
+                        LAP_CHART[defender][-1] += ((circuit.laptime + 5)*2)
                         DNF[attacker].append(True)
                         DNF[defender].append(True)
                         SAFETY_CAR[lap+1].append(1)
@@ -2044,31 +2076,59 @@ def R(circuit,session,weather):
                         SAFETY_CAR[lap+3].append(1)
                         SAFETY_CAR[lap+4].append(1)
                     elif INCIDENT == 'DEFENDER DNF & ATTACKER DAMAGED':
-                        print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {defender} IS OUT! {attacker} HAS DAMAGE!.{Style.RESET_ALL}')
-                        BONUS[attacker].append(uniform(19.01,39.99))
-                        BONUS[defender].append((circuit.laptime + 5)*2)
+                        print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {defender} IS OUT! {attacker} HAS {damage_type} DAMAGE!.{Style.RESET_ALL}')
+                        
+                        if damage_type == 'PERMANENT BODYWORK':
+                            MECHANICAL[attacker].append(True)
+                            LAP_CHART[attacker][-1] += uniform(9.01,39.49)
+                        else:
+                            BOX[attacker].append(True)
+                            LAP_CHART[attacker][-1] += uniform(1.51,2.49)
+
+                        LAP_CHART[defender][-1] += ((circuit.laptime + 5)*2)
                         DNF[defender].append(True)
-                        BOX[attacker].append(True)
                         SAFETY_CAR[lap+1].append(1)
                         SAFETY_CAR[lap+2].append(1)
                         SAFETY_CAR[lap+3].append(1)
                         SAFETY_CAR[lap+4].append(1)
                     elif INCIDENT == 'ATTACKER DNF & DEFENDER DAMAGED':
-                        print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {attacker} IS OUT! {defender} HAS DAMAGE!.{Style.RESET_ALL}')
-                        BONUS[attacker].append((circuit.laptime + 5)*2)
-                        BONUS[defender].append(uniform(19.01,39.99))
+                        print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {attacker} IS OUT! {defender} HAS {damage_type} DAMAGE!.{Style.RESET_ALL}')
+                        
+                        if damage_type == 'PERMANENT BODYWORK':
+                            MECHANICAL[defender].append(True)
+                            LAP_CHART[defender][-1] += uniform(9.01,39.49)
+                        else:
+                            BOX[defender].append(True)
+                            LAP_CHART[defender][-1] += uniform(1.51,2.49)
+
+                        LAP_CHART[attacker][-1] += ((circuit.laptime + 5)*2)
                         DNF[attacker].append(True)
-                        BOX[defender].append(True)
                         SAFETY_CAR[lap+1].append(1)
                         SAFETY_CAR[lap+2].append(1)
                         SAFETY_CAR[lap+3].append(1)
                         SAFETY_CAR[lap+4].append(1)
                     elif INCIDENT == 'DOUBLE DAMAGED':
-                        print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! THEY BOTH HAS DAMAGE!.{Style.RESET_ALL}')
-                        BONUS[attacker].append(uniform(19.01,39.99))
-                        BONUS[defender].append(uniform(19.01,39.99))
-                        BOX[attacker].append(True)
-                        BOX[defender].append(True)
+                        
+                        if damage_type == damage_type_2:
+                            parol = 'TOO'
+                        else:
+                            parol = 'DIFFERENTLY'
+                        
+                        print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {attacker} HAS {damage_type} DAMAGE. SO THE {defender} HAS {damage_type} DAMAGE {parol}.{Style.RESET_ALL}')
+
+                        if damage_type == 'PERMANENT BODYWORK':
+                            MECHANICAL[defender].append(True)
+                            LAP_CHART[defender][-1] += uniform(9.01,39.49)
+                        else:
+                            BOX[defender].append(True)
+                            LAP_CHART[defender][-1] += uniform(1.51,2.49)
+
+                        if damage_type_2 == 'PERMANENT BODYWORK':
+                            MECHANICAL[attacker].append(True)
+                            LAP_CHART[attacker][-1] += uniform(9.01,39.49)
+                        else:
+                            BOX[attacker].append(True)
+                            LAP_CHART[attacker][-1] += uniform(1.51,2.49)
 
                         if uniform(0.1,100.1) > 0.40:
                             SAFETY_CAR[lap+1].append(1)
@@ -2077,11 +2137,17 @@ def R(circuit,session,weather):
                             SAFETY_CAR[lap+4].append(1)
 
                     elif INCIDENT == 'DEFENDER CLEAR & ATTACKER DAMAGED':
-                        print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {attacker} HAS DAMAGE BUT {defender} HAS NO! {attacker} IS BOXING!.{Style.RESET_ALL}')
-                        BONUS[attacker].append(uniform(19.01,39.99))
-                        BONUS[defender].append(uniform(0.09,5.91))
-                        BOX[attacker].append(True)
+                        print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {attacker} HAS {damage_type} DAMAGE BUT {defender} HAS NO! {attacker} IS BOXING!.{Style.RESET_ALL}')
+                        
+                        if damage_type == 'PERMANENT BODYWORK':
+                            MECHANICAL[attacker].append(True)
+                            LAP_CHART[attacker][-1] += uniform(9.01,39.49)
+                        else:
+                            BOX[attacker].append(True)
+                            LAP_CHART[attacker][-1] += uniform(1.51,2.49)
 
+                        LAP_CHART[defender][-1] += uniform(0.09,5.91)
+                        
                         if uniform(0.1,100.1) > 0.275:
                             SAFETY_CAR[lap+1].append(1)
                             SAFETY_CAR[lap+2].append(1)
@@ -2089,10 +2155,16 @@ def R(circuit,session,weather):
                             SAFETY_CAR[lap+4].append(1)
 
                     elif INCIDENT == 'ATTACKER CLEAR & DEFENDER DAMAGED':
-                        print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {defender} HAS DAMAGE BUT {attacker} HAS NO! {defender} IS BOXING!.{Style.RESET_ALL}')
-                        BONUS[defender].append(uniform(19.01,39.99))
-                        BONUS[attacker].append(uniform(0.09,5.91))
-                        BOX[defender].append(True)
+                        print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {defender} HAS {damage_type} DAMAGE BUT {attacker} HAS NO! {defender} IS BOXING!.{Style.RESET_ALL}')
+                        
+                        if damage_type == 'PERMANENT BODYWORK':
+                            MECHANICAL[defender].append(True)
+                            LAP_CHART[defender][-1] += uniform(9.01,39.49)
+                        else:
+                            BOX[defender].append(True)
+                            LAP_CHART[defender][-1] += uniform(1.51,2.49)
+                        
+                        LAP_CHART[attacker][-1] += uniform(0.09,5.91)
 
                         if uniform(0.1,100.1) > 0.275:
                             SAFETY_CAR[lap+1].append(1)
@@ -2102,8 +2174,8 @@ def R(circuit,session,weather):
                             
                     elif INCIDENT == 'DEFENDER DNF & ATTACKER CLEAR':
                         print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {defender} IS OUT! {attacker} HAS NO DAMAGE!.{Style.RESET_ALL}')
-                        BONUS[attacker].append(uniform(0.09,5.91))
-                        BONUS[defender].append((circuit.laptime + 5)*2)
+                        LAP_CHART[attacker][-1] += uniform(0.09,5.91)
+                        LAP_CHART[defender][-1] += ((circuit.laptime + 5)*2)
                         DNF[defender].append(True)
                         SAFETY_CAR[lap+1].append(1)
                         SAFETY_CAR[lap+2].append(1)
@@ -2111,8 +2183,8 @@ def R(circuit,session,weather):
                         SAFETY_CAR[lap+4].append(1)
                     elif INCIDENT == 'ATTACKER DNF & DEFENDER CLEAR':
                         print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {attacker} IS OUT! {defender} HAS NO DAMAGE!.{Style.RESET_ALL}')
-                        BONUS[defender].append(uniform(0.09,5.91))
-                        BONUS[attacker].append((circuit.laptime + 5)*2)
+                        LAP_CHART[defender][-1] += uniform(0.09,5.91)
+                        LAP_CHART[attacker][-1] += ((circuit.laptime + 5)*2)
                         DNF[attacker].append(True)
                         SAFETY_CAR[lap+1].append(1)
                         SAFETY_CAR[lap+2].append(1)
@@ -2120,8 +2192,8 @@ def R(circuit,session,weather):
                         SAFETY_CAR[lap+4].append(1)
                     else:
                         print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! THEY ARE BOTH OUT!.{Style.RESET_ALL}')
-                        BONUS[attacker].append((circuit.laptime + 5)*2)
-                        BONUS[defender].append((circuit.laptime + 5)*2)
+                        LAP_CHART[attacker][-1] += ((circuit.laptime + 5)*2)
+                        LAP_CHART[defender][-1] += ((circuit.laptime + 5)*2)
                         DNF[attacker].append(True)
                         DNF[defender].append(True)
                         SAFETY_CAR[lap+1].append(1)
@@ -2146,7 +2218,7 @@ def R(circuit,session,weather):
                     else:
                         pass
 
-                else:   
+                else: # This section not active moment.
                     the_gap_in_front = gap_in_front
                     drs_advantage = (-1.0)*((0.250) + attacker_obj.team.drs_delta/200)/1.5
                     slipstream_advantage = ((-1.0)*((0.250) + attacker_obj.team.drs_delta/200))/3.5
@@ -2190,10 +2262,10 @@ def R(circuit,session,weather):
                             if selectorx <= 0.000:
                                 if ((defender_obj.defence*1.517) + defender_dice) <= ((attacker_obj.attack*1.517) + attacker_dice + (selectorx*(-45.17))):
                                     # print(f'{Fore.BLACK}{overtake_text}{Style.RESET_ALL}')
-                                    pass # attacker geçti / minimal vakit kaybetme. / coming_by kadar gap koyacak.
+                                    pass # attacker geçti. / minimal vakit kaybetme. / coming_by kadar gap koyacak.
                                 else:
                                     # print('defended the drs.')
-                                    pass # defender savundu / büyük vakit kaybetme. / coming by kadar gap koyacak.
+                                    pass # defender savundu. / büyük vakit kaybetme. / coming by kadar gap koyacak.
                             else:
                                 # print('challange.')
                                 pass # geçme hamlesi için minimum_delta_needed_d parametresine oturmaya çalışacak. / kapışma kokuyor.
@@ -2228,9 +2300,23 @@ def R(circuit,session,weather):
         d9_new.append(0.5)
 
         for chaffeur in dp:
+
+            maxxx = len(dp) - 1
+            minnn = 0
+
             ixxxxx = dp.index(chaffeur)
             gap_ahead = d9_new[ixxxxx+1]
-            AHEAD[chaffeur].append(gap_ahead)
+            gap_behind = d9_new[ixxxxx]
+            
+            if maxxx == ixxxxx + 1:
+                AHEAD[chaffeur].append(30000)
+            else:
+                AHEAD[chaffeur].append(gap_ahead)
+
+            if minnn == ixxxxx:
+                BEHIND[chaffeur].append(None)
+            else:
+                BEHIND[chaffeur].append(gap_behind)
     
 
         fls_, dls_ = list(TEMP_CLASSIFICATION['FL.']), []
@@ -2362,6 +2448,7 @@ if execution == 'simulation':
     POSITIONS = {}
 
     AHEAD = {}
+    BEHIND = {}
 
     STINT = {}
 
@@ -2378,6 +2465,7 @@ if execution == 'simulation':
         TIRE_SETS[i.name] = []
         POSITIONS[i.name] = []
         AHEAD[i.name] = []
+        BEHIND[i.name] = []
         PIT[i.name] = []
         STINT[i.name] = []
 
