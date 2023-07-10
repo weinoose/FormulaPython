@@ -12,10 +12,11 @@ Developer Log for the Development Process:
 * 03/07/2023 — v1.2 — 1st minor update has been published based on the new feature, now in-game penalties can be paid-off during pit stops, not only race finish.
 * 04/07/2023 — v1.3 — In-game bugs have been cleared.
 * 05/07/2023 — v1.4 — In-game bugs have been cleared.
-* 10/07/2023 — v1.5 — In-game bugs have been cleared.
-* 10/07/2023 — v1.6 — 2nd minor update has been published based on the increasing variety of in-game collisions and incidents, and makes them more realistic.
-* 10/07/2023 — v1.6 — 3rd minor update has been published based on the increasing reality of the tire degradation and operating range.
-* Current — v1.8 — Developer is working on 2nd minor update based on fastest lap strategy.
+* Revising — v1.5 — In-game bugs have been cleared.
+* Revising — v1.6 — 2nd minor update has been published based on the increasing variety of in-game collisions and incidents, and makes them more realistic.
+* Revising — v1.7 — 3rd minor update has been published based on the increasing reality of the tire degradation and operating range.
+* Revising — v1.8 — 3rd minor update has been published based on the avaibilty of the double-stack pit-stops.
+* Current — v1.9 — Developer is working on 2nd minor update based on fastest lap strategy.
 * Current — v2.0 — The developer is working on 1st major update based on improved track positions for vehicles during the race.
 * Current — v2.1 — The developer is working on 4th minor update based on adding artificial safety car features into the game. For now, there is only the traditional safety car feature is currently active.
 * Current — v2.2 — The developer is working on the 5th minor update based on lap time priority when the same lap times occur by different drivers in sessions.
