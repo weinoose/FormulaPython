@@ -444,6 +444,7 @@ class Circuit():
         self.strategy = strategy
         self.drs_points = drs_points
         self.weather = weather
+        # self.temperature = temperature
         self.overtake_difficulty = overtake_difficulty
         self.corner_count = corner_count
         self.tire_series = tire_series
@@ -797,20 +798,28 @@ class Manufacturer():
         else:
             self.V3 = None
 
-        self.characteristic = [self.V1,self.V2,self.V3]
-
         # Tire Performance Analysis
         self.manufacturer_tyre_coeff = round(((((self.vortex + self.braking + (self.suspension*2) + self.RW) - (self.drag + self.downforce)))/1450),3)
-        if self.manufacturer_tyre_coeff <= 0.120:
+        if self.manufacturer_tyre_coeff <= 0.119:
             self.manufacturer_tyre_coeff_print = 'Very Bad'
-        elif 0.120 <= self.manufacturer_tyre_coeff <= 0.135:
+        elif 0.120 <= self.manufacturer_tyre_coeff <= 0.134:
             self.manufacturer_tyre_coeff_print = 'Bad'
-        elif 0.135 <= self.manufacturer_tyre_coeff <= 0.160:
+        elif 0.135 <= self.manufacturer_tyre_coeff <= 0.168:
             self.manufacturer_tyre_coeff_print = 'Average'
-        elif 0.160 <= self.manufacturer_tyre_coeff <= 0.180:
+        elif 0.169 <= self.manufacturer_tyre_coeff <= 0.179:
             self.manufacturer_tyre_coeff_print = 'Good'
         elif 0.180 <= self.manufacturer_tyre_coeff:
             self.manufacturer_tyre_coeff_print = 'Perfect'
+
+        # Tire Operating Range Preference
+        if (self.manufacturer_tyre_coeff_print in ['Very Bad','Bad']) | (self.downforce + self.vortex <= 161.99):
+            self.preference = 'Cold Track'
+        elif (self.manufacturer_tyre_coeff_print in ['Perfect','Good']):
+            self.preference = 'Overheated Track'
+        else:            
+            self.preference = None
+
+        self.characteristic = [self.V1,self.V2,self.V3,self.preference]
 
     def pit(self):
         if self.crew == 'Perfect':
@@ -2284,6 +2293,9 @@ def R(circuit,session,weather):
 
         # Position Saving
         dp = list(TEMP_CLASSIFICATION['DRIVERS'])
+        dp31 = list(TEMP_CLASSIFICATION['MANUFACTURERS'])
+        dp69 = list(TEMP_CLASSIFICATION['INTERVAL'])
+
         for i in dp:
             ixxxxx = dp.index(i)
             POSITIONS[i].append(ixxxxx+1)
@@ -2299,7 +2311,7 @@ def R(circuit,session,weather):
                 d9_new.append(0.5)
         d9_new.append(0.5)
 
-        for chaffeur in dp:
+        for chaffeur,equipe,delta_time in zip(dp,dp31,dp69):
 
             maxxx = len(dp) - 1
             minnn = 0
@@ -2317,6 +2329,8 @@ def R(circuit,session,weather):
                 BEHIND[chaffeur].append(None)
             else:
                 BEHIND[chaffeur].append(gap_behind)
+
+            # gap-to-teammate code will be here.
     
 
         fls_, dls_ = list(TEMP_CLASSIFICATION['FL.']), []
@@ -2449,6 +2463,7 @@ if execution == 'simulation':
 
     AHEAD = {}
     BEHIND = {}
+    GAP_TO_TEAMMATE = {}
 
     STINT = {}
 
@@ -2466,6 +2481,7 @@ if execution == 'simulation':
         POSITIONS[i.name] = []
         AHEAD[i.name] = []
         BEHIND[i.name] = []
+        GAP_TO_TEAMMATE[i.name] = []
         PIT[i.name] = []
         STINT[i.name] = []
 
@@ -2507,9 +2523,7 @@ if execution == 'simulation':
 
 elif execution == 'data':
     print("Manufacturers' Rating from Best to Worst:")
-    MF_N, MF_E, MF_P, MF_D, MF_AS, MF_SLS, MF_C0, MF_C1, MF_C2 = [], [], [], [], [], [], [], [], []
-    TP, C = [], []
-    MF = pd.DataFrame()
+    MF_N, MF_E, MF_P, MF_D, MF_AS, MF_SLS, MF_C0, MF_C1, MF_C2, MF_C3, TP, C, MF = [], [], [], [], [], [], [], [], [], [], [], [], pd.DataFrame()
 
     for i in circuits:
         if i.location == GP:
@@ -2525,6 +2539,7 @@ elif execution == 'data':
         MF_AS.append(i.vortex)
         MF_SLS.append(i.max_speed)
         MF_C0.append(i.characteristic[0])
+        MF_C3.append(i.characteristic[3])
         MF_C1.append(i.characteristic[1])
         MF_C2.append(i.characteristic[2])
         TP.append(i.manufacturer_tyre_coeff_print)
@@ -2536,10 +2551,12 @@ elif execution == 'data':
     MF['Airflow Sensivity'] = MF_AS
     MF['Straight Line Speed'] = MF_SLS
     MF['Attitude'] = MF_C1
+    MF['Preference'] = MF_C3
     MF['Favourite'] = MF_C0
     MF['Flaw'] = MF_C2
     MF['Tire Performance'] = TP
     MF[f'{GP} GP Performance'] = C
+    
     MF = MF.sort_values('Rating',ascending=False)
     MF = MF.reset_index()
     MF = MF.drop(axis=1, columns=['index'])
@@ -2548,8 +2565,8 @@ elif execution == 'data':
     # # #
 
     print(f"\nDrivers' Rating from Best to Worst:")
-    D_N, D_T, D_Q, D_R, D_O, D_S, D_FF = [],[],[],[],[],[],[]
-    DR = pd.DataFrame()
+    D_N, D_T, D_Q, D_R, D_O, D_S, D_FF, DR = [],[],[],[],[],[],[],pd.DataFrame()
+
     for i in drivers:
         D_N.append(i.name)
         D_T.append(i.team.title)
@@ -2558,6 +2575,7 @@ elif execution == 'data':
         D_O.append(i.real_rating())
         D_S.append(i.style[0])
         D_FF.append(i.style[1])
+    
     DR['Driver'] = D_N
     DR['Team'] = D_T
     DR['Overall'] = D_O
@@ -2565,6 +2583,7 @@ elif execution == 'data':
     DR['Race Pace'] = D_R
     DR['Attitude'] = D_S
     DR['Favourite'] = D_FF
+    
     DR = DR.sort_values('Overall',ascending=False)
     DR = DR.reset_index()
     DR = DR.drop(axis=1, columns=['index'])
