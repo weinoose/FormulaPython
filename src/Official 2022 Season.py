@@ -9,6 +9,7 @@ import sys
 # # # DIFFERENCES FROM REAL FORMULA ONE RACING
 # There is no red flag feature in this simulation. However, safety car and artificial safety car features are available.
 # We assume that each team could find the best strategy and car setup for the feature race in free practice sessions.
+# We assume that each driver has their garage and own pit crew so there will be no double-stack problems at all.
 # We assume that Monte-Carlo GP should be 91 laps instead of 78 laps in terms of completing 303K kilometres as traditions do.
 
 # Application Modes
@@ -179,7 +180,7 @@ class Tire():
     def fuel_left(self,circuit,lap):
         consumption_per_lap = (FIA(current)[11])/(circuit.circuit_laps+0.75)
         return FIA(current)[11] - (lap*consumption_per_lap)
-    def laptime(self,driver,circuit,lap,tire_usage,mode):
+    def laptime(self,driver,circuit,lap,tire_usage,mode,wxther):
         # # # 1.0: FUEL & TIRE
         fuel_left = self.fuel_left(circuit,lap)
         tire_left = self.tire_left(driver,circuit,tire_usage) + self.supplier.durability
@@ -230,6 +231,25 @@ class Tire():
         FUEL_EFFECT = (fuel_left*driver.team.powertrain.fuel.efficiency)
         CL0 = (circuit.laptime * self.laptime_coefficient) + (TIRE_EFFECT) + (FUEL_EFFECT) + (self.supplier.pace)
 
+        if self.title[0] == 'S':
+            casillas = 0
+        elif self.title[0] == 'M':
+            casillas = 1
+        else:
+            casillas = 2
+
+        if wxther == 'Optimal':
+            TIRE_EFFECT += 0
+        else:
+            if (wxther == 'Overheated') & (driver.team.characteristic[3] == 'Overheated'):
+                TIRE_EFFECT += (lap/circuit.tire_series[casillas])/2.17
+            elif (wxther == 'Overheated') & (driver.team.characteristic[3] == 'Cold'):
+                TIRE_EFFECT += (lap/circuit.tire_series[casillas])*(((101 - driver.team.suspension)**(1/40)) + (0.17))/2.17
+            elif (wxther == 'Cold') & (driver.team.characteristic[3] == 'Overheated'):
+                TIRE_EFFECT += (lap/circuit.tire_series[casillas])*(((101 - driver.team.suspension)**(1/40)) + (0.17))/2.17
+            elif (wxther == 'Cold') & (driver.team.characteristic[3] == 'Cold'):
+                TIRE_EFFECT += (lap/circuit.tire_series[casillas])/2.17
+        
         # # # VEHICLE
         # # # 2.1: Weight Adjusment
         banker = (FIA(current)[6] + driver.team.weight)
@@ -244,12 +264,12 @@ class Tire():
         TRACTION_EFFECT_R,TRACTION_EFFECT_Q = 0,0
 
         if (W1 and W2 != 'Dry') and (W3 == 'Dry'):
-            TRACTION_EFFECT_R = 0.825
+            TRACTION_EFFECT_R = (driver.team.manufacturer_tyre_coeff*6) - 0.2
         elif (W2 != 'Dry') and (W3 == 'Dry'):
-            TRACTION_EFFECT_R = 0.625
+            TRACTION_EFFECT_R = (driver.team.manufacturer_tyre_coeff*6) - 0.4
         
         if (W1 != 'Dry') and (W2 == 'Dry'):
-            TRACTION_EFFECT_Q = 0.625
+            TRACTION_EFFECT_Q = (driver.team.manufacturer_tyre_coeff*6) - 0.4
         else:
             TRACTION_EFFECT_Q = 0
 
@@ -444,7 +464,6 @@ class Circuit():
         self.strategy = strategy
         self.drs_points = drs_points
         self.weather = weather
-        # self.temperature = temperature
         self.overtake_difficulty = overtake_difficulty
         self.corner_count = corner_count
         self.tire_series = tire_series
@@ -454,7 +473,7 @@ class Circuit():
 def STRATEGY(GP):
     if GP == 'Le Mans':
         if current in entertainment_era:
-            return [[s,m,m    ,s,s,s,h],[s,s,h  ,s,m,m],[s,m,h  ,s,m,h]]
+            return [[s,s,h  ,s,m,m],[s,m,h  ,s,m,h],[s,m,m    ,s,s,s,h]]
         elif current in strategy_era:
             return [[s,h,s  ,s,s,s,h],[s,s,h  ,s,s,s,h],[s,h,h  ,s,s,s,s]]
     elif GP == 'Monza':
@@ -811,14 +830,17 @@ class Manufacturer():
         elif 0.180 <= self.manufacturer_tyre_coeff:
             self.manufacturer_tyre_coeff_print = 'Perfect'
 
-        # Tire Operating Range Preference
-        if (self.manufacturer_tyre_coeff_print in ['Very Bad','Bad']) | (self.downforce + self.vortex <= 161.99):
-            self.preference = 'Cold Track'
-        elif (self.manufacturer_tyre_coeff_print in ['Perfect','Good']):
-            self.preference = 'Overheated Track'
-        else:            
+        # Tire Operating Range Preference??? # (self.manufacturer_tyre_coeff*500)
+        dybala = ((self.suspension + self.FW)/(self.rating()*2)) + ((self.manufacturer_tyre_coeff)*4) + 0.16
+        
+        if dybala < 1.749:
+            self.preference = 'Cold'
+        elif dybala > 1.901:
+            self.preference = 'Overheated'
+        else:
             self.preference = None
 
+        # Total Characteristics of the Car
         self.characteristic = [self.V1,self.V2,self.V3,self.preference]
 
     def pit(self):
@@ -1038,8 +1060,32 @@ elif W1 == 'Dry':
     elif W2 == 'Wet':
         W3 = choice(CRC.weather)
 
+# Track Temperature Simulation
+ctxq = choice(['Optimal','Optimal','Optimal','Optimal','Optimal','Optimal','Optimal','Overheated','Overheated','Overheated'])
+xtxq = choice(['Cold','Cold','Cold','Cold','Cold','Cold','Cold','Optimal','Optimal','Optimal'])
+
+if W1 != 'Dry':
+    TT1 = 'Cold'
+else:
+    TT1 =  ctxq
+
+if W2 != 'Dry':
+    TT2 = 'Cold'
+else:
+    if W1 != 'Dry':
+        TT2 = xtxq
+    else:
+        TT2 =  ctxq
+
+if (W1 and W2 != 'Dry') and (W3 == 'Dry'):
+    TT3 = 'Cold'
+elif (W2 != 'Dry') and (W3 == 'Dry'):
+    TT3 = xtxq
+else:
+    TT3 = ctxq
+
 if execution == 'simulation':
-    print(f'{CRC.location} GP — {CRC.country} | FP forecast: {W1} | Qualifying forecast: {W2} | Race forecast: {W3}\n{borderline}')
+    print(f'{CRC.location} GP — {CRC.country} | FP: {W1} Track & {TT1} Track Temperature | Qualifying: {W2} Track & {TT2} Track Temperature | Race: {W3} Track & {TT3} Track Temperature\n{borderline}')
 
 # # #
 
@@ -1458,7 +1504,7 @@ def FP(circuit,tireset,stage,session,weather):
         lap_chart, tire_chart, tire_left_chart = [], [], []
         for lap in range(1,circuit.circuit_laps+1):
             tire_left = tire.tire_left(driver,circuit,tire_usage)
-            current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['friday',0]),3)
+            current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['friday',0],TT1),3)
             if tire_left < 25:
                 if len(tlist) == 1:
                     lap_chart.append(current_laptime)
@@ -1537,11 +1583,11 @@ def Q(circuit,session,weather):
                 folks1 = round(((0.499) - (((driver.adaptability)*((333) + (100-driver.adaptability)))/100000) + ((100-driver.adaptability)/499)),3)
 
                 if c == 0:
-                    current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0]) + (folks0),3)
+                    current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0],TT2) + (folks0),3)
                 elif c == 1:
-                    current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0]) + (folks1),3)
+                    current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0],TT2) + (folks1),3)
                 else:
-                    current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0]) + (0.000),3)
+                    current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0],TT2) + (0.000),3)
 
                 DO_NOT_FINISHED = (((((((((((driver.team.reliability + driver.team.powertrain.durability)/2))+(driver.team.powertrain.fuel.vulnerability))*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
                 
@@ -1620,7 +1666,7 @@ def Q(circuit,session,weather):
 # # #
 def R(circuit,session,weather):
     if verbosity == True:
-        racereportfile = open(f'report-full-{GP.lower()}-gp.txt','a',encoding='UTF-8')
+        racereportfile = open(f'report-{GP.lower()}-gp.txt','a',encoding='UTF-8')
 
     data,tirenamedata,tireperformancedata = pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
     for lap in range(1,circuit.circuit_laps+1):
@@ -1634,7 +1680,7 @@ def R(circuit,session,weather):
             tire = TIRE_SETS[driver.name][0]
             tire_left = tire.tire_left(driver,circuit,TIRE_USAGE[driver.name])
             
-            current_laptime = round(tire.laptime(driver,circuit,lap,TIRE_USAGE[driver.name],['sunday',GRID[driver.name]]),3)
+            current_laptime = round(tire.laptime(driver,circuit,lap,TIRE_USAGE[driver.name],['sunday',GRID[driver.name]],TT3),3)
             DO_NOT_FINISHED = (((((((((((driver.team.reliability + driver.team.powertrain.durability)/2))+(driver.team.powertrain.fuel.vulnerability))*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
             
             if W3 == 'Dump':
@@ -1911,7 +1957,7 @@ def R(circuit,session,weather):
                                 TIRE_USAGE[driver.name] += 3.332
                                 TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                         else:
-                            if (lap + 3 == circuit.circuit_laps) | (lap + 2 == circuit.circuit_laps):
+                            if ((lap + 3 == circuit.circuit_laps) | (lap + 2 == circuit.circuit_laps)) & (sum(FLT[driver.name]) == 0):
                                 if (FIA(current)[10] == True) & (AHEAD[driver.name][-1] >= 24.0 + uniform(0.50,1.00)):
                                     TIRE_USAGE[driver.name] = 0
                                     TIRE_SETS[driver.name].pop(0)
@@ -1920,6 +1966,7 @@ def R(circuit,session,weather):
                                     pit_stop = round(driver.team.pit(),3)
                                     PIT[driver.name].append(1)
                                     print(f'PIT | Lap {lap} | {driver.name} is gonna attempt the fastest lap! He is in the pits, willing to switch into the {tire.title} compound.')
+                                    FLT[driver.name].append(1)
                                     if 10 > pit_stop >= 5.0:
                                         print(f'PIT | Lap {lap} | Bad news for {driver.name} with {pit_stop} seconds stationary. He is on {tire.title} compound.')
                                     elif pit_stop >= 10:
@@ -2048,8 +2095,8 @@ def R(circuit,session,weather):
                     else:
                         pass
 
-                attacker_precise_laptime = round(attacker_tire.laptime(attacker_obj,circuit,lap,TIRE_USAGE[attacker_obj.name],['sunday',GRID[attacker_obj.name]]),3)
-                defender_precise_laptime = round(defender_tire.laptime(defender_obj,circuit,lap,TIRE_USAGE[defender_obj.name],['sunday',GRID[defender_obj.name]]),3)
+                attacker_precise_laptime = round(attacker_tire.laptime(attacker_obj,circuit,lap,TIRE_USAGE[attacker_obj.name],['sunday',GRID[attacker_obj.name]],TT3),3)
+                defender_precise_laptime = round(defender_tire.laptime(defender_obj,circuit,lap,TIRE_USAGE[defender_obj.name],['sunday',GRID[defender_obj.name]],TT3),3)
                 
                 attacker_dice = uniform(0.0,20.0)
                 defender_dice = uniform(0.0,20.0)
@@ -2311,7 +2358,7 @@ def R(circuit,session,weather):
                 d9_new.append(0.5)
         d9_new.append(0.5)
 
-        for chaffeur,equipe,delta_time in zip(dp,dp31,dp69):
+        for chaffeur in dp:
 
             maxxx = len(dp) - 1
             minnn = 0
@@ -2330,7 +2377,44 @@ def R(circuit,session,weather):
             else:
                 BEHIND[chaffeur].append(gap_behind)
 
-            # gap-to-teammate code will be here.
+            incognito = {}
+            for i in manufacturers:
+                incognito[i.title] = []
+
+            for i in drivers:
+                incognito[i.team.title].append(i.name)
+ 
+            for i in drivers:
+                if i.name == chaffeur:
+                    target_team = i.team.title
+
+            for i in incognito[target_team]:
+                if i != chaffeur:
+                    teammate = i
+
+            chaffeur_index = ixxxxx
+            teammate_index = dp.index(teammate)
+
+            chaffeur_delta = dp69[chaffeur_index]
+            teammate_delta = dp69[teammate_index]
+
+            try:
+                chaffeur_delta = float(chaffeur_delta[1:])
+            except:
+                if chaffeur_delta == 'INTERVAL':
+                    chaffeur_delta = 0.000
+                else:
+                    chaffeur_delta = 3000.000
+
+            try:
+                teammate_delta = float(teammate_delta[1:])
+            except:
+                if teammate_delta == 'INTERVAL':
+                    teammate_delta = 0.000
+                else:
+                    teammate_delta = 3000.000
+
+            GAP_TO_TEAMMATE[chaffeur].append(chaffeur_delta - teammate_delta)
     
 
         fls_, dls_ = list(TEMP_CLASSIFICATION['FL.']), []
@@ -2342,6 +2426,9 @@ def R(circuit,session,weather):
         TEMP_FL_INFO = f'\nFastest Lap | {list(TEMP_CLASSIFICATION["DRIVERS"])[dls_.index(min(dls_))]} has recorded {fls_[dls_.index(min(dls_))]} on this track.'
         if verbosity == True:
             racereportfile.write(f'{TEMP_INFO}\n{TEMP_CLASSIFICATION}\n{TEMP_FL_INFO}\n{borderline}\n')
+
+        LDR.append(list(TEMP_CLASSIFICATION["DRIVERS"])[0])
+        LMF.append(list(TEMP_CLASSIFICATION["MANUFACTURERS"])[0])
         # # # END OF THE LAP
 
     # # # END OF THE GP
@@ -2409,6 +2496,20 @@ def R(circuit,session,weather):
             dls_.append(float(i.split(':')[0])*60 + float(i.split(':')[1]))
     print(f'\nFastest Lap | {list(RACE_CLASSIFICATION["DRIVERS"])[dls_.index(min(dls_))]} has recorded {fls_[dls_.index(min(dls_))]} on this track.')
 
+    # Laps Led Statistic Drops
+    jt = list(set(LDR))
+    jq = list(set(LMF))
+    
+    if verbosity == True:
+        fffqqq = open(f'report-{circuit.location.lower()}-gp-leaders.txt','a',encoding='UTF-8')
+        fffqqq.write('DRIVERS:')
+        for i in jt:
+            fffqqq.write(f'\n{LDR.count(i)} - {i}')
+
+        fffqqq.write('\n\nMANUFACTURERS:')
+        for i in jq:
+            fffqqq.write(f'\n{LMF.count(i)} - {i}')
+
 # # # Control Room
 
 if execution == 'simulation':
@@ -2441,6 +2542,10 @@ if execution == 'simulation':
 
     # Dictionary Definitions
     DFORM = {}
+
+    FLT = {}
+    LDR = []
+    LMF = []
 
     STRATEGIES = {}
 
@@ -2484,6 +2589,7 @@ if execution == 'simulation':
         GAP_TO_TEAMMATE[i.name] = []
         PIT[i.name] = []
         STINT[i.name] = []
+        FLT[i.name] = [0]
 
     for i in range(1,101):
         SAFETY_CAR[i] = [0]
@@ -2551,11 +2657,11 @@ elif execution == 'data':
     MF['Airflow Sensivity'] = MF_AS
     MF['Straight Line Speed'] = MF_SLS
     MF['Attitude'] = MF_C1
-    MF['Preference'] = MF_C3
+    MF['Track Preference'] = MF_C3
     MF['Favourite'] = MF_C0
     MF['Flaw'] = MF_C2
     MF['Tire Performance'] = TP
-    MF[f'{GP} GP Performance'] = C
+    MF[f'{GP} GP Rating'] = C
     
     MF = MF.sort_values('Rating',ascending=False)
     MF = MF.reset_index()
