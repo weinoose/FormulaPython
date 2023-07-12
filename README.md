@@ -1,5 +1,5 @@
 # Formula Python
-Welcome! Formula Python is an open-source simulation algorithm is maintaining by only myself which simulates a whole Formula 1 weekend with its formal FIA regulations. I started to develop this application at the beginning of 2023 yet the application has finally finished on 27/06/2023. It's open for everyone to try.
+Welcome! Formula Python is an open-source simulation algorithm is maintaining by only myself which simulates a whole Formula 1 weekend with its formal FIA regulations. I started to develop this application at the beginning of 2023 yet the application has finally finished on 28/06/2023. It's open for everyone to try.
 
 It has everything in it, yet I feel a bit lazy to demonstrate it. However, if you would dive inside, you'll find out how detailed it is. Probably the best in the business.
 
@@ -17,6 +17,6 @@ Developer Log for the Development Process:
 * 11/07/2023 — v1.7 — 3rd minor update has been published based on the increasing reality of the tire degradation and operating range.
 * 11/07/2023 — v1.8 — 4th minor update has been published based on the availability of the track temperature based on the weather condition in each session.
 * 11/07/2023 — v1.9 — 5th minor update has been published based on the fixing and revising of extra statistical features of the race.
-* Current — v1.10 — The developer is working on 6th minor update based on fastest lap strategy.
-* Current — v1.11 — The developer is working on the 7th minor update based on lap time priority when the same lap times occur by different drivers in sessions.
-* Current — v2.0 — The developer is working on 1st major update based on improved track positions for vehicles during the race.
+* Feature — v1.10 — The developer is working on 6th minor update based on fastest lap strategy.
+* Feature — v1.11 — The developer is working on the 7th minor update based on lap time priority when the same lap times occur by different drivers in sessions.
+* Feature — v2.0 — The developer is working on 1st major update based on improved track positions for vehicles during the race.
