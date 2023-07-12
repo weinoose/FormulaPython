@@ -112,32 +112,32 @@ aramco = Fuel('Aramco',+2.5,0.0450)
 # Index 11 contains fuel tank capacity.
 # Index 12 contains chassis efficiency.
 # Index 13-14-15 for regulation game changer coefficients [volume 2].
-# Index 16 for overtaking difficulty.
+# Index 16 for dirty air advantage for defending driver.
 # Index 17 for safety parameter for per regulation changes.
 
 def FIA(C): 
     if C == '1998':
-        return [1.18250*(spex),False,False,'DHL',bridgestone,shell,585,4,4,2,False,115,0.0725,11.5,7.5,1,0.451,21.25]
+        return [1.18250*(spex),False,False,'DHL',bridgestone,shell,585,4,4,2,False,115,0.0725,11.5,7.5,1,0.549,21.25]
     elif C == '2005':
-        return [1.09750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700,11.5,7.5,1,0.451,18.75]
+        return [1.09750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700,11.5,7.5,1,0.549,18.75]
     elif C == '2006':
-        return [1.11750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700,10,7,3,0.476,18.75]
+        return [1.11750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700,10,7,3,0.576,18.75]
     elif C == '2009':
-        return [1.16500*(spex),False,False,'DHL',pirelli,shell,605,2,5,3,False,115,0.0675,10,10,0,0.451,14.25]
+        return [1.16500*(spex),False,False,'DHL',pirelli,shell,605,2,5,3,False,115,0.0675,10,10,0,0.549,14.25]
     elif C == '2011':
-        return [1.15250*(spex),True,True,'DHL',pirelli,shell,640,2,5,3,False,110,0.0675,10,10,0,0.576,14.25]
+        return [1.15250*(spex),True,True,'DHL',pirelli,shell,640,2,5,3,False,110,0.0675,10,10,0,0.349,14.25]
     elif C == '2014':
         return [1.15750*(spex),True,True,'DHL',pirelli,petronas,691,2,3,5,True,109,0.0650,11,6,3,0.501,14.25]
     elif C == '2016':
-        return [1.07000*(spex),True,True,'DHL',pirelli,petronas,702,2,3,5,True,108,0.0650,11,6,3,0.576,14.25]
+        return [1.07000*(spex),True,True,'DHL',pirelli,petronas,702,2,3,5,True,108,0.0650,11,6,3,0.349,14.25]
     elif C == '2017':
-        return [1.01750*(spex),True,True,'DHL',pirelli,petronas,728,2,5,3,True,112,0.0650,10,8,2,0.451,16.75]
+        return [1.01750*(spex),True,True,'DHL',pirelli,petronas,728,2,5,3,True,112,0.0650,10,8,2,0.549,16.75]
     elif C == '2018':
-        return [0.99250*(spex),True,True,'DHL',pirelli,petronas,734,2,5,3,True,116,0.0650,10,8,2,0.551,16.75]
+        return [0.99250*(spex),True,True,'DHL',pirelli,petronas,734,2,5,3,True,116,0.0650,10,8,2,0.449,16.75]
     elif C == '2021':
-        return [0.99000*(spex),True,True,'DHL',pirelli,aramco,752,2,5,3,True,118,0.0625,10,8,2,0.551,16.25]
+        return [0.99000*(spex),True,True,'DHL',pirelli,aramco,752,2,5,3,True,118,0.0625,10,8,2,0.449,16.25]
     elif C == '2022':
-        return [1.00000*(spex),True,True,'DHL',pirelli,aramco,798,5,2,3,True,112,0.0625,7,10,3,0.601,12.25]
+        return [1.00000*(spex),True,True,'DHL',pirelli,aramco,798,5,2,3,True,112,0.0625,7,10,3,0.299,12.25]
 
 # Visual Plugins
 borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'
@@ -2096,13 +2096,13 @@ def R(circuit,session,weather):
                         pass
 
                 attacker_precise_laptime = round(attacker_tire.laptime(attacker_obj,circuit,lap,TIRE_USAGE[attacker_obj.name],['sunday',GRID[attacker_obj.name]],TT3),3)
-                defender_precise_laptime = round(defender_tire.laptime(defender_obj,circuit,lap,TIRE_USAGE[defender_obj.name],['sunday',GRID[defender_obj.name]],TT3),3)
+                defender_precise_laptime = round(defender_tire.laptime(defender_obj,circuit,lap,TIRE_USAGE[defender_obj.name],['sunday',GRID[defender_obj.name]],TT3),3) - FIA(current)[16]
                 
-                attacker_dice = uniform(0.0,20.0)
-                defender_dice = uniform(0.0,20.0)
-
                 coming_by = attacker_precise_laptime - defender_precise_laptime
-                selectory = gap_in_front - (coming_by*(-1.0))
+                drs_advantage = (-1.0)*((0.250) + attacker_obj.team.drs_delta/200)/1.71
+                
+                ATTACKING_MOMENT = gap_in_front - (coming_by*(-1.0))
+                DRS_ATTACKING_MOMENT = gap_in_front - (((attacker_precise_laptime + drs_advantage) - defender_precise_laptime)*(-1.0))
                 
                 ACCIDENT = abs((uniform(0,25) + attacker_obj.attack) - (uniform(0,25) + defender_obj.defence))
                 
@@ -2111,7 +2111,7 @@ def R(circuit,session,weather):
                 else:
                     BANGER = (uniform(0,100) <= FIA(current)[17])
 
-                if (ACCIDENT <= (attacker_obj.aggression/200) + (defender_obj.aggression/200)) & (BANGER) & (selectory <= FIA(current)[16]):
+                if (ACCIDENT <= (attacker_obj.aggression/200) + (defender_obj.aggression/200)) & (BANGER) & (ATTACKING_MOMENT <= FIA(current)[16]):
                     INCIDENT = choice(['DOUBLE DNF','DEFENDER DNF & ATTACKER DAMAGED','ATTACKER DNF & DEFENDER DAMAGED'
                                     'DOUBLE DAMAGED','DEFENDER CLEAR & ATTACKER DAMAGED','ATTACKER CLEAR & DEFENDER DAMAGED',
                                     'DEFENDER DNF & ATTACKER CLEAR','ATTACKER DNF & DEFENDER CLEAR'])
@@ -2274,61 +2274,64 @@ def R(circuit,session,weather):
                     else:
                         pass
 
-                else: # This section not active moment.
-                    the_gap_in_front = gap_in_front
-                    drs_advantage = (-1.0)*((0.250) + attacker_obj.team.drs_delta/200)/1.5
-                    slipstream_advantage = ((-1.0)*((0.250) + attacker_obj.team.drs_delta/200))/3.5
-                    
-                    minimum_delta_needed_d = FIA(current)[16]
-                    if circuit.overtake_difficulty == 'Very Hard':
-                        minimum_delta_needed_t = 0.150
-                    elif circuit.overtake_difficulty == 'Hard':
-                        minimum_delta_needed_t = 0.225
-                    elif circuit.overtake_difficulty == 'Average':
-                        minimum_delta_needed_t = 0.300
-                    elif circuit.overtake_difficulty == 'Easy':
-                        minimum_delta_needed_t = 0.350
-                    elif circuit.overtake_difficulty == 'Very Easy':
-                        minimum_delta_needed_t = 0.400
-                    elif circuit.overtake_difficulty == 'Impossible':
-                        minimum_delta_needed_t = 0.075
-                    
-                    marcelo = []
-                    for i in range(1,circuit.corner_count+1):
-                        marcelo.append(i)
-
-                    # burada drs ve slipstream'den bağımsız bedava geçişler var line 2187 ve 2190. oraları özelleştirelim.
-                    if choice(marcelo) <= circuit.drs_points:
-                        if the_gap_in_front <= 1.000:
-                            if (FIA(current)[1] == True) & (W3 == 'Dry'):
-                                overtake_text = f'{defender} succesfully got passed by {attacker} with the help of the DRS.'
-                                selectorx = the_gap_in_front - (coming_by*(-1.0)) - (drs_advantage*(-1.0))
-                            else:
-                                overtake_text = f'{defender} succesfully got passed by {attacker} with the help of the slipstream.'
-                                selectorx = the_gap_in_front - (coming_by*(-1.0)) - (slipstream_advantage*(-1.0))
-                        else:
-                            overtake_text = f'{defender} succesfully got passed by {attacker}.'
-                            selectorx = the_gap_in_front - (coming_by*(-1.0))
+                else: # THIS SECTION NOT ACTIVE AT THE MOMENT
+                    if defender_obj.defence > attacker_obj.attack:
+                        DEFENDER_DICE = uniform(0.1,19.9)
+                        ATTACKER_DICE = uniform(0.1,((24.9)+(attacker_obj.attack-defender_obj.defence)))
+                    elif defender_obj.defence < attacker_obj.attack:
+                        ATTACKER_DICE = uniform(0.1,19.9)
+                        DEFENDER_DICE = uniform(0.1,((24.9)+(attacker_obj.attack-defender_obj.defence)))
                     else:
-                        overtake_text = f'{defender} succesfully got passed by {attacker}.'
-                        selectorx = the_gap_in_front - (coming_by*(-1.0))
+                        ATTACKER_DICE = uniform(0.1,19.9)
+                        DEFENDER_DICE = uniform(0.1,19.9)
+
+                    if circuit.overtake_difficulty == 'Very Hard':
+                        minimum_delta_needed_t = 0.200
+                    elif circuit.overtake_difficulty == 'Hard':
+                        minimum_delta_needed_t = 0.300
+                    elif circuit.overtake_difficulty == 'Average':
+                        minimum_delta_needed_t = 0.400
+                    elif circuit.overtake_difficulty == 'Easy':
+                        minimum_delta_needed_t = 0.500
+                    elif circuit.overtake_difficulty == 'Very Easy':
+                        minimum_delta_needed_t = 0.750
+                    elif circuit.overtake_difficulty == 'Impossible':
+                        minimum_delta_needed_t = 0.100
+                    
+                    if (FIA(current)[2] == True) & (W3 == 'Dry') & (gap_in_front <= 1.000):
+                        marcelo = []
+                        for i in range(1,circuit.corner_count+1):
+                            marcelo.append(i)
+                            
+                        if (circuit.drs_points*2) >= choice(marcelo):
+                            DRAG_REDUCTION_SYSTEM = True
+                        else:
+                            DRAG_REDUCTION_SYSTEM = False
+                    else:
+                        DRAG_REDUCTION_SYSTEM = False
 
                     if lap > 1:
-                        if selectorx <= minimum_delta_needed_d:
-                            if selectorx <= 0.000:
-                                if ((defender_obj.defence*1.517) + defender_dice) <= ((attacker_obj.attack*1.517) + attacker_dice + (selectorx*(-45.17))):
-                                    # print(f'{Fore.BLACK}{overtake_text}{Style.RESET_ALL}')
-                                    pass # attacker geçti. / minimal vakit kaybetme. / coming_by kadar gap koyacak.
+                        if DRAG_REDUCTION_SYSTEM == False: # Non-drs pass try.
+                            if ATTACKING_MOMENT <= minimum_delta_needed_t:
+                                if ((defender_obj.defence) + DEFENDER_DICE + (ATTACKING_MOMENT*13)) <= ((attacker_obj.attack) + ATTACKER_DICE):
+                                    pass # Passed normally.
+                                    # print('NORMAL')
                                 else:
-                                    # print('defended the drs.')
-                                    pass # defender savundu. / büyük vakit kaybetme. / coming by kadar gap koyacak.
+                                    pass # Couldn't passed normally.
                             else:
-                                # print('challange.')
-                                pass # geçme hamlesi için minimum_delta_needed_d parametresine oturmaya çalışacak. / kapışma kokuyor.
-                        else:
-                            pass # No getting ever close, no pass. No timetable manipulation.
-                    else:
-                        pass # No passing algorithm at the opening lap. No timetable manipulation.
+                                pass # Nowhere close to the guy.
+                        else: # Pass try with DRS.
+                            if DRS_ATTACKING_MOMENT <= 0.000:
+                                pass # Passed with drs with losing no time.
+                                # print('DRS')
+                            elif DRS_ATTACKING_MOMENT <= minimum_delta_needed_t:
+                                if ((defender_obj.defence) + DEFENDER_DICE + (DRS_ATTACKING_MOMENT*13)) <= ((attacker_obj.attack) + ATTACKER_DICE):
+                                    pass # Passed normally with the help of drs.
+                                    # print('SEMI-DRS')
+                                else:
+                                    pass # Couldn't passed normally with the help of drs.
+                            else:
+                                pass # Nowhere close to the guy.
 
         # Lap by Lap Report | Final Shape
         temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
