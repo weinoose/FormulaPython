@@ -19,5 +19,4 @@ Developer Log for the Development Process:
 * 11/07/2023 — v1.9 — 5th minor update has been published based on the fixing and revising of extra statistical features of the race.
 * Current — v1.10 — The developer is working on 6th minor update based on fastest lap strategy.
 * Current — v1.11 — The developer is working on the 7th minor update based on lap time priority when the same lap times occur by different drivers in sessions.
-* Current — v1.12 — The developer is working on the 8th minor update based on adding artificial safety car features into the game. For now, there is only the traditional safety car feature is currently active.
 * Current — v2.0 — The developer is working on 1st major update based on improved track positions for vehicles during the race.
