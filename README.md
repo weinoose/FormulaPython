@@ -19,4 +19,5 @@ Developer Log for the Development Process:
 * 11/07/2023 — v1.9 — 5th minor update has been published based on the fixing and revising of extra statistical features of the race.
 * Feature — v1.10 — The developer is working on 6th minor update based on fastest lap strategy.
 * Feature — v1.11 — The developer is working on the 7th minor update based on lap time priority when the same lap times occur by different drivers in sessions.
+* Feature — v1.12 — The developer is working on the 8th minor update based on fixing the double-stack pit-stop bugs occurring during the race.
 * Feature — v2.0 — The developer is working on 1st major update based on improved track positions for vehicles during the race.
