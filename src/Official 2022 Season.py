@@ -7,7 +7,7 @@ import datetime
 import sys
 
 # # # DIFFERENCES FROM REAL FORMULA ONE RACING
-# There is no red flag feature in this simulation. However, safety car and artificial safety car features are available.
+# There is no red flag and artificial safety car feature in this simulation. However, safety car is fully available.
 # We assume that each team could find the best strategy and car setup for the feature race in free practice sessions.
 # We assume that Monte-Carlo GP should be 91 laps instead of 78 laps in terms of completing 303K kilometres as traditions do.
 
