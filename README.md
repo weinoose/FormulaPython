@@ -17,7 +17,8 @@ Developer Log for the Development Process:
 * 11/07/2023 — v1.7 — 3rd minor update has been published based on the increasing reality of the tire degradation and operating range.
 * 11/07/2023 — v1.8 — 4th minor update has been published based on the availability of the track temperature based on the weather condition in each session.
 * 11/07/2023 — v1.9 — 5th minor update has been published based on the fixing and revising of extra statistical features of the race.
-* Feature — v1.10 — The developer is working on 6th minor update based on fastest lap strategy.
-* Feature — v1.11 — The developer is working on the 7th minor update based on lap time priority when the same lap times occur by different drivers in sessions.
-* Feature — v1.12 — The developer is working on the 8th minor update based on fixing the double-stack pit-stop bugs occurring during the race.
+* 14/07/2023 — v1.10 — The developer is working on 6th minor update based on fastest lap strategy.
+* 14/07/2023 — v1.11 — The developer is working on the 7th minor update based on fixing the double-stack pit-stop bugs occurring during the race.
+* 14/07/2023 — v1.12 — In-game bugs have been cleared.
+* Feature — v1.13 — The developer is working on the 8th minor update based on lap time priority when the same lap times occur by different drivers in sessions.
 * Feature — v2.0 — The developer is working on 1st major update based on improved track positions for vehicles during the race.
