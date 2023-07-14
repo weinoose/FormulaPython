@@ -106,7 +106,7 @@ aramco = Fuel('Aramco',+2.5,0.0450)
 # Index 1-2 for if DRS and ERS rule is active.
 # Index 3-4-5 for formula 1 partners.
 # Index 6 contains minimum amount of vehicle weight within the regulations.
-# Index 7-8-9 for regulation game changer coefficients.
+# Index 7-8-9 for regulation game changer coefficients [volume 1].
 # Index 10 for if fastest lap points eligible.
 # Index 11 contains fuel tank capacity.
 # Index 12 contains chassis efficiency.
@@ -122,7 +122,7 @@ def FIA(C):
     elif C == '2006':
         return [1.11750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700,10,7,3,0.576,18.75]
     elif C == '2009':
-        return [1.16500*(spex),False,False,'DHL',pirelli,shell,605,2,5,3,False,115,0.0675,10,10,0,0.549,14.25]
+        return [1.16000*(spex),False,False,'DHL',pirelli,shell,605,2,5,3,False,115,0.0675,10,10,0,0.549,14.25]
     elif C == '2011':
         return [1.15250*(spex),True,True,'DHL',pirelli,shell,640,2,5,3,False,110,0.0675,10,10,0,0.349,14.25]
     elif C == '2014':
@@ -134,7 +134,7 @@ def FIA(C):
     elif C == '2018':
         return [0.99250*(spex),True,True,'DHL',pirelli,petronas,734,2,5,3,True,116,0.0650,10,8,2,0.449,16.75]
     elif C == '2021':
-        return [0.99000*(spex),True,True,'DHL',pirelli,aramco,752,2,5,3,True,118,0.0625,10,8,2,0.449,16.25]
+        return [1.04500*(spex),True,True,'DHL',pirelli,aramco,752,2,5,3,True,118,0.0625,10,8,2,0.449,16.25]
     elif C == '2022':
         return [1.00000*(spex),True,True,'DHL',pirelli,aramco,798,5,2,3,True,112,0.0625,7,10,3,0.299,12.25]
 
