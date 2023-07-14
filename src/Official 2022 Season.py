@@ -9,7 +9,6 @@ import sys
 # # # DIFFERENCES FROM REAL FORMULA ONE RACING
 # There is no red flag feature in this simulation. However, safety car and artificial safety car features are available.
 # We assume that each team could find the best strategy and car setup for the feature race in free practice sessions.
-# We assume that each driver has their garage and own pit crew so there will be no double-stack problems at all.
 # We assume that Monte-Carlo GP should be 91 laps instead of 78 laps in terms of completing 303K kilometres as traditions do.
 
 # Application Modes
@@ -1671,6 +1670,26 @@ def R(circuit,session,weather):
     data,tirenamedata,tireperformancedata = pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
     for lap in range(1,circuit.circuit_laps+1):
         
+        def PIT_AVAILABILITY():
+            
+            scuderia = driver.team.title
+            for i in drivers:
+                if i.team.title == scuderia:
+                    mate = i.name
+                else:
+                    pass
+
+            if lap in PITTED_LAPS[mate]:
+                if (GAP_TO_TEAMMATE[driver.name][-1] <= 2.49):
+                    if len(BOX[driver.name]) > 1:
+                        return True
+                    else:
+                        return False
+                else:
+                    return True
+            else:
+                return True
+
         if SAFETY_CAR[lap][-1] == 1:
             print(f'{Fore.YELLOW}SFC | Lap {lap} | Safety Car Is Out! Yellow Flags Waving Around the Track.{Style.RESET_ALL}')
         else:
@@ -1738,6 +1757,7 @@ def R(circuit,session,weather):
                         TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                         BOX[driver.name].clear()
                         BOX[driver.name].append(None)
+                        PITTED_LAPS[driver.name].append(lap)
                 elif pit_intervalx[1] >= TIRE_USAGE[driver.name] >= pit_intervalx[0]:
                     if len(TIRE_SETS[driver.name]) == 1:
                         LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)))
@@ -1756,33 +1776,40 @@ def R(circuit,session,weather):
                             TIRE_USAGE[driver.name] += 0.175
                             TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                         else:
-                            TIRE_USAGE[driver.name] = 0
-                            TIRE_SETS[driver.name].pop(0)
-                            tire = TIRE_SETS[driver.name][0]
-                            STINT[driver.name].append(f'-{tire.title[0]}')
-                            pit_stop = round(driver.team.pit(),3)
+                            if PIT_AVAILABILITY():
+                                TIRE_USAGE[driver.name] = 0
+                                TIRE_SETS[driver.name].pop(0)
+                                tire = TIRE_SETS[driver.name][0]
+                                STINT[driver.name].append(f'-{tire.title[0]}')
+                                pit_stop = round(driver.team.pit(),3)
 
-                            if sum(PENALTY[driver.name]) != 0:
-                                gabigol = sum(PENALTY[driver.name])
-                                pit_stop += sum(PENALTY[driver.name])
-                                PENALTY[driver.name].clear()
-                                PENALTY[driver.name].append(0)
-                                print(f'PIT | Lap {lap} | Pit-stop for {driver.name} but, he has to pay-off his {gabigol} second penalty first. Pit-crew is waiting along.')
+                                if sum(PENALTY[driver.name]) != 0:
+                                    gabigol = sum(PENALTY[driver.name])
+                                    pit_stop += sum(PENALTY[driver.name])
+                                    PENALTY[driver.name].clear()
+                                    PENALTY[driver.name].append(0)
+                                    print(f'PIT | Lap {lap} | Pit-stop for {driver.name} but, he has to pay-off his {gabigol} second penalty first. Pit-crew is waiting along.')
+                                else:
+                                    gabigol = 0
+
+                                PIT[driver.name].append(1)
+                                KTM = round(pit_stop - gabigol,3)
+                                if 10 > KTM >= 5.0:
+                                    print(f'PIT | Lap {lap} | Bad news for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
+                                elif KTM >= 10:
+                                    print(f'PIT | Lap {lap} | Disaster for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
+                                else:
+                                    print(f'PIT | Lap {lap} | Pit-stop for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
+                                LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)) + pit_stop + 13) # Pitted Lap
+                                TIRE_CHART[driver.name].append(tire.title[0])
+                                TIRE_USAGE[driver.name] += 0.175
+                                TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
+                                PITTED_LAPS[driver.name].append(lap)
                             else:
-                                gabigol = 0
-                        
-                            PIT[driver.name].append(1)
-                            KTM = round(pit_stop - gabigol,3)
-                            if 10 > KTM >= 5.0:
-                                print(f'PIT | Lap {lap} | Bad news for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
-                            elif KTM >= 10:
-                                print(f'PIT | Lap {lap} | Disaster for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
-                            else:
-                                print(f'PIT | Lap {lap} | Pit-stop for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
-                            LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)) + pit_stop + 13) # Pitted Lap
-                            TIRE_CHART[driver.name].append(tire.title[0])
-                            TIRE_USAGE[driver.name] += 0.175
-                            TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
+                                LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)))
+                                TIRE_CHART[driver.name].append(tire.title[0])
+                                TIRE_USAGE[driver.name] += 0.175
+                                TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                 else:
                     LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)))
                     TIRE_CHART[driver.name].append(tire.title[0])
@@ -1904,7 +1931,8 @@ def R(circuit,session,weather):
                             TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                             BOX[driver.name].clear()
                             BOX[driver.name].append(None)
-                    elif tire_left < 25:
+                            PITTED_LAPS[driver.name].append(lap)
+                    elif (tire_left < 25) & (PIT_AVAILABILITY()):
                         if len(TIRE_SETS[driver.name]) == 1:
                             LAP_CHART[driver.name].append(current_laptime)
                             TIRE_CHART[driver.name].append(tire.title[0])
@@ -1944,6 +1972,7 @@ def R(circuit,session,weather):
                                 TIRE_CHART[driver.name].append(tire.title[0])
                                 TIRE_USAGE[driver.name] += 1
                                 TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
+                                PITTED_LAPS[driver.name].append(lap)
                     else:
                         if driver_error_odd_2:
                             ickx = uniform(6.501,16.501)
@@ -1957,7 +1986,28 @@ def R(circuit,session,weather):
                                 TIRE_USAGE[driver.name] += 3.332
                                 TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                         else:
-                            if ((lap + 3 == circuit.circuit_laps) | (lap + 2 == circuit.circuit_laps)) & (sum(FLT[driver.name]) == 0):
+                            def CAN_HE():
+                                if lap != 1:
+                                    if_chaser_ix = CURRENT_LEAD[lap-2].index(driver.name)
+
+                                    if if_chaser_ix == 0:
+                                        return True
+                                    else:
+                                        if_chased_name = CURRENT_LEAD[lap-2][if_chaser_ix-1]
+                                        precise_push_per_lap = round(BEHIND[driver.name][-1] / ((circuit.circuit_laps+1) - (lap)),3)
+                                        
+                                        if_chaser_pace = LAP_CHART[driver.name][-1]
+                                        if_chased_pace = LAP_CHART[if_chased_name][-1]
+                                        precise_pace_difference = round(if_chased_pace - if_chaser_pace,3)
+                                        
+                                        if precise_pace_difference > precise_push_per_lap + 0.5:
+                                            return False
+                                        else:
+                                            return True
+                                else:
+                                    return False
+
+                            if ((lap + 3 == circuit.circuit_laps) | (lap + 2 == circuit.circuit_laps)) & (sum(FLT[driver.name]) == 0) & (CAN_HE()) & (PIT_AVAILABILITY()):
                                 if (FIA(current)[10] == True) & (AHEAD[driver.name][-1] >= 24.0 + uniform(0.50,1.00)):
                                     TIRE_USAGE[driver.name] = 0
                                     TIRE_SETS[driver.name].pop(0)
@@ -1977,6 +2027,7 @@ def R(circuit,session,weather):
                                     TIRE_CHART[driver.name].append(tire.title[0])
                                     TIRE_USAGE[driver.name] += 1
                                     TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
+                                    PITTED_LAPS[driver.name].append(lap)
                                 else:
                                     LAP_CHART[driver.name].append(current_laptime)
                                     TIRE_CHART[driver.name].append(tire.title[0])
@@ -2343,7 +2394,6 @@ def R(circuit,session,weather):
 
         # Position Saving
         dp = list(TEMP_CLASSIFICATION['DRIVERS'])
-        dp31 = list(TEMP_CLASSIFICATION['MANUFACTURERS'])
         dp69 = list(TEMP_CLASSIFICATION['INTERVAL'])
 
         for i in dp:
@@ -2432,6 +2482,18 @@ def R(circuit,session,weather):
 
         LDR.append(list(TEMP_CLASSIFICATION["DRIVERS"])[0])
         LMF.append(list(TEMP_CLASSIFICATION["MANUFACTURERS"])[0])
+        CURRENT_LEAD.append(list(TEMP_CLASSIFICATION["DRIVERS"]))
+
+        TEMP = []
+        for i in drivers:
+            TEMP.append(i)
+        drivers.clear()
+        for i in list(TEMP_CLASSIFICATION["DRIVERS"]):
+            for y in TEMP:
+                if y.name == i:
+                    drivers.append(y)
+                else:
+                    pass
         # # # END OF THE LAP
 
     # # # END OF THE GP
@@ -2550,12 +2612,16 @@ if execution == 'simulation':
     LDR = []
     LMF = []
 
+    CURRENT_LEAD = []
+
     STRATEGIES = {}
 
+    PITTED_LAPS = {}
+
     LAP_CHART = {}
+    
     TIRE_CHART = {}
     TIRE_LEFT = {}
-
     TIRE_USAGE = {}
     TIRE_SETS = {}
 
@@ -2577,24 +2643,25 @@ if execution == 'simulation':
 
     for i in drivers:
         DFORM[i.name] = []
+        FLT[i.name] = [0]
+        PITTED_LAPS[i.name] = []
         LAP_CHART[i.name] = []
-        TIRE_LEFT[i.name] = []
         TIRE_CHART[i.name] = []
+        TIRE_LEFT[i.name] = []
+        TIRE_USAGE[i.name] = 0
+        TIRE_SETS[i.name] = []
         DNF[i.name] = [None]
         MECHANICAL[i.name] = []
         BOX[i.name] = [None]
         PENALTY[i.name] = [0]
-        TIRE_USAGE[i.name] = 0
-        TIRE_SETS[i.name] = []
         POSITIONS[i.name] = []
         AHEAD[i.name] = []
         BEHIND[i.name] = []
-        GAP_TO_TEAMMATE[i.name] = []
+        GAP_TO_TEAMMATE[i.name] = [0]
         PIT[i.name] = []
         STINT[i.name] = []
-        FLT[i.name] = [0]
 
-    for i in range(1,101):
+    for i in range(1,201):
         SAFETY_CAR[i] = [0]
 
     # Strategy Plannings
