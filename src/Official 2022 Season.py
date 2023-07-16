@@ -1,5 +1,5 @@
 # Additional Libraries
-from random import uniform, choice
+from random import uniform, choice, shuffle
 import numpy as np
 import pandas as pd
 from colorama import Fore, Style
@@ -9,10 +9,10 @@ import sys
 # # # DIFFERENCES FROM REAL FORMULA ONE RACING
 # There is no red flag and artificial safety car feature in this simulation. However, safety car is fully available.
 # We assume that each team could find the best strategy and car setup for the feature race in free practice sessions.
-# We assume that Monte-Carlo GP should be 91 laps instead of 78 laps in terms of completing 303K kilometres as traditions do.
+# We assume that Monte-Carlo GP should be 91 laps instead of 78 laps in terms of completing 303K kilometers as traditions do.
 
-# Application Modes
-execution = 'simulation' # data or simulation for output/run mode.
+# Application Modes: data or simulation for output/run mode.
+execution = 'simulation'
 
 # Regulation Selection
 regulation = '2022'
@@ -22,7 +22,6 @@ GP = 'Sakhir'
 
 # Spec. Selection
 spec = 'Formula 1'
-
 if spec == 'Formula 1':
     verbosity = True # True or False for further telemetry & data.
 else:
@@ -408,13 +407,6 @@ class Tire():
             else:
                 CL2 = ((((choice(SUNDAY)/100)**1.75)*3.25) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) + (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
 
-        # Extreme Track Configuration
-        if GP == 'Le Mans':
-            CL1 = (CL1*3.0) - 88.75
-            CL2 = (CL2*3.0) + 11.25
-        else:
-            pass
-
         # # # 4.0: FIVE LIGHTS REACTION
         REACTION = (((uniform((((driver.start-(17 - (driver.fitness/17)))**2))/10000,(((driver.start+(driver.fitness/17))**2))/10000)))*2 - (0.675))*(-1.0)
         STARTING_GRID = round(((mode[1]/3.71) - 0.207),3)
@@ -470,12 +462,7 @@ class Circuit():
 
 # # # STRATEGIES
 def STRATEGY(GP):
-    if GP == 'Le Mans':
-        if current in entertainment_era:
-            return [[s,s,h  ,s,m,m],[s,m,h  ,s,m,h],[s,m,m    ,s,s,s,h]]
-        elif current in strategy_era:
-            return [[s,h,s  ,s,s,s,h],[s,s,h  ,s,s,s,h],[s,h,h  ,s,s,s,s]]
-    elif GP == 'Monza':
+    if GP == 'Monza':
         if current in entertainment_era:
             return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
         elif current in strategy_era:
@@ -487,7 +474,7 @@ def STRATEGY(GP):
             return [[s,s,h  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'Baku':
         if current in entertainment_era:
-            return [[s,m,m    ,s,s,m,m,h],[m,h    ,s,s,s,m,h,h],[s,s,h    ,s,s,s,m,h]]
+            return [[s,m,m    ,s,s,m,m,h],[s,h,s    ,s,s,m,h,h],[s,s,h    ,s,s,m,m,h]]
         elif current in strategy_era:
             return [[s,s,h  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'Las Vegas':
@@ -502,7 +489,7 @@ def STRATEGY(GP):
             return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,s,h  ,s,s,s,h]]
     elif GP == 'Sakhir':
         if current in entertainment_era:
-            return [[s,s,h  ,s,m,m],[s,m,s    ,s,s,m,h],[m,h  ,s,s,m,h]]
+            return [[s,s,h  ,s,m,m],[s,s,m  ,s,m,h],[s,m,s    ,s,m,h,h]]
         elif current in strategy_era:
             return [[s,h,s  ,s,s,s,h],[s,s,h  ,s,s,s,h],[s,h,h  ,s,s,s,s]]
     elif GP == 'Zandvoort':
@@ -657,14 +644,13 @@ def STRATEGY(GP):
             return [[s,s,h  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
         
 # # # AGILITY CIRCUITS
-lms = Circuit('Le Mans','France','Agility Circuit',23,FIA(current)[0]*120.75,STRATEGY('Le Mans'),5,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy',38,[6,9,11],6) # 2018-present layout.
 monza = Circuit('Monza','Italy','Agility Circuit',53,FIA(current)[0]*41.25,STRATEGY('Monza'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy',11,[21,31,41],29) # 2000-present layout.
 sochi = Circuit('Sochi','Russia','Agility Circuit',53,FIA(current)[0]*54.75,STRATEGY('Sochi'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Average',18,[20,30,40],28) # 2014-present layout.
 baku = Circuit('Baku','Azerbaijan','Agility Circuit',51,FIA(current)[0]*62.25,STRATEGY('Baku'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Hard',20,[16,23,31],21) # 2016-present layout.
 lv = Circuit('Las Vegas','United States','Agility Circuit',50,FIA(current)[0]*33.25,STRATEGY('Las Vegas'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Hard',17,[21,31,41],29) # 2022-present layout.
 
 # # # POWER CIRCUITS
-spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*65.25,STRATEGY('Spa-Francorchamps'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],19,'Very Easy',[18,26,35],24) # 2007-present layout.
+spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*65.25,STRATEGY('Spa-Francorchamps'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Very Easy',19,[18,26,35],24) # 2007-present layout.
 le = Circuit('Le Castellet','France','Power Circuit',53,FIA(current)[0]*52.25,STRATEGY('Le Castellet'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Easy',15,[16,23,31],21) # 2005-present layout.
 sepang = Circuit('Sepang','Malaysia','Power Circuit',56,FIA(current)[0]*54.75,STRATEGY('Sepang'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Very Easy',15,[18,26,35],24) # 1999-present layout.
 # sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*17.75,STRATEGY('Sakhir'),3,['Dry'],'Easy',11,[16,23,29],20) # 2020 extra outer layout.
@@ -711,7 +697,7 @@ monaco = Circuit('Monte-Carlo','Monaco','Street Circuit',91,FIA(current)[0]*32.2
 singapore = Circuit('Singapore','Singapore','Street Circuit',61,FIA(current)[0]*59.75,STRATEGY('Singapore'),3,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Hard',19,[16,23,29],20) # 2018-present layout.
 valencia = Circuit('Valencia','Spain','Street Circuit',57,FIA(current)[0]*56.25,STRATEGY('Valencia'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Hard',14,[16,23,29],20) # 2008-present layout.
 
-circuits = [lms,monza,sochi,baku,lv,
+circuits = [monza,sochi,baku,lv,
             spa,le,sakhir,austin,mexico,
             silverstone,sepang,shanghai,yeongam,india,
             hockenheim,fuji,melbourne,yas,spielberg,portimao,jeddah,
@@ -1488,6 +1474,7 @@ def ANALYZER(session,data,tirenamedata,keyword):
 # # #
 
 def FP(circuit,tireset,stage,session,weather):
+    shuffle(drivers)
     data,tirenamedata,tireleftdata,c = pd.DataFrame(),pd.DataFrame(),pd.DataFrame(),1
     for driver in drivers:
         if W1 == 'Dry':
@@ -1560,6 +1547,7 @@ def FP(circuit,tireset,stage,session,weather):
 # # #
 
 def Q(circuit,session,weather):
+    shuffle(drivers)
     data,tirenamedata = pd.DataFrame(),pd.DataFrame()
     c = 0
     while c < 3:
@@ -2354,7 +2342,7 @@ def R(circuit,session,weather):
                         for i in range(1,circuit.corner_count+1):
                             marcelo.append(i)
                             
-                        if (circuit.drs_points*2) >= choice(marcelo):
+                        if (circuit.drs_points+1) >= choice(marcelo):
                             DRAG_REDUCTION_SYSTEM = True
                         else:
                             DRAG_REDUCTION_SYSTEM = False
