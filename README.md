@@ -21,4 +21,5 @@ Developer Log for the Development Process:
 * 14/07/2023 — v1.11 — The developer is working on the 7th minor update based on fixing the double-stack pit-stop bugs occurring during the race.
 * 14/07/2023 — v1.12 — In-game bugs have been cleared.
 * Feature — v1.13 — The developer is working on the 8th minor update based on lap time priority when the same lap times occur by different drivers in sessions.
-* Feature — v2.0 — The developer is working on 1st major update based on improved track positions for vehicles during the race.
+* Feature — v2.0 — The developer is working on 1st major update based on improved driver traits and impacts.
+* Feature — v3.0 — The developer is working on 2nd major update based on improved track positions for vehicles during the race.
