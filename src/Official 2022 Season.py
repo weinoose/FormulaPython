@@ -225,7 +225,7 @@ class Tire():
             elif 0.165 <= driver.team.manufacturer_tyre_coeff:
                 tire_temp = uniform((driver.team.manufacturer_tyre_coeff/2),(driver.team.manufacturer_tyre_coeff/1))
         
-        TIRE_EFFECT = ((pow(1.015750,(100-tire_left)))-1) + (tire_temp + swallow)
+        TIRE_EFFECT = ((pow(1.014750,(100-tire_left)))-1) + (tire_temp + swallow)
         FUEL_EFFECT = (fuel_left*driver.team.powertrain.fuel.efficiency)
         CL0 = (circuit.laptime * self.laptime_coefficient) + (TIRE_EFFECT) + (FUEL_EFFECT) + (self.supplier.pace)
 
@@ -1068,6 +1068,13 @@ elif (W2 != 'Dry') and (W3 == 'Dry'):
     TT3 = xtxq
 else:
     TT3 = ctxq
+
+if W1 != 'Dry':
+    TT1 = 'Cold'
+if W2 != 'Dry':
+    TT2 = 'Cold'
+if W3 != 'Dry':
+    TT3 = 'Cold'
 
 if execution == 'simulation':
     print(f'{CRC.location} GP — {CRC.country} | FP: {W1} Track & {TT1} Track Temperature | Qualifying: {W2} Track & {TT2} Track Temperature | Race: {W3} Track & {TT3} Track Temperature\n{borderline}')
@@ -2665,11 +2672,11 @@ if execution == 'simulation':
             elif tireset == 2:
                 for q in CRC.strategy[1]:
                     TIRE_SETS[i.name].append(q)
-                STINT[i.name].append(CRC.strategy[0][0].title[0])
+                STINT[i.name].append(CRC.strategy[1][0].title[0])
             elif tireset == 3:
                 for q in CRC.strategy[2]:
                     TIRE_SETS[i.name].append(q)
-                STINT[i.name].append(CRC.strategy[0][0].title[0])
+                STINT[i.name].append(CRC.strategy[2][0].title[0])
     elif W3 == 'Dump':
         for i in drivers:
             for q in [inter,inter,inter,inter]:
