@@ -138,7 +138,7 @@ def FIA(C):
         return [1.00000*(spex),True,True,'DHL',pirelli,aramco,798,5,2,3,True,112,0.0625,7,10,3,0.299,12.25]
 
 # Visual Plugins
-borderline = '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'
+borderline = '——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————'
 
 # Negative Events
 FAILURES = ['gearbox','clutch','driveshaft','halfshaft','throttle','brakes','handling','wheel','steering','suspension','puncture',
@@ -148,8 +148,7 @@ FAILURES = ['gearbox','clutch','driveshaft','halfshaft','throttle','brakes','han
             'engine','engine','engine','engine','engine','engine','engine','engine','engine','engine']
 
 MECHANICALS = ['gearing alingment','gearbox driveline',
-               'engine modes','engine braking','engine cooling','brake cooling','exhaust system',
-               'optimal tire pressure']
+               'engine modes','engine braking','engine cooling','brake cooling','exhaust system']
 
 ERRORS = ['spun-off','went through barriers','damaged his suspension','crashed into the walls']
 
@@ -365,7 +364,11 @@ class Tire():
                 if len(DNF[driver.name]) > 1:
                     pass
                 else:
-                    print(f'{Fore.LIGHTYELLOW_EX}ERR | Lap {lap} | {driver.name} made mistake and {choice(MISTAKES)}. He has lost {round(ERROR,3)} seconds!{Style.RESET_ALL}')
+                    if lap < 10:
+                        strlap = f'0{lap}'
+                    else:
+                        strlap = lap
+                    print(f'{Fore.LIGHTYELLOW_EX}ERR | Lap {strlap} | {driver.name} made mistake and {choice(MISTAKES)}. He has lost {round(ERROR,3)} seconds!{Style.RESET_ALL}')
             else:
                 ERROR = 0
         else:
@@ -408,9 +411,14 @@ class Tire():
                 CL2 = ((((choice(SUNDAY)/100)**1.75)*3.25) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) + (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
 
         # # # 4.0: FIVE LIGHTS REACTION
-        REACTION = (((uniform((((driver.start-(17 - (driver.fitness/17)))**2))/10000,(((driver.start+(driver.fitness/17))**2))/10000)))*2 - (0.675))*(-1.0)
-        STARTING_GRID = round(((mode[1]/3.71) - 0.207),3)
-        OPENING = STARTING_GRID + REACTION
+        if self.title == 'Soft':
+            REACTION = (((uniform((((driver.start-(17 - (driver.fitness/17)))**2))/10000,(((driver.start+(driver.fitness/17))**2))/10000)))*2 - (0.675))*(-1.0)
+            STARTING_GRID = round(((mode[1]/3.71) - 0.207),3)
+            OPENING = STARTING_GRID + (REACTION*1.000)
+        else:
+            REACTION = (((uniform((((((driver.start+(driver.wet*0.5))/1.5)-(17 - (driver.fitness/17)))**2))/10000,(((((driver.start+(driver.wet*0.5))/1.5)+(driver.fitness/17))**2))/10000)))*2 - (0.675))*(-1.0)
+            STARTING_GRID = round(((mode[1]/3.71) - 0.207),3)
+            OPENING = STARTING_GRID + (REACTION*1.517)
 
         # Driver Performance Rating
         if mode[0] == 'sunday':
@@ -830,19 +838,19 @@ class Manufacturer():
 
     def pit(self):
         if self.crew == 'Perfect':
-            limit = 2.50
+            limit = 2.75
             failure_odd = 5
         elif self.crew == 'Good':
-            limit = 3.00
+            limit = 3.25
             failure_odd = 10
         elif self.crew == 'Average':
-            limit = 3.50
+            limit = 3.75
             failure_odd = 25
         elif self.crew == 'Bad':
-            limit = 4.00
+            limit = 4.25
             failure_odd = 45
-        pitt = []
-        for i in list(np.arange(2.00,limit,0.01)):
+        pitt, outlast = [], [0.01,0.04,0.08,0.16,0.32,0.64]
+        for i in list(np.arange((2 + choice(outlast)),limit,0.01)):
             pitt.append(i)
         for j in list(np.arange(limit+0.5,(limit*(failure_odd/7)),0.5)):
             pitt.append(j)
@@ -1077,7 +1085,7 @@ if W3 != 'Dry':
     TT3 = 'Cold'
 
 if execution == 'simulation':
-    print(f'{CRC.location} GP — {CRC.country} | FP: {W1} Track & {TT1} Track Temperature | Qualifying: {W2} Track & {TT2} Track Temperature | Race: {W3} Track & {TT3} Track Temperature\n{borderline}')
+    print(f'{CRC.location} GP — {CRC.country} | FP: {W1} Track & {TT1} Track Temperature | Qualifying: {W2} Track & {TT2} Track Temperature | Race: {W3} Track & {TT3} Track Temperature')
 
 # # #
 
@@ -1476,6 +1484,40 @@ def ANALYZER(session,data,tirenamedata,keyword):
 
         da['GAP'] = gap31
 
+    if (keyword == 'quali-chart') & (session != 'Qualifying'):
+        dalot, nani = da['DRIVERS'], []
+        
+        for i in dalot:
+            if session == 'FP1':
+                quaresma, valorant = '', 0
+                for q in FP1STINT[i]:
+                    if valorant == (len(FP1STINT[i]) - 1):
+                        quaresma += f'{q}'
+                    else:
+                        quaresma += f'{q}-'
+                    valorant += 1
+                nani.append(quaresma)
+            elif session == 'FP2':
+                quaresma, valorant = '', 0
+                for q in FP2STINT[i]:
+                    if valorant == (len(FP2STINT[i]) - 1):
+                        quaresma += f'{q}'
+                    else:
+                        quaresma += f'{q}-'
+                    valorant += 1
+                nani.append(quaresma)
+            elif session == 'FP3':
+                quaresma, valorant = '', 0
+                for q in FP3STINT[i]:
+                    if valorant == (len(FP3STINT[i]) - 1):
+                        quaresma += f'{q}'
+                    else:
+                        quaresma += f'{q}-'
+                    valorant += 1
+                nani.append(quaresma)
+        
+        da['STINT'] = nani
+
     return da
 
 # # #
@@ -1514,6 +1556,14 @@ def FP(circuit,tireset,stage,session,weather):
                         tire_usage = 0
                         tire_left_chart.append(f'{tire.title[0]} %{tire_left}')
                         tlist.pop(0)
+
+                        if stage == 1:
+                            FP1STINT[driver.name].append(tlist[0].title[0])
+                        elif stage == 2:
+                            FP2STINT[driver.name].append(tlist[0].title[0])
+                        elif stage == 3:
+                            FP3STINT[driver.name].append(tlist[0].title[0])
+                        
                         tire = tlist[0]
                         pit_stop = 2.0
                         lap_chart.append(current_laptime + pit_stop + 20)
@@ -1540,11 +1590,11 @@ def FP(circuit,tireset,stage,session,weather):
             elif stage == 2:
                 FP2RESULT[driver.name] = uniform(6,12)
             elif stage == 3:
-                FP3RESULT[driver.name] = uniform(9,18)           
+                FP3RESULT[driver.name] = uniform(9,18)          
 
     # End of the Free Practice Session
     print(f'{session} Session | {weather} Conditions | {CRC.location} Grand Prix — {CRC.country}')
-    print(ANALYZER(None,data,tirenamedata,'quali-chart'))
+    print(ANALYZER(f'FP{stage}',data,tirenamedata,'quali-chart'))
     
     if verbosity == True:
         KW = session.lower().split(' ')
@@ -1665,6 +1715,11 @@ def R(circuit,session,weather):
     data,tirenamedata,tireperformancedata = pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
     for lap in range(1,circuit.circuit_laps+1):
         
+        if lap < 10:
+            strlap = f'0{lap}'
+        else:
+            strlap = lap
+
         def PIT_AVAILABILITY():
             
             scuderia = driver.team.title
@@ -1686,7 +1741,7 @@ def R(circuit,session,weather):
                 return True
 
         if SAFETY_CAR[lap][-1] == 1:
-            print(f'{Fore.YELLOW}SFC | Lap {lap} | Safety Car Is Out! Yellow Flags Waving Around the Track.{Style.RESET_ALL}')
+            print(f'{Fore.YELLOW}SFC | Lap {strlap} | Safety Car Is Out! Yellow Flags Waving Around the Track.{Style.RESET_ALL}')
         else:
             pass
         
@@ -1724,7 +1779,7 @@ def R(circuit,session,weather):
 
                 if len(BOX[driver.name]) > 1:
                     if len(TIRE_SETS[driver.name]) == 1:
-                        print(f'{Fore.RED}DNF | Lap {lap} | {driver.name} has forced to retire due to severe damage issue. Disaster for {driver.team.title}!{Style.RESET_ALL}')
+                        print(f'{Fore.RED}DNF | Lap {strlap} | {driver.name} has forced to retire due to severe damage issue. Disaster for {driver.team.title}!{Style.RESET_ALL}')
                         LAP_CHART[driver.name].append((circuit.laptime + 225)*2)
                         TIRE_CHART[driver.name].append(tire.title[0])
                         TIRE_USAGE[driver.name] += 0
@@ -1741,12 +1796,12 @@ def R(circuit,session,weather):
                             pit_stop += sum(PENALTY[driver.name])
                             PENALTY[driver.name].clear()
                             PENALTY[driver.name].append(0)
-                            print(f'PIT | Lap {lap} | Pit-stop for {driver.name} but, he has to pay-off his {gabigol} second penalty first. Pit-crew is waiting along.')
+                            print(f'PIT | Lap {strlap} | Pit-stop for {driver.name} but, he has to pay-off his {gabigol} second penalty first. Pit-crew is waiting along.')
                         else:
                             gabigol = 0
 
                         PIT[driver.name].append(1)
-                        print(f'PIT | Lap {lap} | Pit-stop for {driver.name} with {round(pit_stop - gabigol,3)} seconds stationary. He is on {tire.title} compound.')
+                        print(f'PIT | Lap {strlap} | Pit-stop for {driver.name} with {round(pit_stop - gabigol,3)} seconds stationary. He is on {tire.title} compound.')
                         LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)) + pit_stop + 13)
                         TIRE_CHART[driver.name].append(tire.title[0])
                         TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
@@ -1783,18 +1838,18 @@ def R(circuit,session,weather):
                                     pit_stop += sum(PENALTY[driver.name])
                                     PENALTY[driver.name].clear()
                                     PENALTY[driver.name].append(0)
-                                    print(f'PIT | Lap {lap} | Pit-stop for {driver.name} but, he has to pay-off his {gabigol} second penalty first. Pit-crew is waiting along.')
+                                    print(f'PIT | Lap {strlap} | Pit-stop for {driver.name} but, he has to pay-off his {gabigol} second penalty first. Pit-crew is waiting along.')
                                 else:
                                     gabigol = 0
 
                                 PIT[driver.name].append(1)
                                 KTM = round(pit_stop - gabigol,3)
                                 if 10 > KTM >= 5.0:
-                                    print(f'PIT | Lap {lap} | Bad news for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
+                                    print(f'PIT | Lap {strlap} | Bad news for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
                                 elif KTM >= 10:
-                                    print(f'PIT | Lap {lap} | Disaster for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
+                                    print(f'PIT | Lap {strlap} | Disaster for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
                                 else:
-                                    print(f'PIT | Lap {lap} | Pit-stop for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
+                                    print(f'PIT | Lap {strlap} | Pit-stop for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
                                 LAP_CHART[driver.name].append((round(circuit.laptime + 125,3)) + pit_stop + 13) # Pitted Lap
                                 TIRE_CHART[driver.name].append(tire.title[0])
                                 TIRE_USAGE[driver.name] += 0.175
@@ -1814,14 +1869,15 @@ def R(circuit,session,weather):
                 if DO_NOT_FINISHED == True:
                     the_odd = uniform(0.1,100.1)
                     if the_odd < 25.1:
-                        print(f'{Fore.LIGHTRED_EX}INC | Lap {lap} | {driver.name} has an issue. He has lost the {choice(MECHANICALS)}! Disaster for {driver.team.title}!{Style.RESET_ALL}')
+                        zidane = choice(MECHANICALS)
+                        print(f'{Fore.LIGHTRED_EX}INC | Lap {strlap} | {driver.name} has an issue. He has lost the {zidane}! Disaster for {driver.team.title}!{Style.RESET_ALL}')
                         LAP_CHART[driver.name].append(current_laptime)
                         TIRE_CHART[driver.name].append(tire.title[0])
                         TIRE_USAGE[driver.name] += 1
                         TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
-                        MECHANICAL[driver.name].append(True)
+                        MECHANICAL[driver.name].append(zidane)
                     else:
-                        print(f'{Fore.RED}DNF | Lap {lap} | {driver.name} has forced to retire due to {choice(FAILURES)} issue. Disaster for {driver.team.title}!{Style.RESET_ALL}')
+                        print(f'{Fore.RED}DNF | Lap {strlap} | {driver.name} has forced to retire due to {choice(FAILURES)} issue. Disaster for {driver.team.title}!{Style.RESET_ALL}')
                         LAP_CHART[driver.name].append((circuit.laptime + 225)*2)
                         TIRE_CHART[driver.name].append(tire.title[0])
                         TIRE_USAGE[driver.name] += 0
@@ -1839,7 +1895,7 @@ def R(circuit,session,weather):
                 elif driver_error_odd == True:
                     kachow = uniform(0.1,100.1)
                     if kachow > 35.5:
-                        print(f'{Fore.RED}DNF | Lap {lap} | {driver.name} {choice(ERRORS)} and, he is OUT! Disaster for {driver.team.title}!{Style.RESET_ALL}')
+                        print(f'{Fore.RED}DNF | Lap {strlap} | {driver.name} {choice(ERRORS)} and, he is OUT! Disaster for {driver.team.title}!{Style.RESET_ALL}')
                         LAP_CHART[driver.name].append((circuit.laptime + 225)*2)
                         TIRE_CHART[driver.name].append(tire.title[0])
                         TIRE_USAGE[driver.name] += 0
@@ -1869,7 +1925,7 @@ def R(circuit,session,weather):
                             TIRE_CHART[driver.name].append(tire.title[0])
                             TIRE_SETS[driver.name].append(s)           
                             LAP_CHART[driver.name].append(current_laptime + uniform(19.01,39.99))
-                            print(f'{Fore.LIGHTRED_EX}INC | Lap {lap} | Oh, no! {driver.name} has lost control and crushed into his front-wing. He is willing to box!{Style.RESET_ALL}')                        
+                            print(f'{Fore.LIGHTRED_EX}INC | Lap {strlap} | Oh, no! {driver.name} has lost control and crushed into his front-wing. He is willing to box!{Style.RESET_ALL}')                        
                             BOX[driver.name].append(True)
                         elif 'kerb tange':
                             TIRE_USAGE[driver.name] += 1
@@ -1877,7 +1933,7 @@ def R(circuit,session,weather):
                             TIRE_CHART[driver.name].append(tire.title[0])
                             TIRE_SETS[driver.name].append(s)
                             LAP_CHART[driver.name].append(current_laptime + uniform(0.51,2.49))
-                            print(f'{Fore.LIGHTRED_EX}INC | Lap {lap} | Unfortunate! {driver.name} just bounced off the kerb. I see some front-wing parts on the ground. He is willing to box!{Style.RESET_ALL}')                        
+                            print(f'{Fore.LIGHTRED_EX}INC | Lap {strlap} | Unfortunate! {driver.name} just bounced off the kerb. I see some front-wing parts on the ground. He is willing to box!{Style.RESET_ALL}')                        
                             BOX[driver.name].append(True)
                         elif 'front wing':
                             TIRE_USAGE[driver.name] += 1
@@ -1885,19 +1941,19 @@ def R(circuit,session,weather):
                             TIRE_CHART[driver.name].append(tire.title[0])
                             TIRE_SETS[driver.name].append(s)
                             LAP_CHART[driver.name].append(current_laptime)
-                            print(f'{Fore.LIGHTRED_EX}INC | Lap {lap} | Look at that! {driver.name} and his car tearing apart. I see some front-wing parts on the ground. He is willing to box!{Style.RESET_ALL}')                        
+                            print(f'{Fore.LIGHTRED_EX}INC | Lap {strlap} | Look at that! {driver.name} and his car tearing apart. I see some front-wing parts on the ground. He is willing to box!{Style.RESET_ALL}')                        
                             BOX[driver.name].append(True)
                         else:
                             TIRE_USAGE[driver.name] += 1
                             TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                             TIRE_CHART[driver.name].append(tire.title[0])
                             LAP_CHART[driver.name].append(current_laptime)
-                            print(f'{Fore.LIGHTRED_EX}INC | Lap {lap} | Look at that! {driver.name} and his car tearing apart. I see some {camavinga} damage on the ground. He is gonna lose some pace definetely.')                        
-                            MECHANICAL[driver.name].append(True)
+                            print(f'{Fore.LIGHTRED_EX}INC | Lap {strlap} | Look at that! {driver.name} and his car tearing apart. I see some {camavinga} damage on the ground. He is gonna lose some pace definetely.')                        
+                            MECHANICAL[driver.name].append('Permanent Bodywork Damage')
                 else:
                     if len(BOX[driver.name]) > 1:
                         if len(TIRE_SETS[driver.name]) == 1:
-                            print(f'{Fore.RED}DNF | Lap {lap} | {driver.name} has forced to retire due to severe damage issue. Disaster for {driver.team.title}!{Style.RESET_ALL}')
+                            print(f'{Fore.RED}DNF | Lap {strlap} | {driver.name} has forced to retire due to severe damage issue. Disaster for {driver.team.title}!{Style.RESET_ALL}')
                             LAP_CHART[driver.name].append((circuit.laptime + 225)*2)
                             TIRE_CHART[driver.name].append(tire.title[0])
                             TIRE_USAGE[driver.name] += 0
@@ -1914,12 +1970,12 @@ def R(circuit,session,weather):
                                 pit_stop += sum(PENALTY[driver.name])
                                 PENALTY[driver.name].clear()
                                 PENALTY[driver.name].append(0)
-                                print(f'PIT | Lap {lap} | Pit-stop for {driver.name} but, he has to pay-off his {gabigol} second penalty first. Pit-crew is waiting along.')
+                                print(f'PIT | Lap {strlap} | Pit-stop for {driver.name} but, he has to pay-off his {gabigol} second penalty first. Pit-crew is waiting along.')
                             else:
                                 gabigol = 0
 
                             PIT[driver.name].append(1)
-                            print(f'PIT | Lap {lap} | Pit-stop for {driver.name} with {round(pit_stop - gabigol,3)} seconds stationary. He is on {tire.title} compound.')
+                            print(f'PIT | Lap {strlap} | Pit-stop for {driver.name} with {round(pit_stop - gabigol,3)} seconds stationary. He is on {tire.title} compound.')
                             LAP_CHART[driver.name].append(current_laptime + pit_stop + 20)
                             TIRE_CHART[driver.name].append(tire.title[0])
                             TIRE_USAGE[driver.name] += 1
@@ -1951,18 +2007,18 @@ def R(circuit,session,weather):
                                     pit_stop += sum(PENALTY[driver.name])
                                     PENALTY[driver.name].clear()
                                     PENALTY[driver.name].append(0)
-                                    print(f'PIT | Lap {lap} | Pit-stop for {driver.name} but, he has to pay-off his {gabigol} second penalty first. Pit-crew is waiting along.')
+                                    print(f'PIT | Lap {strlap} | Pit-stop for {driver.name} but, he has to pay-off his {gabigol} second penalty first. Pit-crew is waiting along.')
                                 else:
                                     gabigol = 0
                             
                                 PIT[driver.name].append(1)
                                 KTM = round(pit_stop - gabigol,3)
                                 if 10 > KTM >= 5.0:
-                                    print(f'PIT | Lap {lap} | Bad news for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
+                                    print(f'PIT | Lap {strlap} | Bad news for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
                                 elif KTM >= 10:
-                                    print(f'PIT | Lap {lap} | Disaster for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
+                                    print(f'PIT | Lap {strlap} | Disaster for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
                                 else:
-                                    print(f'PIT | Lap {lap} | Pit-stop for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
+                                    print(f'PIT | Lap {strlap} | Pit-stop for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
                                 LAP_CHART[driver.name].append(current_laptime + pit_stop + 20)
                                 TIRE_CHART[driver.name].append(tire.title[0])
                                 TIRE_USAGE[driver.name] += 1
@@ -1971,7 +2027,7 @@ def R(circuit,session,weather):
                     else:
                         if driver_error_odd_2:
                             ickx = uniform(6.501,16.501)
-                            print(f'{Fore.LIGHTRED_EX}INC | Lap {lap} | Oh, no! {driver.name} has spun-round. He has lost {round(ickx,3)} seconds.{Style.RESET_ALL}')
+                            print(f'{Fore.LIGHTRED_EX}INC | Lap {strlap} | Oh, no! {driver.name} has spun-round. He has lost {round(ickx,3)} seconds.{Style.RESET_ALL}')
                             LAP_CHART[driver.name].append(current_laptime + ickx)
                             TIRE_CHART[driver.name].append(tire.title[0])
                             if W3 != 'Dry':
@@ -2003,21 +2059,21 @@ def R(circuit,session,weather):
                                     return False
 
                             if ((lap + 3 == circuit.circuit_laps) | (lap + 2 == circuit.circuit_laps)) & (sum(FLT[driver.name]) == 0) & (CAN_HE()) & (PIT_AVAILABILITY()):
-                                if (FIA(current)[10] == True) & (AHEAD[driver.name][-1] >= 24.0 + uniform(0.50,1.00)):
+                                if (FIA(current)[10] == True) & (AHEAD[driver.name][-1] >= 24.0 + uniform(0.50,1.00)) & (TIRE_SETS[driver.name][1].title[0] == 'S'):
                                     TIRE_USAGE[driver.name] = 0
                                     TIRE_SETS[driver.name].pop(0)
                                     tire = TIRE_SETS[driver.name][0]
                                     STINT[driver.name].append(f'-{tire.title[0]}')
                                     pit_stop = round(driver.team.pit(),3)
                                     PIT[driver.name].append(1)
-                                    print(f'PIT | Lap {lap} | {driver.name} is gonna attempt the fastest lap! He is in the pits, willing to switch into the {tire.title} compound.')
+                                    print(f'PIT | Lap {strlap} | {driver.name} is gonna attempt the fastest lap! He is in the pits, willing to switch into the {tire.title} compound.')
                                     FLT[driver.name].append(1)
                                     if 10 > pit_stop >= 5.0:
-                                        print(f'PIT | Lap {lap} | Bad news for {driver.name} with {pit_stop} seconds stationary. He is on {tire.title} compound.')
+                                        print(f'PIT | Lap {strlap} | Bad news for {driver.name} with {pit_stop} seconds stationary. He is on {tire.title} compound.')
                                     elif pit_stop >= 10:
-                                        print(f'PIT | Lap {lap} | Disaster for {driver.name} with {pit_stop} seconds stationary. He is on {tire.title} compound.')
+                                        print(f'PIT | Lap {strlap} | Disaster for {driver.name} with {pit_stop} seconds stationary. He is on {tire.title} compound.')
                                     else:
-                                        print(f'PIT | Lap {lap} | Pit-stop for {driver.name} with {pit_stop} seconds stationary. He is on {tire.title} compound.')
+                                        print(f'PIT | Lap {strlap} | Pit-stop for {driver.name} with {pit_stop} seconds stationary. He is on {tire.title} compound.')
                                     LAP_CHART[driver.name].append(current_laptime + pit_stop + 20)
                                     TIRE_CHART[driver.name].append(tire.title[0])
                                     TIRE_USAGE[driver.name] += 1
@@ -2034,7 +2090,7 @@ def R(circuit,session,weather):
                                 TIRE_USAGE[driver.name] += 1
                                 TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                                 PENALTY[driver.name].append(5)
-                                print(f'{Fore.CYAN}PEN | Lap {lap} | 5 secs. penalty to {driver.name} for the excessive amount of corner-cutting. {Style.RESET_ALL}')
+                                print(f'{Fore.CYAN}PEN | Lap {strlap} | 5 secs. penalty to {driver.name} for the excessive amount of corner-cutting. {Style.RESET_ALL}')
                             else:
                                 LAP_CHART[driver.name].append(current_laptime)
                                 TIRE_CHART[driver.name].append(tire.title[0])
@@ -2046,7 +2102,21 @@ def R(circuit,session,weather):
                 pass
             else:
                 if len(MECHANICAL[driver.name]) > 0:
-                    LAP_CHART[driver.name][-1] +=  + uniform(1.499,2.999)
+                    
+                    if len(MECHANICAL[driver.name]) > 1:
+                        dzeko = uniform(1.499,2.999)
+                    elif MECHANICAL[driver.name][0] == 'Permanent Bodywork Damage':
+                        dzeko = uniform(1.499,2.999)
+                    elif MECHANICAL[driver.name][0] in ['MGU-K','MGU-H','ERS','control electronics','energy store']:
+                        dzeko = (((driver.team.powertrain.power/75)*(-1.0))/3)
+                    elif MECHANICAL[driver.name][0] in ['engine modes', 'engine braking']:
+                        dzeko = uniform(0.499,1.499)
+                    elif MECHANICAL[driver.name][0] in ['engine cooling','brake cooling','exhaust system']:
+                        dzeko = uniform(0.499,2.999)
+                    else:
+                        dzeko = uniform(1.499,2.999)
+
+                    LAP_CHART[driver.name][-1] += dzeko
                 else:
                     pass
         
@@ -2168,7 +2238,7 @@ def R(circuit,session,weather):
                     damage_type_2 = choice(['FRONT-WING','FRONT-WING','PERMANENT BODYWORK'])
                     
                     if INCIDENT == 'DOUBLE DNF':
-                        print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! THEY ARE BOTH OUT!.{Style.RESET_ALL}')
+                        print(f'{Fore.MAGENTA}INC | Lap {strlap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! THEY ARE BOTH OUT!.{Style.RESET_ALL}')
                         LAP_CHART[attacker][-1] += ((circuit.laptime + 5)*2)
                         LAP_CHART[defender][-1] += ((circuit.laptime + 5)*2)
                         DNF[attacker].append(True)
@@ -2178,10 +2248,10 @@ def R(circuit,session,weather):
                         SAFETY_CAR[lap+3].append(1)
                         SAFETY_CAR[lap+4].append(1)
                     elif INCIDENT == 'DEFENDER DNF & ATTACKER DAMAGED':
-                        print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {defender} IS OUT! {attacker} HAS {damage_type} DAMAGE!.{Style.RESET_ALL}')
+                        print(f'{Fore.MAGENTA}INC | Lap {strlap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {defender} IS OUT! {attacker} HAS {damage_type} DAMAGE!.{Style.RESET_ALL}')
                         
                         if damage_type == 'PERMANENT BODYWORK':
-                            MECHANICAL[attacker].append(True)
+                            MECHANICAL[attacker].append('Permanent Bodywork Damage')
                             LAP_CHART[attacker][-1] += uniform(9.01,39.49)
                         else:
                             BOX[attacker].append(True)
@@ -2194,10 +2264,10 @@ def R(circuit,session,weather):
                         SAFETY_CAR[lap+3].append(1)
                         SAFETY_CAR[lap+4].append(1)
                     elif INCIDENT == 'ATTACKER DNF & DEFENDER DAMAGED':
-                        print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {attacker} IS OUT! {defender} HAS {damage_type} DAMAGE!.{Style.RESET_ALL}')
+                        print(f'{Fore.MAGENTA}INC | Lap {strlap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {attacker} IS OUT! {defender} HAS {damage_type} DAMAGE!.{Style.RESET_ALL}')
                         
                         if damage_type == 'PERMANENT BODYWORK':
-                            MECHANICAL[defender].append(True)
+                            MECHANICAL[defender].append('Permanent Bodywork Damage')
                             LAP_CHART[defender][-1] += uniform(9.01,39.49)
                         else:
                             BOX[defender].append(True)
@@ -2216,17 +2286,17 @@ def R(circuit,session,weather):
                         else:
                             parol = 'DIFFERENTLY'
                         
-                        print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {attacker} HAS {damage_type} DAMAGE. SO THE {defender} HAS {damage_type} DAMAGE {parol}.{Style.RESET_ALL}')
+                        print(f'{Fore.MAGENTA}INC | Lap {strlap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {attacker} HAS {damage_type} DAMAGE. SO THE {defender} HAS {damage_type} DAMAGE {parol}.{Style.RESET_ALL}')
 
                         if damage_type == 'PERMANENT BODYWORK':
-                            MECHANICAL[defender].append(True)
+                            MECHANICAL[defender].append('Permanent Bodywork Damage')
                             LAP_CHART[defender][-1] += uniform(9.01,39.49)
                         else:
                             BOX[defender].append(True)
                             LAP_CHART[defender][-1] += uniform(1.51,2.49)
 
                         if damage_type_2 == 'PERMANENT BODYWORK':
-                            MECHANICAL[attacker].append(True)
+                            MECHANICAL[attacker].append('Permanent Bodywork Damage')
                             LAP_CHART[attacker][-1] += uniform(9.01,39.49)
                         else:
                             BOX[attacker].append(True)
@@ -2239,10 +2309,10 @@ def R(circuit,session,weather):
                             SAFETY_CAR[lap+4].append(1)
 
                     elif INCIDENT == 'DEFENDER CLEAR & ATTACKER DAMAGED':
-                        print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {attacker} HAS {damage_type} DAMAGE BUT {defender} HAS NO! {attacker} IS BOXING!.{Style.RESET_ALL}')
+                        print(f'{Fore.MAGENTA}INC | Lap {strlap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {attacker} HAS {damage_type} DAMAGE BUT {defender} HAS NO! {attacker} IS BOXING!.{Style.RESET_ALL}')
                         
                         if damage_type == 'PERMANENT BODYWORK':
-                            MECHANICAL[attacker].append(True)
+                            MECHANICAL[attacker].append('Permanent Bodywork Damage')
                             LAP_CHART[attacker][-1] += uniform(9.01,39.49)
                         else:
                             BOX[attacker].append(True)
@@ -2257,10 +2327,10 @@ def R(circuit,session,weather):
                             SAFETY_CAR[lap+4].append(1)
 
                     elif INCIDENT == 'ATTACKER CLEAR & DEFENDER DAMAGED':
-                        print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {defender} HAS {damage_type} DAMAGE BUT {attacker} HAS NO! {defender} IS BOXING!.{Style.RESET_ALL}')
+                        print(f'{Fore.MAGENTA}INC | Lap {strlap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {defender} HAS {damage_type} DAMAGE BUT {attacker} HAS NO! {defender} IS BOXING!.{Style.RESET_ALL}')
                         
                         if damage_type == 'PERMANENT BODYWORK':
-                            MECHANICAL[defender].append(True)
+                            MECHANICAL[defender].append('Permanent Bodywork Damage')
                             LAP_CHART[defender][-1] += uniform(9.01,39.49)
                         else:
                             BOX[defender].append(True)
@@ -2275,7 +2345,7 @@ def R(circuit,session,weather):
                             SAFETY_CAR[lap+4].append(1)
                             
                     elif INCIDENT == 'DEFENDER DNF & ATTACKER CLEAR':
-                        print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {defender} IS OUT! {attacker} HAS NO DAMAGE!.{Style.RESET_ALL}')
+                        print(f'{Fore.MAGENTA}INC | Lap {strlap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {defender} IS OUT! {attacker} HAS NO DAMAGE!.{Style.RESET_ALL}')
                         LAP_CHART[attacker][-1] += uniform(0.09,5.91)
                         LAP_CHART[defender][-1] += ((circuit.laptime + 5)*2)
                         DNF[defender].append(True)
@@ -2284,7 +2354,7 @@ def R(circuit,session,weather):
                         SAFETY_CAR[lap+3].append(1)
                         SAFETY_CAR[lap+4].append(1)
                     elif INCIDENT == 'ATTACKER DNF & DEFENDER CLEAR':
-                        print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {attacker} IS OUT! {defender} HAS NO DAMAGE!.{Style.RESET_ALL}')
+                        print(f'{Fore.MAGENTA}INC | Lap {strlap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {attacker} IS OUT! {defender} HAS NO DAMAGE!.{Style.RESET_ALL}')
                         LAP_CHART[defender][-1] += uniform(0.09,5.91)
                         LAP_CHART[attacker][-1] += ((circuit.laptime + 5)*2)
                         DNF[attacker].append(True)
@@ -2293,7 +2363,7 @@ def R(circuit,session,weather):
                         SAFETY_CAR[lap+3].append(1)
                         SAFETY_CAR[lap+4].append(1)
                     else:
-                        print(f'{Fore.MAGENTA}INC | Lap {lap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! THEY ARE BOTH OUT!.{Style.RESET_ALL}')
+                        print(f'{Fore.MAGENTA}INC | Lap {strlap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! THEY ARE BOTH OUT!.{Style.RESET_ALL}')
                         LAP_CHART[attacker][-1] += ((circuit.laptime + 5)*2)
                         LAP_CHART[defender][-1] += ((circuit.laptime + 5)*2)
                         DNF[attacker].append(True)
@@ -2308,14 +2378,14 @@ def R(circuit,session,weather):
                             pass
                         else:
                             thepen = choice([5,10,15,20])
-                            print(f'{Fore.CYAN}PEN | Lap {lap} | {thepen} secs. penalty to {attacker} for the last incident. {Style.RESET_ALL}')
+                            print(f'{Fore.CYAN}PEN | Lap {strlap} | {thepen} secs. penalty to {attacker} for the last incident. {Style.RESET_ALL}')
                             PENALTY[attacker].append(thepen)
                     elif PENALTY_ODDS == 'DEFENDER ONLY':
                         if len(DNF[defender]) > 1:
                             pass
                         else:
                             thepen = choice([5,10,15,20])
-                            print(f'{Fore.CYAN}PEN | Lap {lap} | {thepen} secs. penalty to {defender} for the last incident. {Style.RESET_ALL}')
+                            print(f'{Fore.CYAN}PEN | Lap {strlap} | {thepen} secs. penalty to {defender} for the last incident. {Style.RESET_ALL}')
                             PENALTY[defender].append(thepen)
                     else:
                         pass
@@ -2331,18 +2401,23 @@ def R(circuit,session,weather):
                         ATTACKER_DICE = uniform(0.1,19.9)
                         DEFENDER_DICE = uniform(0.1,19.9)
 
+                    if W3 != 'Dry':
+                        rodrygo = 0.50
+                    else:
+                        rodrygo = 0.0
+
                     if circuit.overtake_difficulty == 'Very Hard':
-                        minimum_delta_needed_t = 0.200
+                        minimum_delta_needed_t = 0.250 - rodrygo
                     elif circuit.overtake_difficulty == 'Hard':
-                        minimum_delta_needed_t = 0.300
+                        minimum_delta_needed_t = 0.350 - rodrygo
                     elif circuit.overtake_difficulty == 'Average':
-                        minimum_delta_needed_t = 0.400
+                        minimum_delta_needed_t = 0.450 - rodrygo
                     elif circuit.overtake_difficulty == 'Easy':
-                        minimum_delta_needed_t = 0.500
+                        minimum_delta_needed_t = 0.550 - rodrygo
                     elif circuit.overtake_difficulty == 'Very Easy':
-                        minimum_delta_needed_t = 0.750
+                        minimum_delta_needed_t = 0.750 - rodrygo
                     elif circuit.overtake_difficulty == 'Impossible':
-                        minimum_delta_needed_t = 0.100
+                        minimum_delta_needed_t = 0.125 - rodrygo
                     
                     if (FIA(current)[2] == True) & (W3 == 'Dry') & (gap_in_front <= 1.000):
                         marcelo = []
@@ -2505,7 +2580,7 @@ def R(circuit,session,weather):
         data.to_excel(f'report-{circuit.location.lower()}-gp-{KW}-chart.xlsx')
         tireperformancedata.to_excel(f'report-{circuit.location.lower()}-gp-{KW}-tire.xlsx')
     
-    print(borderline)
+    print('———————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————')
     print(f'{session} Session | {weather} Conditions | {CRC.location} Grand Prix — {CRC.country} | {CRC.circuit_laps} Laps')
     
     RACE_CLASSIFICATION = ANALYZER(f'Race',data,tirenamedata,'race-chart')
@@ -2575,7 +2650,22 @@ def R(circuit,session,weather):
 if execution == 'simulation':
     # Strategy Preperations
     FP1STRATEGY, FP2STRATEGY, FP3STRATEGY = {}, {}, {}
+    FP1STINT, FP2STINT, FP3STINT = {}, {}, {}
     FP1RESULT, FP2RESULT, FP3RESULT = {}, {}, {}
+
+    for i in drivers:
+        if W1 == 'Dry':
+            FP1STINT[i.name] = [CRC.strategy[0][0].title[0]]
+            FP2STINT[i.name] = [CRC.strategy[1][0].title[0]]
+            FP3STINT[i.name] = [CRC.strategy[2][0].title[0]]
+        elif W1 == 'Dump':
+            FP1STINT[i.name] = ['I']
+            FP2STINT[i.name] = ['I']
+            FP3STINT[i.name] = ['I']
+        else:
+            FP1STINT[i.name] = ['W']
+            FP2STINT[i.name] = ['W']
+            FP3STINT[i.name] = ['W']
 
     for i in drivers:
         FP1STRATEGY[i.name] = CRC.strategy[0]
@@ -2690,7 +2780,7 @@ if execution == 'simulation':
 
     # Race Session
     R(CRC,'Race',W3)
-    print(borderline)
+    print('———————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————')
 
 elif execution == 'data':
     print("Manufacturers' Rating from Best to Worst:")
