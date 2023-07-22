@@ -26,5 +26,6 @@ Developer Log for the Development Process:
 * 20/07/2023 — v1.16 — In-game bugs about variation of mechanical issues have been cleared.
 * 20/07/2023 — v1.17 — In-game bugs have been cleared.
 * 22/07/2023 — v1.18 — In-game bugs have been cleared.
-* Next — v1.19 — The developer is working on the 8th minor update based on lap time priority when the same lap times occur by different drivers in sessions.
+* 23/07/2023 — v1.19 — In-game bugs have been cleared.
+* Next — v1.20 — The developer is working on the 8th minor update based on lap time priority when the same lap times occur by different drivers in sessions.
 * Next — v3.0 — The developer is working on 1st major update based on improved track positions for vehicles during the race.
