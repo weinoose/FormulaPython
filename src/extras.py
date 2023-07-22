@@ -236,7 +236,7 @@ def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,bo
     
     return f"Manufacturer('{title}','{CREW}',{engine},{round(CHASSIS)},{round(FW)},{round(RW)},{round(BASE)},{round(SIDEPOD)},{round(SUSPENSION)},{round(RELIABILITY)},{WEIGHT})"
 
-def driver(automated,status,quality,talent,style,like):
+def driver(automated,status,quality,talent,style):
     if status != 'Rookie':
         P1 = 16
     elif status == 'Rookie':
@@ -311,85 +311,133 @@ def driver(automated,status,quality,talent,style,like):
     start = round(50 + P1 + (P2 + randint(-3,3)))
     wet = round(50 + P1 + (P2 + randint(-3,3)))
 
-    return f"Driver('Team','Name','Nationality','Number',{pace},{braking},{smoothness},{adaptability},{consistency},{fitness},{aggression},{attack},{defence},{start},{wet},[None],[None,None])"
+    likes = [None, None, None, None, None, None, None, None,
+            'Wild','Wild',
+            'Calm','Calm']
+    
+    bales = [None, None, None, None, None, None, None, None,
+            'Weak Rear','Weak Rear',
+            'Weak Front','Weak Front']
+    
+    like = [choice(likes),choice(bales)]
 
-def table(year,serie):
-    if serie == 'Formula 1':
-        fl = 0
-        pole = 0
-    elif serie == 'Formula 2':
-        fl = 2
-        pole = 2
+    return f"Driver('Team','Name','Nationality','Number',{pace},{braking},{smoothness},{adaptability},{consistency},{fitness},{aggression},{attack},{defence},{start},{wet},[None],[{like[0]},{like[1]}])"
+
+def table(year,serie,interval,mode):
+    # interval either gonna be 'all' or finite number of races from the beggining.
+    # mode either gonna be 'stat' or 'graph'.
 
     def rule(PF):
-        try:
-            PF = int(PF)
-        except:
-            PF = PF
+
+        PFX = str(PF).split(' ') 
+
+        if len(PFX) == 1:
+            total = 0
+        elif len(PFX) == 2:
+            if PFX[1] == 'F':
+                if serie == 'Formula 2':
+                    total = 2
+                else:
+                    total = 1
+            else:
+                if serie == 'Formula 2':
+                    total = 2
+                else:
+                    total = 0
+        elif len(PFX) == 3:
+            if serie == 'Formula 2':
+                total = 4
+            else:
+                total = 1
             
         if serie == 'Formula 1':
-            if PF == 1:
-                return 25
-            elif PF == 2:
-                return 18
-            elif PF == 3:
-                return 15
-            elif PF == 4:
-                return 12
-            elif PF == 5:
-                return 10
-            elif PF == 6:
-                return 8
-            elif PF == 7:
-                return 6
-            elif PF == 8:
-                return 4
-            elif PF == 9:
-                return 2
-            elif PF == 10:
-                return 1
+            if PFX[0] == str(1):
+                total += 25 
+                return total
+            elif PFX[0] == str(2):
+                total += 18 
+                return total
+            elif PFX[0] == str(3):
+                total += 15 
+                return total
+            elif PFX[0] == str(4):
+                total += 12 
+                return total
+            elif PFX[0] == str(5):
+                total += 10 
+                return total
+            elif PFX[0] == str(6):
+                total += 8 
+                return total
+            elif PFX[0] == str(7):
+                total += 6 
+                return total
+            elif PFX[0] == str(8):
+                total += 4 
+                return total
+            elif PFX[0] == str(9):
+                total += 2 
+                return total
+            elif PFX[0] == str(10):
+                total += 1 
+                return total
             else:
                 return 0
         elif serie == 'Formula 2':
-            if PF == 1:
-                return 25
-            elif PF == 2:
-                return 18
-            elif PF == 3:
-                return 15
-            elif PF == 4:
-                return 12
-            elif PF == 5:
-                return 11
-            elif PF == 6:
-                return 10
-            elif PF == 7:
-                return 9
-            elif PF == 8:
-                return 8
-            elif PF == 9:
-                return 7
-            elif PF == 10:
-                return 6
-            elif PF == 11:
-                return 5
-            elif PF == 12:
-                return 4
-            elif PF == 13:
-                return 3
-            elif PF == 14:
-                return 2
-            elif PF == 15:
-                return 1
+            if PFX[0] == str(1):
+                total += 25 
+                return total
+            elif PFX[0] == str(2):
+                total += 18 
+                return total
+            elif PFX[0] == str(3):
+                total += 15 
+                return total
+            elif PFX[0] == str(4):
+                total += 12 
+                return total
+            elif PFX[0] == str(5):
+                total += 11 
+                return total
+            elif PFX[0] == str(6):
+                total += 10 
+                return total
+            elif PFX[0] == str(7):
+                total += 9
+                return total
+            elif PFX[0] == str(8):
+                total += 8 
+                return total
+            elif PFX[0] == str(9):
+                total += 7 
+                return total
+            elif PFX[0] == str(10):
+                total += 6 
+                return total
+            elif PFX[0] == str(11):
+                total += 5
+                return total
+            elif PFX[0] == str(12):
+                total += 4 
+                return total
+            elif PFX[0] == str(13):
+                total += 3 
+                return total
+            elif PFX[0] == str(14):
+                total += 2 
+                return total
+            elif PFX[0] == str(15):
+                total += 1 
+                return total
             else:
                 return 0
 
-    data, new_data = pd.DataFrame(pd.read_excel(f'{year}/{year}.xlsx', serie)), pd.DataFrame()
-    drivers, points = list(data['DRIVER']), []
-    
     # Defining
+    data = pd.DataFrame(pd.read_excel(f'Fantasy F1/{year}/{year}.xlsx', serie))
+    drivers = list(data['DRIVER'])
     data = data.drop(axis=1, columns=['P','N','A','NO','TEAM','DRIVER','PTS','Unnamed: 7'])
     data = data.dropna(axis=1, how='all')
+    total_races = len(list(data.columns))
 
     # Transposing
     data = data.transpose()
@@ -401,24 +449,113 @@ def table(year,serie):
     data = data.drop(axis=1, columns=[0])
     data.columns = drivers
     
-    # Process Continues
+    DRIVERSX, DRIVERSY = {}, {}
     for i in drivers:
-        daquan = []
-        for q in list(data[i]):
-            levy = str(q).split(' ')
-            if len(levy) == 1: 
-                daquan.append(rule(levy[0]))
-            elif len(levy) == 2:
-                if levy[1] == 'F':
-                    daquan.append(rule(levy[0]) + fl)
-                elif levy[1] == 'P':
-                    daquan.append(rule(levy[0]) + pole)
-            elif len(levy) == 3:
-                daquan.append(rule(levy[0]) + fl + pole)
-        points.append(sum(daquan))
+        DRIVERSX[i] = []
+        DRIVERSY[i] = []
 
-    new_data['DRIVERS'] = drivers
-    new_data['POINTS'] = points
-    new_data = new_data.sort_values('POINTS',ascending=False)
-    
-    return new_data
+    # Action Time
+    phase1_results = []
+    for q in list(range(1,total_races+1)):
+        datax = data[0:q]
+
+        for z in drivers:
+            driver_results = list(datax[z])
+            DRIVERSX[z].append(driver_results)
+
+    for i in drivers:
+        for q in DRIVERSX[i]:
+            neko = []
+            for z in q:
+                neko.append(rule(z))
+            DRIVERSY[i].append(neko)
+
+    new_data = pd.DataFrame()
+    drivers, pointsx, historyx = list(DRIVERSY.keys()), [], []
+
+    if interval == 'full':
+        for z in drivers:
+            pointsx.append(sum(DRIVERSY[z][-1]))
+            historyx.append(DRIVERSY[z])
+            r_list = list(range(0,total_races+1))
+    else:
+        if interval > total_races:
+            import sys
+            print(f'Interval cannot be higher than total race count which is {total_races}.')
+            sys.exit()
+        else:
+            for z in drivers:
+                pointsx.append(sum(DRIVERSY[z][0:0+interval][-1]))
+                historyx.append(DRIVERSY[z][0:0+interval])
+                r_list = list(range(0,interval+1))
+
+    if mode == 'stat':
+        new_data['RANK'] = list(range(1,(len(drivers))+1))
+        new_data['DRIVERS'] = drivers
+        new_data['POINTS'] = pointsx
+        
+        new_data = new_data.set_index('RANK')
+        new_data = new_data.sort_values('POINTS',ascending=False)
+        return new_data
+    elif mode == 'graph':
+        new_data['RANK'] = list(range(1,(len(drivers))+1))
+        new_data['DRIVERS'] = drivers
+        new_data['POINTS'] = pointsx
+        new_data['HISTORY'] = historyx
+        
+        new_data = new_data.set_index('RANK')
+        new_data = new_data.sort_values('POINTS',ascending=False)
+        
+        new_data = new_data[0:5]
+
+        affleck = []
+        for i in list(new_data['HISTORY']):
+            denzel = []
+            denzel.append(0)
+            for q in i:
+                denzel.append(sum(q))
+            affleck.append(denzel)
+
+        new_data['HISTORY'] = affleck
+        
+        import matplotlib.pyplot as plt
+        from matplotlib.ticker import StrMethodFormatter
+        
+        p_list = list(new_data['HISTORY'])
+        d_list = list(new_data['DRIVERS']) 
+
+        fig = plt.figure()
+        ax = fig.add_subplot(111)
+        ax.plot(r_list,p_list[0])
+        ax.plot(r_list,p_list[1])
+        ax.plot(r_list,p_list[2])
+        ax.plot(r_list,p_list[3])
+        ax.plot(r_list,p_list[4])
+
+        ax.scatter(r_list,p_list[0],label = f'{d_list[0]}',s=15)
+        ax.scatter(r_list,p_list[1],label = f'{d_list[1]}',s=15)
+        ax.scatter(r_list,p_list[2],label = f'{d_list[2]}',s=15)
+        ax.scatter(r_list,p_list[3],label = f'{d_list[3]}',s=15)
+        ax.scatter(r_list,p_list[4],label = f'{d_list[4]}',s=15)
+
+        ax.grid()
+        ax.set_xlim(0.0,len(r_list)-1)
+
+        manager = plt.get_current_fig_manager()
+        manager.full_screen_toggle()
+
+        import numpy as np
+        
+        if interval == 'full':
+            plt.xticks(np.arange(0, total_races+1, 1),fontsize=6)
+        else:
+            plt.xticks(np.arange(0, interval+1, 1),fontsize=6)
+
+        plt.yticks(p_list[0],fontsize=6)
+        ax.set_ylim(0.0,p_list[0][-1])
+        
+        plt.xlabel('Races',fontsize=9)
+        plt.ylabel('Points',fontsize=9)
+        plt.legend()
+        plt.show()
+        return 'Executed: 1'

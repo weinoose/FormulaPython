@@ -177,7 +177,7 @@ class Tire():
     def fuel_left(self,circuit,lap):
         consumption_per_lap = (FIA(current)[11])/(circuit.circuit_laps+0.75)
         return FIA(current)[11] - (lap*consumption_per_lap)
-    def laptime(self,driver,circuit,lap,tire_usage,mode,wxther):
+    def laptime(self,driver,circuit,lap,tire_usage,mode,wxther,situation):
         # # # 1.0: FUEL & TIRE
         fuel_left = self.fuel_left(circuit,lap)
         tire_left = self.tire_left(driver,circuit,tire_usage) + self.supplier.durability
@@ -310,16 +310,32 @@ class Tire():
         else:
             EFFECT = (0.309) - (driver.adaptability/431)
         
-        if driver.style[0] == None:
-            CAR_DRIVER_CHEMISTRY_LIST.append(0.000)
+        if (driver.style[0] == None):
+            if (driver.team.characteristic[1] == None):
+                CAR_DRIVER_CHEMISTRY_LIST.append(0.000)
+            else:
+                CAR_DRIVER_CHEMISTRY_LIST.append((EFFECT/(driver.adaptability/40))*(1.0))
+        elif (driver.team.characteristic[1] == None):
+            if (driver.style[0] == None):
+                CAR_DRIVER_CHEMISTRY_LIST.append(0.000)
+            else:
+                CAR_DRIVER_CHEMISTRY_LIST.append((EFFECT/(driver.adaptability/40))*(1.0))
         else:
             if driver.style[0] == driver.team.characteristic[1]:
                 CAR_DRIVER_CHEMISTRY_LIST.append(EFFECT*(-1.0))
             else:
                 CAR_DRIVER_CHEMISTRY_LIST.append(EFFECT)
 
-        if driver.style[1] == None:
-            CAR_DRIVER_CHEMISTRY_LIST.append(0.000)
+        if (driver.style[1] == None):
+            if (driver.team.characteristic[2] == None):
+                CAR_DRIVER_CHEMISTRY_LIST.append(0.000)
+            else:
+                CAR_DRIVER_CHEMISTRY_LIST.append((EFFECT/(driver.adaptability/40))*(1.0))
+        elif (driver.team.characteristic[2] == None):
+            if (driver.style[1] == None):
+                CAR_DRIVER_CHEMISTRY_LIST.append(0.000)
+            else:
+                CAR_DRIVER_CHEMISTRY_LIST.append((EFFECT/(driver.adaptability/40))*(1.0))
         else:
             if driver.style[1] == driver.team.characteristic[2]:
                 CAR_DRIVER_CHEMISTRY_LIST.append(EFFECT*(-1.0))
@@ -358,17 +374,20 @@ class Tire():
         else:
             error_rate = 9.49 - (((driver.consistency * driver.fitness))**(1/4))
         
-        if (hotlap == 0) and (mode[0] == 'sunday') and (SAFETY_CAR[lap][-1] != 1):
-            if uniform(0.01,100.01) <= error_rate:
-                ERROR = choice(list(np.arange(2.249, 5.449, 0.001, dtype=float)))
-                if len(DNF[driver.name]) > 1:
-                    pass
-                else:
-                    if lap < 10:
-                        strlap = f'0{lap}'
+        if situation != 'STABLE':
+            if (hotlap == 0) & (mode[0] == 'sunday'):
+                if uniform(0.01,100.01) <= error_rate:
+                    ERROR = choice(list(np.arange(2.249, 5.449, 0.001, dtype=float)))
+                    if len(DNF[driver.name]) > 1:
+                        pass
                     else:
-                        strlap = lap
-                    print(f'{Fore.LIGHTYELLOW_EX}ERR | Lap {strlap} | {driver.name} made mistake and {choice(MISTAKES)}. He has lost {round(ERROR,3)} seconds!{Style.RESET_ALL}')
+                        if lap < 10:
+                            strlap = f'0{lap}'
+                        else:
+                            strlap = lap
+                        print(f'{Fore.LIGHTYELLOW_EX}ERR | Lap {strlap} | {driver.name} made mistake and {choice(MISTAKES)}. He has lost {round(ERROR,3)} seconds!{Style.RESET_ALL}')
+                else:
+                    ERROR = 0
             else:
                 ERROR = 0
         else:
@@ -1518,6 +1537,44 @@ def ANALYZER(session,data,tirenamedata,keyword):
         
         da['STINT'] = nani
 
+    # Lap Priority Alignments
+    if (keyword == 'quali-chart') & (session != 'Qualifying'):
+        # ON/OFF LEVER for Future Features
+        # da['FL.'] = ['1:20.786','1:20.786','1:20.786','1:31.786','1:32.786','1:33.786','1:34.786','1:35.786','1:36.786','1:37.786','1:38.786','1:38.786','1:40.786','1:41.786','1:42.786','1:43.786','1:43.786','1:45.786','1:46.786','1:47.786']
+        
+        if len(list(da['FL.'])) != len(list(set(list(da['FL.'])))):
+            newlist, duplist, elixr, leixr = [], [], [], []
+            for i in da['FL.']:
+                if i not in newlist:
+                    newlist.append(i)
+                else:
+                    duplist.append(i)
+
+            mhp = 0
+            for i in da['FL.']:
+                if i in duplist:
+                    elixr.append(mhp)
+                    leixr.append(list(da['FL.'])[mhp])
+                else:
+                    pass
+                mhp += 1
+
+            MEDVEDEV = {}
+            for i in leixr:
+                MEDVEDEV[i] = []
+
+            for i in elixr:
+                MEDVEDEV[leixr[elixr.index(i)]].append(i)
+            # to be continued.        
+        else:
+            pass
+    
+    elif (keyword == 'quali-chart') & (session == 'Qualifying'):
+        # Q
+        pass
+    else:
+        pass
+
     return da
 
 # # #
@@ -1539,7 +1596,7 @@ def FP(circuit,tireset,stage,session,weather):
         lap_chart, tire_chart, tire_left_chart = [], [], []
         for lap in range(1,circuit.circuit_laps+1):
             tire_left = tire.tire_left(driver,circuit,tire_usage)
-            current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['friday',0],TT1),3)
+            current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['friday',0],TT1,None),3)
             if tire_left < 25:
                 if len(tlist) == 1:
                     lap_chart.append(current_laptime)
@@ -1627,11 +1684,11 @@ def Q(circuit,session,weather):
                 folks1 = round(((0.499) - (((driver.adaptability)*((333) + (100-driver.adaptability)))/100000) + ((100-driver.adaptability)/499)),3)
 
                 if c == 0:
-                    current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0],TT2) + (folks0),3)
+                    current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0],TT2,None) + (folks0),3)
                 elif c == 1:
-                    current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0],TT2) + (folks1),3)
+                    current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0],TT2,None) + (folks1),3)
                 else:
-                    current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0],TT2) + (0.000),3)
+                    current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0],TT2,None) + (0.000),3)
 
                 DO_NOT_FINISHED = (((((((((((driver.team.reliability + driver.team.powertrain.durability)/2))+(driver.team.powertrain.fuel.vulnerability))*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
                 
@@ -1749,7 +1806,10 @@ def R(circuit,session,weather):
             tire = TIRE_SETS[driver.name][0]
             tire_left = tire.tire_left(driver,circuit,TIRE_USAGE[driver.name])
             
-            current_laptime = round(tire.laptime(driver,circuit,lap,TIRE_USAGE[driver.name],['sunday',GRID[driver.name]],TT3),3)
+            if SAFETY_CAR[lap][-1] == 1:
+                current_laptime = round(tire.laptime(driver,circuit,lap,TIRE_USAGE[driver.name],['sunday',GRID[driver.name]],TT3,'STABLE'),3)
+            else:
+                current_laptime = round(tire.laptime(driver,circuit,lap,TIRE_USAGE[driver.name],['sunday',GRID[driver.name]],TT3,None),3)
             DO_NOT_FINISHED = (((((((((((driver.team.reliability + driver.team.powertrain.durability)/2))+(driver.team.powertrain.fuel.vulnerability))*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,75000)
             
             if W3 == 'Dump':
@@ -2211,8 +2271,8 @@ def R(circuit,session,weather):
                     else:
                         pass
 
-                attacker_precise_laptime = round(attacker_tire.laptime(attacker_obj,circuit,lap,TIRE_USAGE[attacker_obj.name],['sunday',GRID[attacker_obj.name]],TT3),3)
-                defender_precise_laptime = round(defender_tire.laptime(defender_obj,circuit,lap,TIRE_USAGE[defender_obj.name],['sunday',GRID[defender_obj.name]],TT3),3) - FIA(current)[16]
+                attacker_precise_laptime = round(attacker_tire.laptime(attacker_obj,circuit,lap,TIRE_USAGE[attacker_obj.name],['sunday',GRID[attacker_obj.name]],TT3,'STABLE'),3)
+                defender_precise_laptime = round(defender_tire.laptime(defender_obj,circuit,lap,TIRE_USAGE[defender_obj.name],['sunday',GRID[defender_obj.name]],TT3,'STABLE'),3) - FIA(current)[16]
                 
                 coming_by = attacker_precise_laptime - defender_precise_laptime
                 drs_advantage = (-1.0)*((0.250) + attacker_obj.team.drs_delta/200)/1.71
