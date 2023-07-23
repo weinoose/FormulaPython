@@ -355,14 +355,14 @@ class Tire():
             BEST = 0
 
         # # # 3.3: Perfect Lap
-        if mode[0] == 'sunday' or 'friday':
-            if uniform(0,775) <= (((driver.pace*2)/6.67) + (driver.consistency/14.6)):
-                hotlap = (-1.0)*uniform(((driver.pace-28)/299),(driver.pace/299))
+        if mode[0] == 'saturday':
+            if uniform(0,250) <= (((driver.pace*2)/6.67) + (driver.consistency/14.6)):
+                hotlap = (-1.0)*uniform(((driver.pace-28)/249),(driver.pace/249))
             else:
                 hotlap = 0
         else:
-            if uniform(0,225) <= (((driver.pace*2)/6.67) + (driver.consistency/14.6)):
-                hotlap = (-1.0)*uniform(((driver.pace-28)/399),(driver.pace/399))
+            if uniform(0,775) <= (((driver.pace*2)/6.67) + (driver.consistency/14.6)):
+                hotlap = (-1.0)*uniform(((driver.pace-28)/299),(driver.pace/299))
             else:
                 hotlap = 0
 
@@ -411,17 +411,14 @@ class Tire():
         
         if mode[0] == 'saturday':                
             engine_mode = (0.600 + ((driver.team.powertrain.power)/100))*(-1.0) # Mode 3
-            
             if self.title == 'Wet':
                 CL2 = ((((choice(WET)/100)**2)*4.00) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) + (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
             elif self.title == 'Intermediate':
                 CL2 = ((((choice(WET)/100)**2)*3.50) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) + (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
             else:
                 CL2 = ((((choice(SATURDAY)/100)**2)*3.25) + hotlap)*(-1.0) + (engine_mode + drs[1]) + (ERROR) + (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
-        
-        elif mode[0] == 'sunday' or 'friday':         
+        else:      
             engine_mode = (((driver.team.powertrain.power)/175))*(-1.0) # Mode 2
-            
             if self.title == 'Wet':
                 CL2 = ((((choice(WET)/100)**1.50)*4.00) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) + (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
             elif self.title == 'Intermediate':
@@ -462,7 +459,7 @@ if current in entertainment_era:
     s = Tire('Soft',FIA(current)[4],1.0,1.0000)
     m = Tire('Medium',FIA(current)[4],1.7,1.0117)
     h = Tire('Hard',FIA(current)[4],2.4,1.0217)
-    inter = Tire('Intermediate',FIA(current)[4],2.5,1.2517)
+    inter = Tire('Intermediate',FIA(current)[4],2.5,1.2171)
     w = Tire('Wet',FIA(current)[4],2.5,1.3717)
     tire_compounds = [s,m,h,inter,w]
 elif current in strategy_era:
@@ -699,7 +696,7 @@ fuji = Circuit('Fuji','Japan','Completeness Circuit',67,FIA(current)[0]*40.25,ST
 melbourne = Circuit('Melbourne','Australia','Completeness Circuit',58,FIA(current)[0]*39.25,STRATEGY('Melbourne'),4,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Hard',14,[20,30,40],28) # 2021-present layout.
 # yas = Circuit('Yas Island','Abu Dhabi','Completeness Circuit',58,FIA(current)[0]*58.75,STRATEGY('Yas Island'),2,['Dry'],'Easy',21,[16,23,29],20) # 2009-2020 layout.
 yas = Circuit('Yas Island','Abu Dhabi','Completeness Circuit',58,FIA(current)[0]*44.75,STRATEGY('Yas Island'),2,['Dry'],'Easy',16,[16,23,29],20) # 2021-present layout.
-spielberg = Circuit('Spielberg','Austuria','Completeness Circuit',71,FIA(current)[0]*26.25,STRATEGY('Spielberg'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Dump'],'Very Easy',10,[20,30,40],28) # 1996-present layout.
+spielberg = Circuit('Spielberg','Austuria','Completeness Circuit',71,FIA(current)[0]*26.25,STRATEGY('Spielberg'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy',10,[20,30,40],28) # 1996-present layout.
 portimao = Circuit('Portimão','Portugal','Completeness Circuit',66,FIA(current)[0]*40.75,STRATEGY('Portimão'),1,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Average',15,[28,43,57],42) # 2008-present layout.
 jeddah = Circuit('Jeddah','Saudi Arabia','Completeness Circuit',50,FIA(current)[0]*49.25,STRATEGY('Jeddah'),3,['Dry'],'Easy',27,[13,19,24],16) # 2021-present layout.
 
@@ -708,7 +705,7 @@ nurburg = Circuit('Nurburg','Germany','Engineering Circuit',60,FIA(current)[0]*5
 kyalami = Circuit('Kyalami','South Africa','Engineering Circuit',71,FIA(current)[0]*35.75,STRATEGY('kyalami'),2,['Dry'],'Hard',16,[20,30,40],28) # 2015-present layout.
 sao = Circuit('São Paulo','Brazil','Engineering Circuit',71,FIA(current)[0]*30.75,STRATEGY('São Paulo'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Easy',15,[28,43,57],42) # 1999-present layout.
 montreal = Circuit('Montréal','Canada','Engineering Circuit',70,FIA(current)[0]*33.75,STRATEGY('Montréal'),3,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Hard',14,[20,30,40],28) # 2002-present layout.
-imola = Circuit('Imola','Italy','Engineering Circuit',63,FIA(current)[0]*36.25,STRATEGY('Imola'),1,['Dry','Dry','Dry','Dry','Dump','Dump','Dump'],'Hard',19,[25,37,50],36) # 2008-present layout.
+imola = Circuit('Imola','Italy','Engineering Circuit',63,FIA(current)[0]*40.25,STRATEGY('Imola'),1,['Dry','Dry','Dry','Dry','Dump','Dump','Dump'],'Hard',19,[25,37,50],36) # 2008-present layout.
 istanbul = Circuit('Istanbul','Turkey','Engineering Circuit',58,FIA(current)[0]*45.50,STRATEGY('Istanbul'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Very Easy',14,[16,23,29],20) # 2005-present layout.
 lusail = Circuit('Lusail','Qatar','Engineering Circuit',57,FIA(current)[0]*43.25,STRATEGY('Lusail'),1,['Dry'],'Average',16,[25,37,50],36) # 2004-present layout.
 miami = Circuit('Miami','United States','Engineering Circuit',57,FIA(current)[0]*49.75,STRATEGY('Miami'),3,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Easy',19,[19,28,37],26) # 2022-present layout.
@@ -1538,7 +1535,7 @@ def ANALYZER(session,data,tirenamedata,keyword):
         da['STINT'] = nani
 
     # Lap Priority Alignments
-    if (keyword == 'quali-chart') & (session != 'Qualifying'):
+    if keyword == 'quali-chart':
         # ON/OFF LEVER for Future Features
         # da['FL.'] = ['1:20.786','1:20.786','1:20.786','1:31.786','1:32.786','1:33.786','1:34.786','1:35.786','1:36.786','1:37.786','1:38.786','1:38.786','1:40.786','1:41.786','1:42.786','1:43.786','1:43.786','1:45.786','1:46.786','1:47.786']
         
@@ -1565,13 +1562,56 @@ def ANALYZER(session,data,tirenamedata,keyword):
 
             for i in elixr:
                 MEDVEDEV[leixr[elixr.index(i)]].append(i)
-            # to be continued.        
+            
+            main_character = list(range(1,len(drivers)+1))
+            for i in list(MEDVEDEV.keys()):
+                redmond = pd.DataFrame()
+                drivers_original = []
+                driversqx = []
+                
+                stray = []
+                order = []
+
+                true_index = []
+                table_index = []
+                for q in MEDVEDEV[i]:
+                    stray.append(list(da['FL. LAP'])[q])
+                    driversqx.append(list(da['DRIVERS'])[q])
+                    table_index.append(q+1)
+                    
+                    for i in drivers:
+                        drivers_original.append(i.name)
+
+                for i in driversqx:
+                    order.append(drivers_original.index(i))
+
+                redmond['NAMES'] = driversqx
+                redmond['STRAY'] = stray
+                redmond['ORDER'] = order
+                redmond = redmond.sort_values(['STRAY','ORDER'],ascending=[True,True])
+                
+                for y in list(redmond['NAMES']):
+                    true_index.append(list(da['DRIVERS']).index(y) + 1)
+
+                # Crossing
+                redmond['TABLE INDEX'] = true_index
+                redmond['TRUE INDEX'] = table_index
+                
+                for i in list(redmond['TABLE INDEX']):
+                    main_character[i-1] = f'INDICATOR{i}'
+
+                # main characterin true indexdeki yerine table index atanacak
+                for i in main_character:
+                        i = str(i)
+                        if i[0] == 'I':
+                            indicator_index = main_character.index(i)
+                            TRUE_REPLACEMENT = list(redmond['TRUE INDEX'])[list(redmond['TABLE INDEX']).index(indicator_index + 1)]
+                            main_character[indicator_index] = TRUE_REPLACEMENT
+                        else:
+                            pass
+                da = da.reindex(main_character)
         else:
             pass
-    
-    elif (keyword == 'quali-chart') & (session == 'Qualifying'):
-        # Q
-        pass
     else:
         pass
 
@@ -2210,7 +2250,7 @@ def R(circuit,session,weather):
                         if K.name == defender:
                             defender_obj = K
                     
-                    following_distance = (0.333)*(position-1)
+                    following_distance = (0.444)*(position-1)
 
                     if position == 1:
                         LAP_CHART[attacker_obj.name][-1] = LAP_CHART[attacker_obj.name][-1] + (circuit.laptime + 125)
@@ -2225,6 +2265,8 @@ def R(circuit,session,weather):
                             LAP_CHART[attacker_obj.name][-1] = LAP_CHART[attacker_obj.name][-1] + (following_distance - interval) + (circuit.laptime + 125)
             else:
                 pass
+        elif (SAFETY_CAR[lap-1][-1] == 1):
+            pass
         else:
             # Lap by Lap Analysis for Overtaking/Defence Situations
             temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
@@ -2491,28 +2533,48 @@ def R(circuit,session,weather):
                     else:
                         DRAG_REDUCTION_SYSTEM = False
 
+                    everywhere_plus =(FIA(current)[16])
                     if lap > 1:
-                        if DRAG_REDUCTION_SYSTEM == False: # Non-drs pass try.
+                        if DRAG_REDUCTION_SYSTEM == False: # Non-drs Pass Try
                             if ATTACKING_MOMENT <= minimum_delta_needed_t:
                                 if ((defender_obj.defence) + DEFENDER_DICE + (ATTACKING_MOMENT*13)) <= ((attacker_obj.attack) + ATTACKER_DICE):
-                                    pass # Passed normally.
-                                    # print('NORMAL')
+                                    # Passed Normally
+                                    defender_plus = (gap_in_front) + (FIA(current)[16]) + (everywhere_plus)
+                                    attacker_plus = (everywhere_plus)
+                                    
+                                    LAP_CHART[defender][-1] += defender_plus
+                                    LAP_CHART[attacker][-1] += attacker_plus
                                 else:
-                                    pass # Couldn't passed normally.
+                                    # Couldn't Passed Normally
+                                    defender_plus = (everywhere_plus)
+                                    attacker_plus = (everywhere_plus) + (FIA(current)[16])
+
+                                    LAP_CHART[defender][-1] += defender_plus
+                                    LAP_CHART[attacker][-1] += attacker_plus
                             else:
-                                pass # Nowhere close to the guy.
-                        else: # Pass try with DRS.
+                                pass # Nowhere Close to Overtake
+                        else: # DRS-activated Pass Try
                             if DRS_ATTACKING_MOMENT <= 0.000:
-                                pass # Passed with drs with losing no time.
-                                # print('DRS')
+                                LAP_CHART[defender][-1] += FIA(current)[16]
+                                LAP_CHART[attacker][-1] -= drs_advantage
                             elif DRS_ATTACKING_MOMENT <= minimum_delta_needed_t:
                                 if ((defender_obj.defence) + DEFENDER_DICE + (DRS_ATTACKING_MOMENT*13)) <= ((attacker_obj.attack) + ATTACKER_DICE):
-                                    pass # Passed normally with the help of drs.
-                                    # print('SEMI-DRS')
+                                    LAP_CHART[attacker][-1] -= drs_advantage
+                                    defender_plus = (gap_in_front) + (FIA(current)[16]) + (everywhere_plus)
+                                    attacker_plus = (everywhere_plus)
+                                    
+                                    LAP_CHART[defender][-1] += defender_plus
+                                    LAP_CHART[attacker][-1] += attacker_plus
+
                                 else:
-                                    pass # Couldn't passed normally with the help of drs.
+                                    LAP_CHART[attacker][-1] -= drs_advantage
+                                    defender_plus = (everywhere_plus)
+                                    attacker_plus = (everywhere_plus) + (FIA(current)[16])
+
+                                    LAP_CHART[defender][-1] += defender_plus
+                                    LAP_CHART[attacker][-1] += attacker_plus
                             else:
-                                pass # Nowhere close to the guy.
+                                LAP_CHART[attacker][-1] -= drs_advantage
 
         # Lap by Lap Report | Final Shape
         temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()
@@ -2806,7 +2868,7 @@ if execution == 'simulation':
         PIT[i.name] = []
         STINT[i.name] = []
 
-    for i in range(1,201):
+    for i in range(0,201):
         SAFETY_CAR[i] = [0]
 
     # Strategy Plannings
