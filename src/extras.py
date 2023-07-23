@@ -1,7 +1,7 @@
 from random import uniform, choice, randint
 import pandas as pd
 
-def upgrade(goal,regulation,part,spent,engineers,designer,cto,aerodynamicst):
+def upgrade(part,regulation,spent,engineers,designer,cto,aerodynamicst):
     
     # Part Development
     if part == 'Front Wing':
@@ -48,6 +48,7 @@ def upgrade(goal,regulation,part,spent,engineers,designer,cto,aerodynamicst):
     # x1.500 +9 1.0 saniye
     # x2.000 +12 1.5 saniye
 
+    regulation = int(regulation)
     if regulation == 1998:
         svv = 1.500
     elif regulation == 2005:
@@ -73,49 +74,37 @@ def upgrade(goal,regulation,part,spent,engineers,designer,cto,aerodynamicst):
 
     final = round((round((round((phase_1 + phase_2 + phase_3)*10))//uniform(4.25,5.75)))*(svv))
 
-    # If development failed?
-    if goal == 'Upgrade':
-        pb1 = randint(1,106) >= designer
-        pb2 = randint(1,106) >= cto
-        pb3 = randint(1,106) >= aerodynamicst
-        
-        if (pb1 and pb2 and pb3) == True:
+    pb1 = randint(1,106) >= designer
+    pb2 = randint(1,106) >= cto
+    pb3 = randint(1,106) >= aerodynamicst
+    
+    if (pb1 and pb2 and pb3) == True:
+        FAIL = uniform(final-3.75,final+1.25)*(-1.0)
+        iffail = 'However, there were problems which negatively affected the development process.'
+    else:
+        if (pb1 and pb2) == True:
             FAIL = uniform(final-3.75,final+1.25)*(-1.0)
             iffail = 'However, there were problems which negatively affected the development process.'
         else:
-            if (pb1 and pb2) == True:
+            if (pb1 and pb3) == True:
                 FAIL = uniform(final-3.75,final+1.25)*(-1.0)
                 iffail = 'However, there were problems which negatively affected the development process.'
-            else:
-                if (pb1 and pb3) == True:
+            else: 
+                if (pb2 and pb3) == True:
                     FAIL = uniform(final-3.75,final+1.25)*(-1.0)
                     iffail = 'However, there were problems which negatively affected the development process.'
-                else: 
-                    if (pb2 and pb3) == True:
-                        FAIL = uniform(final-3.75,final+1.25)*(-1.0)
-                        iffail = 'However, there were problems which negatively affected the development process.'
-                    else:
-                        FAIL = 0
-                        iffail = 'There were no issues to concern.'
-    else:
-        FAIL = 0
-        iffail = 'There were no issues to concern.'
+                else:
+                    FAIL = 0
+                    iffail = 'There were no issues to concern.'
 
-    if goal == 'Upgrade':
-        final = round(final) + round(FAIL)
-        if FAIL == 0:
+    final = round(final) + round(FAIL)
+    if FAIL == 0:
+        return f'{part} has upgraded by +{final}.\n{iffail}'
+    else:
+        if final >= 0:
             return f'{part} has upgraded by +{final}.\n{iffail}'
         else:
-            if final >= 0:
-                return f'{part} has upgraded by +{final}.\n{iffail}'
-            else:
-                return f'{part} has upgraded by {final}.\n{iffail}'
-    else:
-        res = (round((final//uniform(1.25,1.75))))
-        if round(res) == 0:
-            return f'{part} has positively researched by +1.'
-        else:
-            return f'{part} has positively researched by +{(res)}'
+            return f'{part} has upgraded by {final}.\n{iffail}'
 
 def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,box,regulation,title,engine):
 
@@ -221,6 +210,7 @@ def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,bo
         FW += uniform(2.011,5.01)
         CHASSIS += uniform(2.011,5.01)
 
+    regulation = int(regulation)
     if 2004 >= regulation >= 1998:
         RELIABILITY -= 10
     elif 2008 >= regulation >= 2005:
@@ -321,7 +311,7 @@ def driver(automated,status,quality,talent,style):
     
     like = [choice(likes),choice(bales)]
 
-    return f"Driver('Team','Name','Nationality','Number',{pace},{braking},{smoothness},{adaptability},{consistency},{fitness},{aggression},{attack},{defence},{start},{wet},[None],[{like[0]},{like[1]}])"
+    return f"Driver('Team','Name','Nationality','Number',{pace},{braking},{smoothness},{adaptability},{consistency},{fitness},{aggression},{attack},{defence},{start},{wet},[None],['{like[0]}','{like[1]}'])"
 
 def table(year,serie,interval,mode):
     # interval either gonna be 'all' or finite number of races from the beggining.

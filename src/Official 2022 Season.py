@@ -1536,9 +1536,6 @@ def ANALYZER(session,data,tirenamedata,keyword):
 
     # Lap Priority Alignments
     if keyword == 'quali-chart':
-        # ON/OFF LEVER for Future Features
-        # da['FL.'] = ['1:20.786','1:20.786','1:20.786','1:31.786','1:32.786','1:33.786','1:34.786','1:35.786','1:36.786','1:37.786','1:38.786','1:38.786','1:40.786','1:41.786','1:42.786','1:43.786','1:43.786','1:45.786','1:46.786','1:47.786']
-        
         if len(list(da['FL.'])) != len(list(set(list(da['FL.'])))):
             newlist, duplist, elixr, leixr = [], [], [], []
             for i in da['FL.']:
@@ -1605,11 +1602,16 @@ def ANALYZER(session,data,tirenamedata,keyword):
                         i = str(i)
                         if i[0] == 'I':
                             indicator_index = main_character.index(i)
-                            TRUE_REPLACEMENT = list(redmond['TRUE INDEX'])[list(redmond['TABLE INDEX']).index(indicator_index + 1)]
-                            main_character[indicator_index] = TRUE_REPLACEMENT
+                            
+                            for i in list(redmond['TRUE INDEX']):
+                                if (i-1) == indicator_index:
+                                    main_character[indicator_index] = list(redmond['TABLE INDEX'])[list(redmond['TRUE INDEX']).index(i)]
+                                else:
+                                    pass
                         else:
                             pass
-                da = da.reindex(main_character)
+
+            da = da.reindex(main_character)
         else:
             pass
     else:
