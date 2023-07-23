@@ -133,7 +133,7 @@ def FIA(C):
     elif C == '2018':
         return [0.99250*(spex),True,True,'DHL',pirelli,petronas,734,2,5,3,True,116,0.0650,10,8,2,0.449,16.75]
     elif C == '2021':
-        return [1.04500*(spex),True,True,'DHL',pirelli,aramco,752,2,5,3,True,118,0.0625,10,8,2,0.449,16.25]
+        return [1.02750*(spex),True,True,'DHL',pirelli,aramco,752,2,5,3,True,118,0.0625,10,8,2,0.449,16.25]
     elif C == '2022':
         return [1.00000*(spex),True,True,'DHL',pirelli,aramco,798,5,2,3,True,112,0.0625,7,10,3,0.299,12.25]
 
@@ -1039,7 +1039,7 @@ elif spec == 'Formula 2':
     BOL = Driver(charouz,'Cem Bölükbaşı','TUR',None,62,68,72,72,72,72,80,86,66,86,66,[None],[None,None])
     drivers = [LAW,DOO,IWA,DRU,POU,VER,VES,SAR,HAU,DAR,BOS,COR,FIT,VIP,NIS,BEC,ARM,SAT,NOV,WIL,CAL,BOL]
 
-# # # End of the Class Deifinition
+# # # End of the Class Definition
 # # # Algorithm Build-up
 errorq = 0
 for i in circuits:

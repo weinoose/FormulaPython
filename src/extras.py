@@ -54,11 +54,11 @@ def upgrade(part,regulation,spent,engineers,designer,cto,aerodynamicst):
     elif regulation == 2005:
         svv = 1.333
     elif regulation == 2006:
-        svv = 1.000
+        svv = 0.666
     elif regulation == 2009:
         svv = 2.000
     elif regulation == 2011:
-        svv = 1.000
+        svv = 0.666
     elif regulation == 2014:
         svv = 1.333
     elif regulation == 2016:
