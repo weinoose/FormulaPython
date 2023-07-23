@@ -767,7 +767,7 @@ MERCEDES_1 = Engine('Mercedes',FIA(current)[5],87,92) # Aston Martin
 MERCEDES_2 = Engine('Mercedes',FIA(current)[5],87,92) # McLaren
 
 # Formula 2 Engines
-MECACHROME = Engine('Mecachrome',FIA(current)[5],86,76)
+MECACHROME = Engine('Mecachrome',FIA(current)[5],86,76) # F2 Spec. Only
 
 # Manufacturers
 class Manufacturer():
