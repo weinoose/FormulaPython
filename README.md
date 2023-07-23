@@ -5,7 +5,7 @@ It has everything in it, yet I feel a bit lazy to demonstrate it. However, if yo
 
 Feel free to contact me about that: weinoose@gmail.com
 
-Developer Log for the Development Process:
+[DONE PROJECT] Developer Log for the Development Process:
 * 25/03/2023 — v0.00 — Project has started.
 * 28/06/2023 — v1.00 — Project has finished.
 * 03/07/2023 — v1.01 — In-game bugs have been cleared.
