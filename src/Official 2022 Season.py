@@ -2895,7 +2895,10 @@ if execution == 'simulation':
         for i in drivers:
             for q in [inter,inter,inter,inter]:
                 TIRE_SETS[i.name].append(q)
-            STINT[i.name].append(inter.title[0])
+            if current in strategy_era:
+                STINT[i.name].append('W')
+            elif current in entertainment_era:
+                STINT[i.name].append(inter.title[0])
     elif W3 == 'Wet':
         for i in drivers:
             for q in [w,w,w,w]:
