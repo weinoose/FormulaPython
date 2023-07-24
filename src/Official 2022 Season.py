@@ -1732,7 +1732,7 @@ def Q(circuit,session,weather):
                 else:
                     current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0],TT2,None) + (0.000),3)
 
-                DO_NOT_FINISHED = (((((((((((driver.team.reliability + driver.team.powertrain.durability)/2))+(driver.team.powertrain.fuel.vulnerability))*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,9250)
+                DO_NOT_FINISHED = (((((((((((driver.team.reliability + driver.team.powertrain.durability)/2))+(driver.team.powertrain.fuel.vulnerability))*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,17500)
                 
                 if W3 == 'Dump':
                     driver_error_odd = (((((((driver.fitness*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,67500)
@@ -1852,7 +1852,7 @@ def R(circuit,session,weather):
                 current_laptime = round(tire.laptime(driver,circuit,lap,TIRE_USAGE[driver.name],['sunday',GRID[driver.name]],TT3,'STABLE'),3)
             else:
                 current_laptime = round(tire.laptime(driver,circuit,lap,TIRE_USAGE[driver.name],['sunday',GRID[driver.name]],TT3,None),3)
-            DO_NOT_FINISHED = (((((((((((driver.team.reliability + driver.team.powertrain.durability)/2))+(driver.team.powertrain.fuel.vulnerability))*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,9250)
+            DO_NOT_FINISHED = (((((((((((driver.team.reliability + driver.team.powertrain.durability)/2))+(driver.team.powertrain.fuel.vulnerability))*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,17500)
             
             if W3 == 'Dump':
                 driver_error_odd = (((((((driver.fitness*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,67500)
@@ -2325,26 +2325,13 @@ def R(circuit,session,weather):
                 DRS_ATTACKING_MOMENT = gap_in_front - (((attacker_precise_laptime + drs_advantage) - defender_precise_laptime)*(-1.0))
                 
                 ACCIDENT = abs((uniform(0,25) + attacker_obj.attack) - (uniform(0,25) + defender_obj.defence))
-
-                if circuit.overtake_difficulty == 'Very Hard':
-                    minimum_delta_needed_t = 0.250 - rodrygo
-                elif circuit.overtake_difficulty == 'Hard':
-                    minimum_delta_needed_t = 0.350 - rodrygo
-                elif circuit.overtake_difficulty == 'Average':
-                    minimum_delta_needed_t = 0.450 - rodrygo
-                elif circuit.overtake_difficulty == 'Easy':
-                    minimum_delta_needed_t = 0.550 - rodrygo
-                elif circuit.overtake_difficulty == 'Very Easy':
-                    minimum_delta_needed_t = 0.750 - rodrygo
-                elif circuit.overtake_difficulty == 'Impossible':
-                    minimum_delta_needed_t = 0.125 - rodrygo
                 
                 if lap == 1:
                     BANGER = (uniform(0,100) <= FIA(current)[17] + 25)
                 else:
                     BANGER = (uniform(0,100) <= FIA(current)[17])
 
-                if (ACCIDENT <= (attacker_obj.aggression/200) + (defender_obj.aggression/200)) & (BANGER) & (ATTACKING_MOMENT <= (FIA(current)[16] + minimum_delta_needed_t)):
+                if (ACCIDENT <= (attacker_obj.aggression/200) + (defender_obj.aggression/200)) & (BANGER) & (ATTACKING_MOMENT <= (FIA(current)[16] + 1.000)):
                     INCIDENT = choice(['DOUBLE DNF','DEFENDER DNF & ATTACKER DAMAGED','ATTACKER DNF & DEFENDER DAMAGED'
                                     'DOUBLE DAMAGED','DEFENDER CLEAR & ATTACKER DAMAGED','ATTACKER CLEAR & DEFENDER DAMAGED',
                                     'DEFENDER DNF & ATTACKER CLEAR','ATTACKER DNF & DEFENDER CLEAR'])
@@ -2534,6 +2521,19 @@ def R(circuit,session,weather):
                             DRAG_REDUCTION_SYSTEM = False
                     else:
                         DRAG_REDUCTION_SYSTEM = False
+
+                    if circuit.overtake_difficulty == 'Very Hard':
+                        minimum_delta_needed_t = 0.250 - rodrygo
+                    elif circuit.overtake_difficulty == 'Hard':
+                        minimum_delta_needed_t = 0.350 - rodrygo
+                    elif circuit.overtake_difficulty == 'Average':
+                        minimum_delta_needed_t = 0.450 - rodrygo
+                    elif circuit.overtake_difficulty == 'Easy':
+                        minimum_delta_needed_t = 0.550 - rodrygo
+                    elif circuit.overtake_difficulty == 'Very Easy':
+                        minimum_delta_needed_t = 0.750 - rodrygo
+                    elif circuit.overtake_difficulty == 'Impossible':
+                        minimum_delta_needed_t = 0.125 - rodrygo
 
                     everywhere_plus =(FIA(current)[16])
                     if lap > 1:
