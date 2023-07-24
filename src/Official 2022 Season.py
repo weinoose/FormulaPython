@@ -580,7 +580,7 @@ def STRATEGY(GP):
         if current in entertainment_era:
             return [[s,s,h  ,s,m,m],[s,s,m    ,s,s,m,h],[s,m,h  ,s,m,h]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h,s  ,s,s,s,h],[s,s,s,h  ,s,s,h]]
+            return [[s,s,h  ,s,s,s,h],[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h]]
     elif GP == 'Austin':
         if current in entertainment_era:
             return [[s,s,h    ,s,s,m,m],[s,m,s    ,s,s,m,h],[m,h    ,s,s,h,h]]
