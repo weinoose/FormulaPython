@@ -29,3 +29,4 @@ Feel free to contact me about that: weinoose@gmail.com
 * 23/07/2023 — v1.19 — In-game bugs have been cleared.
 * 23/07/2023 — v1.20 — 8th minor update has been published based on the lap time priority when the same lap times occurring by different drivers in sessions.
 * 23/07/2023 — v2.00 — 1st major update has been published based on the improved track positions for vehicles during the race.
+* 24/07/2023 — v2.10 — In-game bugs have been cleared.
