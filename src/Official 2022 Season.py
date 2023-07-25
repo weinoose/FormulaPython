@@ -490,182 +490,182 @@ def STRATEGY(GP):
         if current in entertainment_era:
             return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'Sochi':
         if current in entertainment_era:
             return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'Baku':
         if current in entertainment_era:
             return [[s,m,m    ,s,s,m,m,h],[s,h,s    ,s,s,m,h,h],[s,s,h    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'Las Vegas':
         if current in entertainment_era:
             return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,s,h  ,s,s,s,h]]
+            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
     elif GP == 'Spa-Francorchamps':
         if current in entertainment_era:
             return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,s,h  ,s,s,s,h]]
+            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
     elif GP == 'Sakhir':
         if current in entertainment_era:
             return [[s,s,h  ,s,m,m],[s,s,m  ,s,m,h],[s,m,s    ,s,m,h,h]]
         elif current in strategy_era:
-            return [[s,h,s  ,s,s,s,h],[s,s,h  ,s,s,s,h],[s,h,h  ,s,s,s,s]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,h  ,s,s,s,s]]
     elif GP == 'Zandvoort':
         if current in entertainment_era:
             return [[s,m,m,s,  s,s],[s,m,h,s,  s,s],[m,h,h,  s,s]]
         elif current in strategy_era:
-            return [[s,s,h,h  ,s,s,s],[s,s,s,h  ,s,s,h],[s,h,h,s  ,s,s,s]]
+            return [[s,h,h,s  ,s,s,s],[s,h,s,s  ,s,s,h],[h,h,s,s  ,s,s,s]]
     elif GP == 'Budapest':
         if current in entertainment_era:
             return [[m,h,  s,s,h,m],[s,s,m,  s,s,h,h],[s,m,s,  s,s,m,h]]
         elif current in strategy_era:
-            return [[s,h,s  ,s,s,s,h],[s,s,h  ,s,s,s,h],[s,h,h  ,s,s,s,s]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,h  ,s,s,s,s]]
     elif GP == 'Barcelona':
         if current in entertainment_era:
             return [[m,h,  s,s,h,m],[s,s,m,  s,s,h,h],[s,m,s,  s,s,m,h]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
-    elif GP == 'Monte-Carlo': # 20 30 40 - 91 laps baby
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
+    elif GP == 'Monte-Carlo':
         if current in entertainment_era:
-            return [[s,h,h  ,s,m,m],[m,m,h  ,s,s,s],[s,s,s,h    ,s,m,m]]
+            return [[s,h,h  ,s,m,m],[m,h,m  ,s,s,s],[s,h,s,s    ,s,m,m]]
         elif current in strategy_era:
-            return [[s,h,h  ,s,s,s,s],[s,s,h  ,s,s,s,h],[s,s,s,h  ,s,s,h]]
+            return [[s,h,h  ,s,s,s,s],[s,h,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
     elif GP == 'Singapore':
         if current in entertainment_era:
             return [[s,s,h  ,s,m,m],[s,s,m    ,s,s,m,h],[s,m,h  ,s,m,h]]
         elif current in strategy_era:
-            return [[s,h,s  ,s,s,s,h],[s,s,h  ,s,s,s,h],[s,s,s,h  ,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
     elif GP == 'Silverstone':
         if current in entertainment_era:
             return [[s,s,h    ,s,s,m,m],[s,m,s    ,s,s,m,h],[m,h    ,s,s,h,h]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h,s  ,s,s,s,h],[s,s,s,h  ,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
     elif GP == 'Sepang':
         if current in entertainment_era:
             return [[s,s,h    ,s,s,m,m],[s,m,s    ,s,s,m,h],[m,h    ,s,s,h,h]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'Shanghai':
         if current in entertainment_era:
             return [[s,s,h    ,s,s,m,m],[s,m,s    ,s,s,m,h],[m,h    ,s,s,h,h]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'Yeongam':
         if current in entertainment_era:
             return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'India':
         if current in entertainment_era:
             return [[s,m,h  ,s,m,h],[s,s,m    ,s,s,m,h],[s,s,h  ,s,m,m]]
         elif current in strategy_era:
-            return [[s,s,s,h  ,s,s,h],[s,s,h  ,s,s,s,h],[s,h,s  ,s,s,s,h]]
+            return [[s,h,s,s  ,s,s,h],[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h]]
     elif GP == 'Le Castellet':
         if current in entertainment_era:
             return [[m,h    ,s,s,h,h],[s,s,h    ,s,s,m,m],[s,s,m    ,s,s,m,m]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'México City':
         if current in entertainment_era:
             return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,s,h  ,s,s,s,h]]
+            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
     elif GP == 'Valencia':
         if current in entertainment_era:
             return [[s,s,h  ,s,m,m],[s,s,m    ,s,s,m,h],[s,m,h  ,s,m,h]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[h,s,s  ,s,s,s,h]]
     elif GP == 'Austin':
         if current in entertainment_era:
             return [[s,s,h    ,s,s,m,m],[s,m,s    ,s,s,m,h],[m,h    ,s,s,h,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,s,h  ,s,s,s,h]]
+            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
     elif GP == 'Lusail':
         if current in entertainment_era:
             return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,s,h  ,s,s,s,h]]
+            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
     elif GP == 'Hockenheim':
         if current in entertainment_era:
             return [[s,s,h  ,s,m,m],[s,s,m    ,s,s,m,h],[s,m,m  ,s,m,h]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h,s  ,s,s,s,h],[s,s,s,h  ,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
     elif GP == 'Fuji':
         if current in entertainment_era:
             return [[s,s,h  ,s,m,m],[s,s,m    ,s,s,m,h],[s,m,m  ,s,m,h]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h,s  ,s,s,s,h],[s,s,s,h  ,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
     elif GP == 'Melbourne':
         if current in entertainment_era:
             return [[s,h    ,s,s,m,m,h],[s,m    ,s,s,m,m,h,h],[s,s,m    ,s,s,h,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,s,h  ,s,s,s,h]]
+            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
     elif GP == 'Yas Island':
         if current in entertainment_era:
             return [[s,s,h  ,s,m,m],[s,m,s    ,s,s,m,h],[s,m,h  ,s,m,h]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h,s  ,s,s,s,h],[s,s,s,h  ,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
     elif GP == 'Spielberg':
         if current in entertainment_era:
             return [[s,s,h    ,m,m,h],[s,s,m    ,s,m,h],[s,m,s    ,s,m,h,h]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h,s  ,s,s,s,h],[s,s,s,h  ,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
     elif GP == 'Portimão':
         if current in entertainment_era:
             return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,s,h  ,s,s,s,h]]
+            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
     elif GP == 'Jeddah':
         if current in entertainment_era:
             return [[s,s,h  ,s,m,m],[s,m,s    ,s,s,m,h],[s,m,h  ,s,m,h]]
         elif current in strategy_era:
-            return [[s,s,s,h  ,s,s,h],[s,s,h  ,s,s,s,h],[s,h,s  ,s,s,s,h]]
+            return [[s,h,s,s  ,s,s,h],[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h]]
     elif GP == 'Nurburg':
         if current in entertainment_era:
             return [[s,h    ,s,s,m,m,h],[s,m    ,s,s,m,m,h,h],[s,s,m    ,s,s,h,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,s,h  ,s,s,s,h]]
+            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
     elif GP == 'Kyalami':
         if current in entertainment_era:
             return [[s,s,h    ,s,s,m,m],[s,m,s    ,s,s,m,h],[m,h    ,s,s,h,h]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h,s  ,s,s,s,h],[s,s,s,h  ,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
     elif GP == 'São Paulo':
         if current in entertainment_era:
             return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,s,h  ,s,s,s,h]]
+            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
     elif GP == 'Montréal':
         if current in entertainment_era:
             return [[s,s,h    ,s,s,m,m],[s,m,s    ,s,s,m,h],[m,h    ,s,s,h,h]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h,s  ,s,s,s,h],[s,s,s,h  ,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
     elif GP == 'Imola':
         if current in entertainment_era:
             return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,s,h  ,s,s,s,h]]
+            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
     elif GP == 'Suzuka':
         if current in entertainment_era:
             return [[s,m,s    ,s,m,m,h,h],[s,s,m    ,s,s,h,h],[s,h    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h  ,s,s,s,s,h]]
     elif GP == 'Istanbul':
         if current in entertainment_era:
             return [[s,s,h  ,s,m,m],[s,s,m    ,s,s,m,h],[s,m,h  ,s,m,h]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h,s  ,s,s,s,h],[s,s,s,h  ,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
     elif GP == 'Miami':
         if current in entertainment_era:
             return [[s,s,h    ,s,s,m,m],[s,m,s    ,s,s,m,h],[m,h    ,s,s,h,h]]
         elif current in strategy_era:
-            return [[s,s,h  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
         
 # # # AGILITY CIRCUITS
 monza = Circuit('Monza','Italy','Agility Circuit',53,FIA(current)[0]*41.25,STRATEGY('Monza'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy',11,[21,31,41],29) # 2000-present layout.
@@ -1630,9 +1630,9 @@ def FP(circuit,tireset,stage,session,weather):
             for i in tireset[driver.name]:
                 tlist.append(i)
         elif W1 == 'Dump':
-            tlist = [inter,inter,inter]
+            tlist = [inter,inter,inter,inter]
         elif W1 == 'Wet':
-            tlist = [w,w,w]
+            tlist = [w,w,w,w]
         tire = tlist[0]
         tire_usage = 0
         lap_chart, tire_chart, tire_left_chart = [], [], []
@@ -2783,9 +2783,14 @@ if execution == 'simulation':
             FP2STINT[i.name] = [CRC.strategy[1][0].title[0]]
             FP3STINT[i.name] = [CRC.strategy[2][0].title[0]]
         elif W1 == 'Dump':
-            FP1STINT[i.name] = ['I']
-            FP2STINT[i.name] = ['I']
-            FP3STINT[i.name] = ['I']
+            if current in entertainment_era:
+                FP1STINT[i.name] = ['I']
+                FP2STINT[i.name] = ['I']
+                FP3STINT[i.name] = ['I']
+            else:
+                FP1STINT[i.name] = ['W']
+                FP2STINT[i.name] = ['W']
+                FP3STINT[i.name] = ['W']  
         else:
             FP1STINT[i.name] = ['W']
             FP2STINT[i.name] = ['W']
@@ -2895,10 +2900,7 @@ if execution == 'simulation':
         for i in drivers:
             for q in [inter,inter,inter,inter]:
                 TIRE_SETS[i.name].append(q)
-            if current in strategy_era:
-                STINT[i.name].append('W')
-            elif current in entertainment_era:
-                STINT[i.name].append(inter.title[0])
+            STINT[i.name].append(inter.title[0])
     elif W3 == 'Wet':
         for i in drivers:
             for q in [w,w,w,w]:
