@@ -212,17 +212,17 @@ def design(engineers,head,designer,cto,aerodynamicst,concept,durability,spent,bo
 
     regulation = int(regulation)
     if 2004 >= regulation >= 1998:
-        RELIABILITY -= 10
+        RELIABILITY -= 14
     elif 2008 >= regulation >= 2005:
-        RELIABILITY -= 7
+        RELIABILITY -= 9
     elif 2012 >= regulation >= 2009:
-        RELIABILITY -= 4
+        RELIABILITY -= 6
     elif 2018 >= regulation >= 2013:
-        RELIABILITY += 0
+        RELIABILITY -= 2
     elif 2021 >= regulation >= 2019:
-        RELIABILITY += 4
+        RELIABILITY += 2
     elif regulation >= 2022:
-        RELIABILITY += 7
+        RELIABILITY += 6
     
     return f"Manufacturer('{title}','{CREW}',{engine},{round(CHASSIS)},{round(FW)},{round(RW)},{round(BASE)},{round(SIDEPOD)},{round(SUSPENSION)},{round(RELIABILITY)},{WEIGHT})"
 

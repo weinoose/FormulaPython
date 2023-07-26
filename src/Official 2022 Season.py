@@ -217,12 +217,12 @@ class Tire():
             else:
                 tire_temp = (heated/4)*(-1.0)
         else:
-            if driver.team.manufacturer_tyre_coeff <= 0.144:
-                tire_temp = uniform((driver.team.manufacturer_tyre_coeff/2),(driver.team.manufacturer_tyre_coeff/1))*(-1.0)
-            elif 0.145 <= driver.team.manufacturer_tyre_coeff <= 0.164:
-                tire_temp = 0.0
-            elif 0.165 <= driver.team.manufacturer_tyre_coeff:
-                tire_temp = uniform((driver.team.manufacturer_tyre_coeff/2),(driver.team.manufacturer_tyre_coeff/1))
+            if driver.team.manufacturer_tyre_coeff > 0.165:
+                tire_temp = ((((((driver.team.manufacturer_tyre_coeff) - (0.165))**2))**(2/11)))*(1.0)
+            elif driver.team.manufacturer_tyre_coeff < 0.165:
+                tire_temp = ((((((driver.team.manufacturer_tyre_coeff) - (0.165))**2))**(2/11)))*(-1.0)
+            else:
+                tire_temp = 0.000
         
         TIRE_EFFECT = ((pow(1.014750,(100-tire_left)))-1) + (tire_temp + swallow)
         FUEL_EFFECT = (fuel_left*driver.team.powertrain.fuel.efficiency)
@@ -400,7 +400,7 @@ class Tire():
             SATURDAY.append(i)
         for j in np.arange(driver.race_pace()-CRU,driver.race_pace()+CRD,0.01):
             SUNDAY.append(j)
-        for j in np.arange(driver.wet-CRU,driver.wet+CRD,0.01):
+        for j in np.arange((((driver.wet + driver.race_pace())/2)-CRU),(((driver.wet + driver.race_pace())/2)+CRD),0.01):
             WET.append(j)
 
         if FIA(current)[1] == True:
@@ -505,12 +505,12 @@ def STRATEGY(GP):
         if current in entertainment_era:
             return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'Spa-Francorchamps':
         if current in entertainment_era:
             return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'Sakhir':
         if current in entertainment_era:
             return [[s,s,h  ,s,m,m],[s,s,m  ,s,m,h],[s,m,s    ,s,m,h,h]]
@@ -535,17 +535,17 @@ def STRATEGY(GP):
         if current in entertainment_era:
             return [[s,h,h  ,s,m,m],[m,h,m  ,s,s,s],[s,h,s,s    ,s,m,m]]
         elif current in strategy_era:
-            return [[s,h,h  ,s,s,s,s],[s,h,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
+            return [[s,h,h  ,s,s,s,s],[s,h,s,s  ,s,s,h],[h,s,s,s  ,s,s,h]]
     elif GP == 'Singapore':
         if current in entertainment_era:
             return [[s,s,h  ,s,m,m],[s,s,m    ,s,s,m,h],[s,m,h  ,s,m,h]]
         elif current in strategy_era:
-            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,h  ,s,s,s,s]]
     elif GP == 'Silverstone':
         if current in entertainment_era:
             return [[s,s,h    ,s,s,m,m],[s,m,s    ,s,s,m,h],[m,h    ,s,s,h,h]]
         elif current in strategy_era:
-            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,h  ,s,s,s,s]]
     elif GP == 'Sepang':
         if current in entertainment_era:
             return [[s,s,h    ,s,s,m,m],[s,m,s    ,s,s,m,h],[m,h    ,s,s,h,h]]
@@ -565,7 +565,7 @@ def STRATEGY(GP):
         if current in entertainment_era:
             return [[s,m,h  ,s,m,h],[s,s,m    ,s,s,m,h],[s,s,h  ,s,m,m]]
         elif current in strategy_era:
-            return [[s,h,s,s  ,s,s,h],[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,h  ,s,s,s,s]]
     elif GP == 'Le Castellet':
         if current in entertainment_era:
             return [[m,h    ,s,s,h,h],[s,s,h    ,s,s,m,m],[s,s,m    ,s,s,m,m]]
@@ -575,92 +575,92 @@ def STRATEGY(GP):
         if current in entertainment_era:
             return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'Valencia':
         if current in entertainment_era:
             return [[s,s,h  ,s,m,m],[s,s,m    ,s,s,m,h],[s,m,h  ,s,m,h]]
         elif current in strategy_era:
-            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[h,s,s  ,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,h  ,s,s,s,s]]
     elif GP == 'Austin':
         if current in entertainment_era:
             return [[s,s,h    ,s,s,m,m],[s,m,s    ,s,s,m,h],[m,h    ,s,s,h,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'Lusail':
         if current in entertainment_era:
             return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'Hockenheim':
         if current in entertainment_era:
             return [[s,s,h  ,s,m,m],[s,s,m    ,s,s,m,h],[s,m,m  ,s,m,h]]
         elif current in strategy_era:
-            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,h  ,s,s,s,s]]
     elif GP == 'Fuji':
         if current in entertainment_era:
             return [[s,s,h  ,s,m,m],[s,s,m    ,s,s,m,h],[s,m,m  ,s,m,h]]
         elif current in strategy_era:
-            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,h  ,s,s,s,s]]
     elif GP == 'Melbourne':
         if current in entertainment_era:
             return [[s,h    ,s,s,m,m,h],[s,m    ,s,s,m,m,h,h],[s,s,m    ,s,s,h,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'Yas Island':
         if current in entertainment_era:
             return [[s,s,h  ,s,m,m],[s,m,s    ,s,s,m,h],[s,m,h  ,s,m,h]]
         elif current in strategy_era:
-            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,h  ,s,s,s,s]]
     elif GP == 'Spielberg':
         if current in entertainment_era:
             return [[s,s,h    ,m,m,h],[s,s,m    ,s,m,h],[s,m,s    ,s,m,h,h]]
         elif current in strategy_era:
-            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,h  ,s,s,s,s]]
     elif GP == 'Portimão':
         if current in entertainment_era:
             return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'Jeddah':
         if current in entertainment_era:
             return [[s,s,h  ,s,m,m],[s,m,s    ,s,s,m,h],[s,m,h  ,s,m,h]]
         elif current in strategy_era:
-            return [[s,h,s,s  ,s,s,h],[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,h  ,s,s,s,s]]
     elif GP == 'Nurburg':
         if current in entertainment_era:
             return [[s,h    ,s,s,m,m,h],[s,m    ,s,s,m,m,h,h],[s,s,m    ,s,s,h,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'Kyalami':
         if current in entertainment_era:
             return [[s,s,h    ,s,s,m,m],[s,m,s    ,s,s,m,h],[m,h    ,s,s,h,h]]
         elif current in strategy_era:
-            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,h  ,s,s,s,s]]
     elif GP == 'São Paulo':
         if current in entertainment_era:
             return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'Montréal':
         if current in entertainment_era:
             return [[s,s,h    ,s,s,m,m],[s,m,s    ,s,s,m,h],[m,h    ,s,s,h,h]]
         elif current in strategy_era:
-            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,h  ,s,s,s,s]]
     elif GP == 'Imola':
         if current in entertainment_era:
             return [[s,h    ,s,s,s,m,h,h],[s,m    ,s,s,s,m,h],[m,s    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h],[s,h,s  ,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'Suzuka':
         if current in entertainment_era:
             return [[s,m,s    ,s,m,m,h,h],[s,s,m    ,s,s,h,h],[s,h    ,s,s,m,m,h]]
         elif current in strategy_era:
-            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h  ,s,s,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
     elif GP == 'Istanbul':
         if current in entertainment_era:
             return [[s,s,h  ,s,m,m],[s,s,m    ,s,s,m,h],[s,m,h  ,s,m,h]]
         elif current in strategy_era:
-            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,s,s  ,s,s,h]]
+            return [[s,h,s  ,s,s,s,h],[h,s,s  ,s,s,s,h],[s,h,h  ,s,s,s,s]]
     elif GP == 'Miami':
         if current in entertainment_era:
             return [[s,s,h    ,s,s,m,m],[s,m,s    ,s,s,m,h],[m,h    ,s,s,h,h]]
@@ -692,10 +692,8 @@ india = Circuit('India','India','Quickness Circuit',60,FIA(current)[0]*45.25,STR
 # COMPLETENESS CIRCUITS
 hockenheim = Circuit('Hockenheim','Germany','Completeness Circuit',67,FIA(current)[0]*36.25,STRATEGY('Hockenheim'),2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Easy',16,[18,26,35],24) # 2002-present layout.
 fuji = Circuit('Fuji','Japan','Completeness Circuit',67,FIA(current)[0]*40.25,STRATEGY('Fuji'),1,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Average',16,[18,26,35],24) # 2005-present layout.
-# melbourne = Circuit('Melbourne','Australia','Completeness Circuit',58,FIA(current)[0]*45.25,STRATEGY('Melbourne'),4,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Hard',16,[20,30,40],28) # 1996-2020 layout.
-melbourne = Circuit('Melbourne','Australia','Completeness Circuit',58,FIA(current)[0]*39.25,STRATEGY('Melbourne'),4,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Hard',14,[20,30,40],28) # 2021-present layout.
-# yas = Circuit('Yas Island','Abu Dhabi','Completeness Circuit',58,FIA(current)[0]*58.75,STRATEGY('Yas Island'),2,['Dry'],'Easy',21,[16,23,29],20) # 2009-2020 layout.
-yas = Circuit('Yas Island','Abu Dhabi','Completeness Circuit',58,FIA(current)[0]*44.75,STRATEGY('Yas Island'),2,['Dry'],'Easy',16,[16,23,29],20) # 2021-present layout.
+melbourne = Circuit('Melbourne','Australia','Completeness Circuit',58,FIA(current)[0]*45.25,STRATEGY('Melbourne'),4,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Hard',16,[20,30,40],28) # 1996-2020 layout.
+yas = Circuit('Yas Island','Abu Dhabi','Completeness Circuit',58,FIA(current)[0]*58.75,STRATEGY('Yas Island'),2,['Dry'],'Easy',21,[16,23,29],20) # 2009-2020 layout.
 spielberg = Circuit('Spielberg','Austuria','Completeness Circuit',71,FIA(current)[0]*26.25,STRATEGY('Spielberg'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy',10,[20,30,40],28) # 1996-present layout.
 portimao = Circuit('Portimão','Portugal','Completeness Circuit',66,FIA(current)[0]*40.75,STRATEGY('Portimão'),1,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Average',15,[28,43,57],42) # 2008-present layout.
 jeddah = Circuit('Jeddah','Saudi Arabia','Completeness Circuit',50,FIA(current)[0]*49.25,STRATEGY('Jeddah'),3,['Dry'],'Easy',27,[13,19,24],16) # 2021-present layout.
@@ -832,9 +830,9 @@ class Manufacturer():
             self.manufacturer_tyre_coeff_print = 'Very Bad'
         elif 0.120 <= self.manufacturer_tyre_coeff <= 0.134:
             self.manufacturer_tyre_coeff_print = 'Bad'
-        elif 0.135 <= self.manufacturer_tyre_coeff <= 0.168:
+        elif 0.135 <= self.manufacturer_tyre_coeff <= 0.164:
             self.manufacturer_tyre_coeff_print = 'Average'
-        elif 0.169 <= self.manufacturer_tyre_coeff <= 0.179:
+        elif 0.165 <= self.manufacturer_tyre_coeff <= 0.179:
             self.manufacturer_tyre_coeff_print = 'Good'
         elif 0.180 <= self.manufacturer_tyre_coeff:
             self.manufacturer_tyre_coeff_print = 'Perfect'
@@ -910,33 +908,7 @@ class Manufacturer():
                 return (((self.downforce*5) + (self.vortex*3) + (self.acceleration*2) + (self.braking*1))/11)
         elif circuit_type == 'Street Circuit':
             return (((self.downforce*4) + (self.braking*4) + (self.vortex*2) + (self.acceleration*1))/11)
-
-if spec == 'Formula 1':
-    mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team','Good',MERCEDES_F,91,89,84,89,79,89,106,+0.00)
-    redbull = Manufacturer('Oracle Red Bull Racing','Perfect',HONDA_0,89,89,92,94,92,92,86,+0.00)
-    ferrari = Manufacturer('Scuderia Ferrari','Average',FERRARI_F,96,96,89,91,94,79,79,+0.00)
-    mclaren = Manufacturer('McLaren F1 Team','Perfect',MERCEDES_2,79,84,79,84,84,84,106,+0.00)
-    alpine = Manufacturer('BWT Alpine F1 Team','Good',RENAULT_F,86,82,82,86,86,82,82,+0.00)
-    alphatauri = Manufacturer('Scuderia AlphaTauri','Good',HONDA_1,74,77,84,84,74,74,82,+0.00)
-    astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team','Average',MERCEDES_1,79,79,79,81,81,79,104,+0.00)
-    williams = Manufacturer('Williams Racing','Good',MERCEDES_0,77,77,77,77,84,88,104,+0.00)
-    alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen','Good',FERRARI_1,86,84,79,79,79,79,84,+0.00)
-    haas = Manufacturer('Haas F1 Team','Good',FERRARI_0,84,81,81,79,79,79,84,+0.00)
-    manufacturers = [mercedes,redbull,ferrari,mclaren,alpine,alphatauri,astonmartin,williams,alfaromeo,haas]
-elif spec == 'Formula 2':
-    prema = Manufacturer('Prema Racing','Good',MECACHROME,91,91,91,85,85,85,85,+0.00) # 4th best.
-    virtuosi = Manufacturer('Virtuosi Racing','Average',MECACHROME,91,91,91,79,79,79,79,+0.00) # 7th best.
-    carlin = Manufacturer('Carlin','Perfect',MECACHROME,91,91,91,89,89,89,89,+0.00) # 2nd best.
-    hitech = Manufacturer('Hitech Grand Prix','Average',MECACHROME,91,91,91,83,83,83,83,+0.00) # 5th best.
-    art = Manufacturer('ART Grand Prix','Perfect',MECACHROME,91,91,91,87,87,87,87,+0.00) # 3rd best.
-    mp = Manufacturer('MP Motorsport','Good',MECACHROME,91,91,91,91,91,91,91,+0.00) # best.
-    campos = Manufacturer('Campos Racing','Average',MECACHROME,91,91,91,79,79,79,79,+0.00) # 11th best.
-    dams = Manufacturer('DAMS','Good',MECACHROME,91,91,91,81,81,81,81,+0.00) # 6th best.
-    trident = Manufacturer('Trident','Average',MECACHROME,91,91,91,79,79,79,79,+0.00) # 9th best.
-    charouz = Manufacturer('Charouz Racing System','Bad',MECACHROME,91,91,91,79,79,79,79,+0.00) # 8th best.
-    van = Manufacturer('Van Amersfoot Racing','Perfect',MECACHROME,91,91,91,79,79,79,79,+0.00) # 10th best.
-    manufacturers = [prema,virtuosi,carlin,hitech,art,mp,campos,dams,trident,charouz,van]
-
+        
 # Drivers
 class Driver():
     def __init__(self,team,name,nationality,number,pace,braking,smoothness,adaptability,consistency,fitness,aggression,attack,defence,start,wet,favorite,style):
@@ -979,6 +951,32 @@ class Driver():
             return (variable/2)
         else:
             return 0
+
+if spec == 'Formula 1':
+    mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team','Good',MERCEDES_F,91,89,84,89,79,89,106,+0.00)
+    redbull = Manufacturer('Oracle Red Bull Racing','Perfect',HONDA_0,89,89,92,94,92,92,86,+0.00)
+    ferrari = Manufacturer('Scuderia Ferrari','Average',FERRARI_F,96,96,89,91,94,79,79,+0.00)
+    mclaren = Manufacturer('McLaren F1 Team','Perfect',MERCEDES_2,79,84,79,84,84,84,106,+0.00)
+    alpine = Manufacturer('BWT Alpine F1 Team','Good',RENAULT_F,86,82,82,86,86,82,82,+0.00)
+    alphatauri = Manufacturer('Scuderia AlphaTauri','Good',HONDA_1,74,77,84,84,74,74,82,+0.00)
+    astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team','Average',MERCEDES_1,79,79,79,81,81,79,104,+0.00)
+    williams = Manufacturer('Williams Racing','Good',MERCEDES_0,77,77,77,77,84,88,104,+0.00)
+    alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen','Good',FERRARI_1,86,84,79,79,79,79,84,+0.00)
+    haas = Manufacturer('Haas F1 Team','Good',FERRARI_0,84,81,81,79,79,79,84,+0.00)
+    manufacturers = [mercedes,redbull,ferrari,mclaren,alpine,alphatauri,astonmartin,williams,alfaromeo,haas]
+elif spec == 'Formula 2':
+    prema = Manufacturer('Prema Racing','Good',MECACHROME,91,91,91,85,85,85,85,+0.00) # 4th best.
+    virtuosi = Manufacturer('Virtuosi Racing','Average',MECACHROME,91,91,91,79,79,79,79,+0.00) # 7th best.
+    carlin = Manufacturer('Carlin','Perfect',MECACHROME,91,91,91,89,89,89,89,+0.00) # 2nd best.
+    hitech = Manufacturer('Hitech Grand Prix','Average',MECACHROME,91,91,91,83,83,83,83,+0.00) # 5th best.
+    art = Manufacturer('ART Grand Prix','Perfect',MECACHROME,91,91,91,87,87,87,87,+0.00) # 3rd best.
+    mp = Manufacturer('MP Motorsport','Good',MECACHROME,91,91,91,91,91,91,91,+0.00) # best.
+    campos = Manufacturer('Campos Racing','Average',MECACHROME,91,91,91,79,79,79,79,+0.00) # 11th best.
+    dams = Manufacturer('DAMS','Good',MECACHROME,91,91,91,81,81,81,81,+0.00) # 6th best.
+    trident = Manufacturer('Trident','Average',MECACHROME,91,91,91,79,79,79,79,+0.00) # 9th best.
+    charouz = Manufacturer('Charouz Racing System','Bad',MECACHROME,91,91,91,79,79,79,79,+0.00) # 8th best.
+    van = Manufacturer('Van Amersfoot Racing','Perfect',MECACHROME,91,91,91,79,79,79,79,+0.00) # 10th best.
+    manufacturers = [prema,virtuosi,carlin,hitech,art,mp,campos,dams,trident,charouz,van]
         
 if spec == 'Formula 1':
     VER = Driver(redbull,'Max Verstappen','NET',1,90,93,92,95,93,95,95,95,87,86,94,['México City','Zandvoort','Spielberg','Imola','Spa-Francorchamps'],['Wild',None])
@@ -1847,7 +1845,7 @@ def R(circuit,session,weather):
         for driver in drivers:
             tire = TIRE_SETS[driver.name][0]
             tire_left = tire.tire_left(driver,circuit,TIRE_USAGE[driver.name])
-            
+
             if SAFETY_CAR[lap][-1] == 1:
                 current_laptime = round(tire.laptime(driver,circuit,lap,TIRE_USAGE[driver.name],['sunday',GRID[driver.name]],TT3,'STABLE'),3)
             else:
@@ -2193,6 +2191,18 @@ def R(circuit,session,weather):
                                 TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                                 PENALTY[driver.name].append(5)
                                 print(f'{Fore.CYAN}PEN | Lap {strlap} | 5 secs. penalty to {driver.name} for the excessive amount of corner-cutting. {Style.RESET_ALL}')
+                            elif lap >= 10:
+                                    if (AHEAD[driver.name][-1] >= 6.999) & (BEHIND[driver.name][-1] >= 6.999) & (lap + 2 >= circuit.circuit_laps) & (tire_left >= 59.999):
+                                        push = round(uniform(((driver.pace + driver.fitness)/232),((driver.pace + driver.fitness)/162)),3)
+                                        LAP_CHART[driver.name].append(current_laptime - push)
+                                        TIRE_CHART[driver.name].append(tire.title[0])
+                                        TIRE_USAGE[driver.name] += 2.25
+                                        TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
+                                    else:
+                                        LAP_CHART[driver.name].append(current_laptime)
+                                        TIRE_CHART[driver.name].append(tire.title[0])
+                                        TIRE_USAGE[driver.name] += 1
+                                        TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                             else:
                                 LAP_CHART[driver.name].append(current_laptime)
                                 TIRE_CHART[driver.name].append(tire.title[0])
@@ -2535,11 +2545,15 @@ def R(circuit,session,weather):
                     elif circuit.overtake_difficulty == 'Impossible':
                         minimum_delta_needed_t = 0.125 - rodrygo
 
-                    everywhere_plus =(FIA(current)[16])
+                    if W3 == 'Dry':
+                        everywhere_plus = (FIA(current)[16])
+                    else:
+                        everywhere_plus = (FIA(current)[16]) + uniform(0.299,0.501)
+                    
                     if lap > 1:
                         if DRAG_REDUCTION_SYSTEM == False: # Non-drs Pass Try
                             if ATTACKING_MOMENT <= minimum_delta_needed_t:
-                                if ((defender_obj.defence) + DEFENDER_DICE + (ATTACKING_MOMENT*13)) <= ((attacker_obj.attack) + ATTACKER_DICE):
+                                if ((defender_obj.defence + 5) + DEFENDER_DICE + (ATTACKING_MOMENT*13)) <= ((attacker_obj.attack) + ATTACKER_DICE):
                                     # Passed Normally
                                     defender_plus = (gap_in_front) + (FIA(current)[16]) + (everywhere_plus)
                                     attacker_plus = (everywhere_plus)
@@ -2560,7 +2574,7 @@ def R(circuit,session,weather):
                                 LAP_CHART[defender][-1] += FIA(current)[16]
                                 LAP_CHART[attacker][-1] -= drs_advantage
                             elif DRS_ATTACKING_MOMENT <= minimum_delta_needed_t:
-                                if ((defender_obj.defence) + DEFENDER_DICE + (DRS_ATTACKING_MOMENT*13)) <= ((attacker_obj.attack) + ATTACKER_DICE):
+                                if ((defender_obj.defence + 5) + DEFENDER_DICE + (DRS_ATTACKING_MOMENT*13)) <= ((attacker_obj.attack) + ATTACKER_DICE):
                                     LAP_CHART[attacker][-1] -= drs_advantage
                                     defender_plus = (gap_in_front) + (FIA(current)[16]) + (everywhere_plus)
                                     attacker_plus = (everywhere_plus)
@@ -2615,12 +2629,12 @@ def R(circuit,session,weather):
             gap_behind = d9_new[ixxxxx]
             
             if maxxx == ixxxxx + 1:
-                AHEAD[chaffeur].append(30000)
+                AHEAD[chaffeur].append(100.000)
             else:
                 AHEAD[chaffeur].append(gap_ahead)
 
             if minnn == ixxxxx:
-                BEHIND[chaffeur].append(None)
+                BEHIND[chaffeur].append(0.000)
             else:
                 BEHIND[chaffeur].append(gap_behind)
 
@@ -2884,18 +2898,23 @@ if execution == 'simulation':
         for i in drivers:
             chart[i.name] = [FP1RESULT[i.name],FP2RESULT[i.name],FP3RESULT[i.name]]
             tireset = (chart[i.name].index(min(chart[i.name]))) + 1
-            if tireset == 1:
+            if W1 != 'Dry':
                 for q in CRC.strategy[0]:
                     TIRE_SETS[i.name].append(q)
                 STINT[i.name].append(CRC.strategy[0][0].title[0])
-            elif tireset == 2:
-                for q in CRC.strategy[1]:
-                    TIRE_SETS[i.name].append(q)
-                STINT[i.name].append(CRC.strategy[1][0].title[0])
-            elif tireset == 3:
-                for q in CRC.strategy[2]:
-                    TIRE_SETS[i.name].append(q)
-                STINT[i.name].append(CRC.strategy[2][0].title[0])
+            else:
+                if tireset == 1:
+                    for q in CRC.strategy[0]:
+                        TIRE_SETS[i.name].append(q)
+                    STINT[i.name].append(CRC.strategy[0][0].title[0])
+                elif tireset == 2:
+                    for q in CRC.strategy[1]:
+                        TIRE_SETS[i.name].append(q)
+                    STINT[i.name].append(CRC.strategy[1][0].title[0])
+                elif tireset == 3:
+                    for q in CRC.strategy[2]:
+                        TIRE_SETS[i.name].append(q)
+                    STINT[i.name].append(CRC.strategy[2][0].title[0])
     elif W3 == 'Dump':
         for i in drivers:
             for q in [inter,inter,inter,inter]:
