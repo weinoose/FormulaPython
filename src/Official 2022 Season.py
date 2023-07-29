@@ -12,7 +12,7 @@ import sys
 # We assume that Monte-Carlo GP should be 91 laps instead of 78 laps in terms of completing 303K kilometers as traditions do.
 
 # Application Modes: data or simulation for output/run mode.
-execution = 'simulation'
+execution = 'data'
 
 # Regulation Selection
 regulation = '2022'
@@ -901,11 +901,11 @@ class Manufacturer():
                 return (((((self.max_speed+self.acceleration)/2)*5) + (self.downforce*3) + (self.vortex*2) + (self.braking*1))/11)
         elif circuit_type == 'Agility Circuit':
             if self.V1 == 'Straights':
-                return (((self.max_speed*5) + (self.braking*3) + (self.vortex*2) + (self.downforce*1))/11) + 0.349
+                return (((self.max_speed*6) + (self.acceleration*2) + (self.braking*1) + (self.vortex*1) + (self.downforce*1))/11) + 0.349
             elif self.V1 == 'Corners':
-                return (((self.max_speed*5) + (self.braking*3) + (self.vortex*2) + (self.downforce*1))/11)
+                return (((self.max_speed*6) + (self.acceleration*2) + (self.braking*1) + (self.vortex*1) + (self.downforce*1))/11)
             else:
-                return (((self.max_speed*5) + (self.braking*3) + (self.vortex*2) + (self.downforce*1))/11)
+                return (((self.max_speed*6) + (self.acceleration*2) + (self.braking*1) + (self.vortex*1) + (self.downforce*1))/11)
         elif circuit_type == 'Quickness Circuit':
             return (((self.max_speed*4) + (self.downforce*4) + (self.vortex*2) + (self.braking*1))/11)
         elif circuit_type == 'Completeness Circuit':
@@ -1003,11 +1003,11 @@ if spec == 'Formula 1':
     RUS = Driver(mercedes,'George Russell','GBR',63,91,92,87,90,86,94,90,86,86,87,86,['São Paulo','Budapest','Barcelona'],['Wild',None])
     NOR = Driver(mclaren,'Lando Norris','GBR',4,92,91,87,92,85,94,83,87,87,86,87,['Sochi','Spielberg','Imola'],[None,None])
     VET = Driver(astonmartin,'Sebastian Vettel','GER',5,89,91,90,94,88,89,92,94,93,91,93,['Monte-Carlo','Singapore','India','Suzuka','Sepang','Valencia','Montréal'],[None,'Weak Front'])
-    ALO = Driver(alpine,'Fernando Alonso','ESP',14,87,89,92,93,90,95,86,93,94,94,91,['Budapest','Silverstone','Monza','Barcelona','Valencia','Singapore'],[None,None])
+    ALO = Driver(alpine,'Fernando Alonso','ESP',14,85,89,92,93,90,95,86,93,94,94,91,['Budapest','Silverstone','Monza','Barcelona','Valencia','Singapore'],[None,None])
     PER = Driver(redbull,'Sergio Pérez','MEX',11,86,90,94,91,87,92,85,91,95,92,90,['Baku','Jeddah','Monte-Carlo'],['Calm',None])
-    BOT = Driver(alfaromeo,'Valtteri Bottas','FIN',77,89,88,87,89,90,84,80,85,92,89,84,['Sochi','Spielberg','Silverstone'],['Calm',None])
-    SAI = Driver(ferrari,'Carlos Sainz Jr.','ESP',55,88,88,85,87,89,91,84,89,88,85,88,['Monte-Carlo','Silverstone'],['Calm',None])
-    OCO = Driver(alpine,'Esteban Ocon','FRA',31,85,87,87,89,86,91,94,90,90,88,87,['Budapest'],[None,None])
+    SAI = Driver(ferrari,'Carlos Sainz Jr.','ESP',55,89,88,85,87,89,91,84,89,88,85,88,['Monte-Carlo','Silverstone'],['Calm',None])
+    OCO = Driver(alpine,'Esteban Ocon','FRA',31,87,87,87,89,90,91,94,90,90,88,87,['Budapest'],[None,None])
+    BOT = Driver(alfaromeo,'Valtteri Bottas','FIN',77,88,88,87,89,86,84,80,85,92,89,84,['Sochi','Spielberg','Silverstone'],['Calm',None])
     GAS = Driver(alphatauri,'Pierre Gasly','FRA',10,86,86,85,86,85,85,81,84,81,87,85,['Monza'],[None,None])
     STR = Driver(astonmartin,'Lance Stroll','CAN',18,83,83,85,88,86,90,93,88,89,85,89,['Baku'],[None,None])
     MAG = Driver(haas,'Kevin Magnussen','DEN',20,81,85,85,88,83,86,90,86,85,84,84,['São Paulo'],[None,None])
