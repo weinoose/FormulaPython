@@ -403,13 +403,31 @@ class Tire():
         for j in np.arange((((driver.wet + driver.race_pace())/2)-CRU),(((driver.wet + driver.race_pace())/2)+CRD),0.01):
             WET.append(j)
 
+        for i in list(range(1,6)):
+            SATURDAY.append(SATURDAY[-1] + i)
+            SATURDAY.append(SATURDAY[-1])
+            SUNDAY.append(SUNDAY[-1] + i)
+            SUNDAY.append(SUNDAY[-1])
+            WET.append(WET[-1] + i)
+            WET.append(WET[-1])
+
+        for i in list(range(1,19)):
+            SATURDAY.append(SATURDAY[0])
+            SUNDAY.append(SUNDAY[0])
+            WET.append(WET[0])
+
+        for i in list(range(1,13)):
+            SUNDAY.append(SUNDAY[0] - i)
+            SATURDAY.append(SATURDAY[0] - i)
+            WET.append(WET[0] - i)
+
         if FIA(current)[1] == True:
             # Closed, Open
             drs = [0,(-1.0)*((0.250) + driver.team.drs_delta/200)]
         else:
             drs = [0,0]
         
-        if mode[0] == 'saturday':                
+        if mode[0] == 'saturday':              
             engine_mode = (0.600 + ((driver.team.powertrain.power)/100))*(-1.0) # Mode 3
             if self.title == 'Wet':
                 CL2 = ((((choice(WET)/100)**2)*4.00) + hotlap)*(-1.0) + (engine_mode + drs[0]) + (ERROR) + (BEST) + (CAR_DRIVER_CHEMISTRY) - (driver.form)
@@ -2167,7 +2185,7 @@ def R(circuit,session,weather):
                                     pit_stop = round(driver.team.pit(),3)
                                     PIT[driver.name].append(1)
                                     print(f'PIT | Lap {strlap} | {driver.name} is gonna attempt the fastest lap! He is in the pits, willing to switch into the {tire.title} compound.')
-                                    FLT[driver.name].append(1)
+                                    FLT[driver.name].append(lap)
                                     if 10 > pit_stop >= 5.0:
                                         print(f'PIT | Lap {strlap} | Bad news for {driver.name} with {pit_stop} seconds stationary. He is on {tire.title} compound.')
                                     elif pit_stop >= 10:
@@ -2191,18 +2209,11 @@ def R(circuit,session,weather):
                                 TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                                 PENALTY[driver.name].append(5)
                                 print(f'{Fore.CYAN}PEN | Lap {strlap} | 5 secs. penalty to {driver.name} for the excessive amount of corner-cutting. {Style.RESET_ALL}')
-                            elif lap >= 10:
-                                    if (AHEAD[driver.name][-1] >= 6.999) & (BEHIND[driver.name][-1] >= 6.999) & (lap + 2 >= circuit.circuit_laps) & (tire_left >= 59.999):
-                                        push = round(uniform(((driver.pace + driver.fitness)/232),((driver.pace + driver.fitness)/162)),3)
-                                        LAP_CHART[driver.name].append(current_laptime - push)
-                                        TIRE_CHART[driver.name].append(tire.title[0])
-                                        TIRE_USAGE[driver.name] += 2.25
-                                        TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
-                                    else:
-                                        LAP_CHART[driver.name].append(current_laptime)
-                                        TIRE_CHART[driver.name].append(tire.title[0])
-                                        TIRE_USAGE[driver.name] += 1
-                                        TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
+                            elif sum(FLT[driver.name]) > lap:
+                                LAP_CHART[driver.name].append(current_laptime - (((driver.team.powertrain.power)/125)))
+                                TIRE_CHART[driver.name].append(tire.title[0])
+                                TIRE_USAGE[driver.name] += 2
+                                TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                             else:
                                 LAP_CHART[driver.name].append(current_laptime)
                                 TIRE_CHART[driver.name].append(tire.title[0])
@@ -2220,7 +2231,7 @@ def R(circuit,session,weather):
                     elif MECHANICAL[driver.name][0] == 'Permanent Bodywork Damage':
                         dzeko = uniform(1.499,2.999)
                     elif MECHANICAL[driver.name][0] in ['MGU-K','MGU-H','ERS','control electronics','energy store']:
-                        dzeko = (((driver.team.powertrain.power/75)*(-1.0))/3)
+                        dzeko = (((driver.team.powertrain.power/75)*(1.0))/2)
                     elif MECHANICAL[driver.name][0] in ['engine modes', 'engine braking']:
                         dzeko = uniform(0.499,1.499)
                     elif MECHANICAL[driver.name][0] in ['engine cooling','brake cooling','exhaust system']:
