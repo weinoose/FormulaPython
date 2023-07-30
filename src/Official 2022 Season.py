@@ -463,7 +463,7 @@ class Tire():
 
         if mode[0] == 'sunday': 
             if lap == 1:
-                return ((CL0) + (OPENING) + 47.5)
+                return (((CL0/5)) + (OPENING) + 90.0)
             else:
                 return (CL0) + (CL1) + (CL2)
         else:
