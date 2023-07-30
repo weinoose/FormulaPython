@@ -770,21 +770,6 @@ class Engine():
         self.power = power
         self.durability = durability
 
-# Formula 1 Engines
-HONDA_0 = Engine('Honda',FIA(current)[5],94,77) # Red Bull
-HONDA_1 = Engine('Honda',FIA(current)[5],94,77) # AlphaTauri
-FERRARI_F = Engine('Ferrari',FIA(current)[5],93,71) # Ferrari
-FERRARI_0 = Engine('Ferrari',FIA(current)[5],93,71) # Haas
-FERRARI_1 = Engine('Ferrari',FIA(current)[5],93,71) # Alfa Romeo
-RENAULT_F = Engine('Renault',FIA(current)[5],87,72) # Alpine
-MERCEDES_F = Engine('Mercedes',FIA(current)[5],87,92) # Mercedes
-MERCEDES_0 = Engine('Mercedes',FIA(current)[5],87,92) # Williams
-MERCEDES_1 = Engine('Mercedes',FIA(current)[5],87,92) # Aston Martin
-MERCEDES_2 = Engine('Mercedes',FIA(current)[5],87,92) # McLaren
-
-# Formula 2 Engines
-MECACHROME = Engine('Mecachrome',FIA(current)[5],86,76) # F2 Spec. Only
-
 # Manufacturers
 class Manufacturer():
     def __init__(self,title,crew,powertrain,chassis,FW,RW,base,sidepod,suspension,reliability,weight):
@@ -969,6 +954,21 @@ class Driver():
             return (variable/2)
         else:
             return 0
+
+# Formula 1 Engines
+HONDA_0 = Engine('Honda',FIA(current)[5],94,77) # Red Bull
+HONDA_1 = Engine('Honda',FIA(current)[5],94,77) # AlphaTauri
+FERRARI_F = Engine('Ferrari',FIA(current)[5],93,71) # Ferrari
+FERRARI_0 = Engine('Ferrari',FIA(current)[5],93,71) # Haas
+FERRARI_1 = Engine('Ferrari',FIA(current)[5],93,71) # Alfa Romeo
+RENAULT_F = Engine('Renault',FIA(current)[5],87,72) # Alpine
+MERCEDES_F = Engine('Mercedes',FIA(current)[5],87,92) # Mercedes
+MERCEDES_0 = Engine('Mercedes',FIA(current)[5],87,92) # Williams
+MERCEDES_1 = Engine('Mercedes',FIA(current)[5],87,92) # Aston Martin
+MERCEDES_2 = Engine('Mercedes',FIA(current)[5],87,92) # McLaren
+
+# Formula 2 Engines
+MECACHROME = Engine('Mecachrome',FIA(current)[5],86,76) # F2 Spec. Only
 
 if spec == 'Formula 1':
     mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team','Good',MERCEDES_F,91,89,84,89,79,89,106,+0.00)
@@ -2425,7 +2425,7 @@ def R(circuit,session,weather):
                             BOX[attacker].append(True)
                             LAP_CHART[attacker][-1] += uniform(1.51,2.49)
 
-                        if uniform(0.1,100.1) > 0.40:
+                        if uniform(0.1,100.1) > 40.00:
                             SAFETY_CAR[lap+1].append(1)
                             SAFETY_CAR[lap+2].append(1)
                             SAFETY_CAR[lap+3].append(1)
@@ -2443,7 +2443,7 @@ def R(circuit,session,weather):
 
                         LAP_CHART[defender][-1] += uniform(0.09,5.91)
                         
-                        if uniform(0.1,100.1) > 0.275:
+                        if uniform(0.1,100.1) > 27.500:
                             SAFETY_CAR[lap+1].append(1)
                             SAFETY_CAR[lap+2].append(1)
                             SAFETY_CAR[lap+3].append(1)
@@ -2461,7 +2461,7 @@ def R(circuit,session,weather):
                         
                         LAP_CHART[attacker][-1] += uniform(0.09,5.91)
 
-                        if uniform(0.1,100.1) > 0.275:
+                        if uniform(0.1,100.1) > 27.500:
                             SAFETY_CAR[lap+1].append(1)
                             SAFETY_CAR[lap+2].append(1)
                             SAFETY_CAR[lap+3].append(1)
