@@ -1745,8 +1745,8 @@ def Q(circuit,session,weather):
                 tire_left = tire.tire_left(driver,circuit,tire_usage)
 
                 # track adaptation.
-                folks0 = round(((0.499) - (((driver.adaptability)*((333) + (100-driver.adaptability)))/100000) + ((100-driver.adaptability)/100)),3)
-                folks1 = round(((0.499) - (((driver.adaptability)*((333) + (100-driver.adaptability)))/100000) + ((100-driver.adaptability)/499)),3)
+                folks0 = uniform((((200)-(driver.adaptability-((200-driver.fitness)/(31))))/(169)),(((200)-(driver.adaptability+(driver.fitness/13)))/(169)))
+                folks1 = uniform((((200)-(driver.adaptability-((200-driver.fitness)/(31))))/(331)),(((200)-(driver.adaptability+(driver.fitness/13)))/(331)))
 
                 if c == 0:
                     current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0],TT2,None) + (folks0),3)
