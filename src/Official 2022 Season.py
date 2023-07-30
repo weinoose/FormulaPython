@@ -12,7 +12,7 @@ import sys
 # We assume that Monte-Carlo GP should be 91 laps instead of 78 laps in terms of completing 303K kilometers as traditions do.
 
 # Application Modes: data or simulation for output/run mode.
-execution = 'data'
+execution = 'simulation'
 
 # Regulation Selection
 regulation = '2022'
@@ -2273,7 +2273,7 @@ def R(circuit,session,weather):
                         if K.name == defender:
                             defender_obj = K
                     
-                    following_distance = (0.444)*(position-1)
+                    following_distance = (1.299 - FIA(current)[16])*(position-1)
 
                     if position == 1:
                         LAP_CHART[attacker_obj.name][-1] = LAP_CHART[attacker_obj.name][-1] + (circuit.laptime + 125)
@@ -2288,8 +2288,6 @@ def R(circuit,session,weather):
                             LAP_CHART[attacker_obj.name][-1] = LAP_CHART[attacker_obj.name][-1] + (following_distance - interval) + (circuit.laptime + 125)
             else:
                 pass
-        elif (SAFETY_CAR[lap-1][-1] == 1):
-            pass
         else:
             # Lap by Lap Analysis for Overtaking/Defence Situations
             temp, temptirenamedata = pd.DataFrame(), pd.DataFrame()

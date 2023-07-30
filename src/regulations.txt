@@ -1,9 +1,8 @@
 CAR DEVELOPMENT/PRODUCTION REGULATIONS
 * In-year car development is active for all regulations terms.
 * In terms of car development, there is no development limitation in each season or regulation period.
-* In terms of durability updates, it is eligible at the middle of the season within a -6/+6 ratio.
-* In terms of the -6/+6 ratio update, every +1 upgrade for durability costs 2 points for car traits. The other way around is the same 2 for 1 is eligible.
-* In terms of car weight updates, it is eligible at the start of the season. Every -1 kilo upgrade costs 2 points of car traits. No other way around.
+* In terms of durability updates, it is eligible at the start of the season within a -6/+6 ratio. Every 1 upgrade for durability costs 2 points for car traits. The other way around is the same.
+* In terms of car weight updates, it is eligible at the start of the season within a -4/+4 ratio. Every 1 kilo lighten costs 2 points of car traits. The other way around is the same.
 * In terms of engine performance development, it is eligible from the middle of the season to the end of the season within a -4/+4 ratio.
 * Car production cost is between 13M$ and 33M$
 
