@@ -462,11 +462,11 @@ class Tire():
                 DFORM[driver.name].append(CL2)
 
         if W3 == 'Dry':
-            IGNITION = (((CL0/5)) + (OPENING) + ((circuit.laptime)*1.73077))
+            IGNITION = ((((CL0/5)) + (OPENING))) + (circuit.laptime + 42.5)
         elif W3 == 'Dump':
-            IGNITION = ((((CL0/5)) + (OPENING) + ((circuit.laptime)*1.73077))) + (((circuit.laptime)*(13.00))/((90.00)))
+            IGNITION = ((((CL0/5)) + (OPENING))) + (((circuit.laptime)*(25.00))/((90.00))) + (circuit.laptime + 40.5)
         elif  W3 == 'Wet':
-            IGNITION = ((((CL0/5)) + (OPENING) + ((circuit.laptime)*1.73077))) + (((circuit.laptime)*(21.00))/((90.00)))
+            IGNITION = ((((CL0/5)) + (OPENING))) + (((circuit.laptime)*(35.00))/((90.00))) + (circuit.laptime + 40.5)
 
         if mode[0] == 'sunday': 
             if lap == 1:
