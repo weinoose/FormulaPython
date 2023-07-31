@@ -963,31 +963,31 @@ class Driver():
             return 0
 
 # Formula 1 Engines
-HONDA_0 = Engine('Honda',FIA(current)[5],94,77) # Red Bull
-HONDA_1 = Engine('Honda',FIA(current)[5],94,77) # AlphaTauri
+HONDA_0 = Engine('Honda',FIA(current)[5],94,74) # Red Bull
+HONDA_1 = Engine('Honda',FIA(current)[5],94,74) # AlphaTauri
 FERRARI_F = Engine('Ferrari',FIA(current)[5],93,71) # Ferrari
 FERRARI_0 = Engine('Ferrari',FIA(current)[5],93,71) # Haas
 FERRARI_1 = Engine('Ferrari',FIA(current)[5],93,71) # Alfa Romeo
-RENAULT_F = Engine('Renault',FIA(current)[5],87,72) # Alpine
-MERCEDES_F = Engine('Mercedes',FIA(current)[5],87,92) # Mercedes
-MERCEDES_0 = Engine('Mercedes',FIA(current)[5],87,92) # Williams
-MERCEDES_1 = Engine('Mercedes',FIA(current)[5],87,92) # Aston Martin
-MERCEDES_2 = Engine('Mercedes',FIA(current)[5],87,92) # McLaren
+RENAULT_F = Engine('Renault',FIA(current)[5],87,77) # Alpine
+MERCEDES_F = Engine('Mercedes',FIA(current)[5],87,93) # Mercedes
+MERCEDES_0 = Engine('Mercedes',FIA(current)[5],87,93) # Williams
+MERCEDES_1 = Engine('Mercedes',FIA(current)[5],87,93) # Aston Martin
+MERCEDES_2 = Engine('Mercedes',FIA(current)[5],87,93) # McLaren
 
 # Formula 2 Engines
 MECACHROME = Engine('Mecachrome',FIA(current)[5],86,76) # F2 Spec. Only
 
 if spec == 'Formula 1':
-    mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team','Good',MERCEDES_F,91,89,84,89,79,89,106,+0.00)
-    redbull = Manufacturer('Oracle Red Bull Racing','Perfect',HONDA_0,89,89,92,94,92,92,86,+0.00)
+    mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team','Good',MERCEDES_F,91,89,84,89,79,89,102,+0.00)
+    redbull = Manufacturer('Oracle Red Bull Racing','Perfect',HONDA_0,89,89,92,94,92,92,82,+0.00)
     ferrari = Manufacturer('Scuderia Ferrari','Average',FERRARI_F,96,96,89,91,94,79,79,+0.00)
-    mclaren = Manufacturer('McLaren F1 Team','Perfect',MERCEDES_2,79,84,79,84,84,84,106,+0.00)
-    alpine = Manufacturer('BWT Alpine F1 Team','Good',RENAULT_F,86,82,82,86,86,82,82,+0.00)
-    alphatauri = Manufacturer('Scuderia AlphaTauri','Good',HONDA_1,74,77,84,84,74,74,82,+0.00)
-    astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team','Average',MERCEDES_1,79,79,79,81,81,79,104,+0.00)
+    mclaren = Manufacturer('McLaren F1 Team','Perfect',MERCEDES_2,79,84,79,84,84,84,102,+0.00)
+    alpine = Manufacturer('BWT Alpine F1 Team','Good',RENAULT_F,86,82,82,86,86,82,76,+0.00)
+    alphatauri = Manufacturer('Scuderia AlphaTauri','Good',HONDA_1,74,77,84,84,74,74,74,+0.00)
+    astonmartin = Manufacturer('Aston Martin Aramco Cognizant F1 Team','Average',MERCEDES_1,79,79,79,81,81,79,90,+0.00)
     williams = Manufacturer('Williams Racing','Good',MERCEDES_0,77,77,77,77,84,88,104,+0.00)
-    alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen','Good',FERRARI_1,86,84,79,79,79,79,84,+0.00)
-    haas = Manufacturer('Haas F1 Team','Good',FERRARI_0,84,81,81,79,79,79,84,+0.00)
+    alfaromeo = Manufacturer('Alfa Romeo F1 Team Orlen','Good',FERRARI_1,86,84,79,79,79,79,80,+0.00)
+    haas = Manufacturer('Haas F1 Team','Good',FERRARI_0,84,81,81,79,79,79,80,+0.00)
     manufacturers = [mercedes,redbull,ferrari,mclaren,alpine,alphatauri,astonmartin,williams,alfaromeo,haas]
 elif spec == 'Formula 2':
     prema = Manufacturer('Prema Racing','Good',MECACHROME,91,91,91,85,85,85,85,+0.00) # 4th best.
@@ -1755,7 +1755,7 @@ def Q(circuit,session,weather):
                 else:
                     current_laptime = round(tire.laptime(driver,circuit,lap,tire_usage,['saturday',0],TT2,None) + (0.000),3)
 
-                DO_NOT_FINISHED = (((((((((((driver.team.reliability + driver.team.powertrain.durability)/2))+(driver.team.powertrain.fuel.vulnerability))*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,23750)
+                DO_NOT_FINISHED = (((((((((((driver.team.reliability + driver.team.powertrain.durability)/2))+(driver.team.powertrain.fuel.vulnerability))*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,27500)
                 
                 if W3 == 'Dump':
                     driver_error_odd = (((((((driver.fitness*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,67500)
@@ -1875,7 +1875,7 @@ def R(circuit,session,weather):
                 current_laptime = round(tire.laptime(driver,circuit,lap,TIRE_USAGE[driver.name],['sunday',GRID[driver.name]],TT3,'STABLE'),3)
             else:
                 current_laptime = round(tire.laptime(driver,circuit,lap,TIRE_USAGE[driver.name],['sunday',GRID[driver.name]],TT3,None),3)
-            DO_NOT_FINISHED = (((((((((((driver.team.reliability + driver.team.powertrain.durability)/2))+(driver.team.powertrain.fuel.vulnerability))*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,23750)
+            DO_NOT_FINISHED = (((((((((((driver.team.reliability + driver.team.powertrain.durability)/2))+(driver.team.powertrain.fuel.vulnerability))*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,27500)
             
             if W3 == 'Dump':
                 driver_error_odd = (((((((driver.fitness*(-1.0))**3)/60000)+17))/1.7)**3) > uniform(0,67500)
@@ -2008,7 +2008,7 @@ def R(circuit,session,weather):
                         TIRE_USAGE[driver.name] += 0
                         TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
 
-                        if uniform(0.01,100.01) < 20.01:
+                        if uniform(0.01,100.01) < 10.001:
                             SAFETY_CAR[lap+1].append(1)
                             SAFETY_CAR[lap+2].append(1)
                             SAFETY_CAR[lap+3].append(1)
@@ -2025,27 +2025,16 @@ def R(circuit,session,weather):
                         TIRE_CHART[driver.name].append(tire.title[0])
                         TIRE_USAGE[driver.name] += 0
                         TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
-
                         SAFETY_CAR[lap+1].append(1)
                         SAFETY_CAR[lap+2].append(1)
                         SAFETY_CAR[lap+3].append(1)
-                        SAFETY_CAR[lap+4].append(1)
-                        
+                        SAFETY_CAR[lap+4].append(1)          
                         DNF[driver.name].append(True)
                     else:                        
                         camavinga = choice(['crash','crash','crash','crash','crash','crash','crash','crash','crash'
                                             'kerb tangle','kerb tangle','front-wing','bodywork','bodywork'])
                         if camavinga == 'crash':         
                             TIRE_USAGE[driver.name] += 5
-                    
-                            if uniform(0.01,100.01) < 25.01:
-                                SAFETY_CAR[lap+1].append(1)
-                                SAFETY_CAR[lap+2].append(1)
-                                SAFETY_CAR[lap+3].append(1)
-                                SAFETY_CAR[lap+4].append(1)
-                            else:
-                                pass             
-
                             TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
                             TIRE_CHART[driver.name].append(tire.title[0])
                             TIRE_SETS[driver.name].append(s)           
@@ -2353,11 +2342,11 @@ def R(circuit,session,weather):
                 ACCIDENT = abs((uniform(0,25) + attacker_obj.attack) - (uniform(0,25) + defender_obj.defence))
                 
                 if lap == 1:
-                    BANGER = (uniform(0,100) <= FIA(current)[17] + 25)
+                    BANGER = (uniform(0,89) <= FIA(current)[17] + 25)
                 else:
-                    BANGER = (uniform(0,100) <= FIA(current)[17])
+                    BANGER = (uniform(0,99) <= FIA(current)[17])
 
-                if (ACCIDENT <= (attacker_obj.aggression/200) + (defender_obj.aggression/200)) & (BANGER) & (ATTACKING_MOMENT <= (FIA(current)[16] + 1.000)):
+                if (ACCIDENT <= (attacker_obj.aggression/200) + (defender_obj.aggression/200)) & (BANGER) & (ATTACKING_MOMENT <= (FIA(current)[16]*2)):
                     INCIDENT = choice(['DOUBLE DNF','DEFENDER DNF & ATTACKER DAMAGED','ATTACKER DNF & DEFENDER DAMAGED'
                                     'DOUBLE DAMAGED','DEFENDER CLEAR & ATTACKER DAMAGED','ATTACKER CLEAR & DEFENDER DAMAGED',
                                     'DEFENDER DNF & ATTACKER CLEAR','ATTACKER DNF & DEFENDER CLEAR'])
@@ -2432,7 +2421,7 @@ def R(circuit,session,weather):
                             BOX[attacker].append(True)
                             LAP_CHART[attacker][-1] += uniform(1.51,2.49)
 
-                        if uniform(0.1,100.1) > 40.00:
+                        if uniform(0.1,100.1) < 25.001:
                             SAFETY_CAR[lap+1].append(1)
                             SAFETY_CAR[lap+2].append(1)
                             SAFETY_CAR[lap+3].append(1)
@@ -2450,7 +2439,7 @@ def R(circuit,session,weather):
 
                         LAP_CHART[defender][-1] += uniform(0.09,5.91)
                         
-                        if uniform(0.1,100.1) > 27.500:
+                        if uniform(0.1,100.1) < 20.001:
                             SAFETY_CAR[lap+1].append(1)
                             SAFETY_CAR[lap+2].append(1)
                             SAFETY_CAR[lap+3].append(1)
@@ -2468,7 +2457,7 @@ def R(circuit,session,weather):
                         
                         LAP_CHART[attacker][-1] += uniform(0.09,5.91)
 
-                        if uniform(0.1,100.1) > 27.500:
+                        if uniform(0.1,100.1) < 20.001:
                             SAFETY_CAR[lap+1].append(1)
                             SAFETY_CAR[lap+2].append(1)
                             SAFETY_CAR[lap+3].append(1)
