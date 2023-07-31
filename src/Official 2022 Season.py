@@ -2198,6 +2198,35 @@ def R(circuit,session,weather):
                                     TIRE_CHART[driver.name].append(tire.title[0])
                                     TIRE_USAGE[driver.name] += 1
                                     TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
+                            elif (lap + 3 > circuit.circuit_laps) & (W3 == 'Dry') & (len(PITTED_LAPS[driver.name]) == 0) & (PIT_AVAILABILITY()):
+                                TIRE_USAGE[driver.name] = 0
+                                TIRE_SETS[driver.name].pop(0)
+                                tire = TIRE_SETS[driver.name][0]
+                                STINT[driver.name].append(f'-{tire.title[0]}')
+                                pit_stop = round(driver.team.pit(),3)
+
+                                if sum(PENALTY[driver.name]) != 0:
+                                    gabigol = sum(PENALTY[driver.name])
+                                    pit_stop += sum(PENALTY[driver.name])
+                                    PENALTY[driver.name].clear()
+                                    PENALTY[driver.name].append(0)
+                                    print(f'PIT | Lap {strlap} | Pit-stop for {driver.name} but, he has to pay-off his {gabigol} second penalty first. Pit-crew is waiting along.')
+                                else:
+                                    gabigol = 0
+                            
+                                PIT[driver.name].append(1)
+                                KTM = round(pit_stop - gabigol,3)
+                                if 10 > KTM >= 5.0:
+                                    print(f'PIT | Lap {strlap} | Bad news for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
+                                elif KTM >= 10:
+                                    print(f'PIT | Lap {strlap} | Disaster for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
+                                else:
+                                    print(f'PIT | Lap {strlap} | Pit-stop for {driver.name} with {KTM} seconds stationary. He is on {tire.title} compound.')
+                                LAP_CHART[driver.name].append(current_laptime + pit_stop + 20)
+                                TIRE_CHART[driver.name].append(tire.title[0])
+                                TIRE_USAGE[driver.name] += 1
+                                TIRE_LEFT[driver.name].append(f'{tire.title[0]} %{tire_left}')
+                                PITTED_LAPS[driver.name].append(lap)
                             elif uniform(0.01,100.01) <= ((100-driver.fitness)/125):
                                 LAP_CHART[driver.name].append(current_laptime - 0.325)
                                 TIRE_CHART[driver.name].append(tire.title[0])
