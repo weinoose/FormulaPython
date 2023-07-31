@@ -2538,7 +2538,7 @@ def R(circuit,session,weather):
                     else:
                         pass
 
-                else: # THIS SECTION NOT ACTIVE AT THE MOMENT
+                else:
                     if defender_obj.defence > attacker_obj.attack:
                         DEFENDER_DICE = uniform(0.1,19.9)
                         ATTACKER_DICE = uniform(0.1,((24.9)+(attacker_obj.attack-defender_obj.defence)))
