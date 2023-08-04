@@ -18,7 +18,7 @@ execution = 'simulation'
 regulation = '2022'
 
 # GP Selection
-GP = 'Sakhir'
+GP = 'Monza'
 
 # Spec. Selection
 spec = 'Formula 1'
