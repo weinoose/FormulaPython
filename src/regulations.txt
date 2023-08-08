@@ -16,7 +16,14 @@ CAR DEVELOPMENT FINANCIAL REGULATIONS
 
 FINANCIAL REGULATIONS
 * In terms of stopping the in-year development process and transferring future income for next year car is only available 7 races left to the season-end.
-* Maximum amount of transfer would be considered as 14 Million $.
+* In terms of stopping the in-year development process and transferring future income for next year car yields extra +1M in each race.
+
+DIFFERENCES FROM REAL FORMULA ONE RACING
+* We assume that there were no prohibitions for tire changes in 2005, contrary to the truth.
+* We assume that the blown diffuser was never banned, contrary to the truth.
+* We assume that every year of formula racing has the same post-race points distribution, contrary to the truth.
+* We assume that Bridgestone is the only tire manufacturer during the era between 1998 and 2008, contrary to the truth.
+* We assume that refuelling was banned and drivers starts the race with a full tank during the era between 1998 and 2008, contrary to the truth.
 
 PRIZE MONEY PER RACE for EVERY REGULATION INTERVAL
 1st - 0.5 Million $
@@ -79,13 +86,6 @@ PRIZE MONEY AT THE END OF THE SEASON for 2005/2016/2017/2021 REGULATIONS
 7th - 20 Million $
 8th - 18 Million $
 9th and more - 14 Million $
-
-DIFFERENCES FROM REAL FORMULA ONE RACING
-* We assume that there were no prohibitions for tire changes in 2005, contrary to the truth.
-* We assume that the blown diffuser was never banned, contrary to the truth.
-* We assume that every year of formula racing has the same post-race points distribution, contrary to the truth.
-* We assume that Bridgestone is the only tire manufacturer during the era between 1998 and 2008, contrary to the truth.
-* We assume that refuelling was banned and drivers starts the race with a full tank during the era between 1998 and 2008, contrary to the truth.
 
 REGULATIONS
 1998-1999-2000-2001-2002-2003-2004
