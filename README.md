@@ -35,3 +35,4 @@ Feel free to contact me about that: weinoose@gmail.com
 * 29/07/2023 — v2.40 — In-game bugs have been cleared.
 * 30/07/2023 — v2.50 — In-game bugs have been cleared.
 * 31/07/2023 — v2.60 — In-game bugs have been cleared.
+* 09/08/2023 — v2.70 — In-game bugs have been cleared.
