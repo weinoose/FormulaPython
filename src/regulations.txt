@@ -1,9 +1,17 @@
+DIFFERENCES FROM REAL FORMULA ONE RACING
+* We assume that there were no prohibitions for tire changes in 2005, contrary to the truth.
+* We assume that the blown diffuser was never banned, contrary to the truth.
+* We assume that every year of formula racing has the same post-race points distribution, contrary to the truth.
+* We assume that Bridgestone is the only tire manufacturer during the era between 1998 and 2008, contrary to the truth.
+* We assume that refuelling was banned and drivers starts the race with a full tank during the era between 1998 and 2008, contrary to the truth.
+
 CAR DEVELOPMENT/PRODUCTION REGULATIONS
 * In-year car development is active for all regulations terms.
 * In terms of car development, there is no development limitation in each season or regulation period.
 * In terms of durability updates, it is eligible at the start of the season within a -6/+6 ratio. Every 1 upgrade for durability costs 2 points for car traits. The other way around is the same.
 * In terms of car weight updates, it is eligible at the start of the season within a -4/+4 ratio. Every 1 kilo light costs 2 points of car traits. The other way around is the same.
 * In terms of engine performance development, it is eligible at the middle of the season within a -4/+4 ratio.
+* FIA can give extra development coins at the start of the season to particular teams if they seem that fair.
 * Car production cost is between 13M$ and 33M$
 
 CAR DEVELOPMENT FINANCIAL REGULATIONS
@@ -17,13 +25,6 @@ CAR DEVELOPMENT FINANCIAL REGULATIONS
 FINANCIAL REGULATIONS
 * In terms of stopping the in-year development process and transferring future income for next year car is only available 7 races left to the season-end.
 * In terms of stopping the in-year development process and transferring future income for next year car yields extra +1M in each race.
-
-DIFFERENCES FROM REAL FORMULA ONE RACING
-* We assume that there were no prohibitions for tire changes in 2005, contrary to the truth.
-* We assume that the blown diffuser was never banned, contrary to the truth.
-* We assume that every year of formula racing has the same post-race points distribution, contrary to the truth.
-* We assume that Bridgestone is the only tire manufacturer during the era between 1998 and 2008, contrary to the truth.
-* We assume that refuelling was banned and drivers starts the race with a full tank during the era between 1998 and 2008, contrary to the truth.
 
 PRIZE MONEY PER RACE for EVERY REGULATION INTERVAL
 1st - 0.5 Million $
