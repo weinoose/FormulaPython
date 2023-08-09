@@ -2427,7 +2427,7 @@ def R(circuit,session,weather):
                             SAFETY_CAR[lap+4].append(1)
 
                     elif INCIDENT == 'DEFENDER CLEAR & ATTACKER DAMAGED':
-                        print(f'{Fore.MAGENTA}INC | Lap {strlap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {attacker} HAS {damage_type} DAMAGE BUT {defender} HAS NO!.')
+                        print(f'{Fore.MAGENTA}INC | Lap {strlap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {attacker} HAS {damage_type} DAMAGE BUT {defender} HAS NO!.{Style.RESET_ALL}')
                         
                         if damage_type == 'PERMANENT BODYWORK':
                             MECHANICAL[attacker].append('Permanent Bodywork Damage')
@@ -2445,7 +2445,7 @@ def R(circuit,session,weather):
                             SAFETY_CAR[lap+4].append(1)
 
                     elif INCIDENT == 'ATTACKER CLEAR & DEFENDER DAMAGED':
-                        print(f'{Fore.MAGENTA}INC | Lap {strlap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {defender} HAS {damage_type} DAMAGE BUT {attacker} HAS NO!.')
+                        print(f'{Fore.MAGENTA}INC | Lap {strlap} | OOOHHH! {attacker} and {defender} GOT COLLIDED! {defender} HAS {damage_type} DAMAGE BUT {attacker} HAS NO!.{Style.RESET_ALL}')
                         
                         if damage_type == 'PERMANENT BODYWORK':
                             MECHANICAL[defender].append('Permanent Bodywork Damage')
