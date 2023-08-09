@@ -1,9 +1,10 @@
 DIFFERENCES FROM REAL FORMULA ONE RACING
+* We assume that refuelling was banned and drivers start their races with a full tank during the era between 1998 and 2008, contrary to the truth.
+* We assume that Bridgestone is the only tire manufacturer during the era between 1998 and 2008, contrary to the truth.
 * We assume that there were no prohibitions for tire changes in 2005, contrary to the truth.
 * We assume that the blown diffuser was never banned, contrary to the truth.
 * We assume that every year of formula racing has the same post-race points distribution, contrary to the truth.
-* We assume that Bridgestone is the only tire manufacturer during the era between 1998 and 2008, contrary to the truth.
-* We assume that refuelling was banned and drivers starts the race with a full tank during the era between 1998 and 2008, contrary to the truth.
+* We assume that every driver can finish a race without doing any pit-stops to change their tires if it is possible during the race in dry or wet conditions, contrary to the truth.
 
 CAR DEVELOPMENT/PRODUCTION REGULATIONS
 * In-year car development is active for all regulations terms.
