@@ -1247,10 +1247,6 @@ def ANALYZER(session,data,tirenamedata,keyword):
         
         df = df[['MANUFACTURERS','DRIVERS','FL.','GAP','FL. LAP','FL. TIRE']]
 
-        # Saving Grid Positions into to the Chart
-        for i,k in zip(list(df['DRIVERS']),list(range(1,len(list(df.index))+1))):
-            GRID[i] = k
-
     # Final Alingments
     da = pd.DataFrame()
     da = da.reindex(list(range(1,len(list((df.index)))+1)))
@@ -1639,6 +1635,14 @@ def ANALYZER(session,data,tirenamedata,keyword):
             pass
     else:
         pass
+
+    # Final Re-indexing the Dataframe
+    da = da.reindex(list(range(1,len(drivers)+1)))
+
+    if session == 'Qualifying':
+        # Saving Grid Positions into to the Chart
+        for i,k in zip(list(da['DRIVERS']),list(range(1,len(list(da.index))+1))):
+            GRID[i] = k
 
     return da
 
