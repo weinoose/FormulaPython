@@ -489,8 +489,8 @@ if current in entertainment_era:
     tire_compounds = [s,m,h,inter,w]
 elif current in strategy_era:
     s = Tire('Soft',FIA(current)[4],1.0,1.0000)
-    h = Tire('Hard',FIA(current)[4],2.4,1.0217)
-    inter, w = Tire('Wet',FIA(current)[4],2.5,1.3717), Tire('Wet',FIA(current)[4],2.5,1.3717)
+    h = Tire('Hard',FIA(current)[4],1.7,1.0217)
+    inter, w = Tire('Wet',FIA(current)[4],3.4,1.3717), Tire('Wet',FIA(current)[4],2.5,1.3717)
     tire_compounds = [s,h,inter,w]
 
 # Circuits

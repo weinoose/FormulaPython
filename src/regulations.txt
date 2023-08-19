@@ -6,14 +6,14 @@ DIFFERENCES FROM REAL FORMULA ONE RACING
 * We assume that every year of formula racing has the same post-race points distribution, contrary to the truth.
 * We assume that every driver can finish a race without doing any pit-stops to change their tires if it is possible during the race in dry or wet conditions, contrary to the truth.
 
-CAR DEVELOPMENT/PRODUCTION REGULATIONS
+CAR DEVELOPMENT REGULATIONS
 * In-year car development is active for all regulations terms.
 * In terms of car development, there is no development limitation in each season or regulation period.
 * In terms of durability updates, it is eligible at the start of the season within a -6/+6 ratio. Every 1 upgrade for durability costs 2 points for car traits. The other way around is the same.
 * In terms of car weight updates, it is eligible at the start of the season within a -4/+4 ratio. Every 1 kilo light costs 2 points of car traits. The other way around is the same.
 * In terms of engine performance development, it is eligible at the middle of the season within a -4/+4 ratio.
-* FIA can give extra development coins at the start of the season to particular teams if they seem that fair.
-* Car production cost is between 13M$ and 33M$
+* FIA can give extra development allowence at the start of the season to particular teams if they seem that fair.
+* In terms of development, staff history and their contract details in each year will be remain private as an obligatory rule.
 
 CAR DEVELOPMENT FINANCIAL REGULATIONS
 * Chassis (3.000.000 - 6.000.000)
@@ -22,6 +22,9 @@ CAR DEVELOPMENT FINANCIAL REGULATIONS
 * Base (4.000.000 - 8.000.000)
 * Sidepod (1.000.000 - 2.000.000)
 * Suspension (1.000.000 - 2.000.000)
+
+CAR PRODUCTION FINANCIAL REGULATIONS
+* Car production cost is between 13M$ and 33M$
 
 FINANCIAL REGULATIONS
 * In terms of stopping the in-year development process and transferring future income for next year car is only available 7 races left to the season-end.
