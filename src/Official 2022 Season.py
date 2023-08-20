@@ -717,10 +717,8 @@ india = Circuit('India','India','Quickness Circuit',60,FIA(current)[0]*45.25,STR
 # COMPLETENESS CIRCUITS
 hockenheim = Circuit('Hockenheim','Germany','Completeness Circuit',67,FIA(current)[0]*36.25,STRATEGY('Hockenheim'),2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Easy',16,[18,26,35],24) # 2002-present layout.
 fuji = Circuit('Fuji','Japan','Completeness Circuit',67,FIA(current)[0]*40.25,STRATEGY('Fuji'),1,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Average',16,[18,26,35],24) # 2005-present layout.
-# melbourne = Circuit('Melbourne','Australia','Completeness Circuit',58,FIA(current)[0]*45.25,STRATEGY('Melbourne'),4,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Hard',16,[20,30,40],28) # 1996-2020 layout.
-melbourne = Circuit('Melbourne','Australia','Completeness Circuit',58,FIA(current)[0]*39.25,STRATEGY('Melbourne'),4,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Hard',16,[20,30,40],28) # 2021-present layout.
-# yas = Circuit('Yas Island','Abu Dhabi','Completeness Circuit',58,FIA(current)[0]*58.75,STRATEGY('Yas Island'),2,['Dry'],'Easy',21,[16,23,29],20) # 2009-2020 layout.
-yas = Circuit('Yas Island','Abu Dhabi','Completeness Circuit',58,FIA(current)[0]*47.75,STRATEGY('Yas Island'),2,['Dry'],'Easy',21,[16,23,29],20) # 2021-present layout.
+melbourne = Circuit('Melbourne','Australia','Completeness Circuit',58,FIA(current)[0]*45.25,STRATEGY('Melbourne'),4,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Hard',16,[20,30,40],28) # 1996-2020 layout.
+yas = Circuit('Yas Island','Abu Dhabi','Completeness Circuit',58,FIA(current)[0]*58.75,STRATEGY('Yas Island'),2,['Dry'],'Easy',21,[16,23,29],20) # 2009-2020 layout.
 spielberg = Circuit('Spielberg','Austuria','Completeness Circuit',71,FIA(current)[0]*26.25,STRATEGY('Spielberg'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy',10,[20,30,40],28) # 1996-present layout.
 portimao = Circuit('Portimão','Portugal','Completeness Circuit',66,FIA(current)[0]*40.75,STRATEGY('Portimão'),1,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Average',15,[28,43,57],42) # 2008-present layout.
 jeddah = Circuit('Jeddah','Saudi Arabia','Completeness Circuit',50,FIA(current)[0]*49.25,STRATEGY('Jeddah'),3,['Dry'],'Easy',27,[13,19,24],16) # 2021-present layout.
@@ -778,6 +776,7 @@ class Engine():
         self.fuel = fuel
         self.power = power
         self.durability = durability
+        self.UR = power
         self.DR = DR
 
 # Manufacturers
@@ -921,6 +920,7 @@ class Manufacturer():
                 return (((self.downforce*5) + (self.vortex*3) + (self.acceleration*2) + (self.braking*1))/11)
         elif circuit_type == 'Street Circuit':
             return (((self.downforce*4) + (self.braking*4) + (self.vortex*2) + (self.acceleration*1))/11)
+        
 # Drivers
 class Driver():
     def __init__(self,team,name,nationality,number,pace,braking,smoothness,adaptability,consistency,fitness,aggression,attack,defence,start,wet,favorite,style):
