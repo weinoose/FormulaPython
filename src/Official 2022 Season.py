@@ -773,12 +773,11 @@ else:
 
 # Engines
 class Engine():
-    def __init__(self,brand,fuel,power,durability,UR,DR):
+    def __init__(self,brand,fuel,power,durability,DR):
         self.brand = brand
         self.fuel = fuel
         self.power = power
         self.durability = durability
-        self.UR = UR
         self.DR = DR
 
 # Manufacturers
@@ -804,8 +803,8 @@ class Manufacturer():
         self.braking = ((((((self.FW*5) + (self.suspension*5))/10))*0.667) + (((self.powertrain.DR)*0.333)))
         
         # Advanced Calculated Attributes
-        self.max_speed = round(((self.powertrain.power*10.0) + (self.RW*2.0) + (self.drag*3.0))/15,3)
-        self.acceleration = (((self.powertrain.power)*0.667) + ((self.powertrain.UR)*0.333))
+        self.max_speed = (((self.powertrain.power*10.0) + (self.RW*2.0) + (self.drag*3.0))/15)
+        self.acceleration = self.powertrain.power
         
         # Extra Calculated Attribute 2
         self.drs_delta = ((self.powertrain.power*2.5) + (self.RW*7.5))/10
@@ -922,7 +921,6 @@ class Manufacturer():
                 return (((self.downforce*5) + (self.vortex*3) + (self.acceleration*2) + (self.braking*1))/11)
         elif circuit_type == 'Street Circuit':
             return (((self.downforce*4) + (self.braking*4) + (self.vortex*2) + (self.acceleration*1))/11)
-        
 # Drivers
 class Driver():
     def __init__(self,team,name,nationality,number,pace,braking,smoothness,adaptability,consistency,fitness,aggression,attack,defence,start,wet,favorite,style):
@@ -967,19 +965,19 @@ class Driver():
             return 0
 
 # Formula 1 Engines
-HONDA_0 = Engine('Honda',FIA(current)[5],94,74,94,94) # Red Bull
-HONDA_1 = Engine('Honda',FIA(current)[5],94,74,94,94) # AlphaTauri
-FERRARI_F = Engine('Ferrari',FIA(current)[5],93,71,93,93) # Ferrari
-FERRARI_0 = Engine('Ferrari',FIA(current)[5],93,71,93,93) # Haas
-FERRARI_1 = Engine('Ferrari',FIA(current)[5],93,71,93,93) # Alfa Romeo
-RENAULT_F = Engine('Renault',FIA(current)[5],87,77,87,87) # Alpine
-MERCEDES_F = Engine('Mercedes',FIA(current)[5],87,93,87,87) # Mercedes
-MERCEDES_0 = Engine('Mercedes',FIA(current)[5],87,93,87,87) # Williams
-MERCEDES_1 = Engine('Mercedes',FIA(current)[5],87,93,87,87) # Aston Martin
-MERCEDES_2 = Engine('Mercedes',FIA(current)[5],87,93,87,87) # McLaren
+HONDA_0 = Engine('Honda',FIA(current)[5],94,74,94) # Red Bull
+HONDA_1 = Engine('Honda',FIA(current)[5],94,74,94) # AlphaTauri
+FERRARI_F = Engine('Ferrari',FIA(current)[5],93,71,93) # Ferrari
+FERRARI_0 = Engine('Ferrari',FIA(current)[5],93,71,93) # Haas
+FERRARI_1 = Engine('Ferrari',FIA(current)[5],93,71,93) # Alfa Romeo
+RENAULT_F = Engine('Renault',FIA(current)[5],87,77,87) # Alpine
+MERCEDES_F = Engine('Mercedes',FIA(current)[5],87,93,87) # Mercedes
+MERCEDES_0 = Engine('Mercedes',FIA(current)[5],87,93,87) # Williams
+MERCEDES_1 = Engine('Mercedes',FIA(current)[5],87,93,87) # Aston Martin
+MERCEDES_2 = Engine('Mercedes',FIA(current)[5],87,93,87) # McLaren
 
 # Formula 2 Engines
-MECACHROME = Engine('Mecachrome',FIA(current)[5],86,86,86,86) # F2 Spec. Only
+MECACHROME = Engine('Mecachrome',FIA(current)[5],86,89,86) # F2 Spec. Only
 
 if spec == 'Formula 1':
     mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team','Good',MERCEDES_F,91,89,84,89,79,89,102,+0.00)
@@ -2955,16 +2953,16 @@ elif execution == 'data':
     for i in manufacturers:
         MF_N.append(i.title)
         MF_E.append(i.powertrain.brand)
-        MF_P.append(i.rating())
+        MF_P.append(round(i.rating(),1))
         MF_D.append(i.downforce)
         MF_AS.append(i.vortex)
-        MF_SLS.append(i.max_speed)
+        MF_SLS.append(round(i.max_speed,1))
         MF_C0.append(i.characteristic[0])
         MF_C3.append(i.characteristic[3])
         MF_C1.append(i.characteristic[1])
         MF_C2.append(i.characteristic[2])
         TP.append(i.manufacturer_tyre_coeff_print)
-        C.append(round(i.performance(wanadanara),3))
+        C.append(round(i.performance(wanadanara),1))
     MF['Manufacturer'] = MF_N
     MF['Engine'] = MF_E
     MF['Rating'] = MF_P
