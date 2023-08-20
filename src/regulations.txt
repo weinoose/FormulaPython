@@ -9,9 +9,9 @@ DIFFERENCES FROM REAL FORMULA ONE RACING
 CAR DEVELOPMENT REGULATIONS
 * In-year car development is active for all regulations terms.
 * In terms of car development, there is no development limitation in each season or regulation period.
-* In terms of durability updates, it is eligible at the start of the season within a -6/+6 ratio. Every 1 upgrade for durability costs 2 points for car traits. The other way around is the same.
-* In terms of car weight updates, it is eligible at the start of the season within a -4/+4 ratio. Every 1 kilo light costs 2 points of car traits. The other way around is the same.
-* In terms of engine performance development, it is eligible at the middle of the season within a -4/+4 ratio.
+* In terms of durability updates, it is eligible at the start of the season within a -5/+5 ratio. Every 1 upgrade for durability costs 2 points for car traits. The other way around is the same.
+* In terms of car weight updates, it is eligible at the start of the season within a -5/+5 ratio. Every 1 kilo light costs 2 points of car traits. The other way around is the same.
+* In terms of engine performance development, it is eligible at the middle of the season within a -5/+5 ratio.
 * FIA can give extra development allowence at the start of the season to particular teams if they seem that fair.
 * In terms of development, staff history and their contract details in each year will be remain private as an obligatory rule.
 
@@ -28,6 +28,7 @@ CAR PRODUCTION FINANCIAL REGULATIONS
 
 FINANCIAL REGULATIONS
 * In terms of stopping the in-year development process and transferring future income for next year car is only available 7 races left to the season-end.
+* If the season is the last season before a new regulation came in, transferring the future income for next year car is only available 3 races left to the season-end.
 * In terms of stopping the in-year development process and transferring future income for next year car yields extra +1M in each race.
 
 PRIZE MONEY PER RACE for EVERY REGULATION INTERVAL
@@ -104,8 +105,6 @@ F1 Logistics Supplier: DHL
 FIA Tire Supplier: Bridgestone
 FIA Fuel Supplier: Shell
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
-F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-F2 Car Ratings: %100 Equal
 DRS: None
 ERS: None
 
@@ -120,8 +119,6 @@ F1 Logistics Supplier: DHL
 FIA Tire Supplier: Bridgestone
 FIA Fuel Supplier: Shell
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
-F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-F2 Car Ratings: %100 Equal
 DRS: None
 ERS: None
 
@@ -136,26 +133,35 @@ F1 Logistics Supplier: DHL
 FIA Tire Supplier: Bridgestone
 FIA Fuel Supplier: Shell
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
-F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-F2 Car Ratings: %100 Equal
 DRS: None
 ERS: None
-* Vehicles will be slowed down by 0.750 seconds by the end of the both 2006 and 2007 seasons not to make them even quicker.
 
-2009-2010
+2009
 Engine: V8 2.4L
 Engine Continuity: Engines were frozen until the end of the 2013 season.
-Chassis: Multi-year usage with one concept.
+Chassis: One-year usage.
 Max. Driver Contract Lenght: 4 years
-Pit-stop regulations: Option/Prime
+Pit-stop regulations: Soft/Medium/Hard
 Durability: Good
 F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Shell
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
-F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-F2 Car Ratings: %100 Equal
 DRS: None
+ERS: None
+
+2010
+Engine: V8 2.4L
+Engine Continuity: Engines were frozen until the end of the 2013 season.
+Chassis: One-year usage.
+Max. Driver Contract Lenght: 4 years
+Pit-stop regulations: Soft/Medium/Hard
+Durability: Good
+F1 Logistics Supplier: DHL
+FIA Tire Supplier: Pirelli
+FIA Fuel Supplier: Shell
+F1 Points System: 25-18-15-12-10-8-6-4-2-1
+DRS: Active
 ERS: None
 
 2011-2012-2013
@@ -169,8 +175,6 @@ F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Shell
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
-F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-F2 Car Ratings: %100 Equal
 DRS: Active
 ERS: Active under the name of KERS
 
@@ -185,8 +189,6 @@ F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Petronas
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
-F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-F2 Car Ratings: Only Chassis Equal
 DRS: Active
 ERS: Active
 
@@ -201,8 +203,6 @@ F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Petronas
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
-F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-F2 Car Ratings: Only Chassis Equal
 DRS: Active
 ERS: Active
 
@@ -217,8 +217,6 @@ F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Petronas
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
-F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-F2 Car Ratings: Only Chassis Equal
 DRS: Active
 ERS: Active
 
@@ -233,8 +231,6 @@ F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Petronas
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
-F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-F2 Car Ratings: Only Chassis Equal
 DRS: Active
 ERS: Active
 
@@ -249,8 +245,6 @@ F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Aramco
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
-F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-F2 Car Ratings: Only Chassis Equal
 DRS: Active
 ERS: Active
 
@@ -265,8 +259,6 @@ F1 Logistics Supplier: DHL
 FIA Tire Supplier: Pirelli
 FIA Fuel Supplier: Aramco
 F1 Points System: 25-18-15-12-10-8-6-4-2-1
-F2 Points System: 25-18-15-12-11-10-9-8-7-6-5-4-3-2-1 | FL: 2 | POLE: 2
-F2 Car Ratings: Only Chassis Equal
 DRS: Active
 ERS: Active
 

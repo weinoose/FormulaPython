@@ -52,7 +52,7 @@ elif spec == 'Hypercar': # Not Active
     spex = 1.37000
 
 # Error Handling for Regulations
-current, reglist = regulation, ['1998','2005','2006','2009','2011','2014','2016','2017','2018','2021','2022']
+current, reglist = regulation, ['1998','2005','2006','2009','2010','2011','2014','2016','2017','2018','2021','2022']
 if current in reglist:
     pass
 else:
@@ -80,14 +80,14 @@ else:
 
 # Tire Supplier Mechanics/Dynamics 
 class Tyre():
-    def __init__(self,title,pace,durability,type):
+    def __init__(self,title,pace,durability):
         self.title = title
         self.pace = pace
         self.durability = durability
-        self.type = type
 
-bridgestone = Tyre('Bridgestone',1.6,2.6,'Grooved')
-pirelli = Tyre('Pirelli',0.0,0.0,'Slick')
+bridgestone_grooved = Tyre('Bridgestone',4.6,2.6)
+bridgestone_slick = Tyre('Bridgestone',0.6,0.6)
+pirelli_slick = Tyre('Pirelli',-0.0,-0.4)
 
 # Fuel & Fuel Supplier Mechanics/Dynamics 
 class Fuel():
@@ -113,29 +113,31 @@ aramco = Fuel('Aramco',+2.5,0.0450)
 # Index 16 for dirty air advantage for defending driver.
 # Index 17 for safety parameter for per regulation changes.
 
-def FIA(C): 
+def FIA(C):
     if C == '1998':
-        return [1.18250*(spex),False,False,'DHL',bridgestone,shell,585,4,4,2,False,115,0.0725,11.5,7.5,1,0.549,21.25]
+        return [1.16250*(spex),False,False,'DHL',bridgestone_grooved,shell,585,3,4,3,False,115,0.0725,12,7,1,0.549,21.25]
     elif C == '2005':
-        return [1.09750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700,11.5,7.5,1,0.549,18.75]
+        return [1.05250*(spex),False,False,'DHL',bridgestone_grooved,shell,585,3,6,1,False,115,0.0700,12,7,1,0.549,18.75]
     elif C == '2006':
-        return [1.11750*(spex),False,False,'DHL',bridgestone,shell,585,3,5,2,False,115,0.0700,10,7,3,0.576,18.75]
+        return [1.07250*(spex),False,False,'DHL',bridgestone_grooved,shell,585,3,6,1,False,115,0.0700,10,7,3,0.599,18.75]
     elif C == '2009':
-        return [1.16000*(spex),False,False,'DHL',pirelli,shell,605,2,5,3,False,115,0.0675,10,10,0,0.549,14.25]
+        return [1.16000*(spex),False,False,'DHL',bridgestone_slick,shell,605,5,3,2,False,115,0.0675,10,9,1,0.549,14.25]
+    elif C == '2010':
+        return [1.14000*(spex),True,False,'DHL',bridgestone_slick,shell,620,5,3,2,False,110,0.0675,10,9,1,0.699,14.25]
     elif C == '2011':
-        return [1.15250*(spex),True,True,'DHL',pirelli,shell,640,2,5,3,False,110,0.0675,10,10,0,0.349,14.25]
+        return [1.14000*(spex),True,True,'DHL',pirelli_slick,shell,640,5,3,2,False,110,0.0675,10,9,1,0.349,14.25]
     elif C == '2014':
-        return [1.15750*(spex),True,True,'DHL',pirelli,petronas,691,2,3,5,True,109,0.0650,11,6,3,0.501,14.25]
+        return [1.15750*(spex),True,True,'DHL',pirelli_slick,petronas,691,2,3,5,True,109,0.0650,11,6,3,0.499,14.25]
     elif C == '2016':
-        return [1.07000*(spex),True,True,'DHL',pirelli,petronas,702,2,3,5,True,108,0.0650,11,6,3,0.349,14.25]
+        return [1.07000*(spex),True,True,'DHL',pirelli_slick,petronas,702,2,3,5,True,108,0.0650,11,6,3,0.349,14.25]
     elif C == '2017':
-        return [1.01750*(spex),True,True,'DHL',pirelli,petronas,728,2,5,3,True,112,0.0650,10,8,2,0.549,16.75]
+        return [1.01750*(spex),True,True,'DHL',pirelli_slick,petronas,728,2,5,3,True,112,0.0650,10,8,2,0.549,16.75]
     elif C == '2018':
-        return [0.99250*(spex),True,True,'DHL',pirelli,petronas,734,2,5,3,True,116,0.0650,10,8,2,0.449,16.75]
+        return [0.99250*(spex),True,True,'DHL',pirelli_slick,petronas,734,2,5,3,True,116,0.0650,10,8,2,0.449,16.75]
     elif C == '2021':
-        return [1.02750*(spex),True,True,'DHL',pirelli,aramco,752,2,5,3,True,118,0.0625,10,8,2,0.449,16.25]
+        return [1.02750*(spex),True,True,'DHL',pirelli_slick,aramco,752,2,5,3,True,118,0.0625,10,8,2,0.449,16.25]
     elif C == '2022':
-        return [1.00000*(spex),True,True,'DHL',pirelli,aramco,798,5,2,3,True,112,0.0625,7,10,3,0.299,12.25]
+        return [1.00000*(spex),True,True,'DHL',pirelli_slick,aramco,798,5,2,3,True,112,0.0625,7,10,3,0.299,12.25]
 
 # Visual Plugins
 borderline = '——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————'
@@ -477,7 +479,7 @@ class Tire():
             return (CL0) + (CL1) + (CL2)
 
 # Changeability of Pit Box Strategies
-strategy_era = ['1998','2005','2006','2009']
+strategy_era = ['1998','2005','2006','2009','2010']
 entertainment_era = ['2011','2014','2016','2017','2018','2021','2022']
 
 if current in entertainment_era:
@@ -702,8 +704,6 @@ lv = Circuit('Las Vegas','United States','Agility Circuit',50,FIA(current)[0]*33
 spa = Circuit('Spa-Francorchamps','Belguim','Power Circuit',44,FIA(current)[0]*65.25,STRATEGY('Spa-Francorchamps'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Very Easy',19,[18,26,35],24) # 2007-present layout.
 le = Circuit('Le Castellet','France','Power Circuit',53,FIA(current)[0]*52.25,STRATEGY('Le Castellet'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Easy',15,[16,23,31],21) # 2005-present layout.
 sepang = Circuit('Sepang','Malaysia','Power Circuit',56,FIA(current)[0]*54.75,STRATEGY('Sepang'),2,['Dry','Dry','Dry','Dry','Dump','Wet','Wet'],'Very Easy',15,[18,26,35],24) # 1999-present layout.
-# sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*17.75,STRATEGY('Sakhir'),3,['Dry'],'Easy',11,[16,23,29],20) # 2020 extra outer layout.
-# sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*71.25,STRATEGY('Sakhir'),3,['Dry'],'Easy',24,[16,23,29],20) # 2010 layout.
 sakhir = Circuit('Sakhir','Bahrain','Power Circuit',57,FIA(current)[0]*52.00,STRATEGY('Sakhir'),3,['Dry'],'Easy',15,[16,23,29],20) # 2004-2009 & 2011-present layout.
 austin = Circuit('Austin','United States','Power Circuit',56,FIA(current)[0]*55.75,STRATEGY('Austin'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Very Easy',20,[19,28,37],26) # 2012-present layout.
 mexico = Circuit('México City','México','Power Circuit',71,FIA(current)[0]*38.25,STRATEGY('México City'),3,['Dry'],'Easy',17,[28,43,57],42) # 2015-present layout.
@@ -717,8 +717,10 @@ india = Circuit('India','India','Quickness Circuit',60,FIA(current)[0]*45.25,STR
 # COMPLETENESS CIRCUITS
 hockenheim = Circuit('Hockenheim','Germany','Completeness Circuit',67,FIA(current)[0]*36.25,STRATEGY('Hockenheim'),2,['Dry','Dry','Dry','Dump','Dump','Wet','Wet'],'Easy',16,[18,26,35],24) # 2002-present layout.
 fuji = Circuit('Fuji','Japan','Completeness Circuit',67,FIA(current)[0]*40.25,STRATEGY('Fuji'),1,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Average',16,[18,26,35],24) # 2005-present layout.
-melbourne = Circuit('Melbourne','Australia','Completeness Circuit',58,FIA(current)[0]*45.25,STRATEGY('Melbourne'),4,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Hard',16,[20,30,40],28) # 1996-2020 layout.
-yas = Circuit('Yas Island','Abu Dhabi','Completeness Circuit',58,FIA(current)[0]*58.75,STRATEGY('Yas Island'),2,['Dry'],'Easy',21,[16,23,29],20) # 2009-2020 layout.
+# melbourne = Circuit('Melbourne','Australia','Completeness Circuit',58,FIA(current)[0]*45.25,STRATEGY('Melbourne'),4,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Hard',16,[20,30,40],28) # 1996-2020 layout.
+melbourne = Circuit('Melbourne','Australia','Completeness Circuit',58,FIA(current)[0]*39.25,STRATEGY('Melbourne'),4,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Hard',16,[20,30,40],28) # 2021-present layout.
+# yas = Circuit('Yas Island','Abu Dhabi','Completeness Circuit',58,FIA(current)[0]*58.75,STRATEGY('Yas Island'),2,['Dry'],'Easy',21,[16,23,29],20) # 2009-2020 layout.
+yas = Circuit('Yas Island','Abu Dhabi','Completeness Circuit',58,FIA(current)[0]*47.75,STRATEGY('Yas Island'),2,['Dry'],'Easy',21,[16,23,29],20) # 2021-present layout.
 spielberg = Circuit('Spielberg','Austuria','Completeness Circuit',71,FIA(current)[0]*26.25,STRATEGY('Spielberg'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy',10,[20,30,40],28) # 1996-present layout.
 portimao = Circuit('Portimão','Portugal','Completeness Circuit',66,FIA(current)[0]*40.75,STRATEGY('Portimão'),1,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Average',15,[28,43,57],42) # 2008-present layout.
 jeddah = Circuit('Jeddah','Saudi Arabia','Completeness Circuit',50,FIA(current)[0]*49.25,STRATEGY('Jeddah'),3,['Dry'],'Easy',27,[13,19,24],16) # 2021-present layout.
@@ -771,11 +773,13 @@ else:
 
 # Engines
 class Engine():
-    def __init__(self,brand,fuel,power,durability):
+    def __init__(self,brand,fuel,power,durability,UR,DR):
         self.brand = brand
         self.fuel = fuel
         self.power = power
         self.durability = durability
+        self.UR = UR
+        self.DR = DR
 
 # Manufacturers
 class Manufacturer():
@@ -797,11 +801,11 @@ class Manufacturer():
         self.downforce = (((self.base*FIA(current)[7]) + (self.FW*FIA(current)[8]) + (self.RW*FIA(current)[9]))/10)
         self.drag = ((self.chassis*7) + (self.base*3))/10
         self.vortex = ((self.FW*5) + (self.sidepod*3) + (self.chassis*2))/10
-        self.braking = ((self.FW*5) + (self.suspension*5))/10
+        self.braking = ((((((self.FW*5) + (self.suspension*5))/10))*0.667) + (((self.powertrain.DR)*0.333)))
         
         # Advanced Calculated Attributes
         self.max_speed = round(((self.powertrain.power*10.0) + (self.RW*2.0) + (self.drag*3.0))/15,3)
-        self.acceleration = self.powertrain.power
+        self.acceleration = (((self.powertrain.power)*0.667) + ((self.powertrain.UR)*0.333))
         
         # Extra Calculated Attribute 2
         self.drs_delta = ((self.powertrain.power*2.5) + (self.RW*7.5))/10
@@ -963,19 +967,19 @@ class Driver():
             return 0
 
 # Formula 1 Engines
-HONDA_0 = Engine('Honda',FIA(current)[5],94,74) # Red Bull
-HONDA_1 = Engine('Honda',FIA(current)[5],94,74) # AlphaTauri
-FERRARI_F = Engine('Ferrari',FIA(current)[5],93,71) # Ferrari
-FERRARI_0 = Engine('Ferrari',FIA(current)[5],93,71) # Haas
-FERRARI_1 = Engine('Ferrari',FIA(current)[5],93,71) # Alfa Romeo
-RENAULT_F = Engine('Renault',FIA(current)[5],87,77) # Alpine
-MERCEDES_F = Engine('Mercedes',FIA(current)[5],87,93) # Mercedes
-MERCEDES_0 = Engine('Mercedes',FIA(current)[5],87,93) # Williams
-MERCEDES_1 = Engine('Mercedes',FIA(current)[5],87,93) # Aston Martin
-MERCEDES_2 = Engine('Mercedes',FIA(current)[5],87,93) # McLaren
+HONDA_0 = Engine('Honda',FIA(current)[5],94,74,94,94) # Red Bull
+HONDA_1 = Engine('Honda',FIA(current)[5],94,74,94,94) # AlphaTauri
+FERRARI_F = Engine('Ferrari',FIA(current)[5],93,71,93,93) # Ferrari
+FERRARI_0 = Engine('Ferrari',FIA(current)[5],93,71,93,93) # Haas
+FERRARI_1 = Engine('Ferrari',FIA(current)[5],93,71,93,93) # Alfa Romeo
+RENAULT_F = Engine('Renault',FIA(current)[5],87,77,87,87) # Alpine
+MERCEDES_F = Engine('Mercedes',FIA(current)[5],87,93,87,87) # Mercedes
+MERCEDES_0 = Engine('Mercedes',FIA(current)[5],87,93,87,87) # Williams
+MERCEDES_1 = Engine('Mercedes',FIA(current)[5],87,93,87,87) # Aston Martin
+MERCEDES_2 = Engine('Mercedes',FIA(current)[5],87,93,87,87) # McLaren
 
 # Formula 2 Engines
-MECACHROME = Engine('Mecachrome',FIA(current)[5],86,76) # F2 Spec. Only
+MECACHROME = Engine('Mecachrome',FIA(current)[5],86,86,86,86) # F2 Spec. Only
 
 if spec == 'Formula 1':
     mercedes = Manufacturer('Mercedes-AMG Petronas F1 Team','Good',MERCEDES_F,91,89,84,89,79,89,102,+0.00)
@@ -990,17 +994,17 @@ if spec == 'Formula 1':
     haas = Manufacturer('Haas F1 Team','Good',FERRARI_0,84,81,81,79,79,79,80,+0.00)
     manufacturers = [mercedes,redbull,ferrari,mclaren,alpine,alphatauri,astonmartin,williams,alfaromeo,haas]
 elif spec == 'Formula 2':
-    prema = Manufacturer('Prema Racing','Good',MECACHROME,91,91,91,85,85,85,85,+0.00) # 4th best.
-    virtuosi = Manufacturer('Virtuosi Racing','Average',MECACHROME,91,91,91,79,79,79,79,+0.00) # 7th best.
+    prema = Manufacturer('Prema Racing','Good',MECACHROME,91,91,91,85,85,85,89,+0.00) # 4th best.
+    virtuosi = Manufacturer('Virtuosi Racing','Average',MECACHROME,91,91,91,79,79,79,89,+0.00) # 7th best.
     carlin = Manufacturer('Carlin','Perfect',MECACHROME,91,91,91,89,89,89,89,+0.00) # 2nd best.
-    hitech = Manufacturer('Hitech Grand Prix','Average',MECACHROME,91,91,91,83,83,83,83,+0.00) # 5th best.
-    art = Manufacturer('ART Grand Prix','Perfect',MECACHROME,91,91,91,87,87,87,87,+0.00) # 3rd best.
-    mp = Manufacturer('MP Motorsport','Good',MECACHROME,91,91,91,91,91,91,91,+0.00) # best.
-    campos = Manufacturer('Campos Racing','Average',MECACHROME,91,91,91,79,79,79,79,+0.00) # 11th best.
-    dams = Manufacturer('DAMS','Good',MECACHROME,91,91,91,81,81,81,81,+0.00) # 6th best.
-    trident = Manufacturer('Trident','Average',MECACHROME,91,91,91,79,79,79,79,+0.00) # 9th best.
-    charouz = Manufacturer('Charouz Racing System','Bad',MECACHROME,91,91,91,79,79,79,79,+0.00) # 8th best.
-    van = Manufacturer('Van Amersfoot Racing','Perfect',MECACHROME,91,91,91,79,79,79,79,+0.00) # 10th best.
+    hitech = Manufacturer('Hitech Grand Prix','Average',MECACHROME,91,91,91,83,83,83,89,+0.00) # 5th best.
+    art = Manufacturer('ART Grand Prix','Perfect',MECACHROME,91,91,91,87,87,87,89,+0.00) # 3rd best.
+    mp = Manufacturer('MP Motorsport','Good',MECACHROME,91,91,91,91,91,91,89,+0.00) # best.
+    campos = Manufacturer('Campos Racing','Average',MECACHROME,91,91,91,79,79,79,89,+0.00) # 11th best.
+    dams = Manufacturer('DAMS','Good',MECACHROME,91,91,91,81,81,81,89,+0.00) # 6th best.
+    trident = Manufacturer('Trident','Average',MECACHROME,91,91,91,79,79,79,89,+0.00) # 9th best.
+    charouz = Manufacturer('Charouz Racing System','Bad',MECACHROME,91,91,91,79,79,79,89,+0.00) # 8th best.
+    van = Manufacturer('Van Amersfoot Racing','Perfect',MECACHROME,91,91,91,79,79,79,89,+0.00) # 10th best.
     manufacturers = [prema,virtuosi,carlin,hitech,art,mp,campos,dams,trident,charouz,van]
         
 if spec == 'Formula 1':
