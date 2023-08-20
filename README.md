@@ -29,14 +29,14 @@ Feel free to contact me about that: weinoose@gmail.com
 * 23/07/2023 — v1.19 — In-game bugs have been cleared.
 * 23/07/2023 — v1.20 — 8th minor update has been published based on the lap time priority when the same lap times occurring by different drivers in sessions.
 * 23/07/2023 — v2.00 — 1st major update has been published based on the improved track positions for vehicles during the race.
-* 24/07/2023 — v2.10 — In-game bugs have been cleared.
-* 25/07/2023 — v2.20 — In-game bugs have been cleared.
-* 26/07/2023 — v2.30 — In-game bugs have been cleared.
-* 29/07/2023 — v2.40 — In-game bugs have been cleared.
-* 30/07/2023 — v2.50 — In-game bugs have been cleared.
-* 31/07/2023 — v2.60 — In-game bugs have been cleared.
-* 09/08/2023 — v2.70 — In-game bugs have been cleared.
-* 14/08/2023 — v2.80 — In-game bugs have been cleared.
-* 19/08/2023 — v2.90 — In-game bugs have been cleared.
-* 20/08/2023 — v3.00 — 2nd major update has been published based on the detailed engine structure for vehicles.
-* 20/08/2023 — v3.10 — In-game bugs have been cleared.
+* 24/07/2023 — v2.01 — In-game bugs have been cleared.
+* 25/07/2023 — v2.02 — In-game bugs have been cleared.
+* 26/07/2023 — v2.03 — In-game bugs have been cleared.
+* 29/07/2023 — v2.04 — In-game bugs have been cleared.
+* 30/07/2023 — v2.05 — In-game bugs have been cleared.
+* 31/07/2023 — v2.06 — In-game bugs have been cleared.
+* 09/08/2023 — v2.07 — In-game bugs have been cleared.
+* 14/08/2023 — v2.09 — In-game bugs have been cleared.
+* 19/08/2023 — v2.09 — In-game bugs have been cleared.
+* 20/08/2023 — v2.10 — 9th minor update has been published based on the detailed engine structure for vehicles.
+* 20/08/2023 — v2.11 — In-game bugs have been cleared.
