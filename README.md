@@ -40,3 +40,4 @@ Feel free to contact me about that: weinoose@gmail.com
 * 19/08/2023 — v2.09 — In-game bugs have been cleared.
 * 20/08/2023 — v2.10 — 9th minor update has been published based on the detailed engine structure for vehicles.
 * 20/08/2023 — v2.11 — In-game bugs have been cleared.
+* 21/08/2023 — v2.12 — In-game bugs have been cleared.
