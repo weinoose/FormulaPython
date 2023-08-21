@@ -694,8 +694,10 @@ def STRATEGY(GP):
         elif current in strategy_era:
             return [[s,h,s  ,s,s,s,h],[s,h  ,s,s,s,s,h],[h,s  ,s,s,s,s,h]]
         
+# # # SPEED TEMPLE
+monza = Circuit('Monza','Italy','Speed Temple',53,FIA(current)[0]*41.25,STRATEGY('Monza'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy',11,[21,31,41],29) # 2000-present layout.
+
 # # # AGILITY CIRCUITS
-monza = Circuit('Monza','Italy','Agility Circuit',53,FIA(current)[0]*41.25,STRATEGY('Monza'),2,['Dry','Dry','Dry','Dry','Dry','Dump','Wet'],'Very Easy',11,[21,31,41],29) # 2000-present layout.
 sochi = Circuit('Sochi','Russia','Agility Circuit',53,FIA(current)[0]*54.75,STRATEGY('Sochi'),2,['Dry','Dry','Dry','Dry','Dump','Dump','Wet'],'Average',18,[20,30,40],28) # 2014-present layout.
 baku = Circuit('Baku','Azerbaijan','Agility Circuit',51,FIA(current)[0]*62.25,STRATEGY('Baku'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dump'],'Hard',20,[16,23,31],21) # 2016-present layout.
 lv = Circuit('Las Vegas','United States','Agility Circuit',50,FIA(current)[0]*33.25,STRATEGY('Las Vegas'),2,['Dry','Dry','Dry','Dry','Dry','Dry','Dry'],'Hard',17,[21,31,41],29) # 2022-present layout.
@@ -797,12 +799,12 @@ class Manufacturer():
         
         # Calculated Attributes
         self.downforce = (((self.base*FIA(current)[7]) + (self.FW*FIA(current)[8]) + (self.RW*FIA(current)[9]))/10)
-        self.drag = ((self.chassis*7) + (self.base*3))/10
+        self.drag = ((self.chassis*8) + (self.base*2))/10
         self.vortex = ((self.FW*5) + (self.sidepod*3) + (self.chassis*2))/10
         self.braking = ((((((self.FW*5) + (self.suspension*5))/10))*0.667) + (((self.powertrain.DR)*0.333)))
         
         # Advanced Calculated Attributes
-        self.max_speed = (((self.powertrain.power*10.0) + (self.RW*2.0) + (self.drag*3.0))/15)
+        self.max_speed = (((self.powertrain.power*8) + (self.RW*2) + (self.drag*5))/15)
         self.acceleration = self.powertrain.power
         
         # Extra Calculated Attribute 2
@@ -886,40 +888,39 @@ class Manufacturer():
         return ((self.powertrain.power*((13+FIA(current)[13]))) + (self.downforce*((15+FIA(current)[14]))) + (self.drag*((17+FIA(current)[15]))) + (self.vortex*20) + (self.braking*15))/100
     
     def performance(self,circuit_type):
-        if circuit_type == 'Power Circuit':
+        if circuit_type == 'Speed Temple':
             if self.V1 == 'Straights':
-                return (((((self.max_speed+self.acceleration)/2)*5) + (self.downforce*3) + (self.vortex*2) + (self.braking*1))/11) + 0.298
-            elif self.V1 == 'Corners':
-                return (((((self.max_speed+self.acceleration)/2)*5) + (self.downforce*3) + (self.vortex*2) + (self.braking*1))/11) + 0.051
+                return (((self.max_speed*7) + (self.acceleration*2) + (self.braking*1) + (self.vortex*0.5) + (self.downforce*0.5))/11) + 0.250
             else:
-                return (((((self.max_speed+self.acceleration)/2)*5) + (self.downforce*3) + (self.vortex*2) + (self.braking*1))/11)
+                return (((self.max_speed*7) + (self.acceleration*2) + (self.braking*1) + (self.vortex*0.5) + (self.downforce*0.5))/11)
         elif circuit_type == 'Agility Circuit':
             if self.V1 == 'Straights':
-                return (((self.max_speed*6) + (self.acceleration*2) + (self.braking*1) + (self.vortex*1) + (self.downforce*1))/11) + 0.349
-            elif self.V1 == 'Corners':
-                return (((self.max_speed*6) + (self.acceleration*2) + (self.braking*1) + (self.vortex*1) + (self.downforce*1))/11)
+                return (((((self.max_speed+self.acceleration)/2)*6) + (self.braking*3) + (self.vortex*1) + (self.downforce*1))/11) + 0.250
             else:
-                return (((self.max_speed*6) + (self.acceleration*2) + (self.braking*1) + (self.vortex*1) + (self.downforce*1))/11)
+                return (((((self.max_speed+self.acceleration)/2)*6) + (self.braking*3) + (self.vortex*1) + (self.downforce*1))/11)
+        elif circuit_type == 'Power Circuit':
+            if self.V1 == 'Straights':
+                return (((((self.max_speed+self.acceleration)/2)*5) + (self.downforce*3) + (self.vortex*2) + (self.braking*1))/11) + 0.175
+            elif self.V1 == 'Corners':
+                return (((((self.max_speed+self.acceleration)/2)*5) + (self.downforce*3) + (self.vortex*2) + (self.braking*1))/11) + 0.075
+            else:
+                return (((((self.max_speed+self.acceleration)/2)*5) + (self.downforce*3) + (self.vortex*2) + (self.braking*1))/11)
         elif circuit_type == 'Quickness Circuit':
-            return (((self.max_speed*4) + (self.downforce*4) + (self.vortex*2) + (self.braking*1))/11)
+            return (((self.downforce*4) + (self.max_speed*4) + (self.vortex*2) + (self.braking*1))/11)
         elif circuit_type == 'Completeness Circuit':
             return (((self.downforce*5) + (self.max_speed*3) + (self.vortex*2) + (self.braking*1))/11)
         elif circuit_type == 'Engineering Circuit':
-            if self.V1 == 'Straights':
-                return (((self.downforce*5) + (self.acceleration*3) + (self.vortex*2) + (self.braking*1))/11)
-            elif self.V1 == 'Corners':
-                return (((self.downforce*5) + (self.acceleration*3) + (self.vortex*2) + (self.braking*1))/11) + 0.349
+            if self.V1 == 'Corners':
+                return (((self.downforce*5) + (self.acceleration*3) + (self.vortex*2) + (self.braking*1))/11) + 0.250
             else:
                 return (((self.downforce*5) + (self.acceleration*3) + (self.vortex*2) + (self.braking*1))/11)
         elif circuit_type == 'Downforce Circuit':
-            if self.V1 == 'Straights':
-                return (((self.downforce*5) + (self.vortex*3) + (self.acceleration*2) + (self.braking*1))/11)
-            elif self.V1 == 'Corners':
-                return (((self.downforce*5) + (self.vortex*3) + (self.acceleration*2) + (self.braking*1))/11) + 0.349
+            if self.V1 == 'Corners':
+                return (((self.downforce*5) + (self.vortex*3) + (self.acceleration*2) + (self.braking*1))/11) + 0.250
             else:
                 return (((self.downforce*5) + (self.vortex*3) + (self.acceleration*2) + (self.braking*1))/11)
         elif circuit_type == 'Street Circuit':
-            return (((self.downforce*4) + (self.braking*4) + (self.vortex*2) + (self.acceleration*1))/11)
+            return (((self.downforce*4) + (self.braking*4) + (self.acceleration*2.5) + (self.vortex*0.5))/11)
         
 # Drivers
 class Driver():
@@ -967,9 +968,9 @@ class Driver():
 # Formula 1 Engines
 HONDA_0 = Engine('Honda',FIA(current)[5],94,74,94) # Red Bull
 HONDA_1 = Engine('Honda',FIA(current)[5],94,74,94) # AlphaTauri
-FERRARI_F = Engine('Ferrari',FIA(current)[5],93,71,93) # Ferrari
-FERRARI_0 = Engine('Ferrari',FIA(current)[5],93,71,93) # Haas
-FERRARI_1 = Engine('Ferrari',FIA(current)[5],93,71,93) # Alfa Romeo
+FERRARI_F = Engine('Ferrari',FIA(current)[5],92,72,92) # Ferrari
+FERRARI_0 = Engine('Ferrari',FIA(current)[5],92,72,92) # Haas
+FERRARI_1 = Engine('Ferrari',FIA(current)[5],92,72,92) # Alfa Romeo
 RENAULT_F = Engine('Renault',FIA(current)[5],87,77,87) # Alpine
 MERCEDES_F = Engine('Mercedes',FIA(current)[5],87,93,87) # Mercedes
 MERCEDES_0 = Engine('Mercedes',FIA(current)[5],87,93,87) # Williams
@@ -2274,7 +2275,7 @@ def R(circuit,session,weather):
                         if K.name == defender:
                             defender_obj = K
                     
-                    following_distance = (1.299 - FIA(current)[16])*(position-1)
+                    following_distance = (0.666)*(position-1)
 
                     if position == 1:
                         LAP_CHART[attacker_obj.name][-1] = LAP_CHART[attacker_obj.name][-1] + (circuit.laptime + 125)
