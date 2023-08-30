@@ -27,8 +27,8 @@ CAR PRODUCTION FINANCIAL REGULATIONS
 * Car production cost is between 13M$ and 33M$
 
 FINANCIAL REGULATIONS
-* In terms of stopping the in-year development process and transferring future income for next year car is only available 7 races left to the season-end.
-* If the season is the last season before a new regulation came in, transferring the future income for next year car is only available 3 races left to the season-end.
+* In terms of stopping the in-year development process and transferring future income for next year car is only available 8 races left to the season-end.
+* If the season is the last season before a new regulation comes in, transferring the future income for next year car is only available 2 races left to the season-end.
 * In terms of stopping the in-year development process and transferring future income for next year car yields extra +1M in each race.
 
 PRIZE MONEY PER RACE for EVERY REGULATION INTERVAL
