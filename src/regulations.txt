@@ -1,44 +1,44 @@
 DIFFERENCES FROM REAL FORMULA ONE RACING
-* We assume that refuelling was banned and drivers start their races with a full tank during the era between 1998 and 2008, contrary to the truth.
-* We assume that Bridgestone is the only tire manufacturer during the era between 1998 and 2008, contrary to the truth.
-* We assume that there were no prohibitions for tire changes in 2005, contrary to the truth.
+* We assume that refueling was banned and drivers started their races with a full tank during the era between 1998 and 2008, contrary to the truth.
+* We assume that Bridgestone was the only tire manufacturer during the era between 1998 and 2008, contrary to the truth.
+* We assume that there were no prohibitions on tire changes in 2005, contrary to the truth.
 * We assume that the blown diffuser was never banned, contrary to the truth.
-* We assume that every year of formula racing has the same post-race points distribution, contrary to the truth.
-* We assume that every driver can finish a race without doing any pit-stops to change their tires if it is possible during the race in dry or wet conditions, contrary to the truth.
+* We assume that every year of formula racing has the same post-race point distribution, contrary to the truth.
+* We assume that every driver can finish a race without doing any pit stops to change their tires if it is possible during the race in dry or wet conditions, contrary to the truth.
 
 CAR DEVELOPMENT REGULATIONS
-* In-year car development is active for all regulations terms.
-* In terms of car development, there is no development limitation in each season or regulation period.
-* In terms of durability updates, it is eligible at the start of the season within a -5/+5 ratio. Every 1 upgrade for durability costs 2 points for car traits. The other way around is the same.
-* In terms of car weight updates, it is eligible at the start of the season within a -5/+5 ratio. Every 1 kilo light costs 2 points of car traits. The other way around is the same.
-* In terms of engine performance development, it is eligible at the middle of the season within a -5/+5 ratio.
-* FIA can give extra development allowence at the start of the season to particular teams if they seem that fair.
-* In terms of development, staff history and their contract details in each year will be remain private as an obligatory rule.
+* In terms of car development, there is no development limitation in each season or regulation period, and it is active for all regulation terms.
+* In terms of durability updates, it is eligible within the +1 car traits equals -2 durability and -2 car traits equals +1 durability range.
+* In terms of car weight updates, it is eligible within a +1 chassis trait equals +3 kilograms of weight and a -3 chassis trait equals -1 kilograms of weight range.
+* In terms of engine performance development, it is eligible within a +1 upgrade -2 durability / -2 upgrade equals +1 durability range.
+* FIA can give extra development allowance at the start of the season to particular teams if it seems fair.
 
 CAR DEVELOPMENT FINANCIAL REGULATIONS
-* Chassis (3.000.000 - 6.000.000)
-* Front Wing (3.000.000 - 6.000.000)
-* Rear Wing (3.000.000 - 6.000.000)
-* Base (4.000.000 - 8.000.000)
-* Sidepod (1.000.000 - 2.000.000)
-* Suspension (1.000.000 - 2.000.000)
+* Chassis (3.500.000–5.000.000)
+* Front Wing (5.000.000–7.000.000)
+* Rear Wing (5.000.000–7.000.000)
+* Base (5.000.000–7.000.000)
+* Sidepod (2.500.000–4.000.000)
+* Suspension (2.500.000-4.000.000)
 
 CAR PRODUCTION FINANCIAL REGULATIONS
-* Car production cost is between 13M$ and 33M$
+* The cost of producing a car ranges between 13 and 33 million dollars.
 
 FINANCIAL REGULATIONS
-* In terms of stopping the in-year development process and transferring future income for next year car is only available 8 races left to the season-end.
-* If the season is the last season before a new regulation comes in, transferring the future income for next year car is only available 2 races left to the season-end.
-* In terms of stopping the in-year development process and transferring future income for next year car yields extra +1M in each race.
+* In terms of stopping the in-year development process and transferring future income for the next-year car available at any point, this yields an extra +0.5 million in each race.
+* If the season is the last before a new regulation comes in, transferring the future income for the next year's car is only available for 3 races left until the season ends.
 
-PRIZE MONEY PER RACE for EVERY REGULATION INTERVAL
+PERFORMANCE DIFFERENCE HINT
+* (car rating difference*0.112) equation equals the pace difference between manufacturers as a unit of seconds.
+
+MONEY PRIZE PER RACE FOR EACH REGULATION INTERVAL
 1st - 0.5 Million $
 2nd - 1.0 Million $
 3rd - 1.5 Million $
-Within the points - 2.0 Million $
-Out of points - 2.5 Million $
+Within the points - 2.5 Million $
+Out of points - 3.5 Million $
 
-PRIZE MONEY AT THE END OF THE SEASON for 1998-2004 REGULATIONS
+REGULATIONS ON PRIZE MONEY AT THE END OF THE SEASON FROM 1998 TO 2004
 1st - 5.50 Million $
 2nd - 5.00 Million $
 3rd - 4.50 Million $
@@ -49,7 +49,7 @@ PRIZE MONEY AT THE END OF THE SEASON for 1998-2004 REGULATIONS
 8th - 2.75 Million $
 9th and more - 2.00 Million $
 
-PRIZE MONEY AT THE END OF THE SEASON for 2022-2025 REGULATIONS
+REGULATIONS ON PRIZE MONEY AT THE END OF THE SEASON FROM 2022 TO 2025
 1st - 9.50 Million $
 2nd - 8.50 Million $
 3rd - 7.50 Million $
@@ -60,7 +60,7 @@ PRIZE MONEY AT THE END OF THE SEASON for 2022-2025 REGULATIONS
 8th - 4.50 Million $
 9th and more - 3.50 Million $
 
-PRIZE MONEY AT THE END OF THE SEASON for 2006-2008/2011-2013/2018-2020 REGULATIONS
+REGULATIONS ON PRIZE MONEY AT THE END OF THE SEASON FROM 2006 TO 2008 & 2011 TO 2013 & 2018 TO 2020
 1st - 13.00 Million $
 2nd - 11.50 Million $
 3rd - 10.00 Million $
@@ -71,7 +71,7 @@ PRIZE MONEY AT THE END OF THE SEASON for 2006-2008/2011-2013/2018-2020 REGULATIO
 8th - 6.00 Million $
 9th and more - 4.75 Million $
 
-PRIZE MONEY AT THE END OF THE SEASON for 2009-2010/2014-2015 REGULATIONS
+REGULATIONS ON PRIZE MONEY AT THE END OF THE SEASON FROM 2009 TO 2010 & 2014 TO 2015
 1st - 19 Million $
 2nd - 17 Million $
 3rd - 15 Million $
@@ -82,7 +82,7 @@ PRIZE MONEY AT THE END OF THE SEASON for 2009-2010/2014-2015 REGULATIONS
 8th - 9 Million $
 9th and more - 7 Million $
 
-PRIZE MONEY AT THE END OF THE SEASON for 2005/2016/2017/2021 REGULATIONS
+PRIZE MONEY REGULATIONS AT THE END OF THE 2005, 2016, 2017, AND 2021 SEASONS
 1st - 38 Million $
 2nd - 34 Million $
 3rd - 30 Million $
@@ -93,12 +93,12 @@ PRIZE MONEY AT THE END OF THE SEASON for 2005/2016/2017/2021 REGULATIONS
 8th - 18 Million $
 9th and more - 14 Million $
 
-REGULATIONS
-1998-1999-2000-2001-2002-2003-2004
+REGULATIONS:
+Regulation interval: 1998-1999-2000-2001-2002-2003-2004 seasons.
 Engine: V10 3.0L
 Engine Continuity: One-year usage.
 Chassis: Multi-year usage with one concept.
-Max. Driver Contract Lenght: 4 years
+Max. Driver Contract Length: 4 years
 Pit-stop regulations: Option/Prime
 Durability: Poor
 F1 Logistics Supplier: DHL
@@ -108,25 +108,11 @@ F1 Points System: 25-18-15-12-10-8-6-4-2-1
 DRS: None
 ERS: None
 
-2005
+Regulation interval: 2005 season.
 Engine: V10 3.0L
 Engine Continuity: One-year usage.
 Chassis: One-shot
-Max. Driver Contract Lenght: 4 years
-Pit-stop regulations: Banned
-Durability: Average
-F1 Logistics Supplier: DHL
-FIA Tire Supplier: Bridgestone
-FIA Fuel Supplier: Shell
-F1 Points System: 25-18-15-12-10-8-6-4-2-1
-DRS: None
-ERS: None
-
-2006-2007-2008
-Engine: V8 2.4L
-Engine Continuity: Engines were frozen until the end of the 2013 season. / Starting from the 2007 season. / For 2006, it is one-year usage.
-Chassis: Multi-year usage with one concept.
-Max. Driver Contract Lenght: 4 years
+Max. Driver Contract Length: 4 years
 Pit-stop regulations: Option/Prime
 Durability: Average
 F1 Logistics Supplier: DHL
@@ -136,11 +122,25 @@ F1 Points System: 25-18-15-12-10-8-6-4-2-1
 DRS: None
 ERS: None
 
-2009
+Regulation interval: 2006-2007-2008 seasons.
+Engine: V8 2.4L
+Engine Continuity: Engines were frozen until the end of the 2013 season. Starting from the 2007 season, for 2006, it is one-year usage.
+Chassis: Multi-year usage with one concept.
+Max. Driver Contract Length: 4 years
+Pit-stop regulations: Option/Prime
+Durability: Average
+F1 Logistics Supplier: DHL
+FIA Tire Supplier: Bridgestone
+FIA Fuel Supplier: Shell
+F1 Points System: 25-18-15-12-10-8-6-4-2-1
+DRS: None
+ERS: None
+
+Regulation interval: 2009 season.
 Engine: V8 2.4L
 Engine Continuity: Engines were frozen until the end of the 2013 season.
 Chassis: One-year usage.
-Max. Driver Contract Lenght: 4 years
+Max. Driver Contract Length: 4 years
 Pit-stop regulations: Soft/Medium/Hard
 Durability: Good
 F1 Logistics Supplier: DHL
@@ -150,11 +150,11 @@ F1 Points System: 25-18-15-12-10-8-6-4-2-1
 DRS: None
 ERS: None
 
-2010
+Regulation interval: 2010 season.
 Engine: V8 2.4L
 Engine Continuity: Engines were frozen until the end of the 2013 season.
 Chassis: One-year usage.
-Max. Driver Contract Lenght: 4 years
+Max. Driver Contract Length: 4 years
 Pit-stop regulations: Soft/Medium/Hard
 Durability: Good
 F1 Logistics Supplier: DHL
@@ -164,11 +164,11 @@ F1 Points System: 25-18-15-12-10-8-6-4-2-1
 DRS: Active
 ERS: None
 
-2011-2012-2013
+Regulation interval: 2011-2012-2013 seasons.
 Engine: V8 2.4L
 Engine Continuity: Engines were frozen until the end of the 2013 season.
 Chassis: Multi-year usage with one concept.
-Max. Driver Contract Lenght: 4 years
+Max. Driver Contract Length: 4 years
 Pit-stop regulations: Soft/Medium/Hard
 Durability: Good
 F1 Logistics Supplier: DHL
@@ -178,11 +178,11 @@ F1 Points System: 25-18-15-12-10-8-6-4-2-1
 DRS: Active
 ERS: Active under the name of KERS
 
-2014-2015
+Regulation interval: 2014-2015 seasons.
 Engine: V6 1.6L
 Engine Continuity: One-year usage.
 Chassis: Multi-year usage with one concept.
-Max. Driver Contract Lenght: 5 years
+Max. Driver Contract Length: 5 years
 Pit-stop regulations: Soft/Medium/Hard
 Durability: Decent
 F1 Logistics Supplier: DHL
@@ -192,11 +192,11 @@ F1 Points System: 25-18-15-12-10-8-6-4-2-1
 DRS: Active
 ERS: Active
 
-2016
+Regulation interval: 2016 season.
 Engine: V6 1.6L
 Engine Continuity: One-year usage.
 Chassis: One-shot
-Max. Driver Contract Lenght: 5 years
+Max. Driver Contract Length: 5 years
 Pit-stop regulations: Soft/Medium/Hard
 Durability: Decent
 F1 Logistics Supplier: DHL
@@ -206,11 +206,11 @@ F1 Points System: 25-18-15-12-10-8-6-4-2-1
 DRS: Active
 ERS: Active
 
-2017
+Regulation interval: 2017 season.
 Engine: V6 1.6L
 Engine Continuity: One-year usage.
 Chassis: One-shot
-Max. Driver Contract Lenght: 5 years
+Max. Driver Contract Length: 5 years
 Pit-stop regulations: Soft/Medium/Hard
 Durability: Decent
 F1 Logistics Supplier: DHL
@@ -220,11 +220,11 @@ F1 Points System: 25-18-15-12-10-8-6-4-2-1
 DRS: Active
 ERS: Active
 
-2018-2019-2020
+Regulation interval: 2018-2019-2020 seasons.
 Engine: V6 1.6L
 Engine Continuity: One-year usage.
 Chassis: Multi-year usage with one concept.
-Max. Driver Contract Lenght: 5 years
+Max. Driver Contract Length: 5 years
 Pit-stop regulations: Soft/Medium/Hard
 Durability: Decent
 F1 Logistics Supplier: DHL
@@ -234,11 +234,11 @@ F1 Points System: 25-18-15-12-10-8-6-4-2-1
 DRS: Active
 ERS: Active
 
-2021
+Regulation interval: 2021 season.
 Engine: V6 1.6L
 Engine Continuity: One-year usage.
 Chassis: One-shot
-Max. Driver Contract Lenght: 6 years
+Max. Driver Contract Length: 6 years
 Pit-stop regulations: Soft/Medium/Hard
 Durability: Decent
 F1 Logistics Supplier: DHL
@@ -248,11 +248,11 @@ F1 Points System: 25-18-15-12-10-8-6-4-2-1
 DRS: Active
 ERS: Active
 
-2022-2023-2024-2025
+Regulation interval: 2022-2023-2024-2025 seasons.
 Engine: V6 1.6L
 Engine Continuity: Engines were frozen until the end of the 2025 season.
 Chassis: Multi-year usage with one concept.
-Max. Driver Contract Lenght: 6 years
+Max. Driver Contract Length: 6 years
 Pit-stop regulations: Soft/Medium/Hard
 Durability: Improved
 F1 Logistics Supplier: DHL
@@ -262,5 +262,5 @@ F1 Points System: 25-18-15-12-10-8-6-4-2-1
 DRS: Active
 ERS: Active
 
-2026-?
+Regulation interval: 2026-? seasons.
 No information was provided for 2026 regulations.
